@@ -1,11 +1,9 @@
 import { createContext, RouterContextProvider, redirect } from "react-router";
-import { baseLanguage, getLocale, getPageLocale } from "~/i18n";
-import type { Language, PageLocale } from "~/i18n/types";
+import { baseLanguage, getLocale } from "~/i18n";
 import type { Route } from "../../+types/root";
 
-type I18nContext = Awaited<ReturnType<typeof getLocale>> & {
-  getPageLocale: (pageName: string) => Promise<PageLocale>;
-};
+type I18nContext = Awaited<ReturnType<typeof getLocale>>;
+
 export const i18nContext = createContext<I18nContext>();
 
 export const i18nMiddleware: Route.MiddlewareFunction = async ({
@@ -23,11 +21,7 @@ export const i18nMiddleware: Route.MiddlewareFunction = async ({
   if (!locale) throw new Response(null, { status: 404 });
 
   // Add getPageLocale function to the context
-  const i18nData: I18nContext = {
-    ...locale,
-    getPageLocale: (pageName: string) =>
-      getPageLocale(locale.lang as Language, pageName),
-  };
+  const i18nData: I18nContext = locale;
 
   context.set(i18nContext, i18nData);
 };

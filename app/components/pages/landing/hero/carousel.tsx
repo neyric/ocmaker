@@ -122,7 +122,7 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="flex touch-pan-y touch-pinch-zoom items-center">
           {slides.map((url, index) => (
             <div
-              className="flex-shrink-0 px-1 h-96 aspect-[3/4] sm:h-108 sm:aspect-[2/3] md:aspect-[2/3] lg:h-120 xl:h-144"
+              className="flex-shrink-0 px-1 h-96 sm:h-108 aspect-[3/4] sm:aspect-[2/3] lg:aspect-square md:h-120 lg:h-96 xl:h-112"
               key={index}
             >
               <Image

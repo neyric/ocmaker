@@ -41,7 +41,7 @@ export const Footer = ({
   return (
     <footer>
       <div className="container px-4 py-12 md:py-16">
-        <div className="grid grid-flow-row md:grid-flow-col gap-x-8 gap-y-4">
+        <div className="grid grid-flow-row lg:grid-flow-col gap-x-8 gap-y-4 sm:gap-y-6 md:gap-y-8">
           {/* Brand Section */}
           <div className="md:max-w-sm">
             <Link className="inline-block focus-visible:outline-none" to="/">
@@ -69,11 +69,11 @@ export const Footer = ({
 
           {/* Navigation Links */}
           {navLinks.map((navLink, i) => (
-            <div key={i} className="space-y-2 md:space-y-4">
-              <label className="block font-bold text-base-content text-lg">
+            <div key={i} className="space-y-2 md:space-y-2">
+              <label className="block font-bold text-base-content font-title text-base">
                 {navLink.label}
               </label>
-              <nav className="flex flex-row md:flex-col gap-y-2 gap-x-4 flex-wrap">
+              <nav className="flex flex-row lg:flex-col gap-y-2 gap-x-4 flex-wrap">
                 {navLink.list.map((link, j) => (
                   <Link
                     key={`${navLink.label}_${j}`}

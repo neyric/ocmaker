@@ -1,33 +1,31 @@
-import clsx from "clsx";
-import { UploadCloud } from "lucide-react";
-import { Fragment, useRef, useState } from "react";
-import { Dropzone, Image } from "~/components/common";
 import {
-  EffectLibrarySection,
+  Bird,
+  Bot,
+  Contact,
+  PencilRuler,
+  Smile,
+  SwatchBook,
+} from "lucide-react";
+import { Fragment } from "react";
+import { getI18nConetxt } from "~/.server/middleware/i18n-middleware";
+import {
+  About,
+  Examples,
   FAQsSection,
+  FeaturedOn,
   FooterCTASection,
   HeroSection,
-  UseCasesSection,
+  Steps,
   WhyImgVidSection,
 } from "~/components/pages/landing";
 import { ghostFaceList } from "~/data/ghost-face";
-import {
-  FotoProfissional,
-  type FotoProfissionalRef,
-} from "~/features/generator/ghost-face";
+
+import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
 import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
-import contents, {
-  ctaButtons,
-  effectShowcase,
-  faqs,
-  features,
-  howItWorkSteps,
-  useCases,
-} from "./contents";
 
-export function meta({ matches }: Route.MetaArgs) {
+export function meta({ matches, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical("/", matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
     "/",
@@ -35,8 +33,8 @@ export function meta({ matches }: Route.MetaArgs) {
   );
   const og = createSocialTags(
     {
-      title: contents.meta.title,
-      description: contents.meta.description,
+      title: loaderData.meta.title,
+      description: loaderData.meta.description,
       url: "/",
       siteName: matches[0].loaderData.SITE_NAME,
     },
@@ -44,10 +42,10 @@ export function meta({ matches }: Route.MetaArgs) {
   );
 
   return [
-    { title: contents.meta.title },
+    { title: loaderData.meta.title },
     {
       name: "description",
-      content: contents.meta.description,
+      content: loaderData.meta.description,
     },
     canonical,
     ...alternatives,
@@ -55,42 +53,165 @@ export function meta({ matches }: Route.MetaArgs) {
   ];
 }
 
-export function loader() {
+export async function loader({ context }: Route.LoaderArgs) {
+  const i18n = getI18nConetxt(context);
+  const page = await getPageLocale(i18n.lang, "home");
+  const t = getTranslate(page);
+
   const list = ghostFaceList.map(({ prompt: _, ...item }) => item);
 
-  return { list };
+  const meta = {
+    title: t("meta.title"),
+    description: t("meta.description"),
+  };
+
+  return { meta, list, page };
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  const [downloading, setDownloading] = useState(false);
-  const formRef = useRef<FotoProfissionalRef>(null);
+  const ct = useTranslate(loaderData.page);
 
-  const content = contents.contents;
-  const openRef = useRef(() => console.log("open"));
+  const steps = [
+    {
+      image: "/assets/img-how-1.webp",
+      title: ct("contents.step.steps.0.title"),
+      description: ct("contents.step.steps.0.content"),
+    },
+    {
+      image: "/assets/img-how-2.webp",
+      title: ct("contents.step.steps.1.title"),
+      description: ct("contents.step.steps.1.content"),
+    },
+    {
+      image: "/assets/img-how-3.webp",
+      title: ct("contents.step.steps.2.title"),
+      description: ct("contents.step.steps.2.content"),
+    },
+  ];
 
-  const onUpload = (file: File) => {
-    formRef.current?.open(file);
-  };
+  const features = [
+    {
+      icon: <Bot />,
+      title: ct("contents.features.features.0.title"),
+      content: ct("contents.features.features.0.content"),
+    },
+    {
+      icon: <PencilRuler />,
+      title: ct("contents.features.features.1.title"),
+      content: ct("contents.features.features.1.content"),
+    },
+    {
+      icon: <Smile />,
+      title: ct("contents.features.features.2.title"),
+      content: ct("contents.features.features.2.content"),
+    },
+    {
+      icon: <Contact />,
+      title: ct("contents.features.features.3.title"),
+      content: ct("contents.features.features.3.content"),
+    },
+    {
+      icon: <SwatchBook />,
+      title: ct("contents.features.features.4.title"),
+      content: ct("contents.features.features.4.content"),
+    },
+    {
+      icon: <Bird />,
+      title: ct("contents.features.features.5.title"),
+      content: ct("contents.features.features.5.content"),
+    },
+  ];
 
-  const handleExampleClick = async (url: string) => {
-    if (downloading) return;
-    setDownloading(true);
-    const res = await fetch(url).finally(() => setDownloading(false));
-    const blob = await res.blob();
-    const fileName = url.split("/").pop() ?? "";
-    const file = new File([blob], fileName, { type: blob.type });
+  const examples = loaderData.page.contents.examples.examples;
 
-    onUpload?.(file);
-  };
+  const list = loaderData.page.contents.about.list;
+
+  const faqs = loaderData.page.contents.faqs.list;
+
+  const ctaButtons = [
+    {
+      text: ct("contents.cta.btns.start"),
+      href: "/",
+      variant: "default" as const,
+      className:
+        "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
+    },
+    {
+      text: ct("contents.cta.btns.explore"),
+      href: "/",
+      variant: "outline" as const,
+      className:
+        "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
+    },
+  ];
+
+  const badges = [
+    {
+      href: "https://frogdr.com/ai138.com?utm_source=ai138.com",
+      img: "https://frogdr.com/ai138.com/badge-white.svg",
+      title: "Monitor your Domain Rating with FrogDR",
+    },
+    {
+      href: "https://dang.ai/",
+      img: "https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png",
+      title: "Dang.ai",
+    },
+    {
+      href: "https://imglab.dev/en/s/ocmaker_app",
+      img: "https://frogdr.com/imglab.dev/badge-white.svg",
+      title: "ImgLab Awards",
+    },
+    {
+      href: "https://twelve.tools",
+      img: "https://twelve.tools/badge0-white.svg",
+      title: "Featured on Twelve Tools",
+    },
+    {
+      href: "https://fazier.com",
+      img: "https://frogdr.com/fazier.com/badge-white.svg",
+      title: "Fazier badge",
+    },
+    {
+      href: "https://www.agenthunter.io/?utm_source=badge&utm_medium=embed&utm_campaign=OC%20Maker",
+      img: "https://frogdr.com/agenthunter.io/badge-white.svg",
+      title: "AgentHunter Badge",
+    },
+    {
+      href: "https://launchigniter.com/launch/oc-maker?ref=badge-ai-hairstyle",
+      img: "https://frogdr.com/launchigniter.com/badge-white.svg",
+      title: "Featured on LaunchIgniter",
+    },
+    {
+      href: "https://turbo0.com/item/oc-maker",
+      img: "https://frogdr.com/turbo0.com/badge-white.svg",
+      title: "Listed on Turbo0",
+    },
+    {
+      href: "https://aifinder.site",
+      img: "https://aifinder.site/light-badge.png",
+      title: "Discover more AI tools at aifinder.site",
+    },
+    {
+      href: "https://aitools.inc/tools/oc-maker?utm_source=embed-badge-oc-maker&utm_medium=embed&utm_campaign=embed-badge-featured",
+      img: "https://aitools.inc/tools/oc-maker/embeds/v1/featured-badge.svg?theme=light",
+      title: "OC Maker | AI Tools",
+    },
+    {
+      href: "https://starterbest.com",
+      img: "https://starterbest.com/badages-awards.svg",
+      title: "Featured on Starter Best",
+    },
+  ];
 
   // Note: FotoProfissionalGenerator handles its own task generation internally
   return (
     <Fragment>
+      <div className="h-screen bg-gradient-to-b from-primary/10 to-transparent absolute top-0 inset-x-0" />
       <HeroSection
-        title={content.hero.title}
-        description={content.hero.description}
+        title={ct("contents.hero.title")}
+        description={ct("contents.hero.description")}
       >
-        <div className="mt-4 sm:mt-6 mb-2">
+        {/* <div className="mt-4 sm:mt-6 mb-2">
           <Dropzone
             multiple={false}
             openRef={openRef}
@@ -139,38 +260,50 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           selfie into a stunning 90s horror portrait with authentic Y2K bedroom
           aesthetics and the iconic Ghostface from Scream. Perfect for
           Halloween, social media, or just for fun with friends.
-        </p>
+        </p> */}
       </HeroSection>
 
-      <EffectLibrarySection
-        title={content.effectShowcase.title}
-        description={content.effectShowcase.description}
-        effectList={loaderData.list}
-        howItWorkTitle={content.howItWork.title}
-        howItWorkDescription={content.howItWork.description}
-        steps={howItWorkSteps}
+      <Steps
+        title={ct("contents.step.title")}
+        description={ct("contents.step.description")}
+        steps={steps}
       />
+
+      <Examples
+        title={ct("contents.examples.title")}
+        description={ct("contents.examples.description")}
+        examples={examples}
+      />
+
       <WhyImgVidSection
-        title={content.why.title}
-        description={content.why.description}
+        title={ct("contents.features.title")}
+        description={ct("contents.features.description")}
         features={features}
       />
-      <UseCasesSection
-        title={content.useCase.title}
-        description={content.useCase.description}
-        useCases={useCases}
+
+      <About
+        title={ct("contents.about.title")}
+        description={ct("contents.about.description")}
+        imageSrc={ct("contents.about.imageSrc")}
+        imageAlt={ct("contents.about.imageAlt")}
+        list={list}
       />
+
       <FAQsSection
-        title={content.faqs.title}
-        description={content.faqs.description}
+        title={ct("contents.faqs.title")}
+        description={ct("contents.faqs.description")}
         faqs={faqs}
       />
       <FooterCTASection
-        title={content.cta.title}
-        description={content.cta.description}
+        title={ct("contents.cta.title")}
+        description={ct("contents.cta.description")}
         buttons={ctaButtons}
       />
-      <FotoProfissional ref={formRef} fotoProfissionalList={loaderData.list} />
+      <FeaturedOn
+        title={ct("contents.featuredOn.title")}
+        description={ct("contents.featuredOn.description")}
+        badges={badges}
+      />
     </Fragment>
   );
 }

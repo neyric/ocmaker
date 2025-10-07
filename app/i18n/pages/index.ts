@@ -1,33 +1,56 @@
+import { merge } from "lodash-es";
+import { baseLanguage as DEFAULT_LANGUAGE } from "../index";
 import type { Language, PageLocale } from "../types";
 
-// Page locale loader function
-export async function loadPageLocale(
-  lang: Language,
-  pageName: string,
-): Promise<PageLocale | null> {
-  try {
-    const locale = await import(`./${lang}/${pageName}.ts`);
-    return locale.default || locale;
-  } catch (error) {
-    console.warn(`Page locale not found: ${lang}/${pageName}`);
-    return null;
-  }
-}
+type PageLocaleLoader = () => Promise<PageLocale>;
 
-// Server-side page locale loader
+const BASE_VARIANT = "base";
+
+const pageLocaleModules = Object.fromEntries(
+  Object.entries(
+    import.meta.glob(["./**/*.ts", "!./index.ts"], {
+      import: "default",
+    }) as Record<string, PageLocaleLoader>
+  ).map(([key, loader]) => [key.slice(2, -3), loader] as const)
+);
+
+const normalizePageName = (value: string) =>
+  value
+    .trim()
+    .replace(/^\.+\//, "")
+    .replace(/^\//, "")
+    .replace(/\.(ts|tsx|js|jsx)$/, "");
+
+const getLoader = (page: string, locale: string) =>
+  pageLocaleModules[`${page}/${locale}`];
+
+const loadLocale = async (loader?: PageLocaleLoader | null) => {
+  if (!loader) return null;
+
+  const result = await loader();
+  return result ?? null;
+};
+
 export async function getPageLocale(
   lang: Language,
-  pageName: string,
+  pageName: string
 ): Promise<PageLocale> {
-  const pageLocale = await loadPageLocale(lang, pageName);
+  const page = normalizePageName(pageName);
 
-  // Fallback to English if locale not found
-  if (!pageLocale && lang !== "en") {
-    const fallbackLocale = await loadPageLocale("en", pageName);
-    if (fallbackLocale) {
-      return fallbackLocale;
+  const baseLocale = await loadLocale(getLoader(page, BASE_VARIANT));
+  const languageLocale = await loadLocale(getLoader(page, lang));
+
+  if (!languageLocale && lang !== DEFAULT_LANGUAGE) {
+    const fallbackLocale = await loadLocale(getLoader(page, DEFAULT_LANGUAGE));
+
+    if (baseLocale || fallbackLocale) {
+      return merge({}, baseLocale ?? {}, fallbackLocale ?? {});
     }
+
+    return {};
   }
 
-  return pageLocale || {};
+  if (!baseLocale && !languageLocale) return {};
+
+  return merge({}, baseLocale ?? {}, languageLocale ?? {});
 }

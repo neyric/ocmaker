@@ -76,7 +76,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
-                className="p-2 hover:bg-base-200 rounded-md"
+                className="p-2 hover:bg-base-200 hover:text-primary rounded-md"
               >
                 {theme === "light" ? (
                   <Moon className="w-5 h-5" />

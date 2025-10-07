@@ -15,7 +15,12 @@ interface FAQsSectionProps {
 export function FAQsSection({ title, description, faqs }: FAQsSectionProps) {
   const structure = createFAQsSchema(faqs);
   return (
-    <GridSection borderY={false}>
+    <GridSection
+      borderY={false}
+      borderX={false}
+      compact
+      className="py-6 sm:py-8 md:py-12"
+    >
       {structure && (
         <script
           id="FAQPage"
@@ -34,24 +39,17 @@ export function FAQsSection({ title, description, faqs }: FAQsSectionProps) {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="max-w-4xl mx-auto">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="collapse collapse-arrow rounded-none border-b border-grid-border/50 last-of-type:border-b-0"
-            >
-              <input
-                type="radio"
-                name="faq-accordion"
-                defaultChecked={index === 0}
-              />
-              <h3 className="collapse-title text-lg font-medium text-left">
-                {faq.question}
-              </h3>
-              <div className="collapse-content">
-                <p className="text-base-content/70 leading-relaxed whitespace-pre-line">
-                  {faq.answer}
-                </p>
+        <div className="mx-auto mt-14 grid gap-8 md:grid-cols-2 md:gap-12">
+          {faqs.map((faq, i) => (
+            <div className="flex gap-4" key={i}>
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-sm border border-primary font-mono text-xs text-primary">
+                {i + 1}
+              </span>
+              <div>
+                <div className="mb-2 flex items-center justify-between">
+                  <h3 className="font-semibold">{faq.question}</h3>
+                </div>
+                <p className="text-md text-muted-foreground">{faq.answer}</p>
               </div>
             </div>
           ))}

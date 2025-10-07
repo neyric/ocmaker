@@ -81,7 +81,7 @@ export const Layout = ({ children }: React.PropsWithChildren) => {
       url: data.DOMAIN,
       name: data.SITE_NAME,
       logo: data.SITE_LOGO,
-      email: "support@ghostfaceai.app",
+      email: "support@ocmaker.app",
       sameAs: [
         "https://github.com/neyric",
         "https://linktr.ee/neyric",

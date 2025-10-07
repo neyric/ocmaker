@@ -20,10 +20,10 @@ function getNestedValue(obj: any, path: string, fallback?: string): any {
  * @param fallback - Optional fallback text
  */
 export function translate(
-  locale: Locale,
+  locale: Record<string, unknown>,
   key: string,
   params?: Record<string, string | number>,
-  fallback?: string,
+  fallback?: string
 ): string {
   const translation = getNestedValue(locale, key, fallback || key);
 
@@ -45,11 +45,11 @@ export function translate(
  * Create a translation function bound to a specific locale
  * @param locale - The locale object
  */
-export function getTranslate(locale: Locale) {
+export function getTranslate(locale: Record<string, unknown>) {
   return (
     key: string,
     params?: Record<string, string | number>,
-    fallback?: string,
+    fallback?: string
   ) => {
     return translate(locale, key, params, fallback);
   };

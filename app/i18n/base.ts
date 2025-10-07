@@ -25,12 +25,20 @@ export default {
     ok: "OK",
     credits: "Credits",
     free: "Free",
+    upgrade: "Upgrade",
+  },
+  pricing: {
+    month: "month",
+    month1st: "1st month",
+    couponFirstMonth: "{rate} off for the First Month",
   },
 
   header: {
     navigation: {
       home: "Home",
+      community: "Community",
       pricing: "Pricing",
+      myCreations: "My Creations",
       dashboard: "Dashboard",
       login: "Login",
     },
@@ -42,17 +50,15 @@ export default {
 
   // Ghost face trend w your own picture😍💕 # ...
 
-
   footer: {
     brandDescription:
-      "Easy to create your own scream photo with Ghost Face AI.",
-    copyright: "© {year} Ghost Face AI All Rights Reserved.",
-    tools: {
-      title: "Tools",
-      ghostface: "Ghost Face AI",
+      "Fresh hair ideas and AI hairstyle try-on for you to find styles that suit you best!",
+    copyright: "© {year} OC Maker All Rights Reserved.",
+    popular: {
+      title: "Popular OC Makers",
     },
-    contact: {
-      title: "Contact",
+    more: {
+      title: "More OC Makers",
     },
     legal: {
       title: "Legal",
@@ -67,7 +73,7 @@ export default {
     login: {
       title: "Sign Up",
       titleBeforeCreate: "Sign up to continue",
-      description: "Start with {credits} credits on GhostFace AI",
+      description: "Start with {credits} credits on OC Maker",
       googleButton: "Continue with Google",
       termsText: "By signing up, you agree to the",
       termsLink: "Terms of Service",
@@ -76,8 +82,7 @@ export default {
     checkin: {
       title: "Daily Check-in",
       streak: {
-        title:
-          "Check in for 7 Consecutive Days and get {bonus} Bonus Credits",
+        title: "Check in for 7 Consecutive Days and get {bonus} Bonus Credits",
         description:
           "You've checked in for {days}, Daily bonus of {minCredits}-{maxCredits} credits",
       },
