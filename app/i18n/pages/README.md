@@ -61,25 +61,6 @@ function HomePage() {
 }
 ```
 
-#### Option 2: Using usePageLocale directly
-
-```typescript
-import { usePageLocale, useTranslate } from "~/i18n";
-
-function HomePage() {
-  const { pageLocale, loading } = usePageLocale("home");
-  const t = useTranslate(pageLocale);
-
-  if (loading) return <div>Loading...</div>;
-
-  return (
-    <div>
-      <h1>{t("hero.title")}</h1>
-    </div>
-  );
-}
-```
-
 #### Option 3: Using with server-loaded data
 
 ```typescript

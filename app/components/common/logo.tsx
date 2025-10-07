@@ -17,15 +17,15 @@ export const Logo = ({
   const sizeStyles = {
     sm: {
       box: "w-6 h-6",
-      text: "text-sm",
+      text: "text-sm mt-1",
     },
     base: {
       box: "w-8 h-8",
-      text: "text-lg",
+      text: "text-lg mt-1",
     },
     lg: {
       box: "w-10 h-10",
-      text: "text-xl",
+      text: "text-xl mt-1",
     },
   };
 
@@ -36,12 +36,12 @@ export const Logo = ({
     >
       <Image
         src="/assets/logo.webp"
-        alt="Ghost Face AI Logo"
+        alt="OC Maker Logo"
         className={clsx("object-contain", sizeStyles[iconSize ?? size].box)}
         proxy={false}
       />
-      <div translate="no" className={clsx("font-bold", sizeStyles[size].text)}>
-        <span className="text-primary">GhostFace</span> AI
+      <div translate="no" className={clsx("font-bold font-title", sizeStyles[size].text)}>
+        OC Maker
       </div>
     </div>
   );

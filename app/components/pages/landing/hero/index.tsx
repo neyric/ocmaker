@@ -37,12 +37,11 @@ export function HeroSection({
               loop: true,
             }}
             slides={[
-              "https://cdn.ghostfaceai.app/results/EUaHngXslCHgxJ-Q69Lsy.png",
-              "https://cdn.ghostfaceai.app/results/kKUgnxkh5pT0DUsSzo9xX.png",
-              "https://cdn.ghostfaceai.app/results/72hMjgNIhkgryldeharoR.png",
-              "https://cdn.ghostfaceai.app/results/-4XnZ5F-3DWtmG2McgqQv.png",
-              "https://cdn.ghostfaceai.app/results/L02R0uhKS31EAbG6_W4MD.png",
-              "https://cdn.ghostfaceai.app/results/eaRq4gh3JXz6VdiRn-N9O.png",
+              "https://cdn.ocmaker.app/example/disney-oc-generateds-2.webp",
+              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-1.webp",
+              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-2.webp",
+              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-3.webp",
+              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-4.webp",
             ]}
           />
         </div>

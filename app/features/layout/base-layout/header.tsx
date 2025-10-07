@@ -47,7 +47,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
   return (
     <Fragment>
       <header
-        className="absolute inset-x-0 top-0 z-10"
+        className="fixed bg-neutral text-neutral-content inset-x-0 top-0 z-10"
         data-scrolled={isScrolled}
       >
         <div className="container">

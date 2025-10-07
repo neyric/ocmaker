@@ -2,9 +2,6 @@ import type { ReactNode } from "react";
 import { useRootLoader } from "~/root";
 import { getTranslate } from "./utils";
 
-// Re-export page locale hooks
-export { usePageLocale, usePageTranslate } from "./hooks/usePageLocale";
-
 /**
  * Extended translation function type with chunk support for React components
  */
