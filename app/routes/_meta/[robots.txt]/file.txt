@@ -1,0 +1,14 @@
+User-Agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /dashboard/
+
+Sitemap: {DOMAIN}/sitemap.xml
+
+# For AI robots rule
+User-agent: GPTBot
+User-agent: Claude-Web
+User-agent: Anthropic-AI
+User-agent: PerplexityBot
+User-agent: GoogleOther
+User-agent: DuckAssistBot

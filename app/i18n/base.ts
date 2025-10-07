@@ -1,0 +1,164 @@
+export default {
+  common: {
+    dashboard: "Dashboard",
+    login: "Login",
+    cancel: "Cancel",
+    confirm: "Confirm",
+    loading: "Loading...",
+    error: "Error",
+    success: "Success",
+    close: "Close",
+    save: "Save",
+    delete: "Delete",
+    edit: "Edit",
+    view: "View",
+    download: "Download",
+    upload: "Upload",
+    search: "Search",
+    filter: "Filter",
+    sort: "Sort",
+    back: "Back",
+    next: "Next",
+    previous: "Previous",
+    yes: "Yes",
+    no: "No",
+    ok: "OK",
+    credits: "Credits",
+    free: "Free",
+  },
+
+  header: {
+    navigation: {
+      home: "Home",
+      pricing: "Pricing",
+      dashboard: "Dashboard",
+      login: "Login",
+    },
+    theme: {
+      light: "Light",
+      dark: "Dark",
+    },
+  },
+
+  // Ghost face trend w your own picture😍💕 # ...
+
+
+  footer: {
+    brandDescription:
+      "Easy to create your own scream photo with Ghost Face AI.",
+    copyright: "© {year} Ghost Face AI All Rights Reserved.",
+    tools: {
+      title: "Tools",
+      ghostface: "Ghost Face AI",
+    },
+    contact: {
+      title: "Contact",
+    },
+    legal: {
+      title: "Legal",
+      terms: "Terms of Service",
+      privacy: "Privacy Policy",
+      refund: "Refund Policy",
+      cookie: "Cookie Policy",
+    },
+  },
+
+  dialogs: {
+    login: {
+      title: "Sign Up",
+      titleBeforeCreate: "Sign up to continue",
+      description: "Start with {credits} credits on GhostFace AI",
+      googleButton: "Continue with Google",
+      termsText: "By signing up, you agree to the",
+      termsLink: "Terms of Service",
+      saveNote: "Your generation will be saved",
+    },
+    checkin: {
+      title: "Daily Check-in",
+      streak: {
+        title:
+          "Check in for 7 Consecutive Days and get {bonus} Bonus Credits",
+        description:
+          "You've checked in for {days}, Daily bonus of {minCredits}-{maxCredits} credits",
+      },
+      button: {
+        checkin: "Check In",
+        checking: "Checking In",
+        done: "Checked In",
+      },
+      status: {
+        loading: "Loading...",
+        day: "Day {day}",
+      },
+    },
+    invite: {
+      title: "Invite Your Friends",
+      description:
+        "Invite friends with your referral link and you'll both earn {credits} Credits!",
+      copyButton: "Copy Link",
+      copiedButton: "Copied",
+      history: {
+        title: "Referral History",
+        empty: "You haven't referred any friends yet!",
+        reward: "+{credits}",
+      },
+    },
+    upgrade: {
+      title: "Upgrade",
+      description: "Upgrade to get more credits",
+      billing: {
+        monthly: "per month",
+        annually: "Billed annually",
+        oneTime: "one-time payment",
+        save: "Save 20%",
+      },
+      button: {
+        upgrade: "Upgrade",
+      },
+      popular: "Most Popular",
+    },
+    taskbox: {
+      title: "GhostFace AI",
+      description: "Track your creations in progress",
+      empty: "No tasks in progress",
+      status: {
+        creating: "Creating your photo",
+        error: "Result URL not found",
+        failed: "Unknown error",
+      },
+    },
+  },
+
+  creditsMenu: {
+    title: "Credits Menu",
+    planTypes: {
+      free: "Free",
+      starter: "Starter",
+      pro: "Pro",
+      premium: "Premium",
+    },
+    expired: "Expires on: {date}",
+    balance: {
+      title: "Daily Credits",
+      label: "Credit Balance",
+    },
+    buttons: {
+      addMore: "Add More",
+      checkin: "Check-in",
+      checkedIn: "Checked In",
+    },
+  },
+
+  generator: {
+    fotoProfissional: {
+      form: {
+        title: "Choose the style",
+        description: "Choose your desired effect and continue",
+        button: {
+          cancel: "Cancel",
+          confirm: "Confirm Selection",
+        },
+      },
+    },
+  },
+};

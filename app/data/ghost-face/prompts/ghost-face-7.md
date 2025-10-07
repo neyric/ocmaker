@@ -1,0 +1,1 @@
+A creepy photo of me taking a mirror selfie in my bedroom. In the mirror’s reflection, Ghostface is standing right behind me, face glowing in dim light. High detail, realistic shadows, horror suspense movie look.

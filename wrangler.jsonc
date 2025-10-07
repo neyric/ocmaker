@@ -1,0 +1,66 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ghostface-ai",
+  "main": "./workers/app.ts",
+  "compatibility_date": "2025-04-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "upload_source_maps": true,
+  "routes": [
+    {
+      "pattern": "ghostfaceai.app",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.ghostfaceai.app",
+      "custom_domain": true
+    }
+  ],
+  "vars": {
+    "SITE_NAME": "Ghost Face AI",
+    "CDN_URL": "https://cdn.ghostfaceai.app",
+    "DOMAIN": "https://ghostfaceai.app/",
+    "GOOGLE_ANALYTICS_ID": "G-38JNW1HD1V",
+    "GOOGLE_ADS_ID": "",
+    "CLARITY_ID": "",
+    "GOOGLE_CLIENT_ID": "537465441969-ha886ssdka4h8at17cuoieq3hbnf4hj2.apps.googleusercontent.com",
+    "OPENAI_BASE_URL": "https://api.gptsapi.net/v1",
+    "INITLIZE_CREDITS": 1,
+    "CHECKIN_MIN_CREDITS": 1,
+    "CHECKIN_MAX_CREDITS": 2,
+    "CHECKIN_STREAK_BONUS": 5,
+    "INVITE_REWARD_CREDITS": 3
+  },
+  "observability": {
+    "enabled": true
+  },
+  /**
+   * Bindings
+   * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
+   * databases, object storage, AI inference, real-time communication and more.
+   * https://developers.cloudflare.com/workers/runtime-apis/bindings/
+   */
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "66683dc58bdf4eaaa0448f502e53200e"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "ghostface-ai"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ghostface-ai",
+      "database_id": "72322557-c665-44f2-b059-5da9c05c28d3",
+      "migrations_dir": "./app/drizzle/migrations"
+    }
+  ]
+}

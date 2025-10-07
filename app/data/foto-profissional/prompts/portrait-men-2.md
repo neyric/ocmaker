@@ -1,0 +1,3 @@
+Create a moody portrait with dramatic studio lighting. The subject should be positioned slightly off-center in front of a large, soft circle of golden spotlights against a deep navy background. Use soft shadows and a cinematic feel. 
+
+The subject should wear a plain black t-shirt with flawless brown skin. The light should fall from the upper left corner, casting a clean shadow to the right. Maintain a 4:3 aspect ratio and keep the camera angle and distance consistent with classic editorial portraits.
