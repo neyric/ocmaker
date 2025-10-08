@@ -4,8 +4,8 @@ import { Ring2 } from "ldrs/react";
 import { Check, ChevronLeft, ChevronRight, Coins } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { Pricing, PricingType } from "~/.server/constants/pricing";
-import { Link } from "~/components/common";
 import { GridSection } from "~/components/ui/grid-section";
+import { useTranslate } from "~/i18n";
 
 interface PricingSectionProps {
   pricingType: PricingType;
@@ -20,6 +20,8 @@ export function PricingSection({
   loadingPricingId,
   onBuy,
 }: PricingSectionProps) {
+  const t = useTranslate();
+
   const [annually, setAnnually] = useState(false);
   const [current, setCurrent] = useState(0);
 
@@ -33,7 +35,7 @@ export function PricingSection({
         {/* Pricing Cards */}
         <div
           className={clsx(
-            "grid grid-cols-1 lg:grid-cols-3 data-[count=2]:lg:grid-cols-2 relative",
+            "grid grid-cols-1 lg:grid-cols-3 data-[count=2]:lg:grid-cols-2 relative"
           )}
           data-count={pricings.length}
           style={{ "--current": current } as React.CSSProperties}
@@ -69,7 +71,7 @@ export function PricingSection({
               <div
                 className={clsx(
                   "w-full relative lg:border-r border-grid-border last-of-type:border-r-0",
-                  "hidden lg:block data-[current=true]:block",
+                  "hidden lg:block data-[current=true]:block"
                 )}
                 data-type={pricing.type}
                 key={pricing.id}
@@ -78,7 +80,7 @@ export function PricingSection({
                 {pricing.popular && (
                   <div
                     className={clsx(
-                      "absolute bg-gradient-to-b from-primary/10 to-transparent inset-x-0 top-0 h-40 pointer-events-none",
+                      "absolute bg-gradient-to-b from-primary/10 to-transparent inset-x-0 top-0 h-40 pointer-events-none"
                     )}
                   />
                 )}
@@ -88,7 +90,7 @@ export function PricingSection({
                       <h3 className="text-xl font-semibold">{pricing.title}</h3>
                       {pricing.popular && (
                         <div className="badge badge-primary badge-xs py-2.5 rounded-full uppercase">
-                          Most Popular
+                          {t("pricing.common.mostPopular")}
                         </div>
                       )}
                     </div>
@@ -96,11 +98,11 @@ export function PricingSection({
                       <span>US{currency(price).format()} </span>
                       <span className="text-base font-medium opacity-50">
                         {pricing.type === "subscription"
-                          ? "per month"
-                          : "one time"}
+                          ? t("pricing.common.monthPer")
+                          : t("pricing.common.oneTime")}
                       </span>
                     </p>
-                    {/* {pricing.type === "subscription" && (
+                    {pricing.type === "subscription" && (
                       <div className="mt-4 mb-2">
                         <label className="label flex items-center gap-2 text-base-content">
                           <input
@@ -109,15 +111,15 @@ export function PricingSection({
                             onChange={() => setAnnually((state) => !state)}
                             className="toggle toggle-sm"
                           />
-                          <div>Billed annually</div>
+                          <div>{t("pricing.common.billedAnnually")}</div>
                           {annually && (
                             <div className="badge badge-sm rounded-full border-grid-border badge-outline font-medium">
-                              Save 20%
+                              {t("pricing.common.save", { rate: 20 })}
                             </div>
                           )}
                         </label>
                       </div>
-                    )} */}
+                    )}
                     <p className="text-sm opacity-70 mt-2 mb-4">
                       {pricing.description}
                     </p>
@@ -139,14 +141,14 @@ export function PricingSection({
                             pricing.id,
                             pricing.type === "subscription" && annually
                               ? pricing.annuallyProductId
-                              : pricing.productId,
+                              : pricing.productId
                           )
                         }
                       >
                         {loadingPricingId === pricing.id && <Ring2 size={16} />}
                         {pricing.type === "credits"
-                          ? "Buy Now"
-                          : "Upgrade"}
+                          ? t("pricing.common.buyNow")
+                          : t("pricing.common.upgrade")}
                       </button>
 
                       <button
@@ -165,8 +167,8 @@ export function PricingSection({
                         <span className="text-base">{credits} credits </span>
                         <span className="opacity-60 text-sm">
                           {pricing.type === "subscription"
-                            ? "/month"
-                            : "/one time"}
+                            ? "/" + t("pricing.common.month")
+                            : "/" + t("pricing.common.oneTime")}
                         </span>
                       </p>
                     </div>

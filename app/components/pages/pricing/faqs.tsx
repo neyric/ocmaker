@@ -9,14 +9,12 @@ interface FAQ {
 interface PricingFAQsSectionProps {
   title: string;
   description: string;
-  supportEmail: string;
   faqs: FAQ[];
 }
 
 export function PricingFAQsSection({
   title,
   description,
-  supportEmail,
   faqs,
 }: PricingFAQsSectionProps) {
   return (
@@ -29,10 +27,7 @@ export function PricingFAQsSection({
             {title}
           </h2>
           <p className="text-pretty text-sm text-base-content/70 sm:text-base max-w-screen-md animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
-            {description}{" "}
-            <Link className="underline" to={`mailto:${supportEmail}`}>
-              {supportEmail}
-            </Link>
+            {description}
           </p>
         </div>
 

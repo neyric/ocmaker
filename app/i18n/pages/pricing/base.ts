@@ -8,62 +8,7 @@ export default {
     hero: {
       title: "Pricing",
       description:
-        "Bring your imagination to life with our AI-powered oc maker, create unique original characters from scratch.",
-    },
-    pricing: {
-      starter: {
-        title: "Starter",
-        description: "For fun & AI enthusiasts",
-        details: [
-          "12,000 Credits given monthly",
-          "Up to 400 images generations",
-          "Unlimited of characters save",
-          "Download images without watermark",
-          "Private image generator & private OCs",
-        ],
-      },
-      plus: {
-        title: "Plus",
-        description: "For fun & AI enthusiasts",
-        details: [
-          "36,000 Credits given monthly",
-          "Up to 1,200 images generations",
-          "Unlimited of characters save",
-          "Download images without watermark",
-          "Private image generator & private OCs",
-          "Early access to new features",
-        ],
-      },
-      premium: {
-        title: "Premium",
-        description: "For fun & AI enthusiasts",
-        details: [
-          "120,000 Credits given monthly",
-          "Up to 4,000 images generations",
-          "Unlimited of characters save",
-          "Download images without watermark",
-          "Private image generator & private OCs",
-          "Early access to new features",
-        ],
-      },
-      smallCredit: {
-        title: "Small Credits Bundle",
-        description: "One-time purchase",
-        details: [
-          "Starter: +2,000 bonus credits",
-          "Plus: +8,000 bonus credits",
-          "Premium: +20,000 bonus credits",
-        ],
-      },
-      largeCredit: {
-        title: "Large Credits Bundle",
-        description: "One-time purchase",
-        details: [
-          "Starter: +4,000 bonus credits",
-          "Plus: +16,000 bonus credits",
-          "Premium: +40,000 bonus credits",
-        ],
-      },
+        "Bring your imagination to life with our AI-powered oc maker, create unique original characters from scratch",
     },
     faqs: {
       title: "Frequently Asked Questions",

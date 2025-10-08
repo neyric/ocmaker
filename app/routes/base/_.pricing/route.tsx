@@ -1,5 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { Fragment, useState } from "react";
+import type { PricingType } from "~/.server/constants/pricing";
+import { getI18nConetxt } from "~/.server/middleware/i18n-middleware";
 import { createOrder } from "~/api/order";
 import {
   HeroSection,
@@ -7,13 +9,12 @@ import {
   PricingSection,
 } from "~/components/pages/pricing";
 import { useUserProfile } from "~/contexts/user-profile";
+import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
 import { useDialogStore } from "~/store/dialog";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
 import type { Route } from "./+types/route";
-import { type PricingType, products } from "./config";
-import { faqs } from "./content";
 
-export function meta({ matches }: Route.MetaArgs) {
+export function meta({ matches, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical("/pricing", matches[0].loaderData.DOMAIN);
   const alternative = createNormalAlternatives(
     "/pricing",
@@ -21,23 +22,33 @@ export function meta({ matches }: Route.MetaArgs) {
   );
 
   return [
-    { title: "Pricing - Choose Your Plan for GhostFace AI" },
+    { title: loaderData.meta.title },
     {
       name: "description",
-      content:
-        "Select from the best plans, ensuring a perfect fit. Need more or less? Customize your subscription for the perfect match!",
+      content: loaderData.meta.description,
     },
     canonical,
     ...alternative,
   ];
 }
 
-export async function loader(_: Route.LoaderArgs) {
-  return { products };
+export async function loader({ context }: Route.LoaderArgs) {
+  const i18n = getI18nConetxt(context);
+  const page = await getPageLocale(i18n.lang, "pricing");
+  const t = getTranslate(page);
+
+  const meta = {
+    title: t("meta.title"),
+    description: t("meta.description"),
+  };
+
+  return { meta, page };
 }
 
-export default function Pricing({ loaderData }: Route.ComponentProps) {
-  const { products } = loaderData;
+export default function Page({ matches, loaderData }: Route.ComponentProps) {
+  const ct = useTranslate(loaderData.page);
+
+  const products = matches[0].loaderData.pricing;
   const { user } = useUserProfile();
   const setVisibleLoginDialog = useDialogStore(
     (state) => state.setVisibleLoginDialog
@@ -71,11 +82,12 @@ export default function Pricing({ loaderData }: Route.ComponentProps) {
     { value: "credits", label: "Credit Pack" },
   ];
 
+  const faqs = loaderData.page.contents.faqs.list;
   return (
     <Fragment>
       <HeroSection
-        title="Flexible Plans That Grow With You"
-        description="Start for free, no credit card required. Upgrade when you need a plan that fits your needs."
+        title={ct("contents.hero.title")}
+        description={ct("contents.hero.description")}
         productType={pricingType}
         onProductTypeChange={(value) =>
           setPricingType(value as typeof pricingType)
@@ -91,9 +103,8 @@ export default function Pricing({ loaderData }: Route.ComponentProps) {
       />
 
       <PricingFAQsSection
-        title="Frequently Asked Questions"
-        description="Have another question? Contact us at"
-        supportEmail="support@ghostfaceai.app"
+        title={ct("contents.faqs.title")}
+        description={ct("contents.faqs.description")}
         faqs={faqs}
       />
     </Fragment>

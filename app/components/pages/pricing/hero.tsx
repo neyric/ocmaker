@@ -19,7 +19,7 @@ export function HeroSection({
   children,
 }: PropsWithChildren<PricingHeroSectionProps>) {
   return (
-    <GridSection borderX={false} borderY={false} className="border-b pt-12">
+    <GridSection borderX={false} borderY={false} className="border-b pt-20">
       <div className="pointer-events-none absolute inset-0 sm:border-x border-grid-border [mask-image:linear-gradient(transparent,black)]"></div>
       <div className="pointer-events-none absolute inset-y-0 left-1/2 w-[1800px] -translate-x-1/2 [mask-composite:intersect] [mask-image:linear-gradient(transparent,black)] opacity-100">
         <div className="absolute inset-x-[300px] inset-y-0">

@@ -18,7 +18,6 @@ import {
   Steps,
   WhyImgVidSection,
 } from "~/components/pages/landing";
-import { ghostFaceList } from "~/data/ghost-face";
 
 import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
@@ -58,14 +57,12 @@ export async function loader({ context }: Route.LoaderArgs) {
   const page = await getPageLocale(i18n.lang, "home");
   const t = getTranslate(page);
 
-  const list = ghostFaceList.map(({ prompt: _, ...item }) => item);
-
   const meta = {
     title: t("meta.title"),
     description: t("meta.description"),
   };
 
-  return { meta, list, page };
+  return { meta, page };
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {

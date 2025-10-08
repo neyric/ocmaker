@@ -25,12 +25,76 @@ export default {
     ok: "OK",
     credits: "Credits",
     free: "Free",
-    upgrade: "Upgrade",
   },
   pricing: {
-    month: "month",
-    month1st: "1st month",
-    couponFirstMonth: "{rate} off for the First Month",
+    common: {
+      month: "month",
+      month1st: "1st month",
+      monthPer: "per month",
+      oneTime: "one time",
+      mostPopular: "Most Popular",
+      couponFirstMonth: "{rate}% off for the First Month",
+      billedAnnually: "Billed Annually",
+      save: "Save {rate}%",
+      upgrade: "Upgrade",
+      buyNow: "Buy Now",
+      subscription: "Subscription",
+      creditPack: "Credit Pack",
+    },
+
+    starter: {
+      title: "Starter",
+      description: "For fun & AI enthusiasts",
+      details: [
+        "12,000 Credits given monthly",
+        "Up to 400 images generations",
+        "Unlimited of characters save",
+        "Download images without watermark",
+        "Private image generator & private OCs",
+      ],
+    },
+    plus: {
+      title: "Plus",
+      description: "For fun & AI enthusiasts",
+      details: [
+        "36,000 Credits given monthly",
+        "Up to 1,200 images generations",
+        "Unlimited of characters save",
+        "Download images without watermark",
+        "Private image generator & private OCs",
+        "Early access to new features",
+      ],
+    },
+    premium: {
+      title: "Premium",
+      description: "For fun & AI enthusiasts",
+      details: [
+        "120,000 Credits given monthly",
+        "Up to 4,000 images generations",
+        "Unlimited of characters save",
+        "Download images without watermark",
+        "Private image generator & private OCs",
+        "Early access to new features",
+      ],
+    },
+    smallCredit: {
+      title: "Small Credits Bundle",
+      description: "One-time purchase",
+      details: [
+        "Starter: +2,000 bonus credits",
+        "Plus: +8,000 bonus credits",
+        "Premium: +20,000 bonus credits",
+      ],
+    },
+    largeCredit: {
+      title: "Large Credits Bundle",
+      description: "One-time purchase",
+      details: [
+        "Starter: +4,000 bonus credits",
+        "Plus: +16,000 bonus credits",
+        "Premium: +40,000 bonus credits",
+      ],
+    },
   },
 
   header: {
@@ -47,8 +111,6 @@ export default {
       dark: "Dark",
     },
   },
-
-  // Ghost face trend w your own picture😍💕 # ...
 
   footer: {
     brandDescription:

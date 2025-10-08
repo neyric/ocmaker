@@ -19,6 +19,10 @@ import "@fontsource-variable/josefin-sans";
 import "@fontsource-variable/inter";
 import "ldrs/react/Ring2.css";
 
+import type { Pricing } from "~/.server/constants/pricing";
+import { PRODUCT_ITEMS } from "~/.server/constants/product";
+import { getTranslate } from "~/i18n";
+
 import {
   getI18nConetxt,
   i18nMiddleware,
@@ -36,6 +40,7 @@ export const links: Route.LinksFunction = () => [
 
 export const loader = async ({ request, context }: Route.LoaderArgs) => {
   const i18n = getI18nConetxt(context);
+  const t = getTranslate(i18n.locale);
 
   const authContext = getSessionContext(context);
   const theme = authContext?.theme ?? "light";
@@ -44,8 +49,73 @@ export const loader = async ({ request, context }: Route.LoaderArgs) => {
   const detail = await getUserInfoAndCredits(user);
   const { user_info, credits, subscription } = detail;
 
+  const pricing: Record<"subscription" | "credits", Pricing[]> = {
+    subscription: [
+      {
+        id: "starter",
+        productId: PRODUCT_ITEMS.STARTER_PLAN_MONTHLY.product_id,
+        annuallyProductId: PRODUCT_ITEMS.STARTER_PLAN_ANNUAL.product_id,
+        title: t("pricing.starter.title"),
+        description: t("pricing.starter.description"),
+        price: PRODUCT_ITEMS.STARTER_PLAN_MONTHLY.price,
+        annually: PRODUCT_ITEMS.STARTER_PLAN_ANNUAL.price,
+        credits: PRODUCT_ITEMS.STARTER_PLAN_MONTHLY.credits,
+        type: "subscription",
+        benefits: i18n.locale.pricing.starter.details,
+      },
+      {
+        popular: true,
+        id: "plus",
+        productId: PRODUCT_ITEMS.PLUS_PLAN_MONTHLY.product_id,
+        annuallyProductId: PRODUCT_ITEMS.PLUS_PLAN_ANNUAL.product_id,
+        title: t("pricing.plus.title"),
+        description: t("pricing.plus.description"),
+        price: PRODUCT_ITEMS.PLUS_PLAN_MONTHLY.price,
+        annually: PRODUCT_ITEMS.PLUS_PLAN_ANNUAL.price,
+        credits: PRODUCT_ITEMS.STARTER_PLAN_MONTHLY.credits,
+        type: "subscription",
+        benefits: i18n.locale.pricing.plus.details,
+      },
+      {
+        id: "premium",
+        productId: PRODUCT_ITEMS.PREMIUM_PLAN_MONTHLY.product_id,
+        annuallyProductId: PRODUCT_ITEMS.PREMIUM_PLAN_ANNUAL.product_id,
+        title: t("pricing.premium.title"),
+        description: t("pricing.premium.description"),
+        price: PRODUCT_ITEMS.PREMIUM_PLAN_MONTHLY.price,
+        annually: PRODUCT_ITEMS.PREMIUM_PLAN_ANNUAL.price,
+        credits: PRODUCT_ITEMS.PREMIUM_PLAN_MONTHLY.credits,
+        type: "subscription",
+        benefits: i18n.locale.pricing.premium.details,
+      },
+    ],
+    credits: [
+      {
+        id: "small_credits",
+        productId: PRODUCT_ITEMS.SMALL_CREDITS_BUNDLE.product_id,
+        title: t("pricing.smallCredit.title"),
+        description: t("pricing.smallCredit.description"),
+        type: "credits",
+        price: PRODUCT_ITEMS.SMALL_CREDITS_BUNDLE.price,
+        credits: PRODUCT_ITEMS.SMALL_CREDITS_BUNDLE.credits,
+        benefits: i18n.locale.pricing.smallCredit.details,
+      },
+      {
+        id: "large_credits",
+        productId: PRODUCT_ITEMS.LARGE_CREDITS_BUNDLE.product_id,
+        title: t("pricing.largeCredit.title"),
+        description: t("pricing.largeCredit.description"),
+        type: "credits",
+        price: PRODUCT_ITEMS.LARGE_CREDITS_BUNDLE.price,
+        credits: PRODUCT_ITEMS.LARGE_CREDITS_BUNDLE.credits,
+        benefits: i18n.locale.pricing.largeCredit.details,
+      },
+    ],
+  };
+
   return data({
     i18n,
+    pricing,
     user: {
       profile: user_info,
       credits,

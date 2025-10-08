@@ -48,7 +48,7 @@
       "binding": "DB",
       "database_name": "oc-maker",
       "database_id": "bd4f2a88-bb2b-4723-ad78-09c135923b3f",
-      "migrations_dir": "./app/.server/drizzle/migrations"
+      "migrations_dir": "./app/drizzle/migrations"
     }
   ],
   "kv_namespaces": [
