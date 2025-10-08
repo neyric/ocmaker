@@ -6,7 +6,7 @@ import {
   Smile,
   SwatchBook,
 } from "lucide-react";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { getI18nConetxt } from "~/.server/middleware/i18n-middleware";
 import { SegmentedControl } from "~/components/common";
 import {
@@ -17,6 +17,7 @@ import {
   Steps,
   WhyImgVidSection,
 } from "~/components/pages/maker";
+import { AvatarGenerator } from "~/features/generator/avatar-generator";
 import { ProfileGenerator } from "~/features/generator/profile-generator";
 import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
@@ -66,6 +67,7 @@ export async function loader({ context }: Route.LoaderArgs) {
 
 export default function Home({ loaderData }: Route.ComponentProps) {
   const ct = useTranslate(loaderData.page);
+  const [state, setState] = useState("backstory");
 
   const steps = [
     {
@@ -148,13 +150,22 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       >
         <div className="flex items-center justify-center mb-8">
           <SegmentedControl
+            value={state}
+            onChange={setState}
             options={[
               { label: "Backstory Generator", value: "backstory" },
               { label: "OC Avatar Maker", value: "avatar" },
             ]}
           />
         </div>
-        <ProfileGenerator />
+        <ProfileGenerator
+          className="aria-hidden:hidden"
+          aria-hidden={state !== "backstory"}
+        />
+        <AvatarGenerator
+          className="aria-hidden:hidden"
+          aria-hidden={state !== "avatar"}
+        />
       </HeroSection>
 
       <Steps
@@ -175,8 +186,6 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         features={features}
       />
 
-    
-
       <FAQsSection
         title={ct("contents.faqs.title")}
         description={ct("contents.faqs.description")}
@@ -187,7 +196,6 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         description={ct("contents.cta.description")}
         buttons={ctaButtons}
       />
-     
     </Fragment>
   );
 }
