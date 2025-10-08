@@ -1,17 +1,19 @@
 import clsx from "clsx";
-import {
-  type ProfileGeneratorExample,
-  profileGeneratorExamples,
-} from "~/data/profile-generator";
+
+interface Example {
+  title: string;
+  description: string;
+  prompt: string;
+}
 
 interface ProfileGeneratorExamplesProps extends React.ComponentProps<"div"> {
-  onChoose: (example: ProfileGeneratorExample) => void;
-  examples?: ProfileGeneratorExample[];
+  onChoose: (example: Example) => void;
+  examples: Example[];
 }
 
 export function ProfileGeneratorExamples({
   onChoose,
-  examples = profileGeneratorExamples,
+  examples,
   className,
   ...props
 }: ProfileGeneratorExamplesProps) {
@@ -26,9 +28,9 @@ export function ProfileGeneratorExamples({
         </p>
       </div>
       <div className="grid gap-3 grid-cols-2">
-        {examples.map((example) => (
+        {examples.map((example, index) => (
           <button
-            key={example.id}
+            key={index}
             type="button"
             className="group flex h-full flex-col gap-2 rounded-lg border border-grid-border cursor-pointer bg-base-100 p-4 text-left transition hover:border-primary/60 hover:shadow-sm"
             onClick={() => onChoose(example)}

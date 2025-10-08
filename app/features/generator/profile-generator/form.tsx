@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import type { ProfileGeneratorFormValues } from "~/schema/generator/profile-generator";
+import type { ProfileGeneratorDTO } from "~/schema/generator";
 import type { ProfileGeneratorFormMethod } from "./use-form";
 
 interface ProfileGeneratorFormProps extends React.ComponentProps<"div"> {
   form: ProfileGeneratorFormMethod;
-  onGenerate: (values: ProfileGeneratorFormValues) => void;
+  onGenerate: (values: ProfileGeneratorDTO) => void;
   isGenerating?: boolean;
 }
 

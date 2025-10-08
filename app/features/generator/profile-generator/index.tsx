@@ -5,19 +5,35 @@ import { toast } from "sonner";
 import { generatePrompt } from "~/api/generator/prompt";
 import type { ProfileGeneratorExample } from "~/data/profile-generator";
 import type { GeneratePromptResult } from "~/routes/_api/basic/_ai.generate.prompt/route";
-import type { ProfileGeneratorFormValues } from "~/schema/generator/profile-generator";
+import type { ProfileGeneratorDTO } from "~/schema/generator";
 import { ProfileGeneratorExamples } from "./examples";
 import { ProfileGeneratorForm } from "./form";
 import { ProfileGeneratorPreview } from "./preview";
 import { useProfileGeneratorForm } from "./use-form";
 
-export interface ProfileGeneratorProps extends React.ComponentProps<"div"> {}
+interface Example {
+  title: string;
+  description: string;
+  prompt: string;
+}
+export interface ProfileGeneratorProps extends React.ComponentProps<"div"> {
+  genId: string;
+  examples: Array<Example>;
+}
 
 export function ProfileGenerator({
+  genId,
+  examples,
   className,
   ...props
 }: ProfileGeneratorProps) {
-  const form = useProfileGeneratorForm();
+  const defaultPrompt = examples?.[0]?.prompt ?? "";
+  const examplesList = examples?.slice(1, 5) ?? [];
+
+  const form = useProfileGeneratorForm({
+    id: genId,
+    prompt: defaultPrompt,
+  });
   const [preview, setPreview] = useState<GeneratePromptResult | null>(null);
 
   const mutation = useMutation({
@@ -30,11 +46,11 @@ export function ProfileGenerator({
     },
   });
 
-  const handleGenerate = (values: ProfileGeneratorFormValues) => {
+  const handleGenerate = (values: ProfileGeneratorDTO) => {
     mutation.mutate({ type: "text", input: values.prompt });
   };
 
-  const handleSelectExample = (example: ProfileGeneratorExample) => {
+  const handleSelectExample = (example: Example) => {
     form.clearErrors("prompt");
     form.setValue("prompt", example.prompt, {
       shouldDirty: true,
@@ -59,6 +75,7 @@ export function ProfileGenerator({
       />
       <ProfileGeneratorExamples
         className="flex-1 min-w-0 w-full"
+        examples={examplesList}
         onChoose={handleSelectExample}
       />
       {/* <ProfileGeneratorPreview

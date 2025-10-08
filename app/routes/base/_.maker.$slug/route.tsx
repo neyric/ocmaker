@@ -62,7 +62,36 @@ export async function loader({ context }: Route.LoaderArgs) {
     description: t("meta.description"),
   };
 
-  return { meta, page };
+  const genId = "";
+  const examples: Array<{
+    title: string;
+    description: string;
+    prompt: string;
+  }> = [
+    { title: "Test 1", description: "Test 1 Prompt", prompt: "Test 1 Prompt" },
+    { title: "Test 2", description: "Test 2 Prompt", prompt: "Test 2 Prompt" },
+    { title: "Test 3", description: "Test 3 Prompt", prompt: "Test 3 Prompt" },
+    { title: "Test 4", description: "Test 4 Prompt", prompt: "Test 4 Prompt" },
+    { title: "Test 5", description: "Test 5 Prompt", prompt: "Test 5 Prompt" },
+  ];
+
+  const options: Array<{
+    title: string;
+    key: string;
+    data: Array<{ label: string; value: string }>;
+  }> = [
+    {
+      title: "Gender",
+      key: "gender",
+      data: [
+        { label: "Boy", value: "1boy" },
+        { label: "Girl", value: "1girl" },
+        { label: "Other", value: "" },
+      ],
+    },
+  ];
+
+  return { meta, page, genId, examples, options };
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
@@ -141,10 +170,10 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     },
   ];
 
-  // Note: FotoProfissionalGenerator handles its own task generation internally
   return (
     <Fragment>
       <HeroSection
+        key={loaderData.genId}
         title="AOT OC Maker"
         description="Generate your own Attack on Titan OC with AI. Create characters, backstories, and visuals in the iconic AOT style"
       >
@@ -161,10 +190,14 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         <ProfileGenerator
           className="aria-hidden:hidden"
           aria-hidden={state !== "backstory"}
+          genId={loaderData.genId}
+          examples={loaderData.examples}
         />
         <AvatarGenerator
           className="aria-hidden:hidden"
           aria-hidden={state !== "avatar"}
+          genId={loaderData.genId}
+          options={loaderData.options}
         />
       </HeroSection>
 

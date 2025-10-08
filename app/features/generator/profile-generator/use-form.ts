@@ -1,19 +1,22 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import {
-  profileGeneratorSchema,
-  type ProfileGeneratorFormValues,
-} from "~/schema/generator/profile-generator";
+import { profileSchema } from "~/schema/generator";
 
 export type ProfileGeneratorFormMethod = ReturnType<
   typeof useProfileGeneratorForm
 >;
 
-export function useProfileGeneratorForm() {
-  const form = useForm<ProfileGeneratorFormValues>({
-    resolver: zodResolver(profileGeneratorSchema),
+interface UseProfileGeneratorOption {
+  id: string;
+  prompt: string;
+}
+
+export function useProfileGeneratorForm(options: UseProfileGeneratorOption) {
+  const form = useForm({
+    resolver: zodResolver(profileSchema),
     defaultValues: {
-      prompt: "",
+      id: options.id,
+      prompt: options.prompt,
     },
   });
 

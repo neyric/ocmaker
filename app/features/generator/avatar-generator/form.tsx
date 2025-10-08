@@ -1,18 +1,19 @@
 import clsx from "clsx";
 import { PartyPopper, WandSparkles } from "lucide-react";
-import { ZapFill } from "~/components/icons";
+import { useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "~/components/ui/dropdown-menu";
-
-import type { ProfileGeneratorFormValues } from "~/schema/generator/profile-generator";
+import type { AvatarGeneratorDTO } from "~/schema/generator";
+import { type Option } from "./index";
 import type { ProfileGeneratorFormMethod } from "./use-form";
 
 interface ProfileGeneratorFormProps extends React.ComponentProps<"div"> {
   form: ProfileGeneratorFormMethod;
-  onGenerate: (values: ProfileGeneratorFormValues) => void;
+  options: Option[];
+  onGenerate: (values: AvatarGeneratorDTO) => void;
   isGenerating?: boolean;
 }
 
@@ -21,8 +22,50 @@ export function ProfileGeneratorForm({
   onGenerate,
   isGenerating = false,
   className,
+  options,
   ...props
 }: ProfileGeneratorFormProps) {
+  const aiOptimize = form.watch("aiOptimize");
+
+  const hanldeOptionClick = (option: Option, value: string) => {
+    const { options, prompt } = form.getValues();
+    const prevValue = options[option.key] || null;
+    const prompts = prompt
+      ? prompt
+          .split(",")
+          .map((value) => value.trim())
+          .filter(Boolean)
+      : [];
+
+    if (!prevValue) {
+      if (!value) return;
+      options[option.key] = value;
+      prompts.push(value, "");
+      form.setValue("options", options);
+      form.setValue("prompt", prompts.join(", "));
+    } else {
+      if (!value) {
+        options[option.key] = "";
+        form.setValue("options", options);
+
+        const newPrompts = prompts.filter((prompt) => prompt !== prevValue);
+        if (newPrompts.length === prompts.length) {
+          return;
+        } else {
+          newPrompts.push("");
+          form.setValue("prompt", newPrompts.join(", "));
+        }
+      } else {
+        options[option.key] = value;
+        const newPrompts = prompts.filter((prompt) => prompt !== prevValue);
+        newPrompts.push(value, "");
+
+        form.setValue("options", options);
+        form.setValue("prompt", newPrompts.join(", "));
+      }
+    }
+  };
+
   return (
     <div
       className={clsx(
@@ -68,7 +111,8 @@ export function ProfileGeneratorForm({
                 <input
                   id="ai-optimize"
                   type="checkbox"
-                  // checked="checked"
+                  checked={aiOptimize}
+                  onChange={() => form.setValue("aiOptimize", !aiOptimize)}
                   className="toggle toggle-sm checked:border-primary checked:bg-primary checked:text-primary-content"
                 />
               </div>
@@ -76,36 +120,13 @@ export function ProfileGeneratorForm({
           </div>
 
           <div className="mb-4">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="btn btn-sm btn-primary btn-dash">
-                  Gender
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent
-                align="start"
-                sideOffset={6}
-                className="w-full max-w-88"
-              >
-                <div className="flex flex-wrap gap-3">
-                  <button className="btn btn-outline btn-primary btn-sm">
-                    Outline
-                  </button>
-                  <button className="btn btn-outline btn-primary btn-sm">
-                    Outline
-                  </button>
-                  <button className="btn btn-outline btn-primary btn-sm">
-                    Outline
-                  </button>
-                  <button className="btn btn-outline btn-primary btn-sm">
-                    Outline
-                  </button>
-                  <button className="btn btn-outline btn-primary btn-sm">
-                    Outline
-                  </button>
-                </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            {options.map((option) => (
+              <OptionItem
+                item={option}
+                key={option.key}
+                onClick={(value) => hanldeOptionClick(option, value)}
+              />
+            ))}
           </div>
         </div>
 
@@ -121,5 +142,40 @@ export function ProfileGeneratorForm({
         </button>
       </form>
     </div>
+  );
+}
+
+interface OptionItemProps {
+  item: Option;
+  onClick: (value: string) => void;
+}
+function OptionItem({ item, onClick }: OptionItemProps) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <DropdownMenu open={open} onOpenChange={setOpen}>
+      <DropdownMenuTrigger asChild>
+        <button className="btn btn-sm btn-primary btn-dash">
+          {item.title}
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent
+        align="start"
+        sideOffset={6}
+        className="w-full max-w-88"
+      >
+        <div className="flex flex-wrap gap-2">
+          {item.data.map((data, index) => (
+            <button
+              key={`${item.key}__${index}`}
+              className="btn btn-outline btn-primary btn-sm h-6.5 px-4"
+              onClick={() => onClick(data.value)}
+            >
+              {data.label}
+            </button>
+          ))}
+        </div>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

@@ -5,18 +5,29 @@ import { toast } from "sonner";
 import { generatePrompt } from "~/api/generator/prompt";
 import type { ProfileGeneratorExample } from "~/data/profile-generator";
 import type { GeneratePromptResult } from "~/routes/_api/basic/_ai.generate.prompt/route";
-import type { ProfileGeneratorFormValues } from "~/schema/generator/profile-generator";
+import type { AvatarGeneratorDTO } from "~/schema/generator";
 import { ProfileGeneratorForm } from "./form";
 import { ProfileGeneratorPreview } from "./preview";
 import { useProfileGeneratorForm } from "./use-form";
 
-export interface AvatarGeneratorProps extends React.ComponentProps<"div"> {}
+export interface Option {
+  key: string;
+  title: string;
+  data: Array<{ label: string; value: string }>;
+}
+
+export interface AvatarGeneratorProps extends React.ComponentProps<"div"> {
+  genId: string;
+  options: Array<Option>;
+}
 
 export function AvatarGenerator({
   className,
+  genId,
+  options,
   ...props
 }: AvatarGeneratorProps) {
-  const form = useProfileGeneratorForm();
+  const form = useProfileGeneratorForm({ id: genId });
   const [preview, setPreview] = useState<GeneratePromptResult | null>(null);
 
   const mutation = useMutation({
@@ -29,7 +40,7 @@ export function AvatarGenerator({
     },
   });
 
-  const handleGenerate = (values: ProfileGeneratorFormValues) => {
+  const handleGenerate = (values: AvatarGeneratorDTO) => {
     mutation.mutate({ type: "text", input: values.prompt });
   };
 
@@ -53,6 +64,7 @@ export function AvatarGenerator({
       <ProfileGeneratorForm
         className="flex-1 min-w-0 w-full"
         form={form}
+        options={options}
         onGenerate={handleGenerate}
         isGenerating={mutation.isPending}
       />
@@ -60,7 +72,6 @@ export function AvatarGenerator({
         className="flex-1 min-w-0 w-full"
         onChoose={handleSelectExample}
       />
-     
     </div>
   );
 }
