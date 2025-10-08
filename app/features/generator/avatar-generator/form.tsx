@@ -57,8 +57,13 @@ export function ProfileGeneratorForm({
         }
       } else {
         options[option.key] = value;
-        const newPrompts = prompts.filter((prompt) => prompt !== prevValue);
-        newPrompts.push(value, "");
+        let newPrompts = Array.from(prompts);
+        const oldIndex = newPrompts.findIndex((prompt) => prompt === prevValue);
+        if (oldIndex !== -1) {
+          newPrompts[oldIndex] = value;
+        } else {
+          newPrompts.push(value, "");
+        }
 
         form.setValue("options", options);
         form.setValue("prompt", newPrompts.join(", "));
