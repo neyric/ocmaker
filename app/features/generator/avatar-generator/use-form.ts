@@ -1,8 +1,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import {
-  profileGeneratorSchema,
   type ProfileGeneratorFormValues,
+  profileGeneratorSchema,
 } from "~/schema/generator/profile-generator";
 
 export type ProfileGeneratorFormMethod = ReturnType<
