@@ -3,7 +3,6 @@ import clsx from "clsx";
 import { useState } from "react";
 import { toast } from "sonner";
 import { generatePrompt } from "~/api/generator/prompt";
-import type { ProfileGeneratorExample } from "~/data/profile-generator";
 import type { GeneratePromptResult } from "~/routes/_api/basic/_ai.generate.prompt/route";
 import type { AvatarGeneratorDTO } from "~/schema/generator";
 import { ProfileGeneratorForm } from "./form";
@@ -41,16 +40,8 @@ export function AvatarGenerator({
   });
 
   const handleGenerate = (values: AvatarGeneratorDTO) => {
-    mutation.mutate({ type: "text", input: values.prompt });
-  };
-
-  const handleSelectExample = (example: ProfileGeneratorExample) => {
-    form.clearErrors("prompt");
-    form.setValue("prompt", example.prompt, {
-      shouldDirty: true,
-      shouldTouch: true,
-    });
-    form.setFocus("prompt");
+    console.log(values)
+    // mutation.mutate({ type: "text", input: values.prompt });
   };
 
   return (
@@ -70,7 +61,6 @@ export function AvatarGenerator({
       />
       <ProfileGeneratorPreview
         className="flex-1 min-w-0 w-full"
-        onChoose={handleSelectExample}
       />
     </div>
   );

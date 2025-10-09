@@ -3,7 +3,6 @@ import clsx from "clsx";
 import { useState } from "react";
 import { toast } from "sonner";
 import { generatePrompt } from "~/api/generator/prompt";
-import type { ProfileGeneratorExample } from "~/data/profile-generator";
 import type { GeneratePromptResult } from "~/routes/_api/basic/_ai.generate.prompt/route";
 import type { ProfileGeneratorDTO } from "~/schema/generator";
 import { ProfileGeneratorExamples } from "./examples";

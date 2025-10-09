@@ -1,18 +1,9 @@
 import clsx from "clsx";
 import { Image } from "~/components/common";
-import {
-  type ProfileGeneratorExample,
-  profileGeneratorExamples,
-} from "~/data/profile-generator";
 
-interface ProfileGeneratorPreviewProps extends React.ComponentProps<"div"> {
-  onChoose: (example: ProfileGeneratorExample) => void;
-  examples?: ProfileGeneratorExample[];
-}
+interface ProfileGeneratorPreviewProps extends React.ComponentProps<"div"> {}
 
 export function ProfileGeneratorPreview({
-  onChoose,
-  examples = profileGeneratorExamples,
   className,
   ...props
 }: ProfileGeneratorPreviewProps) {

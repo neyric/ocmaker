@@ -19,22 +19,22 @@ import {
 } from "~/components/pages/maker";
 import { AvatarGenerator } from "~/features/generator/avatar-generator";
 import { ProfileGenerator } from "~/features/generator/profile-generator";
-import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
+import { getMakerLocale, getTranslate, useTranslate } from "~/i18n";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
 import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
 
-export function meta({ matches, loaderData }: Route.MetaArgs) {
-  const canonical = createCanonical("/", matches[0].loaderData.DOMAIN);
+export function meta({ matches, params, loaderData }: Route.MetaArgs) {
+  const canonical = createCanonical(`/maker/${params.slug}`, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
-    "/",
+    `/maker/${params.slug}`,
     matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
       title: loaderData.meta.title,
       description: loaderData.meta.description,
-      url: "/",
+      url: `/maker/${params.slug}`,
       siteName: matches[0].loaderData.SITE_NAME,
     },
     matches[0].loaderData.DOMAIN
@@ -54,7 +54,7 @@ export function meta({ matches, loaderData }: Route.MetaArgs) {
 
 export async function loader({ context }: Route.LoaderArgs) {
   const i18n = getI18nConetxt(context);
-  const page = await getPageLocale(i18n.lang, "home");
+  const page = await getMakerLocale(i18n.lang, "aot-oc-maker");
   const t = getTranslate(page);
 
   const meta = {
@@ -102,56 +102,56 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     {
       image: "/assets/img-how-1.webp",
       title: ct("contents.step.steps.0.title"),
-      description: ct("contents.step.steps.0.content"),
+      description: ct("contents.step.steps.0.description"),
     },
     {
       image: "/assets/img-how-2.webp",
       title: ct("contents.step.steps.1.title"),
-      description: ct("contents.step.steps.1.content"),
+      description: ct("contents.step.steps.1.description"),
     },
     {
       image: "/assets/img-how-3.webp",
       title: ct("contents.step.steps.2.title"),
-      description: ct("contents.step.steps.2.content"),
+      description: ct("contents.step.steps.2.description"),
     },
   ];
 
   const features = [
     {
       icon: <Bot />,
-      title: ct("contents.features.features.0.title"),
-      content: ct("contents.features.features.0.content"),
+      title: ct("contents.features.features.0.label"),
+      content: ct("contents.features.features.0.description"),
     },
     {
       icon: <PencilRuler />,
-      title: ct("contents.features.features.1.title"),
-      content: ct("contents.features.features.1.content"),
+      title: ct("contents.features.features.1.label"),
+      content: ct("contents.features.features.1.description"),
     },
     {
       icon: <Smile />,
-      title: ct("contents.features.features.2.title"),
-      content: ct("contents.features.features.2.content"),
+      title: ct("contents.features.features.2.label"),
+      content: ct("contents.features.features.2.description"),
     },
     {
       icon: <Contact />,
-      title: ct("contents.features.features.3.title"),
-      content: ct("contents.features.features.3.content"),
+      title: ct("contents.features.features.3.label"),
+      content: ct("contents.features.features.3.description"),
     },
     {
       icon: <SwatchBook />,
-      title: ct("contents.features.features.4.title"),
-      content: ct("contents.features.features.4.content"),
+      title: ct("contents.features.features.4.label"),
+      content: ct("contents.features.features.4.description"),
     },
     {
       icon: <Bird />,
-      title: ct("contents.features.features.5.title"),
-      content: ct("contents.features.features.5.content"),
+      title: ct("contents.features.features.5.label"),
+      content: ct("contents.features.features.5.description"),
     },
   ];
 
   const examples = loaderData.page.contents.examples.examples;
 
-  const faqs = loaderData.page.contents.faqs.list;
+  const faqs = loaderData.page.contents.faqs.faqs;
 
   const ctaButtons = [
     {
@@ -174,8 +174,8 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     <Fragment>
       <HeroSection
         key={loaderData.genId}
-        title="AOT OC Maker"
-        description="Generate your own Attack on Titan OC with AI. Create characters, backstories, and visuals in the iconic AOT style"
+        title={ct("contents.hero.title")}
+        description={ct("contents.hero.description")}
       >
         <div className="flex items-center justify-center mb-8">
           <SegmentedControl

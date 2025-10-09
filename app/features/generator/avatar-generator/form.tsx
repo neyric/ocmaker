@@ -100,7 +100,10 @@ export function ProfileGeneratorForm({
             />
             <div className="w-full h-px bg-grid-border" />
             <div className="p-2 flex justify-between">
-              <button className="btn btn-xs btn-primary btn-ghost">
+              <button
+                className="btn btn-xs btn-primary btn-ghost"
+                type="button"
+              >
                 <PartyPopper className="size-4" />
                 Randomize
               </button>
@@ -160,7 +163,7 @@ function OptionItem({ item, onClick }: OptionItemProps) {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <button className="btn btn-sm btn-primary btn-dash">
+        <button className="btn btn-sm btn-primary btn-dash" type="button">
           {item.title}
         </button>
       </DropdownMenuTrigger>
@@ -172,6 +175,7 @@ function OptionItem({ item, onClick }: OptionItemProps) {
         <div className="flex flex-wrap gap-2">
           {item.data.map((data, index) => (
             <button
+              type="button"
               key={`${item.key}__${index}`}
               className="btn btn-outline btn-primary btn-sm h-6.5 px-4"
               onClick={() => onClick(data.value)}

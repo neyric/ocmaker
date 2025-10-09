@@ -2,6 +2,7 @@ import { merge } from "lodash-es";
 import baseLocale from "./base";
 
 export * from "./hooks";
+export { getMakerLocale} from './maker'
 export { getPageLocale } from "./pages";
 export * from "./types";
 export * from "./utils";
