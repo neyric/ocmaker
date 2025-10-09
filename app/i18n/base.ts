@@ -26,6 +26,30 @@ export default {
     credits: "Credits",
     free: "Free",
   },
+  maker: {
+    generator: {
+      backstory: "Backstory Generator",
+      oc: "OC Maker",
+      describe: "Describe Your OC",
+      placeholder: "Enter a brife description...",
+      exampleTitle: "Quick Starters",
+      exampleDescription:
+        "Click to load an example prompt and tweak it before generating.",
+      exampleButton: "Use this example",
+      exampleGenerator: "Generator",
+      exampleGenerating: "Generating...",
+      ocTitle: "Character Appearance",
+      ocPlaceholder:
+        "Describe your OC's details (e.g., 'cat girl, blue hair, glasses, shy')",
+      ocRandomize: "Randomize",
+      ocAiOptimize: "AI Optimize",
+      ocPreviewTitle: "Your characters will appear here",
+      ocPreviewDescription:
+        'Describe your characters appearance and click "Generate Character" to create your original character.',
+      ocGenerator: "Generator Character",
+      ocGenerating: "Generating...",
+    },
+  },
   pricing: {
     common: {
       month: "month",

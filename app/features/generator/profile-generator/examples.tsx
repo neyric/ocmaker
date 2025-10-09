@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { useTranslate } from "~/i18n";
 
 interface Example {
   title: string;
@@ -17,14 +18,16 @@ export function ProfileGeneratorExamples({
   className,
   ...props
 }: ProfileGeneratorExamplesProps) {
+  const t = useTranslate();
+
   return (
     <div className={clsx(className)} {...props}>
       <div className="mb-4 space-y-1">
         <h3 className="text-sm font-semibold uppercase tracking-wide text-base-content/70">
-          Quick starters
+          {t("maker.generator.exampleTitle")}
         </h3>
         <p className="text-sm text-base-content/70">
-          Click to load an example prompt and tweak it before generating.
+          {t("maker.generator.exampleDescription")}
         </p>
       </div>
       <div className="grid gap-3 grid-cols-2">
@@ -42,7 +45,7 @@ export function ProfileGeneratorExamples({
               {example.description}
             </span>
             <span className="text-sm text-primary/80 group-hover:text-primary">
-              Use this example
+              {t("maker.generator.exampleButton")}
             </span>
           </button>
         ))}

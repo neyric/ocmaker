@@ -6,6 +6,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "~/components/ui/dropdown-menu";
+import { useTranslate } from "~/i18n";
 import type { AvatarGeneratorDTO } from "~/schema/generator";
 import { type Option } from "./index";
 import type { ProfileGeneratorFormMethod } from "./use-form";
@@ -25,6 +26,7 @@ export function ProfileGeneratorForm({
   options,
   ...props
 }: ProfileGeneratorFormProps) {
+  const t = useTranslate();
   const aiOptimize = form.watch("aiOptimize");
 
   const hanldeOptionClick = (option: Option, value: string) => {
@@ -88,7 +90,7 @@ export function ProfileGeneratorForm({
             htmlFor="profile-generator-prompt"
             className="text-sm font-medium text-base-content"
           >
-            About Your OC
+            {t("maker.generator.ocTitle")}
           </label>
           <div className="textarea px-0 pb-0 block w-full text-sm disabled:opacity-50 focus-within:outline-none">
             <textarea
@@ -96,7 +98,7 @@ export function ProfileGeneratorForm({
               id="profile-generator-prompt"
               {...form.register("prompt")}
               className="px-2 pb-2 resize-none w-full"
-              placeholder="Describe the video effect you want, for example: make water ripple in the image, add particle effects, etc..."
+              placeholder={t("maker.generator.ocPlaceholder")}
             />
             <div className="w-full h-px bg-grid-border" />
             <div className="p-2 flex justify-between">
@@ -105,7 +107,7 @@ export function ProfileGeneratorForm({
                 type="button"
               >
                 <PartyPopper className="size-4" />
-                Randomize
+                {t("maker.generator.ocRandomize")}
               </button>
 
               <div className="flex items-center space-x-2">
@@ -114,7 +116,7 @@ export function ProfileGeneratorForm({
                   className="text-xs flex items-center gap-2 cursor-pointer select-none"
                 >
                   <WandSparkles className="size-4 text-primary" />
-                  AI Optimize
+                  {t("maker.generator.ocAiOptimize")}
                 </label>
                 <input
                   id="ai-optimize"
@@ -146,7 +148,11 @@ export function ProfileGeneratorForm({
           {isGenerating && (
             <span className="loading loading-spinner loading-sm" aria-hidden />
           )}
-          <span>Generator</span>
+          <span>
+            {isGenerating
+              ? t("maker.generator.ocGenerating")
+              : t("maker.generator.ocGenerator")}
+          </span>
         </button>
       </form>
     </div>

@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { useTranslate } from "~/i18n";
 import type { ProfileGeneratorDTO } from "~/schema/generator";
 import type { ProfileGeneratorFormMethod } from "./use-form";
 
@@ -15,6 +16,8 @@ export function ProfileGeneratorForm({
   className,
   ...props
 }: ProfileGeneratorFormProps) {
+  const t = useTranslate();
+
   const errorMessage = form.formState.errors.prompt?.message;
 
   return (
@@ -34,13 +37,13 @@ export function ProfileGeneratorForm({
             htmlFor="profile-generator-prompt"
             className="text-sm font-medium text-base-content"
           >
-            About Your OC
+            {t("maker.generator.describe")}
           </label>
           <textarea
             id="profile-generator-prompt"
             rows={8}
             className="textarea textarea-bordered flex-1 min-h-[12rem] w-full"
-            placeholder="Example: Craft a friendly LinkedIn bio for a product designer leading AI-driven experiments..."
+            placeholder={t("maker.generator.placeholder")}
             {...form.register("prompt")}
           />
           {errorMessage && <p className="text-sm text-error">{errorMessage}</p>}
@@ -54,7 +57,13 @@ export function ProfileGeneratorForm({
           {isGenerating && (
             <span className="loading loading-spinner loading-sm" aria-hidden />
           )}
-          <span>Generator</span>
+          {
+            <span>
+              {isGenerating
+                ? t("maker.generator.exampleGenerating")
+                : t("maker.generator.exampleGenerator")}
+            </span>
+          }
         </button>
       </form>
     </div>

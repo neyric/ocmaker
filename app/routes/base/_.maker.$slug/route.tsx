@@ -25,7 +25,10 @@ import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
 
 export function meta({ matches, params, loaderData }: Route.MetaArgs) {
-  const canonical = createCanonical(`/maker/${params.slug}`, matches[0].loaderData.DOMAIN);
+  const canonical = createCanonical(
+    `/maker/${params.slug}`,
+    matches[0].loaderData.DOMAIN
+  );
   const alternatives = createNormalAlternatives(
     `/maker/${params.slug}`,
     matches[0].loaderData.DOMAIN
@@ -95,6 +98,7 @@ export async function loader({ context }: Route.LoaderArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
+  const t = useTranslate();
   const ct = useTranslate(loaderData.page);
   const [state, setState] = useState("backstory");
 
@@ -182,8 +186,8 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             value={state}
             onChange={setState}
             options={[
-              { label: "Backstory Generator", value: "backstory" },
-              { label: "OC Avatar Maker", value: "avatar" },
+              { label: t("maker.generator.backstory"), value: "backstory" },
+              { label: t("maker.generator.oc"), value: "oc" },
             ]}
           />
         </div>
@@ -195,7 +199,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         />
         <AvatarGenerator
           className="aria-hidden:hidden"
-          aria-hidden={state !== "avatar"}
+          aria-hidden={state !== "oc"}
           genId={loaderData.genId}
           options={loaderData.options}
         />
