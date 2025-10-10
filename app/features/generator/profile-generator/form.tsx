@@ -42,7 +42,7 @@ export function ProfileGeneratorForm({
           <textarea
             id="profile-generator-prompt"
             rows={8}
-            className="textarea textarea-bordered flex-1 min-h-[12rem] w-full"
+            className="textarea textarea-bordered flex-1 min-h-48 md:min-h-64 w-full"
             placeholder={t("maker.generator.placeholder")}
             {...form.register("prompt")}
           />

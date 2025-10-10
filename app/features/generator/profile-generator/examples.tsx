@@ -38,15 +38,16 @@ export function ProfileGeneratorExamples({
             className="group flex h-full flex-col gap-2 rounded-lg border border-grid-border cursor-pointer bg-base-100 p-4 text-left transition hover:border-primary/60 hover:shadow-sm"
             onClick={() => onChoose(example)}
           >
-            <span className="text-base font-medium text-base-content">
+            <p className="text-base font-medium text-base-content">
               {example.title}
-            </span>
-            <span className="text-sm text-base-content/70">
+            </p>
+            <p className="text-sm text-base-content/70">
               {example.description}
-            </span>
-            <span className="text-sm text-primary/80 group-hover:text-primary">
+            </p>
+            <div className="grow" />
+            <p className="text-sm text-primary/80 group-hover:text-primary">
               {t("maker.generator.exampleButton")}
-            </span>
+            </p>
           </button>
         ))}
       </div>

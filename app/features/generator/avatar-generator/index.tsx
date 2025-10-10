@@ -12,6 +12,7 @@ import { useProfileGeneratorForm } from "./use-form";
 export interface Option {
   key: string;
   title: string;
+  unique?: boolean;
   data: Array<{ label: string; value: string }>;
 }
 
@@ -40,7 +41,7 @@ export function AvatarGenerator({
   });
 
   const handleGenerate = (values: AvatarGeneratorDTO) => {
-    console.log(values)
+    console.log(values);
     // mutation.mutate({ type: "text", input: values.prompt });
   };
 
@@ -59,9 +60,7 @@ export function AvatarGenerator({
         onGenerate={handleGenerate}
         isGenerating={mutation.isPending}
       />
-      <ProfileGeneratorPreview
-        className="flex-1 min-w-0 w-full"
-      />
+      <ProfileGeneratorPreview className="flex-1 min-w-0 w-full" />
     </div>
   );
 }

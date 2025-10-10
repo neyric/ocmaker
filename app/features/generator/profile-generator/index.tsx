@@ -2,7 +2,7 @@ import { useMutation } from "@tanstack/react-query";
 import clsx from "clsx";
 import { useState } from "react";
 import { toast } from "sonner";
-import { generatePrompt } from "~/api/generator/prompt";
+import { generateOCProfile } from "~/api/generator/oc-profile";
 import type { GeneratePromptResult } from "~/routes/_api/basic/_ai.generate.prompt/route";
 import type { ProfileGeneratorDTO } from "~/schema/generator";
 import { ProfileGeneratorExamples } from "./examples";
@@ -35,10 +35,11 @@ export function ProfileGenerator({
   });
   const [preview, setPreview] = useState<GeneratePromptResult | null>(null);
 
-  const mutation = useMutation({
-    mutationFn: generatePrompt,
+  const { data, isError, error, status, isPending, mutate } = useMutation({
+    mutationFn: generateOCProfile,
     onSuccess: (data) => {
-      setPreview(data);
+      console.log("data", data);
+      // setPreview(data);
     },
     onError: (error: Error) => {
       toast.error(error.message);
@@ -46,7 +47,8 @@ export function ProfileGenerator({
   });
 
   const handleGenerate = (values: ProfileGeneratorDTO) => {
-    mutation.mutate({ type: "text", input: values.prompt });
+    // console.log("values", values);
+    mutate(values);
   };
 
   const handleSelectExample = (example: Example) => {
@@ -70,18 +72,23 @@ export function ProfileGenerator({
         className="flex-1 min-w-0 w-full"
         form={form}
         onGenerate={handleGenerate}
-        isGenerating={mutation.isPending}
+        isGenerating={isPending}
       />
-      <ProfileGeneratorExamples
-        className="flex-1 min-w-0 w-full"
-        examples={examplesList}
-        onChoose={handleSelectExample}
-      />
-      {/* <ProfileGeneratorPreview
-          isLoading={mutation.isPending}
-          result={preview?.prompt}
-          original={preview?.original}
-        /> */}
+      {status === "idle" ? (
+        <ProfileGeneratorExamples
+          className="flex-1 min-w-0 w-full"
+          examples={examplesList}
+          onChoose={handleSelectExample}
+        />
+      ) : (
+        <ProfileGeneratorPreview
+          className="flex-1 min-w-0 w-full lg:max-h-96 overflow-y-auto"
+          isLoading={isPending}
+          result={data?.node}
+          isError={isError}
+          errorMessage={error?.message}
+        />
+      )}
     </div>
   );
 }

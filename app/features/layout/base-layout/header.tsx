@@ -142,7 +142,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
                   aria-label="close sidebar"
                   className="drawer-overlay"
                 />
-                <div className="bg-base-100 w-72 h-full flex flex-col">
+                <div className="bg-base-100 text-base-content w-72 h-full flex flex-col">
                   {/* Logo 区域 */}
                   <div className="h-16 flex items-center px-4">
                     <Link

@@ -39,6 +39,13 @@ export function ProfileGeneratorForm({
           .filter(Boolean)
       : [];
 
+    if (!option.unique) {
+      if (value) {
+        form.setValue("prompt", prompts.concat(value).join(", "));
+      }
+      return;
+    }
+
     if (!prevValue) {
       if (!value) return;
       options[option.key] = value;
@@ -73,6 +80,37 @@ export function ProfileGeneratorForm({
     }
   };
 
+  const handleRandomize = () => {
+    if (!options || !Array.isArray(options)) return;
+
+    // 随机选择每个 option 的一个 data value，生成新字符串
+    const randomizeValues = options.reduce(
+      (prev, option) => {
+        const data = option.data.filter((value) => !!value.value);
+        if (!data.length) return prev;
+
+        const randomIdx = Math.floor(Math.random() * data.length);
+        const value = data[randomIdx].value;
+
+        if (option.unique) {
+          prev.record[option.key] = value;
+        }
+        prev.values.push(value);
+
+        return prev;
+      },
+      { values: [], record: {} } as {
+        values: string[];
+        record: Record<string, string>;
+      }
+    );
+
+    const { values, record } = randomizeValues;
+
+    form.setValue("options", record);
+    form.setValue("prompt", values.join(", "));
+  };
+
   return (
     <div
       className={clsx(
@@ -105,6 +143,7 @@ export function ProfileGeneratorForm({
               <button
                 className="btn btn-xs btn-primary btn-ghost"
                 type="button"
+                onClick={handleRandomize}
               >
                 <PartyPopper className="size-4" />
                 {t("maker.generator.ocRandomize")}
@@ -129,7 +168,7 @@ export function ProfileGeneratorForm({
             </div>
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 flex flex-wrap gap-2">
             {options.map((option) => (
               <OptionItem
                 item={option}
@@ -169,7 +208,7 @@ function OptionItem({ item, onClick }: OptionItemProps) {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <button className="btn btn-sm btn-primary btn-dash" type="button">
+        <button className="btn btn-sm btn-dash" type="button">
           {item.title}
         </button>
       </DropdownMenuTrigger>

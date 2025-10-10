@@ -55,9 +55,14 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
   ];
 }
 
-export async function loader({ context }: Route.LoaderArgs) {
+export async function loader({ context, params }: Route.LoaderArgs) {
   const i18n = getI18nConetxt(context);
-  const page = await getMakerLocale(i18n.lang, "aot-oc-maker");
+  const page = await getMakerLocale(i18n.lang, params.slug);
+
+  if (!page) {
+    throw new Response(null, { status: 404 });
+  }
+
   const t = getTranslate(page);
 
   const meta = {
@@ -65,34 +70,18 @@ export async function loader({ context }: Route.LoaderArgs) {
     description: t("meta.description"),
   };
 
-  const genId = "";
+  const genId = params.slug;
   const examples: Array<{
     title: string;
     description: string;
     prompt: string;
-  }> = [
-    { title: "Test 1", description: "Test 1 Prompt", prompt: "Test 1 Prompt" },
-    { title: "Test 2", description: "Test 2 Prompt", prompt: "Test 2 Prompt" },
-    { title: "Test 3", description: "Test 3 Prompt", prompt: "Test 3 Prompt" },
-    { title: "Test 4", description: "Test 4 Prompt", prompt: "Test 4 Prompt" },
-    { title: "Test 5", description: "Test 5 Prompt", prompt: "Test 5 Prompt" },
-  ];
+  }> = page.examples;
 
   const options: Array<{
     title: string;
     key: string;
     data: Array<{ label: string; value: string }>;
-  }> = [
-    {
-      title: "Gender",
-      key: "gender",
-      data: [
-        { label: "Boy", value: "1boy" },
-        { label: "Girl", value: "1girl" },
-        { label: "Other", value: "" },
-      ],
-    },
-  ];
+  }> = page.ocOptions;
 
   return { meta, page, genId, examples, options };
 }
@@ -160,14 +149,14 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   const ctaButtons = [
     {
       text: ct("contents.cta.btns.start"),
-      href: "/",
+      href: "#generator-border",
       variant: "default" as const,
       className:
         "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
     },
     {
       text: ct("contents.cta.btns.explore"),
-      href: "/",
+      href: "/oc-arts",
       variant: "outline" as const,
       className:
         "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
@@ -181,7 +170,8 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         title={ct("contents.hero.title")}
         description={ct("contents.hero.description")}
       >
-        <div className="flex items-center justify-center mb-8">
+        <div className="flex items-center justify-center mb-8 relative">
+          <div id="generator-border" className="absolute -top-20"  />
           <SegmentedControl
             value={state}
             onChange={setState}
