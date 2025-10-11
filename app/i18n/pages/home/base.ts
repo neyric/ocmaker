@@ -9,6 +9,7 @@ export default {
       title: "AI-Powered OC Maker, Free OC Generator",
       description:
         "Quickly create OCs (original characters) that look and feel just the way you imagine, using OC Maker AI and a variety of leading AI models.",
+      createButton: "Create Your OC Now",
     },
     step: {
       title: "How to Use OC Maker",

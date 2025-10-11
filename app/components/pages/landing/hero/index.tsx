@@ -5,11 +5,13 @@ import { EmblaCarousel } from "./carousel";
 interface HeroSectionProps {
   title: string;
   description: string;
+  createButtonText: string;
 }
 
 export function HeroSection({
   title,
   description,
+  createButtonText,
   children,
 }: PropsWithChildren<HeroSectionProps>) {
   return (
@@ -45,8 +47,7 @@ export function HeroSection({
             </p>
           </div>
           <div className="flex items-center gap-4 max-lg:justify-center">
-            <button className="btn btn-primary">Start for Free</button>
-            <button className="btn btn-primary btn-outline">Community Gallery</button>
+            <button className="btn btn-primary">{createButtonText}</button>
           </div>
 
           {children}

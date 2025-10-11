@@ -17,7 +17,7 @@ export const loader = async ({ context }: Route.LoaderArgs) => {
   const header: BaseLayoutProps["header"] = {
     navLinks: [
       { to: "/", label: t("header.navigation.home") },
-      { to: "/oc-arts", label: t("header.navigation.community") },
+      // { to: "/oc-arts", label: t("header.navigation.community") },
       { to: "/pricing", label: t("header.navigation.pricing") },
       { to: "/my-creations", label: t("header.navigation.myCreations") },
     ],

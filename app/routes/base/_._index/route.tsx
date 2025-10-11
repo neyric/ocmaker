@@ -133,13 +133,13 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       className:
         "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
     },
-    {
-      text: ct("contents.cta.btns.explore"),
-      href: "/",
-      variant: "outline" as const,
-      className:
-        "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
-    },
+    // {
+    //   text: ct("contents.cta.btns.explore"),
+    //   href: "/",
+    //   variant: "outline" as const,
+    //   className:
+    //     "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
+    // },
   ];
 
   const badges = [
@@ -207,6 +207,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       <HeroSection
         title={ct("contents.hero.title")}
         description={ct("contents.hero.description")}
+        createButtonText={ct("contents.hero.createButton")}
       >
         {/* <div className="mt-4 sm:mt-6 mb-2">
           <Dropzone

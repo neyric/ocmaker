@@ -55,7 +55,7 @@ export function ProfileGeneratorPreview({
         <div className="h-full overflow-y-auto p-3 sm:p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {tasks.map((task) => (
-              <div key={task.id}>
+              <div className="relative" key={task.id}>
                 <div
                   className="relative rounded-lg overflow-hidden bg-base-100 border border-grid-border"
                   style={{ aspectRatio: task.data.aspect.replace(":", "/") }}
@@ -80,26 +80,15 @@ export function ProfileGeneratorPreview({
                     </div>
                   )}
                 </div>
-                <div className="flex justify-between mt-2 sm:mt-1">
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-ghost btn-sm sm:btn-xs"
-                    onClick={() => handleSave(task.data)}
-                  >
-                    <Save size={12} />
-                    Keep
-                  </button>
-                  <div className="grow" />
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-soft btn-sm sm:btn-xs"
-                    onClick={() => handleDownload(task.data)}
-                    disabled={task.data.status !== "succeeded"}
-                  >
-                    <Download size={12} />
-                    Download
-                  </button>
-                </div>
+                <button
+                  type="button"
+                  className="absolute bottom-2 left-2 btn btn-primary btn-sm sm:btn-xs"
+                  onClick={() => handleDownload(task.data)}
+                  disabled={task.data.status !== "succeeded"}
+                >
+                  <Download size={12} />
+                  Download
+                </button>
               </div>
             ))}
           </div>

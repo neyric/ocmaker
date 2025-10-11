@@ -1,7 +1,8 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
 import clsx from "clsx";
+import { useRef } from "react";
 import { toast } from "sonner";
-import { calculatorCredits } from "~/api/generator";
+import { calculatorCredits, type Task } from "~/api/generator";
 import { generateOCImage } from "~/api/generator/oc-image";
 import { useUserProfile } from "~/contexts/user-profile";
 import type { AvatarGeneratorDTO } from "~/schema/generator";
@@ -9,6 +10,7 @@ import { useDialogStore } from "~/store";
 import { useTasks, useTasksStore } from "~/store/tasks";
 import { ProfileGeneratorForm } from "./form";
 import { ProfileGeneratorPreview } from "./preview";
+
 import { useProfileGeneratorForm } from "./use-form";
 
 export interface Option {
