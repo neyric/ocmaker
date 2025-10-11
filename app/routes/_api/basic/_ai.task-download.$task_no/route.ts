@@ -26,7 +26,7 @@ export const loader = async ({ params }: Route.LoaderArgs) => {
   headers.set("Content-Type", file.type || "application/octet-stream");
   headers.set(
     "Content-Disposition",
-    `attachment; filename="hairstyle-${task_no}.png"`
+    `attachment; filename="ocmaker-${task_no}.png"`
   );
   headers.set("Cache-Control", "public, max-age=3600");
 

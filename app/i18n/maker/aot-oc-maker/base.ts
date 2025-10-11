@@ -315,6 +315,7 @@ export default {
     description:
       "Generate your own Attack on Titan OC with AI. Create characters, backstories, and visuals in the iconic AOT style.",
   },
+  series: "One Piece",
   backstoryPreset: basePrompt,
   examples: backstoryExamples,
   ocOptions: ocOptions,

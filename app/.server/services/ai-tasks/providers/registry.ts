@@ -1,5 +1,6 @@
 import type { BaseProvider } from "../core/base-provider";
 import { nanoBananaI2IProvider } from "./nano-banana/i2i";
+import { animagine3xProvider } from "./replicate/animagine-3.1";
 import { runwayGen3I2VProvider } from "./runway/gen3-i2v";
 import { runwayGen3TurboI2VProvider } from "./runway/gen3-turbo-i2v";
 import { seeDanceV1LiteI2VProvider } from "./seedance/v1lite-i2v";
@@ -25,6 +26,7 @@ export class ProviderRegistry {
       runwayGen3I2VProvider,
       runwayGen3TurboI2VProvider,
       nanoBananaI2IProvider,
+      animagine3xProvider,
     ]);
   }
 

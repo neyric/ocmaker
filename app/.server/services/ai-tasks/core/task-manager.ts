@@ -118,8 +118,7 @@ export class TaskManager {
       // Update task status to failed and record error message
       const failedTask = await updateByTaskNo(taskNo, {
         status: "failed",
-        fail_reason:
-          error instanceof Error ? error.message : "Unknown error",
+        fail_reason: error instanceof Error ? error.message : "Unknown error",
       });
 
       // Attempt to refund credits for failed task
@@ -130,7 +129,7 @@ export class TaskManager {
         // If refund fails, return the failed task data
         console.error(
           `Failed to refund credits for task ${taskNo}:`,
-          refundError,
+          refundError
         );
         return failedTask;
       }
@@ -149,14 +148,12 @@ export class TaskManager {
     const providerResult = await provider.queryTask(task);
 
     let resultUrl = providerResult.resultUrl;
-    if (resultUrl && !task.result_url) {
+    if (resultUrl && !task.result_url && import.meta.env.PROD) {
       try {
         const result = await TaskUtils.saveResultToR2(task, resultUrl);
         resultUrl = new URL(result.key, env.CDN_URL).toString();
       } catch (error) {
-        console.error(
-          "Failed to save result to R2, task: " + task.task_no,
-        );
+        console.error("Failed to save result to R2, task: " + task.task_no);
         console.error("Original error", error);
       }
     }
@@ -180,7 +177,7 @@ export class TaskManager {
       } catch (refundError) {
         console.error(
           `Failed to refund credits for task ${taskNo}:`,
-          refundError,
+          refundError
         );
         return result;
       }

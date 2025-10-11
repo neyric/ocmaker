@@ -48,12 +48,47 @@ const nanoBananaI2ISchema = baseSchema.extend({
   aspectRatio: z.enum(["16:9", "9:16", "2:3", "3:2", "1:1", "4:3", "3:4"]),
 });
 
+const animagineSchema = baseSchema.extend({
+  model: z.enum(["replicate/animagine-3.1", "replicate/animagine-4.0"]),
+  aspectRatio: z.enum(["16:9", "9:16", "1:1", "4:3", "3:4"]),
+  negativePrompt: z.string().nullish(),
+  numInferenceSteps: z.number().nullish(),
+  guidanceScale: z.number().nullish(),
+  qualitySelector: z
+    .enum([
+      "(None)",
+      "Standard v3.0",
+      "Standard v3.1",
+      "Light v3.1",
+      "Heavy v3.1",
+    ])
+    .nullish(),
+  styleSelector: z
+    .enum([
+      "(None)",
+      "Cinematic",
+      "Photographic",
+      "Anime",
+      "Manga",
+      "Digital Art",
+      "Pixel art",
+      "Fantasy art",
+      "Neonpunk",
+      "3D Model",
+    ])
+    .nullish(),
+  seed: z.number().nullish(),
+  webhook: z.string().nullish(),
+  ext: z.record(z.string(), z.any()).nullish(),
+});
+
 // Aggregate all schemas using discriminatedUnion
 export const generateSchema = z.discriminatedUnion("model", [
   seedanceI2VSchema,
   veo3I2VSchema,
   runwayI2VSchema,
   nanoBananaI2ISchema,
+  animagineSchema,
 ]);
 
 // Export type

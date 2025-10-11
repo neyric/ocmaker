@@ -10,17 +10,27 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
 
   try {
     // Parse request data
-    const raw = await request.json();
-    const parsed = generateSchema.safeParse(raw);
+    const raw = await request.json().catch(() => null);
+    if (raw) {
+      const parsed = generateSchema.safeParse(raw);
 
-    if (!parsed.success) throw new Error("Invalid data");
+      if (!parsed.success) throw new Error("Invalid data");
 
-    const validatedData = parsed.data;
+      const validatedData = parsed.data;
 
-    // Calculate credits for AI task
-    const credits = await calculatorCredits(validatedData);
+      // Calculate credits for AI task
+      const credits = await calculatorCredits(validatedData);
 
-    return data({ credits });
+      return data({ credits });
+    } else {
+      const credits = await calculatorCredits({
+        model: "replicate/animagine-3.1",
+        aspectRatio: "1:1",
+        prompt: "",
+      });
+
+      return data({ credits });
+    }
   } catch (error) {
     if (error instanceof Response) throw error;
 
@@ -28,7 +38,7 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
 
     throw Response.json(
       { error: error instanceof Error ? error.message : "Request failed" },
-      { status: 500 },
+      { status: 500 }
     );
   }
 };

@@ -1,10 +1,12 @@
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import clsx from "clsx";
-import { useState } from "react";
 import { toast } from "sonner";
-import { generatePrompt } from "~/api/generator/prompt";
-import type { GeneratePromptResult } from "~/routes/_api/basic/_ai.generate.prompt/route";
+import { calculatorCredits } from "~/api/generator";
+import { generateOCImage } from "~/api/generator/oc-image";
+import { useUserProfile } from "~/contexts/user-profile";
 import type { AvatarGeneratorDTO } from "~/schema/generator";
+import { useDialogStore } from "~/store";
+import { useTasks, useTasksStore } from "~/store/tasks";
 import { ProfileGeneratorForm } from "./form";
 import { ProfileGeneratorPreview } from "./preview";
 import { useProfileGeneratorForm } from "./use-form";
@@ -27,13 +29,26 @@ export function AvatarGenerator({
   options,
   ...props
 }: AvatarGeneratorProps) {
+  const { user, credits, setCredits } = useUserProfile();
+  const setVisibleLoginDialog = useDialogStore(
+    (state) => state.setVisibleLoginDialog
+  );
+  const setVisibleUpgradeDialog = useDialogStore(
+    (state) => state.setVisibleUpgradeDialog
+  );
+  const addTask = useTasksStore((state) => state.addTask);
   const form = useProfileGeneratorForm({ id: genId });
-  const [preview, setPreview] = useState<GeneratePromptResult | null>(null);
+
+  const { data } = useQuery({
+    queryKey: ["oc-maker-credits"],
+    queryFn: () => calculatorCredits(),
+  });
 
   const mutation = useMutation({
-    mutationFn: generatePrompt,
-    onSuccess: (data) => {
-      setPreview(data);
+    mutationFn: generateOCImage,
+    onSuccess: (task) => {
+      addTask(task);
+      if (data) setCredits(credits - data.credits);
     },
     onError: (error: Error) => {
       toast.error(error.message);
@@ -41,8 +56,16 @@ export function AvatarGenerator({
   });
 
   const handleGenerate = (values: AvatarGeneratorDTO) => {
-    console.log(values);
-    // mutation.mutate({ type: "text", input: values.prompt });
+    if (!user) {
+      setVisibleLoginDialog(true, "before-create");
+      return;
+    }
+    if (!data) return;
+    if (credits < data.credits) {
+      setVisibleUpgradeDialog(true, "credits");
+      return;
+    }
+    mutation.mutate(values);
   };
 
   return (
@@ -59,6 +82,7 @@ export function AvatarGenerator({
         options={options}
         onGenerate={handleGenerate}
         isGenerating={mutation.isPending}
+        credits={data?.credits}
       />
       <ProfileGeneratorPreview className="flex-1 min-w-0 w-full" />
     </div>

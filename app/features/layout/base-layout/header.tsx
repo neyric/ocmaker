@@ -98,7 +98,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
                   <CreditsMenu credits={credits} />
                   <Link
                     to="/dashboard"
-                    className="btn btn-neutral btn-sm shadow-none"
+                    className="btn btn-primary btn-sm shadow-none"
                     onClick={() => setDrawerOpen(false)}
                   >
                     <User className="w-4 h-4" />

@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { ZapFill } from "~/components/icons";
 import { useTranslate } from "~/i18n";
 import type { ProfileGeneratorDTO } from "~/schema/generator";
 import type { ProfileGeneratorFormMethod } from "./use-form";
@@ -51,19 +52,24 @@ export function ProfileGeneratorForm({
 
         <button
           type="submit"
-          className="btn btn-primary"
+          className="btn btn-primary btn-lg"
           disabled={isGenerating}
         >
           {isGenerating && (
             <span className="loading loading-spinner loading-sm" aria-hidden />
           )}
-          {
-            <span>
-              {isGenerating
-                ? t("maker.generator.exampleGenerating")
-                : t("maker.generator.exampleGenerator")}
+
+          <span>
+            {isGenerating
+              ? t("maker.generator.exampleGenerating")
+              : t("maker.generator.exampleGenerator")}
+          </span>
+          {!isGenerating && (
+            <span className="bg-primary-content text-primary badge gap-1">
+              <ZapFill />
+              Free
             </span>
-          }
+          )}
         </button>
       </form>
     </div>

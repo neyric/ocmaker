@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { PartyPopper, WandSparkles } from "lucide-react";
 import { useState } from "react";
+import { ZapFill } from "~/components/icons";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,12 +15,14 @@ import type { ProfileGeneratorFormMethod } from "./use-form";
 interface ProfileGeneratorFormProps extends React.ComponentProps<"div"> {
   form: ProfileGeneratorFormMethod;
   options: Option[];
+  credits?: number;
   onGenerate: (values: AvatarGeneratorDTO) => void;
   isGenerating?: boolean;
 }
 
 export function ProfileGeneratorForm({
   form,
+  credits,
   onGenerate,
   isGenerating = false,
   className,
@@ -181,7 +184,7 @@ export function ProfileGeneratorForm({
 
         <button
           type="submit"
-          className="btn btn-primary"
+          className="btn btn-primary btn-lg"
           disabled={isGenerating}
         >
           {isGenerating && (
@@ -192,6 +195,12 @@ export function ProfileGeneratorForm({
               ? t("maker.generator.ocGenerating")
               : t("maker.generator.ocGenerator")}
           </span>
+          {!isGenerating && (
+            <span className="bg-primary-content text-primary badge gap-1">
+              <ZapFill />
+              {credits ? credits : <span className="loading loading-xs" />}
+            </span>
+          )}
         </button>
       </form>
     </div>
