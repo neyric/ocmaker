@@ -23,12 +23,14 @@ export interface Option {
 export interface AvatarGeneratorProps extends React.ComponentProps<"div"> {
   genId: string;
   options: Array<Option>;
+  previewBg?: string;
 }
 
 export function AvatarGenerator({
   className,
   genId,
   options,
+  previewBg,
   ...props
 }: AvatarGeneratorProps) {
   const { user, credits, setCredits } = useUserProfile();
@@ -86,7 +88,7 @@ export function AvatarGenerator({
         isGenerating={mutation.isPending}
         credits={data?.credits}
       />
-      <ProfileGeneratorPreview className="flex-1 min-w-0 w-full" />
+      <ProfileGeneratorPreview className="flex-1 min-w-0 w-full" previewBg={previewBg} />
     </div>
   );
 }

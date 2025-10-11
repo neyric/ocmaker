@@ -154,13 +154,13 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       className:
         "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
     },
-    {
-      text: ct("contents.cta.btns.explore"),
-      href: "/oc-arts",
-      variant: "outline" as const,
-      className:
-        "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
-    },
+    // {
+    //   text: ct("contents.cta.btns.explore"),
+    //   href: "/oc-arts",
+    //   variant: "outline" as const,
+    //   className:
+    //     "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",
+    // },
   ];
 
   return (
@@ -192,6 +192,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           aria-hidden={state !== "oc"}
           genId={loaderData.genId}
           options={loaderData.options}
+          previewBg={examples[0].image}
         />
       </HeroSection>
 

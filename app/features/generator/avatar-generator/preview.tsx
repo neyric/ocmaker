@@ -7,11 +7,13 @@ import { useTasks } from "~/store";
 
 interface ProfileGeneratorPreviewProps extends React.ComponentProps<"div"> {
   onSave?: (task: Task) => void;
+  previewBg?: string;
 }
 
 export function ProfileGeneratorPreview({
   className,
   onSave,
+  previewBg,
   ...props
 }: ProfileGeneratorPreviewProps) {
   const t = useTranslate();
@@ -24,10 +26,6 @@ export function ProfileGeneratorPreview({
     a.click();
   };
 
-  const handleSave = (task: Task) => {
-    onSave?.(task);
-  };
-
   return (
     <div
       className={clsx(
@@ -36,12 +34,11 @@ export function ProfileGeneratorPreview({
       )}
       {...props}
     >
-      <div className="absolute inset-0 opacity-10 select-none pointer-events-none">
-        <Image
-          className="size-full object-cover"
-          src="https://cdn.ocmaker.app/example/honkai-star-rail-oc-generated-3.webp"
-        />
-      </div>
+      {previewBg && (
+        <div className="absolute inset-0 opacity-20 select-none pointer-events-none">
+          <Image className="size-full object-cover" src={previewBg} />
+        </div>
+      )}
       {!tasks.length ? (
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <h3 className="text-lg font-bold uppercase tracking-wide text-base-content/80 mb-2">
