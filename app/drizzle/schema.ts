@@ -1,4 +1,4 @@
-import { relations } from "drizzle-orm";
+import { relations, sql } from "drizzle-orm";
 import { index, integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
 import { nanoid } from "nanoid";
 
@@ -197,7 +197,7 @@ export const subscriptions = sqliteTable("subscriptions", {
 export const ai_tasks = sqliteTable("ai_tasks", {
   task_no: text()
     .primaryKey()
-    .$defaultFn(() => nanoid()), // Primary KEY
+    .$defaultFn(() => crypto.randomUUID()), // Primary KEY
   user_id: text().references(() => users.id, { onDelete: "cascade" }),
   created_at: integer({ mode: "timestamp" })
     .notNull()
@@ -226,6 +226,36 @@ export const ai_tasks = sqliteTable("ai_tasks", {
   result_data: text({ mode: "json" }), // 执行完成后结果（JSON，可为空）
   credits_deducted: integer({ mode: "boolean" }).notNull().default(false), // 是否已经扣除了积分
   credits_refund: integer({ mode: "boolean" }).notNull().default(false), // 是否已经退回了积分（针对失败的 task 判断）
+});
+
+export const characters = sqliteTable("characters", {
+  id: text()
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  user_id: text()
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  name: text().notNull(),
+  description: text(),
+  image_url: text().notNull(),
+  aspect: text().default("1:1"),
+  source_task_no: text().references(() => ai_tasks.task_no, {
+    onDelete: "set null",
+  }),
+  source_params: text({ mode: "json" }),
+  is_public: integer({ mode: "boolean" }).notNull().default(false),
+  category: text().default("general"),
+  tags: text({ mode: "json" }).$type<string[]>().default([]),
+  likes_count: integer().notNull().default(0),
+  comments_count: integer().notNull().default(0),
+  views_count: integer().notNull().default(0),
+  created_at: integer({ mode: "timestamp" })
+    .notNull()
+    .default(sql`(strftime('%s', 'now'))`),
+  updated_at: integer({ mode: "timestamp" })
+    .notNull()
+    .default(sql`(strftime('%s', 'now'))`)
+    .$onUpdateFn(() => new Date()),
 });
 
 // Daily check-in 表 - 用户每日签到记录
@@ -290,6 +320,7 @@ export const users_relations = relations(users, ({ many }) => ({
   orders: many(orders), // 一对多：订单
   subscriptions: many(subscriptions), // 一对多：订阅
   ai_tasks: many(ai_tasks),
+  characters: many(characters),
   daily_checkins: many(daily_checkins), // 一对多：用户的签到记录
   sent_invitations: many(invitations, {
     relationName: "inviter", // 用户发出的邀请
@@ -357,10 +388,22 @@ export const subscriptions_relations = relations(
   }),
 );
 
-export const ai_tasks_relations = relations(ai_tasks, ({ one }) => ({
+export const ai_tasks_relations = relations(ai_tasks, ({ one, many }) => ({
   user: one(users, {
     fields: [ai_tasks.user_id],
     references: [users.id],
+  }),
+  characters: many(characters),
+}));
+
+export const characters_relations = relations(characters, ({ one }) => ({
+  user: one(users, {
+    fields: [characters.user_id],
+    references: [users.id],
+  }),
+  source_task: one(ai_tasks, {
+    fields: [characters.source_task_no],
+    references: [ai_tasks.task_no],
   }),
 }));
 
@@ -412,6 +455,9 @@ export type InsertSubscription = typeof subscriptions.$inferInsert;
 
 export type AiTask = typeof ai_tasks.$inferSelect;
 export type InsertAiTask = typeof ai_tasks.$inferInsert;
+
+export type Character = typeof characters.$inferSelect;
+export type InsertCharacter = typeof characters.$inferInsert;
 
 export type DailyCheckin = typeof daily_checkins.$inferSelect;
 export type InsertDailyCheckin = typeof daily_checkins.$inferInsert;

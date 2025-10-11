@@ -1,0 +1,20 @@
+CREATE TABLE `characters` (
+	`id` text PRIMARY KEY NOT NULL,
+	`user_id` text NOT NULL,
+	`name` text NOT NULL,
+	`description` text,
+	`image_url` text NOT NULL,
+	`aspect` text DEFAULT '1:1',
+	`source_task_no` text,
+	`source_params` text,
+	`is_public` integer DEFAULT false NOT NULL,
+	`category` text DEFAULT 'general',
+	`tags` text DEFAULT '[]',
+	`likes_count` integer DEFAULT 0 NOT NULL,
+	`comments_count` integer DEFAULT 0 NOT NULL,
+	`views_count` integer DEFAULT 0 NOT NULL,
+	`created_at` integer DEFAULT (strftime('%s', 'now')) NOT NULL,
+	`updated_at` integer DEFAULT (strftime('%s', 'now')) NOT NULL,
+	FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON UPDATE no action ON DELETE cascade,
+	FOREIGN KEY (`source_task_no`) REFERENCES `ai_tasks`(`task_no`) ON UPDATE no action ON DELETE set null
+);
