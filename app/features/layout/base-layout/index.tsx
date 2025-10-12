@@ -1,10 +1,11 @@
-import { Globe } from "lucide-react";
 import { Fragment } from "react";
 import {
   Github,
   LinktreeLogo,
+  Pinterest,
   ProductHunt,
   SquareXTwitter,
+  UserDetail,
 } from "~/components/icons";
 import { Footer, type FooterProps } from "./footer";
 import { Header, type HeaderProps } from "./header";
@@ -16,16 +17,28 @@ export interface BaseLayoutProps {
 
 const socials: FooterProps["socials"] = [
   {
-    to: "https://www.producthunt.com/products/ghost-face-ai",
+    to: "https://www.producthunt.com/products/oc-maker-ai-powered-oc-generator",
     target: "_blank",
     title: "Product Hunt",
     icon: ProductHunt,
+  },
+  {
+    icon: UserDetail,
+    to: "https://neyric.dev",
+    target: "_blank",
+    title: "Neyric",
   },
   {
     to: "https://github.com/neyric",
     target: "_blank",
     title: "Github",
     icon: Github,
+  },
+  {
+    icon: Pinterest,
+    to: "https://www.pinterest.com/ocmakerapp/",
+    target: "_blank",
+    title: "Pinterest",
   },
   {
     to: "https://linktr.ee/neyric",
@@ -38,12 +51,6 @@ const socials: FooterProps["socials"] = [
     target: "_blank",
     title: "Twitter",
     icon: SquareXTwitter,
-  },
-  {
-    to: "https://www.theailibrary.co/tool/ghost-face-ai",
-    target: "_blank",
-    title: "TAI Lib",
-    icon: Globe,
   },
 ];
 

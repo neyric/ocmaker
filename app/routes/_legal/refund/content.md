@@ -4,26 +4,21 @@ Last updated: September 24, 2025
 
 ## 1. Introduction
 
-At **Ghost Face AI**, we strive to provide our users with the best possible experience. We understand that circumstances may change and you may need to request a refund. Please read our refund policy carefully before making a purchase.
+At **OC Maker**, we want you to be completely satisfied with our AI character creation services. This Refund Policy outlines the conditions and process for requesting refunds on your purchases.
 
-## 2. Refund Eligibility
+## 2. 7-Day Refund Policy
 
-### 2.1 Time Limit
+### 2.1 Refund Period
 
-Refund requests must be made within **3 days** of your purchase. After this period, we cannot process any refund requests.
+We offer a **7-day no-questions-asked refund policy** for all purchases made on OC Maker. This period begins from the date of your original purchase.
 
-### 2.2 Credit Usage
+### 2.2 Eligibility
 
-If you have used more than **50 credits**, you are not eligible for a refund, regardless of the time since purchase.
+You are eligible for a full refund if:
 
-### 2.3 Eligibility Criteria
-
-You are eligible for a refund if:
-
-- You request the refund within **3 days** of the original purchase date
-- You have used **50 credits or less** of your purchased credits
-- You contact us through the appropriate channels described below
-- Your account is in good standing and has not violated our Terms of Service
+- You request the refund within **7 days** of your original purchase date
+- You contact us through the proper channels outlined below
+- Your account is in good standing and has not violated our Terms of Use
 
 ## 3. What Happens After a Refund
 
@@ -33,73 +28,68 @@ Upon processing your refund:
 
 - Your subscription will be **immediately canceled**
 - Access to **premium features will be revoked**
-- Any remaining credits will be forfeited
+- Any remaining subscription time will be forfeited
 - Your account will revert to the free tier (if available)
 
 ### 3.2 Generated Content
 
-- Photos created during your subscription period will remain accessible
-- You retain ownership of any photos you generated during the subscription period
-- No additional premium features or Ghost Face AI image generations will be available
+- Character creations made during your subscription period will remain accessible
+- You retain ownership of any content you created during the subscription period
+- No additional premium features or AI generations will be available
 
 ## 4. How to Request a Refund
 
-If you meet the eligibility criteria and wish to request a refund, please follow these steps:
+### 4.1 Contact Process
 
-### 4.1 Contact Us
+To request a refund, please contact us via email:
 
-Contact our support team at **[support@ghostfaceai.app](mailto:support@ghostfaceai.app)**.
+**Email:** [support@ocmaker.app](mailto:support@ocmaker.app)
 
-### 4.2 Provide Details
+### 4.2 Required Information
 
-Include the following information in your refund request:
+When requesting a refund, please include:
 
 - Your account email address
-- Order number
-- Purchase date
-- Reason for refund request
+- Order/transaction ID (if available)
+- Reason for refund (optional, but helps us improve)
+- Date of original purchase
 
-### 4.3 Submit Within 3 Days
+### 4.3 Processing Time
 
-Ensure your request is submitted within **3 days** of your purchase.
+- **Acknowledgment:** We will acknowledge your refund request within **24 hours**
+- **Processing:** Refunds are typically processed within **3-5 business days**
+- **Bank Processing:** Depending on your payment method, it may take an additional 5-10 business days for the refund to appear in your account
 
-### 4.4 Processing Time
+## 5. Late Refund Requests
 
-- **Review:** Once we receive your refund request, we will review it and notify you of the result shortly
-- **Processing:** If approved, your refund will be processed to your original payment method
-- **Bank Processing:** Depending on your payment method, it may take 5-10 business days for the refund to appear in your account
+### 5.1 Requests After 7 Days
 
-## 5. Exceptions and Special Cases
+Refund requests submitted **after the 7-day period** will be reviewed on a **case-by-case basis** and are **not guaranteed**.
 
-### 5.1 Requests After 3 Days
+### 5.2 Annual Subscriptions
 
-Refund requests submitted **after the 3-day period** are generally not accepted. However, we may consider exceptions in the following circumstances:
+For annual subscription holders:
 
-### 5.2 Technical Issues
-
-We may consider refunds beyond the 3-day period if:
-
-- Our service experienced significant technical issues preventing you from using the Ghost Face AI image generation features
-- System errors resulted in failed generations that consumed your credits
-- Billing errors or unauthorized charges occurred
+- **Within 7 days:** Full refund available
+- **After 7 days:** Refunds will be considered at our discretion based on usage and circumstances
+- **Prorated refunds:** May be offered in exceptional circumstances
 
 ### 5.3 Exceptional Circumstances
 
-At our sole discretion, we may consider refunds in cases of:
+We may consider refunds beyond the 7-day period in cases of:
 
-- Medical emergencies or serious personal circumstances
-- Service disruptions lasting more than 24 hours
-- Major feature failures affecting your purchased plan
+- Technical issues preventing service use
+- Billing errors or unauthorized charges
+- Service outages affecting your experience
+- Other extraordinary circumstances at our sole discretion
 
 ## 6. Non-Refundable Items
 
 The following are **not eligible** for refunds:
 
-- Credits that have been used beyond the 50 credit limit
-- Completed image generations, regardless of satisfaction with the result
+- Usage of AI generation credits that have already been consumed
 - Third-party services or add-ons (unless specifically covered by their own policies)
-- Accounts that have been suspended or terminated for Terms of Service violations
-- Free trial credits or promotional offers
+- Accounts that have been suspended or terminated for Terms of Use violations
 
 ## 7. Payment Method Considerations
 
@@ -110,13 +100,13 @@ Refunds will be processed back to your **original payment method** whenever poss
 ### 7.2 Payment Processor Fees
 
 - We absorb all processing fees for legitimate refund requests
-- No deduction will be made from your refund amount
+- No deductions will be made from your refund amount
 
 ## 8. Disputes and Chargebacks
 
-### 8.1 Contact First
+### 8.1 Contact Us First
 
-Before initiating a chargeback with your bank or credit card company, please contact us directly. We are committed to resolving issues quickly and fairly.
+Before initiating a chargeback with your bank or credit card company, please contact us directly. We are committed to resolving issues promptly and fairly.
 
 ### 8.2 Chargeback Policy
 
@@ -126,31 +116,28 @@ Chargebacks initiated without first contacting us may result in:
 - Loss of access to all services and content
 - Additional fees to recover chargeback costs (where legally permitted)
 
-## 9. Changes to this Policy
+## 9. Modifications to This Policy
 
-We reserve the right to update our refund policy at any time. Any changes will be reflected on this page, and we encourage you to review it periodically.
+### 9.1 Policy Updates
 
-### 9.1 Effective Date
-
-Changes to this policy will be effective immediately upon publication on our website.
+We reserve the right to modify this Refund Policy at any time. Changes will be effective immediately upon posting on our website.
 
 ### 9.2 Notification
 
-For significant changes, we may notify users via:
+Significant changes to this policy will be communicated via:
 
-- Email notification to registered users
-- Notice on our website dashboard
-- Updated "Last updated" date at the top of this policy
+- Email notification to active subscribers
+- Prominent notice on our website
+- Updated "Last modified" date at the top of this policy
 
 ## 10. Contact Information
 
-For any questions about this Refund Policy or to request a refund, please contact:
+For any questions about this Refund Policy or to request a refund, please contact us:
 
-- **Email:** [support@ghostfaceai.app](mailto:support@ghostfaceai.app)
-- **Response Time:** We aim to respond to all refund requests within 24 hours
+- **Email:** [support@ocmaker.app](mailto:support@ocmaker.app)
 
-Our support team is committed to addressing your concerns quickly and professionally.
+Our support team is committed to addressing your concerns promptly and professionally. We typically respond to all inquiries within 24 hours.
 
 ---
 
-**Ghost Face AI** – Your [AI Horror Portrait Generator](https://ghostfaceai.app)
+**OC Maker** – Your AI Character Creation Studio

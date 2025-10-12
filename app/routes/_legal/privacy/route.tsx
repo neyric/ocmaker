@@ -7,13 +7,13 @@ import content from "./content.md?raw";
 
 export const meta: Route.MetaFunction = ({ matches }) => {
   return [
-    { title: "Política de Privacidade - FotoProfissional" },
+    { title: "Privacy Policy - OC Maker" },
     {
       name: "description",
       content:
-        "Saiba como o FotoProfissional coleta, usa e protege seus dados pessoais. Sua privacidade é importante para nós—leia nossa política para entender seus direitos e nossas práticas.",
+        "Learn how OC Maker collects, uses and protects your personal data. Your privacy is important to us—read our policy to understand your rights and our practices.",
     },
-    createCanonical("/legal/privacy", matches[0].data.DOMAIN),
+    createCanonical("/legal/privacy", matches[0].loaderData.DOMAIN),
   ];
 };
 

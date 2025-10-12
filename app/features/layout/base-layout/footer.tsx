@@ -55,7 +55,7 @@ export const Footer = ({
               {brandDescription}
             </p>
             {!!socials.length && (
-              <div className="flex items-center gap-3 mt-4">
+              <div className="flex items-center gap-3.5 mt-4">
                 {socials.map(({ icon: Icon, ...social }, i) => (
                   <Link
                     key={i}
@@ -64,7 +64,7 @@ export const Footer = ({
                     title={social.title}
                     className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:text-primary"
                   >
-                    <Icon className="size-6" />
+                    <Icon className="size-5" />
                   </Link>
                 ))}
               </div>

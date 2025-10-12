@@ -7,13 +7,13 @@ import content from "./content.md?raw";
 
 export const meta: Route.MetaFunction = ({ matches }) => {
   return [
-    { title: "Termos de Uso - FotoProfissional" },
+    { title: "Terms of Use - OC Maker" },
     {
       name: "description",
       content:
-        "Revise os Termos de Uso do FotoProfissional, descrevendo as regras, direitos e responsabilidades ao usar nossa plataforma de transformação de fotos com IA.",
+        "Review the Terms of Use for OC Maker, outlining the rules, rights, and responsibilities when using our AI-powered character creation platform.",
     },
-    createCanonical("/legal/terms", matches[0].data.DOMAIN),
+    createCanonical("/legal/terms", matches[0].loaderData.DOMAIN),
   ];
 };
 

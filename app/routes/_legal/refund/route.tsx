@@ -7,13 +7,13 @@ import content from "./content.md?raw";
 
 export const meta: Route.MetaFunction = ({ matches }) => {
   return [
-    { title: "Política de Reembolso - FotoProfissional" },
+    { title: "Refund Policy - OC Maker" },
     {
       name: "description",
       content:
-        "Revise a Política de Reembolso do FotoProfissional, descrevendo nossa garantia de reembolso de 3 dias e o processo para solicitar reembolsos em nossos serviços de transformação de fotos com IA.",
+        "Review the Refund Policy for OC Maker, outlining our 7-day refund guarantee and the process for requesting refunds on our AI character creation services.",
     },
-    createCanonical("/legal/refund", matches[0].data.DOMAIN),
+    createCanonical("/legal/refund", matches[0].loaderData.DOMAIN),
   ];
 };
 

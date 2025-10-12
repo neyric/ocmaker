@@ -7,13 +7,13 @@ import content from "./content.md?raw";
 
 export const meta: Route.MetaFunction = ({ matches }) => {
   return [
-    { title: "Política de Cookies - FotoProfissional" },
+    { title: "Cookie Policy - OC Maker" },
     {
       name: "description",
       content:
-        "Descubra como o FotoProfissional usa cookies e tecnologias similares para melhorar sua experiência. Aprenda sobre suas escolhas em relação às configurações e consentimento de cookies.",
+        "Find out how OC Maker use cookies and similar technologies to enhance your experience. Learn about your choices regarding cookie settings and consent.",
     },
-    createCanonical("/legal/cookie", matches[0].data.DOMAIN),
+    createCanonical("/legal/cookie", matches[0].loaderData.DOMAIN),
   ];
 };
 
