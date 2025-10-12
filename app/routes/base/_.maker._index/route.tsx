@@ -156,6 +156,7 @@ export default function Maker({ loaderData }: Route.ComponentProps) {
 
   return (
     <Fragment>
+      <div className="h-screen bg-gradient-to-b from-primary/10 to-transparent absolute top-0 inset-x-0" />
       <HeroSection
         key={loaderData.genId + "hero"}
         title={ct("contents.hero.title")}

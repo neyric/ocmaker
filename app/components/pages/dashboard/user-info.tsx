@@ -248,7 +248,7 @@ export function UserInfoSection({
                   {copy.subscription.cancel}
                 </button>
               ) : (
-                <Link to="/pricing">
+                <Link to="/pricing" autoLang>
                   <button className="btn btn-sm bg-white text-black gap-2">
                     <Crown className="h-4 w-4" />
                     {copy.subscription.upgrade}
@@ -327,7 +327,7 @@ export function UserInfoSection({
                 <p className="text-sm text-base-content/70 mb-4">
                   {copy.subscription.upgradeDescription}
                 </p>
-                <Link to="/pricing">
+                <Link to="/pricing" autoLang>
                   <button className="btn btn-primary w-full gap-2">
                     <Crown className="h-4 w-4" />
                     {copy.subscription.viewPlans}

@@ -49,7 +49,7 @@ export function HeroSection({
             </p>
           </div>
           <div className="flex items-center gap-4 max-lg:justify-center">
-            <Link to="/maker" className="btn btn-primary">
+            <Link to="/maker" className="btn btn-primary" autoLang>
               {createButtonText}
             </Link>
           </div>

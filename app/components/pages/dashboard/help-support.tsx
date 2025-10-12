@@ -54,7 +54,7 @@ export function HelpSupportSection({
                       {option.description}
                     </p>
                     {option.href.startsWith("mailto:") ? (
-                      <Link to={option.href}>
+                      <Link to={option.href} autoLang>
                         <button className="btn btn-outline btn-sm">
                           {option.action}
                         </button>
@@ -66,7 +66,7 @@ export function HelpSupportSection({
                         </button>
                       </a>
                     ) : (
-                      <Link to={option.href}>
+                      <Link to={option.href} autoLang>
                         <button className="btn btn-outline btn-sm">
                           {option.action}
                         </button>

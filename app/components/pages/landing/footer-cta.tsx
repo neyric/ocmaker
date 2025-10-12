@@ -37,6 +37,7 @@ export function FooterCTASection({
               key={index}
               to={button.href}
               className={clsx(`btn btn-${button.variant}`, button.className)}
+              autoLang
             >
               {button.text}
             </Link>
