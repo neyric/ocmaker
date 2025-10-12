@@ -48,10 +48,11 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
         throw new Error(generateResult.error || "Failed to generate prompt");
       }
 
-      const newPrompt = [
-        generateResult.prompt!,
-        "anime style, masterpiece, sensitive, very aesthetic, absurdres",
-      ].join(", ");
+      const newPromptList = [generateResult.prompt!];
+      if (id !== "general-oc-maker") newPromptList.push("anime style");
+      newPromptList.push("masterpiece, sensitive, very aesthetic, absurdres");
+
+      const newPrompt = newPromptList.join(", ");
 
       result.prompt = newPrompt;
     } else {

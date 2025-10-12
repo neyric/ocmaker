@@ -30,7 +30,7 @@ export function ProfileGeneratorPreview({
     <div
       className={clsx(
         "border border-grid-border rounded-lg overflow-hidden relative lg:aspect-square",
-        className,
+        className
       )}
       {...props}
     >
@@ -50,7 +50,10 @@ export function ProfileGeneratorPreview({
         </div>
       ) : (
         <div className="h-full overflow-y-auto p-3 sm:p-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <div
+            className="grid grid-cols-1 data-[multicols=true]:sm:grid-cols-2 gap-3 sm:gap-4"
+            data-multicols={tasks.length > 1}
+          >
             {tasks.map((task) => (
               <div className="relative" key={task.id}>
                 <div
@@ -67,25 +70,27 @@ export function ProfileGeneratorPreview({
                       </p>
                     </div>
                   ) : task.data.status === "succeeded" ? (
-                    <Image
-                      src={task.data.result_url!}
-                      className="size-full object-cover"
-                    />
+                    <>
+                      <Image
+                        src={task.data.result_url!}
+                        className="size-full object-cover"
+                      />
+                      <button
+                        type="button"
+                        className="absolute top-2 right-2 btn btn-primary btn-sm sm:btn-xs"
+                        onClick={() => handleDownload(task.data)}
+                        disabled={task.data.status !== "succeeded"}
+                      >
+                        <Download size={12} />
+                        Download
+                      </button>
+                    </>
                   ) : (
                     <div className="size-full flex flex-col items-center justify-center text-base-content/70 p-4">
                       <div className="loading loading-ring loading-lg" />
                     </div>
                   )}
                 </div>
-                <button
-                  type="button"
-                  className="absolute bottom-2 left-2 btn btn-primary btn-sm sm:btn-xs"
-                  onClick={() => handleDownload(task.data)}
-                  disabled={task.data.status !== "succeeded"}
-                >
-                  <Download size={12} />
-                  Download
-                </button>
               </div>
             ))}
           </div>
