@@ -9,7 +9,7 @@ type MetaDescriptor = {
 
 export const createCanonical = (
   pathname: string,
-  domain: string,
+  domain: string
 ): MetaDescriptor => {
   const href = new URL(pathname, domain).toString();
 
@@ -24,7 +24,7 @@ export const createAlternative = (
   pathname: string,
   domain: string,
   language: string,
-  lang?: string,
+  lang?: string
 ): MetaDescriptor => {
   const hrefLang = lang || language;
   const href = new URL(pathname, domain).toString();
@@ -39,7 +39,7 @@ export const createAlternative = (
 
 export const createAlternatives = (
   domain: string,
-  languages: Array<{ code: string; path: string; hrefLang?: string }>,
+  languages: Array<{ code: string; path: string; hrefLang?: string }>
 ): MetaDescriptor[] => {
   return languages.map(({ code, path, hrefLang }) => {
     return createAlternative(path, domain, code, hrefLang);
@@ -48,7 +48,7 @@ export const createAlternatives = (
 
 export const createNormalAlternatives = (
   path: string,
-  domain: string,
+  domain: string
 ): MetaDescriptor[] => {
   const alternatives = languages.map((lang) => ({
     code: lang,

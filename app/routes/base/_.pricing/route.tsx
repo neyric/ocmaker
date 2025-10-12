@@ -12,14 +12,28 @@ import { useUserProfile } from "~/contexts/user-profile";
 import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
 import { useDialogStore } from "~/store/dialog";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
+import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
 
-export function meta({ matches, loaderData }: Route.MetaArgs) {
-  const canonical = createCanonical("/pricing", matches[0].loaderData.DOMAIN);
+export function meta({ matches, params, loaderData }: Route.MetaArgs) {
+  const url = "/pricing";
+  const canonicalUrl = params.lang ? `/${params.lang}${url}` : url;
+
+  const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternative = createNormalAlternatives(
-    "/pricing",
+    url,
     matches[0].loaderData.DOMAIN,
   );
+  const og = createSocialTags(
+    {
+      title: loaderData.meta.title,
+      description: loaderData.meta.description,
+      url: url,
+      siteName: matches[0].loaderData.SITE_NAME,
+    },
+    matches[0].loaderData.DOMAIN
+  );
+
 
   return [
     { title: loaderData.meta.title },
@@ -29,6 +43,7 @@ export function meta({ matches, loaderData }: Route.MetaArgs) {
     },
     canonical,
     ...alternative,
+    ...og,
   ];
 }
 

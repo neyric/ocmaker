@@ -37,7 +37,7 @@ export default {
         "Click to load an example prompt and tweak it before generating.",
       exampleClear: "Clear Content",
       exampleButton: "Use this example",
-      exampleGenerator: "Generator",
+      exampleGenerator: "Generator Backstory",
       exampleGenerating: "Generating...",
       ocTitle: "Character Appearance",
       ocPlaceholder:

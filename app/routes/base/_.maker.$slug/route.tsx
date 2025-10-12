@@ -25,19 +25,22 @@ import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
 
 export function meta({ matches, params, loaderData }: Route.MetaArgs) {
+  const url = `/maker/${params.slug}`;
+  const canonicalUrl = params.lang ? `/${params.lang}${url}` : url;
+
   const canonical = createCanonical(
-    `/maker/${params.slug}`,
+    canonicalUrl,
     matches[0].loaderData.DOMAIN
   );
   const alternatives = createNormalAlternatives(
-    `/maker/${params.slug}`,
+    url,
     matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
       title: loaderData.meta.title,
       description: loaderData.meta.description,
-      url: `/maker/${params.slug}`,
+      url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
     matches[0].loaderData.DOMAIN

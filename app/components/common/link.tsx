@@ -35,6 +35,7 @@ const useToLink = ({ to, autoLang = false }: UseToLinkOptions) => {
   if (!lang) return to;
   if (to.startsWith("http")) return to;
   if (to.startsWith("mailto")) return to;
+  if (to.startsWith("/legal")) return to;
 
   const newTo = `/${lang}${to}`;
   return newTo.endsWith("/") ? newTo.slice(0, -1) : newTo;

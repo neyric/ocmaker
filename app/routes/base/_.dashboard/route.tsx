@@ -20,17 +20,20 @@ import {
   type EditProfileDialogRef,
 } from "./edit-profile-dialog";
 
-export function meta({ matches, loaderData }: Route.MetaArgs) {
-  const canonical = createCanonical("/dashboard", matches[0].data.DOMAIN);
+export function meta({ matches, params, loaderData }: Route.MetaArgs) {
+  const url = "/dashboard";
+  const canonicalUrl = params.lang ? `/${params.lang}${url}` : url;
+
+  const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
-    "/dashboard",
+    url,
     matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
       title: loaderData.meta.title,
       description: loaderData.meta.description,
-      url: "/",
+      url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
     matches[0].loaderData.DOMAIN

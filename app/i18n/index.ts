@@ -12,19 +12,21 @@ const locales = Object.fromEntries(
     Object.entries(
       import.meta.glob(["./*.ts", "!./type.ts", "!./utils.ts", "!./hooks.ts"], {
         import: "default",
-      }),
-    ),
-  ).map(([key, value]) => [key.slice(2, -3), value] as const),
+      })
+    )
+  ).map(([key, value]) => [key.slice(2, -3), value] as const)
 );
 
 export type LangCode = (typeof languages)[number];
 
-export const languages = ["en"] as const;
+export const languages = ["en", "zh"] as const;
 export const langNames: Record<LangCode, string> = {
   en: "English",
+  zh: "简体中文",
 };
 export const langCodes: Record<LangCode, string> = {
   en: "en",
+  zh: "zh-Hans",
 };
 
 export const baseLanguage = languages[0];

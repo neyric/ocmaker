@@ -44,7 +44,11 @@ export const Footer = ({
         <div className="grid grid-flow-row lg:grid-flow-col gap-x-8 gap-y-4 sm:gap-y-6 md:gap-y-8">
           {/* Brand Section */}
           <div className="md:max-w-sm">
-            <Link className="inline-block focus-visible:outline-none" to="/">
+            <Link
+              className="inline-block focus-visible:outline-none"
+              to="/"
+              autoLang
+            >
               <Logo />
             </Link>
             <p className="text-sm text-base-content leading-relaxed">
@@ -80,10 +84,11 @@ export const Footer = ({
                     className={cn(
                       "text-sm text-base-content/70 transition-colors",
                       "hover:text-base-content focus-visible:outline-none",
-                      "focus-visible:text-base-content shrink-0",
+                      "focus-visible:text-base-content shrink-0"
                     )}
                     target={link.target}
                     to={link.to}
+                    autoLang
                   >
                     {link.label}
                   </Link>

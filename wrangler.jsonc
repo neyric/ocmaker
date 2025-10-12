@@ -20,7 +20,7 @@
     }
   ],
   "vars": {
-    "SITE_NAME": "Ghost Face AI",
+    "SITE_NAME": "OC Maker",
     "CDN_URL": "https://cdn.ocmaker.app",
     "DOMAIN": "https://ocmaker.app/",
     "GOOGLE_ANALYTICS_ID": "G-8HX211D2SL",

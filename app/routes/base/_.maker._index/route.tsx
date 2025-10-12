@@ -26,20 +26,23 @@ import type { Route } from "./+types/route";
 
 const DEFAULT_GEN_ID = "general-oc-maker";
 
-export function meta({ matches, loaderData }: Route.MetaArgs) {
-  const canonical = createCanonical("/maker", matches[0].loaderData.DOMAIN);
+export function meta({ matches, params, loaderData }: Route.MetaArgs) {
+  const url = "/maker";
+  const canonicalUrl = params.lang ? `/${params.lang}${url}` : url;
+
+  const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
-    "/maker",
-    matches[0].loaderData.DOMAIN,
+    url,
+    matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
       title: loaderData.meta.title,
       description: loaderData.meta.description,
-      url: "/maker",
+      url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
 
   return [

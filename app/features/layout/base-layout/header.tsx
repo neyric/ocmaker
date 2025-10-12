@@ -8,6 +8,7 @@ import { useTranslate } from "~/i18n";
 import { useRootLoader } from "~/root";
 import { useDialogStore } from "~/store/dialog";
 import { CreditsMenu } from "./credits-menu";
+import { LanguageSwitcher } from "./language-switcher";
 
 export interface HeaderProps {
   navLinks: Array<{
@@ -54,7 +55,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
           <div className="flex items-center h-16 gap-4">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Link className="cursor-pointer" to="/">
+              <Link className="cursor-pointer" to="/" autoLang>
                 <Logo size="base" />
               </Link>
             </div>
@@ -63,15 +64,16 @@ export const Header = ({ navLinks }: HeaderProps) => {
             {/* Desktop Menu */}
             <div className="items-center gap-4 text-sm hidden lg:flex">
               {navLinks.map((link, i) => (
-                <a
+                <Link
                   key={i}
                   className="hover:text-primary"
                   title={link.label}
-                  href={link.to}
+                  to={link.to}
                   target={link.target}
+                  autoLang
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
               {/* Theme Toggle */}
               <button
@@ -85,8 +87,8 @@ export const Header = ({ navLinks }: HeaderProps) => {
                   <Sun className="w-5 h-5" />
                 )}
               </button>
+              <LanguageSwitcher />
             </div>
-
             <div className="flex items-center gap-2">
               {user ? (
                 <>
@@ -95,6 +97,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
                     to="/dashboard"
                     className="btn btn-primary btn-sm shadow-none"
                     onClick={() => setDrawerOpen(false)}
+                    autoLang
                   >
                     <User className="w-4 h-4" />
                     {t("common.dashboard")}
@@ -144,6 +147,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
                       className="cursor-pointer"
                       to="/"
                       onClick={() => setDrawerOpen(false)}
+                      autoLang
                     >
                       <Logo />
                     </Link>
@@ -160,6 +164,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
                           title={link.label}
                           to={link.to}
                           onClick={() => setDrawerOpen(false)}
+                          autoLang
                         >
                           {link.label}
                         </Link>

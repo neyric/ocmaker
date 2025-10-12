@@ -24,17 +24,20 @@ import { createCanonical, createNormalAlternatives } from "~/utils/meta";
 import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
 
-export function meta({ matches, loaderData }: Route.MetaArgs) {
-  const canonical = createCanonical("/", matches[0].loaderData.DOMAIN);
+export function meta({ matches, params, loaderData }: Route.MetaArgs) {
+  const url = "/";
+  const canonicalUrl = params.lang ? `/${params.lang}${url}` : url;
+
+  const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
-    "/",
+    url,
     matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
       title: loaderData.meta.title,
       description: loaderData.meta.description,
-      url: "/",
+      url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
     matches[0].loaderData.DOMAIN
