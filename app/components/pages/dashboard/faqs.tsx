@@ -1,4 +1,3 @@
-import { Link } from "~/components/common";
 import { GridSection } from "~/components/ui/grid-section";
 
 interface FAQ {
