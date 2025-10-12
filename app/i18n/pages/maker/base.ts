@@ -145,8 +145,7 @@ const ocOptions = [
     data: [
       { label: "Girl", value: "1girl" },
       { label: "Boy", value: "1boy" },
-      { label: "Non-binary", value: "1person" },
-      { label: "Androgynous", value: "androgynous presentation" },
+      { label: "None", value: "" },
     ],
   },
   {

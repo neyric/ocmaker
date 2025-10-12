@@ -10,6 +10,7 @@ import {
   Settings,
   User,
 } from "lucide-react";
+import { useParams } from "react-router";
 import { Link } from "~/components/common";
 import { GridSection } from "~/components/ui/grid-section";
 import type { Subscription } from "~/drizzle/schema";
@@ -80,12 +81,13 @@ export function UserInfoSection({
   onSubscriptionCancel,
   copy,
 }: UserInfoSectionProps) {
+  const params = useParams();
   const hasActiveSubscription = subscription?.status === "active";
 
   const formatDate = (timestamp?: string | number | Date) => {
     if (!timestamp) return copy.general.notAvailable;
     const date = timestamp instanceof Date ? timestamp : new Date(timestamp);
-    return date.toLocaleDateString("en-US", {
+    return date.toLocaleDateString(params.lang ?? "en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",
