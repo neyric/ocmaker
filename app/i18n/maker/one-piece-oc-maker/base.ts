@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Laughing Navigator",
-    description: "A navigator whose laughter charts currents no log pose can track.",
+    description:
+      "A navigator whose laughter charts currents no log pose can track.",
     prompt: `What is your character's name?
 Marin Tidewell
 
@@ -38,7 +39,8 @@ Escaped a World Government research ship by surfing a Maelstrom using her newly 
   },
   {
     title: "Cipher Pol Defector",
-    description: "A former CP0 agent using Rokushiki in service of the Revolutionary Army.",
+    description:
+      "A former CP0 agent using Rokushiki in service of the Revolutionary Army.",
     prompt: `What is your character's name?
 Cato Cipher
 
@@ -62,7 +64,8 @@ Defected after refusing to eliminate a village aiding Sabo; now feeds Dragon inf
   },
   {
     title: "Undersea Chef",
-    description: "A fishman chef serving gourmet feasts aboard a floating restaurant fleet.",
+    description:
+      "A fishman chef serving gourmet feasts aboard a floating restaurant fleet.",
     prompt: `What is your character's name?
 Chef Coral
 
@@ -110,7 +113,8 @@ Helped Nami map lightning routes after Enel's defeat, choosing adventure over st
   },
   {
     title: "Wano Ronin",
-    description: "A wandering samurai chronicling Kozuki history while dueling Beast Pirates remnants.",
+    description:
+      "A wandering samurai chronicling Kozuki history while dueling Beast Pirates remnants.",
     prompt: `What is your character's name?
 Kyoji Kozuki
 
@@ -142,17 +146,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +164,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Cabin boy/girl",
-        value: "cabin crew teen"
+        value: "cabin crew teen",
       },
       {
         label: "Young pirate",
-        value: "young pirate"
+        value: "young pirate",
       },
       {
         label: "Seasoned crew",
-        value: "seasoned crew"
+        value: "seasoned crew",
       },
       {
         label: "Veteran captain",
-        value: "veteran captain"
+        value: "veteran captain",
       },
       {
         label: "Legendary pirate",
-        value: "legendary pirate"
-      }
-    ]
+        value: "legendary pirate",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +218,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +252,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +294,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +328,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +362,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +396,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Pirate coat",
-        value: "pirate coat"
+        value: "pirate coat",
       },
       {
         label: "Marine uniform",
-        value: "marine uniform top"
+        value: "marine uniform top",
       },
       {
         label: "Revolutionary jacket",
-        value: "revolutionary jacket"
+        value: "revolutionary jacket",
       },
       {
         label: "Fishman kimono",
-        value: "fishman kimono"
+        value: "fishman kimono",
       },
       {
         label: "Sky island tunic",
-        value: "sky island tunic"
-      }
-    ]
+        value: "sky island tunic",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +450,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Striped trousers",
-        value: "striped trousers"
+        value: "striped trousers",
       },
       {
         label: "Sailor shorts",
-        value: "sailor shorts"
+        value: "sailor shorts",
       },
       {
         label: "High seas skirt",
-        value: "high seas skirt"
+        value: "high seas skirt",
       },
       {
         label: "Rough denim",
-        value: "rough denim"
+        value: "rough denim",
       },
       {
         label: "Marine slacks",
-        value: "marine slacks"
-      }
-    ]
+        value: "marine slacks",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +504,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Straw Hat style",
-        value: "straw hat style"
+        value: "straw hat style",
       },
       {
         label: "Marine officer",
-        value: "marine officer set"
+        value: "marine officer set",
       },
       {
         label: "Revolutionary army",
-        value: "revolutionary army set"
+        value: "revolutionary army set",
       },
       {
         label: "Wano samurai",
-        value: "wano samurai set"
+        value: "wano samurai set",
       },
       {
         label: "Skypiea explorer",
-        value: "skypiea explorer"
-      }
-    ]
+        value: "skypiea explorer",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +558,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Weather-worn canvas",
-        value: "weather worn canvas"
+        value: "weather worn canvas",
       },
       {
         label: "Marine polished cloth",
-        value: "marine polished cloth"
+        value: "marine polished cloth",
       },
       {
         label: "Wano silk",
-        value: "wano silk"
+        value: "wano silk",
       },
       {
         label: "Fishman scales",
-        value: "fishman scales"
+        value: "fishman scales",
       },
       {
         label: "Sky cloud fiber",
-        value: "sky cloud fiber"
-      }
-    ]
+        value: "sky cloud fiber",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,53 +612,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Straw hat",
-        value: "straw hat"
+        value: "straw hat",
       },
       {
         label: "Marine justice cape",
-        value: "marine justice cape"
+        value: "marine justice cape",
       },
       {
         label: "Den den mushi",
-        value: "den den mushi"
+        value: "den den mushi",
       },
       {
         label: "Log pose",
-        value: "log pose"
+        value: "log pose",
       },
       {
         label: "Wanted poster",
-        value: "wanted poster"
-      }
-    ]
+        value: "wanted poster",
+      },
+    ],
   },
   {
     title: "Faction",
@@ -662,26 +666,26 @@ const ocOptions = [
     data: [
       {
         label: "Pirate",
-        value: "pirate"
+        value: "pirate",
       },
       {
         label: "Marine",
-        value: "marine"
+        value: "marine",
       },
       {
         label: "Revolutionary",
-        value: "revolutionary"
+        value: "revolutionary",
       },
       {
         label: "Bounty hunter",
-        value: "bounty hunter"
+        value: "bounty hunter",
       },
       {
         label: "World Noble",
-        value: "world noble"
-      }
-    ]
-  }
+        value: "world noble",
+      },
+    ],
+  },
 ];
 
 const examples = [

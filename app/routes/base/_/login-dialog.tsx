@@ -66,7 +66,12 @@ export function LoginDialog({ useOneTap = false }: { useOneTap?: boolean }) {
             </button>
             <p className="text-xs text-base-content/70 text-center">
               {t("dialogs.login.termsText")}{" "}
-              <Link className="underline" target="_blank" to="/legal/terms" autoLang>
+              <Link
+                className="underline"
+                target="_blank"
+                to="/legal/terms"
+                autoLang
+              >
                 {t("dialogs.login.termsLink")}
               </Link>
             </p>

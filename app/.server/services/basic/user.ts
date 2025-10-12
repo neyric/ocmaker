@@ -16,7 +16,7 @@ export const convertUserInfo = (user: User, encodeEmail = true) => {
   const mail = account
     .slice(0, 2)
     .concat(
-      Array.from({ length: account.slice(2).length }, () => "*").join("")
+      Array.from({ length: account.slice(2).length }, () => "*").join(""),
     );
 
   const userInfo: UserInfo = {
@@ -76,7 +76,7 @@ export const getUserSubscription = async (user?: User | null) => {
 
 export const updateUserInfo = async (
   values: UpdateProfileDTO,
-  userId: User["id"]
+  userId: User["id"],
 ) => {
   const value: Partial<InsertUser> = {
     username: values.username,

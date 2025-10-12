@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Public Safety Veteran",
-    description: "A Division 4 survivor who keeps going for the rookies depending on her.",
+    description:
+      "A Division 4 survivor who keeps going for the rookies depending on her.",
     prompt: `What is your character's name?
 Reina Shiomi
 
@@ -38,7 +39,8 @@ Lost her hearing after firing the Railgun Devil to vaporize a zombie horde, yet 
   },
   {
     title: "Hybridity Experiment",
-    description: "An illegal human-weapons hybrid searching for a place to belong.",
+    description:
+      "An illegal human-weapons hybrid searching for a place to belong.",
     prompt: `What is your character's name?
 Jun Harada
 
@@ -62,7 +64,8 @@ Was sold to the Yakuza by his parents; only escaped when Makima's purge shattere
   },
   {
     title: "Private Devil Hunter",
-    description: "A freelance hunter monetizing cursed livestreams for devil knowledge.",
+    description:
+      "A freelance hunter monetizing cursed livestreams for devil knowledge.",
     prompt: `What is your character's name?
 Mika Kuroe
 
@@ -86,7 +89,8 @@ Her family was devoured by the Attention Devil; going live is the only way she f
   },
   {
     title: "International Assassin",
-    description: "A foreign assassin chasing contracts across the world at any cost.",
+    description:
+      "A foreign assassin chasing contracts across the world at any cost.",
     prompt: `What is your character's name?
 Sergei Kozlov
 
@@ -110,7 +114,8 @@ Forced into service after his village was turned to ice as leverage; each missio
   },
   {
     title: "Devil Rights Advocate",
-    description: "A civilian lawyer championing devil-human coexistence while hiding a pact.",
+    description:
+      "A civilian lawyer championing devil-human coexistence while hiding a pact.",
     prompt: `What is your character's name?
 Aya Nanase
 
@@ -142,17 +147,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +165,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Public Safety recruit",
-        value: "public safety recruit"
+        value: "public safety recruit",
       },
       {
         label: "Devil hunter rookie",
-        value: "devil hunter rookie"
+        value: "devil hunter rookie",
       },
       {
         label: "Division veteran",
-        value: "division veteran"
+        value: "division veteran",
       },
       {
         label: "International assassin",
-        value: "international assassin"
+        value: "international assassin",
       },
       {
         label: "Demon hybrid timeless",
-        value: "demon hybrid timeless"
-      }
-    ]
+        value: "demon hybrid timeless",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,53 +219,53 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
+        value: "graceful",
       },
       {
         label: "Lean hunter",
-        value: "lean hunter build"
+        value: "lean hunter build",
       },
       {
         label: "Scarred enforcer",
-        value: "scarred enforcer build"
+        value: "scarred enforcer build",
       },
       {
         label: "Hybrid physique",
-        value: "hybrid physique"
+        value: "hybrid physique",
       },
       {
         label: "Athletic rogue",
-        value: "athletic rogue build"
+        value: "athletic rogue build",
       },
       {
         label: "Augmented body",
-        value: "augmented body"
-      }
-    ]
+        value: "augmented body",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -268,41 +273,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -310,33 +315,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -344,33 +349,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -378,33 +383,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -412,53 +417,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Public Safety shirt",
-        value: "public safety shirt"
+        value: "public safety shirt",
       },
       {
         label: "Leather devil hunter jacket",
-        value: "leather devil hunter jacket"
+        value: "leather devil hunter jacket",
       },
       {
         label: "Casual street tee",
-        value: "casual street tee"
+        value: "casual street tee",
       },
       {
         label: "International assassin suit",
-        value: "international assassin suit"
+        value: "international assassin suit",
       },
       {
         label: "Chainsaw hybrid harness",
-        value: "chainsaw hybrid harness"
-      }
-    ]
+        value: "chainsaw hybrid harness",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -466,53 +471,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Bloodstained slacks",
-        value: "bloodstained slacks"
+        value: "bloodstained slacks",
       },
       {
         label: "Combat cargo pants",
-        value: "combat cargo pants"
+        value: "combat cargo pants",
       },
       {
         label: "Ripped jeans",
-        value: "ripped jeans"
+        value: "ripped jeans",
       },
       {
         label: "Hybrid armor greaves",
-        value: "hybrid armor greaves"
+        value: "hybrid armor greaves",
       },
       {
         label: "Formal assassin trousers",
-        value: "formal assassin trousers"
-      }
-    ]
+        value: "formal assassin trousers",
+      },
+    ],
   },
   {
     title: "Set",
@@ -520,53 +525,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Public Safety uniform",
-        value: "public safety uniform"
+        value: "public safety uniform",
       },
       {
         label: "Private devil hunter",
-        value: "private devil hunter set"
+        value: "private devil hunter set",
       },
       {
         label: "Special Division 4",
-        value: "special division 4 set"
+        value: "special division 4 set",
       },
       {
         label: "International assassin",
-        value: "international assassin set"
+        value: "international assassin set",
       },
       {
         label: "Chainsaw hybrid rampage",
-        value: "chainsaw hybrid rampage"
-      }
-    ]
+        value: "chainsaw hybrid rampage",
+      },
+    ],
   },
   {
     title: "Material",
@@ -574,53 +579,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Bloodproof fabric",
-        value: "bloodproof fabric"
+        value: "bloodproof fabric",
       },
       {
         label: "Devil skin leather",
-        value: "devil skin leather"
+        value: "devil skin leather",
       },
       {
         label: "Kevlar weave",
-        value: "kevlar weave"
+        value: "kevlar weave",
       },
       {
         label: "Chainsaw plating",
-        value: "chainsaw plating"
+        value: "chainsaw plating",
       },
       {
         label: "Sunrise suit cloth",
-        value: "sunrise suit cloth"
-      }
-    ]
+        value: "sunrise suit cloth",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -628,53 +633,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Chainsaw pull cord",
-        value: "chainsaw pull cord"
+        value: "chainsaw pull cord",
       },
       {
         label: "Devil contract charm",
-        value: "devil contract charm"
+        value: "devil contract charm",
       },
       {
         label: "Blood bag satchel",
-        value: "blood bag satchel"
+        value: "blood bag satchel",
       },
       {
         label: "Hybrid jaw muzzle",
-        value: "hybrid jaw muzzle"
+        value: "hybrid jaw muzzle",
       },
       {
         label: "Public Safety badge",
-        value: "public safety badge"
-      }
-    ]
+        value: "public safety badge",
+      },
+    ],
   },
   {
     title: "Alignment",
@@ -682,26 +687,26 @@ const ocOptions = [
     data: [
       {
         label: "Public Safety",
-        value: "public safety"
+        value: "public safety",
       },
       {
         label: "Private hunter",
-        value: "private hunter"
+        value: "private hunter",
       },
       {
         label: "Devil",
-        value: "devil"
+        value: "devil",
       },
       {
         label: "Hybrid",
-        value: "hybrid"
+        value: "hybrid",
       },
       {
         label: "International assassin",
-        value: "international assassin"
-      }
-    ]
-  }
+        value: "international assassin",
+      },
+    ],
+  },
 ];
 
 const examples = [

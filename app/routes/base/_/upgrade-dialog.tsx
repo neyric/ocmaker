@@ -3,13 +3,13 @@ import clsx from "clsx";
 import currency from "currency.js";
 import { Ring2 } from "ldrs/react";
 import { Check, ChevronLeft, ChevronRight, Coins } from "lucide-react";
-import { useState, type CSSProperties } from "react";
+import { type CSSProperties, useState } from "react";
+import type { Pricing } from "~/.server/constants/pricing";
 import { createOrder } from "~/api/order";
 import { Dialog, DialogContent } from "~/components/ui/dialog";
 import { Drawer, DrawerContent } from "~/components/ui/drawer";
 import { useBreakpoint } from "~/hooks/dom";
 import { useTranslate } from "~/i18n";
-import type { Pricing } from "~/.server/constants/pricing";
 import { useRootLoader } from "~/root";
 import { useDialogStore } from "~/store/dialog";
 
@@ -163,7 +163,11 @@ function UpgradeContent({
                       <h3 className="text-xl font-semibold">{pricing.title}</h3>
                       {pricing.popular && (
                         <div className="badge badge-primary badge-xs py-2.5 rounded-full uppercase">
-                          {t("pricing.common.mostPopular", undefined, "Most Popular")}
+                          {t(
+                            "pricing.common.mostPopular",
+                            undefined,
+                            "Most Popular",
+                          )}
                         </div>
                       )}
                     </div>
@@ -193,7 +197,11 @@ function UpgradeContent({
                           </div>
                           {annually && (
                             <div className="badge badge-sm rounded-full border-grid-border badge-outline font-medium">
-                              {t("pricing.common.save", { rate: 20 }, "Save 20%")}
+                              {t(
+                                "pricing.common.save",
+                                { rate: 20 },
+                                "Save 20%",
+                              )}
                             </div>
                           )}
                         </label>
@@ -218,7 +226,9 @@ function UpgradeContent({
                         onClick={() =>
                           onBuy(
                             pricing.id,
-                            annually ? pricing.annuallyProductId : pricing.productId,
+                            annually
+                              ? pricing.annuallyProductId
+                              : pricing.productId,
                           )
                         }
                       >
@@ -242,8 +252,14 @@ function UpgradeContent({
                         <span className="text-base">{credits} credits </span>
                         <span className="opacity-60 text-sm">
                           {pricing.type === "subscription"
-                            ? "/" + t("pricing.common.month", undefined, "month")
-                            : "/" + t("pricing.common.oneTime", undefined, "one time")}
+                            ? "/" +
+                              t("pricing.common.month", undefined, "month")
+                            : "/" +
+                              t(
+                                "pricing.common.oneTime",
+                                undefined,
+                                "one time",
+                              )}
                         </span>
                       </p>
                     </div>

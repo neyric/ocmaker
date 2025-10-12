@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Rising Idol",
-    description: "A center idol juggling nightly livestreams and dance rehearsals.",
+    description:
+      "A center idol juggling nightly livestreams and dance rehearsals.",
     prompt: `What is your character's name?
 Aiko Shirasu
 
@@ -38,7 +39,8 @@ Discovered by Ruby while covering emergency vocals, she now supports her family 
   },
   {
     title: "Method Actor",
-    description: "An actor famed for immersive roles and unfiltered interviews.",
+    description:
+      "An actor famed for immersive roles and unfiltered interviews.",
     prompt: `What is your character's name?
 Ren Kurosawa
 
@@ -110,7 +112,8 @@ Walked away from the industry after cyberbullying; Ai's legacy inspired her retu
   },
   {
     title: "Idol Choreographer",
-    description: "A retired idol teaching the next generation with strict kindness.",
+    description:
+      "A retired idol teaching the next generation with strict kindness.",
     prompt: `What is your character's name?
 Sakura Minami
 
@@ -142,17 +145,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +163,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Junior idol",
-        value: "junior idol"
+        value: "junior idol",
       },
       {
         label: "High school star",
-        value: "high school star"
+        value: "high school star",
       },
       {
         label: "Adult performer",
-        value: "adult performer"
+        value: "adult performer",
       },
       {
         label: "Industry veteran",
-        value: "industry veteran"
+        value: "industry veteran",
       },
       {
         label: "Legendary icon",
-        value: "legendary icon"
-      }
-    ]
+        value: "legendary icon",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +217,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +251,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +293,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +327,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +361,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +395,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Idol stage blouse",
-        value: "idol stage blouse"
+        value: "idol stage blouse",
       },
       {
         label: "Drama actor jacket",
-        value: "drama actor jacket"
+        value: "drama actor jacket",
       },
       {
         label: "Streamer hoodie",
-        value: "streamer hoodie"
+        value: "streamer hoodie",
       },
       {
         label: "Manager blazer",
-        value: "manager blazer"
+        value: "manager blazer",
       },
       {
         label: "Designer couture",
-        value: "designer couture"
-      }
-    ]
+        value: "designer couture",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +449,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Stage skirt",
-        value: "stage skirt"
+        value: "stage skirt",
       },
       {
         label: "Performance shorts",
-        value: "performance shorts"
+        value: "performance shorts",
       },
       {
         label: "Stylish slacks",
-        value: "stylish slacks"
+        value: "stylish slacks",
       },
       {
         label: "Casual jeans",
-        value: "casual jeans idol"
+        value: "casual jeans idol",
       },
       {
         label: "Elegant gown hem",
-        value: "elegant gown hem"
-      }
-    ]
+        value: "elegant gown hem",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +503,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "B-Komachi stage",
-        value: "b komachi stage set"
+        value: "b komachi stage set",
       },
       {
         label: "Actor red carpet",
-        value: "actor red carpet set"
+        value: "actor red carpet set",
       },
       {
         label: "Variety show",
-        value: "variety show set"
+        value: "variety show set",
       },
       {
         label: "Underground idol",
-        value: "underground idol set"
+        value: "underground idol set",
       },
       {
         label: "Agency manager",
-        value: "agency manager set"
-      }
-    ]
+        value: "agency manager set",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +557,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Sequined fabric",
-        value: "sequined fabric"
+        value: "sequined fabric",
       },
       {
         label: "Stage sparkle mesh",
-        value: "stage sparkle mesh"
+        value: "stage sparkle mesh",
       },
       {
         label: "Studio denim",
-        value: "studio denim"
+        value: "studio denim",
       },
       {
         label: "Silk couture",
-        value: "silk couture"
+        value: "silk couture",
       },
       {
         label: "LED fiber",
-        value: "led fiber"
-      }
-    ]
+        value: "led fiber",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,54 +611,54 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Stage microphone",
-        value: "stage microphone"
+        value: "stage microphone",
       },
       {
         label: "In-ear monitor",
-        value: "in ear monitor"
+        value: "in ear monitor",
       },
       {
         label: "Actor script",
-        value: "actor script"
+        value: "actor script",
       },
       {
         label: "Fan lightstick",
-        value: "fan lightstick"
+        value: "fan lightstick",
       },
       {
         label: "Social media phone",
-        value: "social media phone"
-      }
-    ]
-  }
+        value: "social media phone",
+      },
+    ],
+  },
 ];
 
 const examples = [

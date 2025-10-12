@@ -46,7 +46,7 @@ export interface ProviderConfig<M = "", TParams = unknown> {
    * @returns API 返回的任务 ID
    */
   startTask: (
-    task: AiTask
+    task: AiTask,
   ) => Promise<{ taskId: AiTask["task_id"]; startedAt: Date }>;
 
   /**

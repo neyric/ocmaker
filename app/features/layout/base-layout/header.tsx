@@ -29,7 +29,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">(
-    loaderData?.theme || "light"
+    loaderData?.theme || "light",
   );
 
   useEffect(() => {

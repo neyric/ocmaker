@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Crystal Empire Historian",
-    description: "A crystal pony preserving ancient songs with enchanted quills.",
+    description:
+      "A crystal pony preserving ancient songs with enchanted quills.",
     prompt: `What is your character's name?
 Twinkle Archive
 
@@ -62,7 +63,8 @@ Rainbow Dash mentored her after a failed show to teach coordinating with weather
   },
   {
     title: "Everfree Herbalist",
-    description: "An earth pony herbalist crafting lanterns that ward off timberwolves.",
+    description:
+      "An earth pony herbalist crafting lanterns that ward off timberwolves.",
     prompt: `What is your character's name?
 Fern Glow
 
@@ -86,7 +88,8 @@ Zecora helped her conquer her fear of the forest, inspiring her to help others e
   },
   {
     title: "Canterlot Etiquette Tutor",
-    description: "A unicorn tutor helping nobles discover their authentic selves.",
+    description:
+      "A unicorn tutor helping nobles discover their authentic selves.",
     prompt: `What is your character's name?
 Lumière Grace
 
@@ -110,7 +113,8 @@ Once pressured to fit strict noble standards, she befriended Rarity and learned 
   },
   {
     title: "Yakyakistan Ambassador",
-    description: "A yak ambassador blending cultures through music and pastries.",
+    description:
+      "A yak ambassador blending cultures through music and pastries.",
     prompt: `What is your character's name?
 Yakima Beat
 
@@ -142,17 +146,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +164,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Young foal",
-        value: "young foal"
+        value: "young foal",
       },
       {
         label: "Cutie mark crusader",
-        value: "cutie mark crusader"
+        value: "cutie mark crusader",
       },
       {
         label: "Adult pony",
-        value: "adult pony"
+        value: "adult pony",
       },
       {
         label: "Royal advisor",
-        value: "royal advisor"
+        value: "royal advisor",
       },
       {
         label: "Ancient creature",
-        value: "ancient creature"
-      }
-    ]
+        value: "ancient creature",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +218,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +252,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +294,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +328,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +362,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +396,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Friendship school vest",
-        value: "friendship school vest"
+        value: "friendship school vest",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Adventure scarf",
-        value: "adventure scarf"
+        value: "adventure scarf",
       },
       {
         label: "Wonderbolt jacket",
-        value: "wonderbolt jacket"
+        value: "wonderbolt jacket",
       },
       {
         label: "Crystal empire shawl",
-        value: "crystal empire shawl"
-      }
-    ]
+        value: "crystal empire shawl",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +450,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Flowing tail ribbons",
-        value: "tail ribbons"
+        value: "tail ribbons",
       },
       {
         label: "Saddle skirts",
-        value: "saddle skirts"
+        value: "saddle skirts",
       },
       {
         label: "Adventure saddlebags",
-        value: "adventure saddlebags"
+        value: "adventure saddlebags",
       },
       {
         label: "Formal drape",
-        value: "formal drape"
+        value: "formal drape",
       },
       {
         label: "Yakyakistan tassels",
-        value: "yakyakistan tassels"
-      }
-    ]
+        value: "yakyakistan tassels",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +504,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Ponyville casual",
-        value: "ponyville casual"
+        value: "ponyville casual",
       },
       {
         label: "Canterlot gala",
-        value: "canterlot gala"
+        value: "canterlot gala",
       },
       {
         label: "Wonderbolt flight",
-        value: "wonderbolt flight"
+        value: "wonderbolt flight",
       },
       {
         label: "Crystal empire formal",
-        value: "crystal empire formal"
+        value: "crystal empire formal",
       },
       {
         label: "Friendship school uniform",
-        value: "friendship school uniform"
-      }
-    ]
+        value: "friendship school uniform",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +558,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Star-thread silk",
-        value: "star thread silk"
+        value: "star thread silk",
       },
       {
         label: "Cloud weave",
-        value: "cloud weave"
+        value: "cloud weave",
       },
       {
         label: "Crystal shimmer",
-        value: "crystal shimmer"
+        value: "crystal shimmer",
       },
       {
         label: "Everfree bark",
-        value: "everfree bark"
+        value: "everfree bark",
       },
       {
         label: "Harmony satin",
-        value: "harmony satin"
-      }
-    ]
+        value: "harmony satin",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,54 +612,54 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Cutie mark pin",
-        value: "cutie mark pin"
+        value: "cutie mark pin",
       },
       {
         label: "Friendship bracelet",
-        value: "friendship bracelet"
+        value: "friendship bracelet",
       },
       {
         label: "Magic horn ring",
-        value: "magic horn ring"
+        value: "magic horn ring",
       },
       {
         label: "Wonderbolt goggles",
-        value: "wonderbolt goggles"
+        value: "wonderbolt goggles",
       },
       {
         label: "Dragon scale charm",
-        value: "dragon scale charm"
-      }
-    ]
-  }
+        value: "dragon scale charm",
+      },
+    ],
+  },
 ];
 
 const examples = [

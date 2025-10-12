@@ -33,7 +33,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
     url,
-    matches[0].loaderData.DOMAIN
+    matches[0].loaderData.DOMAIN,
   );
   const og = createSocialTags(
     {
@@ -42,7 +42,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
       url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN
+    matches[0].loaderData.DOMAIN,
   );
 
   return [

@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Saiyan Scholar",
-    description: "A half-Saiyan balancing research with gravity chamber sparring.",
+    description:
+      "A half-Saiyan balancing research with gravity chamber sparring.",
     prompt: `What is your character's name?
 Lyra Son
 
@@ -38,7 +39,8 @@ Studied alien biology on Yardrat and returned to Earth to protect capsule resear
   },
   {
     title: "Namekian Guardian",
-    description: "A Namekian warrior-priest safeguarding the Dragon Clan's secrets.",
+    description:
+      "A Namekian warrior-priest safeguarding the Dragon Clan's secrets.",
     prompt: `What is your character's name?
 Korinma
 
@@ -62,7 +64,8 @@ Merged with two elder Namekians to gain their knowledge after their village was 
   },
   {
     title: "Galactic Patrol Ace",
-    description: "An elite patrol officer specializing in pursuit of interstellar criminals.",
+    description:
+      "An elite patrol officer specializing in pursuit of interstellar criminals.",
     prompt: `What is your character's name?
 Tarin Jax
 
@@ -86,7 +89,8 @@ Grew up in a refugee colony orbiting Planet Vegeta's ruins and swore to stop cos
   },
   {
     title: "Earthling Martial Artist",
-    description: "A human champion blending Crane School precision with modern MMA.",
+    description:
+      "A human champion blending Crane School precision with modern MMA.",
     prompt: `What is your character's name?
 Mika Ishido
 
@@ -110,7 +114,8 @@ Won the Tenkaichi Budokai by debuting gravity training suits co-developed with B
   },
   {
     title: "Time Patroller",
-    description: "A chronal guardian fixing distortions across multiple timelines.",
+    description:
+      "A chronal guardian fixing distortions across multiple timelines.",
     prompt: `What is your character's name?
 Chrona Vega
 
@@ -142,17 +147,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +165,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Young martial artist",
-        value: "young martial artist"
+        value: "young martial artist",
       },
       {
         label: "Saiyan teen",
-        value: "saiyan teen"
+        value: "saiyan teen",
       },
       {
         label: "Galactic patrol recruit",
-        value: "galactic patrol recruit"
+        value: "galactic patrol recruit",
       },
       {
         label: "Seasoned fighter",
-        value: "seasoned fighter"
+        value: "seasoned fighter",
       },
       {
         label: "Ancient warrior",
-        value: "ancient warrior"
-      }
-    ]
+        value: "ancient warrior",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,53 +219,53 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
+        value: "graceful",
       },
       {
         label: "Lean fighter",
-        value: "lean fighter build"
+        value: "lean fighter build",
       },
       {
         label: "Saiyan muscular",
-        value: "saiyan muscular build"
+        value: "saiyan muscular build",
       },
       {
         label: "Agile martial artist",
-        value: "agile martial artist"
+        value: "agile martial artist",
       },
       {
         label: "Bulking tank",
-        value: "bulking tank"
+        value: "bulking tank",
       },
       {
         label: "Divine aura physique",
-        value: "divine aura physique"
-      }
-    ]
+        value: "divine aura physique",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -268,41 +273,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -310,33 +315,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -344,33 +349,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -378,33 +383,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -412,53 +417,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Gi top",
-        value: "gi top"
+        value: "gi top",
       },
       {
         label: "Saiyan armor",
-        value: "saiyan armor"
+        value: "saiyan armor",
       },
       {
         label: "Galactic patrol jacket",
-        value: "galactic patrol jacket"
+        value: "galactic patrol jacket",
       },
       {
         label: "Capsule Corp hoodie",
-        value: "capsule corp hoodie"
+        value: "capsule corp hoodie",
       },
       {
         label: "Angel robe",
-        value: "angel robe"
-      }
-    ]
+        value: "angel robe",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -466,53 +471,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Gi pants",
-        value: "gi pants"
+        value: "gi pants",
       },
       {
         label: "Battle leggings",
-        value: "battle leggings db"
+        value: "battle leggings db",
       },
       {
         label: "Saiyan armor greaves",
-        value: "saiyan armor greaves"
+        value: "saiyan armor greaves",
       },
       {
         label: "Casual training shorts",
-        value: "training shorts"
+        value: "training shorts",
       },
       {
         label: "Godly sashes",
-        value: "godly sashes"
-      }
-    ]
+        value: "godly sashes",
+      },
+    ],
   },
   {
     title: "Set",
@@ -520,53 +525,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Z-Fighter uniform",
-        value: "z fighter uniform"
+        value: "z fighter uniform",
       },
       {
         label: "Saiyan elite",
-        value: "saiyan elite set"
+        value: "saiyan elite set",
       },
       {
         label: "Galactic patrol",
-        value: "galactic patrol set"
+        value: "galactic patrol set",
       },
       {
         label: "Capsule corp casual",
-        value: "capsule corp casual"
+        value: "capsule corp casual",
       },
       {
         label: "Divine tournament",
-        value: "divine tournament set"
-      }
-    ]
+        value: "divine tournament set",
+      },
+    ],
   },
   {
     title: "Material",
@@ -574,53 +579,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Weighted fabric",
-        value: "weighted fabric"
+        value: "weighted fabric",
       },
       {
         label: "Saiyan armor plates",
-        value: "saiyan armor plates"
+        value: "saiyan armor plates",
       },
       {
         label: "Training gi cotton",
-        value: "training gi cotton"
+        value: "training gi cotton",
       },
       {
         label: "God ki weave",
-        value: "god ki weave"
+        value: "god ki weave",
       },
       {
         label: "Ultra instinct glow",
-        value: "ultra instinct glow"
-      }
-    ]
+        value: "ultra instinct glow",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -628,54 +633,54 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Scouter",
-        value: "scouter"
+        value: "scouter",
       },
       {
         label: "Weighted wristbands",
-        value: "weighted wristbands"
+        value: "weighted wristbands",
       },
       {
         label: "Tail wrap",
-        value: "tail wrap"
+        value: "tail wrap",
       },
       {
         label: "Senzu pouch",
-        value: "senzu pouch"
+        value: "senzu pouch",
       },
       {
         label: "Halo aura",
-        value: "halo aura"
-      }
-    ]
-  }
+        value: "halo aura",
+      },
+    ],
+  },
 ];
 
 const examples = [

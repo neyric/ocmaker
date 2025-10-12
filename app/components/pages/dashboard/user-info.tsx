@@ -175,7 +175,7 @@ export function UserInfoSection({
               <p className="text-sm text-base-content/60">
                 {copy.info.memberSinceDescription.replace(
                   "{date}",
-                  formatDate(user.created_at)
+                  formatDate(user.created_at),
                 )}
               </p>
             </div>

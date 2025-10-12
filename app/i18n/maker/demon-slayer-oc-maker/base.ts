@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Thunder Hashira Successor",
-    description: "A prodigy trained under Zenitsu's lineage to master storm-borne blades.",
+    description:
+      "A prodigy trained under Zenitsu's lineage to master storm-borne blades.",
     prompt: `What is your character's name?
 Sayo Hinata
 
@@ -38,7 +39,8 @@ Her mountain village was erased by a demon storm; only thunder in the distance a
   },
   {
     title: "Mist Corps Medic",
-    description: "A support slayer weaving mist to shield allies while treating wounds.",
+    description:
+      "A support slayer weaving mist to shield allies while treating wounds.",
     prompt: `What is your character's name?
 Akari Fujimoto
 
@@ -62,7 +64,8 @@ She survived a demon ambush that wiped out her entire squad, saved only by a str
   },
   {
     title: "Rogue Demon Scholar",
-    description: "A former scholar turned demon who preserves human texts in secret.",
+    description:
+      "A former scholar turned demon who preserves human texts in secret.",
     prompt: `What is your character's name?
 Kuro Tsukuda
 
@@ -86,7 +89,8 @@ He was forced to consume his own research party; now he hides in libraries leavi
   },
   {
     title: "Beast Breath Warrior",
-    description: "A wild fighter wielding serrated blades blessed by the mountains.",
+    description:
+      "A wild fighter wielding serrated blades blessed by the mountains.",
     prompt: `What is your character's name?
 Raiju Aomori
 
@@ -110,7 +114,8 @@ Raised by boars after demons slaughtered his parents, he learned language by mim
   },
   {
     title: "Sun Breathing Archivist",
-    description: "A historian tracing Sun Breathing fragments across forgotten shrines.",
+    description:
+      "A historian tracing Sun Breathing fragments across forgotten shrines.",
     prompt: `What is your character's name?
 Emi Kyojuro
 
@@ -142,17 +147,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +165,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Trainee slayer",
-        value: "trainee slayer"
+        value: "trainee slayer",
       },
       {
         label: "Active corps member",
-        value: "active corps member"
+        value: "active corps member",
       },
       {
         label: "Hashira level",
-        value: "hashira level"
+        value: "hashira level",
       },
       {
         label: "Demon youth",
-        value: "demon youth"
+        value: "demon youth",
       },
       {
         label: "Ancient demon",
-        value: "ancient demon"
-      }
-    ]
+        value: "ancient demon",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,53 +219,53 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
+        value: "graceful",
       },
       {
         label: "Agile swordsman",
-        value: "agile swordsman build"
+        value: "agile swordsman build",
       },
       {
         label: "Demon enhanced",
-        value: "demon enhanced build"
+        value: "demon enhanced build",
       },
       {
         label: "Hashira muscular",
-        value: "hashira muscular build"
+        value: "hashira muscular build",
       },
       {
         label: "Elegant dancer",
-        value: "elegant dancer build"
+        value: "elegant dancer build",
       },
       {
         label: "Compact acrobat",
-        value: "compact acrobat build"
-      }
-    ]
+        value: "compact acrobat build",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -268,41 +273,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -310,33 +315,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -344,33 +349,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -378,33 +383,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -412,53 +417,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Standard corps haori",
-        value: "demon slayer haori"
+        value: "demon slayer haori",
       },
       {
         label: "Customized pattern haori",
-        value: "patterned haori"
+        value: "patterned haori",
       },
       {
         label: "Hashira cloak",
-        value: "hashira cloak"
+        value: "hashira cloak",
       },
       {
         label: "Demon kimono",
-        value: "demon kimono"
+        value: "demon kimono",
       },
       {
         label: "Swordsmith village robe",
-        value: "swordsmith robe"
-      }
-    ]
+        value: "swordsmith robe",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -466,53 +471,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Hakama trousers",
-        value: "hakama trousers"
+        value: "hakama trousers",
       },
       {
         label: "Flowing demon skirt",
-        value: "flowing demon skirt"
+        value: "flowing demon skirt",
       },
       {
         label: "Battle leggings",
-        value: "battle leggings"
+        value: "battle leggings",
       },
       {
         label: "Wisteria emblazoned pants",
-        value: "wisteria pants"
+        value: "wisteria pants",
       },
       {
         label: "Traditional tabi pants",
-        value: "traditional tabi pants"
-      }
-    ]
+        value: "traditional tabi pants",
+      },
+    ],
   },
   {
     title: "Set",
@@ -520,53 +525,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Standard Demon Slayer Corps",
-        value: "standard demon slayer corps"
+        value: "standard demon slayer corps",
       },
       {
         label: "Hashira regalia",
-        value: "hashira regalia"
+        value: "hashira regalia",
       },
       {
         label: "Upper moon demon",
-        value: "upper moon demon set"
+        value: "upper moon demon set",
       },
       {
         label: "Swordsmith artisan",
-        value: "swordsmith artisan set"
+        value: "swordsmith artisan set",
       },
       {
         label: "Butterfly estate healer",
-        value: "butterfly estate healer"
-      }
-    ]
+        value: "butterfly estate healer",
+      },
+    ],
   },
   {
     title: "Material",
@@ -574,53 +579,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Wisteria-lined fabric",
-        value: "wisteria lined fabric"
+        value: "wisteria lined fabric",
       },
       {
         label: "Breath-infused weave",
-        value: "breath infused weave"
+        value: "breath infused weave",
       },
       {
         label: "Demon armor scales",
-        value: "demon armor scales"
+        value: "demon armor scales",
       },
       {
         label: "Hashira silk",
-        value: "hashira silk"
+        value: "hashira silk",
       },
       {
         label: "Fireproof haori cloth",
-        value: "fireproof haori cloth"
-      }
-    ]
+        value: "fireproof haori cloth",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -628,53 +633,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Nichirin sword",
-        value: "nichirin sword"
+        value: "nichirin sword",
       },
       {
         label: "Breathing style scarf",
-        value: "breathing style scarf"
+        value: "breathing style scarf",
       },
       {
         label: "Kasugai crow",
-        value: "kasugai crow"
+        value: "kasugai crow",
       },
       {
         label: "Demon horn adornment",
-        value: "demon horn adornment"
+        value: "demon horn adornment",
       },
       {
         label: "Wisteria charm",
-        value: "wisteria charm"
-      }
-    ]
+        value: "wisteria charm",
+      },
+    ],
   },
   {
     title: "Allegiance",
@@ -682,26 +687,26 @@ const ocOptions = [
     data: [
       {
         label: "Demon Slayer Corps",
-        value: "demon slayer corps"
+        value: "demon slayer corps",
       },
       {
         label: "Hashira",
-        value: "hashira"
+        value: "hashira",
       },
       {
         label: "Swordsmith village",
-        value: "swordsmith village"
+        value: "swordsmith village",
       },
       {
         label: "Demon",
-        value: "demon"
+        value: "demon",
       },
       {
         label: "Former demon",
-        value: "former demon"
-      }
-    ]
-  }
+        value: "former demon",
+      },
+    ],
+  },
 ];
 
 const examples = [

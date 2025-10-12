@@ -66,7 +66,7 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
         prompt: result.prompt,
         ext: parsed.data,
       },
-      sessionContext.user.id
+      sessionContext.user.id,
     );
 
     return data(task);
@@ -77,7 +77,7 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
 
     throw Response.json(
       { error: error instanceof Error ? error.message : "Request failed" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 };

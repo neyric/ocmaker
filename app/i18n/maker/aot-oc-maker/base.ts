@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Scout Pathfinder",
-    description: "A Survey Corps veteran who charts Titan territory others fear to enter.",
+    description:
+      "A Survey Corps veteran who charts Titan territory others fear to enter.",
     prompt: `What is your character's name?
 Ilia Brauer
 
@@ -38,7 +39,8 @@ Raised in Trost, Ilia swore to never let another breach catch humanity unprepare
   },
   {
     title: "Wall Garrison Captain",
-    description: "An engineer-soldier balancing defense work with titan-slaying duty.",
+    description:
+      "An engineer-soldier balancing defense work with titan-slaying duty.",
     prompt: `What is your character's name?
 Marius Feldt
 
@@ -62,7 +64,8 @@ He lost his parents during the Trost breach and now commands the very cannons he
   },
   {
     title: "Warrior Candidate",
-    description: "A Marleyan trainee torn between duty and empathy for Eldians.",
+    description:
+      "A Marleyan trainee torn between duty and empathy for Eldians.",
     prompt: `What is your character's name?
 Greta Braun
 
@@ -110,7 +113,8 @@ Formerly a refugee in Shiganshina, Tomas uses rooftop radio relays to rally supp
   },
   {
     title: "Underground Healer",
-    description: "A civilian medic caring for refugees and deserters beneath the capital.",
+    description:
+      "A civilian medic caring for refugees and deserters beneath the capital.",
     prompt: `What is your character's name?
 Elise Moreau
 
@@ -142,17 +146,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +164,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Training Corps cadet",
-        value: "cadet teen"
+        value: "cadet teen",
       },
       {
         label: "Frontline scout (late teen)",
-        value: "frontline late teen"
+        value: "frontline late teen",
       },
       {
         label: "Survey veteran",
-        value: "survey veteran"
+        value: "survey veteran",
       },
       {
         label: "Garrison officer",
-        value: "garrison adult"
+        value: "garrison adult",
       },
       {
         label: "Seasoned commander",
-        value: "seasoned commander"
-      }
-    ]
+        value: "seasoned commander",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,53 +218,53 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
+        value: "graceful",
       },
       {
         label: "Lean courier build",
-        value: "lean build"
+        value: "lean build",
       },
       {
         label: "ODM agile frame",
-        value: "agile frame"
+        value: "agile frame",
       },
       {
         label: "Armored titan-slayer",
-        value: "armored muscular"
+        value: "armored muscular",
       },
       {
         label: "Tall watchtower scout",
-        value: "tall scout"
+        value: "tall scout",
       },
       {
         label: "Compact artillery gunner",
-        value: "compact gunner"
-      }
-    ]
+        value: "compact gunner",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -268,61 +272,61 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
+        value: "wavy lavender hair",
       },
       {
         label: "Short undercut",
-        value: "short undercut hair"
+        value: "short undercut hair",
       },
       {
         label: "Shoulder-length auburn",
-        value: "shoulder auburn hair"
+        value: "shoulder auburn hair",
       },
       {
         label: "Tied black ponytail",
-        value: "tied black ponytail"
+        value: "tied black ponytail",
       },
       {
         label: "Wind-blown blonde",
-        value: "windblown blonde hair"
+        value: "windblown blonde hair",
       },
       {
         label: "Shaved sides with fringe",
-        value: "shaved sides fringe"
-      }
-    ]
+        value: "shaved sides fringe",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -330,53 +334,53 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
+        value: "golden eyes",
       },
       {
         label: "Steel gray gaze",
-        value: "steel gray eyes"
+        value: "steel gray eyes",
       },
       {
         label: "Sharp green eyes",
-        value: "sharp green eyes"
+        value: "sharp green eyes",
       },
       {
         label: "Amber determination",
-        value: "amber determined eyes"
+        value: "amber determined eyes",
       },
       {
         label: "Ice blue focus",
-        value: "ice blue eyes"
+        value: "ice blue eyes",
       },
       {
         label: "Hazel warmth",
-        value: "hazel eyes"
-      }
-    ]
+        value: "hazel eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -384,53 +388,53 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
+        value: "warm smile",
       },
       {
         label: "Battle-hardened stare",
-        value: "battle hardened face"
+        value: "battle hardened face",
       },
       {
         label: "Scarred resolve",
-        value: "scarred stoic face"
+        value: "scarred stoic face",
       },
       {
         label: "Determined glare",
-        value: "determined glare"
+        value: "determined glare",
       },
       {
         label: "Soft yet wary",
-        value: "soft wary expression"
+        value: "soft wary expression",
       },
       {
         label: "Reckless grin",
-        value: "reckless grin"
-      }
-    ]
+        value: "reckless grin",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -438,53 +442,53 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
+        value: "sunburned skin",
       },
       {
         label: "Fair with ODM windburn",
-        value: "fair windburned skin"
+        value: "fair windburned skin",
       },
       {
         label: "Sun-kissed garrison",
-        value: "sun kissed skin"
+        value: "sun kissed skin",
       },
       {
         label: "Scar-laced veteran",
-        value: "scar laced skin"
+        value: "scar laced skin",
       },
       {
         label: "Olive trost survivor",
-        value: "olive survivor skin"
+        value: "olive survivor skin",
       },
       {
         label: "Freckled cadet",
-        value: "freckled cadet skin"
-      }
-    ]
+        value: "freckled cadet skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -492,53 +496,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Survey Corps jacket",
-        value: "survey corps jacket"
+        value: "survey corps jacket",
       },
       {
         label: "Garrison cloak",
-        value: "garrison cloak"
+        value: "garrison cloak",
       },
       {
         label: "Military Police blazer",
-        value: "military police blazer"
+        value: "military police blazer",
       },
       {
         label: "Yeagerist armband vest",
-        value: "yeagerist vest"
+        value: "yeagerist vest",
       },
       {
         label: "Underground medic coat",
-        value: "underground medic coat"
-      }
-    ]
+        value: "underground medic coat",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -546,53 +550,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "ODM harness trousers",
-        value: "odm harness trousers"
+        value: "odm harness trousers",
       },
       {
         label: "Mounted patrol pants",
-        value: "mounted patrol pants"
+        value: "mounted patrol pants",
       },
       {
         label: "Reinforced leather pants",
-        value: "reinforced leather pants"
+        value: "reinforced leather pants",
       },
       {
         label: "Scout skirt with belts",
-        value: "scout skirt belts"
+        value: "scout skirt belts",
       },
       {
         label: "Civilian refugee layers",
-        value: "civilian layered bottoms"
-      }
-    ]
+        value: "civilian layered bottoms",
+      },
+    ],
   },
   {
     title: "Set",
@@ -600,53 +604,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Full Survey Corps gear",
-        value: "survey corps full gear"
+        value: "survey corps full gear",
       },
       {
         label: "Wall repair engineer",
-        value: "wall repair engineer set"
+        value: "wall repair engineer set",
       },
       {
         label: "Marley infiltration disguise",
-        value: "marley disguise set"
+        value: "marley disguise set",
       },
       {
         label: "Underground informant",
-        value: "underground informant outfit"
+        value: "underground informant outfit",
       },
       {
         label: "Garrison artillery uniform",
-        value: "garrison artillery uniform"
-      }
-    ]
+        value: "garrison artillery uniform",
+      },
+    ],
   },
   {
     title: "Material",
@@ -654,53 +658,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Weathered leather",
-        value: "weathered leather"
+        value: "weathered leather",
       },
       {
         label: "Cured cloak wool",
-        value: "cloak wool"
+        value: "cloak wool",
       },
       {
         label: "ODM steel plating",
-        value: "odm steel plating"
+        value: "odm steel plating",
       },
       {
         label: "Marley linen",
-        value: "marley linen"
+        value: "marley linen",
       },
       {
         label: "Underground patchwork",
-        value: "underground patchwork"
-      }
-    ]
+        value: "underground patchwork",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -708,54 +712,54 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Wings of Freedom cloak",
-        value: "wings of freedom cloak"
+        value: "wings of freedom cloak",
       },
       {
         label: "ODM blade set",
-        value: "odm blades"
+        value: "odm blades",
       },
       {
         label: "Signal flare pistol",
-        value: "signal flare pistol"
+        value: "signal flare pistol",
       },
       {
         label: "Yeagerist armband",
-        value: "yeagerist armband"
+        value: "yeagerist armband",
       },
       {
         label: "Medical satchel",
-        value: "medical satchel"
-      }
-    ]
-  }
+        value: "medical satchel",
+      },
+    ],
+  },
 ];
 
 const examples = [

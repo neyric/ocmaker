@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Trinity Marksman",
-    description: "An honors student sniper who protects allies with radiant barriers.",
+    description:
+      "An honors student sniper who protects allies with radiant barriers.",
     prompt: `What is your character's name?
 Celeste Marigold
 
@@ -38,7 +39,8 @@ Coordinated encrypted hymn signals with Sensei to halt a runaway tank during the
   },
   {
     title: "Gehenna Pyrotechnician",
-    description: "An explosive enthusiast who keeps the discipline committee guessing.",
+    description:
+      "An explosive enthusiast who keeps the discipline committee guessing.",
     prompt: `What is your character's name?
 Ibuki Blaze
 
@@ -86,7 +88,8 @@ Shut down an AI uprising in the Ruins by rewriting malicious code mid-battle whi
   },
   {
     title: "Abydos Strategist",
-    description: "A tactician keeping the desert school afloat with careful planning.",
+    description:
+      "A tactician keeping the desert school afloat with careful planning.",
     prompt: `What is your character's name?
 Rana Sol
 
@@ -110,7 +113,8 @@ Orchestrated a supply heist on Kaiser Corporation, redistributing resources to e
   },
   {
     title: "SRT Field Medic",
-    description: "A stoic combat medic ensuring strike teams return home alive.",
+    description:
+      "A stoic combat medic ensuring strike teams return home alive.",
     prompt: `What is your character's name?
 Miyu Aegis
 
@@ -142,17 +146,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +164,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "First-year student",
-        value: "first year student"
+        value: "first year student",
       },
       {
         label: "Second-year strategist",
-        value: "second year strategist"
+        value: "second year strategist",
       },
       {
         label: "Third-year senior",
-        value: "third year senior"
+        value: "third year senior",
       },
       {
         label: "Transfer sensei ally",
-        value: "transfer sensei ally"
+        value: "transfer sensei ally",
       },
       {
         label: "Graduated alum",
-        value: "graduated alum"
-      }
-    ]
+        value: "graduated alum",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +218,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +252,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +294,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +328,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +362,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +396,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Trinity blazer",
-        value: "trinity blazer"
+        value: "trinity blazer",
       },
       {
         label: "Gehenna bomber jacket",
-        value: "gehenna bomber jacket"
+        value: "gehenna bomber jacket",
       },
       {
         label: "Millennium tech coat",
-        value: "millennium tech coat"
+        value: "millennium tech coat",
       },
       {
         label: "Abydos desert parka",
-        value: "abydos desert parka"
+        value: "abydos desert parka",
       },
       {
         label: "SRT tactical hoodie",
-        value: "srt tactical hoodie"
-      }
-    ]
+        value: "srt tactical hoodie",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +450,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Pleated academy skirt",
-        value: "academy pleated skirt"
+        value: "academy pleated skirt",
       },
       {
         label: "Combat tights",
-        value: "combat tights"
+        value: "combat tights",
       },
       {
         label: "Utility shorts",
-        value: "utility shorts"
+        value: "utility shorts",
       },
       {
         label: "Desert leggings",
-        value: "desert leggings"
+        value: "desert leggings",
       },
       {
         label: "Tech cargo pants",
-        value: "tech cargo pants"
-      }
-    ]
+        value: "tech cargo pants",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +504,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Justice Committee uniform",
-        value: "justice committee uniform"
+        value: "justice committee uniform",
       },
       {
         label: "Problem Solver 68 gear",
-        value: "problem solver gear"
+        value: "problem solver gear",
       },
       {
         label: "Millennium lab attire",
-        value: "millennium lab attire"
+        value: "millennium lab attire",
       },
       {
         label: "Abydos survival kit",
-        value: "abydos survival kit"
+        value: "abydos survival kit",
       },
       {
         label: "SRT strike team",
-        value: "srt strike team set"
-      }
-    ]
+        value: "srt strike team set",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +558,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "School issue fabric",
-        value: "school fabric"
+        value: "school fabric",
       },
       {
         label: "Fireproof weave",
-        value: "fireproof weave"
+        value: "fireproof weave",
       },
       {
         label: "Kevlar padding",
-        value: "kevlar padding"
+        value: "kevlar padding",
       },
       {
         label: "Smart fiber",
-        value: "smart fiber"
+        value: "smart fiber",
       },
       {
         label: "Desert mesh",
-        value: "desert mesh"
-      }
-    ]
+        value: "desert mesh",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,53 +612,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Student council armband",
-        value: "student council armband"
+        value: "student council armband",
       },
       {
         label: "Academy ID lanyard",
-        value: "academy id lanyard"
+        value: "academy id lanyard",
       },
       {
         label: "Sensei headset",
-        value: "sensei headset"
+        value: "sensei headset",
       },
       {
         label: "Holosight visor",
-        value: "holosight visor"
+        value: "holosight visor",
       },
       {
         label: "Club insignia charm",
-        value: "club insignia charm"
-      }
-    ]
+        value: "club insignia charm",
+      },
+    ],
   },
   {
     title: "Academy",
@@ -662,30 +666,30 @@ const ocOptions = [
     data: [
       {
         label: "Trinity",
-        value: "trinity"
+        value: "trinity",
       },
       {
         label: "Gehenna",
-        value: "gehenna"
+        value: "gehenna",
       },
       {
         label: "Millennium",
-        value: "millennium"
+        value: "millennium",
       },
       {
         label: "Abydos",
-        value: "abydos"
+        value: "abydos",
       },
       {
         label: "SRT",
-        value: "srt"
+        value: "srt",
       },
       {
         label: "Arius",
-        value: "arius"
-      }
-    ]
-  }
+        value: "arius",
+      },
+    ],
+  },
 ];
 
 const examples = [

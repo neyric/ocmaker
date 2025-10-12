@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "High School Sleuth",
-    description: "A prodigy detective balancing exams with murder investigations.",
+    description:
+      "A prodigy detective balancing exams with murder investigations.",
     prompt: `What is your character's name?
 Kazuha Morioka
 
@@ -38,7 +39,8 @@ Solved her first poisoning case at thirteen after noticing mismatched tea leaves
   },
   {
     title: "Forensic Blogger",
-    description: "A true-crime blogger who turns internet fame into justice for victims.",
+    description:
+      "A true-crime blogger who turns internet fame into justice for victims.",
     prompt: `What is your character's name?
 Mina Tachibana
 
@@ -142,17 +144,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +162,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Elementary detective",
-        value: "elementary detective"
+        value: "elementary detective",
       },
       {
         label: "Junior high sleuth",
-        value: "junior high sleuth"
+        value: "junior high sleuth",
       },
       {
         label: "High school detective",
-        value: "high school detective"
+        value: "high school detective",
       },
       {
         label: "Young inspector",
-        value: "young inspector"
+        value: "young inspector",
       },
       {
         label: "Seasoned investigator",
-        value: "seasoned investigator"
-      }
-    ]
+        value: "seasoned investigator",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +216,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +250,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +292,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +326,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +360,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +394,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "School uniform blazer",
-        value: "school uniform blazer"
+        value: "school uniform blazer",
       },
       {
         label: "Detective trench coat",
-        value: "detective trench coat"
+        value: "detective trench coat",
       },
       {
         label: "Casual sweater vest",
-        value: "casual sweater vest"
+        value: "casual sweater vest",
       },
       {
         label: "Police windbreaker",
-        value: "police windbreaker"
+        value: "police windbreaker",
       },
       {
         label: "Disguise hoodie",
-        value: "disguise hoodie"
-      }
-    ]
+        value: "disguise hoodie",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +448,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Tailored slacks",
-        value: "tailored slacks"
+        value: "tailored slacks",
       },
       {
         label: "Pleated skirt",
-        value: "pleated detective skirt"
+        value: "pleated detective skirt",
       },
       {
         label: "Casual jeans",
-        value: "casual jeans"
+        value: "casual jeans",
       },
       {
         label: "Detective shorts",
-        value: "detective shorts"
+        value: "detective shorts",
       },
       {
         label: "Formal trousers",
-        value: "formal trousers"
-      }
-    ]
+        value: "formal trousers",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +502,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Detective Boys explorer",
-        value: "detective boys explorer set"
+        value: "detective boys explorer set",
       },
       {
         label: "Osaka junior detective",
-        value: "osaka detective set"
+        value: "osaka detective set",
       },
       {
         label: "Metropolitan police",
-        value: "metropolitan police set"
+        value: "metropolitan police set",
       },
       {
         label: "Private detective office",
-        value: "private detective office set"
+        value: "private detective office set",
       },
       {
         label: "Undercover disguise",
-        value: "undercover disguise set"
-      }
-    ]
+        value: "undercover disguise set",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +556,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Comfort cotton",
-        value: "comfort cotton"
+        value: "comfort cotton",
       },
       {
         label: "Waterproof nylon",
-        value: "waterproof nylon"
+        value: "waterproof nylon",
       },
       {
         label: "Leather holster",
-        value: "leather holster"
+        value: "leather holster",
       },
       {
         label: "Plaid wool",
-        value: "plaid wool"
+        value: "plaid wool",
       },
       {
         label: "Flashproof lining",
-        value: "flashproof lining"
-      }
-    ]
+        value: "flashproof lining",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,54 +610,54 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Voice-changing bowtie",
-        value: "voice changing bowtie"
+        value: "voice changing bowtie",
       },
       {
         label: "Detective badge",
-        value: "detective badge"
+        value: "detective badge",
       },
       {
         label: "Watch stun gadget",
-        value: "watch stun gadget"
+        value: "watch stun gadget",
       },
       {
         label: "Magnifying lens",
-        value: "magnifying lens"
+        value: "magnifying lens",
       },
       {
         label: "Disguise glasses",
-        value: "disguise glasses"
-      }
-    ]
-  }
+        value: "disguise glasses",
+      },
+    ],
+  },
 ];
 
 const examples = [

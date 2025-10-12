@@ -359,13 +359,11 @@ export default {
   contents: {
     hero: {
       title: "The Apothecary Diaries OC Maker",
-      description:
-        "输入角色设定，即刻生成身处皇城秘苑的原创角色图像与故事。",
+      description: "输入角色设定，即刻生成身处皇城秘苑的原创角色图像与故事。",
     },
     step: {
       title: "如何打造《药屋少女的呢喃》风 OC",
-      description:
-        "按照下列步骤，就能让角色自然融入宫廷医案与权谋心计的世界。",
+      description: "按照下列步骤，就能让角色自然融入宫廷医案与权谋心计的世界。",
       steps: [
         {
           title: "描绘你的宫廷角色",
@@ -386,8 +384,7 @@ export default {
     },
     examples: {
       title: "角色范例",
-      description:
-        "看看这些由文字提示生成的《药屋少女的呢喃》风格原创角色。",
+      description: "看看这些由文字提示生成的《药屋少女的呢喃》风格原创角色。",
       examples,
     },
     features: {
@@ -475,8 +472,7 @@ export default {
     },
     cta: {
       title: "开启你的宫廷医案",
-      description:
-        "无需绘画基础，也能让《药屋少女的呢喃》原创角色跃然眼前。",
+      description: "无需绘画基础，也能让《药屋少女的呢喃》原创角色跃然眼前。",
       btns: {
         start: "开始创作",
         explore: "探索更多角色",

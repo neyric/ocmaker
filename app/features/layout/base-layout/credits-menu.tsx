@@ -27,13 +27,13 @@ export const CreditsMenu = ({ credits }: { credits?: number }) => {
   });
 
   const setVisibleUpgradeDialog = useDialogStore(
-    (state) => state.setVisibleUpgradeDialog
+    (state) => state.setVisibleUpgradeDialog,
   );
   const setVisibleCheckinDialog = useDialogStore(
-    (state) => state.setVisibleCheckinDialog
+    (state) => state.setVisibleCheckinDialog,
   );
   const setVisibleInviteDialog = useDialogStore(
-    (state) => state.setVisibleInviteDialog
+    (state) => state.setVisibleInviteDialog,
   );
 
   const handleClose = () => {
@@ -121,7 +121,10 @@ export const CreditsMenu = ({ credits }: { credits?: number }) => {
         </DropdownMenuLabel>
 
         <DropdownMenuLabel>
-          <button className="btn btn-warning btn-block btn-sm" onClick={handleAddMore}>
+          <button
+            className="btn btn-warning btn-block btn-sm"
+            onClick={handleAddMore}
+          >
             {t("creditsMenu.buttons.addMore")}
           </button>
           <div className="grid grid-cols-2 mt-2 gap-2">

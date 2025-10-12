@@ -54,7 +54,7 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
 
     throw Response.json(
       { error: error instanceof Error ? error.message : "Request failed" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 };

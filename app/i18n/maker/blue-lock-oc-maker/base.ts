@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Egoist Striker",
-    description: "A striker whose swordplay footwork turns volleys into highlight reels.",
+    description:
+      "A striker whose swordplay footwork turns volleys into highlight reels.",
     prompt: `What is your character's name?
 Kaito Arashi
 
@@ -38,7 +39,8 @@ Former youth kendo champion who abandoned the dojo after a Blue Lock invitation 
   },
   {
     title: "Tactical Playmaker",
-    description: "A midfielder who treats every Blue Lock match like a grand chess problem.",
+    description:
+      "A midfielder who treats every Blue Lock match like a grand chess problem.",
     prompt: `What is your character's name?
 Rei Tsukishima
 
@@ -62,7 +64,8 @@ Maps every Blue Lock trial on notebook grids, beating larger strikers by predict
   },
   {
     title: "Aerial Ace",
-    description: "A winger whose vertical leap makes every cross a Meteor Crash.",
+    description:
+      "A winger whose vertical leap makes every cross a Meteor Crash.",
     prompt: `What is your character's name?
 Noa Fujimori
 
@@ -110,7 +113,8 @@ Mastered ball physics by launching paper cranes with elastic bands, then mirrore
   },
   {
     title: "Guardian Libero",
-    description: "A defender reinventing ego to demand the spotlight from the back line.",
+    description:
+      "A defender reinventing ego to demand the spotlight from the back line.",
     prompt: `What is your character's name?
 Ayato Koga
 
@@ -142,17 +146,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +164,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "U-18 striker",
-        value: "u18 striker"
+        value: "u18 striker",
       },
       {
         label: "Neo Egoist trainee",
-        value: "neo egoist trainee"
+        value: "neo egoist trainee",
       },
       {
         label: "International rookie",
-        value: "international rookie"
+        value: "international rookie",
       },
       {
         label: "Pro league forward",
-        value: "pro league forward"
+        value: "pro league forward",
       },
       {
         label: "Veteran ace",
-        value: "veteran ace"
-      }
-    ]
+        value: "veteran ace",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +218,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +252,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +294,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +328,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +362,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +396,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Blue Lock jersey",
-        value: "blue lock jersey"
+        value: "blue lock jersey",
       },
       {
         label: "Training bib",
-        value: "training bib"
+        value: "training bib",
       },
       {
         label: "Neo Egoist kit",
-        value: "neo egoist kit"
+        value: "neo egoist kit",
       },
       {
         label: "International club uniform",
-        value: "international club uniform"
+        value: "international club uniform",
       },
       {
         label: "Street practice tee",
-        value: "street practice tee"
-      }
-    ]
+        value: "street practice tee",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +450,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Compression shorts",
-        value: "compression shorts"
+        value: "compression shorts",
       },
       {
         label: "Match shorts",
-        value: "match shorts"
+        value: "match shorts",
       },
       {
         label: "Track pants",
-        value: "track pants"
+        value: "track pants",
       },
       {
         label: "Street joggers",
-        value: "street joggers"
+        value: "street joggers",
       },
       {
         label: "Warm-up sweats",
-        value: "warm up sweats"
-      }
-    ]
+        value: "warm up sweats",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +504,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Blue Lock standard",
-        value: "blue lock standard set"
+        value: "blue lock standard set",
       },
       {
         label: "Team Z nostalgia",
-        value: "team z nostalgia set"
+        value: "team z nostalgia set",
       },
       {
         label: "Noel Noa pro kit",
-        value: "noel noa pro kit"
+        value: "noel noa pro kit",
       },
       {
         label: "World Cup challenger",
-        value: "world cup challenger set"
+        value: "world cup challenger set",
       },
       {
         label: "Street futsal",
-        value: "street futsal gear"
-      }
-    ]
+        value: "street futsal gear",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +558,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Sweat-wicking mesh",
-        value: "sweat wicking mesh"
+        value: "sweat wicking mesh",
       },
       {
         label: "Lightweight jersey",
-        value: "lightweight jersey"
+        value: "lightweight jersey",
       },
       {
         label: "Compression weave",
-        value: "compression weave"
+        value: "compression weave",
       },
       {
         label: "Thermal training fabric",
-        value: "thermal training fabric"
+        value: "thermal training fabric",
       },
       {
         label: "Rain-ready nylon",
-        value: "rain ready nylon"
-      }
-    ]
+        value: "rain ready nylon",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,53 +612,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Performance cleats",
-        value: "performance cleats"
+        value: "performance cleats",
       },
       {
         label: "Captain armband",
-        value: "captain armband"
+        value: "captain armband",
       },
       {
         label: "Kinesio tape",
-        value: "kinesio tape"
+        value: "kinesio tape",
       },
       {
         label: "Goal tracker wristband",
-        value: "goal tracker wristband"
+        value: "goal tracker wristband",
       },
       {
         label: "Headband",
-        value: "headband"
-      }
-    ]
+        value: "headband",
+      },
+    ],
   },
   {
     title: "Position",
@@ -662,26 +666,26 @@ const ocOptions = [
     data: [
       {
         label: "Striker",
-        value: "striker"
+        value: "striker",
       },
       {
         label: "Second striker",
-        value: "second striker"
+        value: "second striker",
       },
       {
         label: "Winger",
-        value: "winger"
+        value: "winger",
       },
       {
         label: "Playmaker",
-        value: "playmaker"
+        value: "playmaker",
       },
       {
         label: "Libero",
-        value: "libero"
-      }
-    ]
-  }
+        value: "libero",
+      },
+    ],
+  },
 ];
 
 const examples = [

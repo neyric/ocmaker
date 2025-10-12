@@ -6,7 +6,8 @@ export default {
   contents: {
     hero: {
       title: "仪表盘",
-      description: "管理你的账户、追踪使用情况，并探索 OC Maker 提供的全部功能。",
+      description:
+        "管理你的账户、追踪使用情况，并探索 OC Maker 提供的全部功能。",
     },
     userInfo: {
       title: "用户信息",
@@ -51,8 +52,7 @@ export default {
         "邮件支持",
       ],
       upgradeTitle: "升级至尊享版",
-      upgradeDescription:
-        "解锁全部功能，无限制地创作令人惊叹的视频内容。",
+      upgradeDescription: "解锁全部功能，无限制地创作令人惊叹的视频内容。",
       viewPlans: "查看套餐",
     },
     general: {

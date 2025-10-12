@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Mondstadt Wind Bard",
-    description: "A tavern bard whose songs shatter Anemo barriers and hearts alike.",
+    description:
+      "A tavern bard whose songs shatter Anemo barriers and hearts alike.",
     prompt: `What is your character's name?
 Lysette
 
@@ -38,7 +39,8 @@ Granted a Vision after calming a dragonstorm with her lullaby, she now protects 
   },
   {
     title: "Liyue Harbor Inspector",
-    description: "A civil inspector balancing paperwork with geo-construct martial arts.",
+    description:
+      "A civil inspector balancing paperwork with geo-construct martial arts.",
     prompt: `What is your character's name?
 Qiao Rong
 
@@ -62,7 +64,8 @@ Survived a Fatui sabotage attempt by raising a geo barrier that saved an entire 
   },
   {
     title: "Inazuma Onsen Owner",
-    description: "A hot spring owner channeling Electro energy through spa rituals.",
+    description:
+      "A hot spring owner channeling Electro energy through spa rituals.",
     prompt: `What is your character's name?
 Hotaru
 
@@ -86,7 +89,8 @@ Inherited the onsen from her grandmother and earned her Vision when defending it
   },
   {
     title: "Sumeru Scholar",
-    description: "A desert scholar wielding Dendro constructs to solve ecological crises.",
+    description:
+      "A desert scholar wielding Dendro constructs to solve ecological crises.",
     prompt: `What is your character's name?
 Farid al-Hakim
 
@@ -110,7 +114,8 @@ Discovered his Vision when a sandstorm threatened his research camp; the Dendro 
   },
   {
     title: "Fontaine Advocate",
-    description: "A legal prodigy whose Hydro constructs cross-examine criminals mid-battle.",
+    description:
+      "A legal prodigy whose Hydro constructs cross-examine criminals mid-battle.",
     prompt: `What is your character's name?
 Celeste Beaumont
 
@@ -142,17 +147,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +165,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Young adventurer",
-        value: "young adventurer"
+        value: "young adventurer",
       },
       {
         label: "Knights of Favonius member",
-        value: "knights favonius member"
+        value: "knights favonius member",
       },
       {
         label: "Experienced traveler",
-        value: "experienced traveler"
+        value: "experienced traveler",
       },
       {
         label: "Fatui defector",
-        value: "fatui defector"
+        value: "fatui defector",
       },
       {
         label: "Ancient adeptus",
-        value: "ancient adeptus"
-      }
-    ]
+        value: "ancient adeptus",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +219,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +253,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +295,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +329,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +363,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +397,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Mondstadt cloak",
-        value: "mondstadt cloak"
+        value: "mondstadt cloak",
       },
       {
         label: "Liyue qipao",
-        value: "liyue qipao"
+        value: "liyue qipao",
       },
       {
         label: "Inazuma kimono",
-        value: "inazuma kimono"
+        value: "inazuma kimono",
       },
       {
         label: "Sumeru scholar robe",
-        value: "sumeru scholar robe"
+        value: "sumeru scholar robe",
       },
       {
         label: "Fontaine court jacket",
-        value: "fontaine court jacket"
-      }
-    ]
+        value: "fontaine court jacket",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +451,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Elemental tights",
-        value: "elemental tights"
+        value: "elemental tights",
       },
       {
         label: "Flowing desert wraps",
-        value: "desert wraps"
+        value: "desert wraps",
       },
       {
         label: "Traveler shorts",
-        value: "traveler shorts"
+        value: "traveler shorts",
       },
       {
         label: "Formal court skirt",
-        value: "formal court skirt"
+        value: "formal court skirt",
       },
       {
         label: "Adeptus trousers",
-        value: "adeptus trousers"
-      }
-    ]
+        value: "adeptus trousers",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +505,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Favonius knight",
-        value: "favonius knight set"
+        value: "favonius knight set",
       },
       {
         label: "Liyue harbor adept",
-        value: "liyue harbor adept"
+        value: "liyue harbor adept",
       },
       {
         label: "Inazuma shrine guardian",
-        value: "inazuma shrine guardian"
+        value: "inazuma shrine guardian",
       },
       {
         label: "Sumeru akademiya",
-        value: "sumeru akademiya set"
+        value: "sumeru akademiya set",
       },
       {
         label: "Fatui harbinger",
-        value: "fatui harbinger set"
-      }
-    ]
+        value: "fatui harbinger set",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +559,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Vision-infused fabric",
-        value: "vision infused fabric"
+        value: "vision infused fabric",
       },
       {
         label: "Glaze lily silk",
-        value: "glaze lily silk"
+        value: "glaze lily silk",
       },
       {
         label: "Electrocharged weave",
-        value: "electrocharged weave"
+        value: "electrocharged weave",
       },
       {
         label: "Dendro vines",
-        value: "dendro vines"
+        value: "dendro vines",
       },
       {
         label: "Hydro prisms",
-        value: "hydro prisms"
-      }
-    ]
+        value: "hydro prisms",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,53 +613,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Vision holder",
-        value: "vision holder"
+        value: "vision holder",
       },
       {
         label: "Treasure compass",
-        value: "treasure compass"
+        value: "treasure compass",
       },
       {
         label: "Glider harness",
-        value: "glider harness"
+        value: "glider harness",
       },
       {
         label: "Elemental catalyst",
-        value: "elemental catalyst"
+        value: "elemental catalyst",
       },
       {
         label: "Adeptus talisman",
-        value: "adeptus talisman"
-      }
-    ]
+        value: "adeptus talisman",
+      },
+    ],
   },
   {
     title: "Vision",
@@ -662,34 +667,34 @@ const ocOptions = [
     data: [
       {
         label: "Pyro",
-        value: "pyro"
+        value: "pyro",
       },
       {
         label: "Hydro",
-        value: "hydro"
+        value: "hydro",
       },
       {
         label: "Electro",
-        value: "electro"
+        value: "electro",
       },
       {
         label: "Anemo",
-        value: "anemo"
+        value: "anemo",
       },
       {
         label: "Geo",
-        value: "geo"
+        value: "geo",
       },
       {
         label: "Cryo",
-        value: "cryo"
+        value: "cryo",
       },
       {
         label: "Dendro",
-        value: "dendro"
-      }
-    ]
-  }
+        value: "dendro",
+      },
+    ],
+  },
 ];
 
 const examples = [

@@ -62,7 +62,8 @@ Is Kenma's cousin; she trains by reacting to laser pointers with shelter cats.`,
   },
   {
     title: "Fukurodani Ace",
-    description: "A successor candidate studying Bokuto's mood swings to stabilize the team.",
+    description:
+      "A successor candidate studying Bokuto's mood swings to stabilize the team.",
     prompt: `What is your character's name?
 Rika Aioi
 
@@ -86,7 +87,8 @@ Bokuto mentored her after she cheered him out of a slump during a summer camp sc
   },
   {
     title: "Aoba Johsai Blocker",
-    description: "A middle blocker obsessed with reading setters before they move.",
+    description:
+      "A middle blocker obsessed with reading setters before they move.",
     prompt: `What is your character's name?
 Keita Sendai
 
@@ -110,7 +112,8 @@ Joined the team after watching Oikawa's precise sets inspire his junior high clu
   },
   {
     title: "MSBY Analyst",
-    description: "A college statistician testing pro-level tactics in club scrimmages.",
+    description:
+      "A college statistician testing pro-level tactics in club scrimmages.",
     prompt: `What is your character's name?
 Nao Miyake
 
@@ -142,17 +145,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +163,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "First-year",
-        value: "first year"
+        value: "first year",
       },
       {
         label: "Second-year",
-        value: "second year"
+        value: "second year",
       },
       {
         label: "Third-year",
-        value: "third year"
+        value: "third year",
       },
       {
         label: "College player",
-        value: "college player"
+        value: "college player",
       },
       {
         label: "Pro league",
-        value: "pro league"
-      }
-    ]
+        value: "pro league",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +217,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +251,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +293,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +327,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +361,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +395,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Karasuno jersey",
-        value: "karasuno jersey"
+        value: "karasuno jersey",
       },
       {
         label: "Nekoma jersey",
-        value: "nekoma jersey"
+        value: "nekoma jersey",
       },
       {
         label: "Fukurodani jersey",
-        value: "fukurodani jersey"
+        value: "fukurodani jersey",
       },
       {
         label: "Aoba Johsai jersey",
-        value: "aoba johsai jersey"
+        value: "aoba johsai jersey",
       },
       {
         label: "MSBY warm-up",
-        value: "msby warm up"
-      }
-    ]
+        value: "msby warm up",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +449,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Team shorts",
-        value: "team shorts"
+        value: "team shorts",
       },
       {
         label: "Compression leggings",
-        value: "compression leggings"
+        value: "compression leggings",
       },
       {
         label: "Practice sweats",
-        value: "practice sweats"
+        value: "practice sweats",
       },
       {
         label: "Travel pants",
-        value: "travel pants"
+        value: "travel pants",
       },
       {
         label: "Beach volleyball shorts",
-        value: "beach volleyball shorts"
-      }
-    ]
+        value: "beach volleyball shorts",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +503,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Karasuno crows",
-        value: "karasuno crows set"
+        value: "karasuno crows set",
       },
       {
         label: "Nekoma cats",
-        value: "nekoma cats set"
+        value: "nekoma cats set",
       },
       {
         label: "Fukurodani owls",
-        value: "fukurodani owls set"
+        value: "fukurodani owls set",
       },
       {
         label: "Schweiden Adlers",
-        value: "schweiden adlers set"
+        value: "schweiden adlers set",
       },
       {
         label: "MSBY Black Jackals",
-        value: "msby black jackals set"
-      }
-    ]
+        value: "msby black jackals set",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +557,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Sweat-wicking mesh",
-        value: "sweat wicking mesh"
+        value: "sweat wicking mesh",
       },
       {
         label: "Ventilated jersey",
-        value: "ventilated jersey"
+        value: "ventilated jersey",
       },
       {
         label: "Compression fabric",
-        value: "compression fabric"
+        value: "compression fabric",
       },
       {
         label: "Warm-up fleece",
-        value: "warm up fleece"
+        value: "warm up fleece",
       },
       {
         label: "Beach-ready fabric",
-        value: "beach ready fabric"
-      }
-    ]
+        value: "beach ready fabric",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,54 +611,54 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Captain armband",
-        value: "captain armband haikyuu"
+        value: "captain armband haikyuu",
       },
       {
         label: "Knee pads",
-        value: "knee pads"
+        value: "knee pads",
       },
       {
         label: "Volleyball gloves",
-        value: "volleyball gloves"
+        value: "volleyball gloves",
       },
       {
         label: "Neck towel",
-        value: "neck towel"
+        value: "neck towel",
       },
       {
         label: "Water bottle",
-        value: "water bottle"
-      }
-    ]
-  }
+        value: "water bottle",
+      },
+    ],
+  },
 ];
 
 const examples = [

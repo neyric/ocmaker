@@ -39,7 +39,8 @@ export default {
       exampleGenerator: "生成背景故事",
       exampleGenerating: "生成中...",
       ocTitle: "角色外观",
-      ocPlaceholder: "描述你的 OC 细节 (例如: \"猫系少女，蓝色头发，戴眼镜，害羞\")",
+      ocPlaceholder:
+        '描述你的 OC 细节 (例如: "猫系少女，蓝色头发，戴眼镜，害羞")',
       ocRandomize: "随机生成",
       ocAiOptimize: "AI 优化",
       ocPreviewTitle: "你的角色将显示在这里",

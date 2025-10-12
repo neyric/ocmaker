@@ -141,17 +141,17 @@ const ocOptions = [
     data: [
       {
         label: "男生",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "女生",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "非二元",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "年龄",
@@ -159,53 +159,53 @@ const ocOptions = [
     data: [
       {
         label: "少年期",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "高中后期",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "青年",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "资深成年人",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "老练战士",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "资深长者",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "传奇不朽",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "训练兵团学员",
-        value: "cadet teen"
+        value: "cadet teen",
       },
       {
         label: "前线侦察兵（高中后期）",
-        value: "frontline late teen"
+        value: "frontline late teen",
       },
       {
         label: "调查兵团老兵",
-        value: "survey veteran"
+        value: "survey veteran",
       },
       {
         label: "驻屯兵团军官",
-        value: "garrison adult"
+        value: "garrison adult",
       },
       {
         label: "资深指挥官",
-        value: "seasoned commander"
-      }
-    ]
+        value: "seasoned commander",
+      },
+    ],
   },
   {
     title: "体态",
@@ -213,53 +213,53 @@ const ocOptions = [
     data: [
       {
         label: "修长",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "健壮",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "肌肉发达",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "高挑",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "娇小",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "魁梧",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "优雅",
-        value: "graceful"
+        value: "graceful",
       },
       {
         label: "敏捷信使体型",
-        value: "lean build"
+        value: "lean build",
       },
       {
         label: "立体机动敏捷体态",
-        value: "agile frame"
+        value: "agile frame",
       },
       {
         label: "重甲讨伐者",
-        value: "armored muscular"
+        value: "armored muscular",
       },
       {
         label: "高塔侦察身形",
-        value: "tall scout"
+        value: "tall scout",
       },
       {
         label: "紧凑炮兵体格",
-        value: "compact gunner"
-      }
-    ]
+        value: "compact gunner",
+      },
+    ],
   },
   {
     title: "发型",
@@ -267,61 +267,61 @@ const ocOptions = [
     data: [
       {
         label: "短黑发",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "长棕发",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "金发",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "红发",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "银发",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "蓝发",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "白发",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "辫发",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "薰衣草波浪长发",
-        value: "wavy lavender hair"
+        value: "wavy lavender hair",
       },
       {
         label: "短款削边",
-        value: "short undercut hair"
+        value: "short undercut hair",
       },
       {
         label: "及肩赤褐发",
-        value: "shoulder auburn hair"
+        value: "shoulder auburn hair",
       },
       {
         label: "束起的黑色马尾",
-        value: "tied black ponytail"
+        value: "tied black ponytail",
       },
       {
         label: "风吹乱的金发",
-        value: "windblown blonde hair"
+        value: "windblown blonde hair",
       },
       {
         label: "剃短两侧配刘海",
-        value: "shaved sides fringe"
-      }
-    ]
+        value: "shaved sides fringe",
+      },
+    ],
   },
   {
     title: "眼神",
@@ -329,53 +329,53 @@ const ocOptions = [
     data: [
       {
         label: "棕色瞳",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "蓝色瞳",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "绿色瞳",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "琥珀瞳",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "灰色瞳",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "紫色瞳",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "金色瞳",
-        value: "golden eyes"
+        value: "golden eyes",
       },
       {
         label: "钢灰目光",
-        value: "steel gray eyes"
+        value: "steel gray eyes",
       },
       {
         label: "锐利绿瞳",
-        value: "sharp green eyes"
+        value: "sharp green eyes",
       },
       {
         label: "坚定琥珀眼",
-        value: "amber determined eyes"
+        value: "amber determined eyes",
       },
       {
         label: "冰蓝聚焦",
-        value: "ice blue eyes"
+        value: "ice blue eyes",
       },
       {
         label: "榛色暖眸",
-        value: "hazel eyes"
-      }
-    ]
+        value: "hazel eyes",
+      },
+    ],
   },
   {
     title: "表情",
@@ -383,53 +383,53 @@ const ocOptions = [
     data: [
       {
         label: "坚毅神情",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "微笑",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "严肃目光",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "冷峻表情",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "调皮笑意",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "凶猛咆哮",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "温暖的笑容",
-        value: "warm smile"
+        value: "warm smile",
       },
       {
         label: "历战凝视",
-        value: "battle hardened face"
+        value: "battle hardened face",
       },
       {
         label: "带疤的决意",
-        value: "scarred stoic face"
+        value: "scarred stoic face",
       },
       {
         label: "坚定怒视",
-        value: "determined glare"
+        value: "determined glare",
       },
       {
         label: "柔和却戒备",
-        value: "soft wary expression"
+        value: "soft wary expression",
       },
       {
         label: "莽撞笑容",
-        value: "reckless grin"
-      }
-    ]
+        value: "reckless grin",
+      },
+    ],
   },
   {
     title: "肤色",
@@ -437,53 +437,53 @@ const ocOptions = [
     data: [
       {
         label: "白皙肤色",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "暖棕肤色",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "橄榄肤色",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "深棕肤色",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "雀斑肤色",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "瓷白肤色",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "日晒肤色",
-        value: "sunburned skin"
+        value: "sunburned skin",
       },
       {
         label: "立体机动风灼",
-        value: "fair windburned skin"
+        value: "fair windburned skin",
       },
       {
         label: "驻屯晒痕",
-        value: "sun kissed skin"
+        value: "sun kissed skin",
       },
       {
         label: "老兵疤痕",
-        value: "scar laced skin"
+        value: "scar laced skin",
       },
       {
         label: "托罗斯特幸存者",
-        value: "olive survivor skin"
+        value: "olive survivor skin",
       },
       {
         label: "学员雀斑",
-        value: "freckled cadet skin"
-      }
-    ]
+        value: "freckled cadet skin",
+      },
+    ],
   },
   {
     title: "上装",
@@ -491,53 +491,53 @@ const ocOptions = [
     data: [
       {
         label: "多功能夹克",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "层叠长外套",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "休闲束腰上衣",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "装甲背心",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "宽松衬衫",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "连帽斗篷",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "仪式长袍",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "调查兵团夹克",
-        value: "survey corps jacket"
+        value: "survey corps jacket",
       },
       {
         label: "驻屯兵团披风",
-        value: "garrison cloak"
+        value: "garrison cloak",
       },
       {
         label: "宪兵团短外套",
-        value: "military police blazer"
+        value: "military police blazer",
       },
       {
         label: "耶格尔派臂章背心",
-        value: "yeagerist vest"
+        value: "yeagerist vest",
       },
       {
         label: "地下医师外套",
-        value: "underground medic coat"
-      }
-    ]
+        value: "underground medic coat",
+      },
+    ],
   },
   {
     title: "下装",
@@ -545,53 +545,53 @@ const ocOptions = [
     data: [
       {
         label: "多口袋战术裤",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "合身长裤",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "百褶裙",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "战斗短裤",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "飘逸长袍",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "装甲护胫",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "层叠裹布",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "立体机动吊带裤",
-        value: "odm harness trousers"
+        value: "odm harness trousers",
       },
       {
         label: "骑兵巡逻裤",
-        value: "mounted patrol pants"
+        value: "mounted patrol pants",
       },
       {
         label: "强化皮裤",
-        value: "reinforced leather pants"
+        value: "reinforced leather pants",
       },
       {
         label: "侦察束带裙",
-        value: "scout skirt belts"
+        value: "scout skirt belts",
       },
       {
         label: "避难民叠穿",
-        value: "civilian layered bottoms"
-      }
-    ]
+        value: "civilian layered bottoms",
+      },
+    ],
   },
   {
     title: "套装",
@@ -599,53 +599,53 @@ const ocOptions = [
     data: [
       {
         label: "战斗制服",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "旅人休闲装",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "正式礼服",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "潜行装备",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "节庆服饰",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "王室礼装",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "游牧装束",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "调查兵团全套装备",
-        value: "survey corps full gear"
+        value: "survey corps full gear",
       },
       {
         label: "城墙修复工程装",
-        value: "wall repair engineer set"
+        value: "wall repair engineer set",
       },
       {
         label: "马莱潜入伪装",
-        value: "marley disguise set"
+        value: "marley disguise set",
       },
       {
         label: "地下情报员装束",
-        value: "underground informant outfit"
+        value: "underground informant outfit",
       },
       {
         label: "驻屯炮兵制服",
-        value: "garrison artillery uniform"
-      }
-    ]
+        value: "garrison artillery uniform",
+      },
+    ],
   },
   {
     title: "材质",
@@ -653,53 +653,53 @@ const ocOptions = [
     data: [
       {
         label: "编织布料",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "抛光皮革",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "强化装甲",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "高科技纤维",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "有机织物",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "龙皮",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "秘术布料",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "风化皮革",
-        value: "weathered leather"
+        value: "weathered leather",
       },
       {
         label: "披风羊毛",
-        value: "cloak wool"
+        value: "cloak wool",
       },
       {
         label: "立体机动钢板",
-        value: "odm steel plating"
+        value: "odm steel plating",
       },
       {
         label: "马莱细麻",
-        value: "marley linen"
+        value: "marley linen",
       },
       {
         label: "地下拼布",
-        value: "underground patchwork"
-      }
-    ]
+        value: "underground patchwork",
+      },
+    ],
   },
   {
     title: "配件",
@@ -707,54 +707,54 @@ const ocOptions = [
     data: [
       {
         label: "多功能腰带",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "手套",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "围巾",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "头部装备",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "饰品",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "弹药带",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "魔导书",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "自由之翼斗篷",
-        value: "wings of freedom cloak"
+        value: "wings of freedom cloak",
       },
       {
         label: "立体机动双刃组",
-        value: "odm blades"
+        value: "odm blades",
       },
       {
         label: "信号枪",
-        value: "signal flare pistol"
+        value: "signal flare pistol",
       },
       {
         label: "耶格尔派臂章",
-        value: "yeagerist armband"
+        value: "yeagerist armband",
       },
       {
         label: "医疗挎包",
-        value: "medical satchel"
-      }
-    ]
-  }
+        value: "medical satchel",
+      },
+    ],
+  },
 ];
 const examples = [
   {
@@ -838,8 +838,7 @@ export default {
     },
     examples: {
       title: "AOT 示例",
-      description:
-        "范例展示由文字提示生成的《进击的巨人》风格原创角色。",
+      description: "范例展示由文字提示生成的《进击的巨人》风格原创角色。",
       examples,
     },
     features: {
@@ -927,8 +926,7 @@ export default {
     },
     cta: {
       title: "立即创建你的 AOT 角色",
-      description:
-        "无需绘画技能，也能把《进击的巨人》原创角色带到眼前。",
+      description: "无需绘画技能，也能把《进击的巨人》原创角色带到眼前。",
       btns: {
         start: "开始创作",
         explore: "探索更多角色",

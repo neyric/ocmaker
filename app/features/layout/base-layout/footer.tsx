@@ -84,7 +84,7 @@ export const Footer = ({
                     className={cn(
                       "text-sm text-base-content/70 transition-colors",
                       "hover:text-base-content focus-visible:outline-none",
-                      "focus-visible:text-base-content shrink-0"
+                      "focus-visible:text-base-content shrink-0",
                     )}
                     target={link.target}
                     to={link.to}

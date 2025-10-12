@@ -34,7 +34,7 @@ export const action = async ({ request }: Route.ActionArgs) => {
         error:
           error instanceof Error ? error.message : "Failed to update profile",
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 };

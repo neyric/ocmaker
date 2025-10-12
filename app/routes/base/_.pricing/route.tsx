@@ -31,9 +31,8 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
       url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN
+    matches[0].loaderData.DOMAIN,
   );
-
 
   return [
     { title: loaderData.meta.title },

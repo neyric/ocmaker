@@ -536,7 +536,8 @@ export default {
     },
     features: {
       title: "AI 加持，细节尽在掌握",
-      description: "我们以 AI 为核心的流程，让你保持主导，同时激发任何宇宙的角色灵感。",
+      description:
+        "我们以 AI 为核心的流程，让你保持主导，同时激发任何宇宙的角色灵感。",
       features: [
         {
           label: "AI 共创引擎",
@@ -544,7 +545,8 @@ export default {
         },
         {
           label: "引导式自定义控件",
-          description: "叠加题材、能力、服装与情绪，使 AI 输出聚焦且匹配品牌调性。",
+          description:
+            "叠加题材、能力、服装与情绪，使 AI 输出聚焦且匹配品牌调性。",
         },
         {
           label: "无限重混",
@@ -552,7 +554,8 @@ export default {
         },
         {
           label: "故事与视觉同步",
-          description: "从同一上下文生成档案、卖点与肖像，让风格和语调保持一致。",
+          description:
+            "从同一上下文生成档案、卖点与肖像，让风格和语调保持一致。",
         },
         {
           label: "高质量输出",
@@ -560,7 +563,8 @@ export default {
         },
         {
           label: "创作者友好导出",
-          description: "打包提示、档案与美术，用于桌游卡、提案或团队世界观文档。",
+          description:
+            "打包提示、档案与美术，用于桌游卡、提案或团队世界观文档。",
         },
       ],
     },

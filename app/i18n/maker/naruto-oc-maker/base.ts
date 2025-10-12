@@ -14,7 +14,8 @@ const basePrompt = `
 const backstoryExamples = [
   {
     title: "Leaf ANBU Tracker",
-    description: "A Hidden Leaf tracker decoding enemy codes with sensory ninjutsu.",
+    description:
+      "A Hidden Leaf tracker decoding enemy codes with sensory ninjutsu.",
     prompt: `What is your character's name?
 Shin Kurogane
 
@@ -38,7 +39,8 @@ Rescued by Shikamaru's father during the Fourth War, he now scouts rogue shinobi
   },
   {
     title: "Sand Puppet Captain",
-    description: "A Sunagakure captain commanding chakra-thread puppets with precision.",
+    description:
+      "A Sunagakure captain commanding chakra-thread puppets with precision.",
     prompt: `What is your character's name?
 Kaya Sabaku
 
@@ -86,7 +88,8 @@ Rebuilt one of the lost swords using liquefaction techniques taught by Suigetsu.
   },
   {
     title: "Cloud Sensor",
-    description: "A Hidden Cloud sensory ninja coordinating lightning strikes from afar.",
+    description:
+      "A Hidden Cloud sensory ninja coordinating lightning strikes from afar.",
     prompt: `What is your character's name?
 Denki Raiju
 
@@ -110,7 +113,8 @@ Saved a whole platoon by intercepting a Jashinist ritual, earning praise from th
   },
   {
     title: "Rogue Scholar",
-    description: "A wandering Uzumaki historian gathering lost sealing scrolls.",
+    description:
+      "A wandering Uzumaki historian gathering lost sealing scrolls.",
     prompt: `What is your character's name?
 Akiko Uzumaki
 
@@ -142,17 +146,17 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy"
+        value: "1boy",
       },
       {
         label: "Girl",
-        value: "1girl"
+        value: "1girl",
       },
       {
         label: "Non-binary",
-        value: "1person"
-      }
-    ]
+        value: "1person",
+      },
+    ],
   },
   {
     title: "Age",
@@ -160,53 +164,53 @@ const ocOptions = [
     data: [
       {
         label: "Young teen",
-        value: "teen"
+        value: "teen",
       },
       {
         label: "Late teen",
-        value: "late teen"
+        value: "late teen",
       },
       {
         label: "Young adult",
-        value: "young adult"
+        value: "young adult",
       },
       {
         label: "Experienced adult",
-        value: "adult"
+        value: "adult",
       },
       {
         label: "Veteran",
-        value: "veteran"
+        value: "veteran",
       },
       {
         label: "Seasoned elder",
-        value: "seasoned elder"
+        value: "seasoned elder",
       },
       {
         label: "Timeless legend",
-        value: "timeless legend"
+        value: "timeless legend",
       },
       {
         label: "Genin",
-        value: "genin"
+        value: "genin",
       },
       {
         label: "Chunin",
-        value: "chunin"
+        value: "chunin",
       },
       {
         label: "Jonin",
-        value: "jonin"
+        value: "jonin",
       },
       {
         label: "Anbu",
-        value: "anbu"
+        value: "anbu",
       },
       {
         label: "Veteran kage",
-        value: "veteran kage"
-      }
-    ]
+        value: "veteran kage",
+      },
+    ],
   },
   {
     title: "Body",
@@ -214,33 +218,33 @@ const ocOptions = [
     data: [
       {
         label: "Slender",
-        value: "slender"
+        value: "slender",
       },
       {
         label: "Athletic",
-        value: "athletic"
+        value: "athletic",
       },
       {
         label: "Muscular",
-        value: "muscular"
+        value: "muscular",
       },
       {
         label: "Tall",
-        value: "tall"
+        value: "tall",
       },
       {
         label: "Petite",
-        value: "petite"
+        value: "petite",
       },
       {
         label: "Burly",
-        value: "burly"
+        value: "burly",
       },
       {
         label: "Graceful",
-        value: "graceful"
-      }
-    ]
+        value: "graceful",
+      },
+    ],
   },
   {
     title: "Hair",
@@ -248,41 +252,41 @@ const ocOptions = [
     data: [
       {
         label: "Short black hair",
-        value: "short black hair"
+        value: "short black hair",
       },
       {
         label: "Long brown hair",
-        value: "long brown hair"
+        value: "long brown hair",
       },
       {
         label: "Blonde hair",
-        value: "blonde hair"
+        value: "blonde hair",
       },
       {
         label: "Red hair",
-        value: "red hair"
+        value: "red hair",
       },
       {
         label: "Silver hair",
-        value: "silver hair"
+        value: "silver hair",
       },
       {
         label: "Blue hair",
-        value: "blue hair"
+        value: "blue hair",
       },
       {
         label: "White hair",
-        value: "white hair"
+        value: "white hair",
       },
       {
         label: "Braided hair",
-        value: "braided hair"
+        value: "braided hair",
       },
       {
         label: "Wavy lavender hair",
-        value: "wavy lavender hair"
-      }
-    ]
+        value: "wavy lavender hair",
+      },
+    ],
   },
   {
     title: "Eyes",
@@ -290,33 +294,33 @@ const ocOptions = [
     data: [
       {
         label: "Brown eyes",
-        value: "brown eyes"
+        value: "brown eyes",
       },
       {
         label: "Blue eyes",
-        value: "blue eyes"
+        value: "blue eyes",
       },
       {
         label: "Green eyes",
-        value: "green eyes"
+        value: "green eyes",
       },
       {
         label: "Amber eyes",
-        value: "amber eyes"
+        value: "amber eyes",
       },
       {
         label: "Gray eyes",
-        value: "gray eyes"
+        value: "gray eyes",
       },
       {
         label: "Violet eyes",
-        value: "violet eyes"
+        value: "violet eyes",
       },
       {
         label: "Golden eyes",
-        value: "golden eyes"
-      }
-    ]
+        value: "golden eyes",
+      },
+    ],
   },
   {
     title: "Face",
@@ -324,33 +328,33 @@ const ocOptions = [
     data: [
       {
         label: "Determined expression",
-        value: "determined expression"
+        value: "determined expression",
       },
       {
         label: "Smiling",
-        value: "smiling expression"
+        value: "smiling expression",
       },
       {
         label: "Serious look",
-        value: "serious expression"
+        value: "serious expression",
       },
       {
         label: "Stoic face",
-        value: "stoic expression"
+        value: "stoic expression",
       },
       {
         label: "Playful grin",
-        value: "playful grin"
+        value: "playful grin",
       },
       {
         label: "Fierce snarl",
-        value: "fierce snarl"
+        value: "fierce snarl",
       },
       {
         label: "Warm smile",
-        value: "warm smile"
-      }
-    ]
+        value: "warm smile",
+      },
+    ],
   },
   {
     title: "Skin",
@@ -358,33 +362,33 @@ const ocOptions = [
     data: [
       {
         label: "Fair skin",
-        value: "fair skin"
+        value: "fair skin",
       },
       {
         label: "Warm tan skin",
-        value: "tan skin"
+        value: "tan skin",
       },
       {
         label: "Olive skin",
-        value: "olive skin"
+        value: "olive skin",
       },
       {
         label: "Deep brown skin",
-        value: "deep brown skin"
+        value: "deep brown skin",
       },
       {
         label: "Freckled skin",
-        value: "freckled skin"
+        value: "freckled skin",
       },
       {
         label: "Porcelain skin",
-        value: "porcelain skin"
+        value: "porcelain skin",
       },
       {
         label: "Sunburned skin",
-        value: "sunburned skin"
-      }
-    ]
+        value: "sunburned skin",
+      },
+    ],
   },
   {
     title: "Top",
@@ -392,53 +396,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility jacket",
-        value: "utility jacket"
+        value: "utility jacket",
       },
       {
         label: "Layered coat",
-        value: "layered coat"
+        value: "layered coat",
       },
       {
         label: "Casual tunic",
-        value: "casual tunic"
+        value: "casual tunic",
       },
       {
         label: "Armored vest",
-        value: "armored vest"
+        value: "armored vest",
       },
       {
         label: "Loose shirt",
-        value: "loose shirt"
+        value: "loose shirt",
       },
       {
         label: "Hooded cloak",
-        value: "hooded cloak"
+        value: "hooded cloak",
       },
       {
         label: "Ceremonial robe",
-        value: "ceremonial robe"
+        value: "ceremonial robe",
       },
       {
         label: "Leaf flak jacket",
-        value: "leaf flak jacket"
+        value: "leaf flak jacket",
       },
       {
         label: "Sand desert cloak",
-        value: "sand desert cloak"
+        value: "sand desert cloak",
       },
       {
         label: "Mist hunter robe",
-        value: "mist hunter robe"
+        value: "mist hunter robe",
       },
       {
         label: "Cloud battle vest",
-        value: "cloud battle vest"
+        value: "cloud battle vest",
       },
       {
         label: "Akatsuki cloak",
-        value: "akatsuki cloak"
-      }
-    ]
+        value: "akatsuki cloak",
+      },
+    ],
   },
   {
     title: "Bottom",
@@ -446,53 +450,53 @@ const ocOptions = [
     data: [
       {
         label: "Cargo trousers",
-        value: "cargo trousers"
+        value: "cargo trousers",
       },
       {
         label: "Fitted pants",
-        value: "fitted pants"
+        value: "fitted pants",
       },
       {
         label: "Pleated skirt",
-        value: "pleated skirt"
+        value: "pleated skirt",
       },
       {
         label: "Battle-ready shorts",
-        value: "battle shorts"
+        value: "battle shorts",
       },
       {
         label: "Flowing robes",
-        value: "flowing robes"
+        value: "flowing robes",
       },
       {
         label: "Armored greaves",
-        value: "armored greaves"
+        value: "armored greaves",
       },
       {
         label: "Layered wraps",
-        value: "layered wraps"
+        value: "layered wraps",
       },
       {
         label: "Shinobi pants",
-        value: "shinobi pants"
+        value: "shinobi pants",
       },
       {
         label: "Naruto orange pants",
-        value: "orange pants"
+        value: "orange pants",
       },
       {
         label: "Ninja leggings",
-        value: "ninja leggings"
+        value: "ninja leggings",
       },
       {
         label: "Samurai hakama",
-        value: "samurai hakama"
+        value: "samurai hakama",
       },
       {
         label: "Anbu trousers",
-        value: "anbu trousers"
-      }
-    ]
+        value: "anbu trousers",
+      },
+    ],
   },
   {
     title: "Set",
@@ -500,53 +504,53 @@ const ocOptions = [
     data: [
       {
         label: "Combat uniform",
-        value: "combat uniform"
+        value: "combat uniform",
       },
       {
         label: "Casual traveler",
-        value: "casual traveler outfit"
+        value: "casual traveler outfit",
       },
       {
         label: "Formal attire",
-        value: "formal attire"
+        value: "formal attire",
       },
       {
         label: "Stealth gear",
-        value: "stealth gear"
+        value: "stealth gear",
       },
       {
         label: "Festival outfit",
-        value: "festival outfit"
+        value: "festival outfit",
       },
       {
         label: "Royal regalia",
-        value: "royal regalia"
+        value: "royal regalia",
       },
       {
         label: "Nomad attire",
-        value: "nomad attire"
+        value: "nomad attire",
       },
       {
         label: "Leaf village ninja",
-        value: "leaf village ninja"
+        value: "leaf village ninja",
       },
       {
         label: "Sand village",
-        value: "sand village set"
+        value: "sand village set",
       },
       {
         label: "Mist swordsman",
-        value: "mist swordsman set"
+        value: "mist swordsman set",
       },
       {
         label: "Cloud shinobi",
-        value: "cloud shinobi set"
+        value: "cloud shinobi set",
       },
       {
         label: "Akatsuki member",
-        value: "akatsuki member"
-      }
-    ]
+        value: "akatsuki member",
+      },
+    ],
   },
   {
     title: "Material",
@@ -554,53 +558,53 @@ const ocOptions = [
     data: [
       {
         label: "Woven fabric",
-        value: "woven fabric"
+        value: "woven fabric",
       },
       {
         label: "Polished leather",
-        value: "polished leather"
+        value: "polished leather",
       },
       {
         label: "Reinforced armor",
-        value: "reinforced armor"
+        value: "reinforced armor",
       },
       {
         label: "High-tech fiber",
-        value: "high-tech fiber"
+        value: "high-tech fiber",
       },
       {
         label: "Organic weave",
-        value: "organic weave"
+        value: "organic weave",
       },
       {
         label: "Dragonhide",
-        value: "dragonhide"
+        value: "dragonhide",
       },
       {
         label: "Mystic cloth",
-        value: "mystic cloth"
+        value: "mystic cloth",
       },
       {
         label: "Chakra mesh",
-        value: "chakra mesh"
+        value: "chakra mesh",
       },
       {
         label: "Flak armor",
-        value: "flak armor"
+        value: "flak armor",
       },
       {
         label: "Sand reinforced cloth",
-        value: "sand reinforced cloth"
+        value: "sand reinforced cloth",
       },
       {
         label: "Mist waterproof weave",
-        value: "mist waterproof weave"
+        value: "mist waterproof weave",
       },
       {
         label: "Cloud lightning fabric",
-        value: "cloud lightning fabric"
-      }
-    ]
+        value: "cloud lightning fabric",
+      },
+    ],
   },
   {
     title: "Accessory",
@@ -608,53 +612,53 @@ const ocOptions = [
     data: [
       {
         label: "Utility belt",
-        value: "utility belt"
+        value: "utility belt",
       },
       {
         label: "Gloves",
-        value: "gloves"
+        value: "gloves",
       },
       {
         label: "Scarf",
-        value: "scarf"
+        value: "scarf",
       },
       {
         label: "Headgear",
-        value: "headgear"
+        value: "headgear",
       },
       {
         label: "Jewelry",
-        value: "jewelry"
+        value: "jewelry",
       },
       {
         label: "Bandolier",
-        value: "bandolier"
+        value: "bandolier",
       },
       {
         label: "Magic tome",
-        value: "magic tome accessory"
+        value: "magic tome accessory",
       },
       {
         label: "Forehead protector",
-        value: "forehead protector"
+        value: "forehead protector",
       },
       {
         label: "Kunai holster",
-        value: "kunai holster"
+        value: "kunai holster",
       },
       {
         label: "Scroll pack",
-        value: "scroll pack"
+        value: "scroll pack",
       },
       {
         label: "Anbu mask",
-        value: "anbu mask"
+        value: "anbu mask",
       },
       {
         label: "Akatsuki ring",
-        value: "akatsuki ring"
-      }
-    ]
+        value: "akatsuki ring",
+      },
+    ],
   },
   {
     title: "Village",
@@ -662,30 +666,30 @@ const ocOptions = [
     data: [
       {
         label: "Leaf",
-        value: "leaf"
+        value: "leaf",
       },
       {
         label: "Sand",
-        value: "sand"
+        value: "sand",
       },
       {
         label: "Mist",
-        value: "mist"
+        value: "mist",
       },
       {
         label: "Cloud",
-        value: "cloud"
+        value: "cloud",
       },
       {
         label: "Stone",
-        value: "stone"
+        value: "stone",
       },
       {
         label: "Rogue",
-        value: "rogue"
-      }
-    ]
-  }
+        value: "rogue",
+      },
+    ],
+  },
 ];
 
 const examples = [
