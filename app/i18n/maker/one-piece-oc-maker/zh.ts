@@ -419,8 +419,7 @@ export default {
         },
         {
           label: "高速角色生成",
-          description:
-            "数秒内完成图像，专注在补完角色故事与航海伙伴关系。",
+          description: "数秒内完成图像，专注在补完角色故事与航海伙伴关系。",
         },
         {
           label: "高品质视觉效果",
@@ -429,8 +428,7 @@ export default {
         },
         {
           label: "多版本选择",
-          description:
-            "每次生成都有不同造型，挑出符合你船团定位的最佳人选。",
+          description: "每次生成都有不同造型，挑出符合你船团定位的最佳人选。",
         },
         {
           label: "深度世界连结",
@@ -495,4 +493,3 @@ export default {
     },
   },
 };
-

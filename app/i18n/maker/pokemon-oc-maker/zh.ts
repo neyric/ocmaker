@@ -373,8 +373,7 @@ export default {
     },
     step: {
       title: "如何打造 Pokemon OC",
-      description:
-        "踏上训练家旅程前，按照以下步骤设计理想的宝可梦角色。",
+      description: "踏上训练家旅程前，按照以下步骤设计理想的宝可梦角色。",
       steps: [
         {
           title: "选择训练家类型",
@@ -400,13 +399,11 @@ export default {
     },
     features: {
       title: "Pokemon OC Maker 的特色",
-      description:
-        "专注宝可梦世界观，打造拥有专属队伍与地区风格的原创训练家。",
+      description: "专注宝可梦世界观，打造拥有专属队伍与地区风格的原创训练家。",
       features: [
         {
           label: "正统宝可梦画风",
-          description:
-            "角色比例、服装与道具贴近宝可梦动画的经典视觉。",
+          description: "角色比例、服装与道具贴近宝可梦动画的经典视觉。",
         },
         {
           label: "多样训练家职业",
@@ -415,23 +412,19 @@ export default {
         },
         {
           label: "快速角色生成",
-          description:
-            "几秒内完成设计，把时间留给队伍配置与旅程构思。",
+          description: "几秒内完成设计，把时间留给队伍配置与旅程构思。",
         },
         {
           label: "高品质动漫绘制",
-          description:
-            "模型针对宝可梦美学训练，呈现高水准的动画风插画。",
+          description: "模型针对宝可梦美学训练，呈现高水准的动画风插画。",
         },
         {
           label: "多款方案挑选",
-          description:
-            "每次生成提供多种造型，可尝试不同服装、姿势与擅长属性。",
+          description: "每次生成提供多种造型，可尝试不同服装、姿势与擅长属性。",
         },
         {
           label: "融入宝可梦世界",
-          description:
-            "角色自然呼应各地区文化、训练家装备与宝可梦伙伴主题。",
+          description: "角色自然呼应各地区文化、训练家装备与宝可梦伙伴主题。",
         },
       ],
     },
@@ -491,4 +484,3 @@ export default {
     },
   },
 };
-

@@ -19,7 +19,6 @@ const isSubscriptionPlan = (plan: Pricing): plan is SubscriptionPlan =>
   plan.type === "subscription";
 
 export function UpgradeDialog() {
-  const t = useTranslate();
   const visible = useDialogStore((state) => state.visibleUpgradeDialog);
   const setVisible = useDialogStore((state) => state.setVisibleUpgradeDialog);
   const rootData = useRootLoader();

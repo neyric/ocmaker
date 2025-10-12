@@ -348,8 +348,7 @@ const examples = [
 export default {
   meta: {
     title: "迪士尼 OC 角色生成器",
-    description:
-      "借助 AI 打造你的迪士尼原创角色，编织魔法故事与永恒冒险。",
+    description: "借助 AI 打造你的迪士尼原创角色，编织魔法故事与永恒冒险。",
   },
   series: "迪士尼",
   backstoryPreset: basePrompt,
@@ -358,13 +357,11 @@ export default {
   contents: {
     hero: {
       title: "Disney OC Maker",
-      description:
-        "输入角色设定，即刻生成迪士尼动画风格的魔法角色与故事。",
+      description: "输入角色设定，即刻生成迪士尼动画风格的魔法角色与故事。",
     },
     step: {
       title: "如何打造 Disney OC",
-      description:
-        "创造迪士尼角色如同童话般奇妙，依照以下步骤点亮你的灵感。",
+      description: "创造迪士尼角色如同童话般奇妙，依照以下步骤点亮你的灵感。",
       steps: [
         {
           title: "确定角色类型",
@@ -385,8 +382,7 @@ export default {
     },
     examples: {
       title: "迪士尼角色示例",
-      description:
-        "看看使用 Disney OC Maker 文本提示生成的魔法角色。",
+      description: "看看使用 Disney OC Maker 文本提示生成的魔法角色。",
       examples,
     },
     features: {
@@ -396,8 +392,7 @@ export default {
       features: [
         {
           label: "正统迪士尼画风",
-          description:
-            "角色神情、线条与光彩贴近迪士尼动画的标志魅力。",
+          description: "角色神情、线条与光彩贴近迪士尼动画的标志魅力。",
         },
         {
           label: "魔法元素理解",
@@ -416,8 +411,7 @@ export default {
         },
         {
           label: "多重造型尝试",
-          description:
-            "每次生成提供不同服饰与魔法特效，轻松探索角色的另一面。",
+          description: "每次生成提供不同服饰与魔法特效，轻松探索角色的另一面。",
         },
         {
           label: "迪士尼世界整合",
@@ -462,8 +456,7 @@ export default {
         },
         {
           question: "可以重复调整同一角色吗？",
-          answer:
-            "当然可以。可重复生成或调整提示，直到角色完美呈现你的想像。",
+          answer: "当然可以。可重复生成或调整提示，直到角色完美呈现你的想像。",
         },
         {
           question: "未来会推出其它动画风格的 OC Maker 吗？",
@@ -474,8 +467,7 @@ export default {
     },
     cta: {
       title: "创造你的迪士尼魔法",
-      description:
-        "无需绘画技能，只要描绘梦想，就能感受迪士尼故事的魅力。",
+      description: "无需绘画技能，只要描绘梦想，就能感受迪士尼故事的魅力。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",

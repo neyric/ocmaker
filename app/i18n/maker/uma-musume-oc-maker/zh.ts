@@ -389,8 +389,7 @@ export default {
     },
     features: {
       title: "Uma Musume OC Maker 的特色",
-      description:
-        "专为赛马娘世界打造，结合赛场紧张与偶像舞台的双重魅力。",
+      description: "专为赛马娘世界打造，结合赛场紧张与偶像舞台的双重魅力。",
       features: [
         {
           label: "正统动画风格",
@@ -404,8 +403,7 @@ export default {
         },
         {
           label: "快速角色生成",
-          description:
-            "几秒内获得高品质插画，把时间留给剧情、训练与演出规划。",
+          description: "几秒内获得高品质插画，把时间留给剧情、训练与演出规划。",
         },
         {
           label: "自订舞台造型",
@@ -414,8 +412,7 @@ export default {
         },
         {
           label: "多版本挑选",
-          description:
-            "每次生成都会给出不同姿态与光效，轻松找到最佳冲线瞬间。",
+          description: "每次生成都会给出不同姿态与光效，轻松找到最佳冲线瞬间。",
         },
         {
           label: "完美融入世界观",
@@ -480,4 +477,3 @@ export default {
     },
   },
 };
-

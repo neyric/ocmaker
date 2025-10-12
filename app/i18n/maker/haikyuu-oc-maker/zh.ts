@@ -358,13 +358,11 @@ export default {
   contents: {
     hero: {
       title: "Haikyuu!! OC Maker",
-      description:
-        "输入角色设定，几秒内生成拥有飞跃梦想的排球角色形象。",
+      description: "输入角色设定，几秒内生成拥有飞跃梦想的排球角色形象。",
     },
     step: {
       title: "如何打造 Haikyuu!! OC",
-      description:
-        "踏入热血排球世界，按照以下步骤设计专属球员或团队成员。",
+      description: "踏入热血排球世界，按照以下步骤设计专属球员或团队成员。",
       steps: [
         {
           title: "决定位置与队伍",
@@ -385,19 +383,16 @@ export default {
     },
     examples: {
       title: "排球角色示例",
-      description:
-        "浏览使用 Haikyuu!! OC Maker 文字提示生成的热血球员。",
+      description: "浏览使用 Haikyuu!! OC Maker 文字提示生成的热血球员。",
       examples,
     },
     features: {
       title: "Haikyuu!! OC Maker 的特色",
-      description:
-        "专注排球竞技风格，帮助你快速扩充球队阵容与宿敌名单。",
+      description: "专注排球竞技风格，帮助你快速扩充球队阵容与宿敌名单。",
       features: [
         {
           label: "正统运动番画风",
-          description:
-            "角色线条与球衣细节贴近原作的紧张节奏与跃动感。",
+          description: "角色线条与球衣细节贴近原作的紧张节奏与跃动感。",
         },
         {
           label: "位置系统理解",
@@ -406,8 +401,7 @@ export default {
         },
         {
           label: "快速生成队员",
-          description:
-            "数秒即可完成球队名单，适合描绘训练、赛事与宿舍生活。",
+          description: "数秒即可完成球队名单，适合描绘训练、赛事与宿舍生活。",
         },
         {
           label: "高质量比赛视觉",
@@ -416,8 +410,7 @@ export default {
         },
         {
           label: "多样化打法",
-          description:
-            "每次生成提供不同姿势与球技，帮助你探索角色的极限。",
+          description: "每次生成提供不同姿势与球技，帮助你探索角色的极限。",
         },
         {
           label: "排球世界融合",
@@ -467,15 +460,13 @@ export default {
         },
         {
           question: "未来会有其他运动番主题的 OC Maker 吗？",
-          answer:
-            "会的！我们正扩展更多运动题材，欢迎关注 ocmaker.app 的更新。",
+          answer: "会的！我们正扩展更多运动题材，欢迎关注 ocmaker.app 的更新。",
         },
       ],
     },
     cta: {
       title: "在球场上飞翔",
-      description:
-        "无需绘画技能，只要描述，就能让原创球员高高跃起、热血扣杀。",
+      description: "无需绘画技能，只要描述，就能让原创球员高高跃起、热血扣杀。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",

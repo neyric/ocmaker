@@ -372,13 +372,11 @@ export default {
   contents: {
     hero: {
       title: "League of Legends OC Maker",
-      description:
-        "输入设定，即可生成英雄联盟风格的原创冠军形象。",
+      description: "输入设定，即可生成英雄联盟风格的原创冠军形象。",
     },
     step: {
       title: "如何打造 League of Legends OC",
-      description:
-        "跟随步骤，迅速塑造属于你的峡谷英雄。",
+      description: "跟随步骤，迅速塑造属于你的峡谷英雄。",
       steps: [
         {
           title: "选择英雄定位",
@@ -410,8 +408,7 @@ export default {
       features: [
         {
           label: "正统英雄设计",
-          description:
-            "角色画风贴近英雄联盟，从魔法特效到地区装备都完整呈现。",
+          description: "角色画风贴近英雄联盟，从魔法特效到地区装备都完整呈现。",
         },
         {
           label: "定位驱动创作",
@@ -488,8 +485,7 @@ export default {
     },
     cta: {
       title: "创建你的峡谷英雄",
-      description:
-        "无需绘图经验，只要想像并描述，就能让原创冠军立刻成形。",
+      description: "无需绘图经验，只要想像并描述，就能让原创冠军立刻成形。",
       btns: {
         start: "开始创作",
         explore: "探索英雄示例",

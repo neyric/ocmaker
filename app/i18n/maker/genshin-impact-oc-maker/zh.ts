@@ -361,8 +361,7 @@ const examples = [
 export default {
   meta: {
     title: "原神 OC 角色生成器",
-    description:
-      "借助 AI 打造你的提瓦特原创角色，设计专属元素能力与冒险故事。",
+    description: "借助 AI 打造你的提瓦特原创角色，设计专属元素能力与冒险故事。",
   },
   series: "原神",
   backstoryPreset: basePrompt,
@@ -371,13 +370,11 @@ export default {
   contents: {
     hero: {
       title: "Genshin Impact OC Maker",
-      description:
-        "输入角色设定，即刻生成原神风格的元素冒险者。",
+      description: "输入角色设定，即刻生成原神风格的元素冒险者。",
     },
     step: {
       title: "如何打造 Genshin OC",
-      description:
-        "只需三个步骤，就能让你的角色踏足七国大陆。",
+      description: "只需三个步骤，就能让你的角色踏足七国大陆。",
       steps: [
         {
           title: "选择元素与神之眼",
@@ -398,19 +395,16 @@ export default {
     },
     examples: {
       title: "原神角色示例",
-      description:
-        "浏览使用 Genshin Impact OC Maker 文字提示生成的冒险者。",
+      description: "浏览使用 Genshin Impact OC Maker 文字提示生成的冒险者。",
       examples,
     },
     features: {
       title: "Genshin Impact OC Maker 的特色",
-      description:
-        "专为提瓦特世界调校，助你快速打造元素华丽的原创角色。",
+      description: "专为提瓦特世界调校，助你快速打造元素华丽的原创角色。",
       features: [
         {
           label: "原神级美术风格",
-          description:
-            "角色比例、服装细节与元素特效皆贴近游戏视觉语言。",
+          description: "角色比例、服装细节与元素特效皆贴近游戏视觉语言。",
         },
         {
           label: "元素系统整合",
@@ -419,13 +413,11 @@ export default {
         },
         {
           label: "极速角色生成",
-          description:
-            "数秒内即可看到角色成品，把时间留给世界观与剧情创作。",
+          description: "数秒内即可看到角色成品，把时间留给世界观与剧情创作。",
         },
         {
           label: "高品质动漫绘制",
-          description:
-            "输出图像符合原神的精致动漫风格，适合展示或二次创作。",
+          description: "输出图像符合原神的精致动漫风格，适合展示或二次创作。",
         },
         {
           label: "多样化造型选择",
@@ -434,8 +426,7 @@ export default {
         },
         {
           label: "提瓦特世界融合",
-          description:
-            "角色自然融入七国文化与冒险故事，具备完整的元素背景。",
+          description: "角色自然融入七国文化与冒险故事，具备完整的元素背景。",
         },
       ],
     },
@@ -455,8 +446,7 @@ export default {
         },
         {
           question: "可以免费使用吗？",
-          answer:
-            "可以。基础功能免费；升级方案提供更快生成与更多自定义选项。",
+          answer: "可以。基础功能免费；升级方案提供更快生成与更多自定义选项。",
         },
         {
           question: "为何生成效果如此接近原作？",
@@ -475,8 +465,7 @@ export default {
         },
         {
           question: "可以反覆调教同一个角色吗？",
-          answer:
-            "当然可以。可重复生成或修改提示，直到角色完全符合你的构想。",
+          answer: "当然可以。可重复生成或修改提示，直到角色完全符合你的构想。",
         },
         {
           question: "未来会推出其他开放世界题材的 OC Maker 吗？",
@@ -487,8 +476,7 @@ export default {
     },
     cta: {
       title: "展开你的提瓦特冒险",
-      description:
-        "无需绘画技能，只要描绘，就能让原创冒险者踏遍七国。",
+      description: "无需绘画技能，只要描绘，就能让原创冒险者踏遍七国。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",

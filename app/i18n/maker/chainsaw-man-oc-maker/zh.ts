@@ -383,8 +383,7 @@ export default {
     },
     step: {
       title: "如何打造链锯人 OC",
-      description:
-        "只要依照下列步骤，就能让你的角色在血与火的链锯世界中存活。",
+      description: "只要依照下列步骤，就能让你的角色在血与火的链锯世界中存活。",
       steps: [
         {
           title: "描述角色与外观",
@@ -416,8 +415,7 @@ export default {
       features: [
         {
           label: "原汁原味的暗黑风格",
-          description:
-            "生成的角色带有链锯人特有的粗粝、血腥与黑色幽默氛围。",
+          description: "生成的角色带有链锯人特有的粗粝、血腥与黑色幽默氛围。",
         },
         {
           label: "契约与混合体系统",
@@ -436,8 +434,7 @@ export default {
         },
         {
           label: "多样化形态选择",
-          description:
-            "每次生成提供多种姿态与造型，方便你探索不同的疯狂面貌。",
+          description: "每次生成提供多种姿态与造型，方便你探索不同的疯狂面貌。",
         },
         {
           label: "深度故事整合",
@@ -482,8 +479,7 @@ export default {
         },
         {
           question: "可以重复微调同一角色吗？",
-          answer:
-            "可以。你可重复生成或调整提示，直到角色完全符合你的想象。",
+          answer: "可以。你可重复生成或调整提示，直到角色完全符合你的想象。",
         },
         {
           question: "未来还会推出其他暗黑题材的 OC Maker 吗？",

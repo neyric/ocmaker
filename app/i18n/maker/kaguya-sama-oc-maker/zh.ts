@@ -358,13 +358,11 @@ export default {
   contents: {
     hero: {
       title: "Kaguya-sama OC Maker",
-      description:
-        "输入角色设定，几秒内生成秀知院学园的恋爱头脑战选手。",
+      description: "输入角色设定，几秒内生成秀知院学园的恋爱头脑战选手。",
     },
     step: {
       title: "如何打造 Kaguya-sama OC",
-      description:
-        "踏入秀知院的恋爱心理战，按照以下步骤塑造你的天才学生。",
+      description: "踏入秀知院的恋爱心理战，按照以下步骤塑造你的天才学生。",
       steps: [
         {
           title: "选定学园身份",
@@ -385,8 +383,7 @@ export default {
     },
     examples: {
       title: "秀知院角色示例",
-      description:
-        "浏览使用 Kaguya-sama OC Maker 文字提示生成的名校学生。",
+      description: "浏览使用 Kaguya-sama OC Maker 文字提示生成的名校学生。",
       examples,
     },
     features: {
@@ -483,4 +480,3 @@ export default {
     },
   },
 };
-

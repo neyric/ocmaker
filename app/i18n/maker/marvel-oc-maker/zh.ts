@@ -369,13 +369,11 @@ export default {
   contents: {
     hero: {
       title: "Marvel OC Maker",
-      description:
-        "输入设定，几秒内生成漫威宇宙气息的原创超级英雄造型。",
+      description: "输入设定，几秒内生成漫威宇宙气息的原创超级英雄造型。",
     },
     step: {
       title: "如何打造 Marvel OC",
-      description:
-        "跟随三个步骤，迅速组建你的超级英雄身份。",
+      description: "跟随三个步骤，迅速组建你的超级英雄身份。",
       steps: [
         {
           title: "设计英雄身份",
@@ -396,19 +394,16 @@ export default {
     },
     examples: {
       title: "漫威角色示例",
-      description:
-        "浏览使用 Marvel OC Maker 文字提示生成的英雄范例。",
+      description: "浏览使用 Marvel OC Maker 文字提示生成的英雄范例。",
       examples,
     },
     features: {
       title: "Marvel OC Maker 的特色",
-      description:
-        "专注漫威宇宙语汇，帮助你塑造具备电影感与漫画感的原创英雄。",
+      description: "专注漫威宇宙语汇，帮助你塑造具备电影感与漫画感的原创英雄。",
       features: [
         {
           label: "经典漫威画风",
-          description:
-            "角色造型精准捕捉漫威的色彩、线条与科技细节。",
+          description: "角色造型精准捕捉漫威的色彩、线条与科技细节。",
         },
         {
           label: "身份阵营整合",
@@ -417,18 +412,15 @@ export default {
         },
         {
           label: "极速英雄生成",
-          description:
-            "数秒完成英雄立绘，专注构思战队编制与剧情走向。",
+          description: "数秒完成英雄立绘，专注构思战队编制与剧情走向。",
         },
         {
           label: "高质量漫画质感",
-          description:
-            "输出效果贴近漫画封面与影视海报，适合做设定集或推介图。",
+          description: "输出效果贴近漫画封面与影视海报，适合做设定集或推介图。",
         },
         {
           label: "多元宇宙延展",
-          description:
-            "同一提示可生成地球街头、宇宙冒险或魔法支线的不同变体。",
+          description: "同一提示可生成地球街头、宇宙冒险或魔法支线的不同变体。",
         },
         {
           label: "故事深度强化",
@@ -485,8 +477,7 @@ export default {
     },
     cta: {
       title: "打造你的超级英雄",
-      description:
-        "无需绘画基础，只要描述，就能让原创漫威英雄立即登场。",
+      description: "无需绘画基础，只要描述，就能让原创漫威英雄立即登场。",
       btns: {
         start: "开始创作",
         explore: "探索英雄示例",

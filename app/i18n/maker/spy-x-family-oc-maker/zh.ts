@@ -362,8 +362,7 @@ export default {
     },
     step: {
       title: "如何打造 SPY×FAMILY OC",
-      description:
-        "想在柏林特的暗处守护和平？按照以下步骤建立你的双面人生。",
+      description: "想在柏林特的暗处守护和平？按照以下步骤建立你的双面人生。",
       steps: [
         {
           title: "确定身份与伪装",
@@ -389,13 +388,11 @@ export default {
     },
     features: {
       title: "SPY×FAMILY OC Maker 的特色",
-      description:
-        "为冷战谍战与家庭喜剧调性量身打造，呈现多面向的原创角色。",
+      description: "为冷战谍战与家庭喜剧调性量身打造，呈现多面向的原创角色。",
       features: [
         {
           label: "正统谍战画风",
-          description:
-            "角色服装、姿态与表情贴近作品中优雅又紧张的氛围。",
+          description: "角色服装、姿态与表情贴近作品中优雅又紧张的氛围。",
         },
         {
           label: "双重身份支持",
@@ -404,18 +401,15 @@ export default {
         },
         {
           label: "快速角色生成",
-          description:
-            "几个瞬间即可看到角色样貌，把时间留给故事与家庭互动。",
+          description: "几个瞬间即可看到角色样貌，把时间留给故事与家庭互动。",
         },
         {
           label: "高品质动漫呈现",
-          description:
-            "模型针对间谍过家家风格训练，提供细腻且富有情绪的画面。",
+          description: "模型针对间谍过家家风格训练，提供细腻且富有情绪的画面。",
         },
         {
           label: "多样造型挑选",
-          description:
-            "每次生成提供不同伪装与外勤姿势，挑选最符合剧情的设定。",
+          description: "每次生成提供不同伪装与外勤姿势，挑选最符合剧情的设定。",
         },
         {
           label: "兼顾暖心与谍战",
@@ -465,14 +459,14 @@ export default {
         },
         {
           question: "未来会新增其他谍战或家庭题材的 OC Maker 吗？",
-          answer:
-            "会的！我们计划扩展更多风格的原创角色生成器，敬请持续关注。",
+          answer: "会的！我们计划扩展更多风格的原创角色生成器，敬请持续关注。",
         },
       ],
     },
     cta: {
       title: "开启你的双面任务",
-      description: "无需绘画基础，只要设定好伪装与秘密，就能与福杰一家共享精彩行动。",
+      description:
+        "无需绘画基础，只要设定好伪装与秘密，就能与福杰一家共享精彩行动。",
       btns: {
         start: "开始创作",
         explore: "浏览角色",
@@ -480,4 +474,3 @@ export default {
     },
   },
 };
-

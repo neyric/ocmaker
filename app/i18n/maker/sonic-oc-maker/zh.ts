@@ -362,8 +362,7 @@ export default {
     },
     step: {
       title: "如何打造 Sonic OC",
-      description:
-        "创造索尼克世界的角色既迅速又有趣，按照以下步骤即可完成。",
+      description: "创造索尼克世界的角色既迅速又有趣，按照以下步骤即可完成。",
       steps: [
         {
           title: "挑选物种与风格",
@@ -389,13 +388,11 @@ export default {
     },
     features: {
       title: "Sonic OC Maker 的特色",
-      description:
-        "专注索尼克宇宙，打造拥有极速技能与义勇精神的原创角色。",
+      description: "专注索尼克宇宙，打造拥有极速技能与义勇精神的原创角色。",
       features: [
         {
           label: "正统卡通画风",
-          description:
-            "角色造型、线条与能量特效贴近索尼克系列的快节奏美学。",
+          description: "角色造型、线条与能量特效贴近索尼克系列的快节奏美学。",
         },
         {
           label: "阵营体系理解",
@@ -404,13 +401,11 @@ export default {
         },
         {
           label: "极速图像生成",
-          description:
-            "在几秒内完成角色绘制，把时间留给冒险剧情与速度竞技。",
+          description: "在几秒内完成角色绘制，把时间留给冒险剧情与速度竞技。",
         },
         {
           label: "高品质卡通呈现",
-          description:
-            "模型针对索尼克视觉训练，提供充满动感与色彩的角色插画。",
+          description: "模型针对索尼克视觉训练，提供充满动感与色彩的角色插画。",
         },
         {
           label: "多造型选择",
@@ -480,4 +475,3 @@ export default {
     },
   },
 };
-

@@ -408,8 +408,7 @@ export default {
         },
         {
           label: "快速角色产出",
-          description:
-            "数秒内看到角色全貌，把时间留给剧情与人际纠葛。",
+          description: "数秒内看到角色全貌，把时间留给剧情与人际纠葛。",
         },
         {
           label: "高品质视觉输出",
@@ -418,8 +417,7 @@ export default {
         },
         {
           label: "多结果筛选",
-          description:
-            "每次生成提供多种版本，挑选最符合人设的样貌与风格。",
+          description: "每次生成提供多种版本，挑选最符合人设的样貌与风格。",
         },
         {
           label: "深度故事整合",
@@ -484,4 +482,3 @@ export default {
     },
   },
 };
-

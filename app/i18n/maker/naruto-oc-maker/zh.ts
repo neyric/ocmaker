@@ -406,8 +406,7 @@ export default {
       features: [
         {
           label: "正统火影画风",
-          description:
-            "角色造型与线条贴近原作，融入忍者服、护额与战斗姿态。",
+          description: "角色造型与线条贴近原作，融入忍者服、护额与战斗姿态。",
         },
         {
           label: "忍界专属调参",
@@ -416,13 +415,11 @@ export default {
         },
         {
           label: "高速生成流程",
-          description:
-            "数秒内获得高品质角色，让你把时间留给剧情与人物关系。",
+          description: "数秒内获得高品质角色，让你把时间留给剧情与人物关系。",
         },
         {
           label: "高解析度图像",
-          description:
-            "AI 提供细致的动漫风角色，可直接用于故事创作或展示。",
+          description: "AI 提供细致的动漫风角色，可直接用于故事创作或展示。",
         },
         {
           label: "多版本挑选",
@@ -492,4 +489,3 @@ export default {
     },
   },
 };
-

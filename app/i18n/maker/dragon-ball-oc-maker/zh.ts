@@ -353,8 +353,7 @@ const examples = [
 export default {
   meta: {
     title: "龙珠 OC 角色生成器",
-    description:
-      "借助 AI 打造你的《龙珠》战士，设计专属技能、变身与传奇战斗。",
+    description: "借助 AI 打造你的《龙珠》战士，设计专属技能、变身与传奇战斗。",
   },
   series: "龙珠",
   backstoryPreset: basePrompt,
@@ -363,13 +362,11 @@ export default {
   contents: {
     hero: {
       title: "Dragon Ball OC Maker",
-      description:
-        "输入角色设定，即刻生成龙珠风格的武道家与战斗档案。",
+      description: "输入角色设定，即刻生成龙珠风格的武道家与战斗档案。",
     },
     step: {
       title: "如何打造 Dragon Ball OC",
-      description:
-        "锻造你的龙珠战士并不复杂，依照下列步骤完成终极战力。",
+      description: "锻造你的龙珠战士并不复杂，依照下列步骤完成终极战力。",
       steps: [
         {
           title: "决定战士类型",
@@ -390,34 +387,28 @@ export default {
     },
     examples: {
       title: "龙珠角色示例",
-      description:
-        "浏览使用 Dragon Ball OC Maker 文字提示生成的强大战士。",
+      description: "浏览使用 Dragon Ball OC Maker 文字提示生成的强大战士。",
       examples,
     },
     features: {
       title: "Dragon Ball OC Maker 的特色",
-      description:
-        "专为《龙珠》打造，让你的原创战士拥有正统的气功战斗感。",
+      description: "专为《龙珠》打造，让你的原创战士拥有正统的气功战斗感。",
       features: [
         {
           label: "原作级画风",
-          description:
-            "角色体态、战斗姿势与线条展现龙珠经典漫画／动画风格。",
+          description: "角色体态、战斗姿势与线条展现龙珠经典漫画／动画风格。",
         },
         {
           label: "变身系统理解",
-          description:
-            "AI 熟悉超级赛亚人等变身机制，能呈现多层次的战斗形态。",
+          description: "AI 熟悉超级赛亚人等变身机制，能呈现多层次的战斗形态。",
         },
         {
           label: "极速战士生成",
-          description:
-            "数秒内即可获得专业级战斗立绘，专注设计剧情与战力成长。",
+          description: "数秒内即可获得专业级战斗立绘，专注设计剧情与战力成长。",
         },
         {
           label: "战斗就绪视觉",
-          description:
-            "输出图像适合武道场景，无论是天下第一武道会或宇宙对决。",
+          description: "输出图像适合武道场景，无论是天下第一武道会或宇宙对决。",
         },
         {
           label: "多重战力形态",
@@ -479,8 +470,7 @@ export default {
     },
     cta: {
       title: "打造你的龙珠战士",
-      description:
-        "无需绘画技能，只要描述，即可释放原创角色的极限战力。",
+      description: "无需绘画技能，只要描述，即可释放原创角色的极限战力。",
       btns: {
         start: "开始创作",
         explore: "探索战士",

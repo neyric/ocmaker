@@ -374,13 +374,11 @@ export default {
   contents: {
     hero: {
       title: "Hunter x Hunter OC Maker",
-      description:
-        "输入角色设定，即刻生成冨樫风格的猎人角色与资料。",
+      description: "输入角色设定，即刻生成冨樫风格的猎人角色与资料。",
     },
     step: {
       title: "如何打造猎人 OC",
-      description:
-        "三个步骤，创造专属念能力者。",
+      description: "三个步骤，创造专属念能力者。",
       steps: [
         {
           title: "描述外貌与猎人身份",
@@ -401,24 +399,20 @@ export default {
     },
     examples: {
       title: "猎人角色示例",
-      description:
-        "浏览使用 Hunter x Hunter OC Maker 生成的原创猎人。",
+      description: "浏览使用 Hunter x Hunter OC Maker 生成的原创猎人。",
       examples,
     },
     features: {
       title: "Hunter x Hunter OC Maker 的特色",
-     	description:
-        "专注念能力系统，帮助你快速塑造平衡又独特的猎人角色。",
+      description: "专注念能力系统，帮助你快速塑造平衡又独特的猎人角色。",
       features: [
         {
           label: "还原冨樫画风",
-          description:
-            "角色线条、穿着与气场贴合原作的硬派漫画风格。",
+          description: "角色线条、穿着与气场贴合原作的硬派漫画风格。",
         },
         {
           label: "念能力体系整合",
-          description:
-            "AI 理解六大念系与制约誓约机制，协助打造合理的发能力。",
+          description: "AI 理解六大念系与制约誓约机制，协助打造合理的发能力。",
         },
         {
           label: "极速角色生成",
@@ -453,13 +447,11 @@ export default {
         },
         {
           question: "如何让念能力更贴近原作逻辑？",
-          answer:
-            "请设置系别、能力效果与制约誓约，并说明使用条件与代价。",
+          answer: "请设置系别、能力效果与制约誓约，并说明使用条件与代价。",
         },
         {
           question: "可以免费使用吗？",
-          answer:
-            "可以。基础功能免费；升级方案可加速生成并解锁更多造型选项。",
+          answer: "可以。基础功能免费；升级方案可加速生成并解锁更多造型选项。",
         },
         {
           question: "为什么生成结果这么像冨樫老师的风格？",
@@ -483,15 +475,13 @@ export default {
         },
         {
           question: "未来会推出更多战斗系动漫的 OC Maker 吗？",
-          answer:
-            "会的！我们持续扩展战斗与冒险类题材，欢迎关注未来更新。",
+          answer: "会的！我们持续扩展战斗与冒险类题材，欢迎关注未来更新。",
         },
       ],
     },
     cta: {
       title: "成为猎人协会的一员",
-      description:
-        "无需绘画技能，只要描述，即可让原创猎人与念能力跃然纸上。",
+      description: "无需绘画技能，只要描述，即可让原创猎人与念能力跃然纸上。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",

@@ -389,13 +389,11 @@ export default {
   contents: {
     hero: {
       title: "Detective Conan OC Maker",
-      description:
-        "输入角色设定，立即生成柯南风格的原创侦探与谍战档案。",
+      description: "输入角色设定，立即生成柯南风格的原创侦探与谍战档案。",
     },
     step: {
       title: "如何打造 Detective Conan OC",
-      description:
-        "两步就能让你的想法化作推理舞台上的关键角色。",
+      description: "两步就能让你的想法化作推理舞台上的关键角色。",
       steps: [
         {
           title: "描述角色基本资料",
@@ -416,44 +414,36 @@ export default {
     },
     examples: {
       title: "柯南角色示例",
-      description:
-        "浏览由 Detective Conan OC Maker 生成的推理角色样张。",
+      description: "浏览由 Detective Conan OC Maker 生成的推理角色样张。",
       examples,
     },
     features: {
       title: "Detective Conan OC Maker 有何不同？",
-      description:
-        "此版本专为柯南宇宙调校，让角色立刻拥有经典推理作品的味道。",
+      description: "此版本专为柯南宇宙调校，让角色立刻拥有经典推理作品的味道。",
       features: [
         {
           label: "原汁原味的侦探设计",
-          description:
-            "生成的角色可无缝融入柯南世界的破案、推理与日常喜剧。",
+          description: "生成的角色可无缝融入柯南世界的破案、推理与日常喜剧。",
         },
         {
           label: "提示词精调",
-          description:
-            "从侦探装备到校服细节皆经过微调，帮助你构筑可信的角色。",
+          description: "从侦探装备到校服细节皆经过微调，帮助你构筑可信的角色。",
         },
         {
           label: "高速生成",
-          description:
-            "几秒内获得高品质图像，将时间留给案件设定与角色发展。",
+          description: "几秒内获得高品质图像，将时间留给案件设定与角色发展。",
         },
         {
           label: "高解析视觉输出",
-          description:
-            "依托先进 AI，生成结果细致，适合剧情创作或展示。",
+          description: "依托先进 AI，生成结果细致，适合剧情创作或展示。",
         },
         {
           label: "多重造型选择",
-          description:
-            "每次生成提供多种方案，让你挑出最合适的外观与姿态。",
+          description: "每次生成提供多种方案，让你挑出最合适的外观与姿态。",
         },
         {
           label: "深度剧情整合",
-          description:
-            "延伸出背景事件、对手与同盟关系，让角色不只是一张图。",
+          description: "延伸出背景事件、对手与同盟关系，让角色不只是一张图。",
         },
       ],
     },
@@ -468,8 +458,7 @@ export default {
         },
         {
           question: "如何让角色更像柯南角色？",
-          answer:
-            "请加入侦探技能、特务背景或黑衣组织线索等细节，越具体越好。",
+          answer: "请加入侦探技能、特务背景或黑衣组织线索等细节，越具体越好。",
         },
         {
           question: "可以免费使用吗？",
@@ -478,8 +467,7 @@ export default {
         },
         {
           question: "生成效果为何如此出色？",
-          answer:
-            "系统针对柯南的画风与故事调性进行了微调，确保风格一致。",
+          answer: "系统针对柯南的画风与故事调性进行了微调，确保风格一致。",
         },
         {
           question: "生成的角色能用于商业用途吗？",
@@ -493,8 +481,7 @@ export default {
         },
         {
           question: "能重复微调同一个角色吗？",
-          answer:
-            "当然可以。可用同一提示多次生成，或调整描述直到满意为止。",
+          answer: "当然可以。可用同一提示多次生成，或调整描述直到满意为止。",
         },
         {
           question: "还会推出其他动漫主题的 OC Maker 吗？",
@@ -505,8 +492,7 @@ export default {
     },
     cta: {
       title: "创造你的柯南角色",
-      description:
-        "无需绘画技能，只要描述，即可让原创侦探加入推理现场。",
+      description: "无需绘画技能，只要描述，即可让原创侦探加入推理现场。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",

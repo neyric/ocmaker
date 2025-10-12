@@ -323,26 +323,22 @@ const ocOptions = [
 
 const examples = [
   {
-    image:
-      "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-1.webp",
+    image: "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-1.webp",
     prompt:
       "1boy, short black hair, intense brown eyes, tokyo jujutsu high uniform, cursed energy aura, confident pose, modern tokyo background, anime style, single character, upper body, looking at viewer",
   },
   {
-    image:
-      "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-2.webp",
+    image: "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-2.webp",
     prompt:
       "1girl, pink hair tied in bun, green eyes, kyoto uniform, cursed fan weapons, barrier technique effect, single character, upper body, looking at viewer, anime style, traditional temple background",
   },
   {
-    image:
-      "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-3.webp",
+    image: "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-3.webp",
     prompt:
       "1boy, silver hair, red eyes, casual combat outfit, curse user vibe, dark alley setting, cursed energy sparks, single character, upper body, looking at viewer, anime style",
   },
   {
-    image:
-      "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-4.webp",
+    image: "https://cdn.ocmaker.app/example/jujutsu-kaisen-oc-generated-4.webp",
     prompt:
       "1girl, blue hair, yellow eyes, culling game attire, lightning cursed energy, dynamic pose, battle damaged buildings, single character, upper body, looking at viewer, anime style",
   },
@@ -361,13 +357,11 @@ export default {
   contents: {
     hero: {
       title: "Jujutsu Kaisen OC Maker",
-      description:
-        "输入角色设定，即刻生成充满咒力的原创术师形象。",
+      description: "输入角色设定，即刻生成充满咒力的原创术师形象。",
     },
     step: {
       title: "如何打造 JJK OC",
-      description:
-        "按照以下步骤，让你的角色踏入咒术世界的诡谲战场。",
+      description: "按照以下步骤，让你的角色踏入咒术世界的诡谲战场。",
       steps: [
         {
           title: "描绘术师身份",
@@ -388,19 +382,16 @@ export default {
     },
     examples: {
       title: "术师示例",
-      description:
-        "浏览由 Jujutsu Kaisen OC Maker 生成的原创术师与咒灵猎人。",
+      description: "浏览由 Jujutsu Kaisen OC Maker 生成的原创术师与咒灵猎人。",
       examples,
     },
     features: {
       title: "Jujutsu Kaisen OC Maker 有何特色？",
-      description:
-        "本工具专为《咒术回战》打造，强调术式逻辑与暗黑现代感。",
+      description: "本工具专为《咒术回战》打造，强调术式逻辑与暗黑现代感。",
       features: [
         {
           label: "咒力视觉还原",
-          description:
-            "角色在构图、服饰与能量特效上都贴合原作的现代阴郁风。",
+          description: "角色在构图、服饰与能量特效上都贴合原作的现代阴郁风。",
         },
         {
           label: "术式系统整合",
@@ -409,13 +400,11 @@ export default {
         },
         {
           label: "快速生成",
-          description:
-            "几秒即可看到角色成品，立即投入剧情创作或战斗规划。",
+          description: "几秒即可看到角色成品，立即投入剧情创作或战斗规划。",
         },
         {
           label: "高解析角色图",
-          description:
-            "输出的立绘细节丰富，可用作人设图、战斗卡或同人绘参考。",
+          description: "输出的立绘细节丰富，可用作人设图、战斗卡或同人绘参考。",
         },
         {
           label: "多种时代与阵营",

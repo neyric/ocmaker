@@ -374,13 +374,11 @@ export default {
   contents: {
     hero: {
       title: "Demon Slayer OC Maker",
-      description:
-        "输入角色设定，即刻生成鬼杀队风格的剑士与鬼族造型。",
+      description: "输入角色设定，即刻生成鬼杀队风格的剑士与鬼族造型。",
     },
     step: {
       title: "如何打造鬼灭之刃 OC",
-      description:
-        "锻造一名鬼杀队士同样艰辛，跟着步骤，为你的角色谱写宿命。",
+      description: "锻造一名鬼杀队士同样艰辛，跟着步骤，为你的角色谱写宿命。",
       steps: [
         {
           title: "选择呼吸法",
@@ -401,14 +399,12 @@ export default {
     },
     examples: {
       title: "鬼杀队示例",
-      description:
-        "浏览使用 Demon Slayer OC Maker 文本提示生成的强大战士。",
+      description: "浏览使用 Demon Slayer OC Maker 文本提示生成的强大战士。",
       examples,
     },
     features: {
       title: "Demon Slayer OC Maker 的特色",
-      description:
-        "专为鬼灭世界优化，协助你打造拥有呼吸法与日轮刀的原创角色。",
+      description: "专为鬼灭世界优化，协助你打造拥有呼吸法与日轮刀的原创角色。",
       features: [
         {
           label: "原作级美术风格",
@@ -417,18 +413,15 @@ export default {
         },
         {
           label: "呼吸法表现力",
-          description:
-            "AI 理解各呼吸法的视觉语言，确保能力与气势完整呈现。",
+          description: "AI 理解各呼吸法的视觉语言，确保能力与气势完整呈现。",
         },
         {
           label: "极速角色生成",
-          description:
-            "数秒获取高质量图像，把时间留给撰写训练历程与战斗史。",
+          description: "数秒获取高质量图像，把时间留给撰写训练历程与战斗史。",
         },
         {
           label: "战斗就绪的视觉",
-          description:
-            "产出高解析战斗立绘，适合用在同人剧本、小说或角色卡。",
+          description: "产出高解析战斗立绘，适合用在同人剧本、小说或角色卡。",
         },
         {
           label: "多重呼吸变体",
@@ -478,8 +471,7 @@ export default {
         },
         {
           question: "能重复调整同一角色吗？",
-          answer:
-            "可以。重复生成或修改提示，直到角色完全符合你的设想。",
+          answer: "可以。重复生成或修改提示，直到角色完全符合你的设想。",
         },
         {
           question: "未来会推出更多动作动漫的 OC Maker 吗？",

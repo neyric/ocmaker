@@ -375,13 +375,11 @@ export default {
   contents: {
     hero: {
       title: "Honkai Star Rail OC Maker",
-      description:
-        "输入角色设定，即刻生成星穹铁道风格的开拓者与星核猎手。",
+      description: "输入角色设定，即刻生成星穹铁道风格的开拓者与星核猎手。",
     },
     step: {
       title: "如何打造 Star Rail OC",
-      description:
-        "想踏上星穹列车？遵循以下步骤塑造你的宇宙冒险者。",
+      description: "想踏上星穹列车？遵循以下步骤塑造你的宇宙冒险者。",
       steps: [
         {
           title: "选择命途与阵营",
@@ -402,8 +400,7 @@ export default {
     },
     examples: {
       title: "星穹角色示例",
-      description:
-        "浏览使用 Honkai Star Rail OC Maker 生成的宇宙角色。",
+      description: "浏览使用 Honkai Star Rail OC Maker 生成的宇宙角色。",
       examples,
     },
     features: {
@@ -413,8 +410,7 @@ export default {
       features: [
         {
           label: "正统科幻画风",
-          description:
-            "角色比例、服饰与星际特效贴合游戏高质感的 3D 动画风。",
+          description: "角色比例、服饰与星际特效贴合游戏高质感的 3D 动画风。",
         },
         {
           label: "命途系统整合",
@@ -428,8 +424,7 @@ export default {
         },
         {
           label: "高品质宇宙视觉",
-          description:
-            "图像呈现科幻华丽感，适合世界观扩展与同人故事创作。",
+          description: "图像呈现科幻华丽感，适合世界观扩展与同人故事创作。",
         },
         {
           label: "多元命途迭代",
@@ -491,8 +486,7 @@ export default {
     },
     cta: {
       title: "踏上星际旅程",
-      description:
-        "无需绘画技能，只要描述，就能让原创角色在星穹中开拓未知。",
+      description: "无需绘画技能，只要描述，就能让原创角色在星穹中开拓未知。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",

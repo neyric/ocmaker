@@ -324,26 +324,22 @@ const ocOptions = [
 
 const examples = [
   {
-    image:
-      "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-1.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-1.webp",
     prompt:
       "1boy, spiky blond hair with blue highlights, intense gaze, jojo style outfit with heart motifs, chain accessories, stand aura, dramatic pose, single character, upper body, looking at viewer, anime style, vibrant background",
   },
   {
-    image:
-      "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-2.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-2.webp",
     prompt:
       "1girl, long purple hair, golden eyes, confident smile, jojo fashion dress with geometric patterns, gloves, stand energy swirling, unique pose, single character, upper body, looking at viewer, anime style, colorful background",
   },
   {
-    image:
-      "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-3.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-3.webp",
     prompt:
       "1boy, silver hair, heterochromia eyes, stoic expression, jojo style suit with chains, stand manifested behind, tarot card motif, dynamic lighting, single character, upper body, looking at viewer, anime style, simple background",
   },
   {
-    image:
-      "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-4.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-4.webp",
     prompt:
       "1girl, green hair in braids, bright pink eyes, playful grin, jojo streetwear with graffiti accents, stand ability painting aura, pose with spray can, single character, upper body, looking at viewer, anime style, urban background",
   },
@@ -384,8 +380,7 @@ export default {
     },
     examples: {
       title: "JOJO 角色示例",
-      description:
-        "欣赏使用 JOJO OC Maker 从文字提示生成的奇妙角色。",
+      description: "欣赏使用 JOJO OC Maker 从文字提示生成的奇妙角色。",
       examples,
     },
     features: {
@@ -415,8 +410,7 @@ export default {
         },
         {
           label: "多种姿势表现",
-          description:
-            "一次生成多种造型，让你自由选择最有气势的“JOJO 立”。",
+          description: "一次生成多种造型，让你自由选择最有气势的“JOJO 立”。",
         },
         {
           label: "完整角色档案",

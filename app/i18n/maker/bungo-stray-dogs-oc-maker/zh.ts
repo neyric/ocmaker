@@ -373,8 +373,7 @@ export default {
   contents: {
     hero: {
       title: "Bungo Stray Dogs OC Maker",
-      description:
-        "输入角色设定，即刻生成拥有文豪异能的横滨人物与视觉档案。",
+      description: "输入角色设定，即刻生成拥有文豪异能的横滨人物与视觉档案。",
     },
     step: {
       title: "如何打造文豪野犬 OC",
@@ -431,8 +430,7 @@ export default {
         },
         {
           label: "多样能力变体",
-          description:
-            "每次生成提供多种风格，助你尝试不同阵营职责与战斗姿态。",
+          description: "每次生成提供多种风格，助你尝试不同阵营职责与战斗姿态。",
         },
         {
           label: "横滨世界观融入",

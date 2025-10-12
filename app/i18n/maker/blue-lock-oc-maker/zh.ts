@@ -400,8 +400,7 @@ export default {
     },
     examples: {
       title: "Blue Lock 角色示例",
-      description:
-        "看看使用 Blue Lock OC Maker 生成的高压前锋样张。",
+      description: "看看使用 Blue Lock OC Maker 生成的高压前锋样张。",
       examples,
     },
     features: {

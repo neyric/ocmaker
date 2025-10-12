@@ -220,7 +220,7 @@ const ocOptions = [
     key: "top",
     data: [
       { label: "机能夹克", value: "utility jacket" },
-\n      { label: "多层外套", value: "layered coat" },
+      { label: "多层外套", value: "layered coat" },
       { label: "休闲长衫", value: "casual tunic" },
       { label: "装甲马甲", value: "armored vest" },
       { label: "宽松上衣", value: "loose shirt" },
@@ -347,8 +347,7 @@ export default {
     },
     step: {
       title: "如何打造 Sailor Moon OC",
-      description:
-        "想要以爱与正义守护世界？按照以下步骤设计你的魔法守护者。",
+      description: "想要以爱与正义守护世界？按照以下步骤设计你的魔法守护者。",
       steps: [
         {
           title: "选择守护者类型",
@@ -394,8 +393,7 @@ export default {
         },
         {
           label: "高品质少女绘风",
-          description:
-            "模型针对魔法少女美学训练，呈现闪耀与浪漫兼具的画面。",
+          description: "模型针对魔法少女美学训练，呈现闪耀与浪漫兼具的画面。",
         },
         {
           label: "多重变身选择",
@@ -404,8 +402,7 @@ export default {
         },
         {
           label: "月之王国连结",
-          description:
-            "角色自然承袭银千年的神话、星象使命与魔法主题。",
+          description: "角色自然承袭银千年的神话、星象使命与魔法主题。",
         },
       ],
     },
@@ -465,4 +462,3 @@ export default {
     },
   },
 };
-

@@ -362,13 +362,11 @@ export default {
   contents: {
     hero: {
       title: "Hell's Paradise OC Maker",
-      description:
-        "输入角色设定，即刻生成充满江户暗黑气息的角色图像与故事。",
+      description: "输入角色设定，即刻生成充满江户暗黑气息的角色图像与故事。",
     },
     step: {
       title: "如何打造地狱乐 OC",
-      description:
-        "只需三步，便能让你的角色在神仙郷中求生或成魔。",
+      description: "只需三步，便能让你的角色在神仙郷中求生或成魔。",
       steps: [
         {
           title: "描述外貌与身份",
@@ -395,13 +393,11 @@ export default {
     },
     features: {
       title: "Hell's Paradise OC Maker 的特色",
-      description:
-        "专注江户暗黑幻想，帮助你塑造兼具血腥与哲思的原创角色。",
+      description: "专注江户暗黑幻想，帮助你塑造兼具血腥与哲思的原创角色。",
       features: [
         {
           label: "正统暗黑画风",
-          description:
-            "角色线条与花妖细节贴近原作残酷又华美的美术风格。",
+          description: "角色线条与花妖细节贴近原作残酷又华美的美术风格。",
         },
         {
           label: "忍术／道术整合",
@@ -410,23 +406,19 @@ export default {
         },
         {
           label: "快速呈现生死旅人",
-          description:
-            "数秒内生成立绘，协助描写岛上追猎、联盟与背叛的剧情。",
+          description: "数秒内生成立绘，协助描写岛上追猎、联盟与背叛的剧情。",
         },
         {
           label: "高解析幻想视觉",
-          description:
-            "图像呈现岛屿诡花、血溅与神秘气场，适合剧本与同人创作。",
+          description: "图像呈现岛屿诡花、血溅与神秘气场，适合剧本与同人创作。",
         },
         {
           label: "多路线角色尝试",
-          description:
-            "每次生成提供不同身份与战斗姿态，便于探索角色命运岔路。",
+          description: "每次生成提供不同身份与战斗姿态，便于探索角色命运岔路。",
         },
         {
           label: "与原作世界观契合",
-          description:
-            "角色自然融入幕府、忍村与天仙势力的冲突，故事延展性强。",
+          description: "角色自然融入幕府、忍村与天仙势力的冲突，故事延展性强。",
         },
       ],
     },
@@ -446,8 +438,7 @@ export default {
         },
         {
           question: "可以免费使用吗？",
-          answer:
-            "可以。基础功能免费；升级方案提供更快生成与更多造型选项。",
+          answer: "可以。基础功能免费；升级方案提供更快生成与更多造型选项。",
         },
         {
           question: "为何生成结果如此贴近原作氛围？",
@@ -471,8 +462,7 @@ export default {
         },
         {
           question: "未来还会推出其他暗黑奇幻题材的 OC Maker 吗？",
-          answer:
-            "会的！我们持续扩充暗黑、历史与武侠题材，欢迎关注最新更新。",
+          answer: "会的！我们持续扩充暗黑、历史与武侠题材，欢迎关注最新更新。",
         },
       ],
     },

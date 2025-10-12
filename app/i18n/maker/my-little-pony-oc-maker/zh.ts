@@ -358,8 +358,7 @@ export default {
   contents: {
     hero: {
       title: "My Little Pony OC Maker",
-      description:
-        "输入角色设定，几秒内生成专属的友谊与魔法小马角色。",
+      description: "输入角色设定，几秒内生成专属的友谊与魔法小马角色。",
     },
     step: {
       title: "如何打造 My Little Pony OC",
@@ -395,8 +394,7 @@ export default {
       features: [
         {
           label: "正统 MLP 画风",
-          description:
-            "角色表情、鬃毛与可爱标记贴合原作的明亮线条与温暖色调。",
+          description: "角色表情、鬃毛与可爱标记贴合原作的明亮线条与温暖色调。",
         },
         {
           label: "多元小马族群",
@@ -481,4 +479,3 @@ export default {
     },
   },
 };
-

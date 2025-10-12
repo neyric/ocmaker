@@ -378,13 +378,11 @@ export default {
   contents: {
     hero: {
       title: "Case Closed OC Maker",
-      description:
-        "输入角色设定，立刻生成柯南风格的原创侦探与故事档案。",
+      description: "输入角色设定，立刻生成柯南风格的原创侦探与故事档案。",
     },
     step: {
       title: "如何打造柯南 OC",
-      description:
-        "只需两步，即能让你的角色自然融入充满悬疑的柯南世界。",
+      description: "只需两步，即能让你的角色自然融入充满悬疑的柯南世界。",
       steps: [
         {
           title: "描述角色基本资料",
@@ -405,8 +403,7 @@ export default {
     },
     examples: {
       title: "柯南风角色示例",
-      description:
-        "浏览由 Case Closed OC Maker 生成的推理角色样张。",
+      description: "浏览由 Case Closed OC Maker 生成的推理角色样张。",
       examples,
     },
     features: {
@@ -436,8 +433,7 @@ export default {
         },
         {
           label: "一次多种选择",
-          description:
-            "每次生成都会提供多张方案，让你挑选最合心意的风格。",
+          description: "每次生成都会提供多张方案，让你挑选最合心意的风格。",
         },
         {
           label: "深度剧情整合",
@@ -482,8 +478,7 @@ export default {
         },
         {
           question: "能反覆微调同一角色吗？",
-          answer:
-            "可以。可重复使用同一提示或调整输入，直到角色符合你的愿景。",
+          answer: "可以。可重复使用同一提示或调整输入，直到角色符合你的愿景。",
         },
         {
           question: "未来还会有其他动漫主题的 OC Maker 吗？",
@@ -494,8 +489,7 @@ export default {
     },
     cta: {
       title: "创造你的柯南角色",
-      description:
-        "无需绘画技能，只要描述即可让原创侦探现身推理舞台。",
+      description: "无需绘画技能，只要描述即可让原创侦探现身推理舞台。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",

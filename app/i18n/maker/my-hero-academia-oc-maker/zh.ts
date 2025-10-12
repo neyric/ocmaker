@@ -369,13 +369,11 @@ export default {
   contents: {
     hero: {
       title: "My Hero Academia OC Maker",
-      description:
-        "输入角色设定，瞬间生成拥有英雄梦想的 MHA 原创角色。",
+      description: "输入角色设定，瞬间生成拥有英雄梦想的 MHA 原创角色。",
     },
     step: {
       title: "如何打造 My Hero Academia OC",
-      description:
-        "像觉醒个性一样刺激，按照步骤塑造你的英雄或反派。",
+      description: "像觉醒个性一样刺激，按照步骤塑造你的英雄或反派。",
       steps: [
         {
           title: "设计独特个性",
@@ -422,8 +420,7 @@ export default {
         },
         {
           label: "专业级英雄插画",
-          description:
-            "依据 MHA 的视觉标准调校，呈现充满能量感的角色作品。",
+          description: "依据 MHA 的视觉标准调校，呈现充满能量感的角色作品。",
         },
         {
           label: "多套战斗服变体",
@@ -463,8 +460,7 @@ export default {
         },
         {
           question: "用 My Hero Academia OC Maker 创造的角色能商用吗？",
-          answer:
-            "当然可以！你生成的原创角色归你所有，可用于个人或商业计划。",
+          answer: "当然可以！你生成的原创角色归你所有，可用于个人或商业计划。",
         },
         {
           question: "使用 My Hero Academia OC Maker 需要账号吗？",
@@ -485,8 +481,7 @@ export default {
     },
     cta: {
       title: "创造你的终极英雄",
-      description:
-        "无需绘画技能，只要想像并描述，就能踏入职业英雄的行列。",
+      description: "无需绘画技能，只要想像并描述，就能踏入职业英雄的行列。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",
@@ -494,4 +489,3 @@ export default {
     },
   },
 };
-

@@ -358,13 +358,11 @@ export default {
   contents: {
     hero: {
       title: "Frieren OC Maker",
-      description:
-        "输入角色设定，即刻生成带有永恒旅途氛围的奇幻图像与故事。",
+      description: "输入角色设定，即刻生成带有永恒旅途氛围的奇幻图像与故事。",
     },
     step: {
       title: "如何打造 Frieren OC",
-      description:
-        "打造芙莉莲风格角色很简单，跟随以下步骤，让时间的故事苏醒。",
+      description: "打造芙莉莲风格角色很简单，跟随以下步骤，让时间的故事苏醒。",
       steps: [
         {
           title: "描绘角色轮廓",
@@ -385,8 +383,7 @@ export default {
     },
     examples: {
       title: "芙莉莲角色示例",
-      description:
-        "浏览由 Frieren OC Maker 文字提示生成的旅者与魔法使。",
+      description: "浏览由 Frieren OC Maker 文字提示生成的旅者与魔法使。",
       examples,
     },
     features: {
@@ -396,8 +393,7 @@ export default {
       features: [
         {
           label: "正统奇幻画风",
-          description:
-            "角色神态与服饰贴近原作的静谧幻想美学。",
+          description: "角色神态与服饰贴近原作的静谧幻想美学。",
         },
         {
           label: "时间主题融合",
@@ -406,13 +402,11 @@ export default {
         },
         {
           label: "快速灵感实现",
-          description:
-            "数秒便能看到角色成形，将心力留给故事与旅程的描写。",
+          description: "数秒便能看到角色成形，将心力留给故事与旅程的描写。",
         },
         {
           label: "高解析温柔视觉",
-          description:
-            "产出细腻的奇幻图像，适合用在小说、剧本或角色手册。",
+          description: "产出细腻的奇幻图像，适合用在小说、剧本或角色手册。",
         },
         {
           label: "多样旅途造型",
@@ -437,13 +431,11 @@ export default {
         },
         {
           question: "如何让角色更像芙莉莲的世界？",
-          answer:
-            "可加入长寿设定、魔法专长、旅行伙伴与时间主题的情感细节。",
+          answer: "可加入长寿设定、魔法专长、旅行伙伴与时间主题的情感细节。",
         },
         {
           question: "可以免费使用吗？",
-          answer:
-            "可以。基础功能免费；升级方案可加速生成并解锁更多自订选项。",
+          answer: "可以。基础功能免费；升级方案可加速生成并解锁更多自订选项。",
         },
         {
           question: "为何生成效果如此细腻？",
@@ -457,25 +449,21 @@ export default {
         },
         {
           question: "需要注册账户才能使用吗？",
-          answer:
-            "不必。注册后可保存角色、查看生成历史，并解锁更多功能。",
+          answer: "不必。注册后可保存角色、查看生成历史，并解锁更多功能。",
         },
         {
           question: "能反覆调整同一角色吗？",
-          answer:
-            "可以。可重复生成或调整描述，直到角色完美呈现你的想法。",
+          answer: "可以。可重复生成或调整描述，直到角色完美呈现你的想法。",
         },
         {
           question: "未来还会推出其他奇幻主题的 OC Maker 吗？",
-          answer:
-            "会的！我们持续拓展奇幻与冒险题材，欢迎关注 ocmaker.app。",
+          answer: "会的！我们持续拓展奇幻与冒险题材，欢迎关注 ocmaker.app。",
         },
       ],
     },
     cta: {
       title: "启程你的魔法旅伴",
-      description:
-        "无需绘画技能，只要描述，就能让原创角色踏上横跨百年的旅途。",
+      description: "无需绘画技能，只要描述，就能让原创角色踏上横跨百年的旅途。",
       btns: {
         start: "开始创作",
         explore: "探索角色示例",
