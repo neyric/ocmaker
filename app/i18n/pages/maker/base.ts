@@ -202,45 +202,45 @@ const ocOptions = [
 
 export default {
   meta: {
-    title: "Create Original Characters with OC Maker",
+    title: "OC Maker – All-in-One OC Generator & Character Creator",
     description:
-      "Build unique characters, vivid backstories, and stylized avatars with our all-in-one OC generator.",
+      "Use OC Maker as your OC Generator, Character Creator, and OC Creator to build original characters with stories and avatars in minutes.",
   },
   backstoryPreset: basePrompt,
   examples: backstoryExamples,
   ocOptions,
   contents: {
     hero: {
-      title: "Design Your Original Character",
+      title: "OC Maker",
       description:
-        "Switch between story and visual generators to create a complete OC in minutes.",
+        "Craft a complete original character using OC Maker alongside our OC Generator, Character Creator, and OC Creator workflow for story and visuals.",
     },
     step: {
-      title: "How to Create Your OC",
+      title: "How the Workflow Works",
       description:
-        "Capture both narrative depth and visual flair with this simple flow.",
+        "Follow this guide to capture narrative depth and visual flair for every original character.",
       steps: [
         {
           title: "Describe the Character",
           description:
-            "Outline their look, personality, and goals. Include sensory details or signature abilities for richer results.",
+            "Outline appearance, personality, and goals so the toolkit understands the vibe of your Character Creator session.",
         },
         {
           title: "Add Flavorful Details",
           description:
-            "Pick optional tags like genre, temperament, or signature elements to guide the AI toward your vision.",
+            "Pick optional tags like genre, temperament, or signature elements to guide the generator toward your vision.",
         },
         {
           title: "Generate Story & Avatar",
           description:
-            "Use the Profile and Avatar generators to craft a cohesive OC package you can save or iterate on.",
+            "Use the Profile and Avatar tools to finish your pass and export a cohesive character package.",
         },
       ],
     },
     examples: {
-      title: "OC Gallery",
+      title: "OC Examples",
       description:
-        "Preview a few AI-made characters created with the general OC Maker.",
+        "Preview AI-made characters generated with our character creator combo.",
       examples: [
         {
           image:
@@ -268,14 +268,14 @@ export default {
       ],
     },
     features: {
-      title: "Why Use OC Maker?",
+      title: "Why Choose This Character Creator?",
       description:
-        "From tabletop campaigns to webcomics, OC Maker helps you explore fresh character ideas fast.",
+        "From tabletop campaigns to webcomics, this OC generator helps you explore fresh character ideas fast and consistently.",
       features: [
         {
           label: "Story + Visual Workflow",
           description:
-            "Develop narrative profiles and character art in one place, keeping every detail aligned.",
+            "Develop narrative profiles and character art in one workspace, keeping every detail aligned.",
         },
         {
           label: "Customizable Prompt Controls",
@@ -285,12 +285,12 @@ export default {
         {
           label: "Multiple Examples Included",
           description:
-            "Jump-start your creativity with curated example prompts tailored for quick iteration.",
+            "Jump-start creativity with curated example prompts tailored for quick iteration.",
         },
         {
           label: "High-Quality Outputs",
           description:
-            "Powered by leading AI models to deliver crisp, shareable visuals and vivid story hooks.",
+            "Powered by leading AI models to deliver crisp, shareable visuals and vivid story hooks for every OC.",
         },
         {
           label: "Save & Iterate",
@@ -300,7 +300,7 @@ export default {
         {
           label: "Community Ready",
           description:
-            "Perfect for roleplay sheets, pitch decks, or collaborative worldbuilding projects.",
+            "Perfect for roleplay sheets, pitch decks, or collaborative worldbuilding projects that need a flexible toolkit.",
         },
       ],
     },
@@ -309,14 +309,14 @@ export default {
       description: "Have another question? Contact us at support@ocmaker.app",
       faqs: [
         {
-          question: "What can I create with the general OC Maker?",
+          question: "What can I create with this OC generator?",
           answer:
-            "Use it to generate original characters for novels, tabletop games, roleplay, or concept art. Mix story prompts with avatar options to capture both personality and appearance.",
+            "Use OC Maker and the supporting toolkit to craft original characters for novels, tabletop games, roleplay, or concept art. Mix story prompts with avatar options to capture both personality and appearance.",
         },
         {
           question: "How do I get better results?",
           answer:
-            "Add concrete descriptors like setting, emotional tone, powers, and style references. Selecting tags from the Avatar options helps guide the artwork.",
+            "Add concrete descriptors like setting, emotional tone, powers, and style references. Selecting tags from the Avatar options helps guide the character artwork.",
         },
         {
           question: "Can I use these characters commercially?",
@@ -326,19 +326,19 @@ export default {
         {
           question: "Do I need art skills?",
           answer:
-            "No. Focus on describing the character in words and the AI handles the visuals. You can iterate until it feels right.",
+            "No. Focus on describing the character in words and the generator handles the visuals. You can iterate until it feels right.",
         },
         {
-          question: "Is the OC Maker free?",
+          question: "Is the OC generator free?",
           answer:
-            "You can try the generators with starter credits. Upgrade for faster queues, more outputs, and exclusive styles.",
+            "You can try OC Maker with starter credits. Upgrade for faster queues, more outputs, and exclusive styles.",
         },
       ],
     },
     cta: {
       title: "Ready to create your next OC?",
       description:
-        "Switch between story and visuals to bring your ideas to life instantly.",
+        "Switch between story and visuals inside the OC Maker toolkit to bring ideas to life instantly.",
       btns: {
         start: "Start Generating",
       },
