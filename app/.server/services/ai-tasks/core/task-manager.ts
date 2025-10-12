@@ -80,7 +80,7 @@ export class TaskManager {
       status: "pending",
       input_params: values,
       estimated_start_at: new Date(),
-      ext: {},
+      ext: taskPreCreate.ext,
       poster_url: taskPreCreate.posterUrl,
       aspect: taskPreCreate.aspectRatio,
       provider: taskPreCreate.provider,

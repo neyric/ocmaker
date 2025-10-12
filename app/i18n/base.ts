@@ -140,7 +140,7 @@ export default {
   header: {
     navigation: {
       home: "Home",
-      community: "Community",
+      maker: "Create Character",
       pricing: "Pricing",
       myCreations: "My Creations",
       dashboard: "Dashboard",

@@ -128,7 +128,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   const ctaButtons = [
     {
       text: ct("contents.cta.btns.start"),
-      href: "/",
+      href: "/maker",
       variant: "default" as const,
       className:
         "rounded-full h-12 px-8 hover:bg-base-100 text-base hover:border-base-100",

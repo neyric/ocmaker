@@ -1,7 +1,7 @@
 import { data } from "react-router";
 import { parseMarkdown } from "~/.server/libs/markdown";
 import { generateOCProfile } from "~/.server/services/gpt";
-import { baseLanguage, getMakerLocale } from "~/i18n";
+import { baseLanguage, getMakerLocale, getPageLocale } from "~/i18n";
 import { profileSchema } from "~/schema/generator";
 import type { Route } from "./+types/route";
 
@@ -21,7 +21,12 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
     const { lang, id, prompt } = parsed.data;
     const locale: any = lang ?? baseLanguage;
 
-    const page = await getMakerLocale(locale, id);
+    let page: any = {};
+    if (id === "general-oc-maker") {
+      page = await getPageLocale(locale, "maker");
+    } else {
+      page = await getMakerLocale(locale, id);
+    }
     const input = page.backstoryPreset.replace("{PREFERENCES}", prompt);
 
     // Call GPT service to generate optimized prompt
@@ -49,7 +54,7 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
 
     throw Response.json(
       { error: error instanceof Error ? error.message : "Request failed" },
-      { status: 500 },
+      { status: 500 }
     );
   }
 };

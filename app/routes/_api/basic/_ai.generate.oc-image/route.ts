@@ -2,7 +2,7 @@ import { data } from "react-router";
 import { getSessionContext } from "~/.server/middleware/session-middleware";
 import { createTask } from "~/.server/services/ai-tasks";
 import { convertOCPrompt } from "~/.server/services/gpt";
-import { baseLanguage, getMakerLocale } from "~/i18n";
+import { baseLanguage, getMakerLocale, getPageLocale } from "~/i18n";
 import { avatarSchema } from "~/schema/generator";
 import type { Route } from "./+types/route";
 
@@ -22,7 +22,7 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
       throw new Error("Invalid data");
     }
 
-    const { lang, id, prompt, aiOptimize } = parsed.data;
+    const { lang, id, prompt, aiOptimize, aspect } = parsed.data;
     const locale: any = lang ?? baseLanguage;
 
     const result = {
@@ -31,8 +31,15 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
     };
 
     if (aiOptimize) {
-      const page = await getMakerLocale(locale, id);
-      const input = [`Series: ${page.series}`, prompt].join("\n");
+      let page: any = {};
+      let input = "";
+      if (id === "general-oc-maker") {
+        page = await getPageLocale(locale, "maker");
+        input = prompt;
+      } else {
+        page = await getMakerLocale(locale, id);
+        input = [`Series: ${page.series}`, prompt].join("\n");
+      }
 
       // Call GPT service to generate optimized prompt
       const generateResult = await convertOCPrompt(input);
@@ -54,11 +61,11 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
     const task = await createTask(
       {
         model: "replicate/animagine-3.1",
-        aspectRatio: "3:4",
+        aspectRatio: (aspect as any) ?? "3:4",
         prompt: result.prompt,
         ext: parsed.data,
       },
-      sessionContext.user.id,
+      sessionContext.user.id
     );
 
     return data(task);
@@ -69,7 +76,7 @@ export const action = async ({ request, context }: Route.ActionArgs) => {
 
     throw Response.json(
       { error: error instanceof Error ? error.message : "Request failed" },
-      { status: 500 },
+      { status: 500 }
     );
   }
 };

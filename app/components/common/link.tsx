@@ -21,8 +21,9 @@ const useBaseLink = ({ reloadDocument, target }: UseBaseLinkOptions) => {
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
   ({ reloadDocument, target, ...rest }, ref) => {
     const base = useBaseLink({ reloadDocument, target });
+
     return <LinkComp ref={ref} {...base} {...rest} />;
-  },
+  }
 );
 
 export const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
@@ -30,5 +31,5 @@ export const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
     const base = useBaseLink({ reloadDocument, target });
 
     return <NavLinkComp ref={ref} {...base} {...rest} />;
-  },
+  }
 );

@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from "react";
+import { Link } from "~/components/common";
 import { GridSection } from "~/components/ui/grid-section";
 import { EmblaCarousel } from "./carousel";
 
@@ -47,7 +48,9 @@ export function HeroSection({
             </p>
           </div>
           <div className="flex items-center gap-4 max-lg:justify-center">
-            <button className="btn btn-primary">{createButtonText}</button>
+            <Link to="/maker" className="btn btn-primary">
+              {createButtonText}
+            </Link>
           </div>
 
           {children}
