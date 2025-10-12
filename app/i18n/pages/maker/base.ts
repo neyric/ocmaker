@@ -145,7 +145,8 @@ const ocOptions = [
     data: [
       { label: "Girl", value: "1girl" },
       { label: "Boy", value: "1boy" },
-      { label: "None", value: "" },
+      { label: "Non-binary", value: "1person" },
+      { label: "Androgynous", value: "androgynous presentation" },
     ],
   },
   {
@@ -474,45 +475,45 @@ const ocOptions = [
 
 export default {
   meta: {
-    title: "OC Maker – All-in-One OC Generator & Character Creator",
+    title: "OC Maker – AI Character Creator for Infinite OC Ideas",
     description:
-      "Use OC Maker as your OC Generator, Character Creator, and OC Creator to build original characters with stories and avatars in minutes.",
+      "Personalize original characters with adaptive AI. Mix story hooks, looks, and styles into endless combinations in minutes.",
   },
   backstoryPreset: basePrompt,
   examples: backstoryExamples,
   ocOptions,
   contents: {
     hero: {
-      title: "OC Maker",
+      title: "OC Maker by AI",
       description:
-        "Craft a complete original character using OC Maker alongside our OC Generator, Character Creator, and OC Creator workflow for story and visuals.",
+        "Build original characters with an adaptive AI assistant that fuses OC Generator, Character Creator, and story tools into one flow tailored to you.",
     },
     step: {
-      title: "How the Workflow Works",
+      title: "Design With Adaptive AI",
       description:
-        "Follow this guide to capture narrative depth and visual flair for every original character.",
+        "Blend guided prompts and granular controls to turn loose ideas into fully formed OCs.",
       steps: [
         {
-          title: "Describe the Character",
+          title: "Share Your Vision",
           description:
-            "Outline appearance, personality, and goals so the toolkit understands the vibe of your Character Creator session.",
+            "Tell the AI about the vibe, role, world, and quirks that define your OC so it learns your intent before generating.",
         },
         {
-          title: "Add Flavorful Details",
+          title: "Personalize Every Trait",
           description:
-            "Pick optional tags like genre, temperament, or signature elements to guide the generator toward your vision.",
+            "Mix and match tags for body, fashion, abilities, and tone to steer each iteration toward your signature style.",
         },
         {
-          title: "Generate Story & Avatar",
+          title: "Generate Story & Visuals on Repeat",
           description:
-            "Use the Profile and Avatar tools to finish your pass and export a cohesive character package.",
+            "Spin up bios and avatars side by side, then iterate endlessly with saved presets and alternate takes.",
         },
       ],
     },
     examples: {
       title: "OC Examples",
       description:
-        "Preview AI-made characters generated with our character creator combo.",
+        "Preview how the AI reshapes simple prompts into distinctive, personalized characters.",
       examples: [
         {
           image:
@@ -540,39 +541,39 @@ export default {
       ],
     },
     features: {
-      title: "Why Choose This Character Creator?",
+      title: "Personalize Every Detail With AI",
       description:
-        "From tabletop campaigns to webcomics, this OC generator helps you explore fresh character ideas fast and consistently.",
+        "Our AI-first pipeline keeps you in control while unlocking boundless character ideas for any universe.",
       features: [
         {
-          label: "Story + Visual Workflow",
+          label: "AI Co-Creation Engine",
           description:
-            "Develop narrative profiles and character art in one workspace, keeping every detail aligned.",
+            "Partner with models that respond to every tweak, keeping each OC aligned with your brief.",
         },
         {
-          label: "Customizable Prompt Controls",
+          label: "Guided Custom Controls",
           description:
-            "Fine-tune personality, tone, and aesthetics with flexible options.",
+            "Layer genres, powers, outfits, and moods so the AI delivers focused, on-brand results.",
         },
         {
-          label: "Multiple Examples Included",
+          label: "Limitless Remixing",
           description:
-            "Jump-start creativity with curated example prompts tailored for quick iteration.",
+            "Save, duplicate, and remix characters to explore alternate timelines and what-if concepts instantly.",
+        },
+        {
+          label: "Story + Visual Sync",
+          description:
+            "Generate bios, hooks, and portrait art from the same context so tone and look stay consistent.",
         },
         {
           label: "High-Quality Outputs",
           description:
-            "Powered by leading AI models to deliver crisp, shareable visuals and vivid story hooks for every OC.",
+            "Access leading AI models for crisp visuals and evocative narrative beats ready for sharing.",
         },
         {
-          label: "Save & Iterate",
+          label: "Creator-Friendly Exports",
           description:
-            "Store profiles, generate alt outfits, and tweak details without starting from scratch.",
-        },
-        {
-          label: "Community Ready",
-          description:
-            "Perfect for roleplay sheets, pitch decks, or collaborative worldbuilding projects that need a flexible toolkit.",
+            "Package prompts, bios, and artwork for tabletop sheets, pitch decks, or collaborative story bibles.",
         },
       ],
     },
@@ -583,12 +584,12 @@ export default {
         {
           question: "What can I create with this OC generator?",
           answer:
-            "Use OC Maker and the supporting toolkit to craft original characters for novels, tabletop games, roleplay, or concept art. Mix story prompts with avatar options to capture both personality and appearance.",
+            "Blend adaptive AI prompts with visual controls to craft bespoke characters for novels, tabletop games, roleplay, concept art, and more. Story and appearance stay in sync throughout the process.",
         },
         {
           question: "How do I get better results?",
           answer:
-            "Add concrete descriptors like setting, emotional tone, powers, and style references. Selecting tags from the Avatar options helps guide the character artwork.",
+            "Give clear descriptors for setting, emotion, abilities, and style. Combine them with our Avatar tags and the AI will tailor visuals and lore to your exact brief.",
         },
         {
           question: "Can I use these characters commercially?",
@@ -598,34 +599,34 @@ export default {
         {
           question: "Do I need art skills?",
           answer:
-            "No. Focus on describing the character in words and the generator handles the visuals. You can iterate until it feels right.",
+            "No art degree required—describe the character in words and the AI renders portraits while you refine the narrative.",
         },
         {
           question: "Is the OC generator free?",
           answer:
-            "Backstory generation is free and works without logging in. For OC images, start with the included credits and upgrade anytime for faster queues, more outputs, and exclusive styles.",
+            "Backstory generation is free and runs without logging in. Use the included credits to test AI portraits, then upgrade for faster queues, more outputs, and exclusive render styles.",
         },
         {
           question: "Do you have templates or tips for beginners?",
           answer:
-            "Yes! We include templates and example characters to help beginners get started. Feel free to use them directly or remix them to suit your story.",
+            "Yes! Jump in with templates and example OCs that demonstrate how to brief the AI. Remix them or build your own from scratch.",
         },
         {
           question: "How detailed can my character description be?",
           answer:
-            "Describe as many details as you like! The more specific you are, the better the AI captures your ideas. Include appearance, personality, outfits, accessories, and setting elements—OC Maker can handle complex, nuanced prompts.",
+            "Add as many layers as you want—the AI thrives on detail. Include appearance, personality, outfits, accessories, or world lore and the system keeps everything coherent.",
         },
         {
           question: "How can I get free credits?",
           answer:
-            "Invite friends and complete daily check-ins to earn bonus credits. These bonuses are limited, so consider credit packs or a subscription when you need larger amounts.",
+            "Invite friends and complete daily check-ins to earn bonus credits. When you need more AI generations, grab a credit pack or upgrade for unlimited momentum.",
         },
       ],
     },
     cta: {
-      title: "Ready to create your next OC?",
+      title: "Ready to create your next OC with AI?",
       description:
-        "Switch between story and visuals inside the OC Maker toolkit to bring ideas to life instantly.",
+        "Let the adaptive OC Maker transform your prompts into endlessly personalized characters in minutes.",
       btns: {
         start: "Start Generating",
       },
