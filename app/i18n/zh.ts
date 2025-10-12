@@ -32,6 +32,7 @@ export default {
       oc: "OC 角色生成器",
       describe: "描述你的 OC",
       placeholder: "请输入简要描述...",
+      description: "你可以自由描述你的 OC，比如“它是一只长着血族翅膀的狼人”，",
       exampleTitle: "快速示例",
       exampleDescription: "点击加载示例提示词并在生成前进行调整。",
       exampleClear: "清空内容",
@@ -62,8 +63,8 @@ export default {
       save: "节省 {rate}%",
       upgrade: "升级",
       buyNow: "立即购买",
-      subscription: "订阅",
-      creditPack: "点数包",
+      subscription: "套餐订阅",
+      creditPack: "加油包",
     },
 
     starter: {

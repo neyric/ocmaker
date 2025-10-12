@@ -471,7 +471,7 @@ const ocOptions = [
 
 export default {
   meta: {
-    title: "OC Maker —— AI 角色生成器，激发无限 OC 灵感",
+    title: "AI 驱动的 OC 生成器 角色生成器，激发无限 OC 灵感",
     description:
       "借助自适应 AI 个性化原创角色，在数分钟内混合故事、外观与风格，创造无穷组合。",
   },
@@ -480,7 +480,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "AI 驱动的 OC Maker",
+      title: "AI 驱动的 OC 生成器",
       description:
         "通过自适应 AI 助手，将 OC 生成器、角色创作与故事工具整合为适配你的创作流程。",
     },

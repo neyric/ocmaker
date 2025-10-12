@@ -61,6 +61,7 @@ export async function loader({ context }: Route.LoaderArgs) {
 
 export default function Page({ matches, loaderData }: Route.ComponentProps) {
   const ct = useTranslate(loaderData.page);
+  const t = useTranslate();
 
   const products = matches[0].loaderData.pricing;
   const { user } = useUserProfile();
@@ -92,8 +93,8 @@ export default function Page({ matches, loaderData }: Route.ComponentProps) {
   };
 
   const segmentedOptions = [
-    { value: "subscription", label: "Subscription" },
-    { value: "credits", label: "Credit Pack" },
+    { value: "subscription", label: t("pricing.common.subscription") },
+    { value: "credits", label: t("pricing.common.creditPack") },
   ];
 
   const faqs = loaderData.page.contents.faqs.list;

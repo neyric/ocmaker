@@ -28,7 +28,7 @@ export function ProfileGeneratorForm({
     <div
       className={clsx(
         "rounded-xl border border-grid-border bg-base-100 p-3 sm:p-4",
-        className,
+        className
       )}
       {...props}
     >
@@ -37,21 +37,26 @@ export function ProfileGeneratorForm({
         className="flex flex-col gap-3 sm:gap-4 h-full"
       >
         <div className="flex flex-col flex-1 min-h-0 gap-2">
-          <div className="flex items-center justify-between">
-            <label
-              htmlFor="profile-generator-prompt"
-              className="text-sm font-medium text-base-content"
-            >
-              {t("maker.generator.describe")}
-            </label>
-            <button
-              className="btn btn-ghost btn-xs"
-              type="button"
-              onClick={() => form.setValue("prompt", "")}
-            >
-              <Eraser className="size-4" />
-              {t("maker.generator.exampleClear")}
-            </button>
+          <div>
+            <div className="flex items-center justify-between">
+              <label
+                htmlFor="profile-generator-prompt"
+                className="text-sm font-medium text-base-content flex-1 min-w-0"
+              >
+                {t("maker.generator.describe")}
+              </label>
+              <button
+                className="btn btn-ghost btn-xs"
+                type="button"
+                onClick={() => form.setValue("prompt", "")}
+              >
+                <Eraser className="size-4" />
+                {t("maker.generator.exampleClear")}
+              </button>
+            </div>
+            <p className="label text-sm whitespace-normal">
+              {t("maker.generator.description")}
+            </p>
           </div>
           <textarea
             id="profile-generator-prompt"

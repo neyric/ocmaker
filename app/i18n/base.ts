@@ -32,6 +32,7 @@ export default {
       oc: "OC Maker",
       describe: "Describe Your OC",
       placeholder: "Enter a brife description...",
+      description: `Free to describe your OC however you want, like: "It's a werewolf with vampiric wings."`,
       exampleTitle: "Quick Starters",
       exampleDescription:
         "Click to load an example prompt and tweak it before generating.",
