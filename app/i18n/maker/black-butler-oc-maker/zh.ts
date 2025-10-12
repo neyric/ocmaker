@@ -367,14 +367,14 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Black Butler OC Maker",
+      title: "黑执事 OC 生成器",
       description:
         "输入角色构想，数秒内生成维多利亚风格的《黑执事》原创人物与视觉设定。",
     },
     step: {
       title: "如何打造 Black Butler OC",
       description:
-        "在 OC Maker 中创建《黑执事》角色就像策划一次秘密调查，依照以下步骤完成你的契约。",
+        "在 OC 生成器 中创建《黑执事》角色就像策划一次秘密调查，依照以下步骤完成你的契约。",
       steps: [
         {
           title: "描述你的身份伪装",
@@ -394,14 +394,14 @@ export default {
       ],
     },
     examples: {
-      title: "黑执事角色示例",
-      description: "浏览由 Black Butler OC Maker 文字提示生成的原创角色造型。",
+      title: "黑执事 OC 示例",
+      description: "浏览由 黑执事 OC 生成器 文字提示生成的原创角色造型。",
       examples,
     },
     features: {
-      title: "Black Butler OC Maker 有何特色？",
+      title: "黑执事 OC 生成器 有何特色？",
       description:
-        "Black Butler OC Maker 是针对《黑执事》打造的专属版本，只要提供描述即可生成维多利亚哥特风的角色艺术。",
+        "黑执事 OC 生成器 是针对《黑执事》打造的专属版本，只要提供描述即可生成维多利亚哥特风的角色艺术。",
       features: [
         {
           label: "还原维多利亚氛围",
@@ -440,9 +440,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Black Butler OC Maker？如何运作？",
+          question: "什么是 黑执事 OC 生成器？如何运作？",
           answer:
-            "Black Butler OC Maker 是一款专为《黑执事》世界观打造的 AI 工具。描述角色的外貌、身份与阵营后，系统会生成符合维多利亚哥特美学的立绘。",
+            "黑执事 OC 生成器 是一款专为《黑执事》世界观打造的 AI 工具。描述角色的外貌、身份与阵营后，系统会生成符合维多利亚哥特美学的立绘。",
         },
         {
           question: "如何让角色更像《黑执事》的风格？",
@@ -450,7 +450,7 @@ export default {
             "请加入上流社会礼仪、黑暗契约、葬仪屋风格物件或死神差遣细节。越贴近剧情设定，成品越真实。",
         },
         {
-          question: "Black Butler OC Maker 可以免费使用吗？",
+          question: "黑执事 OC 生成器 可以免费使用吗？",
           answer:
             "可以。基本功能免费，若需要更快的生成速度或更多自定义选项，可升级进阶方案。",
         },
@@ -462,7 +462,7 @@ export default {
         {
           question: "我能把生成的角色用于同人或 cosplay 规划吗？",
           answer:
-            "当然可以！你使用 Black Butler OC Maker 创作的角色属于你，可用于同人故事、插画或角色扮演。",
+            "当然可以！你使用 黑执事 OC 生成器 创作的角色属于你，可用于同人故事、插画或角色扮演。",
         },
         {
           question: "需要注册账号才能生成角色吗？",
@@ -475,9 +475,9 @@ export default {
             "可以！无论是恶魔执事、女王特务、马戏团艺人或死神，都能自由搭配服饰与能力。",
         },
         {
-          question: "未来会推出更多类似的 OC Maker 吗？",
+          question: "未来会推出更多类似的 OC 生成器 吗？",
           answer:
-            "会的！我们持续拓展主题 OC Maker，欢迎定期访问 ocmaker.app 获取最新消息。",
+            "会的！我们持续拓展主题 OC 生成器，欢迎定期访问 ocmaker.app 获取最新消息。",
         },
       ],
     },
@@ -487,7 +487,7 @@ export default {
         "无需绘画技能，只要描述即可生成《黑执事》风的原创角色，陪你步入雾都夜色。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

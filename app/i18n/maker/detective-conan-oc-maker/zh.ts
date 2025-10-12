@@ -388,7 +388,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Detective Conan OC Maker",
+      title: "名侦探柯南 OC 生成器",
       description: "输入角色设定，立即生成柯南风格的原创侦探与谍战档案。",
     },
     step: {
@@ -413,12 +413,12 @@ export default {
       ],
     },
     examples: {
-      title: "柯南角色示例",
-      description: "浏览由 Detective Conan OC Maker 生成的推理角色样张。",
+      title: "柯南 OC 示例",
+      description: "浏览由 名侦探柯南 OC 生成器 生成的推理角色样张。",
       examples,
     },
     features: {
-      title: "Detective Conan OC Maker 有何不同？",
+      title: "名侦探柯南 OC 生成器 有何不同？",
       description: "此版本专为柯南宇宙调校，让角色立刻拥有经典推理作品的味道。",
       features: [
         {
@@ -452,9 +452,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Detective Conan OC Maker？如何运作？",
+          question: "什么是 名侦探柯南 OC 生成器？如何运作？",
           answer:
-            "Detective Conan OC Maker 是专为柯南世界打造的 AI 工具。描述角色后，即可生成柯南风的动漫角色图像。",
+            "名侦探柯南 OC 生成器 是专为柯南世界打造的 AI 工具。描述角色后，即可生成柯南风的动漫角色图像。",
         },
         {
           question: "如何让角色更像柯南角色？",
@@ -472,7 +472,7 @@ export default {
         {
           question: "生成的角色能用于商业用途吗？",
           answer:
-            "可以！你在 Detective Conan OC Maker 创建的原创角色归你所有，可用于个人或商业项目。",
+            "可以！你在 名侦探柯南 OC 生成器 创建的原创角色归你所有，可用于个人或商业项目。",
         },
         {
           question: "需要注册账户才可使用吗？",
@@ -484,9 +484,9 @@ export default {
           answer: "当然可以。可用同一提示多次生成，或调整描述直到满意为止。",
         },
         {
-          question: "还会推出其他动漫主题的 OC Maker 吗？",
+          question: "还会推出其他动漫主题的 OC 生成器 吗？",
           answer:
-            "会的！我们持续扩充动漫主题的 OC Maker，敬请关注 ocmaker.app 的更新。",
+            "会的！我们持续扩充动漫主题的 OC 生成器，敬请关注 ocmaker.app 的更新。",
         },
       ],
     },
@@ -495,7 +495,7 @@ export default {
       description: "无需绘画技能，只要描述，即可让原创侦探加入推理现场。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

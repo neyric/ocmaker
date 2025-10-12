@@ -356,7 +356,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Disney OC Maker",
+      title: "迪士尼 OC 生成器",
       description: "输入角色设定，即刻生成迪士尼动画风格的魔法角色与故事。",
     },
     step: {
@@ -381,12 +381,12 @@ export default {
       ],
     },
     examples: {
-      title: "迪士尼角色示例",
-      description: "看看使用 Disney OC Maker 文本提示生成的魔法角色。",
+      title: "迪士尼 OC 示例",
+      description: "看看使用 迪士尼 OC 生成器 文本提示生成的魔法角色。",
       examples,
     },
     features: {
-      title: "Disney OC Maker 的亮点",
+      title: "迪士尼 OC 生成器 的亮点",
       description:
         "专注迪士尼经典美学，帮助你打造拥有魔法与温暖故事的原创角色。",
       features: [
@@ -425,9 +425,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Disney OC Maker？如何运作？",
+          question: "什么是 迪士尼 OC 生成器？如何运作？",
           answer:
-            "Disney OC Maker 是专为迪士尼风格打造的 AI 工具。描述角色外貌、角色定位与魔法要素后，即可生成动画感十足的图像。",
+            "迪士尼 OC 生成器 是专为迪士尼风格打造的 AI 工具。描述角色外貌、角色定位与魔法要素后，即可生成动画感十足的图像。",
         },
         {
           question: "如何让角色更具迪士尼魅力？",
@@ -447,7 +447,7 @@ export default {
         {
           question: "生成的角色能否用于商业用途？",
           answer:
-            "可以！通过 Disney OC Maker 创作的原创角色归你所有，可用于个人或商业项目。",
+            "可以！通过 迪士尼 OC 生成器 创作的原创角色归你所有，可用于个人或商业项目。",
         },
         {
           question: "需要注册账号才能使用吗？",
@@ -459,7 +459,7 @@ export default {
           answer: "当然可以。可重复生成或调整提示，直到角色完美呈现你的想像。",
         },
         {
-          question: "未来会推出其它动画风格的 OC Maker 吗？",
+          question: "未来会推出其它动画风格的 OC 生成器 吗？",
           answer:
             "会的！我们正扩展更多经典动画与卡通主题，欢迎关注 ocmaker.app 的最新发布。",
         },
@@ -470,7 +470,7 @@ export default {
       description: "无需绘画技能，只要描绘梦想，就能感受迪士尼故事的魅力。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

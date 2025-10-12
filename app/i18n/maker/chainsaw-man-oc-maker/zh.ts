@@ -377,7 +377,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Chainsaw Man OC Maker",
+      title: "链锯人 OC 生成器",
       description:
         "输入角色设定，即刻生成贴合《链锯人》风格的猎魔人或恶魔形象。",
     },
@@ -403,13 +403,13 @@ export default {
       ],
     },
     examples: {
-      title: "链锯人角色示例",
+      title: "链锯人 OC 示例",
       description:
-        "浏览使用 Chainsaw Man OC Maker 文本提示生成的恶魔猎人样张。",
+        "浏览使用 链锯人 OC 生成器 文本提示生成的恶魔猎人样张。",
       examples,
     },
     features: {
-      title: "Chainsaw Man OC Maker 的亮点",
+      title: "链锯人 OC 生成器 的亮点",
       description:
         "此工具针对《链锯人》宇宙调校，助你迅速构建黑暗荒诞的角色设定。",
       features: [
@@ -448,9 +448,9 @@ export default {
       description: "还有疑问？欢迎寄信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Chainsaw Man OC Maker？如何使用？",
+          question: "什么是 链锯人 OC 生成器？如何使用？",
           answer:
-            "Chainsaw Man OC Maker 是针对《链锯人》世界打造的 AI 工具。描述角色、能力与欲望后，系统会生成暗黑风格的角色图像。",
+            "链锯人 OC 生成器 是针对《链锯人》世界打造的 AI 工具。描述角色、能力与欲望后，系统会生成暗黑风格的角色图像。",
         },
         {
           question: "怎样让角色更贴近《链锯人》？",
@@ -470,7 +470,7 @@ export default {
         {
           question: "生成的角色能用于商业企划吗？",
           answer:
-            "当然可以！你使用 Chainsaw Man OC Maker 创作的原创角色归你所有，可自由运用于个人或商业项目。",
+            "当然可以！你使用 链锯人 OC 生成器 创作的原创角色归你所有，可自由运用于个人或商业项目。",
         },
         {
           question: "需要注册账户才能生成吗？",
@@ -482,7 +482,7 @@ export default {
           answer: "可以。你可重复生成或调整提示，直到角色完全符合你的想象。",
         },
         {
-          question: "未来还会推出其他暗黑题材的 OC Maker 吗？",
+          question: "未来还会推出其他暗黑题材的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩展动漫与暗黑世界主题，欢迎关注 ocmaker.app 的最新消息。",
         },
@@ -494,7 +494,7 @@ export default {
         "无需绘画技能，只要描述即可让原创角色在恶魔横行的世界中挥舞链锯。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

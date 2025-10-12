@@ -371,11 +371,11 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "League of Legends OC Maker",
+      title: "英雄联盟 OC 生成器",
       description: "输入设定，即可生成英雄联盟风格的原创冠军形象。",
     },
     step: {
-      title: "如何打造 League of Legends OC",
+      title: "如何打造英雄联盟 OC",
       description: "跟随步骤，迅速塑造属于你的峡谷英雄。",
       steps: [
         {
@@ -398,11 +398,11 @@ export default {
     examples: {
       title: "英雄联盟示例",
       description:
-        "浏览使用 League of Legends OC Maker 文字提示生成的多样英雄造型。",
+        "浏览使用 英雄联盟 OC 生成器 文字提示生成的多样英雄造型。",
       examples,
     },
     features: {
-      title: "League of Legends OC Maker 有何特色？",
+      title: "英雄联盟 OC 生成器有何特色？",
       description:
         "针对符文之地量身打造，助你创造兼具视觉冲击与背景深度的原创冠军。",
       features: [
@@ -442,17 +442,17 @@ export default {
       description: "还有疑问？欢迎留言至 support@ocmaker.app",
       faqs: [
         {
-          question: "League of Legends OC Maker 是什么？如何运作？",
+          question: "英雄联盟 OC 生成器 是什么？如何运作？",
           answer:
-            "League of Legends OC Maker 是专为英雄联盟设计的 AI 生成器。描述角色的定位、技能组与外观后，即可获得英雄联盟风格的原创插画。",
+            "英雄联盟 OC 生成器 是专为英雄联盟设计的 AI 生成器。描述角色的定位、技能组与外观后，即可获得英雄联盟风格的原创插画。",
         },
         {
-          question: "如何用 League of Legends OC Maker 创造更好的英雄？",
+          question: "如何用 英雄联盟 OC 生成器 创造更好的英雄？",
           answer:
             "加入定位细节（法师、ADC、辅助等）、出身地区（德玛西亚、诺克萨斯、艾欧尼亚等）和技能主题，越具体越能强化原味。",
         },
         {
-          question: "League of Legends OC Maker 可以免费使用吗？",
+          question: "英雄联盟 OC 生成器 可以免费使用吗？",
           answer:
             "可以。基础功能免费；订阅方案可加速生成、增加变体数量并开放进阶自订选项。",
         },
@@ -462,12 +462,12 @@ export default {
             "系统针对英雄联盟的画面风格、定位差异与地区美学调校，确保角色视觉准确度。",
         },
         {
-          question: "利用 League of Legends OC Maker 创造的角色能商用吗？",
+          question: "利用 英雄联盟 OC 生成器 创造的角色能商用吗？",
           answer:
             "当然可以！你创作的原创英雄归你所有，可放心用于个人或商业项目。",
         },
         {
-          question: "使用 League of Legends OC Maker 需要账号吗？",
+          question: "使用 英雄联盟 OC 生成器 需要账号吗？",
           answer:
             "基础体验无需注册；登录账号可保存角色、查看历史记录，并解锁更多符文之地主题功能。",
         },
@@ -477,7 +477,7 @@ export default {
             "当然能！可用同一提示再生成不同版本，或微调描述持续迭代，直到完全符合构想。",
         },
         {
-          question: "未来会加入更多 MOBA 主题的 OC Maker 吗？",
+          question: "未来会加入更多 MOBA 主题的 OC 生成器吗？",
           answer:
             "会的！我们正拓展至更多 MOBA 与游戏宇宙，欢迎留意新主题上线。",
         },

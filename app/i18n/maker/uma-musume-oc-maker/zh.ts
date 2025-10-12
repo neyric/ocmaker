@@ -357,7 +357,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Uma Musume OC Maker",
+      title: "赛马娘 OC 生成器",
       description: "输入设定，几秒内生成闪耀的赛马娘形象与偶像气场。",
     },
     step: {
@@ -384,11 +384,11 @@ export default {
     },
     examples: {
       title: "赛马娘示例",
-      description: "浏览使用 Uma Musume OC Maker 文本提示生成的闪耀角色。",
+      description: "浏览使用 赛马娘 OC 生成器 文本提示生成的闪耀角色。",
       examples,
     },
     features: {
-      title: "Uma Musume OC Maker 的特色",
+      title: "赛马娘 OC 生成器 的特色",
       description: "专为赛马娘世界打造，结合赛场紧张与偶像舞台的双重魅力。",
       features: [
         {
@@ -426,32 +426,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Uma Musume OC Maker？它如何运作？",
+          question: "什么是 赛马娘 OC 生成器？它如何运作？",
           answer:
-            "Uma Musume OC Maker 是专为赛马娘世界打造的 AI 工具。描述血统灵感、跑法与性格后，AI 会生成正统动画风格的角色图像。",
+            "赛马娘 OC 生成器 是专为赛马娘世界打造的 AI 工具。描述血统灵感、跑法与性格后，AI 会生成正统动画风格的角色图像。",
         },
         {
-          question: "如何让 Uma Musume OC Maker 生成更精彩的角色？",
+          question: "如何让 赛马娘 OC 生成器 生成更精彩的角色？",
           answer:
             "提供具体的距离、跑法、目标赛事、训练员与偶像舞台细节，越完整越能呈现角色魅力。",
         },
         {
-          question: "Uma Musume OC Maker 是否免费？",
+          question: "赛马娘 OC 生成器 是否免费？",
           answer:
             "是的，基础功能免费使用。升级方案提供更快生成速度与更多造型套装。",
         },
         {
-          question: "为什么 Uma Musume OC Maker 的成果如此贴切？",
+          question: "为什么 赛马娘 OC 生成器 的成果如此贴切？",
           answer:
             "模型针对赛马娘的画风与赛场氛围训练，掌握制服细节与偶像演出光感。",
         },
         {
-          question: "我能商业使用 Uma Musume OC Maker 生成的角色吗？",
+          question: "我能商业使用 赛马娘 OC 生成器 生成的角色吗？",
           answer:
             "可以，你的原创赛马娘完全归你所有，可用于个人或商业企划，我们不会主张所有权。",
         },
         {
-          question: "使用 Uma Musume OC Maker 需要帐号吗？",
+          question: "使用 赛马娘 OC 生成器 需要帐号吗？",
           answer:
             "基础使用不需帐号。注册后可保存角色、查看历史纪录，并解锁更多训练主题。",
         },
@@ -461,7 +461,7 @@ export default {
             "当然！无论是短途爆发、长距离耐力或偶像专长，都能透过提示轻松生成。",
         },
         {
-          question: "未来会新增其他偶像或运动题材的 OC Maker 吗？",
+          question: "未来会新增其他偶像或运动题材的 OC 生成器 吗？",
           answer:
             "会的！我们计划扩展更多结合运动与舞台的原创角色生成器，敬请期待。",
         },

@@ -356,7 +356,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Jujutsu Kaisen OC Maker",
+      title: "咒术回战 OC 生成器",
       description: "输入角色设定，即刻生成充满咒力的原创术师形象。",
     },
     step: {
@@ -382,11 +382,11 @@ export default {
     },
     examples: {
       title: "术师示例",
-      description: "浏览由 Jujutsu Kaisen OC Maker 生成的原创术师与咒灵猎人。",
+      description: "浏览由 咒术回战 OC 生成器 生成的原创术师与咒灵猎人。",
       examples,
     },
     features: {
-      title: "Jujutsu Kaisen OC Maker 有何特色？",
+      title: "咒术回战 OC 生成器 有何特色？",
       description: "本工具专为《咒术回战》打造，强调术式逻辑与暗黑现代感。",
       features: [
         {
@@ -423,7 +423,7 @@ export default {
       description: "还有疑问？欢迎寄信至 support@ocmaker.app",
       faqs: [
         {
-          question: "Jujutsu Kaisen OC Maker 是什么？",
+          question: "咒术回战 OC 生成器 是什么？",
           answer:
             "这是专为《咒术回战》世界打造的 AI 工具。描述角色即可生成符合原作调性的术师插画。",
         },
@@ -453,7 +453,7 @@ export default {
             "可以！无论是高专术师、咒灵师、死灭回游参赛者或古代转生术师，都可自由组合。",
         },
         {
-          question: "未来还会推出其他黑暗奇幻题材的 OC Maker 吗？",
+          question: "未来还会推出其他黑暗奇幻题材的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩充咒术、超自然与都市奇幻题材，敬请关注更新。",
         },

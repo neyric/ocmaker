@@ -810,7 +810,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "AOT OC Maker",
+      title: "AOT OC 生成器",
       description:
         "输入角色想法，立刻生成沉浸于《进击的巨人》世界观的原创角色图像与设定。",
     },
@@ -842,9 +842,9 @@ export default {
       examples,
     },
     features: {
-      title: "AOT OC Maker 是什么？",
+      title: "AOT OC 生成器 是什么？",
       description:
-        "AOT OC Maker 是专为《进击的巨人》调校的 OC Maker 版本。描述角色后，系统会即时转换为 AOT 风格的角色插画。",
+        "AOT OC 生成器 是专为《进击的巨人》调校的 OC 生成器 版本。描述角色后，系统会即时转换为 AOT 风格的角色插画。",
       features: [
         {
           label: "地道的 AOT 角色设计",
@@ -864,7 +864,7 @@ export default {
         {
           label: "高解析视觉输出",
           description:
-            "依托先进 AI 模型，AOT OC Maker 能输出细腻且高分辨率的角色插画，适用于剧情创作或分享。",
+            "依托先进 AI 模型，AOT OC 生成器 能输出细腻且高分辨率的角色插画，适用于剧情创作或分享。",
         },
         {
           label: "一次多种选择",
@@ -883,44 +883,44 @@ export default {
       description: "还有疑问？欢迎寄信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 AOT OC Maker？运作方式如何？",
+          question: "什么是 AOT OC 生成器？运作方式如何？",
           answer:
-            "AOT OC Maker 是 OC Maker 的专属改版，针对《进击的巨人》世界观调校。描述角色后，AI 会依照提示在几秒内生成 AOT 风格的动漫图像。",
+            "AOT OC 生成器 是 OC 生成器 的专属改版，针对《进击的巨人》世界观调校。描述角色后，AI 会依照提示在几秒内生成 AOT 风格的动漫图像。",
         },
         {
-          question: "如何让 AOT OC Maker 生成更好的角色？",
+          question: "如何让 AOT OC 生成器 生成更好的角色？",
           answer:
             "在描述中加入 AOT 专属特征：例如军用装备、巨人之力或悲壮背景。细节越鲜明，输出越精准动人。",
         },
         {
-          question: "AOT OC Maker 可以免费使用吗？",
+          question: "AOT OC 生成器 可以免费使用吗？",
           answer:
             "可以。基础功能免费开放，若需要更快速度、进阶控制或高级选项，可随时升级方案。",
         },
         {
-          question: "AOT OC Maker 的成果为何如此出色？",
+          question: "AOT OC 生成器 的成果为何如此出色？",
           answer:
             "我们使用针对《进击的巨人》微调的尖端 AI 模型，确保角色的风格与情绪张力都符合原作氛围。",
         },
         {
-          question: "我能将 AOT OC Maker 生成的角色用于商业项目吗？",
+          question: "我能将 AOT OC 生成器 生成的角色用于商业项目吗？",
           answer:
-            "当然可以。你用 AOT OC Maker 创作的角色完全归你所有，无论个人或商业用途都可自由运用。",
+            "当然可以。你用 AOT OC 生成器 创作的角色完全归你所有，无论个人或商业用途都可自由运用。",
         },
         {
-          question: "使用 AOT OC Maker 需要注册账户吗？",
+          question: "使用 AOT OC 生成器 需要注册账户吗？",
           answer:
             "基本功能无需注册，但登入后可以保存角色、查看生成纪录，并解锁更多功能。",
         },
         {
-          question: "AOT OC Maker 是否能重新生成或微调同一角色？",
+          question: "AOT OC 生成器 是否能重新生成或微调同一角色？",
           answer:
             "可以。你可以针对同一提示反复生成，或调整输入内容直到角色完全符合你的想像。",
         },
         {
-          question: "未来还会推出更多类似的动漫 OC Maker 吗？",
+          question: "未来还会推出更多类似的动漫 OC 生成器 吗？",
           answer:
-            "会的！我们正计划针对更多动漫世界推出专属 OC Maker，敬请在 ocmaker.app 关注后续更新。",
+            "会的！我们正计划针对更多动漫世界推出专属 OC 生成器，敬请在 ocmaker.app 关注后续更新。",
         },
       ],
     },

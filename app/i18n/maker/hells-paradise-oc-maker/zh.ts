@@ -361,7 +361,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Hell's Paradise OC Maker",
+      title: "地狱乐 OC 生成器",
       description: "输入角色设定，即刻生成充满江户暗黑气息的角色图像与故事。",
     },
     step: {
@@ -386,13 +386,13 @@ export default {
       ],
     },
     examples: {
-      title: "地狱乐角色示例",
+      title: "地狱乐 OC 示例",
       description:
-        "浏览由 Hell's Paradise OC Maker 生成的忍者、处刑人与天仙改造体。",
+        "浏览由 地狱乐 OC 生成器 生成的忍者、处刑人与天仙改造体。",
       examples,
     },
     features: {
-      title: "Hell's Paradise OC Maker 的特色",
+      title: "地狱乐 OC 生成器 的特色",
       description: "专注江户暗黑幻想，帮助你塑造兼具血腥与哲思的原创角色。",
       features: [
         {
@@ -427,9 +427,9 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Hell's Paradise OC Maker？如何运作？",
+          question: "什么是 地狱乐 OC 生成器？如何运作？",
           answer:
-            "Hell's Paradise OC Maker 是专为《地狱乐》打造的 AI 工具。描述角色后，即可生成江户暗黑风的角色图像。",
+            "地狱乐 OC 生成器 是专为《地狱乐》打造的 AI 工具。描述角色后，即可生成江户暗黑风的角色图像。",
         },
         {
           question: "要如何呈现地狱乐的残酷美？",
@@ -448,7 +448,7 @@ export default {
         {
           question: "生成的角色能用于商业用途吗？",
           answer:
-            "可以！你用 Hell's Paradise OC Maker 创作的原创角色归你所有，可用于个人或商业项目。",
+            "可以！你用 地狱乐 OC 生成器 创作的原创角色归你所有，可用于个人或商业项目。",
         },
         {
           question: "需要注册账号才能使用吗？",
@@ -461,7 +461,7 @@ export default {
             "可以。可重复生成或调整描述，直到角色的外观与故事符合你的构想。",
         },
         {
-          question: "未来还会推出其他暗黑奇幻题材的 OC Maker 吗？",
+          question: "未来还会推出其他暗黑奇幻题材的 OC 生成器 吗？",
           answer: "会的！我们持续扩充暗黑、历史与武侠题材，欢迎关注最新更新。",
         },
       ],
@@ -472,7 +472,7 @@ export default {
         "无需绘画技能，只要描述，就能让原创角色降临血花与长生的战场。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

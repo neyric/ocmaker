@@ -342,7 +342,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Sailor Moon OC Maker",
+      title: "美少女战士 OC 生成器",
       description: "输入设定，几秒内化身守护战士、王族或暗黑使徒。",
     },
     step: {
@@ -368,11 +368,11 @@ export default {
     },
     examples: {
       title: "水手战士示例",
-      description: "浏览使用 Sailor Moon OC Maker 文本提示生成的魔法战士。",
+      description: "浏览使用 美少女战士 OC 生成器 文本提示生成的魔法战士。",
       examples,
     },
     features: {
-      title: "Sailor Moon OC Maker 的特色",
+      title: "美少女战士 OC 生成器 的特色",
       description:
         "专注魔法少女世界观，打造拥有星象主题与友情力量的原创守护者。",
       features: [
@@ -411,32 +411,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Sailor Moon OC Maker？它如何运作？",
+          question: "什么是 美少女战士 OC 生成器？它如何运作？",
           answer:
-            "Sailor Moon OC Maker 是专为美少女战士宇宙打造的 AI 工具。描述守护者外观、力量与星球关联，AI 会生成正统魔法少女图像。",
+            "美少女战士 OC 生成器 是专为美少女战士宇宙打造的 AI 工具。描述守护者外观、力量与星球关联，AI 会生成正统魔法少女图像。",
         },
         {
-          question: "如何让 Sailor Moon OC Maker 生成更好的角色？",
+          question: "如何让 美少女战士 OC 生成器 生成更好的角色？",
           answer:
             "加入星球守护、变身道具、技能名称、银千年渊源或黑暗阵营等细节，魔法元素越丰富，成果越出色。",
         },
         {
-          question: "Sailor Moon OC Maker 是否免费？",
+          question: "美少女战士 OC 生成器 是否免费？",
           answer:
             "是的，基础功能免费。进阶方案提供更快生成、更多变身选项与高级自订工具。",
         },
         {
-          question: "为什么 Sailor Moon OC Maker 如此贴近原作？",
+          question: "为什么 美少女战士 OC 生成器 如此贴近原作？",
           answer:
             "模型针对美少女战士的画风与魔法少女惯例训练，理解变身流程与水手服设计。",
         },
         {
-          question: "我能商业使用 Sailor Moon OC Maker 生成的角色吗？",
+          question: "我能商业使用 美少女战士 OC 生成器 生成的角色吗？",
           answer:
             "可以，你创作的原创守护者完全归你所有，可用于个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 Sailor Moon OC Maker 需要帐号吗？",
+          question: "使用 美少女战士 OC 生成器 需要帐号吗？",
           answer:
             "基础体验无需帐号。注册后可保存角色、查看历史记录，并解锁更多魔法少女功能。",
         },
@@ -446,7 +446,7 @@ export default {
             "当然！你可以创建内部战士、外部战士、星光战士、行星小战士，还能设计月之王国王族、黑暗王国反派或平民角色。",
         },
         {
-          question: "未来会加入更多魔法少女题材的 OC Maker 吗？",
+          question: "未来会加入更多魔法少女题材的 OC 生成器 吗？",
           answer:
             "会的！我们计划扩展更多魔法少女与少女漫画主题，欢迎持续关注我们的更新。",
         },

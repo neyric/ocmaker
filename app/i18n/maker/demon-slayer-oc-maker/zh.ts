@@ -373,7 +373,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Demon Slayer OC Maker",
+      title: "鬼灭之刃 OC 生成器",
       description: "输入角色设定，即刻生成鬼杀队风格的剑士与鬼族造型。",
     },
     step: {
@@ -399,11 +399,11 @@ export default {
     },
     examples: {
       title: "鬼杀队示例",
-      description: "浏览使用 Demon Slayer OC Maker 文本提示生成的强大战士。",
+      description: "浏览使用 鬼灭之刃 OC 生成器 文本提示生成的强大战士。",
       examples,
     },
     features: {
-      title: "Demon Slayer OC Maker 的特色",
+      title: "鬼灭之刃 OC 生成器 的特色",
       description: "专为鬼灭世界优化，协助你打造拥有呼吸法与日轮刀的原创角色。",
       features: [
         {
@@ -440,9 +440,9 @@ export default {
       description: "还有疑问？欢迎寄信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Demon Slayer OC Maker？怎么用？",
+          question: "什么是 鬼灭之刃 OC 生成器？怎么用？",
           answer:
-            "Demon Slayer OC Maker 是专为《鬼灭之刃》打造的 AI 工具。描述呼吸法、外貌与背景后，系统会生成对应风格的角色图像。",
+            "鬼灭之刃 OC 生成器 是专为《鬼灭之刃》打造的 AI 工具。描述呼吸法、外貌与背景后，系统会生成对应风格的角色图像。",
         },
         {
           question: "如何让角色更像鬼灭世界的战士？",
@@ -462,7 +462,7 @@ export default {
         {
           question: "生成的角色可以商用吗？",
           answer:
-            "可以！你用 Demon Slayer OC Maker 创作的原创角色归你所有，可用于个人或商业计划。",
+            "可以！你用 鬼灭之刃 OC 生成器 创作的原创角色归你所有，可用于个人或商业计划。",
         },
         {
           question: "需要注册账户才能使用吗？",
@@ -474,7 +474,7 @@ export default {
           answer: "可以。重复生成或修改提示，直到角色完全符合你的设想。",
         },
         {
-          question: "未来会推出更多动作动漫的 OC Maker 吗？",
+          question: "未来会推出更多动作动漫的 OC 生成器 吗？",
           answer:
             "会的！我们持续拓展动作与超自然题材，欢迎关注 ocmaker.app 的最新消息。",
         },
@@ -486,7 +486,7 @@ export default {
         "无需绘画技能，只要描述，即可让原创角色挥舞日轮刀加入讨鬼之战。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

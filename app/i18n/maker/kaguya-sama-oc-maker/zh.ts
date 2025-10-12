@@ -357,7 +357,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Kaguya-sama OC Maker",
+      title: "辉夜大小姐 OC 生成器",
       description: "输入角色设定，几秒内生成秀知院学园的恋爱头脑战选手。",
     },
     step: {
@@ -382,12 +382,12 @@ export default {
       ],
     },
     examples: {
-      title: "秀知院角色示例",
-      description: "浏览使用 Kaguya-sama OC Maker 文字提示生成的名校学生。",
+      title: "秀知院 OC 示例",
+      description: "浏览使用 辉夜大小姐 OC 生成器 文字提示生成的名校学生。",
       examples,
     },
     features: {
-      title: "Kaguya-sama OC Maker 有何特色？",
+      title: "辉夜大小姐 OC 生成器 有何特色？",
       description:
         "专为秀知院的上流校园打造，生成兼具智斗与恋爱戏剧张力的原创角色。",
       features: [
@@ -428,17 +428,17 @@ export default {
       description: "还有疑问？欢迎留言至 support@ocmaker.app",
       faqs: [
         {
-          question: "Kaguya-sama OC Maker 是什么？如何运作？",
+          question: "辉夜大小姐 OC 生成器 是什么？如何运作？",
           answer:
-            "Kaguya-sama OC Maker 是专为秀知院学园打造的 AI 角色生成器。描述角色的外貌、背景与恋爱策略后，系统会生成辉夜大小姐风格的插画。",
+            "辉夜大小姐 OC 生成器 是专为秀知院学园打造的 AI 角色生成器。描述角色的外貌、背景与恋爱策略后，系统会生成辉夜大小姐风格的插画。",
         },
         {
-          question: "如何用 Kaguya-sama OC Maker 打造更贴近原作的角色？",
+          question: "如何用 辉夜大小姐 OC 生成器 打造更贴近原作的角色？",
           answer:
             "加入学生会职务、名门背景、学术特长、社团身份与恋爱情报战招式等细节，越具体越能体现秀知院的智斗氛围。",
         },
         {
-          question: "Kaguya-sama OC Maker 可以免费使用吗？",
+          question: "辉夜大小姐 OC 生成器 可以免费使用吗？",
           answer:
             "可以。基础功能免费；升级方案可加速生成、解锁更多角色变体与自定义选项。",
         },
@@ -448,12 +448,12 @@ export default {
             "系统针对辉夜大小姐的美术风格与校园设定调优，理解作品兼具优雅与爆笑的氛围。",
         },
         {
-          question: "用 Kaguya-sama OC Maker 创造的角色可以商用吗？",
+          question: "用 辉夜大小姐 OC 生成器 创造的角色可以商用吗？",
           answer:
             "可以！你创作的原创角色完全归你所有，可用于个人或商业项目，我们不会主张所有权。",
         },
         {
-          question: "使用 Kaguya-sama OC Maker 需要注册账号吗？",
+          question: "使用 辉夜大小姐 OC 生成器 需要注册账号吗？",
           answer:
             "基础体验无需账号；注册后可储存角色、查看生成记录，并解锁秀知院主题的进阶功能。",
         },
@@ -463,7 +463,7 @@ export default {
             "当然可以！可设计学生会干部、各社团领导、转学生、奖学金生或普通同学，任意扩展角色谱系。",
         },
         {
-          question: "未来会推出更多恋爱喜剧主题的 OC Maker 吗？",
+          question: "未来会推出更多恋爱喜剧主题的 OC 生成器 吗？",
           answer:
             "会的！我们正在拓展更多恋爱喜剧与校园作品，欢迎关注最新上线的主题生成器。",
         },
@@ -475,7 +475,7 @@ export default {
         "无需绘画功底，只要描述即可让原创天才学生踏入秀知院的恋爱战场。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

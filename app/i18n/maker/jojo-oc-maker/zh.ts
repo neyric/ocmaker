@@ -359,7 +359,7 @@ export default {
     hero: {
       title: "How to Make JOJO OC",
       description:
-        "使用 JOJO OC Maker 打造属于你的替身使者，从时代背景到华丽造型一步到位。",
+        "使用 JOJO OC 生成器 打造属于你的替身使者，从时代背景到华丽造型一步到位。",
       steps: [
         {
           title: "描述替身使者",
@@ -379,14 +379,14 @@ export default {
       ],
     },
     examples: {
-      title: "JOJO 角色示例",
-      description: "欣赏使用 JOJO OC Maker 从文字提示生成的奇妙角色。",
+      title: "JOJO  OC 示例",
+      description: "欣赏使用 JOJO OC 生成器 从文字提示生成的奇妙角色。",
       examples,
     },
     features: {
-      title: "What is JOJO OC Maker?",
+      title: "What is JOJO OC 生成器?",
       description:
-        "JOJO OC Maker 是专为《JOJO 的奇妙冒险》设计的 OC Maker 版本。描述你的替身使者，即刻转化为荒木风格的奇妙插画。",
+        "JOJO OC 生成器 是专为《JOJO 的奇妙冒险》设计的 OC 生成器 版本。描述你的替身使者，即刻转化为荒木风格的奇妙插画。",
       features: [
         {
           label: "原汁原味的荒木画风",
@@ -424,7 +424,7 @@ export default {
       description: "还有其他问题？可写信到 support@ocmaker.app",
       faqs: [
         {
-          question: "JOJO OC Maker 是什么？如何运作？",
+          question: "JOJO OC 生成器 是什么？如何运作？",
           answer:
             "这是针对 JOJO 世界观打造的 AI 工具。只要描述角色的外观与替身能力，即可生成荒木风格插画。",
         },
@@ -446,7 +446,7 @@ export default {
         {
           question: "生成的角色能用于同人或 cosplay 规划吗？",
           answer:
-            "当然可以！你用 JOJO OC Maker 创作的角色归你所有，可用于同人创作、舞台演出或服装设计。",
+            "当然可以！你用 JOJO OC 生成器 创作的角色归你所有，可用于同人创作、舞台演出或服装设计。",
         },
         {
           question: "需要注册账号才能使用吗？",
@@ -459,9 +459,9 @@ export default {
             "可以！无论是第一部的波纹战士、第五部的黑手党，或第八部的平行世界，都可自由发挥。",
         },
         {
-          question: "未来还会新增其他荒木风 OC Maker 吗？",
+          question: "未来还会新增其他荒木风 OC 生成器 吗？",
           answer:
-            "会的！我们持续扩充动漫 OC Maker，敬请关注 ocmaker.app 的后续更新。",
+            "会的！我们持续扩充动漫 OC 生成器，敬请关注 ocmaker.app 的后续更新。",
         },
       ],
     },

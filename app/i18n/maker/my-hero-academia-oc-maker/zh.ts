@@ -368,7 +368,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "My Hero Academia OC Maker",
+      title: "我的英雄学院 OC 生成器",
       description: "输入角色设定，瞬间生成拥有英雄梦想的 MHA 原创角色。",
     },
     step: {
@@ -395,11 +395,11 @@ export default {
     examples: {
       title: "英雄学院示例",
       description:
-        "浏览使用 My Hero Academia OC Maker 文字提示生成的原创英雄与反派。",
+        "浏览使用 我的英雄学院 OC 生成器 文字提示生成的原创英雄与反派。",
       examples,
     },
     features: {
-      title: "My Hero Academia OC Maker 的特色",
+      title: "我的英雄学院 OC 生成器 的特色",
       description:
         "专注英雄社会设定，帮助你量身打造具备个性、服装与梦想的原创角色。",
       features: [
@@ -439,9 +439,9 @@ export default {
       description: "还有疑问？欢迎留言至 support@ocmaker.app",
       faqs: [
         {
-          question: "My Hero Academia OC Maker 是什么？如何运作？",
+          question: "我的英雄学院 OC 生成器 是什么？如何运作？",
           answer:
-            "My Hero Academia OC Maker 是专注《我的英雄学院》的 AI 角色生成器。描述角色的个性、外观与战斗服后，即可获得动画风的原创插画。",
+            "我的英雄学院 OC 生成器 是专注《我的英雄学院》的 AI 角色生成器。描述角色的个性、外观与战斗服后，即可获得动画风的原创插画。",
         },
         {
           question: "如何让角色更具英雄学院风格？",
@@ -449,7 +449,7 @@ export default {
             "请加入个性细节、战斗服元素、所属学校或事务所、性格目标等资讯，越贴合原作设定越出彩。",
         },
         {
-          question: "My Hero Academia OC Maker 可以免费用吗？",
+          question: "我的英雄学院 OC 生成器 可以免费用吗？",
           answer:
             "可以。基础功能免费；升级方案能加速生成、强化个性特效并解锁更多服装选项。",
         },
@@ -459,11 +459,11 @@ export default {
             "系统依照 MHA 的美术风格与英雄社会美学调校，准确呈现角色设计与个性特效。",
         },
         {
-          question: "用 My Hero Academia OC Maker 创造的角色能商用吗？",
+          question: "用 我的英雄学院 OC 生成器 创造的角色能商用吗？",
           answer: "当然可以！你生成的原创角色归你所有，可用于个人或商业计划。",
         },
         {
-          question: "使用 My Hero Academia OC Maker 需要账号吗？",
+          question: "使用 我的英雄学院 OC 生成器 需要账号吗？",
           answer:
             "基础体验无需登入；注册后可保存角色、查看生成历史，并解锁更多英雄主题功能。",
         },
@@ -475,7 +475,7 @@ export default {
         {
           question: "未来会新增其他超级英雄动画主题吗？",
           answer:
-            "会的！我们将扩展更多英雄与动作类作品，敬请关注最新上线的 OC Maker。",
+            "会的！我们将扩展更多英雄与动作类作品，敬请关注最新上线的 OC 生成器。",
         },
       ],
     },
@@ -484,7 +484,7 @@ export default {
       description: "无需绘画技能，只要想像并描述，就能踏入职业英雄的行列。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

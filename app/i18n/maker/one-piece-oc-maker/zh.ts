@@ -372,13 +372,13 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "One Piece OC Maker",
+      title: "航海王 OC 生成器",
       description: "输入角色设定，几秒内生成热血海贼或海军形象。",
     },
     step: {
       title: "如何打造 One Piece OC",
       description:
-        "使用 OC Maker 创作航海王角色非常简单，依照以下步骤让冒险伙伴扬帆起航。",
+        "使用 OC 生成器 创作航海王角色非常简单，依照以下步骤让冒险伙伴扬帆起航。",
       steps: [
         {
           title: "描述你的航海王 OC",
@@ -398,12 +398,12 @@ export default {
       ],
     },
     examples: {
-      title: "One Piece 角色示例",
-      description: "浏览使用 One Piece OC Maker 文本提示生成的海贼角色。",
+      title: "One Piece  OC 示例",
+      description: "浏览使用 航海王 OC 生成器 文本提示生成的海贼角色。",
       examples,
     },
     features: {
-      title: "One Piece OC Maker 的特色",
+      title: "航海王 OC 生成器 的特色",
       description:
         "为航海王世界量身打造，助你快速创建拥有霸气与梦想的原创冒险者。",
       features: [
@@ -442,32 +442,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 One Piece OC Maker？它如何运作？",
+          question: "什么是 航海王 OC 生成器？它如何运作？",
           answer:
-            "One Piece OC Maker 是为航海王世界调校的 OC Maker。描述角色设定，AI 会在数秒内生成航海王风格的动漫图像。",
+            "航海王 OC 生成器 是为航海王世界调校的 OC 生成器。描述角色设定，AI 会在数秒内生成航海王风格的动漫图像。",
         },
         {
-          question: "如何让 One Piece OC Maker 生成更出色的角色？",
+          question: "如何让 航海王 OC 生成器 生成更出色的角色？",
           answer:
             "建议写明恶魔果实能力、海贼船团或特制武器等细节。越生动具体，成果就越贴近你的想像。",
         },
         {
-          question: "One Piece OC Maker 是否免费？",
+          question: "航海王 OC 生成器 是否免费？",
           answer:
             "是的，核心功能免费。若需要更快速度、更多控制或进阶功能，可随时升级方案。",
         },
         {
-          question: "为什么 One Piece OC Maker 的成果如此精彩？",
+          question: "为什么 航海王 OC 生成器 的成果如此精彩？",
           answer:
             "我们使用针对航海王画风与冒险氛围训练的模型，确保角色外观与气质都符合作品特色。",
         },
         {
-          question: "我能商业使用 One Piece OC Maker 生成的角色吗？",
+          question: "我能商业使用 航海王 OC 生成器 生成的角色吗？",
           answer:
             "可以，你创作的原创角色完全归你所有，可用于个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 One Piece OC Maker 需要帐号吗？",
+          question: "使用 航海王 OC 生成器 需要帐号吗？",
           answer:
             "基础体验无需帐号。注册后可以保存角色、查看历史纪录，并解锁更多功能。",
         },
@@ -477,7 +477,7 @@ export default {
             "当然！你能用相同提示重新生成，或微调描述直到角色完全符合你的愿景。",
         },
         {
-          question: "未来还会推出其他动漫主题的 OC Maker 吗？",
+          question: "未来还会推出其他动漫主题的 OC 生成器 吗？",
           answer:
             "会的！我们计划扩充更多动漫与冒险世界的生成器，敬请关注 ocmaker.app 的最新消息。",
         },

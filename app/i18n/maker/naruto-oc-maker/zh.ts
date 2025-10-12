@@ -369,13 +369,13 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Naruto OC Maker",
+      title: "火影忍者 OC 生成器",
       description: "输入角色设定，几秒内生成专属于你的忍界角色形象。",
     },
     step: {
       title: "如何打造 Naruto OC",
       description:
-        "利用 OC Maker 创作火影风角色非常简单，按照以下步骤让忍者灵感成真。",
+        "利用 OC 生成器 创作火影风角色非常简单，按照以下步骤让忍者灵感成真。",
       steps: [
         {
           title: "描述你的火影 OC",
@@ -395,12 +395,12 @@ export default {
       ],
     },
     examples: {
-      title: "Naruto 角色示例",
-      description: "浏览使用 Naruto OC Maker 文本提示生成的忍者角色。",
+      title: "Naruto  OC 示例",
+      description: "浏览使用 火影忍者 OC 生成器 文本提示生成的忍者角色。",
       examples,
     },
     features: {
-      title: "Naruto OC Maker 的特色",
+      title: "火影忍者 OC 生成器 的特色",
       description:
         "专为忍界量身调校，帮助你快速打造拥有忍术、羁绊与使命的原创角色。",
       features: [
@@ -438,32 +438,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Naruto OC Maker？它如何运作？",
+          question: "什么是 火影忍者 OC 生成器？它如何运作？",
           answer:
-            "Naruto OC Maker 是专为火影忍者世界调校的 OC Maker。描述你的角色，AI 会根据提示在数秒内生成火影风动漫图像。",
+            "火影忍者 OC 生成器 是专为火影忍者世界调校的 OC 生成器。描述你的角色，AI 会根据提示在数秒内生成火影风动漫图像。",
         },
         {
-          question: "如何让 Naruto OC Maker 生成更精彩的角色？",
+          question: "如何让 火影忍者 OC 生成器 生成更精彩的角色？",
           answer:
             "在描述中写入忍术、家族、所属村或特制忍具等细节。提示越具体，成果就越贴近你心中的忍者。",
         },
         {
-          question: "Naruto OC Maker 可以免费使用吗？",
+          question: "火影忍者 OC 生成器 可以免费使用吗？",
           answer:
             "可以，基础功能免费。若想享受更快速度、更多控制选项或高级功能，可以升级方案。",
         },
         {
-          question: "为什么 Naruto OC Maker 的成果如此逼真？",
+          question: "为什么 火影忍者 OC 生成器 的成果如此逼真？",
           answer:
             "我们使用针对火影画风与忍界氛围训练的模型，确保角色外观与忍术都符合原作特色。",
         },
         {
-          question: "我能商业使用 Naruto OC Maker 生成的角色吗？",
+          question: "我能商业使用 火影忍者 OC 生成器 生成的角色吗？",
           answer:
             "可以，你创作的原创忍者完全归你所有，可用在个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 Naruto OC Maker 需要帐号吗？",
+          question: "使用 火影忍者 OC 生成器 需要帐号吗？",
           answer:
             "基本体验无需帐号。注册后可保存角色、查看生成记录，并解锁更多功能。",
         },
@@ -473,7 +473,7 @@ export default {
             "当然可以！你能用相同提示再次生成或调整描述，直到角色完全符合你的愿景。",
         },
         {
-          question: "未来还会推出其他动漫主题的 OC Maker 吗？",
+          question: "未来还会推出其他动漫主题的 OC 生成器 吗？",
           answer:
             "会的！我们计划扩展更多动漫世界的专属生成器，欢迎持续关注 ocmaker.app。",
         },

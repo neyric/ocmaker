@@ -377,7 +377,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Case Closed OC Maker",
+      title: "柯南 OC 生成器",
       description: "输入角色设定，立刻生成柯南风格的原创侦探与故事档案。",
     },
     step: {
@@ -402,12 +402,12 @@ export default {
       ],
     },
     examples: {
-      title: "柯南风角色示例",
-      description: "浏览由 Case Closed OC Maker 生成的推理角色样张。",
+      title: "柯南风 OC 示例",
+      description: "浏览由 柯南 OC 生成器 生成的推理角色样张。",
       examples,
     },
     features: {
-      title: "Case Closed OC Maker 有何特色？",
+      title: "柯南 OC 生成器 有何特色？",
       description:
         "此版本针对《名侦探柯南》调校，让你的角色瞬间拥有经典推理作品的味道。",
       features: [
@@ -447,9 +447,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Case Closed OC Maker？如何运作？",
+          question: "什么是 柯南 OC 生成器？如何运作？",
           answer:
-            "Case Closed OC Maker 是专为柯南世界打造的 AI 工具。描述角色后，系统会依据提示生成柯南风的动漫角色图像。",
+            "柯南 OC 生成器 是专为柯南世界打造的 AI 工具。描述角色后，系统会依据提示生成柯南风的动漫角色图像。",
         },
         {
           question: "如何让角色更像柯南角色？",
@@ -469,7 +469,7 @@ export default {
         {
           question: "生成的角色能用于商用吗？",
           answer:
-            "当然可以！你用 Case Closed OC Maker 创作的角色归你所有，可用于个人或商业项目。",
+            "当然可以！你用 柯南 OC 生成器 创作的角色归你所有，可用于个人或商业项目。",
         },
         {
           question: "需要注册账户才能使用吗？",
@@ -481,9 +481,9 @@ export default {
           answer: "可以。可重复使用同一提示或调整输入，直到角色符合你的愿景。",
         },
         {
-          question: "未来还会有其他动漫主题的 OC Maker 吗？",
+          question: "未来还会有其他动漫主题的 OC 生成器 吗？",
           answer:
-            "会的！我们持续扩充动漫主题的 OC Maker，欢迎关注 ocmaker.app。",
+            "会的！我们持续扩充动漫主题的 OC 生成器，欢迎关注 ocmaker.app。",
         },
       ],
     },
@@ -492,7 +492,7 @@ export default {
       description: "无需绘画技能，只要描述即可让原创侦探现身推理舞台。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

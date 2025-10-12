@@ -1,6 +1,6 @@
 const basePrompt = `
   WORLD CONTEXT:
-  故事：《我的小马驹：友情就是魔法》
+  故事：《小马宝莉：友情就是魔法》
   背景概述：小马国的魔法小镇与和谐元素、友谊任务交织，多族小马与奇幻生物共谱音乐般的奇想
   关键地点：小马镇、坎特洛特、水晶帝国、无序森林、友谊学院、牦牛斯坦、幻形灵巢穴、巨龙之地
 
@@ -347,21 +347,21 @@ const examples = [
 
 export default {
   meta: {
-    title: "我的小马驹 OC 角色生成器",
+    title: "小马宝莉 OC 角色生成器",
     description:
-      "借助 AI 打造你的《我的小马驹》原创角色，设计魔法小马、独特可爱标记与友谊冒险。",
+      "借助 AI 打造你的《小马宝莉》原创角色，设计魔法小马、独特可爱标记与友谊冒险。",
   },
-  series: "我的小马驹",
+  series: "小马宝莉",
   backstoryPreset: basePrompt,
   examples: backstoryExamples,
   ocOptions,
   contents: {
     hero: {
-      title: "My Little Pony OC Maker",
+      title: "小马宝莉 OC 生成器",
       description: "输入角色设定，几秒内生成专属的友谊与魔法小马角色。",
     },
     step: {
-      title: "如何打造 My Little Pony OC",
+      title: "如何打造小马宝莉 OC",
       description:
         "创造你的梦幻小马朋友既神奇又简单，按照以下步骤让角色在小马国诞生。",
       steps: [
@@ -383,12 +383,12 @@ export default {
       ],
     },
     examples: {
-      title: "My Little Pony 角色示例",
-      description: "浏览使用 My Little Pony OC Maker 文字提示生成的魔法小马。",
+      title: "小马宝莉 OC 示例",
+      description: "浏览使用小马宝莉 OC 生成器文字提示生成的魔法小马。",
       examples,
     },
     features: {
-      title: "My Little Pony OC Maker 的特色",
+      title: "小马宝莉 OC 生成器的特色",
       description:
         "专为小马国世界观打造，快速生成拥有可爱标记与友谊羁绊的原创角色。",
       features: [
@@ -428,9 +428,9 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 My Little Pony OC Maker？它如何运作？",
+          question: "什么是 小马宝莉 OC 生成器？它如何运作？",
           answer:
-            "My Little Pony OC Maker 是专门用于创作原创小马角色的 AI 工具。描述小马的类型、配色与特长，AI 会生成贴近 MLP 风格的图像。",
+            "小马宝莉 OC 生成器 是专门用于创作原创小马角色的 AI 工具。描述小马的类型、配色与特长，AI 会生成贴近 MLP 风格的图像。",
         },
         {
           question: "要如何提升 My Little Pony 角色的生成品质？",
@@ -438,22 +438,22 @@ export default {
             "请在提示中写明小马类型（独角兽、飞马、陆马）、毛色与鬃毛颜色、可爱标记设计以及性格特色，越具体越能呈现理想效果。",
         },
         {
-          question: "My Little Pony OC Maker 是否免费？",
+          question: "小马宝莉 OC 生成器 是否免费？",
           answer:
             "是的，核心功能可免费使用。升级方案提供更快生成速度、更多自订选项与进阶魔法特效。",
         },
         {
-          question: "为什么 My Little Pony OC Maker 的成果如此神奇？",
+          question: "为什么小马宝莉 OC 生成器的成果如此神奇？",
           answer:
             "我们的 AI 针对小马国的艺术风格与世界观训练，理解小马体态、可爱标记象征以及友谊主题。",
         },
         {
-          question: "我能商业使用在 My Little Pony OC Maker 中生成的角色吗？",
+          question: "我能商业使用在小马宝莉 OC 生成器中生成的角色吗？",
           answer:
             "可以，所有你创作的原创小马都属于你，可用在个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 My Little Pony OC Maker 需要帐号吗？",
+          question: "使用小马宝莉 OC 生成器需要帐号吗？",
           answer:
             "基础体验无需帐号。注册帐号后可保存角色、查看历史记录，并解锁更多魔法功能。",
         },
@@ -463,7 +463,7 @@ export default {
             "当然！你可以用相同提示重新生成不同变化，或修改描述直到角色完全符合你的心意。",
         },
         {
-          question: "未来会新增其他卡通风格的 OC Maker 吗？",
+          question: "未来会新增其他卡通风格的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩充更多动画与卡通世界的专题，欢迎关注最新更新。",
         },

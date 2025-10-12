@@ -357,7 +357,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Frieren OC Maker",
+      title: "葬送的芙莉莲 OC 生成器",
       description: "输入角色设定，即刻生成带有永恒旅途氛围的奇幻图像与故事。",
     },
     step: {
@@ -382,12 +382,12 @@ export default {
       ],
     },
     examples: {
-      title: "芙莉莲角色示例",
-      description: "浏览由 Frieren OC Maker 文字提示生成的旅者与魔法使。",
+      title: "芙莉莲 OC 示例",
+      description: "浏览由 葬送的芙莉莲 OC 生成器 文字提示生成的旅者与魔法使。",
       examples,
     },
     features: {
-      title: "Frieren OC Maker 的特色",
+      title: "葬送的芙莉莲 OC 生成器 的特色",
       description:
         "此版本针对《葬送的芙莉莲》细致调校，让角色兼具温柔与岁月沉淀。",
       features: [
@@ -425,9 +425,9 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Frieren OC Maker？如何运作？",
+          question: "什么是 葬送的芙莉莲 OC 生成器？如何运作？",
           answer:
-            "Frieren OC Maker 是为《葬送的芙莉莲》世界打造的 AI 工具。描述角色后，即可生成贴近原作风格的奇幻图像。",
+            "葬送的芙莉莲 OC 生成器 是为《葬送的芙莉莲》世界打造的 AI 工具。描述角色后，即可生成贴近原作风格的奇幻图像。",
         },
         {
           question: "如何让角色更像芙莉莲的世界？",
@@ -445,7 +445,7 @@ export default {
         {
           question: "生成的角色能商用吗？",
           answer:
-            "可以！你通过 Frieren OC Maker 创作的原创角色归你所有，可用于个人或商业用途。",
+            "可以！你通过 葬送的芙莉莲 OC 生成器 创作的原创角色归你所有，可用于个人或商业用途。",
         },
         {
           question: "需要注册账户才能使用吗？",
@@ -456,7 +456,7 @@ export default {
           answer: "可以。可重复生成或调整描述，直到角色完美呈现你的想法。",
         },
         {
-          question: "未来还会推出其他奇幻主题的 OC Maker 吗？",
+          question: "未来还会推出其他奇幻主题的 OC 生成器 吗？",
           answer: "会的！我们持续拓展奇幻与冒险题材，欢迎关注 ocmaker.app。",
         },
       ],
@@ -466,7 +466,7 @@ export default {
       description: "无需绘画技能，只要描述，就能让原创角色踏上横跨百年的旅途。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

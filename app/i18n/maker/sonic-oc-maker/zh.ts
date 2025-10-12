@@ -1,6 +1,6 @@
 const basePrompt = `
   WORLD CONTEXT:
-  故事：《音速小子》
+  故事：《索尼克》
   背景概述：莫比乌斯／盖亚大地、高速冒险、混沌翡翠能量、蛋头博士的机械威胁、自由战士斗争
   关键阵营：索尼克小队、暗影小队、凯欧迪客侦探社、巴比伦飞贼、蛋头帝国、古老针鼹部族、G.U.N. 特勤队、抵抗军
 
@@ -347,21 +347,21 @@ const examples = [
 
 export default {
   meta: {
-    title: "音速小子 OC 角色生成器",
+    title: "索尼克 OC 角色生成器",
     description:
       "借助 AI 打造你的索尼克原创角色，设计极速能力、酷炫装备与缤纷冒险。",
   },
-  series: "音速小子",
+  series: "索尼克",
   backstoryPreset: basePrompt,
   examples: backstoryExamples,
   ocOptions,
   contents: {
     hero: {
-      title: "Sonic OC Maker",
+      title: "索尼克 OC 生成器",
       description: "输入设定，几秒内生成索尼克风格的高速伙伴。",
     },
     step: {
-      title: "如何打造 Sonic OC",
+      title: "如何打造索尼克 OC",
       description: "创造索尼克世界的角色既迅速又有趣，按照以下步骤即可完成。",
       steps: [
         {
@@ -382,12 +382,12 @@ export default {
       ],
     },
     examples: {
-      title: "索尼克角色示例",
-      description: "浏览使用 Sonic OC Maker 文本提示生成的高速英雄。",
+      title: "索尼克 OC 示例",
+      description: "浏览使用索尼克 OC 生成器文本提示生成的高速英雄。",
       examples,
     },
     features: {
-      title: "Sonic OC Maker 的特色",
+      title: "索尼克 OC 生成器 的特色",
       description: "专注索尼克宇宙，打造拥有极速技能与义勇精神的原创角色。",
       features: [
         {
@@ -424,32 +424,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Sonic OC Maker？它如何运作？",
+          question: "什么是 索尼克 OC 生成器？它如何运作？",
           answer:
-            "Sonic OC Maker 是专为索尼克宇宙打造的 AI 工具。描述角色外观、能力与阵营，AI 会生成经典索尼克风格的图像。",
+            "索尼克 OC 生成器 是专为索尼克宇宙打造的 AI 工具。描述角色外观、能力与阵营，AI 会生成经典索尼克风格的图像。",
         },
         {
-          question: "如何让 Sonic OC Maker 生成更棒的角色？",
+          question: "如何让索尼克 OC 生成器生成更棒的角色？",
           answer:
             "请加入动物种族、极速技巧、装备或 Wispon、竞争目标等索尼克元素。细节越多结果越贴近动画氛围。",
         },
         {
-          question: "Sonic OC Maker 是否免费？",
+          question: "索尼克 OC 生成器 是否免费？",
           answer:
             "是的，基础功能免费。升级方案提供更快生成速度、额外装备选项与进阶自订功能。",
         },
         {
-          question: "为什么 Sonic OC Maker 的成果如此到位？",
+          question: "为什么索尼克 OC 生成器的成果如此到位？",
           answer:
             "模型针对索尼克画风与世界观训练，理解角色 archetype、速度特效与色彩表现。",
         },
         {
-          question: "我能商业使用 Sonic OC Maker 生成的角色吗？",
+          question: "我能商业使用索尼克 OC 生成器生成的角色吗？",
           answer:
             "可以，你的原创极速角色完全归你所有，可用于个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 Sonic OC Maker 需要帐号吗？",
+          question: "使用索尼克 OC 生成器需要帐号吗？",
           answer:
             "基础体验无需帐号。注册后可保存角色、查看历史记录，并解锁高级选项。",
         },
@@ -459,7 +459,7 @@ export default {
             "当然！你可以设计索尼克小队、暗影小队、巴比伦飞贼、蛋头帝国乃至全新抵抗军成员。",
         },
         {
-          question: "未来会新增其他游戏宇宙的 OC Maker 吗？",
+          question: "未来会新增其他游戏宇宙的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩充更多经典游戏与动画主题，敬请关注最新动态。",
         },

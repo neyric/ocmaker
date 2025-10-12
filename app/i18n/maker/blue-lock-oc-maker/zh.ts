@@ -372,14 +372,14 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Blue Lock OC Maker",
+      title: "Blue Lock OC 生成器",
       description:
         "输入角色设定，秒级生成贴合 Blue Lock 世界观的自我主义球员形象。",
     },
     step: {
       title: "如何打造 Blue Lock OC",
       description:
-        "在 OC Maker 中塑造《蓝色监狱》角色就像接受一次 Ego 评估，按步骤完成自我主义前锋的诞生。",
+        "在 OC 生成器 中塑造《蓝色监狱》角色就像接受一次 Ego 评估，按步骤完成自我主义前锋的诞生。",
       steps: [
         {
           title: "描绘外貌与球衣",
@@ -399,14 +399,14 @@ export default {
       ],
     },
     examples: {
-      title: "Blue Lock 角色示例",
-      description: "看看使用 Blue Lock OC Maker 生成的高压前锋样张。",
+      title: "Blue Lock  OC 示例",
+      description: "看看使用 Blue Lock OC 生成器 生成的高压前锋样张。",
       examples,
     },
     features: {
-      title: "Blue Lock OC Maker 有何特色？",
+      title: "Blue Lock OC 生成器 有何特色？",
       description:
-        "Blue Lock OC Maker 针对《蓝色监狱》打造，只要输入描述即可得到充满 Ego 氛围的足球角色。",
+        "Blue Lock OC 生成器 针对《蓝色监狱》打造，只要输入描述即可得到充满 Ego 氛围的足球角色。",
       features: [
         {
           label: "还原高压训练场",
@@ -445,9 +445,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Blue Lock OC Maker？",
+          question: "什么是 Blue Lock OC 生成器？",
           answer:
-            "Blue Lock OC Maker 是专为《蓝色监狱》世界观打造的 AI 工具。描述角色的外貌、技能与 Ego 后，即可生成贴合原作风格的前锋立绘。",
+            "Blue Lock OC 生成器 是专为《蓝色监狱》世界观打造的 AI 工具。描述角色的外貌、技能与 Ego 后，即可生成贴合原作风格的前锋立绘。",
         },
         {
           question: "如何让角色更像 Blue Lock 球员？",
@@ -467,7 +467,7 @@ export default {
         {
           question: "我能把角色用于同人或战术剧本吗？",
           answer:
-            "当然可以！使用 Blue Lock OC Maker 创作的角色归你所有，可用于小说、漫画或战术模拟。",
+            "当然可以！使用 Blue Lock OC 生成器 创作的角色归你所有，可用于小说、漫画或战术模拟。",
         },
         {
           question: "需要注册账号才能生成吗？",
@@ -480,9 +480,9 @@ export default {
             "可以！虽然蓝色监狱聚焦前锋，但你能通过位置选项打造自由人、组织核心等个性角色。",
         },
         {
-          question: "未来会加入其他体育类 OC Maker 吗？",
+          question: "未来会加入其他体育类 OC 生成器 吗？",
           answer:
-            "会的！我们持续扩展体育与动漫主题的 OC Maker，欢迎关注 ocmaker.app。",
+            "会的！我们持续扩展体育与动漫主题的 OC 生成器，欢迎关注 ocmaker.app。",
         },
       ],
     },

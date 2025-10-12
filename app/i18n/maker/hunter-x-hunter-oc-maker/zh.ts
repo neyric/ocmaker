@@ -373,7 +373,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Hunter x Hunter OC Maker",
+      title: "全职猎人 OC 生成器",
       description: "输入角色设定，即刻生成冨樫风格的猎人角色与资料。",
     },
     step: {
@@ -398,12 +398,12 @@ export default {
       ],
     },
     examples: {
-      title: "猎人角色示例",
-      description: "浏览使用 Hunter x Hunter OC Maker 生成的原创猎人。",
+      title: "猎人 OC 示例",
+      description: "浏览使用 全职猎人 OC 生成器 生成的原创猎人。",
       examples,
     },
     features: {
-      title: "Hunter x Hunter OC Maker 的特色",
+      title: "全职猎人 OC 生成器 的特色",
       description: "专注念能力系统，帮助你快速塑造平衡又独特的猎人角色。",
       features: [
         {
@@ -441,7 +441,7 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Hunter x Hunter OC Maker？如何运作？",
+          question: "什么是 全职猎人 OC 生成器？如何运作？",
           answer:
             "这是专为《全职猎人》打造的 AI 工具。描述角色的外貌、念系与发能力后，即可生成贴近冨樫画风的图像。",
         },
@@ -461,7 +461,7 @@ export default {
         {
           question: "生成的角色可以用于同人或商业吗？",
           answer:
-            "当然可以！你用 Hunter x Hunter OC Maker 创作的角色归你所有，可用于同人、RPG 或商业企划。",
+            "当然可以！你用 全职猎人 OC 生成器 创作的角色归你所有，可用于同人、RPG 或商业企划。",
         },
         {
           question: "需要注册账户才能保存角色吗？",
@@ -474,7 +474,7 @@ export default {
             "可以！可自由设计猎人协会、旅团、暗黑大陆探险者，甚至嵌合蚁混血等设定。",
         },
         {
-          question: "未来会推出更多战斗系动漫的 OC Maker 吗？",
+          question: "未来会推出更多战斗系动漫的 OC 生成器 吗？",
           answer: "会的！我们持续扩展战斗与冒险类题材，欢迎关注未来更新。",
         },
       ],
@@ -484,7 +484,7 @@ export default {
       description: "无需绘画技能，只要描述，即可让原创猎人与念能力跃然纸上。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

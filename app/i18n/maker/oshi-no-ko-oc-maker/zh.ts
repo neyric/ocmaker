@@ -361,7 +361,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Oshi no Ko OC Maker",
+      title: "我推的孩子 OC 生成器",
       description: "输入角色设定，瞬间生成演艺圈风格的华丽人设与造型。",
     },
     step: {
@@ -387,12 +387,12 @@ export default {
       ],
     },
     examples: {
-      title: "Oshi no Ko 角色示例",
-      description: "浏览使用 Oshi no Ko OC Maker 文本提示生成的演艺圈角色。",
+      title: "Oshi no Ko  OC 示例",
+      description: "浏览使用 我推的孩子 OC 生成器 文本提示生成的演艺圈角色。",
       examples,
     },
     features: {
-      title: "Oshi no Ko OC Maker 的特色",
+      title: "我推的孩子 OC 生成器 的特色",
       description:
         "为演艺圈题材量身打造，助你快速塑造兼具光芒与阴影的原创角色。",
       features: [
@@ -431,32 +431,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Oshi no Ko OC Maker？它如何运作？",
+          question: "什么是 我推的孩子 OC 生成器？它如何运作？",
           answer:
-            "Oshi no Ko OC Maker 是为《我推的孩子》世界调校的 OC Maker。描述角色设定，AI 会在数秒内生成演艺圈风格的图像。",
+            "我推的孩子 OC 生成器 是为《我推的孩子》世界调校的 OC 生成器。描述角色设定，AI 会在数秒内生成演艺圈风格的图像。",
         },
         {
-          question: "要如何让 Oshi no Ko OC Maker 生成更精彩的角色？",
+          question: "要如何让 我推的孩子 OC 生成器 生成更精彩的角色？",
           answer:
             "在描述中加入星形瞳孔、演艺职务、舞台技能或适合演艺圈的性格。提示越具体，成果越贴近你的构想。",
         },
         {
-          question: "Oshi no Ko OC Maker 是否免费？",
+          question: "我推的孩子 OC 生成器 是否免费？",
           answer:
             "是的，基础角色生成免费提供。若需更快产出或更高控制力，可升级进阶方案。",
         },
         {
-          question: "为什么 Oshi no Ko OC Maker 的成果如此惊艳？",
+          question: "为什么 我推的孩子 OC 生成器 的成果如此惊艳？",
           answer:
             "我们采用针对演艺题材与作品氛围训练的模型，确保角色造型与戏剧张力符合原作调性。",
         },
         {
-          question: "我能商业使用 Oshi no Ko OC Maker 生成的角色吗？",
+          question: "我能商业使用 我推的孩子 OC 生成器 生成的角色吗？",
           answer:
             "可以，你创造的原创角色完全归你所有，可用于个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 Oshi no Ko OC Maker 需要帐号吗？",
+          question: "使用 我推的孩子 OC 生成器 需要帐号吗？",
           answer:
             "基础体验无需帐号。注册后可保存角色、查看生成纪录，并解锁更多功能。",
         },
@@ -466,7 +466,7 @@ export default {
             "当然！你能用相同提示再次生成，或微调描述直到角色与人设完全吻合。",
         },
         {
-          question: "未来还会推出其他动漫主题的 OC Maker 吗？",
+          question: "未来还会推出其他动漫主题的 OC 生成器 吗？",
           answer:
             "会的！我们计划扩增更多动漫世界的主题生成器，敬请关注 ocmaker.app。",
         },

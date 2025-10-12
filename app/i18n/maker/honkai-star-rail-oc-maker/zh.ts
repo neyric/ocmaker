@@ -374,7 +374,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Honkai Star Rail OC Maker",
+      title: "星穹铁道 OC 生成器",
       description: "输入角色设定，即刻生成星穹铁道风格的开拓者与星核猎手。",
     },
     step: {
@@ -399,12 +399,12 @@ export default {
       ],
     },
     examples: {
-      title: "星穹角色示例",
-      description: "浏览使用 Honkai Star Rail OC Maker 生成的宇宙角色。",
+      title: "星穹 OC 示例",
+      description: "浏览使用 星穹铁道 OC 生成器 生成的宇宙角色。",
       examples,
     },
     features: {
-      title: "Star Rail OC Maker 的特色",
+      title: "星穹铁道 OC 生成器 的特色",
       description:
         "专为星穹铁道调校，让原创角色在星海旅程与命途哲学之间游刃有余。",
       features: [
@@ -443,7 +443,7 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Honkai Star Rail OC Maker？如何运作？",
+          question: "什么是 星穹铁道 OC 生成器？如何运作？",
           answer:
             "这是专为《崩坏：星穹铁道》打造的 AI 工具。描述角色后，即可生成符合游戏风格的宇宙图像。",
         },
@@ -465,7 +465,7 @@ export default {
         {
           question: "生成的角色能否用于商业企划？",
           answer:
-            "可以！你用 Star Rail OC Maker 创作的原创角色归你所有，可用于个人或商业用途。",
+            "可以！你用 星穹铁道 OC 生成器 创作的原创角色归你所有，可用于个人或商业用途。",
         },
         {
           question: "需要注册账号才能生成吗？",
@@ -478,7 +478,7 @@ export default {
             "当然！可自由组合星穹列车、星核猎手、星企等阵营与七大命途的设定。",
         },
         {
-          question: "未来会推出其他米哈游世界的 OC Maker 吗？",
+          question: "未来会推出其他米哈游世界的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩展米哈游与其他科幻 RPG 主题，欢迎关注最新更新。",
         },
@@ -489,7 +489,7 @@ export default {
       description: "无需绘画技能，只要描述，就能让原创角色在星穹中开拓未知。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

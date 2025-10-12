@@ -373,14 +373,14 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Arknights OC Maker",
+      title: "明日方舟 OC 生成器",
       description:
         "输入角色构想，几秒内生成贴合《明日方舟》世界观的原创干员设定与视觉。",
     },
     step: {
-      title: "如何打造 Arknights OC",
+      title: "如何打造明日方舟 OC",
       description:
-        "使用 OC Maker 创建明日方舟干员就像执行战术任务，按下列步骤轻松部署你的罗德岛新人。",
+        "使用 OC 生成器创建明日方舟干员就像执行战术任务，按下列步骤轻松部署你的罗德岛新人。",
       steps: [
         {
           title: "描述你的干员",
@@ -400,14 +400,14 @@ export default {
       ],
     },
     examples: {
-      title: "明日方舟干员示例",
-      description: "浏览使用 Arknights OC Maker 文字提示生成的干员示例。",
+      title: "明日方舟 OC 示例",
+      description: "浏览使用明日方舟 OC 生成器文字提示生成的干员示例。",
       examples,
     },
     features: {
-      title: "Arknights OC Maker 有何不同？",
+      title: "明日方舟 OC 生成器 有何不同？",
       description:
-        "Arknights OC Maker 是针对《明日方舟》世界观打造的 OC Maker 版本，只要描述干员即可瞬间获得罗德岛风格的战术立绘。",
+        "明日方舟 OC 生成器 是针对《明日方舟》世界观打造的 OC 生成器 版本，只要描述干员即可瞬间获得罗德岛风格的战术立绘。",
       features: [
         {
           label: "地道的泰拉设计",
@@ -446,9 +446,9 @@ export default {
       description: "还有其他疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Arknights OC Maker？它如何运作？",
+          question: "什么是 明日方舟 OC 生成器？它如何运作？",
           answer:
-            "Arknights OC Maker 是专为打造《明日方舟》干员的 AI 工具。描述角色的外貌、职阶与源石技艺，系统便会生成符合游戏战术美学的立绘。",
+            "明日方舟 OC 生成器 是专为打造《明日方舟》干员的 AI 工具。描述角色的外貌、职阶与源石技艺，系统便会生成符合游戏战术美学的立绘。",
         },
         {
           question: "如何让生成的干员更贴合原作？",
@@ -456,7 +456,7 @@ export default {
             "在描述中加入干员职阶、种族特征、源石感染状况与战术装备。结合世界观与设定细节，角色就会更加真实。",
         },
         {
-          question: "Arknights OC Maker 可以免费使用吗？",
+          question: "明日方舟 OC 生成器 可以免费使用吗？",
           answer:
             "可以。基础功能免费开放；若想享受更快生成、更多职阶与自定义选项，可升级至进阶方案。",
         },
@@ -468,7 +468,7 @@ export default {
         {
           question: "我可以把生成的干员用于同人创作吗？",
           answer:
-            "当然可以！使用 Arknights OC Maker 创作的角色归你所有，可用于同人小说、插画、角色扮演等任何相关项目。",
+            "当然可以！使用 明日方舟 OC 生成器 创作的角色归你所有，可用于同人小说、插画、角色扮演等任何相关项目。",
         },
         {
           question: "需要注册账号才能创建干员吗？",
@@ -481,9 +481,9 @@ export default {
             "可以！无论是桑卡塔、萨卡兹或利刃族，也能搭配任何干员职阶，并自定义感染情况与源石技艺。",
         },
         {
-          question: "未来会新增更多游戏主题的 OC Maker 吗？",
+          question: "未来会新增更多游戏主题的 OC 生成器 吗？",
           answer:
-            "会的！我们持续扩充游戏主题的 OC Maker，欢迎常回 ocmaker.app 浏览最新更新。",
+            "会的！我们持续扩充游戏主题的 OC 生成器，欢迎常回 ocmaker.app 浏览最新更新。",
         },
       ],
     },
@@ -493,7 +493,7 @@ export default {
         "无需绘画功力，只要描述、生成，就能让原创干员加入对抗天灾的行列。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

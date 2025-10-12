@@ -361,7 +361,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Dragon Ball OC Maker",
+      title: "龙珠 OC 生成器",
       description: "输入角色设定，即刻生成龙珠风格的武道家与战斗档案。",
     },
     step: {
@@ -386,12 +386,12 @@ export default {
       ],
     },
     examples: {
-      title: "龙珠角色示例",
-      description: "浏览使用 Dragon Ball OC Maker 文字提示生成的强大战士。",
+      title: "龙珠 OC 示例",
+      description: "浏览使用 龙珠 OC 生成器 文字提示生成的强大战士。",
       examples,
     },
     features: {
-      title: "Dragon Ball OC Maker 的特色",
+      title: "龙珠 OC 生成器 的特色",
       description: "专为《龙珠》打造，让你的原创战士拥有正统的气功战斗感。",
       features: [
         {
@@ -427,9 +427,9 @@ export default {
       description: "还有疑问？欢迎寄信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Dragon Ball OC Maker？如何运作？",
+          question: "什么是 龙珠 OC 生成器？如何运作？",
           answer:
-            "Dragon Ball OC Maker 是专为《龙珠》世界打造的 AI 工具。描述角色的种族、流派与技能后，即可生成龙珠风的角色图像。",
+            "龙珠 OC 生成器 是专为《龙珠》世界打造的 AI 工具。描述角色的种族、流派与技能后，即可生成龙珠风的角色图像。",
         },
         {
           question: "如何让角色更具龙珠味？",
@@ -449,7 +449,7 @@ export default {
         {
           question: "生成的角色能用于商业用途吗？",
           answer:
-            "可以！你在 Dragon Ball OC Maker 创作的原创战士归你所有，可用于个人或商业计划。",
+            "可以！你在 龙珠 OC 生成器 创作的原创战士归你所有，可用于个人或商业计划。",
         },
         {
           question: "需要注册账户才能使用吗？",
@@ -462,7 +462,7 @@ export default {
             "当然可以。可重复生成或调整描述，直到战士的外观与战力契合你的想像。",
         },
         {
-          question: "未来还会推出其他热血漫画主题的 OC Maker 吗？",
+          question: "未来还会推出其他热血漫画主题的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩充热血战斗题材，敬请关注 ocmaker.app 的最新发布。",
         },

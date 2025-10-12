@@ -324,24 +324,28 @@ const ocOptions = [
 
 const examples = [
   {
-    image: "https://cdn.ocmaker.app/example/spyxfamily-oc-generated-1.webp",
+    image:
+      "https://cdn.ocmaker.app/example/spy-x-family-oc-maker-generated-1.webp",
     prompt:
-      "1girl, brunette hair, hazel eyes, confident smile, spy x family style formal outfit, hidden dagger brooch, elegant pose, upper body, looking at viewer, anime style, simple background",
+      "1girl, anya forger, spy x family, pink hair, short hair, green eyes, small stature, child, school uniform, eden academy uniform, white shirt, red sweater vest, black skirt, white socks, black shoes, innocent expression, curious look, antenna hair, hair ornaments, looking at viewer, simple background, upper body",
   },
   {
-    image: "https://cdn.ocmaker.app/example/spyxfamily-oc-generated-2.webp",
+    image:
+      "https://cdn.ocmaker.app/example/spy-x-family-oc-maker-generated-2.webp",
     prompt:
-      "1boy, ash blonde hair, blue eyes, composed expression, spy x family style trench coat, leather gloves, satchel, upper body, looking at viewer, anime style, simple background",
+      "1boy, damian desmond, spy x family, blonde hair, short hair, green eyes, child, school uniform, eden academy uniform, white shirt, red tie, dark blue blazer, proud expression, arrogant smile, crossed arms, looking at viewer, simple background, upper body, masterpiece, best quality, very aesthetic, absurdres",
   },
   {
-    image: "https://cdn.ocmaker.app/example/spyxfamily-oc-generated-3.webp",
+    image:
+      "https://cdn.ocmaker.app/example/spy-x-family-oc-maker-generated-3.webp",
     prompt:
-      "1girl, black hair in bob cut, red eyes, assassin outfit under floral apron, holding bouquet, spy x family style, graceful pose, upper body, looking at viewer, anime style, simple background",
+      "1girl, yor forger, spy x family, long black hair, red eyes, black sleeveless dress, gold hairband, earrings, gentle expression, assassin, elegant pose, anime style, looking at viewer, simple background, upper body",
   },
   {
-    image: "https://cdn.ocmaker.app/example/spyxfamily-oc-generated-4.webp",
+    image:
+      "https://cdn.ocmaker.app/example/spy-x-family-oc-maker-generated-4.webp",
     prompt:
-      "1boy, wavy brown hair, green eyes, jazz club attire, cane with hidden weapon, charming smirk, spy x family style, upper body, looking at viewer, anime style, simple background",
+      "1boy, loid forger, spy x family, blonde hair, short hair, green eyes, serious expression, black suit, white dress shirt, black tie, spy, professional appearance, mature male, looking at viewer, simple background, upper body",
   },
 ];
 
@@ -357,7 +361,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "SPY×FAMILY OC Maker",
+      title: "间谍过家家 OC 生成器",
       description: "输入角色设定，瞬间生成兼具谍战与家庭气息的原创人物。",
     },
     step: {
@@ -382,12 +386,12 @@ export default {
       ],
     },
     examples: {
-      title: "间谍角色示例",
-      description: "浏览使用 SPY×FAMILY OC Maker 文本提示生成的潜伏角色。",
+      title: "间谍 OC 示例",
+      description: "浏览使用 间谍过家家 OC 生成器 文本提示生成的潜伏角色。",
       examples,
     },
     features: {
-      title: "SPY×FAMILY OC Maker 的特色",
+      title: "间谍过家家 OC 生成器 的特色",
       description: "为冷战谍战与家庭喜剧调性量身打造，呈现多面向的原创角色。",
       features: [
         {
@@ -423,32 +427,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 SPY×FAMILY OC Maker？它如何运作？",
+          question: "什么是 间谍过家家 OC 生成器？它如何运作？",
           answer:
-            "SPY×FAMILY OC Maker 是专为《间谍过家家》打造的 AI 工具。描述角色外貌、身份与任务，AI 会在数秒内生成作品风格的图像。",
+            "间谍过家家 OC 生成器 是专为《间谍过家家》打造的 AI 工具。描述角色外貌、身份与任务，AI 会在数秒内生成作品风格的图像。",
         },
         {
-          question: "要如何让 SPY×FAMILY OC Maker 生成更精彩的角色？",
+          question: "要如何让 间谍过家家 OC 生成器 生成更精彩的角色？",
           answer:
             "提示中加入伪装职业、真实阵营、特工技能与人际关系等细节，越贴近作品的谍战家庭调性越好。",
         },
         {
-          question: "SPY×FAMILY OC Maker 是否免费？",
+          question: "间谍过家家 OC 生成器 是否免费？",
           answer:
             "是的，基础功能免费使用。进阶方案提供更快生成速度与更多自订选项。",
         },
         {
-          question: "为什么 SPY×FAMILY OC Maker 的成果如此贴切？",
+          question: "为什么 间谍过家家 OC 生成器 的成果如此贴切？",
           answer:
             "模型针对作品的画风与情绪训练，掌握冷战谍报与家庭喜剧的平衡感。",
         },
         {
-          question: "我能商业使用 SPY×FAMILY OC Maker 生成的角色吗？",
+          question: "我能商业使用 间谍过家家 OC 生成器 生成的角色吗？",
           answer:
             "可以，你的原创角色完全归你所有，可用于个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 SPY×FAMILY OC Maker 需要帐号吗？",
+          question: "使用 间谍过家家 OC 生成器 需要帐号吗？",
           answer:
             "基础体验无需帐号。注册后可保存角色、查看历史记录，并解锁更多功能。",
         },
@@ -458,7 +462,7 @@ export default {
             "当然！无论是 WISE 间谍、SSS 特务、园丁刺客还是黑市中人，都能轻松生成。",
         },
         {
-          question: "未来会新增其他谍战或家庭题材的 OC Maker 吗？",
+          question: "未来会新增其他谍战或家庭题材的 OC 生成器 吗？",
           answer: "会的！我们计划扩展更多风格的原创角色生成器，敬请持续关注。",
         },
       ],

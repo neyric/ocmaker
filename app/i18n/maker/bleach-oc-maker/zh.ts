@@ -367,11 +367,11 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Bleach OC Maker",
+      title: "死神 OC 生成器",
       description: "输入角色设定，立即生成贴合《死神》世界观的原创灵压战士。",
     },
     step: {
-      title: "如何打造 BLEACH OC",
+      title: "如何打造死神 OC",
       description:
         "创建《死神》角色就像编排一场灵压战斗，按以下步骤完成你的 OC。",
       steps: [
@@ -393,14 +393,14 @@ export default {
       ],
     },
     examples: {
-      title: "BLEACH 角色示例",
-      description: "查看使用 Bleach OC Maker 文字提示生成的灵压角色样板。",
+      title: "死神  OC 示例",
+      description: "查看使用死神 OC 生成器 文字提示生成的灵压角色样板。",
       examples,
     },
     features: {
-      title: "Bleach OC Maker 的亮点",
+      title: "死神 OC 生成器 的亮点",
       description:
-        "Bleach OC Maker 专为《死神》打造，只要描述角色就能生成兼具灵压与美术风格的设定图。",
+        "死神 OC 生成器 专为《死神》打造，只要描述角色就能生成兼具灵压与美术风格的设定图。",
       features: [
         {
           label: "灵压世界观还原",
@@ -438,9 +438,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "Bleach OC Maker 是什么？",
+          question: "BLEACH OC 生成器 是什么？",
           answer:
-            "Bleach OC Maker 是为《死神》世界设计的 AI 工具。描述角色的外貌与灵压能力后，系统会生成对应风格的角色立绘。",
+            "BLEACH OC 生成器 是为《死神》世界设计的 AI 工具。描述角色的外貌与灵压能力后，系统会生成对应风格的角色立绘。",
         },
         {
           question: "如何让角色更贴合《死神》？",
@@ -460,7 +460,7 @@ export default {
         {
           question: "我能把生成的角色用于同人作品吗？",
           answer:
-            "当然可以！你用 Bleach OC Maker 创作的角色完全归你所有，可用于同人、角色扮演或战斗剧本。",
+            "当然可以！你用 BLEACH OC 生成器 创作的角色完全归你所有，可用于同人、角色扮演或战斗剧本。",
         },
         {
           question: "需要注册账号吗？",
@@ -473,9 +473,9 @@ export default {
             "可以！可自由尝试死神与虚的混血、灭却师与完现术的组合，探索独特的灵压设定。",
         },
         {
-          question: "未来还会追加其他动漫 OC Maker 吗？",
+          question: "未来还会追加其他动漫 OC 生成器 吗？",
           answer:
-            "会的，我们持续扩充 OC Maker 列表，欢迎持续关注 ocmaker.app。",
+            "会的，我们持续扩充 OC 生成器 列表，欢迎持续关注 ocmaker.app。",
         },
       ],
     },
@@ -485,7 +485,7 @@ export default {
         "无需绘画背景，只要输入设定即可生成属于你的《死神》原创角色。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

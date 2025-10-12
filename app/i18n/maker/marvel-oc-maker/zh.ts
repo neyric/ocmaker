@@ -368,7 +368,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Marvel OC Maker",
+      title: "漫威 OC 生成器",
       description: "输入设定，几秒内生成漫威宇宙气息的原创超级英雄造型。",
     },
     step: {
@@ -393,12 +393,12 @@ export default {
       ],
     },
     examples: {
-      title: "漫威角色示例",
-      description: "浏览使用 Marvel OC Maker 文字提示生成的英雄范例。",
+      title: "漫威 OC 示例",
+      description: "浏览使用 漫威 OC 生成器 文字提示生成的英雄范例。",
       examples,
     },
     features: {
-      title: "Marvel OC Maker 的特色",
+      title: "漫威 OC 生成器 的特色",
       description: "专注漫威宇宙语汇，帮助你塑造具备电影感与漫画感的原创英雄。",
       features: [
         {
@@ -434,17 +434,17 @@ export default {
       description: "还有疑问？欢迎留言至 support@ocmaker.app",
       faqs: [
         {
-          question: "Marvel OC Maker 是什么？如何运作？",
+          question: "漫威 OC 生成器 是什么？如何运作？",
           answer:
-            "Marvel OC Maker 是专为漫威宇宙打造的 AI 工具。描述角色的身份、能力与背景后，系统会生成漫威风格的原创插画。",
+            "漫威 OC 生成器 是专为漫威宇宙打造的 AI 工具。描述角色的身份、能力与背景后，系统会生成漫威风格的原创插画。",
         },
         {
-          question: "如何利用 Marvel OC Maker 打造更有漫威味的角色？",
+          question: "如何利用 漫威 OC 生成器 打造更有漫威味的角色？",
           answer:
             "请补充团队隶属、科技来源、反派宿敌或多元宇宙分支等细节，越具体越能展现漫威气质。",
         },
         {
-          question: "Marvel OC Maker 可以免费使用吗？",
+          question: "漫威 OC 生成器 可以免费使用吗？",
           answer:
             "可以。基础功能免费；升级方案能解锁更快速度、更多变体与进阶自订。",
         },
@@ -454,12 +454,12 @@ export default {
             "系统针对漫威的美术语言、电影调色与角色设定进行调校，确保输出风格统一。",
         },
         {
-          question: "通过 Marvel OC Maker 创造的角色可以商用吗？",
+          question: "通过 漫威 OC 生成器 创造的角色可以商用吗？",
           answer:
             "当然可以！你生成的原创角色完全归你所有，可用于个人或商业计划。",
         },
         {
-          question: "使用 Marvel OC Maker 需要注册账号吗？",
+          question: "使用 漫威 OC 生成器 需要注册账号吗？",
           answer:
             "基础体验无需账号；注册后可保存角色、同步生成历史，并解锁更多漫威主题模板。",
         },
@@ -471,7 +471,7 @@ export default {
         {
           question: "未来还会新增哪些超级英雄主题？",
           answer:
-            "我们将持续扩展更多超级英雄与跨媒体宇宙，欢迎关注最新上线的 OC Maker。",
+            "我们将持续扩展更多超级英雄与跨媒体宇宙，欢迎关注最新上线的 OC 生成器。",
         },
       ],
     },

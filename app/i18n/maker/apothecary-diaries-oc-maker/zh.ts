@@ -358,7 +358,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "The Apothecary Diaries OC Maker",
+      title: "药屋少女的呢喃 OC 生成器",
       description: "输入角色设定，即刻生成身处皇城秘苑的原创角色图像与故事。",
     },
     step: {
@@ -388,9 +388,9 @@ export default {
       examples,
     },
     features: {
-      title: "什么是药屋呢喃 OC Maker？",
+      title: "什么是药屋呢喃 OC 生成器？",
       description:
-        "药屋呢喃 OC Maker 是为《药屋少女的呢喃》量身调校的版本。描述角色之后，系统会立刻生成宫廷风格的插画。",
+        "药屋呢喃 OC 生成器 是为《药屋少女的呢喃》量身调校的版本。描述角色之后，系统会立刻生成宫廷风格的插画。",
       features: [
         {
           label: "地道的宫廷人物设计",
@@ -429,32 +429,32 @@ export default {
       description: "还有疑问？欢迎寄信至 support@ocmaker.app",
       faqs: [
         {
-          question: "药屋呢喃 OC Maker 是什么？运作方式如何？",
+          question: "药屋呢喃 OC 生成器 是什么？运作方式如何？",
           answer:
-            "这是专为《药屋少女的呢喃》世界观调校的 OC Maker。描述角色后，AI 会依照提示在几秒内生成宫廷风格图像。",
+            "这是专为《药屋少女的呢喃》世界观调校的 OC 生成器。描述角色后，AI 会依照提示在几秒内生成宫廷风格图像。",
         },
         {
-          question: "如何让药屋呢喃 OC Maker 产出更好的角色？",
+          question: "如何让药屋呢喃 OC 生成器 产出更好的角色？",
           answer:
             "描述时请加入宫廷设定、医药专长、案件线索或性格特质等细节。画面越具体，生成结果越精准。",
         },
         {
-          question: "药屋呢喃 OC Maker 可以免费使用吗？",
+          question: "药屋呢喃 OC 生成器 可以免费使用吗？",
           answer:
             "可以。基础方案完全免费，若想追求更快速度或更多自定义选项，可随时升级方案。",
         },
         {
-          question: "药屋呢喃 OC Maker 的成品为何如此精致？",
+          question: "药屋呢喃 OC 生成器 的成品为何如此精致？",
           answer:
             "我们使用针对作品氛围微调的先进模型，确保角色的服饰、神态与场景都符合皇城气质。",
         },
         {
           question: "生成的角色能用于商业用途吗？",
           answer:
-            "当然可以。你在药屋呢喃 OC Maker 创作的角色完全归属你本人，可自由运用于个人或商业计划。",
+            "当然可以。你在药屋呢喃 OC 生成器 创作的角色完全归属你本人，可自由运用于个人或商业计划。",
         },
         {
-          question: "需要账号才能使用药屋呢喃 OC Maker 吗？",
+          question: "需要账号才能使用药屋呢喃 OC 生成器 吗？",
           answer:
             "基础功能不需注册；若登入则可保存角色、追踪历史纪录并解锁更多功能。",
         },
@@ -464,9 +464,9 @@ export default {
             "可以。你能针对同一提示反复生成，或调整描述直到成品完全符合想像。",
         },
         {
-          question: "未来还会推出其他主题的 OC Maker 吗？",
+          question: "未来还会推出其他主题的 OC 生成器 吗？",
           answer:
-            "会的！我们计划推出更多动漫世界的专属 OC Maker，欢迎持续关注 ocmaker.app。",
+            "会的！我们计划推出更多动漫世界的专属 OC 生成器，欢迎持续关注 ocmaker.app。",
         },
       ],
     },

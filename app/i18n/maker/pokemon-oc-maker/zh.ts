@@ -368,7 +368,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Pokemon OC Maker",
+      title: "宝可梦 OC 生成器",
       description: "输入设定，瞬间生成宝可梦世界风格的训练家与伙伴造型。",
     },
     step: {
@@ -394,11 +394,11 @@ export default {
     },
     examples: {
       title: "宝可梦训练家示例",
-      description: "浏览使用 Pokemon OC Maker 文本提示生成的精彩角色。",
+      description: "浏览使用 宝可梦 OC 生成器 文本提示生成的精彩角色。",
       examples,
     },
     features: {
-      title: "Pokemon OC Maker 的特色",
+      title: "宝可梦 OC 生成器 的特色",
       description: "专注宝可梦世界观，打造拥有专属队伍与地区风格的原创训练家。",
       features: [
         {
@@ -433,32 +433,32 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Pokemon OC Maker？它如何运作？",
+          question: "什么是 宝可梦 OC 生成器？它如何运作？",
           answer:
-            "Pokemon OC Maker 是专门创造宝可梦原创角色的 AI 工具。描述角色外观、身份与擅长属性，AI 会生成经典宝可梦风格图像。",
+            "宝可梦 OC 生成器 是专门创造宝可梦原创角色的 AI 工具。描述角色外观、身份与擅长属性，AI 会生成经典宝可梦风格图像。",
         },
         {
-          question: "如何让 Pokemon OC Maker 生成更贴切的角色？",
+          question: "如何让 宝可梦 OC 生成器 生成更贴切的角色？",
           answer:
             "请写入训练家等级（馆主、四天王等）、擅长属性、故乡地区、华丽大赛成就或所属组织，细节越多结果越好。",
         },
         {
-          question: "Pokemon OC Maker 是否免费？",
+          question: "宝可梦 OC 生成器 是否免费？",
           answer:
             "是的，核心功能免费。进阶方案提供更快生成、多种职业选项与高级自订工具。",
         },
         {
-          question: "为什么 Pokemon OC Maker 的成果如此真实？",
+          question: "为什么 宝可梦 OC 生成器 的成果如此真实？",
           answer:
             "我们的模型针对宝可梦画风与世界观训练，理解训练家 archetype、地区美学与角色设计原则。",
         },
         {
-          question: "我能商业使用 Pokemon OC Maker 生成的角色吗？",
+          question: "我能商业使用 宝可梦 OC 生成器 生成的角色吗？",
           answer:
             "可以，你的原创训练家完全归你所有，可用于个人或商业计划，我们不会主张所有权。",
         },
         {
-          question: "使用 Pokemon OC Maker 需要帐号吗？",
+          question: "使用 宝可梦 OC 生成器 需要帐号吗？",
           answer:
             "基础体验无需帐号。注册后可保存角色、查看历史记录，并解锁宝可梦主题进阶功能。",
         },
@@ -468,7 +468,7 @@ export default {
             "当然！无论是道馆馆主、四天王、协调员、火箭队成员或培育家，都能透过提示轻松生成。",
         },
         {
-          question: "未来会新增其他动漫主题的 OC Maker 吗？",
+          question: "未来会新增其他动漫主题的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩展更多动漫与游戏世界的专属生成器，敬请关注最新更新。",
         },

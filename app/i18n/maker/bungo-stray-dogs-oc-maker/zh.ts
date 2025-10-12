@@ -372,7 +372,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Bungo Stray Dogs OC Maker",
+      title: "文豪野犬 OC 生成器",
       description: "输入角色设定，即刻生成拥有文豪异能的横滨人物与视觉档案。",
     },
     step: {
@@ -400,13 +400,13 @@ export default {
     examples: {
       title: "异能者示例",
       description:
-        "浏览由 Bungo Stray Dogs OC Maker 文字提示生成的文学能力者。",
+        "浏览由 文豪野犬 OC 生成器 文字提示生成的文学能力者。",
       examples,
     },
     features: {
-      title: "Bungo Stray Dogs OC Maker 有何特别之处？",
+      title: "文豪野犬 OC 生成器 有何特别之处？",
       description:
-        "此 OC Maker 针对《文豪野犬》世界精调，帮助你打造具备阵营背景与文学主题的原创异能者。",
+        "此 OC 生成器 针对《文豪野犬》世界精调，帮助你打造具备阵营背景与文学主题的原创异能者。",
       features: [
         {
           label: "正统 BSD 画风",
@@ -444,9 +444,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Bungo Stray Dogs OC Maker？如何运作？",
+          question: "什么是 文豪野犬 OC 生成器？如何运作？",
           answer:
-            "Bungo Stray Dogs OC Maker 是专为《文豪野犬》打造的 AI 工具。描述角色的异能、阵营与文学灵感后，系统会生成贴合原作风格的角色图像。",
+            "文豪野犬 OC 生成器 是专为《文豪野犬》打造的 AI 工具。描述角色的异能、阵营与文学灵感后，系统会生成贴合原作风格的角色图像。",
         },
         {
           question: "如何让角色更像原作中的能力者？",
@@ -466,7 +466,7 @@ export default {
         {
           question: "生成的角色可以用于商用或同人吗？",
           answer:
-            "可以！你在 Bungo Stray Dogs OC Maker 中创建的原创角色归你所有，可用于小说、漫画或周边企划。",
+            "可以！你在 文豪野犬 OC 生成器 中创建的原创角色归你所有，可用于小说、漫画或周边企划。",
         },
         {
           question: "需要账户才能使用吗？",
@@ -479,7 +479,7 @@ export default {
             "当然！你可以设计侦探社成员、黑手党高层、公会特使或独行异能者，自由混搭文学灵感。",
         },
         {
-          question: "未来会推出更多异能题材的 OC Maker 吗？",
+          question: "未来会推出更多异能题材的 OC 生成器 吗？",
           answer:
             "会的！我们持续扩展以异能与文学为核心的主题，欢迎关注 ocmaker.app 的后续更新。",
         },
@@ -491,7 +491,7 @@ export default {
         "无需绘画技能，只要描述即可加入横滨的超自然角力，创造独一无二的《文豪野犬》角色。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

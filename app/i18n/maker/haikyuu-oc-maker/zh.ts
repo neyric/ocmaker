@@ -357,7 +357,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Haikyuu!! OC Maker",
+      title: "排球少年 OC 生成器",
       description: "输入角色设定，几秒内生成拥有飞跃梦想的排球角色形象。",
     },
     step: {
@@ -382,12 +382,12 @@ export default {
       ],
     },
     examples: {
-      title: "排球角色示例",
-      description: "浏览使用 Haikyuu!! OC Maker 文字提示生成的热血球员。",
+      title: "排球 OC 示例",
+      description: "浏览使用 排球少年 OC 生成器 文字提示生成的热血球员。",
       examples,
     },
     features: {
-      title: "Haikyuu!! OC Maker 的特色",
+      title: "排球少年 OC 生成器 的特色",
       description: "专注排球竞技风格，帮助你快速扩充球队阵容与宿敌名单。",
       features: [
         {
@@ -424,9 +424,9 @@ export default {
       description: "还有问题？欢迎留言至 support@ocmaker.app",
       faqs: [
         {
-          question: "Haikyuu!! OC Maker 是什么？如何运作？",
+          question: "排球少年 OC 生成器 是什么？如何运作？",
           answer:
-            "Haikyuu!! OC Maker 是专为《排球少年!!》打造的 AI 工具。描述角色的外貌、位置与打法后，即可生成动画风的排球角色图像。",
+            "排球少年 OC 生成器 是专为《排球少年!!》打造的 AI 工具。描述角色的外貌、位置与打法后，即可生成动画风的排球角色图像。",
         },
         {
           question: "如何让角色更具原作感？",
@@ -446,7 +446,7 @@ export default {
         {
           question: "生成的角色能否商用？",
           answer:
-            "当然可以！你用 Haikyuu!! OC Maker 创作的原创角色归你所有，适用于个人或商业计划。",
+            "当然可以！你用 排球少年 OC 生成器 创作的原创角色归你所有，适用于个人或商业计划。",
         },
         {
           question: "需要注册账号才能使用吗？",
@@ -459,7 +459,7 @@ export default {
             "绝对可以！可自由设计来自各校或原创球队的球员、经理乃至教练。",
         },
         {
-          question: "未来会有其他运动番主题的 OC Maker 吗？",
+          question: "未来会有其他运动番主题的 OC 生成器 吗？",
           answer: "会的！我们正扩展更多运动题材，欢迎关注 ocmaker.app 的更新。",
         },
       ],
@@ -469,7 +469,7 @@ export default {
       description: "无需绘画技能，只要描述，就能让原创球员高高跃起、热血扣杀。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },

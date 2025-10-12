@@ -369,7 +369,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Blue Archive OC Maker",
+      title: "蔚蓝档案 OC 生成器",
       description: "输入角色设定，即刻获得基沃托斯风格的学生立绘与任务档案。",
     },
     step: {
@@ -396,13 +396,13 @@ export default {
     },
     examples: {
       title: "蔚蓝档案学生示例",
-      description: "浏览由 Blue Archive OC Maker 生成的学生角色造型。",
+      description: "浏览由 蔚蓝档案 OC 生成器 生成的学生角色造型。",
       examples,
     },
     features: {
-      title: "Blue Archive OC Maker 有何特别之处？",
+      title: "蔚蓝档案 OC 生成器 有何特别之处？",
       description:
-        "Blue Archive OC Maker 针对基沃托斯世界调校，只要描述即可生成带有枪械与 EX 技能的学生形象。",
+        "蔚蓝档案 OC 生成器 针对基沃托斯世界调校，只要描述即可生成带有枪械与 EX 技能的学生形象。",
       features: [
         {
           label: "学园氛围还原",
@@ -441,9 +441,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "Blue Archive OC Maker 是什么？",
+          question: "蔚蓝档案 OC 生成器 是什么？",
           answer:
-            "Blue Archive OC Maker 是为《蔚蓝档案》打造的 AI 工具。描述学生外貌、社团与技能后，系统会生成对应风格的角色图像。",
+            "蔚蓝档案 OC 生成器 是为《蔚蓝档案》打造的 AI 工具。描述学生外貌、社团与技能后，系统会生成对应风格的角色图像。",
         },
         {
           question: "如何让角色更像基沃托斯学生？",
@@ -463,7 +463,7 @@ export default {
         {
           question: "我能把角色用在同人企划或 TRPG 吗？",
           answer:
-            "当然可以！你用 Blue Archive OC Maker 创作的角色归你所有，可用于同人活动与剧本演出。",
+            "当然可以！你用 蔚蓝档案 OC 生成器 创作的角色归你所有，可用于同人活动与剧本演出。",
         },
         {
           question: "需要注册账号才能生成吗？",
@@ -475,9 +475,9 @@ export default {
           answer: "可以！尽情混搭学园与社团背景，打造跨校合作或转校生剧情。",
         },
         {
-          question: "还会推出其他校园主题的 OC Maker 吗？",
+          question: "还会推出其他校园主题的 OC 生成器 吗？",
           answer:
-            "会的！我们会持续扩充 OC Maker 列表，欢迎关注 ocmaker.app 的最新消息。",
+            "会的！我们会持续扩充 OC 生成器 列表，欢迎关注 ocmaker.app 的最新消息。",
         },
       ],
     },

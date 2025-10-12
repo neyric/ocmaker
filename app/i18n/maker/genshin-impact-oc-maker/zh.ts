@@ -369,7 +369,7 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "Genshin Impact OC Maker",
+      title: "原神 OC 生成器",
       description: "输入角色设定，即刻生成原神风格的元素冒险者。",
     },
     step: {
@@ -394,12 +394,12 @@ export default {
       ],
     },
     examples: {
-      title: "原神角色示例",
-      description: "浏览使用 Genshin Impact OC Maker 文字提示生成的冒险者。",
+      title: "原神 OC 示例",
+      description: "浏览使用 原神 OC 生成器 文字提示生成的冒险者。",
       examples,
     },
     features: {
-      title: "Genshin Impact OC Maker 的特色",
+      title: "原神 OC 生成器 的特色",
       description: "专为提瓦特世界调校，助你快速打造元素华丽的原创角色。",
       features: [
         {
@@ -435,9 +435,9 @@ export default {
       description: "还有疑问？欢迎写信至 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Genshin Impact OC Maker？如何运作？",
+          question: "什么是 原神 OC 生成器？如何运作？",
           answer:
-            "Genshin Impact OC Maker 是专为《原神》设计的 AI 工具。描述你的角色后，即可生成具有原神风格的图像。",
+            "原神 OC 生成器 是专为《原神》设计的 AI 工具。描述你的角色后，即可生成具有原神风格的图像。",
         },
         {
           question: "如何让角色更像提瓦特居民？",
@@ -456,7 +456,7 @@ export default {
         {
           question: "生成的角色可用于商用吗？",
           answer:
-            "可以！你用 Genshin Impact OC Maker 创作的原创角色归你所有，可用于个人或商业用途。",
+            "可以！你用 原神 OC 生成器 创作的原创角色归你所有，可用于个人或商业用途。",
         },
         {
           question: "需要注册账号才能生成吗？",
@@ -468,9 +468,9 @@ export default {
           answer: "当然可以。可重复生成或修改提示，直到角色完全符合你的构想。",
         },
         {
-          question: "未来会推出其他开放世界题材的 OC Maker 吗？",
+          question: "未来会推出其他开放世界题材的 OC 生成器 吗？",
           answer:
-            "会的！我们持续扩充其他 RPG 世界的 OC Maker，欢迎关注 ocmaker.app 的最新动态。",
+            "会的！我们持续扩充其他 RPG 世界的 OC 生成器，欢迎关注 ocmaker.app 的最新动态。",
         },
       ],
     },
@@ -479,7 +479,7 @@ export default {
       description: "无需绘画技能，只要描绘，就能让原创冒险者踏遍七国。",
       btns: {
         start: "开始创作",
-        explore: "探索角色示例",
+        explore: "探索 OC 示例",
       },
     },
   },
