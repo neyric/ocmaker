@@ -120,6 +120,22 @@ export default {
       ],
     },
   },
+  profile: {
+    edit: {
+      title: "Edit Profile",
+      description: "Update your profile information",
+      avatarDesc: "Click to upload new profile picture",
+      nickname: "Nickname",
+      nicknameDesc: "Your display name (2-50 characters)",
+      nicknamePlaceholder: "Enter your display name",
+      username: "Username",
+      usernamePlaceholder: "Enter your unique username",
+      bio: "Bio",
+      bioPlaceholder: "Tell us a little about yourself...",
+      confirm: "Save Changes",
+      cancel: "Cancel",
+    },
+  },
 
   header: {
     navigation: {

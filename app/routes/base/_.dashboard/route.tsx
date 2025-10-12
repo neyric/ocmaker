@@ -9,6 +9,7 @@ import {
   HelpSupportSection,
   HeroSection,
   UserInfoSection,
+  type UserInfoSectionCopy,
 } from "~/components/pages/dashboard";
 import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
@@ -94,6 +95,68 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
     navigate("./", { replace: true });
   };
 
+  const subscriptionBenefitsRaw = (page.contents?.subscription?.benefits ??
+    []) as string[];
+  const defaultBenefits = [
+    "Unlimited video generation",
+    "Priority processing",
+    "Advanced customization options",
+    "Email support",
+  ];
+  const subscriptionBenefitsFiltered = subscriptionBenefitsRaw.filter(
+    (item): item is string => typeof item === "string"
+  );
+  const subscriptionBenefits = subscriptionBenefitsFiltered.length
+    ? subscriptionBenefitsFiltered
+    : defaultBenefits.map((benefit, index) =>
+        ct(`contents.subscription.benefits.${index}`, undefined, benefit)
+      );
+
+  const userInfoCopy: UserInfoSectionCopy = {
+    info: {
+      title: ct("contents.userInfo.title"),
+      editProfile: ct("contents.userInfo.editProfile"),
+      avatarAlt: ct("contents.userInfo.avatarAlt"),
+      defaultName: ct("contents.userInfo.defaultName"),
+      memberSinceDescription: ct("contents.userInfo.memberSinceDesc"),
+      emailLabel: ct("contents.userInfo.email"),
+      memberSinceLabel: ct("contents.userInfo.memberSince"),
+    },
+    usage: {
+      title: ct("contents.userInfo.usage.title"),
+      creditsRemaining: ct("contents.userInfo.usage.remaining"),
+      videosCreated: ct("contents.userInfo.usage.created"),
+    },
+    subscription: {
+      title: ct("contents.subscription.title"),
+      manage: ct("contents.subscription.manage"),
+      upgrade: ct("contents.subscription.upgrade"),
+      currentPlanLabel: ct("contents.subscription.current"),
+      defaultPlanName: ct("contents.subscription.defaultPlan"),
+      statusLabel: ct("contents.subscription.statusLabel"),
+      statuses: {
+        noActive: ct("contents.subscription.status.none"),
+        cancelledActive: ct("contents.subscription.status.cancelledActive"),
+        active: ct("contents.subscription.status.active"),
+        cancelled: ct("contents.subscription.status.cancelled"),
+        expired: ct("contents.subscription.status.expired"),
+        unknown: ct("contents.subscription.status.unknown"),
+      },
+      expirationLabels: {
+        activeUntil: ct("contents.subscription.expiration.activeUntil"),
+        expiresOn: ct("contents.subscription.expiration.expiresOn"),
+      },
+      benefitsTitle: ct("contents.subscription.benefitsTitle"),
+      benefits: subscriptionBenefits,
+      upgradeTitle: ct("contents.subscription.upgradeTitle"),
+      upgradeDescription: ct("contents.subscription.upgradeDescription"),
+      viewPlans: ct("contents.subscription.viewPlans"),
+    },
+    general: {
+      notAvailable: ct("contents.general.notAvailable"),
+    },
+  };
+
   const supportOptions = [
     {
       icon: (
@@ -132,6 +195,7 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
         credits={credits}
         subscription={subscription}
         onEditInfo={handleEdit}
+        copy={userInfoCopy}
       />
 
       <HelpSupportSection

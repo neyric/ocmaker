@@ -22,6 +22,7 @@ import {
   DrawerTitle,
 } from "~/components/ui/drawer";
 import { useBreakpoint } from "~/hooks/dom";
+import { useTranslate } from "~/i18n";
 import { updateProfileSchema } from "~/schema/profile";
 
 export interface EditProfileDialogRef {
@@ -39,6 +40,8 @@ export const EditProfileDialog = forwardRef<
   EditProfileDialogRef,
   EditProfileDialogProps
 >(({ onSuccess }, ref) => {
+  const t = useTranslate();
+
   const [open, setOpen] = useState(false);
   const [breakpoint] = useBreakpoint();
   const isMobile = breakpoint === "xs" || breakpoint === "sm";
@@ -55,19 +58,12 @@ export const EditProfileDialog = forwardRef<
     },
   });
 
-  const [avatar, username] = form.watch(["avatar", "username"]);
+  const [avatar] = form.watch(["avatar"]);
   const avatarUrl = useMemo(() => {
     if (!user && !avatar) return null;
     if (!avatar) return user?.avatar ?? null;
     return URL.createObjectURL(avatar);
   }, [avatar, user]);
-
-  const _profileUrl = useMemo(() => {
-    if (!globalThis.window) return;
-    if (!username) return "";
-    // Since we removed profile routes, we'll just show the username
-    return `@${username}`;
-  }, [username]);
 
   // 使用 useMutation 处理更新请求
   const updateProfileMutation = useMutation({
@@ -134,7 +130,7 @@ export const EditProfileDialog = forwardRef<
             }}
           />
         </div>
-        <p className="label text-sm">Click to upload new profile picture</p>
+        <p className="label text-sm">{t("profile.edit.avatarDesc")}</p>
         {form.formState.errors.avatar && (
           <span className="text-error text-sm">
             {form.formState.errors.avatar.message}
@@ -158,7 +154,7 @@ export const EditProfileDialog = forwardRef<
         )}
       </fieldset>
 
-      {/* <fieldset className="fieldset">
+      <fieldset className="fieldset">
         <legend className="fieldset-legend">Username</legend>
         <input
           type="text"
@@ -166,15 +162,15 @@ export const EditProfileDialog = forwardRef<
           className="input w-full"
           {...form.register("username")}
         />
-        <p className="label">
+        {/* <p className="label">
           Profile: <span className="underline">{profileUrl}</span>
-        </p>
+        </p> */}
         {form.formState.errors.username && (
           <span className="text-error text-sm">
             {form.formState.errors.username.message}
           </span>
         )}
-      </fieldset> */}
+      </fieldset>
 
       <fieldset className="fieldset">
         <legend className="fieldset-legend">Bio</legend>

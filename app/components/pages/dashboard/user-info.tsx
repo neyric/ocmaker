@@ -13,11 +13,57 @@ import { Link } from "~/components/common";
 import { GridSection } from "~/components/ui/grid-section";
 import type { Subscription } from "~/drizzle/schema";
 
+interface UserInfoSectionCopy {
+  info: {
+    title: string;
+    editProfile: string;
+    avatarAlt: string;
+    defaultName: string;
+    memberSinceDescription: string;
+    emailLabel: string;
+    memberSinceLabel: string;
+  };
+  usage: {
+    title: string;
+    creditsRemaining: string;
+    videosCreated: string;
+  };
+  subscription: {
+    title: string;
+    manage: string;
+    upgrade: string;
+    currentPlanLabel: string;
+    defaultPlanName: string;
+    statusLabel: string;
+    statuses: {
+      noActive: string;
+      cancelledActive: string;
+      active: string;
+      cancelled: string;
+      expired: string;
+      unknown: string;
+    };
+    expirationLabels: {
+      activeUntil: string;
+      expiresOn: string;
+    };
+    benefitsTitle: string;
+    benefits: string[];
+    upgradeTitle: string;
+    upgradeDescription: string;
+    viewPlans: string;
+  };
+  general: {
+    notAvailable: string;
+  };
+}
+
 interface UserInfoSectionProps {
   user: UserInfo;
   credits: number;
   subscription?: Subscription | null;
   onEditInfo?: () => void;
+  copy: UserInfoSectionCopy;
 }
 
 export function UserInfoSection({
@@ -25,11 +71,12 @@ export function UserInfoSection({
   credits,
   subscription,
   onEditInfo,
+  copy,
 }: UserInfoSectionProps) {
   const hasActiveSubscription = subscription?.status === "active";
 
   const formatDate = (timestamp?: string | number | Date) => {
-    if (!timestamp) return "N/A";
+    if (!timestamp) return copy.general.notAvailable;
     const date = timestamp instanceof Date ? timestamp : new Date(timestamp);
     return date.toLocaleDateString("en-US", {
       year: "numeric",
@@ -39,21 +86,21 @@ export function UserInfoSection({
   };
 
   const getSubscriptionStatus = () => {
-    if (!subscription) return "No active subscription";
+    if (!subscription) return copy.subscription.statuses.noActive;
 
     if (subscription.cancel_at) {
-      return "Cancelled (Active until expiration)";
+      return copy.subscription.statuses.cancelledActive;
     }
 
     switch (subscription.status) {
       case "active":
-        return "Active";
+        return copy.subscription.statuses.active;
       case "cancelled":
-        return "Cancelled";
+        return copy.subscription.statuses.cancelled;
       case "expired":
-        return "Expired";
+        return copy.subscription.statuses.expired;
       default:
-        return "Unknown";
+        return copy.subscription.statuses.unknown;
     }
   };
 
@@ -86,14 +133,14 @@ export function UserInfoSection({
         <div className="p-4 sm:p-6 space-y-6 md:border-r border-b md:border-b-0 border-grid-border">
           <div className="flex items-start justify-between">
             <h2 className="text-2xl font-bold text-base-content">
-              User Information
+              {copy.info.title}
             </h2>
             <button
               className="btn btn-sm bg-white text-black gap-2"
               onClick={handleEditProfile}
             >
               <Settings className="h-4 w-4" />
-              Edit Profile
+              {copy.info.editProfile}
             </button>
           </div>
 
@@ -103,7 +150,7 @@ export function UserInfoSection({
               {user.avatar ? (
                 <img
                   src={user.avatar}
-                  alt={user.name || "User avatar"}
+                  alt={user.name || copy.info.avatarAlt}
                   className="h-16 w-16 rounded-full object-cover ring-2 ring-primary/10"
                 />
               ) : (
@@ -114,10 +161,13 @@ export function UserInfoSection({
             </div>
             <div className="flex-1 min-w-0">
               <h3 className="text-xl font-semibold text-base-content truncate">
-                {user.name || "User"}
+                {user.name || copy.info.defaultName}
               </h3>
               <p className="text-sm text-base-content/60">
-                Member since {formatDate(user.created_at)}
+                {copy.info.memberSinceDescription.replace(
+                  "{date}",
+                  formatDate(user.created_at),
+                )}
               </p>
             </div>
           </div>
@@ -128,7 +178,7 @@ export function UserInfoSection({
               <Mail className="h-5 w-5 text-base-content/60" />
               <div>
                 <p className="text-xs font-medium text-base-content/60">
-                  Email
+                  {copy.info.emailLabel}
                 </p>
                 <p className="text-base text-base-content">{user.email}</p>
               </div>
@@ -138,7 +188,7 @@ export function UserInfoSection({
               <Calendar className="h-5 w-5 text-base-content/60" />
               <div>
                 <p className="text-xs font-medium text-base-content/60">
-                  Member Since
+                  {copy.info.memberSinceLabel}
                 </p>
                 <p className="text-base text-base-content">
                   {formatDate(user.created_at)}
@@ -150,7 +200,7 @@ export function UserInfoSection({
           {/* Usage Statistics */}
           <div className="border-t border-grid-border/50 pt-4">
             <h4 className="text-lg font-semibold text-base-content mb-3">
-              Usage Statistics
+              {copy.usage.title}
             </h4>
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center p-3 bg-base-200/50 rounded-lg">
@@ -158,12 +208,14 @@ export function UserInfoSection({
                   {credits || 0}
                 </p>
                 <p className="text-sm text-base-content/60">
-                  Credits Remaining
+                  {copy.usage.creditsRemaining}
                 </p>
               </div>
               <div className="text-center p-3 bg-base-200/50 rounded-lg">
                 <p className="text-2xl font-bold text-primary">0</p>
-                <p className="text-sm text-base-content/60">Videos Created</p>
+                <p className="text-sm text-base-content/60">
+                  {copy.usage.videosCreated}
+                </p>
               </div>
             </div>
           </div>
@@ -172,18 +224,18 @@ export function UserInfoSection({
           <div className="space-y-6">
             <div className="flex items-start justify-between">
               <h2 className="text-2xl font-bold text-base-content">
-                Subscription
+                {copy.subscription.title}
               </h2>
               {hasActiveSubscription ? (
                 <button className="btn btn-outline btn-sm gap-2">
                   <CreditCard className="h-4 w-4" />
-                  Manage
+                  {copy.subscription.manage}
                 </button>
               ) : (
                 <Link to="/pricing">
                   <button className="btn btn-sm bg-white text-black gap-2">
                     <Crown className="h-4 w-4" />
-                    Upgrade
+                    {copy.subscription.upgrade}
                     <ArrowUpRight className="h-4 w-4" />
                   </button>
                 </Link>
@@ -196,10 +248,10 @@ export function UserInfoSection({
                 <Crown className="h-5 w-5 text-primary/60" />
                 <div>
                   <p className="text-xs font-medium text-base-content/60">
-                    Current Plan
+                    {copy.subscription.currentPlanLabel}
                   </p>
                   <p className="text-base text-base-content">
-                    {subscription?.plan_type || "Free"}
+                    {subscription?.plan_type || copy.subscription.defaultPlanName}
                   </p>
                 </div>
               </div>
@@ -216,7 +268,7 @@ export function UserInfoSection({
 
                 <div>
                   <p className="text-xs font-medium text-base-content/60">
-                    Status
+                    {copy.subscription.statusLabel}
                   </p>
                   <p className={`text-base ${getStatusColor()}`}>
                     {getSubscriptionStatus()}
@@ -229,7 +281,9 @@ export function UserInfoSection({
                   <Calendar className="h-5 w-5 text-base-content/60" />
                   <div>
                     <p className="text-sm font-medium text-base-content/60">
-                      {subscription.cancel_at ? "Active Until" : "Expires On"}
+                      {subscription.cancel_at
+                        ? copy.subscription.expirationLabels.activeUntil
+                        : copy.subscription.expirationLabels.expiresOn}
                     </p>
                     <p className="text-base text-base-content">
                       {formatDate(subscription.expired_at)}
@@ -243,40 +297,29 @@ export function UserInfoSection({
             {hasActiveSubscription ? (
               <div className="border-t border-grid-border/50 pt-4">
                 <h4 className="text-lg font-semibold text-base-content mb-3">
-                  Current Plan Benefits
+                  {copy.subscription.benefitsTitle}
                 </h4>
                 <div className="space-y-2 text-sm text-base-content/70">
-                  <div className="flex items-center gap-2">
-                    <div className="h-1.5 w-1.5 rounded-full bg-primary"></div>
-                    <span>Unlimited video generation</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="h-1.5 w-1.5 rounded-full bg-primary"></div>
-                    <span>Priority processing</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="h-1.5 w-1.5 rounded-full bg-primary"></div>
-                    <span>Advanced customization options</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="h-1.5 w-1.5 rounded-full bg-primary"></div>
-                    <span>Email support</span>
-                  </div>
+                  {copy.subscription.benefits.map((benefit) => (
+                    <div key={benefit} className="flex items-center gap-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-primary"></div>
+                      <span>{benefit}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             ) : (
               <div className="border-t border-grid-border/50 pt-4">
                 <h4 className="text-lg font-semibold text-base-content mb-3">
-                  Upgrade to Premium
+                  {copy.subscription.upgradeTitle}
                 </h4>
                 <p className="text-sm text-base-content/70 mb-4">
-                  Get unlimited access to all features and create amazing videos
-                  without limitations.
+                  {copy.subscription.upgradeDescription}
                 </p>
                 <Link to="/pricing">
                   <button className="btn btn-primary w-full gap-2">
                     <Crown className="h-4 w-4" />
-                    View Plans
+                    {copy.subscription.viewPlans}
                     <ArrowUpRight className="h-4 w-4" />
                   </button>
                 </Link>
@@ -288,3 +331,5 @@ export function UserInfoSection({
     </GridSection>
   );
 }
+
+export type { UserInfoSectionCopy };
