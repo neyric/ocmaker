@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import currency from "currency.js";
 import {
   ArrowUpRight,
   Calendar,
@@ -26,11 +27,13 @@ interface UserInfoSectionCopy {
   usage: {
     title: string;
     creditsRemaining: string;
-    videosCreated: string;
+    imageCreated: string;
   };
   subscription: {
     title: string;
     manage: string;
+    cancel: string;
+    refund: string;
     upgrade: string;
     currentPlanLabel: string;
     defaultPlanName: string;
@@ -61,16 +64,20 @@ interface UserInfoSectionCopy {
 interface UserInfoSectionProps {
   user: UserInfo;
   credits: number;
+  createdCount: number;
   subscription?: Subscription | null;
   onEditInfo?: () => void;
+  onSubscriptionCancel: () => void;
   copy: UserInfoSectionCopy;
 }
 
 export function UserInfoSection({
   user,
   credits,
+  createdCount,
   subscription,
   onEditInfo,
+  onSubscriptionCancel,
   copy,
 }: UserInfoSectionProps) {
   const hasActiveSubscription = subscription?.status === "active";
@@ -166,7 +173,7 @@ export function UserInfoSection({
               <p className="text-sm text-base-content/60">
                 {copy.info.memberSinceDescription.replace(
                   "{date}",
-                  formatDate(user.created_at),
+                  formatDate(user.created_at)
                 )}
               </p>
             </div>
@@ -205,16 +212,22 @@ export function UserInfoSection({
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center p-3 bg-base-200/50 rounded-lg">
                 <p className="text-2xl font-bold text-primary">
-                  {credits || 0}
+                  {currency(credits || 0, { precision: 0 }).format({
+                    symbol: "",
+                  })}
                 </p>
                 <p className="text-sm text-base-content/60">
                   {copy.usage.creditsRemaining}
                 </p>
               </div>
               <div className="text-center p-3 bg-base-200/50 rounded-lg">
-                <p className="text-2xl font-bold text-primary">0</p>
+                <p className="text-2xl font-bold text-primary">
+                  {currency(createdCount || 0, { precision: 0 }).format({
+                    symbol: "",
+                  })}
+                </p>
                 <p className="text-sm text-base-content/60">
-                  {copy.usage.videosCreated}
+                  {copy.usage.imageCreated}
                 </p>
               </div>
             </div>
@@ -227,9 +240,12 @@ export function UserInfoSection({
                 {copy.subscription.title}
               </h2>
               {hasActiveSubscription ? (
-                <button className="btn btn-outline btn-sm gap-2">
+                <button
+                  className="btn btn-outline btn-sm gap-2"
+                  onClick={() => onSubscriptionCancel()}
+                >
                   <CreditCard className="h-4 w-4" />
-                  {copy.subscription.manage}
+                  {copy.subscription.cancel}
                 </button>
               ) : (
                 <Link to="/pricing">
@@ -251,19 +267,14 @@ export function UserInfoSection({
                     {copy.subscription.currentPlanLabel}
                   </p>
                   <p className="text-base text-base-content">
-                    {subscription?.plan_type || copy.subscription.defaultPlanName}
+                    {copy.subscription.defaultPlanName}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-3">
                 <MonitorDot
-                  className={clsx(
-                    "h-5 w-5",
-                    hasActiveSubscription
-                      ? "text-success"
-                      : "text-base-content/30"
-                  )}
+                  className={clsx("h-5 w-5", "text-base-content/80")}
                 />
 
                 <div>
@@ -294,7 +305,7 @@ export function UserInfoSection({
             </div>
 
             {/* Plan Features or Upgrade Prompt */}
-            {hasActiveSubscription ? (
+            {subscription ? (
               <div className="border-t border-grid-border/50 pt-4">
                 <h4 className="text-lg font-semibold text-base-content mb-3">
                   {copy.subscription.benefitsTitle}

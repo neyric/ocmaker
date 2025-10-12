@@ -15,7 +15,6 @@ import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
 import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
-import { dashboardFaqs } from "./content";
 import {
   EditProfileDialog,
   type EditProfileDialogRef,
@@ -78,9 +77,13 @@ export async function loader({ request, context }: Route.LoaderArgs) {
   };
 }
 
-export default function Dashboard({ loaderData }: Route.ComponentProps) {
+export default function Dashboard({
+  matches,
+  loaderData,
+}: Route.ComponentProps) {
+  const pricing = matches[0].loaderData.pricing;
+
   const { userInfo, credits, subscription, page } = loaderData;
-  console.log("page", page);
   const ct = useTranslate(page);
 
   const navigate = useNavigate();
@@ -95,22 +98,13 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
     navigate("./", { replace: true });
   };
 
-  const subscriptionBenefitsRaw = (page.contents?.subscription?.benefits ??
-    []) as string[];
-  const defaultBenefits = [
-    "Unlimited video generation",
-    "Priority processing",
-    "Advanced customization options",
-    "Email support",
-  ];
-  const subscriptionBenefitsFiltered = subscriptionBenefitsRaw.filter(
-    (item): item is string => typeof item === "string"
-  );
-  const subscriptionBenefits = subscriptionBenefitsFiltered.length
-    ? subscriptionBenefitsFiltered
-    : defaultBenefits.map((benefit, index) =>
-        ct(`contents.subscription.benefits.${index}`, undefined, benefit)
-      );
+  const activeSubscription = subscription
+    ? pricing.subscription.find((item) => item.id === subscription.plan_type)
+    : null;
+
+  console.log("activeSubscription", activeSubscription, subscription);
+
+  const subscriptionBenefits = activeSubscription?.benefits ?? [];
 
   const userInfoCopy: UserInfoSectionCopy = {
     info: {
@@ -125,14 +119,18 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
     usage: {
       title: ct("contents.userInfo.usage.title"),
       creditsRemaining: ct("contents.userInfo.usage.remaining"),
-      videosCreated: ct("contents.userInfo.usage.created"),
+      imageCreated: ct("contents.userInfo.usage.created"),
     },
     subscription: {
       title: ct("contents.subscription.title"),
+      cancel: ct("contents.subscription.cancel"),
+      refund: ct("contents.subscription.refund"),
       manage: ct("contents.subscription.manage"),
       upgrade: ct("contents.subscription.upgrade"),
       currentPlanLabel: ct("contents.subscription.current"),
-      defaultPlanName: ct("contents.subscription.defaultPlan"),
+      defaultPlanName: activeSubscription
+        ? activeSubscription.title
+        : ct("contents.subscription.defaultPlan"),
       statusLabel: ct("contents.subscription.statusLabel"),
       statuses: {
         noActive: ct("contents.subscription.status.none"),
@@ -146,7 +144,8 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
         activeUntil: ct("contents.subscription.expiration.activeUntil"),
         expiresOn: ct("contents.subscription.expiration.expiresOn"),
       },
-      benefitsTitle: ct("contents.subscription.benefitsTitle"),
+      benefitsTitle:
+        activeSubscription?.title ?? ct("contents.subscription.benefitsTitle"),
       benefits: subscriptionBenefits,
       upgradeTitle: ct("contents.subscription.upgradeTitle"),
       upgradeDescription: ct("contents.subscription.upgradeDescription"),
@@ -184,6 +183,10 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
 
   const faqs = page.contents.faqs.list;
 
+  const handleCancelSubs = () => {
+    console.log("cancel");
+  };
+
   return (
     <Fragment>
       <HeroSection
@@ -193,8 +196,10 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
       <UserInfoSection
         user={userInfo}
         credits={credits}
+        createdCount={0}
         subscription={subscription}
         onEditInfo={handleEdit}
+        onSubscriptionCancel={handleCancelSubs}
         copy={userInfoCopy}
       />
 

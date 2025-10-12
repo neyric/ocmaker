@@ -13,7 +13,7 @@ export function cookieWrapper() {
   return createCookie("__session", {
     secrets: [env.SESSION_SECRET],
     path: "/",
-    sameSite: "strict",
+    sameSite: "lax",
     httpOnly: true,
     maxAge: 60 * 60 * 24 * 30,
   });

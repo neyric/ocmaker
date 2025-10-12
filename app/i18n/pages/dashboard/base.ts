@@ -21,11 +21,13 @@ export default {
       usage: {
         title: "Usage Statistics",
         remaining: "Credits Remaining",
-        created: "Videos Created",
+        created: "Image Created",
       },
     },
     subscription: {
       title: "Subscription",
+      cancel: "Cancel",
+      refund: "Refund",
       manage: "Manage",
       upgrade: "Upgrade",
       current: "Current Plan",

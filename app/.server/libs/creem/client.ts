@@ -18,7 +18,7 @@ export class CreemApiClient {
   private webhookSecret: string;
 
   constructor(baseUrl?: string, apiKey?: string, webhookSecret?: string) {
-    this.baseUrl = baseUrl || "https://api.creem.io";
+    this.baseUrl = baseUrl || env.CREEM_API;
     this.apiKey = apiKey || env.CREEM_KEY;
     this.webhookSecret = webhookSecret || env.CREEM_WEBHOOK_SECRET;
   }
