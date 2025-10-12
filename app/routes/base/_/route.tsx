@@ -119,7 +119,7 @@ export const loader = async ({ context }: Route.LoaderArgs) => {
       { to: "/", label: t("header.navigation.home") },
       { to: "/maker", label: t("header.navigation.maker") },
       { to: "/pricing", label: t("header.navigation.pricing") },
-      { to: "/my-creations", label: t("header.navigation.myCreations") },
+      // { to: "/my-creations", label: t("header.navigation.myCreations") },
     ],
   };
 

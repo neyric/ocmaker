@@ -31,7 +31,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
     url,
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
@@ -40,7 +40,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
       url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
 
   return [
@@ -73,17 +73,14 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
   const steps = [
     {
-      image: "/assets/img-how-1.webp",
       title: ct("contents.step.steps.0.title"),
       description: ct("contents.step.steps.0.content"),
     },
     {
-      image: "/assets/img-how-2.webp",
       title: ct("contents.step.steps.1.title"),
       description: ct("contents.step.steps.1.content"),
     },
     {
-      image: "/assets/img-how-3.webp",
       title: ct("contents.step.steps.2.title"),
       description: ct("contents.step.steps.2.content"),
     },
@@ -213,12 +210,6 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         createButtonText={ct("contents.hero.createButton")}
       />
 
-      <Steps
-        title={ct("contents.step.title")}
-        description={ct("contents.step.description")}
-        steps={steps}
-      />
-
       <Examples
         title={ct("contents.examples.title")}
         description={ct("contents.examples.description")}
@@ -229,6 +220,12 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         title={ct("contents.features.title")}
         description={ct("contents.features.description")}
         features={features}
+      />
+
+      <Steps
+        title={ct("contents.step.title")}
+        description={ct("contents.step.description")}
+        steps={steps}
       />
 
       <About
