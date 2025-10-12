@@ -321,7 +321,7 @@ export default {
         {
           question: "Can I use these characters commercially?",
           answer:
-            "Yes, created outputs belong to you. Review our terms for details on attribution and acceptable use.",
+            "Yes, everything you create belongs to you and can be used commercially however you like.",
         },
         {
           question: "Do I need art skills?",
@@ -331,7 +331,22 @@ export default {
         {
           question: "Is the OC generator free?",
           answer:
-            "You can try OC Maker with starter credits. Upgrade for faster queues, more outputs, and exclusive styles.",
+            "Backstory generation is free and works without logging in. For OC images, start with the included credits and upgrade anytime for faster queues, more outputs, and exclusive styles.",
+        },
+        {
+          question: "Do you have templates or tips for beginners?",
+          answer:
+            "Yes! We include templates and example characters to help beginners get started. Feel free to use them directly or remix them to suit your story.",
+        },
+        {
+          question: "How detailed can my character description be?",
+          answer:
+            "Describe as many details as you like! The more specific you are, the better the AI captures your ideas. Include appearance, personality, outfits, accessories, and setting elements—OC Maker can handle complex, nuanced prompts.",
+        },
+        {
+          question: "How can I get free credits?",
+          answer:
+            "Invite friends and complete daily check-ins to earn bonus credits. These bonuses are limited, so consider credit packs or a subscription when you need larger amounts.",
         },
       ],
     },
