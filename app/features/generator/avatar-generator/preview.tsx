@@ -82,7 +82,7 @@ export function ProfileGeneratorPreview({
                         disabled={task.data.status !== "succeeded"}
                       >
                         <Download size={12} />
-                        Download
+                        {t("common.download")}
                       </button>
                     </>
                   ) : (

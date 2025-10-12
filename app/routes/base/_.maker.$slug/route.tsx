@@ -31,7 +31,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
     url,
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
@@ -40,7 +40,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
       url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
 
   return [
@@ -165,6 +165,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
   return (
     <Fragment>
+      <div className="h-screen bg-gradient-to-b from-primary/10 to-transparent absolute top-0 inset-x-0" />
       <HeroSection
         key={loaderData.genId + "hero"}
         title={ct("contents.hero.title")}
