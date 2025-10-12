@@ -1,7 +1,6 @@
 User-Agent: *
 Allow: /
 Disallow: /assets/
-Disallow: /dashboard/
 
 Sitemap: {DOMAIN}/sitemap.xml
 

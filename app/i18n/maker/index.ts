@@ -1,5 +1,5 @@
 import { merge } from "lodash-es";
-import { baseLanguage as DEFAULT_LANGUAGE } from "../index";
+import { baseLanguage, baseLanguage as DEFAULT_LANGUAGE } from "../index";
 import type { Language, PageLocale } from "../types";
 
 type PageLocaleLoader = () => Promise<PageLocale>;
@@ -10,8 +10,8 @@ const pageLocaleModules = Object.fromEntries(
   Object.entries(
     import.meta.glob(["./**/*.ts", "!./index.ts"], {
       import: "default",
-    }) as Record<string, PageLocaleLoader>,
-  ).map(([key, loader]) => [key.slice(2, -3), loader] as const),
+    }) as Record<string, PageLocaleLoader>
+  ).map(([key, loader]) => [key.slice(2, -3), loader] as const)
 );
 
 const normalizePageName = (value: string) =>
@@ -31,9 +31,31 @@ const loadLocale = async (loader?: PageLocaleLoader | null) => {
   return result ?? null;
 };
 
+export async function getMakerList(
+  lang?: Language
+): Promise<Record<string, PageLocale>> {
+  const pages = Array.from(
+    new Set(
+      Object.keys(pageLocaleModules).map((key) => {
+        const separatorIndex = key.lastIndexOf("/");
+        return separatorIndex === -1 ? key : key.slice(0, separatorIndex);
+      })
+    )
+  );
+
+  const locales = await Promise.all(
+    pages.map(
+      async (page) =>
+        [page, await getMakerLocale(lang ?? baseLanguage, page)] as const
+    )
+  );
+
+  return Object.fromEntries(locales);
+}
+
 export async function getMakerLocale(
   lang: Language,
-  pageName: string,
+  pageName: string
 ): Promise<PageLocale> {
   const page = normalizePageName(pageName);
 
