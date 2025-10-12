@@ -139,14 +139,16 @@ export const EditProfileDialog = forwardRef<
       </div>
 
       <fieldset className="fieldset">
-        <legend className="fieldset-legend">Nickname</legend>
+        <legend className="fieldset-legend">
+          {t("profile.edit.nickname")}
+        </legend>
         <input
           type="text"
-          placeholder="Enter your display name"
+          placeholder={t("profile.edit.nicknamePlaceholder")}
           className="input w-full"
           {...form.register("nickname")}
         />
-        <p className="label">Your display name (2-50 characters)</p>
+        <p className="label">{t("profile.edit.nicknameDesc")}</p>
         {form.formState.errors.nickname && (
           <span className="text-error text-sm">
             {form.formState.errors.nickname.message}
@@ -155,16 +157,15 @@ export const EditProfileDialog = forwardRef<
       </fieldset>
 
       <fieldset className="fieldset">
-        <legend className="fieldset-legend">Username</legend>
+        <legend className="fieldset-legend">
+          {t("profile.edit.username")}
+        </legend>
         <input
           type="text"
-          placeholder="Enter your unique username"
+          placeholder={t("profile.edit.usernamePlaceholder")}
           className="input w-full"
           {...form.register("username")}
         />
-        {/* <p className="label">
-          Profile: <span className="underline">{profileUrl}</span>
-        </p> */}
         {form.formState.errors.username && (
           <span className="text-error text-sm">
             {form.formState.errors.username.message}
@@ -173,9 +174,9 @@ export const EditProfileDialog = forwardRef<
       </fieldset>
 
       <fieldset className="fieldset">
-        <legend className="fieldset-legend">Bio</legend>
+        <legend className="fieldset-legend">{t("profile.edit.bio")}</legend>
         <textarea
-          placeholder="Tell us a little about yourself..."
+          placeholder={t("profile.edit.bioPlaceholder")}
           className="textarea textarea-bordered h-24 w-full"
           rows={4}
           {...form.register("bio")}
@@ -195,7 +196,7 @@ export const EditProfileDialog = forwardRef<
           onClick={() => setOpen(false)}
           disabled={updateProfileMutation.isPending}
         >
-          Cancel
+          {t("profile.edit.cancel")}
         </button>
         <button
           type="submit"
@@ -205,7 +206,7 @@ export const EditProfileDialog = forwardRef<
           {updateProfileMutation.isPending && (
             <Ring2 size={16} stroke={3} color="white" />
           )}
-          Save Changes
+          {t("profile.edit.confirm")}
         </button>
       </div>
     </form>
@@ -220,9 +221,9 @@ export const EditProfileDialog = forwardRef<
           onOpenAutoFocus={(e) => e.preventDefault()}
         >
           <DrawerHeader>
-            <DrawerTitle>Edit Profile</DrawerTitle>
+            <DrawerTitle>{t("profile.edit.title")}</DrawerTitle>
             <DrawerDescription>
-              Update your profile information
+              {t("profile.edit.description")}
             </DrawerDescription>
           </DrawerHeader>
           <div className="mt-4">
@@ -241,8 +242,8 @@ export const EditProfileDialog = forwardRef<
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <DialogHeader>
-          <DialogTitle>Edit Profile</DialogTitle>
-          <DialogDescription>Update your profile information</DialogDescription>
+          <DialogTitle>{t("profile.edit.title")}</DialogTitle>
+          <DialogDescription>{t("profile.edit.description")}</DialogDescription>
         </DialogHeader>
         <FormContent />
       </DialogContent>
