@@ -2,7 +2,7 @@ import { merge } from "lodash-es";
 import baseLocale from "./base";
 
 export * from "./hooks";
-export { getMakerLocale} from './maker'
+export { getMakerLocale } from "./maker";
 export { getPageLocale } from "./pages";
 export * from "./types";
 export * from "./utils";
@@ -12,9 +12,9 @@ const locales = Object.fromEntries(
     Object.entries(
       import.meta.glob(["./*.ts", "!./type.ts", "!./utils.ts", "!./hooks.ts"], {
         import: "default",
-      })
-    )
-  ).map(([key, value]) => [key.slice(2, -3), value] as const)
+      }),
+    ),
+  ).map(([key, value]) => [key.slice(2, -3), value] as const),
 );
 
 export type LangCode = (typeof languages)[number];

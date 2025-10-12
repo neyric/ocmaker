@@ -1,0 +1,373 @@
+const basePrompt = `
+  WORLD CONTEXT:
+  Universe: My Little Pony
+  Tone: Stay faithful to My Little Pony's worldbuilding, factions, abilities, and storytelling style.
+
+  OUTPUT FORMAT:
+  Name, Role, Appearance, Abilities, Personality, Backstory
+
+  CHARACTER PREFERENCES:
+  {PREFERENCES}
+`;
+
+const backstoryExamples = [
+  {
+    title: "Hero",
+    description:
+      "A determined protagonist representing the heart of My Little Pony.",
+    prompt:
+      "What is your character's name?\nKei Arashi\n\nWhat is their role in My Little Pony?\nFrontline hero standing beside the main cast of My Little Pony\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines My Little Pony\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+  },
+  {
+    title: "Rival",
+    description:
+      "A formidable rival who challenges the heroes of My Little Pony.",
+    prompt:
+      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of My Little Pony?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of My Little Pony\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+  },
+  {
+    title: "Mentor",
+    description:
+      "A seasoned mentor guiding the next generation within My Little Pony.",
+    prompt:
+      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in My Little Pony?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of My Little Pony\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+  },
+];
+
+const ocOptions = [
+  {
+    title: "Gender",
+    key: "gender",
+    unique: true,
+    data: [
+      {
+        label: "Boy",
+        value: "1boy",
+      },
+      {
+        label: "Girl",
+        value: "1girl",
+      },
+      {
+        label: "Non-binary",
+        value: "1person",
+      },
+    ],
+  },
+  {
+    title: "Archetype",
+    key: "archetype",
+    unique: true,
+    data: [
+      {
+        label: "Hero",
+        value: "heroic leader",
+      },
+      {
+        label: "Antihero",
+        value: "antihero vigilante",
+      },
+      {
+        label: "Mentor",
+        value: "mysterious mentor",
+      },
+      {
+        label: "Strategist",
+        value: "brilliant strategist",
+      },
+      {
+        label: "Rival",
+        value: "rebellious rival",
+      },
+      {
+        label: "Guardian",
+        value: "stoic guardian",
+      },
+    ],
+  },
+  {
+    title: "Power Theme",
+    key: "power_theme",
+    data: [
+      {
+        label: "Elemental magic",
+        value: "elemental magic",
+      },
+      {
+        label: "Advanced technology",
+        value: "advanced technology",
+      },
+      {
+        label: "Martial arts",
+        value: "martial arts",
+      },
+      {
+        label: "Spiritual powers",
+        value: "spiritual powers",
+      },
+      {
+        label: "Summoner",
+        value: "summoner",
+      },
+      {
+        label: "Tactical genius",
+        value: "tactical genius",
+      },
+    ],
+  },
+  {
+    title: "Outfit Style",
+    key: "outfit",
+    data: [
+      {
+        label: "Battle armor",
+        value: "battle armor",
+      },
+      {
+        label: "Sleek uniform",
+        value: "sleek uniform",
+      },
+      {
+        label: "Casual streetwear",
+        value: "casual streetwear",
+      },
+      {
+        label: "Formal attire",
+        value: "formal attire",
+      },
+      {
+        label: "Mystic robes",
+        value: "mystic robes",
+      },
+      {
+        label: "Futuristic suit",
+        value: "futuristic suit",
+      },
+    ],
+  },
+  {
+    title: "Personality",
+    key: "personality",
+    data: [
+      {
+        label: "Optimistic",
+        value: "optimistic",
+      },
+      {
+        label: "Stoic",
+        value: "stoic",
+      },
+      {
+        label: "Rebellious",
+        value: "rebellious",
+      },
+      {
+        label: "Compassionate",
+        value: "compassionate",
+      },
+      {
+        label: "Calculating",
+        value: "calculating",
+      },
+      {
+        label: "Chaotic good",
+        value: "chaotic good",
+      },
+    ],
+  },
+  {
+    title: "Expression",
+    key: "expression",
+    unique: true,
+    data: [
+      {
+        label: "Smiling confidence",
+        value: "smiling confidence",
+      },
+      {
+        label: "Determined gaze",
+        value: "determined gaze",
+      },
+      {
+        label: "Brooding intensity",
+        value: "brooding intensity",
+      },
+      {
+        label: "Playful grin",
+        value: "playful grin",
+      },
+      {
+        label: "Calm focus",
+        value: "calm focus",
+      },
+      {
+        label: "Mysterious smirk",
+        value: "mysterious smirk",
+      },
+    ],
+  },
+];
+
+const examples = [
+  {
+    image: "https://cdn.ocmaker.app/example/mlp-oc-generateds-1.webp",
+    prompt:
+      "1girl, pastel rainbow mane, sky blue coat, cutie mark with lightning bolt, unicorn horn, magical sparkles, cheerful expression, My Little Pony style, looking at viewer, simple background, upper body",
+  },
+  {
+    image: "https://cdn.ocmaker.app/example/mlp-oc-generateds-2.webp",
+    prompt:
+      "1girl, lavender mane with silver streaks, white coat, pegasus wings, star cutie mark, gentle smile, My Little Pony style, flying pose, looking at viewer, clouds background, upper body",
+  },
+  {
+    image: "https://cdn.ocmaker.app/example/mlp-oc-generateds-3.webp",
+    prompt:
+      "1girl, emerald green mane, orange coat, earth pony, apple cutie mark, determined expression, My Little Pony style, farming pose, looking at viewer, simple background, upper body",
+  },
+  {
+    image: "https://cdn.ocmaker.app/example/mlp-oc-generateds-4.webp",
+    prompt:
+      "1girl, cotton candy pink mane, mint green coat, unicorn horn, cupcake cutie mark, baker's hat, joyful expression, My Little Pony style, looking at viewer, simple background, upper body",
+  },
+];
+
+export default {
+  meta: {
+    title: "My Little Pony OC Maker",
+    description:
+      "Create your own My Little Pony OC with AI. Design magical ponies, special talents, and friendship adventures in the colorful world of Equestria.",
+  },
+  series: "My Little Pony",
+  backstoryPreset: basePrompt,
+  examples: backstoryExamples,
+  ocOptions,
+  contents: {
+    hero: {
+      title: "My Little Pony OC Maker",
+      description:
+        "Create your own My Little Pony OC with AI. Design magical ponies, special talents, and friendship adventures in the colorful world of Equestria.",
+    },
+    step: {
+      title: "How to Make My Little Pony OC",
+      description:
+        "Creating your perfect pony friend is magical and simple. Follow these steps to bring your Equestrian character to life.",
+      steps: [
+        {
+          title: "Choose Your Pony Type and Colors",
+          description:
+            "Select whether your pony is a unicorn, pegasus, or earth pony. Choose your coat color, mane style, and eye color. Pastel tones and vibrant combinations work best for authentic MLP style.",
+        },
+        {
+          title: "Design Special Talent and Cutie Mark",
+          description:
+            "Describe your pony's special talent and cutie mark symbol. This could be anything from magic spells to weather control, or artistic abilities. The cutie mark should represent their unique gift.",
+        },
+        {
+          title: "Generate Your Magical Pony",
+          description:
+            "Click 'Generate Character' to create your My Little Pony OC. Choose from multiple AI-generated designs that capture the friendship, magic, and wonder of Equestria.",
+        },
+      ],
+    },
+    examples: {
+      title: "My Little Pony Examples",
+      description:
+        "Discover enchanting pony characters created with text prompts using the My Little Pony OC Maker.",
+      examples,
+    },
+    features: {
+      title: "What is My Little Pony OC Maker?",
+      description:
+        "My Little Pony OC Maker specializes in creating authentic Equestrian ponies. Design characters with magical abilities, unique cutie marks, and the spirit of friendship.",
+      features: [
+        {
+          label: "Authentic MLP Art Style",
+          description:
+            "Generate ponies that perfectly match the distinctive My Little Pony aesthetic, from expressive eyes to colorful manes and magical cutie marks.",
+        },
+        {
+          label: "Magical Pony Types",
+          description:
+            "Create unicorns with magical abilities, pegasi with weather powers, or earth ponies with nature connections. Each type brings unique characteristics and talents.",
+        },
+        {
+          label: "Quick Pony Creation",
+          description:
+            "Design beautiful MLP characters in seconds, letting you focus on developing their personalities, friendships, and magical adventures in Equestria.",
+        },
+        {
+          label: "High-Quality Cartoon Artwork",
+          description:
+            "Powered by AI trained on MLP's vibrant visual style, delivering character art that captures the show's warmth, magic, and friendship themes.",
+        },
+        {
+          label: "Multiple Design Options",
+          description:
+            "Generate several pony variations per prompt, exploring different coat colors, mane styles, and cutie mark designs to find your perfect character.",
+        },
+        {
+          label: "Equestrian World Integration",
+          description:
+            "Create ponies that naturally belong in Equestria, with authentic magical elements, friendship values, and connections to the MLP universe.",
+        },
+      ],
+    },
+    faqs: {
+      title: "Frequently Asked Questions",
+      description: "Have another question? Contact us at support@ocmaker.app",
+      faqs: [
+        {
+          question: "What is My Little Pony OC Maker and how does it work?",
+          answer:
+            "My Little Pony OC Maker is an AI tool specialized for creating original pony characters. Describe your pony's type, colors, and special talent, and our AI generates authentic MLP-style artwork.",
+        },
+        {
+          question:
+            "How can I create better ponies with My Little Pony OC Maker?",
+          answer:
+            "Include specific details like pony type (unicorn, pegasus, earth pony), coat and mane colors, cutie mark design, and personality traits. The more MLP-specific elements you include, the better the results.",
+        },
+        {
+          question: "Is My Little Pony OC Maker free to use?",
+          answer:
+            "Yes, My Little Pony OC Maker offers free character generation with core features. Premium plans provide faster generation, more customization options, and advanced magical elements.",
+        },
+        {
+          question: "What makes My Little Pony OC Maker's results so magical?",
+          answer:
+            "Our AI is specifically trained on MLP's art style and universe, understanding pony anatomy, cutie mark symbolism, and the magical elements that make Equestria special.",
+        },
+        {
+          question:
+            "Can I use ponies created with My Little Pony OC Maker commercially?",
+          answer:
+            "Yes, all original characters you create are yours to use for personal and commercial projects. We don't claim ownership of your pony designs.",
+        },
+        {
+          question: "Do I need an account to use My Little Pony OC Maker?",
+          answer:
+            "No account required for basic use. Creating an account allows you to save your ponies, access creation history, and unlock premium magical features.",
+        },
+        {
+          question: "Can I regenerate or modify my pony designs?",
+          answer:
+            "Absolutely! You can regenerate with the same prompt for variations or adjust your description to fine-tune your pony until it perfectly matches your vision.",
+        },
+        {
+          question: "Will you add more cartoon-style OC Makers?",
+          answer:
+            "Yes! We're expanding to include other beloved cartoon universes and animation styles. Follow our updates for new themed OC Makers.",
+        },
+      ],
+    },
+    cta: {
+      title: "Create Your Magical Pony Friend",
+      description:
+        "Design your perfect Equestrian companion — no artistic skills required. Just imagine, describe, and experience the magic of friendship.",
+      btns: {
+        start: "Start Creating",
+        explore: "Explore Characters",
+      },
+    },
+  },
+};

@@ -9,7 +9,7 @@ export * from "./task";
 export type Task = AiTask;
 
 export const calculatorCredits = async (
-  payload?: GenerateDTO
+  payload?: GenerateDTO,
 ): Promise<CalculatorCreditsResult> => {
   const response = await fetch("/api/generate/calcredits", {
     method: "POST",

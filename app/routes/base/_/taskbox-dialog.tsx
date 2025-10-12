@@ -62,11 +62,12 @@ function TaskBoxContent({ tasks, onRemoveTask }: TaskBoxContentProps) {
   const t = useTranslate();
   const renderTasks = useMemo(() => {
     const runningTasks = tasks.filter(
-      (task) => task.data.status === "pending" || task.data.status === "running"
+      (task) =>
+        task.data.status === "pending" || task.data.status === "running",
     );
     const completedTasks = tasks.filter(
       (task) =>
-        task.data.status === "succeeded" || task.data.status === "failed"
+        task.data.status === "succeeded" || task.data.status === "failed",
     );
 
     return runningTasks.concat(completedTasks);
@@ -180,7 +181,7 @@ function WaterfallItem({
     const a = document.createElement("a");
     a.target = "_blank";
     a.href = url;
-    
+
     a.click();
   };
 
@@ -230,7 +231,9 @@ function WaterfallItem({
         )}
       </div>
       <div className="mt-2 px-0.5 text-sm flex items-center justify-between">
-        <div className="text-base-content/50">{dayjs(item.created_at).format("YYYY-MM-DD HH:mm:ss")}</div>
+        <div className="text-base-content/50">
+          {dayjs(item.created_at).format("YYYY-MM-DD HH:mm:ss")}
+        </div>
         <div>
           {item.status === "failed" ? (
             <span className="text-error">Failed</span>

@@ -18,7 +18,7 @@ export function meta({ matches, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical("/pricing", matches[0].loaderData.DOMAIN);
   const alternative = createNormalAlternatives(
     "/pricing",
-    matches[0].loaderData.DOMAIN
+    matches[0].loaderData.DOMAIN,
   );
 
   return [
@@ -51,7 +51,7 @@ export default function Page({ matches, loaderData }: Route.ComponentProps) {
   const products = matches[0].loaderData.pricing;
   const { user } = useUserProfile();
   const setVisibleLoginDialog = useDialogStore(
-    (state) => state.setVisibleLoginDialog
+    (state) => state.setVisibleLoginDialog,
   );
 
   const [loadingProductId, setLoadingProductId] = useState<string>();

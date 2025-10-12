@@ -71,7 +71,7 @@ export function CheckinDialog() {
           <div className="relative">
             <div
               className={clsx(
-                "absolute inset-x-0 -top-6.5 xs:-top-10 xs:pt-px sm:-top-11 flex items-center justify-center"
+                "absolute inset-x-0 -top-6.5 xs:-top-10 xs:pt-px sm:-top-11 flex items-center justify-center",
               )}
             >
               <Image
@@ -208,14 +208,14 @@ function CheckinContent({ stats, isLoading, onCheckin }: CheckinContentProps) {
               key={reward.day}
               className={clsx(
                 "rounded bg-base-200 px-2 py-4",
-                "flex flex-col items-center justify-center gap-1"
+                "flex flex-col items-center justify-center gap-1",
               )}
             >
               {reward.type === "gift" ? (
                 <div
                   className={clsx(
                     "h-11 flex items-center justify-center",
-                    "text-base-content/60 aria-checked:text-[#f3ac3c]"
+                    "text-base-content/60 aria-checked:text-[#f3ac3c]",
                   )}
                   aria-checked={isHighlighted}
                 >
@@ -227,14 +227,14 @@ function CheckinContent({ stats, isLoading, onCheckin }: CheckinContentProps) {
                     "bg-base-300 text-base-content/80 group",
                     "aria-checked:bg-gradient-to-b from-[#fced62] to-[#f3ac3c]",
                     "aria-checked:text-yellow-800",
-                    "size-11 rounded-full flex items-center justify-center"
+                    "size-11 rounded-full flex items-center justify-center",
                   )}
                   aria-checked={isHighlighted}
                 >
                   <div
                     className={clsx(
                       "border-[1.5px] border-grid-border aria-checked:border-yellow-800/40",
-                      "size-9 rounded-full flex items-center justify-center"
+                      "size-9 rounded-full flex items-center justify-center",
                     )}
                     aria-checked={isHighlighted}
                   >

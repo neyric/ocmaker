@@ -15,9 +15,7 @@ export async function preCalcTaskCredits(
       .json<{ error: string }>()
       .catch(() => ({ error: "Request failed" }));
 
-    throw new Error(
-      error.error ?? `Request failed: ${response.statusText}`,
-    );
+    throw new Error(error.error ?? `Request failed: ${response.statusText}`);
   }
 
   return response.json();
@@ -31,9 +29,7 @@ export async function getTaskStatus(taskNo: string): Promise<TaskQueryResult> {
       .json<{ error: string }>()
       .catch(() => ({ error: "Request failed" }));
 
-    throw new Error(
-      error.error ?? `Request failed: ${response.statusText}`,
-    );
+    throw new Error(error.error ?? `Request failed: ${response.statusText}`);
   }
 
   return response.json();

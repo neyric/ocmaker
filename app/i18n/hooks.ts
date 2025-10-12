@@ -9,13 +9,13 @@ interface TranslateFunction {
   (
     key: string,
     params?: Record<string, string | number>,
-    fallback?: string
+    fallback?: string,
   ): string;
   chunk: (
     key: string,
     renderer: (content: string) => ReactNode,
     params?: Record<string, string | number>,
-    fallback?: string
+    fallback?: string,
   ) => ReactNode[];
 }
 
@@ -27,7 +27,7 @@ interface TranslateFunction {
  *   - t.chunk('key.path', (content) => <span>{content}</span>, params) for React components
  */
 export function useTranslate(
-  extraLocale?: Record<string, any>
+  extraLocale?: Record<string, any>,
 ): TranslateFunction {
   const rootData = useRootLoader();
 
@@ -36,7 +36,7 @@ export function useTranslate(
     const fallbackFn = (
       key: string,
       _params?: Record<string, string | number>,
-      fallback?: string
+      fallback?: string,
     ) => {
       return fallback || key;
     };
@@ -46,7 +46,7 @@ export function useTranslate(
       key: string,
       renderer: (content: string) => ReactNode,
       _params?: Record<string, string | number>,
-      fallback?: string
+      fallback?: string,
     ) => {
       const text = fallback || key;
       return [renderer(text)];
@@ -67,7 +67,7 @@ export function useTranslate(
     key: string,
     renderer: (content: string) => ReactNode,
     params?: Record<string, string | number>,
-    fallback?: string
+    fallback?: string,
   ): ReactNode[] => {
     const translation = translateFn(key, params, fallback);
 

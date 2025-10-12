@@ -129,7 +129,7 @@ export class TaskManager {
         // If refund fails, return the failed task data
         console.error(
           `Failed to refund credits for task ${taskNo}:`,
-          refundError
+          refundError,
         );
         return failedTask;
       }
@@ -177,7 +177,7 @@ export class TaskManager {
       } catch (refundError) {
         console.error(
           `Failed to refund credits for task ${taskNo}:`,
-          refundError
+          refundError,
         );
         return result;
       }

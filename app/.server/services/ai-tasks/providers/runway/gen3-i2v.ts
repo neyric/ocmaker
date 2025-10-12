@@ -91,8 +91,7 @@ const config: ProviderConfig<"runway/gen3-i2v", RunwayImageToVideoOptions> = {
 
             if (!videoInfo || !videoInfo.video_url) {
               status = "failed";
-              failReason =
-                failMsg || "Generation failed, no result found";
+              failReason = failMsg || "Generation failed, no result found";
             } else {
               status = "succeeded";
               resultUrl = videoInfo.video_url;

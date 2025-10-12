@@ -105,7 +105,7 @@ export function ProfileGeneratorForm({
       { values: [], record: {} } as {
         values: string[];
         record: Record<string, string>;
-      }
+      },
     );
 
     const { values, record } = randomizeValues;
@@ -118,7 +118,7 @@ export function ProfileGeneratorForm({
     <div
       className={clsx(
         "rounded-xl border border-grid-border bg-base-100 p-3 sm:p-4",
-        className
+        className,
       )}
       {...props}
     >

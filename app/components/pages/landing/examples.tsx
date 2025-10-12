@@ -19,7 +19,12 @@ export function Examples({
   examples,
 }: UseCasesSectionProps) {
   return (
-    <GridSection borderX={false} borderY={false} withPadding={false} className="max-sm:px-4 pt-4 md:pt-8">
+    <GridSection
+      borderX={false}
+      borderY={false}
+      withPadding={false}
+      className="max-sm:px-4 pt-4 md:pt-8"
+    >
       <div className="relative">
         <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center text-center px-4 mb-8">
           <h2 className="text-center font-bold text-2xl text-base-content sm:text-3xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in text-pretty [animation-delay:100ms]">

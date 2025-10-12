@@ -14,7 +14,7 @@ export async function uploadFiles(files: File | File[], folder = "cache") {
 
 export async function downloadFilesToBucket(
   files: { src: string; fileName: string; ext: string }[],
-  type: string
+  type: string,
 ) {
   const results = await Promise.all(
     files.map(async (file) => {
@@ -24,7 +24,7 @@ export async function downloadFilesToBucket(
 
       const path = `${type}/${file.fileName}.${file.ext}`;
       return env.R2.put(path, blob);
-    })
+    }),
   );
 
   return results.filter((result) => !!result);

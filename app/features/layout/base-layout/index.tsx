@@ -1,14 +1,13 @@
+import { Globe } from "lucide-react";
 import { Fragment } from "react";
-import { Footer, type FooterProps } from "./footer";
-import { Header, type HeaderProps } from "./header";
-
 import {
-  ProductHunt,
   Github,
   LinktreeLogo,
+  ProductHunt,
   SquareXTwitter,
 } from "~/components/icons";
-import { Globe } from "lucide-react";
+import { Footer, type FooterProps } from "./footer";
+import { Header, type HeaderProps } from "./header";
 
 export interface BaseLayoutProps {
   header: HeaderProps;

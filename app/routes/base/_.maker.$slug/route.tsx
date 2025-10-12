@@ -166,12 +166,12 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <Fragment>
       <HeroSection
-        key={loaderData.genId}
+        key={loaderData.genId + "hero"}
         title={ct("contents.hero.title")}
         description={ct("contents.hero.description")}
       >
         <div className="flex items-center justify-center mb-8 relative">
-          <div id="generator-border" className="absolute -top-20"  />
+          <div id="generator-border" className="absolute -top-20" />
           <SegmentedControl
             value={state}
             onChange={setState}
@@ -196,16 +196,17 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         />
       </HeroSection>
 
+      <Examples
+        key={loaderData.genId + "examples"}
+        title={ct("contents.examples.title")}
+        description={ct("contents.examples.description")}
+        examples={examples}
+      />
+
       <Steps
         title={ct("contents.step.title")}
         description={ct("contents.step.description")}
         steps={steps}
-      />
-
-      <Examples
-        title={ct("contents.examples.title")}
-        description={ct("contents.examples.description")}
-        examples={examples}
       />
 
       <WhyImgVidSection

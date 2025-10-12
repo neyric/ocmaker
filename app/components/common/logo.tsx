@@ -40,7 +40,10 @@ export const Logo = ({
         className={clsx("object-contain", sizeStyles[iconSize ?? size].box)}
         proxy={false}
       />
-      <div translate="no" className={clsx("font-bold font-title", sizeStyles[size].text)}>
+      <div
+        translate="no"
+        className={clsx("font-bold font-title", sizeStyles[size].text)}
+      >
         OC Maker
       </div>
     </div>

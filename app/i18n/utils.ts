@@ -23,7 +23,7 @@ export function translate(
   locale: Record<string, unknown>,
   key: string,
   params?: Record<string, string | number>,
-  fallback?: string
+  fallback?: string,
 ): string {
   const translation = getNestedValue(locale, key, fallback || key);
 
@@ -49,7 +49,7 @@ export function getTranslate(locale: Record<string, unknown>) {
   return (
     key: string,
     params?: Record<string, string | number>,
-    fallback?: string
+    fallback?: string,
   ) => {
     return translate(locale, key, params, fallback);
   };

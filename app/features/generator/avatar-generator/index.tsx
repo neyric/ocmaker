@@ -35,10 +35,10 @@ export function AvatarGenerator({
 }: AvatarGeneratorProps) {
   const { user, credits, setCredits } = useUserProfile();
   const setVisibleLoginDialog = useDialogStore(
-    (state) => state.setVisibleLoginDialog
+    (state) => state.setVisibleLoginDialog,
   );
   const setVisibleUpgradeDialog = useDialogStore(
-    (state) => state.setVisibleUpgradeDialog
+    (state) => state.setVisibleUpgradeDialog,
   );
   const addTask = useTasksStore((state) => state.addTask);
   const form = useProfileGeneratorForm({ id: genId });
@@ -76,7 +76,7 @@ export function AvatarGenerator({
     <div
       className={clsx(
         "flex max-lg:flex-col gap-4 xl:max-w-6xl mx-auto",
-        className
+        className,
       )}
       {...props}
     >
@@ -88,7 +88,10 @@ export function AvatarGenerator({
         isGenerating={mutation.isPending}
         credits={data?.credits}
       />
-      <ProfileGeneratorPreview className="flex-1 min-w-0 w-full" previewBg={previewBg} />
+      <ProfileGeneratorPreview
+        className="flex-1 min-w-0 w-full"
+        previewBg={previewBg}
+      />
     </div>
   );
 }

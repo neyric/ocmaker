@@ -1,5 +1,5 @@
 import { getFile } from "~/.server/libs/cloudflare/r2-bucket";
-import {  queryTask } from "~/.server/services/ai-tasks";
+import { queryTask } from "~/.server/services/ai-tasks";
 import type { Route } from "./+types/route";
 
 export const loader = async ({ params }: Route.LoaderArgs) => {
@@ -26,7 +26,7 @@ export const loader = async ({ params }: Route.LoaderArgs) => {
   headers.set("Content-Type", file.type || "application/octet-stream");
   headers.set(
     "Content-Disposition",
-    `attachment; filename="ocmaker-${task_no}.png"`
+    `attachment; filename="ocmaker-${task_no}.png"`,
   );
   headers.set("Cache-Control", "public, max-age=3600");
 

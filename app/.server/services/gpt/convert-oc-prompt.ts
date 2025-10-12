@@ -8,7 +8,7 @@ export interface ConvertOCPromptResult {
 }
 
 export async function convertOCPrompt(
-  input: string
+  input: string,
 ): Promise<ConvertOCPromptResult> {
   try {
     const openai = getOpenAIModel();

@@ -17,9 +17,7 @@ export async function generatePrompt(
       .json<{ error: string }>()
       .catch(() => ({ error: "Request failed" }));
 
-    throw new Error(
-      error.error ?? `Request failed: ${response.statusText}`,
-    );
+    throw new Error(error.error ?? `Request failed: ${response.statusText}`);
   }
 
   return response.json();

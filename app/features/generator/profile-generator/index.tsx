@@ -64,7 +64,7 @@ export function ProfileGenerator({
     <div
       className={clsx(
         "flex max-lg:flex-col gap-4 xl:max-w-6xl mx-auto",
-        className
+        className,
       )}
       {...props}
     >

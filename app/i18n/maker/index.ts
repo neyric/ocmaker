@@ -10,8 +10,8 @@ const pageLocaleModules = Object.fromEntries(
   Object.entries(
     import.meta.glob(["./**/*.ts", "!./index.ts"], {
       import: "default",
-    }) as Record<string, PageLocaleLoader>
-  ).map(([key, loader]) => [key.slice(2, -3), loader] as const)
+    }) as Record<string, PageLocaleLoader>,
+  ).map(([key, loader]) => [key.slice(2, -3), loader] as const),
 );
 
 const normalizePageName = (value: string) =>
@@ -33,7 +33,7 @@ const loadLocale = async (loader?: PageLocaleLoader | null) => {
 
 export async function getMakerLocale(
   lang: Language,
-  pageName: string
+  pageName: string,
 ): Promise<PageLocale> {
   const page = normalizePageName(pageName);
 

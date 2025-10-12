@@ -54,7 +54,7 @@ const config: ProviderConfig<
     }
 
     const result = await createBackgroundTask(
-      request_param as GenerateAnimagineImagePayload
+      request_param as GenerateAnimagineImagePayload,
     );
 
     return { taskId: result.id, startedAt: new Date() };

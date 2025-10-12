@@ -34,7 +34,7 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
       slidesToScroll: 1,
       ...options,
     },
-    [Autoplay({ delay: 3000 })]
+    [Autoplay({ delay: 3000 })],
   );
 
   const tweenFactor = useRef(0);
@@ -90,7 +90,7 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
         });
       });
     },
-    []
+    [],
   );
 
   useEffect(() => {

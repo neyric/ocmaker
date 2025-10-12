@@ -25,7 +25,7 @@ export function ProfileGeneratorForm({
     <div
       className={clsx(
         "rounded-xl border border-grid-border bg-base-100 p-3 sm:p-4",
-        className
+        className,
       )}
       {...props}
     >

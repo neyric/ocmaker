@@ -1,10 +1,10 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: One Piece
-  Major Factions: Pirates (various crews across East Blue, Grand Line, and New World), Marines/World Government, Revolutionary Army, Celestial Dragons, Shichibukai/Warlords, Cipher Pol organizations, Independent forces (bounty hunters, merchants, kingdoms)
+  Tone: Stay faithful to One Piece's worldbuilding, factions, abilities, and storytelling style.
 
   OUTPUT FORMAT:
-  Name, Faction, Haki Types, Devil Fruit, Origin, Personality, Backstory
+  Name, Role, Appearance, Abilities, Personality, Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}
@@ -12,97 +12,24 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Pirate",
-    description: "A free-spirited adventurer who laughs in the face of danger.",
-    prompt: `What is your character's name?
-Rion D. Crest
-
-What is your affiliation?
-Pirate – captain of the Laughing Tide Crew
-
-Has your character eaten a Devil Fruit?
-No – relies purely on Haki and instinct
-
-What is your goal?
-To find the island said to echo with eternal laughter
-
-What is your personality?
-Reckless, cheerful, and unbreakably free`,
-  },
-  {
-    title: "Marine",
-    description: "A young officer torn between justice and blind obedience.",
-    prompt: `What is your character's name?
-Lira Frost
-
-What is your affiliation?
-Marine Headquarters, North Blue Division
-
-Has your character eaten a Devil Fruit?
-Yes – the Hie Hie no Mi (Ice-Ice Fruit)
-
-What is your goal?
-To redefine what justice truly means within the Marines
-
-What is your personality?
-Calm, loyal, but quietly defiant toward authority`,
-  },
-  {
-    title: "Revolutionary",
+    title: "Hero",
     description:
-      "A rebel scholar who fights oppression through knowledge and strategy.",
-    prompt: `What is your character's name?
-Dr. Evan Creed
-
-What is your affiliation?
-Revolutionary Army intelligence branch
-
-Has your character eaten a Devil Fruit?
-No – uses advanced technology and tactics instead
-
-What is your goal?
-To expose the World Government’s historical cover-ups
-
-What is your personality?
-Analytical, idealistic, and quietly fearless`,
+      "A determined protagonist representing the heart of One Piece.",
+    prompt:
+      "What is your character's name?\nKei Arashi\n\nWhat is their role in One Piece?\nFrontline hero standing beside the main cast of One Piece\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines One Piece\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
   },
   {
-    title: "Celestial Dragon",
-    description:
-      "A spoiled noble who begins to question their divine privilege.",
-    prompt: `What is your character's name?
-Saint Aurelia Donquixote
-
-What is your affiliation?
-World Nobles – Holy Land of Mariejois
-
-Has your character eaten a Devil Fruit?
-Yes – the Mira Mira no Mi (Mirror-Mirror Fruit)
-
-What is your goal?
-To escape the Holy Land and live as an ordinary human
-
-What is your personality?
-Proud yet curious; torn between guilt and desire for freedom`,
+    title: "Rival",
+    description: "A formidable rival who challenges the heroes of One Piece.",
+    prompt:
+      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of One Piece?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of One Piece\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
   },
   {
-    title: "Bounty Hunter",
+    title: "Mentor",
     description:
-      "A lone tracker who hunts pirates for both justice and revenge.",
-    prompt: `What is your character's name?
-Taro Steeljaw
-
-What is your affiliation?
-Independent bounty hunter from Fishman Island
-
-Has your character eaten a Devil Fruit?
-No – relies on Fishman strength and Armament Haki
-
-What is your goal?
-To capture the pirate who destroyed his hometown
-
-What is your personality?
-Stoic, relentless, but compassionate toward the innocent`,
+      "A seasoned mentor guiding the next generation within One Piece.",
+    prompt:
+      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in One Piece?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of One Piece\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
   },
 ];
 
@@ -112,156 +39,170 @@ const ocOptions = [
     key: "gender",
     unique: true,
     data: [
-      { label: "Boy", value: "1boy" },
-      { label: "Girl", value: "1girl" },
-      { label: "Other", value: "" },
+      {
+        label: "Boy",
+        value: "1boy",
+      },
+      {
+        label: "Girl",
+        value: "1girl",
+      },
+      {
+        label: "Non-binary",
+        value: "1person",
+      },
     ],
   },
   {
-    title: "Faction",
-    key: "faction",
+    title: "Archetype",
+    key: "archetype",
+    unique: true,
     data: [
-      { label: "Pirate", value: "pirate" },
-      { label: "Marine", value: "marine" },
-      { label: "Revolutionary Army", value: "revolutionary army" },
-      { label: "Bounty Hunter", value: "bounty hunter" },
-      { label: "Civilian", value: "civilian" },
+      {
+        label: "Hero",
+        value: "heroic leader",
+      },
+      {
+        label: "Antihero",
+        value: "antihero vigilante",
+      },
+      {
+        label: "Mentor",
+        value: "mysterious mentor",
+      },
+      {
+        label: "Strategist",
+        value: "brilliant strategist",
+      },
+      {
+        label: "Rival",
+        value: "rebellious rival",
+      },
+      {
+        label: "Guardian",
+        value: "stoic guardian",
+      },
     ],
   },
   {
-    title: "Role",
-    key: "role",
+    title: "Power Theme",
+    key: "power_theme",
     data: [
-      { label: "Captain", value: "captain" },
-      { label: "First Mate", value: "first mate" },
-      { label: "Navigator", value: "navigator" },
-      { label: "Swordsman", value: "swordsman" },
-      { label: "Sniper", value: "sniper" },
-      { label: "Cook", value: "cook" },
-      { label: "Doctor", value: "doctor" },
-      { label: "Shipwright", value: "shipwright" },
+      {
+        label: "Elemental magic",
+        value: "elemental magic",
+      },
+      {
+        label: "Advanced technology",
+        value: "advanced technology",
+      },
+      {
+        label: "Martial arts",
+        value: "martial arts",
+      },
+      {
+        label: "Spiritual powers",
+        value: "spiritual powers",
+      },
+      {
+        label: "Summoner",
+        value: "summoner",
+      },
+      {
+        label: "Tactical genius",
+        value: "tactical genius",
+      },
     ],
   },
   {
-    title: "Clothing Style",
-    key: "clothing",
+    title: "Outfit Style",
+    key: "outfit",
     data: [
-      { label: "Pirate outfit", value: "pirate outfit" },
-      { label: "Marine uniform", value: "marine uniform" },
-      { label: "Noble attire", value: "noble attire" },
-      { label: "Revolutionary uniform", value: "revolutionary uniform" },
-      { label: "Casual island wear", value: "casual island wear" },
-      { label: "Battle outfit", value: "battle outfit" },
-      { label: "Cloak or coat", value: "cloak" },
-    ],
-  },
-  {
-    title: "Weapon",
-    key: "weapon",
-    data: [
-      { label: "Katana", value: "katana" },
-      { label: "Dual swords", value: "dual swords" },
-      { label: "Gun", value: "gun" },
-      { label: "Rifle", value: "rifle" },
-      { label: "Spear", value: "spear" },
-      { label: "Staff", value: "staff" },
-      { label: "No weapon", value: "unarmed" },
-    ],
-  },
-  {
-    title: "Fighting Style",
-    key: "fighting_style",
-    data: [
-      { label: "Swordsmanship", value: "swordsmanship" },
-      { label: "Martial arts", value: "martial arts" },
-      { label: "Sniping", value: "sniping" },
-      { label: "Kicking combat", value: "kicking combat" },
-      { label: "Fishman karate", value: "fishman karate" },
-      { label: "Devil fruit ability", value: "devil fruit ability" },
-      { label: "Haki user", value: "haki user" },
-    ],
-  },
-  {
-    title: "Devil Fruit Type",
-    key: "devil_fruit",
-    data: [
-      { label: "Paramecia type", value: "paramecia type" },
-      { label: "Logia type", value: "logia type" },
-      { label: "Zoan type", value: "zoan type" },
-      { label: "Mythical zoan type", value: "mythical zoan type" },
-      { label: "No devil fruit", value: "no devil fruit" },
-    ],
-  },
-  {
-    title: "Haki Type",
-    key: "haki",
-    data: [
-      { label: "Observation haki", value: "observation haki" },
-      { label: "Armament haki", value: "armament haki" },
-      { label: "Conqueror's haki", value: "conqueror haki" },
-      { label: "No haki", value: "no haki" },
-    ],
-  },
-  {
-    title: "Body Type",
-    key: "body_type",
-    data: [
-      { label: "Slim", value: "slim" },
-      { label: "Athletic", value: "athletic" },
-      { label: "Muscular", value: "muscular" },
-      { label: "Tall", value: "tall" },
-      { label: "Short", value: "short" },
-    ],
-  },
-  {
-    title: "Hair Color",
-    key: "hair_color",
-    data: [
-      { label: "Black hair", value: "black hair" },
-      { label: "Blonde hair", value: "blonde hair" },
-      { label: "Red hair", value: "red hair" },
-      { label: "Blue hair", value: "blue hair" },
-      { label: "Green hair", value: "green hair" },
-      { label: "White hair", value: "white hair" },
-      { label: "Pink hair", value: "pink hair" },
-      { label: "Silver hair", value: "silver hair" },
-    ],
-  },
-  {
-    title: "Accessories",
-    key: "accessories",
-    data: [
-      { label: "Bandana", value: "bandana" },
-      { label: "Hat", value: "hat" },
-      { label: "Earrings", value: "earrings" },
-      { label: "Scarf", value: "scarf" },
-      { label: "Sunglasses", value: "sunglasses" },
-      { label: "Cape", value: "cape" },
+      {
+        label: "Battle armor",
+        value: "battle armor",
+      },
+      {
+        label: "Sleek uniform",
+        value: "sleek uniform",
+      },
+      {
+        label: "Casual streetwear",
+        value: "casual streetwear",
+      },
+      {
+        label: "Formal attire",
+        value: "formal attire",
+      },
+      {
+        label: "Mystic robes",
+        value: "mystic robes",
+      },
+      {
+        label: "Futuristic suit",
+        value: "futuristic suit",
+      },
     ],
   },
   {
     title: "Personality",
     key: "personality",
     data: [
-      { label: "Brave", value: "brave" },
-      { label: "Calm", value: "calm" },
-      { label: "Hot-blooded", value: "hot-blooded" },
-      { label: "Cheerful", value: "cheerful" },
-      { label: "Serious", value: "serious" },
-      { label: "Loyal", value: "loyal" },
-      { label: "Reckless", value: "reckless" },
+      {
+        label: "Optimistic",
+        value: "optimistic",
+      },
+      {
+        label: "Stoic",
+        value: "stoic",
+      },
+      {
+        label: "Rebellious",
+        value: "rebellious",
+      },
+      {
+        label: "Compassionate",
+        value: "compassionate",
+      },
+      {
+        label: "Calculating",
+        value: "calculating",
+      },
+      {
+        label: "Chaotic good",
+        value: "chaotic good",
+      },
     ],
   },
   {
     title: "Expression",
     key: "expression",
+    unique: true,
     data: [
-      { label: "Smiling", value: "smiling" },
-      { label: "Serious", value: "serious" },
-      { label: "Angry", value: "angry" },
-      { label: "Confident", value: "confident" },
-      { label: "Determined", value: "determined" },
-      { label: "Calm", value: "calm" },
+      {
+        label: "Smiling confidence",
+        value: "smiling confidence",
+      },
+      {
+        label: "Determined gaze",
+        value: "determined gaze",
+      },
+      {
+        label: "Brooding intensity",
+        value: "brooding intensity",
+      },
+      {
+        label: "Playful grin",
+        value: "playful grin",
+      },
+      {
+        label: "Calm focus",
+        value: "calm focus",
+      },
+      {
+        label: "Mysterious smirk",
+        value: "mysterious smirk",
+      },
     ],
   },
 ];
@@ -384,7 +325,8 @@ export default {
             "One Piece OC Maker is a specialized version of OC Maker, fine-tuned for the One Piece universe. Simply describe your character, and our AI will generate anime-style One Piece visuals in seconds based on your prompt.",
         },
         {
-          question: "How can I create better characters with One Piece OC Maker?",
+          question:
+            "How can I create better characters with One Piece OC Maker?",
           answer:
             "For best results, include One Piece-specific traits in your description, such as Devil Fruit powers, pirate outfits, or crew affiliations. The more vivid and detailed your input, the more accurate and compelling the output.",
         },

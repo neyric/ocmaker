@@ -134,9 +134,7 @@ export const EditProfileDialog = forwardRef<
             }}
           />
         </div>
-        <p className="label text-sm">
-          Click to upload new profile picture
-        </p>
+        <p className="label text-sm">Click to upload new profile picture</p>
         {form.formState.errors.avatar && (
           <span className="text-error text-sm">
             {form.formState.errors.avatar.message}
@@ -248,9 +246,7 @@ export const EditProfileDialog = forwardRef<
       >
         <DialogHeader>
           <DialogTitle>Edit Profile</DialogTitle>
-          <DialogDescription>
-            Update your profile information
-          </DialogDescription>
+          <DialogDescription>Update your profile information</DialogDescription>
         </DialogHeader>
         <FormContent />
       </DialogContent>

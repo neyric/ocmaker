@@ -15,11 +15,7 @@ interface FAQsSectionProps {
 export function FAQsSection({ title, description, faqs }: FAQsSectionProps) {
   const structure = createFAQsSchema(faqs);
   return (
-    <GridSection
-      borderY={false}
-      borderX={false}
-      compact
-    >
+    <GridSection borderY={false} borderX={false} compact>
       {structure && (
         <script
           id="FAQPage"

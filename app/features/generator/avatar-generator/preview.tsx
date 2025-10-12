@@ -30,7 +30,7 @@ export function ProfileGeneratorPreview({
     <div
       className={clsx(
         "border border-grid-border rounded-lg overflow-hidden relative lg:aspect-square",
-        className
+        className,
       )}
       {...props}
     >

@@ -19,7 +19,12 @@ export function WhyImgVidSection({
   features,
 }: WhyImgVidSectionProps) {
   return (
-    <GridSection borderX={false} borderY={false} compact className="py-4 md:py-8">
+    <GridSection
+      borderX={false}
+      borderY={false}
+      compact
+      className="py-4 md:py-8"
+    >
       <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center text-center">
         <h2 className="text-center font-bold text-2xl text-base-content sm:text-3xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in text-pretty [animation-delay:100ms]">
           {title}

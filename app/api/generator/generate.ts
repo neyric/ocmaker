@@ -37,9 +37,7 @@ export async function createGenerateTask(
       throw new InsufficientCreditsError(error.error);
     }
 
-    throw new Error(
-      error.error ?? `Request failed: ${response.statusText}`,
-    );
+    throw new Error(error.error ?? `Request failed: ${response.statusText}`);
   }
 
   return response.json();
@@ -60,9 +58,7 @@ export async function startTask(payload: {
       .json<{ error: string; details?: any }>()
       .catch(() => ({ error: "Request failed" }));
 
-    throw new Error(
-      error.error ?? `Request failed: ${response.statusText}`,
-    );
+    throw new Error(error.error ?? `Request failed: ${response.statusText}`);
   }
 
   return response.json();
@@ -80,9 +76,7 @@ export async function queryTask(payload: {
       .json<{ error: string; details?: any }>()
       .catch(() => ({ error: "Request failed" }));
 
-    throw new Error(
-      error.error ?? `Request failed: ${response.statusText}`,
-    );
+    throw new Error(error.error ?? `Request failed: ${response.statusText}`);
   }
 
   return response.json();
