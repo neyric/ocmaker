@@ -346,7 +346,7 @@ export default {
       description: "输入设定，几秒内化身守护战士、王族或暗黑使徒。",
     },
     step: {
-      title: "如何打造 Sailor Moon OC",
+      title: "如何打造美少女战士 OC",
       description: "想要以爱与正义守护世界？按照以下步骤设计你的魔法守护者。",
       steps: [
         {
@@ -367,7 +367,7 @@ export default {
       ],
     },
     examples: {
-      title: "水手战士示例",
+      title: "美少女战士示例",
       description: "浏览使用 美少女战士 OC 生成器 文本提示生成的魔法战士。",
       examples,
     },

@@ -324,24 +324,24 @@ const ocOptions = [
 
 const examples = [
   {
-    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-1.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-generated-1.webp",
     prompt:
-      "1boy, spiky blond hair with blue highlights, intense gaze, jojo style outfit with heart motifs, chain accessories, stand aura, dramatic pose, single character, upper body, looking at viewer, anime style, vibrant background",
+      "1boy, purple hair with golden highlights, green eyes, dramatic pose, colorful stand user outfit, elaborate accessories, stand manifestation behind, menacing aura, jojo bizarre art style, single character, upper body, looking at viewer, anime style, simple background",
   },
   {
-    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-2.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-generated-2.webp",
     prompt:
-      "1girl, long purple hair, golden eyes, confident smile, jojo fashion dress with geometric patterns, gloves, stand energy swirling, unique pose, single character, upper body, looking at viewer, anime style, colorful background",
+      "1girl, rainbow hair gradient, heterochromatic eyes, cowboy hat, stone ocean prison uniform, weather manipulation stand, dramatic lighting effects, jojo part 6 style, single character, upper body, looking at viewer, anime style, simple background",
   },
   {
-    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-3.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-generated-3.webp",
     prompt:
-      "1boy, silver hair, heterochromia eyes, stoic expression, jojo style suit with chains, stand manifested behind, tarot card motif, dynamic lighting, single character, upper body, looking at viewer, anime style, simple background",
+      "1boy, dark skin with white hair, golden eyes, gangster outfit, stand user, mysterious smile, arrow-shaped accessories, baroque patterns, jojo part 5 style, single character, upper body, looking at viewer, anime style, simple background",
   },
   {
-    image: "https://cdn.ocmaker.app/example/jojo-oc-maker-generated-4.webp",
+    image: "https://cdn.ocmaker.app/example/jojo-oc-generated-4.webp",
     prompt:
-      "1girl, green hair in braids, bright pink eyes, playful grin, jojo streetwear with graffiti accents, stand ability painting aura, pose with spray can, single character, upper body, looking at viewer, anime style, urban background",
+      "1girl, pink hair in pompadour style, yellow eyes, delinquent school uniform, stand ability visualization, fierce expression, colorful geometric patterns, jojo part 4 style, single character, upper body, looking at viewer, anime style, simple background",
   },
 ];
 
@@ -357,9 +357,14 @@ export default {
   ocOptions,
   contents: {
     hero: {
-      title: "How to Make JOJO OC",
+      title: "JOJO OC 生成器",
       description:
-        "使用 JOJO OC 生成器 打造属于你的替身使者，从时代背景到华丽造型一步到位。",
+        "输入角色设定，即刻生成荒木风格的原创替身使者，兼具华丽造型与怪奇能力。",
+    },
+    step: {
+      title: "如何打造 JOJO OC",
+      description:
+        "使用 JOJO OC 生成器 创作角色就像展开一场奇妙冒险，依照以下步骤完成你的替身使者。",
       steps: [
         {
           title: "描述替身使者",
@@ -379,14 +384,14 @@ export default {
       ],
     },
     examples: {
-      title: "JOJO  OC 示例",
-      description: "欣赏使用 JOJO OC 生成器 从文字提示生成的奇妙角色。",
+      title: "JOJO 角色示例",
+      description: "浏览使用 JOJO OC 生成器 文字提示生成的奇妙角色。",
       examples,
     },
     features: {
-      title: "What is JOJO OC 生成器?",
+      title: "JOJO OC 生成器 是什么？",
       description:
-        "JOJO OC 生成器 是专为《JOJO 的奇妙冒险》设计的 OC 生成器 版本。描述你的替身使者，即刻转化为荒木风格的奇妙插画。",
+        "JOJO OC 生成器 是专为《JOJO 的奇妙冒险》打造的版本。描述替身使者后，系统会即时生成荒木风格的怪奇插画。",
       features: [
         {
           label: "原汁原味的荒木画风",
@@ -459,7 +464,7 @@ export default {
             "可以！无论是第一部的波纹战士、第五部的黑手党，或第八部的平行世界，都可自由发挥。",
         },
         {
-          question: "未来还会新增其他荒木风 OC 生成器 吗？",
+          question: "未来还会新增其他荒木风 OC 生成器吗？",
           answer:
             "会的！我们持续扩充动漫 OC 生成器，敬请关注 ocmaker.app 的后续更新。",
         },

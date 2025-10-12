@@ -1,6 +1,6 @@
 const basePrompt = `
   WORLD CONTEXT:
-  故事：《蓝色监狱 Blue Lock》
+  故事：《蓝色禁区 Blue Lock》
   背景概述：日本足球联盟的 Blue Lock 基地中，自我至上的前锋训练计划，将选手推入封闭空间的高压对决
   关键要素：孤立训练区、前锋宿敌、外卡邀请、Neo Egoist 联赛俱乐部（巴斯塔德慕尼黑、巴黎 X Gen、曼夏城等）、适应力测验
 
@@ -364,22 +364,22 @@ export default {
   meta: {
     title: "Blue Lock OC 角色生成器",
     description:
-      "借助 AI 创建你的《蓝色监狱》原创球员，在以自我为武器的足球战场书写高压剧情。",
+      "借助 AI 创建你的《蓝色禁区》原创球员，在以自我为武器的足球战场书写高压剧情。",
   },
-  series: "蓝色监狱",
+  series: "蓝色禁区",
   backstoryPreset: basePrompt,
   examples: backstoryExamples,
   ocOptions,
   contents: {
     hero: {
-      title: "Blue Lock OC 生成器",
+      title: "蓝色禁区 OC 生成器",
       description:
-        "输入角色设定，秒级生成贴合 Blue Lock 世界观的自我主义球员形象。",
+        "输入角色设定，秒级生成贴合蓝色禁区世界观的自我主义球员形象。",
     },
     step: {
-      title: "如何打造 Blue Lock OC",
+      title: "如何打造蓝色禁区 OC",
       description:
-        "在 OC 生成器 中塑造《蓝色监狱》角色就像接受一次 Ego 评估，按步骤完成自我主义前锋的诞生。",
+        "在 OC 生成器 中塑造《蓝色禁区》角色就像接受一次 Ego 评估，按步骤完成自我主义前锋的诞生。",
       steps: [
         {
           title: "描绘外貌与球衣",
@@ -399,14 +399,14 @@ export default {
       ],
     },
     examples: {
-      title: "Blue Lock  OC 示例",
-      description: "看看使用 Blue Lock OC 生成器 生成的高压前锋样张。",
+      title: "蓝色禁区 OC 示例",
+      description: "看看使用蓝色禁区 OC 生成器生成的高压前锋样张。",
       examples,
     },
     features: {
-      title: "Blue Lock OC 生成器 有何特色？",
+      title: "蓝色禁区 OC 生成器有何特色？",
       description:
-        "Blue Lock OC 生成器 针对《蓝色监狱》打造，只要输入描述即可得到充满 Ego 氛围的足球角色。",
+        "蓝色禁区 OC 生成器针对《蓝色禁区》打造，只要输入描述即可得到充满 Ego 氛围的足球角色。",
       features: [
         {
           label: "还原高压训练场",
@@ -445,9 +445,9 @@ export default {
       description: "还有疑问？欢迎来信 support@ocmaker.app",
       faqs: [
         {
-          question: "什么是 Blue Lock OC 生成器？",
+          question: "什么是蓝色禁区 OC 生成器？",
           answer:
-            "Blue Lock OC 生成器 是专为《蓝色监狱》世界观打造的 AI 工具。描述角色的外貌、技能与 Ego 后，即可生成贴合原作风格的前锋立绘。",
+            "Blue Lock OC 生成器 是专为《蓝色禁区》世界观打造的 AI 工具。描述角色的外貌、技能与 Ego 后，即可生成贴合原作风格的前锋立绘。",
         },
         {
           question: "如何让角色更像 Blue Lock 球员？",
@@ -477,7 +477,7 @@ export default {
         {
           question: "能否设定非前锋角色？",
           answer:
-            "可以！虽然蓝色监狱聚焦前锋，但你能通过位置选项打造自由人、组织核心等个性角色。",
+            "可以！虽然蓝色禁区聚焦前锋，但你能通过位置选项打造自由人、组织核心等个性角色。",
         },
         {
           question: "未来会加入其他体育类 OC 生成器 吗？",
@@ -489,7 +489,7 @@ export default {
     cta: {
       title: "释放你的 Ego 前锋",
       description:
-        "无需绘画技能，只要描述即可生成为进球而生的《蓝色监狱》原创球员。",
+        "无需绘画技能，只要描述即可生成为进球而生的《蓝色禁区》原创球员。",
       btns: {
         start: "开始创作",
         explore: "浏览示例",

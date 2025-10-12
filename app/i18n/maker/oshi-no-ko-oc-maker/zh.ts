@@ -365,17 +365,17 @@ export default {
       description: "输入角色设定，瞬间生成演艺圈风格的华丽人设与造型。",
     },
     step: {
-      title: "如何打造 Oshi no Ko OC",
+      title: "如何打造我推的孩子 OC",
       description:
         "打造演艺圈角色很简单，依照以下步骤让你的明星或幕后推手登场。",
       steps: [
         {
-          title: "描述你的 Oshi no Ko OC",
+          title: "描述你的 OC",
           description:
             "填写外貌与性格细节，记得加入星形瞳孔、潮流穿搭与怀抱舞台野心的设定，更贴近作品风格。",
         },
         {
-          title: "补上行业细节",
+          title: "补上细节",
           description:
             "说明他们是偶像、演员、制作人或经纪人，以及独特才华与演艺连结。越贴合演艺生态，成果越真实。",
         },
@@ -387,8 +387,8 @@ export default {
       ],
     },
     examples: {
-      title: "Oshi no Ko  OC 示例",
-      description: "浏览使用 我推的孩子 OC 生成器 文本提示生成的演艺圈角色。",
+      title: "我推的孩子 OC 示例",
+      description: "浏览使用我推的孩子 OC 生成器文本提示生成的演艺圈角色。",
       examples,
     },
     features: {
