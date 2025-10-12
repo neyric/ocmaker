@@ -66,12 +66,12 @@ export const CreditsMenu = ({ credits }: { credits?: number }) => {
             {credits}
             <DatabaseZap className="size-4" />
           </button>
-          {/* <button
+          <button
             className="btn btn-sm btn-warning sm:hidden"
             aria-label="Credits Menu"
           >
             <Gift className="size-4" />
-          </button> */}
+          </button>
         </div>
       </DropdownMenuTrigger>
 

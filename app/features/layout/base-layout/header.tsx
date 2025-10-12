@@ -51,7 +51,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
         data-scrolled={isScrolled}
       >
         <div className="container">
-          <div className="flex items-center h-16 gap-3">
+          <div className="flex items-center h-16 gap-4">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link className="cursor-pointer" to="/">
@@ -77,6 +77,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
               <button
                 onClick={toggleTheme}
                 className="p-2 hover:bg-base-200 hover:text-primary rounded-md"
+                hidden
               >
                 {theme === "light" ? (
                   <Moon className="w-5 h-5" />
@@ -164,7 +165,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
                         </Link>
                       ))}
 
-                      <button data-role="hotzone" onClick={toggleTheme}>
+                      <button data-role="hotzone" hidden onClick={toggleTheme}>
                         {theme === "light" ? (
                           <Moon className="size-5" />
                         ) : (
