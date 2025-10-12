@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Honkai Star Rail.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Honkai Star Rail?\nFrontline hero standing beside the main cast of Honkai Star Rail\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Honkai Star Rail\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Xianzhou Cloudpiercer",
+    description: "A daring archer patrolling the Luofu's trade routes from sky barges.",
+    prompt: `What is your character's name?
+Yue Ling
+
+Which Path are they aligned with?
+The Hunt
+
+What combat role and element do they wield?
+Single-target DPS wielding Wind element
+
+What is their signature Technique or Ultimate?
+Technique "Azure Gale Volley" rains bolts across flying marauders
+
+Who is their key companion or connection?
+Travels with an alchemical foxian engineer
+
+How would you describe their personality?
+Daring, humorous, treats danger as a dance
+
+Share their journey backstory.
+Joined the Cloud Knights after pirates attacked her family's merchant ship; now escorts caravans through star-skies.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Honkai Star Rail.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Honkai Star Rail?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Honkai Star Rail\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Belobog Mediator",
+    description: "A Harmony follower bringing warmth to Belobog's undercity.",
+    prompt: `What is your character's name?
+Anya Volkova
+
+Which Path are they aligned with?
+The Harmony
+
+What combat role and element do they wield?
+Support buffer with Fire element
+
+What is their signature Technique or Ultimate?
+Ultimate "Ember Resonance" grants shields and attack boosts
+
+Who is their key companion or connection?
+Close allies with Serval, shares music sessions
+
+How would you describe their personality?
+Optimistic, empathetic, refuses to give up on unity
+
+Share their journey backstory.
+Orchestrated peace talks between the surface and underworld after the Eternal Freeze by fusing their hymns into a single melody.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Honkai Star Rail.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Honkai Star Rail?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Honkai Star Rail\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Stellaron Hunter Analyst",
+    description: "A knowledgeable analyst tracking Stellaron phenomena for Kafka.",
+    prompt: `What is your character's name?
+Cypher
+
+Which Path are they aligned with?
+The Nihility
+
+What combat role and element do they wield?
+Debuff specialist wielding Lightning element
+
+What is their signature Technique or Ultimate?
+Technique "Entropy Surge" lowers enemy resistance and spreads shock
+
+Who is their key companion or connection?
+Corresponds with Silver Wolf via encrypted games
+
+How would you describe their personality?
+Mischievous, elusive, obsessed with data
+
+Share their journey backstory.
+Once a corporate data miner on Jarilo-VI, they defected after discovering the Stellaron Hunters' true mission.`,
+  },
+  {
+    title: "Astral Express Herbalist",
+    description: "A traveling healer cultivating Gardens of Recollection cuttings on the train.",
+    prompt: `What is your character's name?
+Lira
+
+Which Path are they aligned with?
+The Abundance
+
+What combat role and element do they wield?
+Healer using Quantum element
+
+What is their signature Technique or Ultimate?
+Ultimate "Blooming Reprieve" restores HP and cleanses debuffs
+
+Who is their key companion or connection?
+Tends to a sentient bonsai gifted by Yukong
+
+How would you describe their personality?
+Kind, serene, quietly teasing
+
+Share their journey backstory.
+Boarded the Express to gather rare herbs after a Stellaron outbreak decimated her home garden on Xianzhou.`,
+  },
+  {
+    title: "Penacony Dreamshaper",
+    description: "A performer turning dreamscapes into weapons against Nightmare gangsters.",
+    prompt: `What is your character's name?
+Marlow
+
+Which Path are they aligned with?
+The Erudition
+
+What combat role and element do they wield?
+AoE caster wielding Imaginary element
+
+What is their signature Technique or Ultimate?
+Technique "Curtain Call" traps foes in looping illusions
+
+Who is their key companion or connection?
+Partnered with a talking microphone tied to the Family
+
+How would you describe their personality?
+Flamboyant, compassionate, loves applause
+
+Share their journey backstory.
+Escaped the Family's control by rewriting their scripts mid-performance and now helps the Express free dreamers.`,
   },
 ];
 

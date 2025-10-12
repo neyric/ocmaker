@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Oshi no Ko.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Oshi no Ko?\nFrontline hero standing beside the main cast of Oshi no Ko\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Oshi no Ko\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Rising Idol",
+    description: "A center idol juggling nightly livestreams and dance rehearsals.",
+    prompt: `What is your character's name?
+Aiko Shirasu
+
+What is their entertainment role?
+Idol center for the unit StarDazzle
+
+Which agency or affiliation represents them?
+Strawberry Productions
+
+What is their signature performance talent?
+Dual choreography mixing ballet and J-pop flair
+
+How would you describe their personality?
+Hardworking, sincere, anxious about perfection
+
+What is their public persona versus true self?
+Publicly bubbly and flawless; privately worries fans will notice her imposter syndrome
+
+Share a backstory snapshot.
+Discovered by Ruby while covering emergency vocals, she now supports her family with idol income while keeping grades up.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Oshi no Ko.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Oshi no Ko?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Oshi no Ko\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Method Actor",
+    description: "An actor famed for immersive roles and unfiltered interviews.",
+    prompt: `What is your character's name?
+Ren Kurosawa
+
+What is their entertainment role?
+Television and stage actor
+
+Which agency or affiliation represents them?
+Lala Lai Theatre Company
+
+What is their signature performance talent?
+Method acting that blends improv with emotional recall
+
+How would you describe their personality?
+Charismatic, intense, unexpectedly gentle
+
+What is their public persona versus true self?
+Publicly aloof superstar; privately a dork who collects retro games
+
+Share a backstory snapshot.
+Rose from child star scandals to acclaimed actor after Aqua coached him through a revenge-thriller audition.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Oshi no Ko.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Oshi no Ko?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Oshi no Ko\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Viral Influencer",
+    description: "A streamer stabilizing her fame by learning idol discipline.",
+    prompt: `What is your character's name?
+Mika Stream
+
+What is their entertainment role?
+Variety streamer and part-time idol collaborator
+
+Which agency or affiliation represents them?
+Independent influencer managed by MEM-cho
+
+What is their signature performance talent?
+Interactive live-editing and comedic skits
+
+How would you describe their personality?
+Chaotic, witty, surprisingly observant
+
+What is their public persona versus true self?
+Publicly carefree meme queen; privately stressed about burnout
+
+Share a backstory snapshot.
+Joined Strawberry Productions collabs after MEM-cho recognized her potential during a charity stream.`,
+  },
+  {
+    title: "Songwriter Ghost",
+    description: "A songwriter crafting anonymous hits for rival idol groups.",
+    prompt: `What is your character's name?
+Kaede Night
+
+What is their entertainment role?
+Ghost songwriter and backup vocalist
+
+Which agency or affiliation represents them?
+Freelancer contracting with B-Komachi producers
+
+What is their signature performance talent?
+Penning lyrics that mirror fans' hidden insecurities
+
+How would you describe their personality?
+Introverted, empathetic, sharp-tongued when pressured
+
+What is their public persona versus true self?
+Publicly credited as a team of writers; privately pours her trauma into every lyric
+
+Share a backstory snapshot.
+Walked away from the industry after cyberbullying; Ai's legacy inspired her return under a pen name.`,
+  },
+  {
+    title: "Idol Choreographer",
+    description: "A retired idol teaching the next generation with strict kindness.",
+    prompt: `What is your character's name?
+Sakura Minami
+
+What is their entertainment role?
+Choreographer and talent coach
+
+Which agency or affiliation represents them?
+Strawberry Productions training division
+
+What is their signature performance talent?
+Hybrid choreography that fuses martial arts with idol dance
+
+How would you describe their personality?
+Disciplined, supportive, motherly
+
+What is their public persona versus true self?
+Publicly stern instructor; privately writes encouragement letters to every trainee
+
+Share a backstory snapshot.
+Retired after a knee injury but returned to keep the flame of Ai's teachings alive through the trainees.`,
   },
 ];
 

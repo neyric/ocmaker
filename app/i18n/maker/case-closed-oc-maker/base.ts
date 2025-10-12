@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Case Closed.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Case Closed?\nFrontline hero standing beside the main cast of Case Closed\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Case Closed\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "High School Sleuth",
+    description: "A prodigy detective balancing exams with murder investigations.",
+    prompt: `What is your character's name?
+Kazuha Morioka
+
+What is their occupation or detective role?
+High school detective assisting the Tokyo Metropolitan Police
+
+What signature investigation skills do they rely on?
+Keen observation, deductive logic, disguise work
+
+What tools or gadgets support them?
+Solar-powered glasses with AR overlays and voice recorder
+
+How would you describe their personality?
+Earnest, punctual, occasionally overconfident
+
+What ongoing mystery drives them?
+Determined to unmask a serial bomber targeting cram schools
+
+Share a backstory snapshot.
+Solved her first poisoning case at thirteen after noticing mismatched tea leaves in the victim's cup.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Case Closed.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Case Closed?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Case Closed\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Forensic Blogger",
+    description: "A true-crime blogger who turns internet fame into justice for victims.",
+    prompt: `What is your character's name?
+Mina Tachibana
+
+What is their occupation or detective role?
+Freelance forensic consultant and crime blogger
+
+What signature investigation skills do they rely on?
+Digital footprint tracing and chemical residue analysis
+
+What tools or gadgets support them?
+Portable spectrometer disguised as a smartphone battery
+
+How would you describe their personality?
+Snarky, savvy, fiercely protective of sources
+
+What ongoing mystery drives them?
+Investigating a cold case involving her late journalist father
+
+Share a backstory snapshot.
+Built a following by live-streaming evidence breakdowns that embarrassed corrupt investigators.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Case Closed.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Case Closed?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Case Closed\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Osaka Interpol Liaison",
+    description: "A liaison bridging Interpol resources with local detectives.",
+    prompt: `What is your character's name?
+Daichi Kuroda
+
+What is their occupation or detective role?
+Interpol liaison attached to the Osaka police
+
+What signature investigation skills do they rely on?
+International suspect profiling and multilingual interrogation
+
+What tools or gadgets support them?
+Encrypted cufflinks that sync to Interpol databases
+
+How would you describe their personality?
+Cool-headed, dryly humorous, rarely rattled
+
+What ongoing mystery drives them?
+Tracking a jewel thief syndicate believed to link Osaka and Milan
+
+Share a backstory snapshot.
+Grew up between Japan and Italy, learning to read criminal networks from both cultures.`,
+  },
+  {
+    title: "Elementary Sleuth",
+    description: "A Detective Boys member who shines with gadget mastery.",
+    prompt: `What is your character's name?
+Rika Kobayashi
+
+What is their occupation or detective role?
+Elementary detective club gadget specialist
+
+What signature investigation skills do they rely on?
+Mini-drone reconnaissance and rapid clue cataloging
+
+What tools or gadgets support them?
+Professor-inspired backpack containing collapsible drone trio
+
+How would you describe their personality?
+Inquisitive, bubbly, fearless around crime scenes
+
+What ongoing mystery drives them?
+Searching for her missing brother who vanished during a magic show
+
+Share a backstory snapshot.
+Joined the Detective Boys after hacking a magician's prop to reveal the culprit's hiding spot.`,
+  },
+  {
+    title: "Undercover Butler",
+    description: "A disguised detective embedded in a wealthy family estate.",
+    prompt: `What is your character's name?
+Masato Shinonome
+
+What is their occupation or detective role?
+Private detective posing as a live-in butler
+
+What signature investigation skills do they rely on?
+Fingerprint recovery, etiquette infiltration, silent combat
+
+What tools or gadgets support them?
+Monocle camera linked to a homebrew AI case assistant
+
+How would you describe their personality?
+Polite, meticulous, harbors a sardonic streak
+
+What ongoing mystery drives them?
+Probing a string of disappearances tied to the family's shipping company
+
+Share a backstory snapshot.
+Once part of the police riot squad, he left to pursue justice for overlooked victims inside high society.`,
   },
 ];
 

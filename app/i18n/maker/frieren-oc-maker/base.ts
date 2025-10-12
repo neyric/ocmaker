@@ -13,23 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of Frieren.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Frieren?\nFrontline hero standing beside the main cast of Frieren\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Frieren\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Millennia Archivist",
+    description: "An elf chronicler preserving spells before time erases them.",
+    prompt: `What is your character's name?
+Althea Lysiel
+
+What is their race and expected lifespan?
+Elf mage expected to live another 700 years
+
+What magical specialty do they excel in?
+Memory-anchoring magic that stores spells in crystal tomes
+
+Who are their traveling companions or guild?
+Travels with a dwarf cartographer and a young human archivist
+
+How would you describe their personality?
+Gentle, absentminded, nostalgic
+
+What core regret or goal shapes their journey?
+To record every spell she witnessed the Hero Party cast
+
+Share a journey backstory snapshot.
+Missed Himmel's final celebration while copying spells; now retraces old ruins to honor his legacy.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Frieren.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Frieren?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Frieren\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Regretful Hero",
+    description: "A human swordsman ageing quickly while chasing lost time with his mentor.",
+    prompt: `What is your character's name?
+Gideon Hart
+
+What is their race and expected lifespan?
+Human veteran nearing the end of his lifespan
+
+What magical specialty do they excel in?
+Sword-enhancing magic learned from Frieren
+
+Who are their traveling companions or guild?
+Journeys with an orphaned demon seer and a priestess
+
+How would you describe their personality?
+Stoic, reflective, quietly humorous
+
+What core regret or goal shapes their journey?
+To revisit the battlefields where he fought beside Frieren and apologize for parting abruptly
+
+Share a journey backstory snapshot.
+Abandoned the Hero Party to protect his village, only to return decades later and find everyone older or gone.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Frieren.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Frieren?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Frieren\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Demon Historian",
+    description: "A demon scholar cataloging human kindness to challenge old dogma.",
+    prompt: `What is your character's name?
+Selica
+
+What is their race and expected lifespan?
+Demon with a lifespan tied to absorbed mana
+
+What magical specialty do they excel in?
+Illusion dispelling and empathy mirroring magic
+
+Who are their traveling companions or guild?
+Travels alone but corresponds with Frieren via enchanted letters
+
+How would you describe their personality?
+Soft-spoken, curious, cautiously hopeful
+
+What core regret or goal shapes their journey?
+To prove demons can coexist by documenting acts of mercy
+
+Share a journey backstory snapshot.
+Spared by Fern during a skirmish, Selica vowed to repay the grace by chronicling peaceful encounters.`,
+  },
+  {
+    title: "Wandering Disciple",
+    description: "A mage apprentice retracing Frieren's exam routes to test herself.",
+    prompt: `What is your character's name?
+Mira Feld
+
+What is their race and expected lifespan?
+Human mage with extended life thanks to stasis charms
+
+What magical specialty do they excel in?
+Barrier magic infused with nature spirits
+
+Who are their traveling companions or guild?
+Travels with an enchanted fox familiar and a stoic warrior
+
+How would you describe their personality?
+Determined, studious, endearingly awkward
+
+What core regret or goal shapes their journey?
+To pass the first-class mage exam using only spells she learned from strangers
+
+Share a journey backstory snapshot.
+Inspired by Frieren's kindness during the exam, she now repays strangers by teaching the spells she collects.`,
+  },
+  {
+    title: "Ancient Priest",
+    description: "A centuries-old cleric rediscovering faith through new friendships.",
+    prompt: `What is your character's name?
+Brother Caelum
+
+What is their race and expected lifespan?
+Human blessed with slowed aging by the Goddess
+
+What magical specialty do they excel in?
+Miracle amplification through chanted runes
+
+Who are their traveling companions or guild?
+Keeps company with traveling bards and orphan caretakers
+
+How would you describe their personality?
+Warm, forgiving, quietly burdened
+
+What core regret or goal shapes their journey?
+To rebuild a shrine destroyed during the Demon King's reign
+
+Share a journey backstory snapshot.
+Was the last survivor of his order; Frieren once visited his ruined abbey, inspiring him to travel again.`,
   },
 ];
 

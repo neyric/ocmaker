@@ -13,22 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of Marvel.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Marvel?\nFrontline hero standing beside the main cast of Marvel\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Marvel\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Brooklyn Web Guardian",
+    description: "A street-level hero swinging between boroughs with energy webs.",
+    prompt: `What is your character's name?
+Naomi Ruiz
+
+What is their alter ego and alignment?
+Hero name: Silkstrike, alignment: Vigilante hero
+
+What powers or technology do they wield?
+Bio-electric webs and wall-crawling from experimental spider DNA
+
+Which teams or organizations are they affiliated with?
+Young Avengers reserve, works with Spider-Man
+
+How would you describe their personality?
+Snarky, empathetic, relentless
+
+What core motivation drives them?
+To protect neighborhoods ignored by bigger heroes
+
+Share an origin story snapshot.
+Bitten by a spider during a Roxxon break-in, she stole the antidote to save her mother and now repurposes Roxxon tech to keep streets safe.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Marvel.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Marvel?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Marvel\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Stark Industries Designer",
+    description: "A genius engineer crafting modular suits for global crises.",
+    prompt: `What is your character's name?
+Dr. Rhea Patel
+
+What is their alter ego and alignment?
+Hero name: Photon Forge, alignment: Avengers consultant
+
+What powers or technology do they wield?
+Photon-forged armor able to manipulate light constructs
+
+Which teams or organizations are they affiliated with?
+Avengers support division, S.W.O.R.D. tech collaborator
+
+How would you describe their personality?
+Brilliant, composed, sly sense of humor
+
+What core motivation drives them?
+To ensure Earth stays ahead of interstellar threats
+
+Share an origin story snapshot.
+Developed a photon-reactor prototype that foiled a Skrull infiltration and now leads Stark's deep-space defense lab.`,
   },
   {
-    title: "Mentor",
-    description: "A seasoned mentor guiding the next generation within Marvel.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Marvel?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Marvel\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Klyntar Diplomat",
+    description: "A reformed symbiote host mediating peace between species.",
+    prompt: `What is your character's name?
+Eli Vargas
+
+What is their alter ego and alignment?
+Hero name: Accord, alignment: Neutral protector
+
+What powers or technology do they wield?
+Symbiote armor with empathic resonance abilities
+
+Which teams or organizations are they affiliated with?
+Guardians of the Galaxy liaison, works with Venom
+
+How would you describe their personality?
+Calm, stoic, empathetic
+
+What core motivation drives them?
+To prove symbiotes can choose harmony over domination
+
+Share an origin story snapshot.
+Bonded with a rogue symbiote during a Nova Corps mission and brokered a truce that saved Xandar from a hive uprising.`,
+  },
+  {
+    title: "Wakandan Anthropologist",
+    description: "A Wakandan scholar wielding vibranium constructs to protect culture.",
+    prompt: `What is your character's name?
+Imani N'dare
+
+What is their alter ego and alignment?
+Hero name: Kinetic Scribe, alignment: Hero
+
+What powers or technology do they wield?
+Vibranium tattoo tech projecting hard-light glyph shields
+
+Which teams or organizations are they affiliated with?
+Dora Milaje research unit, World Outreach Center
+
+How would you describe their personality?
+Wise, passionate, fiercely loyal
+
+What core motivation drives them?
+To preserve Wakanda's heritage while sharing knowledge responsibly
+
+Share an origin story snapshot.
+Used experimental tattoos to defend artifacts from a Hydra heist, earning Shuri's sponsorship for global outreach missions.`,
+  },
+  {
+    title: "Latverian Rebel",
+    description: "A rogue sorcerer challenging Doom's rule while treading moral gray lines.",
+    prompt: `What is your character's name?
+Viktor Danescu
+
+What is their alter ego and alignment?
+Code name: Revolt, alignment: Anti-hero
+
+What powers or technology do they wield?
+Mystic gunblade channeling chaos magic
+
+Which teams or organizations are they affiliated with?
+Secret alliance with Doctor Strange, Midnight Sons contact
+
+How would you describe their personality?
+Brooding, charismatic, vengeful
+
+What core motivation drives them?
+To liberate his village from Doom's iron grip
+
+Share an origin story snapshot.
+Discovered ancient spellbooks hidden beneath Latveria's ruins and now leads a magical resistance cell.`,
   },
 ];
 

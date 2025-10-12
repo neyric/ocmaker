@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Haikyuu!!.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Haikyuu!!?\nFrontline hero standing beside the main cast of Haikyuu!!\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Haikyuu!!\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Karasuno Setter",
+    description: "A first-year setter pushing tempo to match the Freak Quick.",
+    prompt: `What is your character's name?
+Haruto Ise
+
+What school and year are they in?
+Karasuno High, first-year
+
+What position do they play?
+Setter
+
+What is their signature playstyle or weapon?
+High-speed jump sets launched from unlikely angles
+
+How would you describe their personality?
+Focused, self-critical, quietly determined
+
+Who is their rival or what goal drives them?
+To create a new super quick that surprises even Hinata
+
+Share a volleyball backstory snapshot.
+Transferred from a basketball program and begged Coach Ukai for a chance after seeing Karasuno's Nationals run.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Haikyuu!!.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Haikyuu!!?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Haikyuu!!\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Nekoma Libero",
+    description: "A libero studying cats to perfect her reflexes and reads.",
+    prompt: `What is your character's name?
+Mika Kozume
+
+What school and year are they in?
+Nekoma High, second-year
+
+What position do they play?
+Libero
+
+What is their signature playstyle or weapon?
+Rolling receivers and one-handed pancake saves
+
+How would you describe their personality?
+Playful, analytical, fiercely supportive
+
+Who is their rival or what goal drives them?
+To dethrone Karasuno in the Battle of the Garbage Dump rematch
+
+Share a volleyball backstory snapshot.
+Is Kenma's cousin; she trains by reacting to laser pointers with shelter cats.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Haikyuu!!.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Haikyuu!!?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Haikyuu!!\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Fukurodani Ace",
+    description: "A successor candidate studying Bokuto's mood swings to stabilize the team.",
+    prompt: `What is your character's name?
+Rika Aioi
+
+What school and year are they in?
+Fukurodani Academy, third-year
+
+What position do they play?
+Wing spiker
+
+What is their signature playstyle or weapon?
+Power tips combined with line-shot bombardment
+
+How would you describe their personality?
+Energetic, encouraging, thrives on big moments
+
+Who is their rival or what goal drives them?
+To lead Fukurodani back to Nationals after Bokuto graduates
+
+Share a volleyball backstory snapshot.
+Bokuto mentored her after she cheered him out of a slump during a summer camp scrimmage.`,
+  },
+  {
+    title: "Aoba Johsai Blocker",
+    description: "A middle blocker obsessed with reading setters before they move.",
+    prompt: `What is your character's name?
+Keita Sendai
+
+What school and year are they in?
+Seijoh, second-year
+
+What position do they play?
+Middle blocker
+
+What is their signature playstyle or weapon?
+Anticipation-based blocks and feint slides
+
+How would you describe their personality?
+Calm, strategic, perfectionist
+
+Who is their rival or what goal drives them?
+To shut down Kageyama's quicks in their next regional final
+
+Share a volleyball backstory snapshot.
+Joined the team after watching Oikawa's precise sets inspire his junior high club to reach prefecturals.`,
+  },
+  {
+    title: "MSBY Analyst",
+    description: "A college statistician testing pro-level tactics in club scrimmages.",
+    prompt: `What is your character's name?
+Nao Miyake
+
+What school and year are they in?
+Adlers University Club, graduate student
+
+What position do they play?
+Opposite hitter and analyst
+
+What is their signature playstyle or weapon?
+Back-row pipe attacks paired with statistical serve targeting
+
+How would you describe their personality?
+Studious, upbeat, always scribbling notes
+
+Who is their rival or what goal drives them?
+To earn a development contract with the MSBY Black Jackals
+
+Share a volleyball backstory snapshot.
+Interned with Coach Foster and designed a data dashboard Hinata praised during training camp.`,
   },
 ];
 

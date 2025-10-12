@@ -13,22 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of Bleach.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Bleach?\nFrontline hero standing beside the main cast of Bleach\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Bleach\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Gotei Tracker",
+    description: "A Shin'o Academy graduate specializing in wilderness recon missions.",
+    prompt: `What is your character's name?
+Hayate Murasame
+
+What race and affiliation do they claim?
+Shinigami of the Gotei 13
+
+Which combat division or squad do they serve?
+10th Division reconnaissance unit patrolling Rukongai borders
+
+What is the theme of their Zanpakuto or ability?
+Wind manipulation through the blade Kazekiri
+
+What release states have they achieved?
+Shikai unlocked; Bankai forms a storm dragon he struggles to control
+
+How would you describe their personality?
+Relaxed, observant, fiercely protective of civilians
+
+Share a past life or backstory snapshot.
+In life he was a mountain rescue guide, a memory that now helps him track Hollows through the forests of Rukongai.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Bleach.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Bleach?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Bleach\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Visored Drifter",
+    description: "A Hollow-masked exile who still aids Soul Society from the shadows.",
+    prompt: `What is your character's name?
+Kana Ibaragi
+
+What race and affiliation do they claim?
+Visored operating near Karakura Town
+
+Which combat division or squad do they serve?
+Former 5th Division seated officer allied with Urahara's network
+
+What is the theme of their Zanpakuto or ability?
+Illusionary soundwaves channelled through Oto-no-Kage
+
+What release states have they achieved?
+Shikai mastery with partial Hollow mask granting echolocation
+
+How would you describe their personality?
+Laid-back, sly, burdened by survivor's guilt
+
+Share a past life or backstory snapshot.
+Fled after Aizen's betrayal and built underground safehouses for spiritually aware humans.`,
   },
   {
-    title: "Mentor",
-    description: "A seasoned mentor guiding the next generation within Bleach.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Bleach?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Bleach\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Arrancar Strategist",
+    description: "A former Espada adjutant seeking a purpose beyond Las Noches.",
+    prompt: `What is your character's name?
+Verde Quinto
+
+What race and affiliation do they claim?
+Arrancar aligned with Nelliel's neutral faction
+
+Which combat division or squad do they serve?
+Advisory council mediating Hueco Mundo city disputes
+
+What is the theme of their Zanpakuto or ability?
+Emerald crystal shards that grow into defensive barriers
+
+What release states have they achieved?
+Resurrección Cristaliza forming mirrored armor blades
+
+How would you describe their personality?
+Stoic, philosophical, secretly envious of human warmth
+
+Share a past life or backstory snapshot.
+Once a Hollow librarian, Verde now negotiates truces between clans yearning for peace.`,
+  },
+  {
+    title: "Quincy Archivist",
+    description: "A Wandenreich survivor cataloging forbidden techniques for the future.",
+    prompt: `What is your character's name?
+Astrid Vogel
+
+What race and affiliation do they claim?
+Pureblood Quincy hiding within the Ishida network
+
+Which combat division or squad do they serve?
+Former Schrift researcher now discreetly aiding Ichigo's allies
+
+What is the theme of their Zanpakuto or ability?
+Spirit bow Archivbogen that records enemy reiatsu patterns
+
+What release states have they achieved?
+Vollständig Bibliotheca manifests tomes copying techniques temporarily
+
+How would you describe their personality?
+Reserved, scholarly, remorseful for past atrocities
+
+Share a past life or backstory snapshot.
+She preserved forbidden volumes during Yhwach's campaign and teaches Quincy history to prevent another war.`,
+  },
+  {
+    title: "Fullbringer Courier",
+    description: "A human courier whose Fullbring turns deliveries into lightning raids.",
+    prompt: `What is your character's name?
+Riku Tanabe
+
+What race and affiliation do they claim?
+Human Fullbringer allied with Xcution's reformed members
+
+Which combat division or squad do they serve?
+Acts as a courier for Kisuke and the Substitute Shinigami
+
+What is the theme of their Zanpakuto or ability?
+Fullbring Deadline empowering backpacks for teleport dashes
+
+What release states have they achieved?
+Enhanced Fullbring creating temporal bubbles that slow opponents
+
+How would you describe their personality?
+Energetic, reliable, always racing against the clock
+
+Share a past life or backstory snapshot.
+He awakened his Fullbring after refusing to abandon a life-saving package during a deadly delivery crash.`,
   },
 ];
 

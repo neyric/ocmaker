@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Dragon Ball.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Dragon Ball?\nFrontline hero standing beside the main cast of Dragon Ball\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Dragon Ball\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Saiyan Scholar",
+    description: "A half-Saiyan balancing research with gravity chamber sparring.",
+    prompt: `What is your character's name?
+Lyra Son
+
+What is their race and power level context?
+Half-Saiyan, latent potential equal to Super Saiyan Blue
+
+What fighting style or school do they follow?
+Hybrid style combining Turtle School fundamentals and Galactic Patrol tactics
+
+What signature techniques or transformations do they wield?
+Stellar Burst Kamehameha, Super Saiyan God form
+
+How would you describe their personality?
+Curious, compassionate, fiercely determined
+
+Who is their rival or what goal do they chase?
+To surpass Gohan in both intellect and power levels
+
+Share a backstory snapshot.
+Studied alien biology on Yardrat and returned to Earth to protect capsule research from Frieza Force remnants.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Dragon Ball.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Dragon Ball?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Dragon Ball\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Namekian Guardian",
+    description: "A Namekian warrior-priest safeguarding the Dragon Clan's secrets.",
+    prompt: `What is your character's name?
+Korinma
+
+What is their race and power level context?
+Namekian Dragon Clan warrior with high power suppression
+
+What fighting style or school do they follow?
+Spirit-style combat focused on ki barriers and staff forms
+
+What signature techniques or transformations do they wield?
+Dragon Halo Shield, Giant Form, Healing Wave
+
+How would you describe their personality?
+Stoic, wise, protective of the innocent
+
+Who is their rival or what goal do they chase?
+To defend the new Dragon Balls from space pirates
+
+Share a backstory snapshot.
+Merged with two elder Namekians to gain their knowledge after their village was raided by Moro's henchmen.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Dragon Ball.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Dragon Ball?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Dragon Ball\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Galactic Patrol Ace",
+    description: "An elite patrol officer specializing in pursuit of interstellar criminals.",
+    prompt: `What is your character's name?
+Tarin Jax
+
+What is their race and power level context?
+Tuffle survivor armed with cutting-edge scouters
+
+What fighting style or school do they follow?
+Galactic Patrol aerial combat and joint locks
+
+What signature techniques or transformations do they wield?
+Photon Lariat, Ultra Instinct Sign (partial mastery)
+
+How would you describe their personality?
+Confident, law-abiding, jokes under pressure
+
+Who is their rival or what goal do they chase?
+To capture a rogue Heeter who stole Tuffle tech
+
+Share a backstory snapshot.
+Grew up in a refugee colony orbiting Planet Vegeta's ruins and swore to stop cosmic war profiteers.`,
+  },
+  {
+    title: "Earthling Martial Artist",
+    description: "A human champion blending Crane School precision with modern MMA.",
+    prompt: `What is your character's name?
+Mika Ishido
+
+What is their race and power level context?
+Earthling with power level rivaling Super Saiyan 2
+
+What fighting style or school do they follow?
+Crane School strikes fused with Capsule Corp kinetic gear
+
+What signature techniques or transformations do they wield?
+Tri-Beam Nova, Gravity Burst Step, Ki Barrier Fist
+
+How would you describe their personality?
+Disciplined, humble, hungry for challenge
+
+Who is their rival or what goal do they chase?
+To defeat Vegeta in a sanctioned friendly tournament
+
+Share a backstory snapshot.
+Won the Tenkaichi Budokai by debuting gravity training suits co-developed with Bulma.`,
+  },
+  {
+    title: "Time Patroller",
+    description: "A chronal guardian fixing distortions across multiple timelines.",
+    prompt: `What is your character's name?
+Chrona Vega
+
+What is their race and power level context?
+Saiyan-Earthling hybrid recruited by the Time Patrol
+
+What fighting style or school do they follow?
+Time Patrol Swordsmanship with Instant Transmission mix
+
+What signature techniques or transformations do they wield?
+Chrono Slash, Super Saiyan 4 Limit Breaker, Warp Kiai
+
+How would you describe their personality?
+Resolute, analytical, rarely surprised
+
+Who is their rival or what goal do they chase?
+To prevent Demon God Demigra from rewriting Bardock's sacrifice
+
+Share a backstory snapshot.
+Witnessed her own timeline collapse and now travels with Trunks to safeguard pivotal battles.`,
   },
 ];
 

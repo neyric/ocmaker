@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Detective Conan.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Detective Conan?\nFrontline hero standing beside the main cast of Detective Conan\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Detective Conan\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Phantom Pianist",
+    description: "An undercover music teacher feeding intel to Conan's allies.",
+    prompt: `What is your character's name?
+Asahi Kisaragi
+
+What is their cover identity and occupation?
+Concert pianist posing as a substitute music teacher at Teitan Elementary
+
+What core detective skills do they rely on?
+Perfect pitch for identifying sonic clues and Morse-coded signals
+
+Which support gadgets or allies assist them?
+Professor Agasa's tuning fork tracker and Ayumi's Detective Boys updates
+
+How would you describe their personality?
+Gentle, observant, hides nerves behind melodic humor
+
+What target case or nemesis drives them?
+Unmasking the Black Organization agent embedded in a symphony orchestra
+
+Share a backstory snapshot.
+Lost his sister to a poisoned metronome rigged by the Organization; now he watches over students while gathering proof.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Detective Conan.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Detective Conan?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Detective Conan\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "CIA Silent Runner",
+    description: "A CIA courier infiltrating the Organization through errands and whispers.",
+    prompt: `What is your character's name?
+Leah Morgan
+
+What is their cover identity and occupation?
+Bilingual barista delivering coded drinks to Organization safe houses
+
+What core detective skills do they rely on?
+Counter-surveillance, lip-reading, quick disguises
+
+Which support gadgets or allies assist them?
+FBI handler Camel and a watch communicator tuned to Conan
+
+How would you describe their personality?
+Efficient, cautious, prone to dry sarcasm
+
+What target case or nemesis drives them?
+Tracking the codename Vermouth to expose their newest double agent
+
+Share a backstory snapshot.
+Joined the CIA after her mentor vanished while tailing a Black Organization courier in New York.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Detective Conan.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Detective Conan?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Detective Conan\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Eden Academy Plant",
+    description: "A teenager posing as a prodigy to spy on elite families for evidence.",
+    prompt: `What is your character's name?
+Junpei Sato
+
+What is their cover identity and occupation?
+Scholarship student at Tohto Academy's honors division
+
+What core detective skills do they rely on?
+Photographic memory and speed-solving logic puzzles
+
+Which support gadgets or allies assist them?
+Miniature camera tie from Agasa and Sonoko's society invitations
+
+How would you describe their personality?
+Polite, calculating, hides righteous anger
+
+What target case or nemesis drives them?
+A blackmailer targeting politicians through their children
+
+Share a backstory snapshot.
+His mother was wrongfully imprisoned due to fabricated evidence; Junpei infiltrates elite circles to destroy the forger.`,
+  },
+  {
+    title: "Osaka Gadgeteer",
+    description: "A Kansai inventor crafting gadgets for Heiji's investigations.",
+    prompt: `What is your character's name?
+Tsubasa Yagami
+
+What is their cover identity and occupation?
+Electronics club president and part-time shrine caretaker
+
+What core detective skills do they rely on?
+Evidence preservation and radio triangulation
+
+Which support gadgets or allies assist them?
+Custom drone crow, Kazuha's martial backup, Heiji's trust
+
+How would you describe their personality?
+Boisterous, loyal, loves dramatic reveals
+
+What target case or nemesis drives them?
+A phantom thief stealing national treasures under moonless skies
+
+Share a backstory snapshot.
+Built his first gadget to protect the family shrine bells from vandals hired by land developers.`,
+  },
+  {
+    title: "Undercover Idol",
+    description: "An idol using her fame to lure out stalkers tied to secret experiments.",
+    prompt: `What is your character's name?
+Miko Aihara
+
+What is their cover identity and occupation?
+Chart-topping idol touring nationwide
+
+What core detective skills do they rely on?
+Crowd pattern analysis and subliminal clue planting during shows
+
+Which support gadgets or allies assist them?
+Bodyguard from the Metropolitan Police and Haibara's chemical scanners
+
+How would you describe their personality?
+Outgoing on stage, introspective in private, fearless for fans
+
+What target case or nemesis drives them?
+A pharmaceutical conglomerate testing drugs on obsessive fans
+
+Share a backstory snapshot.
+Her childhood friend disappeared after attending a secret fan event; she rebuilt her career to infiltrate the sponsors behind it.`,
   },
 ];
 

@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of League of Legends.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in League of Legends?\nFrontline hero standing beside the main cast of League of Legends\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines League of Legends\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Demacian Lightbearer",
+    description: "A ranger-knight channeling prism magic to protect refugees.",
+    prompt: `What is your character's name?
+Seren Caelum
+
+Which region or faction do they hail from?
+Demacia
+
+What is their class or combat role?
+Support marksman
+
+What is the theme of their ability kit?
+Prismatic arrows creating shielded light corridors
+
+How would you describe their personality?
+Honorable, compassionate, protective
+
+What ultimate goal drives them?
+To prove Demacia can embrace magic responsibly
+
+Share a lore backstory snapshot.
+Smuggled persecuted mages to safety and formed a coalition with Lux to reform Demacian law.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of League of Legends.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of League of Legends?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of League of Legends\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Noxian Bladestorm",
+    description: "An exile assassin weaving chain blades through warzones.",
+    prompt: `What is your character's name?
+Varrox
+
+Which region or faction do they hail from?
+Noxus
+
+What is their class or combat role?
+Fighter-assassin
+
+What is the theme of their ability kit?
+Chain hooks that siphon resolve from enemies
+
+How would you describe their personality?
+Cold, tactical, secretly honorable
+
+What ultimate goal drives them?
+To dethrone the warlord who massacred his warband
+
+Share a lore backstory snapshot.
+Betrayed during the Ionian campaign, he now leads a covert rebellion of exiled legionnaires.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within League of Legends.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in League of Legends?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of League of Legends\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Piltover Artificer",
+    description: "A Yordle inventor piloting a mech tuned for crowd control.",
+    prompt: `What is your character's name?
+Tinks
+
+Which region or faction do they hail from?
+Piltover & Zaun
+
+What is their class or combat role?
+Tank support
+
+What is the theme of their ability kit?
+Steam-powered mech with magnetic shield pulses
+
+How would you describe their personality?
+Playful, ingenious, easily distracted
+
+What ultimate goal drives them?
+To build a cross-city transit system safer than Hextech portals
+
+Share a lore backstory snapshot.
+Quit working for the Chem-Barons after witnessing Zaunite workers exploited, now protects protest marches.`,
+  },
+  {
+    title: "Ionia Spirit Dancer",
+    description: "A guardian weaving spirit blossoms into razor-sharp ribbons.",
+    prompt: `What is your character's name?
+Hana Fuyori
+
+Which region or faction do they hail from?
+Ionia
+
+What is their class or combat role?
+Enchanter mage
+
+What is the theme of their ability kit?
+Spirit blossom ribbons that heal allies and bind foes
+
+How would you describe their personality?
+Serene, empathetic, resolute
+
+What ultimate goal drives them?
+To heal the Navori forests scarred by war
+
+Share a lore backstory snapshot.
+Guided Yasuo's refugees through the Spirit Blossom festival, earning the favor of the spirits.`,
+  },
+  {
+    title: "Shuriman Ascendant",
+    description: "An ascended guardian commanding sandstorm constructs.",
+    prompt: `What is your character's name?
+Azareth
+
+Which region or faction do they hail from?
+Shurima
+
+What is their class or combat role?
+Mage bruiser
+
+What is the theme of their ability kit?
+Sandstorm constructs that shift between offense and defense
+
+How would you describe their personality?
+Regal, patient, unwavering
+
+What ultimate goal drives them?
+To restore the buried libraries beneath the Sun Disc
+
+Share a lore backstory snapshot.
+Was an archivist chosen by Azir's magic to awaken and protect Shurima's lost history from the Ascended betrayers.`,
   },
 ];
 

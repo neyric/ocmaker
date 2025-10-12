@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Uma Musume.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Uma Musume?\nFrontline hero standing beside the main cast of Uma Musume\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Uma Musume\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Twilight Sprinter",
+    description: "A sprinter inspired by the legendary El Condor Pasa's daring flair.",
+    prompt: `What is your character's name?
+Twilight Condor
+
+What famous pedigree or inspiration do they carry?
+Descendant of a foreign champion who dazzled Japan
+
+What is their preferred distance and running style?
+Prefers 1200m-1600m, front-runner
+
+Who is their trainer or team?
+Tracen Academy team Gold Star
+
+How would you describe their personality?
+Bold, flashy, loves showy finishes
+
+What rivalry or goal race drives them?
+To win the Sprinters Stakes in record time
+
+Share a backstory snapshot.
+Grew up in America watching videos of El Condor Pasa and moved to Tracen to chase that legacy.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Uma Musume.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Uma Musume?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Uma Musume\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Marathon Muse",
+    description: "A distance runner channeling the stamina of Deep Impact.",
+    prompt: `What is your character's name?
+Deep Serenade
+
+What famous pedigree or inspiration do they carry?
+Inspired by Deep Impact's unyielding drive
+
+What is their preferred distance and running style?
+Prefers 2400m-3200m, closing runner
+
+Who is their trainer or team?
+Team Sakura Bridge under Trainer Riko
+
+How would you describe their personality?
+Calm, poetic, quietly competitive
+
+What rivalry or goal race drives them?
+To conquer the Tenno Sho (Spring) with a dramatic late surge
+
+Share a backstory snapshot.
+Writes haiku about every race and trains at dawn to honor Deep Impact's legendary workouts.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Uma Musume.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Uma Musume?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Uma Musume\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Dirt Track Dynamo",
+    description: "A dirt-track racer bringing American grit to Japanese circuits.",
+    prompt: `What is your character's name?
+Desert Blaze
+
+What famous pedigree or inspiration do they carry?
+Inspired by Secretariat's raw power
+
+What is their preferred distance and running style?
+Prefers 1600m dirt, pace chaser
+
+Who is their trainer or team?
+Joint Tracen and overseas exchange program
+
+How would you describe their personality?
+Energetic, stubborn, thrives in mud
+
+What rivalry or goal race drives them?
+To dominate the February Stakes and prove dirt can shine
+
+Share a backstory snapshot.
+Raised on desert ranch tracks, she joined Tracen's exchange program to broaden dirt racing prestige.`,
+  },
+  {
+    title: "Classic Crown",
+    description: "A tactician aiming for the elusive Triple Crown.",
+    prompt: `What is your character's name?
+Crown Sonata
+
+What famous pedigree or inspiration do they carry?
+Modeled after Symboli Rudolf's regal presence
+
+What is their preferred distance and running style?
+Prefers 2000m-2400m, tactical stalker
+
+Who is their trainer or team?
+Symboli Dormitory elite team
+
+How would you describe their personality?
+Disciplined, regal, encouraging to juniors
+
+What rivalry or goal race drives them?
+To sweep the Satsuki Sho, Tokyo Yushun, and Kikuka Sho
+
+Share a backstory snapshot.
+Mentored by Symboli Rudolf herself, she balances harsh training with tutoring younger Uma Musume.`,
+  },
+  {
+    title: "Night Racetrack Idol",
+    description: "A night racing specialist captivating fans under stadium lights.",
+    prompt: `What is your character's name?
+Moonlit Diva
+
+What famous pedigree or inspiration do they carry?
+Inspired by Agnes Digital's versatility
+
+What is their preferred distance and running style?
+Prefers 1400m night races, adaptable runner
+
+Who is their trainer or team?
+Twilight Stage idol-racing unit
+
+How would you describe their personality?
+Glamorous, fun-loving, hardworking
+
+What rivalry or goal race drives them?
+To headline the NHK Mile Cup Night Special and become top idol
+
+Share a backstory snapshot.
+Balanced idol lessons with racetrack drills after being scouted during a fan-favorite half-time show.`,
   },
 ];
 

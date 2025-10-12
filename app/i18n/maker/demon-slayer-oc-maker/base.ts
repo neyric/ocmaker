@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Demon Slayer.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Demon Slayer?\nFrontline hero standing beside the main cast of Demon Slayer\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Demon Slayer\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Thunder Hashira Successor",
+    description: "A prodigy trained under Zenitsu's lineage to master storm-borne blades.",
+    prompt: `What is your character's name?
+Sayo Hinata
+
+What is their Corps rank or demon alignment?
+Hashira-in-training within the Demon Slayer Corps
+
+What Breathing Style or Blood Demon Art do they wield?
+Thunder Breathing: Seventh Form — Horizon Break
+
+What weapon or fighting style do they favor?
+Twin nichirin kodachi that spark with crackling arcs
+
+How would you describe their personality?
+Soft-spoken, lightning-fast when provoked, fiercely dutiful
+
+What goal drives them onward?
+To earn the title of Thunder Hashira before her mentor retires
+
+Share their tragic backstory.
+Her mountain village was erased by a demon storm; only thunder in the distance answered her cries for help.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Demon Slayer.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Demon Slayer?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Demon Slayer\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Mist Corps Medic",
+    description: "A support slayer weaving mist to shield allies while treating wounds.",
+    prompt: `What is your character's name?
+Akari Fujimoto
+
+What is their Corps rank or demon alignment?
+Kanoe-ranked slayer assigned to the medical corps
+
+What Breathing Style or Blood Demon Art do they wield?
+Mist Breathing derivatives infused with healing herbs
+
+What weapon or fighting style do they favor?
+Collapsible spear that atomizes restorative mist
+
+How would you describe their personality?
+Calm, nurturing, hides anxiety behind gentle smiles
+
+What goal drives them onward?
+To reduce battlefield casualties to zero on her watch
+
+Share their tragic backstory.
+She survived a demon ambush that wiped out her entire squad, saved only by a stranger's medicine pouch.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Demon Slayer.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Demon Slayer?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Demon Slayer\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Rogue Demon Scholar",
+    description: "A former scholar turned demon who preserves human texts in secret.",
+    prompt: `What is your character's name?
+Kuro Tsukuda
+
+What is their Corps rank or demon alignment?
+Upper-rank demon deserter seeking redemption
+
+What Breathing Style or Blood Demon Art do they wield?
+Blood Demon Art: Ink Labyrinth — entraps foes in script threads
+
+What weapon or fighting style do they favor?
+Brush-bladed claws that write binding kanji mid-air
+
+How would you describe their personality?
+Guilt-ridden, measured, desperate to avoid killing
+
+What goal drives them onward?
+To catalog demon weaknesses and deliver them to the Corps
+
+Share their tragic backstory.
+He was forced to consume his own research party; now he hides in libraries leaving coded warnings for slayers.`,
+  },
+  {
+    title: "Beast Breath Warrior",
+    description: "A wild fighter wielding serrated blades blessed by the mountains.",
+    prompt: `What is your character's name?
+Raiju Aomori
+
+What is their Corps rank or demon alignment?
+Tsuguko under Inosuke's guidance
+
+What Breathing Style or Blood Demon Art do they wield?
+Beast Breathing: Sixth Fang — Ridge Reaver
+
+What weapon or fighting style do they favor?
+Dual jagged nichirin blades fashioned from boar tusk steel
+
+How would you describe their personality?
+Rowdy, loyal, surprisingly perceptive about nature
+
+What goal drives them onward?
+To defend the mountains that once sheltered him from demons
+
+Share their tragic backstory.
+Raised by boars after demons slaughtered his parents, he learned language by mimicking traveling merchants.`,
+  },
+  {
+    title: "Sun Breathing Archivist",
+    description: "A historian tracing Sun Breathing fragments across forgotten shrines.",
+    prompt: `What is your character's name?
+Emi Kyojuro
+
+What is their Corps rank or demon alignment?
+Civilian ally entrusted with Corps secrets
+
+What Breathing Style or Blood Demon Art do they wield?
+Sun Breathing kata transcribed into ceremonial dances
+
+What weapon or fighting style do they favor?
+Bladed fan inscribed with ancestral runes
+
+How would you describe their personality?
+Scholarly, steadfast, fueled by righteous fire
+
+What goal drives them onward?
+To restore every Sun Breathing form before Muzan's influence returns
+
+Share their tragic backstory.
+She is a distant descendant of the Rengoku line who lost her family archives when a demon torched their estate.`,
   },
 ];
 

@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Spy x Family.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Spy x Family?\nFrontline hero standing beside the main cast of Spy x Family\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Spy x Family\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "WISE Handler",
+    description: "A WISE handler embedded as Eden Academy's etiquette teacher.",
+    prompt: `What is your character's name?
+Lena Hartmann
+
+What cover identity and true role do they hold?
+Cover identity: Eden Academy etiquette instructor; true role: WISE handler
+
+Which agency or allegiance do they serve?
+WISE
+
+What signature skills or powers do they possess?
+Expert lip reader, miniature camera pens, self-defense
+
+How would you describe their personality?
+Composed, resourceful, dry sense of humor
+
+What mission objective drives them?
+To gather intel on the Desmond family through faculty meetings
+
+Share a backstory snapshot.
+Recruited after exposing counterfeit bonds; she now coordinates Operation Strix field agents from within Eden.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Spy x Family.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Spy x Family?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Spy x Family\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Garden Cleaner",
+    description: "A Garden assassin passing as a florist in Berlint's upscale district.",
+    prompt: `What is your character's name?
+Iris Nacht
+
+What cover identity and true role do they hold?
+Cover identity: boutique florist; true role: Garden Cleaner
+
+Which agency or allegiance do they serve?
+Garden
+
+What signature skills or powers do they possess?
+Poisoned thorns, close-quarters aikido, hidden garrote
+
+How would you describe their personality?
+Graceful, warm-hearted to friends, merciless on missions
+
+What mission objective drives them?
+Eliminate a coup leader targeting the Westalis-Ostania peace talks
+
+Share a backstory snapshot.
+Taken in by the Director after avenging her family, she now delivers bouquets hiding blades.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Spy x Family.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Spy x Family?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Spy x Family\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "SSS Analyst",
+    description: "An SSS officer pretending to be a gossip columnist to sniff out spies.",
+    prompt: `What is your character's name?
+Markus Weiss
+
+What cover identity and true role do they hold?
+Cover identity: society magazine columnist; true role: SSS analyst
+
+Which agency or allegiance do they serve?
+State Security Service (SSS)
+
+What signature skills or powers do they possess?
+Audio surveillance, disguise kits, martial training
+
+How would you describe their personality?
+Suspicious, proud, surprisingly lonely
+
+What mission objective drives them?
+To expose WISE sleeper agents infiltrating Eden Academy
+
+Share a backstory snapshot.
+Lost his brother to foreign espionage, fueling his obsession with rooting out spies in Ostania.`,
+  },
+  {
+    title: "Twilight's Apprentice",
+    description: "A prodigy spy mentored by Loid while acting as a daycare worker.",
+    prompt: `What is your character's name?
+Nina Frost
+
+What cover identity and true role do they hold?
+Cover identity: daycare caretaker; true role: WISE field operative
+
+Which agency or allegiance do they serve?
+WISE
+
+What signature skills or powers do they possess?
+Instant recall, micro-drone deployment, empath training
+
+How would you describe their personality?
+Cheerful, clever, quietly determined
+
+What mission objective drives them?
+To monitor Eden student playgroups for potential threats
+
+Share a backstory snapshot.
+Saved by Twilight during a refugee crisis, she insisted on training to help protect other children.`,
+  },
+  {
+    title: "Underworld Informant",
+    description: "A black-market broker feeding intel to both WISE and Garden for a price.",
+    prompt: `What is your character's name?
+Felix Noir
+
+What cover identity and true role do they hold?
+Cover identity: jazz club owner; true role: underworld informant
+
+Which agency or allegiance do they serve?
+Neutral fixer linked to both WISE and Garden
+
+What signature skills or powers do they possess?
+Information brokerage, safehouse networks, hidden weapon cane
+
+How would you describe their personality?
+Charming, pragmatic, morally gray
+
+What mission objective drives them?
+To keep Berlint's underworld balanced while protecting adopted street kids
+
+Share a backstory snapshot.
+Once a street orphan, he now trades secrets to keep violence away from his neighborhood.`,
   },
 ];
 

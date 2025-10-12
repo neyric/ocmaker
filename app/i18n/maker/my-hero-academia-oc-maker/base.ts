@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of My Hero Academia.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in My Hero Academia?\nFrontline hero standing beside the main cast of My Hero Academia\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines My Hero Academia\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "U.A. Support Course Ace",
+    description: "A tech whiz combining gadgets with her energy-reflecting Quirk.",
+    prompt: `What is your character's name?
+Kiri Nakamoto
+
+Are they a hero, student, or villain and with which group?
+U.A. High Support Course, hero hopeful
+
+Describe their Quirk and its limitations.
+Quirk: Prism Pulse — converts incoming energy into focused beams but overheats after three shots
+
+What costume or support gear do they use?
+Reflective gauntlets and cooling coils built with Power Loader
+
+How would you describe their personality?
+Inventive, enthusiastic, occasionally scatterbrained
+
+What aspiration drives them?
+To design support gear that lets any aspiring hero fight safely
+
+Share an origin backstory snapshot.
+Grew up in a powerless family and built her first gauntlet from junkyard metal to stop a local villain.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of My Hero Academia.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of My Hero Academia?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of My Hero Academia\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Work-Study Intern",
+    description: "A hero course student interning under Mirko for close-combat training.",
+    prompt: `What is your character's name?
+Daigo Sora
+
+Are they a hero, student, or villain and with which group?
+U.A. Hero Course Class 2-A
+
+Describe their Quirk and its limitations.
+Quirk: Sonic Vault — explosive leg strength with sonic booms but causes muscle strain
+
+What costume or support gear do they use?
+Reinforced knee braces and vibration-dampening boots
+
+How would you describe their personality?
+Competitive, fiery, fiercely loyal
+
+What aspiration drives them?
+To become a top 5 hero who inspires kids in rural towns
+
+Share an origin backstory snapshot.
+Saved classmates from a landslide using raw leg power, catching Mirko's attention for an internship.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within My Hero Academia.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in My Hero Academia?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of My Hero Academia\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Underground Vigilante",
+    description: "A vigilante assisting heroes in shadowy corners of Musutafu.",
+    prompt: `What is your character's name?
+Night Lattice
+
+Are they a hero, student, or villain and with which group?
+Independent vigilante collaborating with Eraser Head
+
+Describe their Quirk and its limitations.
+Quirk: Lattice — projects barrier grids but requires precise hand choreography
+
+What costume or support gear do they use?
+Grapple lines and a visor with predictive trajectory display
+
+How would you describe their personality?
+Calm, analytical, self-sacrificing
+
+What aspiration drives them?
+To earn legal recognition for vigilantes who cover blind spots
+
+Share an origin backstory snapshot.
+Once failed the Hero License Exam for using vigilante tactics; now works to prove the underground can cooperate with pros.`,
+  },
+  {
+    title: "League Recruit",
+    description: "A villain recruit who manipulates shadows to conceal allies.",
+    prompt: `What is your character's name?
+Shadeglow
+
+Are they a hero, student, or villain and with which group?
+League of Villains
+
+Describe their Quirk and its limitations.
+Quirk: Eclipse Veil — merges into shadows to create portals but weakens under bright light
+
+What costume or support gear do they use?
+Photon-absorbing cloak and Dabi-supplied flare disruptors
+
+How would you describe their personality?
+Brooding, theatrical, surprisingly compassionate to outcasts
+
+What aspiration drives them?
+To dismantle hero society that rejected her quirk control struggles
+
+Share an origin backstory snapshot.
+Expelled from hero school after an uncontrolled incident, she was recruited by Toga to protect runaway kids.`,
+  },
+  {
+    title: "Hero Agency Accountant",
+    description: "An agency support hero balancing finance with defensive quirk use.",
+    prompt: `What is your character's name?
+Ledger Guard
+
+Are they a hero, student, or villain and with which group?
+Sidekick at Endeavor's Agency
+
+Describe their Quirk and its limitations.
+Quirk: Hardlight Ledger — manifests barrier shields shaped like spreadsheets, but each shield lasts only 10 seconds
+
+What costume or support gear do they use?
+Holographic projector gauntlets and reinforced visor
+
+How would you describe their personality?
+Meticulous, level-headed, dry sense of humor
+
+What aspiration drives them?
+To keep agencies transparent while saving civilians
+
+Share an origin backstory snapshot.
+Grew tired of corporate accounting and joined Endeavor's office after protecting interns during a villain raid.`,
   },
 ];
 

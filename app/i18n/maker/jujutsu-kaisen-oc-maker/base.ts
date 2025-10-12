@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Jujutsu Kaisen.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Jujutsu Kaisen?\nFrontline hero standing beside the main cast of Jujutsu Kaisen\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Jujutsu Kaisen\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Tokyo Second-Year",
+    description: "A Tokyo student whose ink-based sorcery paints battlefields in sigils.",
+    prompt: `What is your character's name?
+Hikari Sumi
+
+What is their Jujutsu grade and affiliation?
+Grade 2 sorcerer, Tokyo Jujutsu High second-year
+
+What is their Innate Technique?
+Ink Current Technique—controls cursed sumi-ink to form moving glyphs
+
+Describe their Domain Expansion or barrier ability.
+Domain Expansion: Black Tide Gallery traps foes in a rotating ink museum
+
+How would you describe their personality?
+Artistic, enthusiastic, fiercely loyal to classmates
+
+What binding vows or weaknesses define them?
+Power doubles if she recites a haiku mid-fight, but she loses control if any syllable is off
+
+Share a backstory snapshot.
+Inherited ancient calligraphy brushes from her grandmother, awakening her technique when a curse attacked their gallery.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Jujutsu Kaisen.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Jujutsu Kaisen?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Jujutsu Kaisen\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Zen'in Outcast",
+    description: "A Zen'in clan defectee specializing in improvised cursed weapons.",
+    prompt: `What is your character's name?
+Zen'in Chika
+
+What is their Jujutsu grade and affiliation?
+Semi-Grade 1 sorcerer turned freelancer
+
+What is their Innate Technique?
+Shard Arsenal—manifest cursed glass daggers that redirect projectiles
+
+Describe their Domain Expansion or barrier ability.
+Simple Domain: Mirror Pavilion reflecting attacks threefold
+
+How would you describe their personality?
+Reserved, strategic, quietly furious at clan politics
+
+What binding vows or weaknesses define them?
+Cannot attack first; damage doubles if struck before retaliating
+
+Share a backstory snapshot.
+Fled the clan after refusing to betray Maki; now works with Megumi to dismantle the Zen'in power structure.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Jujutsu Kaisen.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Jujutsu Kaisen?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Jujutsu Kaisen\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Kyoto Instructor",
+    description: "A Kyoto faculty member mentoring rookies while shielding civilians.",
+    prompt: `What is your character's name?
+Shun Aoba
+
+What is their Jujutsu grade and affiliation?
+First-grade instructor at Kyoto school
+
+What is their Innate Technique?
+Aegis Chant—projects musical notes that negate cursed techniques
+
+Describe their Domain Expansion or barrier ability.
+Barrier: Hymn Basilica amplifies allies' techniques inside
+
+How would you describe their personality?
+Calm, paternal, prone to bad puns
+
+What binding vows or weaknesses define them?
+If he protects civilians first, his barriers triple in strength; otherwise they shatter
+
+Share a backstory snapshot.
+Former choir prodigy whose entire ensemble was cursed; he dedicated his voice to protecting other performers.`,
+  },
+  {
+    title: "Culling Game Nomad",
+    description: "A participant leveraging weather manipulation to survive deadly colonies.",
+    prompt: `What is your character's name?
+Rei Hayashida
+
+What is their Jujutsu grade and affiliation?
+Grade 1 sorcerer roaming Culling Game colonies
+
+What is their Innate Technique?
+Storm Needle—summons localized lightning spears
+
+Describe their Domain Expansion or barrier ability.
+Domain: Tempest Cage swirling winds and electrified rain
+
+How would you describe their personality?
+Restless, daring, fiercely protective of civilians trapped inside
+
+What binding vows or weaknesses define them?
+Each lightning strike drains her stamina unless she shouts the target's full name
+
+Share a backstory snapshot.
+Entered the Culling Game voluntarily to rescue her younger brother, earning points by disarming lethal sorcerers.`,
+  },
+  {
+    title: "Curse Researcher",
+    description: "A sorcerer-scientist partnering with Mei Mei to monetize curse hunts.",
+    prompt: `What is your character's name?
+Dr. Koga
+
+What is their Jujutsu grade and affiliation?
+Grade 2 analyst working with Mei Mei's agency
+
+What is their Innate Technique?
+Dissection Eyes—identifies curse weak points in a glance
+
+Describe their Domain Expansion or barrier ability.
+Barrier Technique: Surgical Theatre slows time within a scalpel radius
+
+How would you describe their personality?
+Analytical, pragmatic, dry sense of humor
+
+What binding vows or weaknesses define them?
+Must donate 10% of earnings to orphaned students or lose access to the barrier
+
+Share a backstory snapshot.
+Was a medical student until a curse took over the anatomy lab; saved by Mei Mei, he now dissects curses for profit and justice.`,
   },
 ];
 

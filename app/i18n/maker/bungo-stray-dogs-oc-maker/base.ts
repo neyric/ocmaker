@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Bungo Stray Dogs.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Bungo Stray Dogs?\nFrontline hero standing beside the main cast of Bungo Stray Dogs\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Bungo Stray Dogs\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Detective Illusionist",
+    description: "An Agency sleuth who weaponizes stagecraft to disorient foes.",
+    prompt: `What is your character's name?
+Hanae Sazanami
+
+What is their Ability title and function?
+Ability: Theatre of Mist — conjures tactile illusions within spotlighted zones
+
+Which affiliation do they belong to?
+Armed Detective Agency
+
+What combat or support role do they fill?
+Field investigator providing deception and misdirection
+
+What conditions or weaknesses come with their Ability?
+Requires a physical prop to anchor each illusion; bright noon light weakens it
+
+How would you describe their personality?
+Cheerful, empathetic, always quoting classic plays
+
+Share a notable past incident.
+Exposed a Port Mafia smuggling ring by staging a fake hostage production inside an abandoned warehouse.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Bungo Stray Dogs.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Bungo Stray Dogs?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Bungo Stray Dogs\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Port Mafia Courier",
+    description: "A courier whose ability lets him fuse with graffiti to travel unseen.",
+    prompt: `What is your character's name?
+Kazuo Graff
+
+What is their Ability title and function?
+Ability: Fresco Passage — enters murals and exits any connected painting
+
+Which affiliation do they belong to?
+Port Mafia logistics arm
+
+What combat or support role do they fill?
+Smuggler and rapid-response scout
+
+What conditions or weaknesses come with their Ability?
+Only works on painted surfaces created within the last seven days
+
+How would you describe their personality?
+Cynical, loyal to friends, fond of street art
+
+Share a notable past incident.
+Saved Akutagawa from an ambush by dragging him into a graffiti tunnel moments before bullets struck.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Bungo Stray Dogs.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Bungo Stray Dogs?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Bungo Stray Dogs\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Special Division Archivist",
+    description: "A government agent who weaponizes literature to freeze criminals in their tracks.",
+    prompt: `What is your character's name?
+Mariko Verse
+
+What is their Ability title and function?
+Ability: Stanza Arrest — recites poetry that manifests binding chains
+
+Which affiliation do they belong to?
+Special Division for Unusual Powers
+
+What combat or support role do they fill?
+Arrest specialist and intelligence officer
+
+What conditions or weaknesses come with their Ability?
+Chains break if she misquotes a line or loses rhythm
+
+How would you describe their personality?
+Disciplined, polite, hides dry humor behind etiquette
+
+Share a notable past incident.
+Captured a rogue Ability user by quoting their own unpublished manuscript back at them word for word.`,
+  },
+  {
+    title: "Guild Negotiator",
+    description: "An American expatriate balancing profit and conscience in Yokohama.",
+    prompt: `What is your character's name?
+Elias Monroe
+
+What is their Ability title and function?
+Ability: Golden Contract — seals deals with energy barriers
+
+Which affiliation do they belong to?
+The Guild (independent consultant)
+
+What combat or support role do they fill?
+Negotiator and battlefield shield support
+
+What conditions or weaknesses come with their Ability?
+Barrier collapses if either party breaks their spoken promise
+
+How would you describe their personality?
+Suave, opportunistic, surprisingly sentimental
+
+Share a notable past incident.
+Brokered a truce between the Agency and Guild by wagering his ability on the safe return of civilian hostages.`,
+  },
+  {
+    title: "Decay Insider",
+    description: "A spy who infiltrated the Decay of the Angel at great personal cost.",
+    prompt: `What is your character's name?
+Chiyo Fable
+
+What is their Ability title and function?
+Ability: Paper Labyrinth — folds any document into reality-bending mazes
+
+Which affiliation do they belong to?
+Double agent for the Hunting Dogs
+
+What combat or support role do they fill?
+Intel courier weaving escape routes for allies
+
+What conditions or weaknesses come with their Ability?
+Labyrinth collapses if someone burns or tears the paper
+
+How would you describe their personality?
+Grim, resolute, strangely hopeful about humanity
+
+Share a notable past incident.
+Guided trapped civilians out of the Sky Casino by folding evacuation maps into a tangible escape corridor.`,
   },
 ];
 

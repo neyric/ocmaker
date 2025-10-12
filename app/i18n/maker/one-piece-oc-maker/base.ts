@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of One Piece.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in One Piece?\nFrontline hero standing beside the main cast of One Piece\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines One Piece\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Laughing Navigator",
+    description: "A navigator whose laughter charts currents no log pose can track.",
+    prompt: `What is your character's name?
+Marin Tidewell
+
+Which crew or allegiance do they claim?
+Straw Hat Grand Fleet ally captaining the Tidewell Pirates
+
+What is their role and combat style?
+Navigator-fencer balancing on a tideboard
+
+What Devil Fruit or Haki do they wield?
+Observation Haki and the Swirl Swirl Fruit that redirects whirlpools
+
+What signature traits define them?
+Always humming sea shanties, tattoos of sea charts on her arms
+
+What personal dream drives them?
+To chart the Laugh Tale current for every free sailor
+
+Share a backstory snapshot.
+Escaped a World Government research ship by surfing a Maelstrom using her newly awakened Swirl Swirl Fruit.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of One Piece.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of One Piece?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of One Piece\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Cipher Pol Defector",
+    description: "A former CP0 agent using Rokushiki in service of the Revolutionary Army.",
+    prompt: `What is your character's name?
+Cato Cipher
+
+Which crew or allegiance do they claim?
+Revolutionary Army intelligence unit
+
+What is their role and combat style?
+Martial arts spy blending Rokushiki and Fishman Karate
+
+What Devil Fruit or Haki do they wield?
+Armament Haki coating claws sharpened by Rankyaku
+
+What signature traits define them?
+Wears a fox mask, speaks in coded proverbs
+
+What personal dream drives them?
+To dismantle the Cipher Pol system that trained him
+
+Share a backstory snapshot.
+Defected after refusing to eliminate a village aiding Sabo; now feeds Dragon information on World Nobles.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within One Piece.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in One Piece?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of One Piece\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Undersea Chef",
+    description: "A fishman chef serving gourmet feasts aboard a floating restaurant fleet.",
+    prompt: `What is your character's name?
+Chef Coral
+
+Which crew or allegiance do they claim?
+Baratie Blue Fleet
+
+What is their role and combat style?
+Chef-blade dancer wielding twin cleavers underwater
+
+What Devil Fruit or Haki do they wield?
+Fishman Karate with limited Armament Haki
+
+What signature traits define them?
+Collects shell spices, sings recipes mid-fight
+
+What personal dream drives them?
+To create a peace treaty banquet between Fishman Island and the surface
+
+Share a backstory snapshot.
+Once a Neptune Army cook, he left to teach humans to respect underwater cuisine through diplomacy.`,
+  },
+  {
+    title: "Sky Island Cartographer",
+    description: "A Skypiean cartographer exploring New World sky currents.",
+    prompt: `What is your character's name?
+Nimbus Lian
+
+Which crew or allegiance do they claim?
+Allied with the Straw Hat Fleet as a freelance cartographer
+
+What is their role and combat style?
+Aerial marksman using dial-powered wings
+
+What Devil Fruit or Haki do they wield?
+Observation Haki and Impact Dial shot enhancements
+
+What signature traits define them?
+Carries cloud jars, keeps a journal of every song she hears
+
+What personal dream drives them?
+To connect Skypiea islands with a network of cloud railways
+
+Share a backstory snapshot.
+Helped Nami map lightning routes after Enel's defeat, choosing adventure over staying in Aphelandra.`,
+  },
+  {
+    title: "Wano Ronin",
+    description: "A wandering samurai chronicling Kozuki history while dueling Beast Pirates remnants.",
+    prompt: `What is your character's name?
+Kyoji Kozuki
+
+Which crew or allegiance do they claim?
+Allied with the Nine Red Scabbards
+
+What is their role and combat style?
+Swordsman-historian wielding twin odachi
+
+What Devil Fruit or Haki do they wield?
+Advanced Armament Haki and Conqueror's Haki sparks
+
+What signature traits define them?
+Wears a half-burned kimono, hums old Kozuki lullabies
+
+What personal dream drives them?
+To publish a book recounting Wano's liberation for the Grand Line
+
+Share a backstory snapshot.
+Survived Orochi's purge by hiding in a theatre troupe; now records oral histories while protecting travelers.`,
   },
 ];
 

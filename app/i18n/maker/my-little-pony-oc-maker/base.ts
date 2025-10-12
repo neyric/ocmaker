@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of My Little Pony.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in My Little Pony?\nFrontline hero standing beside the main cast of My Little Pony\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines My Little Pony\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Crystal Empire Historian",
+    description: "A crystal pony preserving ancient songs with enchanted quills.",
+    prompt: `What is your character's name?
+Twinkle Archive
+
+What species and tribe are they?
+Crystal pony
+
+Where is their home location?
+Crystal Empire
+
+What is their cutie mark and talent?
+Cutie mark of a quill over a snowflake, records memories into music boxes
+
+How would you describe their personality?
+Gentle, studious, quietly adventurous
+
+What friendship lesson or goal guides them?
+Teaching foals that history shines brighter when shared
+
+Share a backstory snapshot.
+Freed from King Sombra's control, she vowed to preserve stories by touring Equestria's libraries.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of My Little Pony.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of My Little Pony?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of My Little Pony\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Cloudsdale Weather Captain",
+    description: "A pegasus choreographing rainbow light shows in the sky.",
+    prompt: `What is your character's name?
+Gale Prism
+
+What species and tribe are they?
+Pegasus
+
+Where is their home location?
+Cloudsdale
+
+What is their cutie mark and talent?
+Cutie mark of crossed feathers with a prismatic arc, masters weather artistry
+
+How would you describe their personality?
+Energetic, charismatic, a bit of a show-off
+
+What friendship lesson or goal guides them?
+Learning that teamwork matters more than applause
+
+Share a backstory snapshot.
+Rainbow Dash mentored her after a failed show to teach coordinating with weather teams.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within My Little Pony.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in My Little Pony?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of My Little Pony\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Everfree Herbalist",
+    description: "An earth pony herbalist crafting lanterns that ward off timberwolves.",
+    prompt: `What is your character's name?
+Fern Glow
+
+What species and tribe are they?
+Earth pony
+
+Where is their home location?
+Edge of the Everfree Forest
+
+What is their cutie mark and talent?
+Cutie mark of a glowing leaf, excels at brewing protective salves
+
+How would you describe their personality?
+Warm, brave, a little absentminded
+
+What friendship lesson or goal guides them?
+Showing Ponyville that the Everfree can be a friend, not a foe
+
+Share a backstory snapshot.
+Zecora helped her conquer her fear of the forest, inspiring her to help others explore safely.`,
+  },
+  {
+    title: "Canterlot Etiquette Tutor",
+    description: "A unicorn tutor helping nobles discover their authentic selves.",
+    prompt: `What is your character's name?
+Lumière Grace
+
+What species and tribe are they?
+Unicorn
+
+Where is their home location?
+Canterlot
+
+What is their cutie mark and talent?
+Cutie mark of a mirror and quill, guides ponies to honest manners
+
+How would you describe their personality?
+Refined, kind-hearted, witty
+
+What friendship lesson or goal guides them?
+Teaching that true grace comes from empathy, not titles
+
+Share a backstory snapshot.
+Once pressured to fit strict noble standards, she befriended Rarity and learned to celebrate individuality.`,
+  },
+  {
+    title: "Yakyakistan Ambassador",
+    description: "A yak ambassador blending cultures through music and pastries.",
+    prompt: `What is your character's name?
+Yakima Beat
+
+What species and tribe are they?
+Yak
+
+Where is their home location?
+Yakyakistan
+
+What is their cutie mark and talent?
+Cutie mark substitute: ceremonial drum, unites communities with rhythm
+
+How would you describe their personality?
+Boisterous, sincere, devoted
+
+What friendship lesson or goal guides them?
+Showing every kingdom that differences make harmony stronger
+
+Share a backstory snapshot.
+Pinkie Pie inspired Yakima to share yak culture; now she tours Equestria with friendship festivals.`,
   },
 ];
 

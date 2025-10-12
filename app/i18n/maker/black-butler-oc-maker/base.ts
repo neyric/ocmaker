@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Black Butler.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Black Butler?\nFrontline hero standing beside the main cast of Black Butler\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Black Butler\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Queen's Watchdog Apprentice",
+    description: "An aristocratic investigator with a polite smile and ruthless instincts.",
+    prompt: `What is your character's name?
+Lady Eveline Ashcroft
+
+What social cover and title do they maintain?
+Duchess's niece serving as a charity organizer for London's orphans
+
+What alignment best describes them?
+Human agent under the Queen's Watchdog office
+
+What talents or powers assist their work?
+Code-breaking, fencing, and a demon hound bound to a silver whistle
+
+How would you describe their personality?
+Refined, calculating, delivers barbed wit with grace
+
+What secret motive pushes them forward?
+To uncover who ordered her parents' staged carriage accident
+
+Share a brief backstory snapshot.
+Rescued by Phantomhive servants after kidnappers targeted her inheritance, she now assists in the underworld investigations.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Black Butler.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Black Butler?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Black Butler\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Rehabilitated Reaper",
+    description: "A Grim Reaper assigned to shepherd troublesome souls through the theatre district.",
+    prompt: `What is your character's name?
+Cedric Greyleaf
+
+What social cover and title do they maintain?
+Stage manager at the Royal Albion Theatre Company
+
+What alignment best describes them?
+Shinigami on earthly probation
+
+What talents or powers assist their work?
+Death scythe disguised as a spotlight rig, cinematic record manipulation
+
+How would you describe their personality?
+Melancholic, artistic, wry about mortal frailty
+
+What secret motive pushes them forward?
+To atone for censoring souls without review during the Jack the Ripper case
+
+Share a brief backstory snapshot.
+Cedric disobeyed dispatch orders and now ensures every theatre "accident" follows the proper ledger of souls.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Black Butler.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Black Butler?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Black Butler\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Demon Valet",
+    description: "A junior demon mastering etiquette while bound to a disgraced viscountess.",
+    prompt: `What is your character's name?
+Silas
+
+What social cover and title do they maintain?
+Personal valet to a viscountess seeking redemption
+
+What alignment best describes them?
+Demon bound by an ancestral contract
+
+What talents or powers assist their work?
+Mirror-step travel, impeccable cuisine, truth-binding tea rituals
+
+How would you describe their personality?
+Suave, patient, faintly amused by human folly
+
+What secret motive pushes them forward?
+To collect his lady's soul only after she clears her family's name
+
+Share a brief backstory snapshot.
+Once serving a pirate lord, Silas now studies noble etiquette to fulfill the contract's clause of "impeccable service".`,
+  },
+  {
+    title: "Circus Illusionist",
+    description: "A Noah's Ark Circus performer balancing loyalty with covert justice.",
+    prompt: `What is your character's name?
+Marion "Lark" Blythe
+
+What social cover and title do they maintain?
+Illusionist and tightrope artist in the revived Noah's Ark Circus
+
+What alignment best describes them?
+Human informant secretly allied with the Phantomhive estate
+
+What talents or powers assist their work?
+Illusion props, concealed throwing blades, network of street urchins
+
+How would you describe their personality?
+Playful, defiant, fiercely protective of found family
+
+What secret motive pushes them forward?
+To keep orphan performers safe from predatory nobles
+
+Share a brief backstory snapshot.
+Saved by Joker as a child, Marion now steers the circus toward honest shows while feeding intel to Ciel.`,
+  },
+  {
+    title: "Underground Alchemist",
+    description: "A chemist dabbling in forbidden arts to reunite with the dead.",
+    prompt: `What is your character's name?
+Professor Adelaide Crane
+
+What social cover and title do they maintain?
+Reclusive academic publishing tonic recipes
+
+What alignment best describes them?
+Human occultist flirting with demonic bargains
+
+What talents or powers assist their work?
+Transmutation circles, soul-preserving elixirs, mechanical prosthetics
+
+How would you describe their personality?
+Obsessive, brilliant, undeterred by moral gray
+
+What secret motive pushes them forward?
+To revive her fiance who died in a sabotaged culinary duel
+
+Share a brief backstory snapshot.
+Collaborates with Undertaker for anatomical samples, risking everything to perfect a humane resurrection method.`,
   },
 ];
 

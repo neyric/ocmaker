@@ -13,22 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of JOJO.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in JOJO?\nFrontline hero standing beside the main cast of JOJO\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines JOJO\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Steel Ball Run Racer",
+    description: "A desert racer channeling sandstorms through a melodic Stand.",
+    prompt: `What is your character's name?
+Amelia Creed
+
+What is their Stand or power name and ability?
+Stand: Sand Sonata — manipulates sonic sand waves that cut with rhythm
+
+Which era or part are they aligned with?
+Steel Ball Run era, allied with Johnny Joestar
+
+What is their combat style?
+Horseback spin techniques blending harmonica cues
+
+How would you describe their personality?
+Determined, soulful, loyal to fellow racers
+
+What weakness or condition limits their Stand?
+Stand loses cohesion if the music stops mid-phrase
+
+Share a backstory snapshot.
+Joined the race to fund her family's struggling ranch and quickly became an ally in the battle for the Corpse Parts.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of JOJO.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of JOJO?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of JOJO\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Passione Accountant",
+    description: "A Passione member balancing ledgers while eliminating traitors.",
+    prompt: `What is your character's name?
+Riccardo Ventresca
+
+What is their Stand or power name and ability?
+Stand: Tax Audit — freezes targets by calculating their life debt
+
+Which era or part are they aligned with?
+Part 5, Passione reform faction
+
+What is their combat style?
+Close-range grappling mixed with precise Stand strikes
+
+How would you describe their personality?
+Calm, dryly sarcastic, obsessed with order
+
+What weakness or condition limits their Stand?
+Requires knowing the target's real name and financial record
+
+Share a backstory snapshot.
+Bucciarati recruited him after he exposed a capo laundering funds for Diavolo.`,
   },
   {
-    title: "Mentor",
-    description: "A seasoned mentor guiding the next generation within JOJO.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in JOJO?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of JOJO\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Morioh Artisan",
+    description: "A local artist whose Stand turns sketches into temporary allies.",
+    prompt: `What is your character's name?
+Aki Higashikata
+
+What is their Stand or power name and ability?
+Stand: Ink Heart — animates drawings for exactly 77 seconds
+
+Which era or part are they aligned with?
+Diamond is Unbreakable era
+
+What is their combat style?
+Mid-range tactics using animated graffiti to surround foes
+
+How would you describe their personality?
+Creative, compassionate, lightly mischievous
+
+What weakness or condition limits their Stand?
+If the drawing is smudged, the Stand collapses instantly
+
+Share a backstory snapshot.
+A childhood friend of Koichi, she discovered her Stand while sketching a guardian to protect Morioh's shopping district.`,
+  },
+  {
+    title: "Stardust Explorer",
+    description: "An archaeologist aiding the Crusaders across Egypt.",
+    prompt: `What is your character's name?
+Dr. Samir Rashid
+
+What is their Stand or power name and ability?
+Stand: Pharaonic Echo — summons spectral guardians from artifacts
+
+Which era or part are they aligned with?
+Stardust Crusaders journey
+
+What is their combat style?
+Support combat, providing barriers and historical insight
+
+How would you describe their personality?
+Scholarly, witty, unflappable in crises
+
+What weakness or condition limits their Stand?
+Needs a relic with personal history to manifest guardians
+
+Share a backstory snapshot.
+Rescued by Joseph Joestar from a curse, he repaid the favor by guiding the Crusaders through ancient tombs.`,
+  },
+  {
+    title: "Stone Ocean Inmate",
+    description: "A Green Dolphin Street prisoner using origami-based offense.",
+    prompt: `What is your character's name?
+Marina Fold
+
+What is their Stand or power name and ability?
+Stand: Paper Chains — folds paper into razor-thin constructs that obey commands
+
+Which era or part are they aligned with?
+Stone Ocean
+
+What is their combat style?
+Trap-based close combat and prison corridor ambushes
+
+How would you describe their personality?
+Resilient, resourceful, harboring quiet rage
+
+What weakness or condition limits their Stand?
+Paper disintegrates if soaked, nullifying the Stand
+
+Share a backstory snapshot.
+Framed for embezzlement by Whitesnake loyalists, she allies with Jolyne while seeking proof of her innocence.`,
   },
 ];
 

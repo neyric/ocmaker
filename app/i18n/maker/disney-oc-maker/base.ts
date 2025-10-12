@@ -13,22 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of Disney.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Disney?\nFrontline hero standing beside the main cast of Disney\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Disney\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Aurora's New Guardian",
+    description: "A forest ranger protecting enchanted creatures with song magic.",
+    prompt: `What is your character's name?
+Elowen Bright
+
+What is their homeland or kingdom?
+Enchanted Moors neighboring the Kingdom of Aldore
+
+What role do they play (hero, villain, sidekick, etc.)?
+Heroic guardian
+
+What is their signature companion or magic?
+Luminous lark companion that harmonizes protective spells
+
+How would you describe their personality?
+Gentle, adventurous, brimming with wonder
+
+What wish or lesson defines them?
+To prove kindness can tame any dark forest
+
+Share a backstory snapshot.
+Raised by pixies after a storm separated her from her caravan, she now guides travelers through the glowing woods.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Disney.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Disney?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Disney\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Switcheroo Sidekick",
+    description: "A mischievous raccoon-turned-boy navigating city streets with flair.",
+    prompt: `What is your character's name?
+Rory Swift
+
+What is their homeland or kingdom?
+Crown City, the bustling capital of Luminara
+
+What role do they play (hero, villain, sidekick, etc.)?
+Sidekick with a flair for pickpocket heroics
+
+What is their signature companion or magic?
+Charm coin that lets him swap places with any small animal
+
+How would you describe their personality?
+Playful, quick-witted, loyal to a fault
+
+What wish or lesson defines them?
+To finally return the coin he once stole and earn forgiveness
+
+Share a backstory snapshot.
+After pocketing a royal treasure, a curse made him a raccoon until a princess taught him honesty and gave him a second chance.`,
   },
   {
-    title: "Mentor",
-    description: "A seasoned mentor guiding the next generation within Disney.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Disney?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Disney\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Seafaring Villainess",
+    description: "A sea witch entrepreneur selling shortcut dreams to sailors.",
+    prompt: `What is your character's name?
+Captain Mirella Tide
+
+What is their homeland or kingdom?
+Floating bazaar of the Misty Reefs
+
+What role do they play (hero, villain, sidekick, etc.)?
+Charismatic villainess
+
+What is their signature companion or magic?
+Ledger of Tides that grants wishes at the cost of memories
+
+How would you describe their personality?
+Charming, calculating, secretly lonely
+
+What wish or lesson defines them?
+To rebuild the ship her family lost in a storm
+
+Share a backstory snapshot.
+Turned to bargained magic after seeing her fisherfolk village swallowed by whirlpools; now she sells fate-changing contracts at sea.`,
+  },
+  {
+    title: "Royal Inventor",
+    description: "An inventor princess who designs musical machines for festivals.",
+    prompt: `What is your character's name?
+Princess Juniper
+
+What is their homeland or kingdom?
+Clockwork Kingdom of Belloria
+
+What role do they play (hero, villain, sidekick, etc.)?
+Heroic princess inventor
+
+What is their signature companion or magic?
+Wind-up dragon companion that powers her inventions
+
+How would you describe their personality?
+Optimistic, inventive, steadfast
+
+What wish or lesson defines them?
+To prove creativity is as noble as bloodline
+
+Share a backstory snapshot.
+Built a music machine that stopped a war between rival dukes by harmonizing their anthems into one melody.`,
+  },
+  {
+    title: "Desert Storyteller",
+    description: "A bard weaving tales that come alive under the desert moon.",
+    prompt: `What is your character's name?
+Sahir Al-Faye
+
+What is their homeland or kingdom?
+Sands of Agrabah's neighboring oasis city
+
+What role do they play (hero, villain, sidekick, etc.)?
+Heroic storyteller
+
+What is their signature companion or magic?
+Story lantern that projects living illustrations
+
+How would you describe their personality?
+Warm, empathetic, endlessly imaginative
+
+What wish or lesson defines them?
+To keep legends alive so heroes are never forgotten
+
+Share a backstory snapshot.
+Learned tales from traveling merchants and now travels with a flying carpet to bring hope to remote villages.`,
   },
 ];
 

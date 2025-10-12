@@ -1,9 +1,11 @@
+import clsx from "clsx";
 import {
   ArrowUpRight,
   Calendar,
   CreditCard,
   Crown,
   Mail,
+  MonitorDot,
   Settings,
   User,
 } from "lucide-react";
@@ -125,7 +127,7 @@ export function UserInfoSection({
             <div className="flex items-center space-x-3">
               <Mail className="h-5 w-5 text-base-content/60" />
               <div>
-                <p className="text-sm font-medium text-base-content/60">
+                <p className="text-xs font-medium text-base-content/60">
                   Email
                 </p>
                 <p className="text-base text-base-content">{user.email}</p>
@@ -135,7 +137,7 @@ export function UserInfoSection({
             <div className="flex items-center space-x-3">
               <Calendar className="h-5 w-5 text-base-content/60" />
               <div>
-                <p className="text-sm font-medium text-base-content/60">
+                <p className="text-xs font-medium text-base-content/60">
                   Member Since
                 </p>
                 <p className="text-base text-base-content">
@@ -193,7 +195,7 @@ export function UserInfoSection({
               <div className="flex items-center space-x-3">
                 <Crown className="h-5 w-5 text-primary/60" />
                 <div>
-                  <p className="text-sm font-medium text-base-content/60">
+                  <p className="text-xs font-medium text-base-content/60">
                     Current Plan
                   </p>
                   <p className="text-base text-base-content">
@@ -203,13 +205,17 @@ export function UserInfoSection({
               </div>
 
               <div className="flex items-center space-x-3">
-                <div
-                  className={`h-3 w-3 rounded-full ${
-                    hasActiveSubscription ? "bg-success" : "bg-base-content/30"
-                  }`}
+                <MonitorDot
+                  className={clsx(
+                    "h-5 w-5",
+                    hasActiveSubscription
+                      ? "text-success"
+                      : "text-base-content/30"
+                  )}
                 />
+
                 <div>
-                  <p className="text-sm font-medium text-base-content/60">
+                  <p className="text-xs font-medium text-base-content/60">
                     Status
                   </p>
                   <p className={`text-base ${getStatusColor()}`}>

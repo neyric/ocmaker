@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Genshin Impact.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Genshin Impact?\nFrontline hero standing beside the main cast of Genshin Impact\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Genshin Impact\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Mondstadt Wind Bard",
+    description: "A tavern bard whose songs shatter Anemo barriers and hearts alike.",
+    prompt: `What is your character's name?
+Lysette
+
+Which nation and affiliation do they belong to?
+Mondstadt, Favonius-affiliated freelance bard
+
+What Vision/element and weapon do they wield?
+Anemo Vision wielding a catalyst
+
+What combat role do they fill?
+Supportive burst DPS who shreds enemy resistances
+
+How would you describe their personality?
+Free-spirited, teasing, quietly empathetic
+
+What is their signature Story Quest about?
+Helps reconnect estranged siblings through a windborne concert tour
+
+Share a backstory snapshot.
+Granted a Vision after calming a dragonstorm with her lullaby, she now protects wandering merchants along the high cliffs.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Genshin Impact.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Genshin Impact?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Genshin Impact\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Liyue Harbor Inspector",
+    description: "A civil inspector balancing paperwork with geo-construct martial arts.",
+    prompt: `What is your character's name?
+Qiao Rong
+
+Which nation and affiliation do they belong to?
+Liyue Qixing logistics division
+
+What Vision/element and weapon do they wield?
+Geo Vision paired with a polearm
+
+What combat role do they fill?
+Burst tank providing shields and control
+
+How would you describe their personality?
+Methodical, dutiful, caring beneath a stern exterior
+
+What is their signature Story Quest about?
+Investigates counterfeit adepti sigils disrupting harbor trade
+
+Share a backstory snapshot.
+Survived a Fatui sabotage attempt by raising a geo barrier that saved an entire dockyard crew.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Genshin Impact.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Genshin Impact?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Genshin Impact\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Inazuma Onsen Owner",
+    description: "A hot spring owner channeling Electro energy through spa rituals.",
+    prompt: `What is your character's name?
+Hotaru
+
+Which nation and affiliation do they belong to?
+Inazuma, civilian allied with the Shogunate
+
+What Vision/element and weapon do they wield?
+Electro Vision embedded in a catalyst fan
+
+What combat role do they fill?
+Healer-buffer cleansing debuffs and boosting energy
+
+How would you describe their personality?
+Serene, witty, fiercely proud of tradition
+
+What is their signature Story Quest about?
+Restores sacred springs corrupted by Tatarigami remnants
+
+Share a backstory snapshot.
+Inherited the onsen from her grandmother and earned her Vision when defending it against Vision Hunt Decree agents.`,
+  },
+  {
+    title: "Sumeru Scholar",
+    description: "A desert scholar wielding Dendro constructs to solve ecological crises.",
+    prompt: `What is your character's name?
+Farid al-Hakim
+
+Which nation and affiliation do they belong to?
+Sumeru Akademiya, Rtawahist Darshan
+
+What Vision/element and weapon do they wield?
+Dendro Vision with a bow
+
+What combat role do they fill?
+Off-field enabler spreading Dendro reactions
+
+How would you describe their personality?
+Inquisitive, earnest, occasionally scatterbrained
+
+What is their signature Story Quest about?
+Assists the Traveler in restoring withering oases
+
+Share a backstory snapshot.
+Discovered his Vision when a sandstorm threatened his research camp; the Dendro energy sprouted protective flora.`,
+  },
+  {
+    title: "Fontaine Advocate",
+    description: "A legal prodigy whose Hydro constructs cross-examine criminals mid-battle.",
+    prompt: `What is your character's name?
+Celeste Beaumont
+
+Which nation and affiliation do they belong to?
+Fontaine Court of Justice
+
+What Vision/element and weapon do they wield?
+Hydro Vision wielding a sword
+
+What combat role do they fill?
+Main DPS performing Hydro-infused combos
+
+How would you describe their personality?
+Charismatic, principled, delightfully dramatic
+
+What is their signature Story Quest about?
+Defends an innocent clockwork automaton accused of sabotage
+
+Share a backstory snapshot.
+Received her Vision during a courtroom duel when she proved a false witness guilty using Hydro illusions.`,
   },
 ];
 

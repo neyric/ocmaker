@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Arknights.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Arknights?\nFrontline hero standing beside the main cast of Arknights\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Arknights\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Rhodes Island Vanguard",
+    description: "A forward-deployed rescuer who shields civilians while deploying drones.",
+    prompt: `What is your character's name?
+Mina Talwar
+
+What is their affiliation and operator class?
+Rhodes Island Vanguard Operator
+
+What weapon or Arts specialty do they rely on?
+Deployable barrier drones paired with Originium shock batons
+
+What is their infection status?
+Infected; requires scheduled crystallization treatments
+
+Which talents or traits define their combat style?
+Rapid redeployment, cost refund support, protective barrier fields
+
+How would you describe their personality?
+Level-headed, nurturing toward rookies, subtly sarcastic
+
+What mission history stands out to them?
+Evacuated an entire mining crew during the Chernobog incident while holding back Reunion snipers.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Arknights.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Arknights?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Arknights\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Reunion Defector",
+    description: "A repentant engineer now using his knowledge to dismantle enemy explosives.",
+    prompt: `What is your character's name?
+Darius Vogt
+
+What is their affiliation and operator class?
+Rhodes Island Supporter, formerly Reunion bomb technician
+
+What weapon or Arts specialty do they rely on?
+Remote EMP glaives and Originium shrapnel suppression grids
+
+What is their infection status?
+Non-Infected but carries radiation scarring from old tests
+
+Which talents or traits define their combat style?
+Disarms enemy charges, boosts allied resistance to Arts damage
+
+How would you describe their personality?
+Remorseful, methodical, determined to repair what he once ruined
+
+What mission history stands out to them?
+Defused a Reunion demolition charge beneath Lungmen's residential district before surrendering to Rhodes Island.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Arknights.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Arknights?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Arknights\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Kazimierz Lancer",
+    description: "A corporate knight moonlighting with Rhodes Island to protect migrant workers.",
+    prompt: `What is your character's name?
+Veronika Krol
+
+What is their affiliation and operator class?
+Independent Defender contracted to Rhodes Island and the Kazimierz Knights Association
+
+What weapon or Arts specialty do they rely on?
+Reactive Originite lance paired with kinetic shields
+
+What is their infection status?
+Stage-one Infected stabilized by Rhodes Island care
+
+Which talents or traits define their combat style?
+Counters that heal allies, crowd control with lance sweeps
+
+How would you describe their personality?
+Chivalrous, media-savvy, unyielding against exploitation
+
+What mission history stands out to them?
+Guarded a caravan through Ursus territory while bounty hunters tried to claim the workers as property.`,
+  },
+  {
+    title: "Laterano Executor",
+    description: "A gun-toting cleric balancing doctrine with pragmatic mercy on missions.",
+    prompt: `What is your character's name?
+Canon Ferri
+
+What is their affiliation and operator class?
+Laterano Notarial Hall Executor on loan to Rhodes Island
+
+What weapon or Arts specialty do they rely on?
+Twin Liberi casters firing sanctified buckshot infused with light
+
+What is their infection status?
+Uninfected; carries a relic that reacts to Originium
+
+Which talents or traits define their combat style?
+Alternates lethal judgments with crowd-control blessings
+
+How would you describe their personality?
+Solemn, ritualistic, surprisingly compassionate
+
+What mission history stands out to them?
+Brokered a ceasefire between zealots and infected refugees before enforcing Laterano law on the real instigators.`,
+  },
+  {
+    title: "Ursus Survivor",
+    description: "A student survivor turned shield guard for Rhodes Island mobile clinics.",
+    prompt: `What is your character's name?
+Katya Zelenko
+
+What is their affiliation and operator class?
+Rhodes Island Guard assigned to Ursus relief teams
+
+What weapon or Arts specialty do they rely on?
+Heated chainsaw glaive channeling thermal Originium bursts
+
+What is their infection status?
+Recovered Infected with stabilized Originium density
+
+Which talents or traits define their combat style?
+Protective counters, shielding casters, morale boosts under fear
+
+How would you describe their personality?
+Tenacious, quietly haunted, fiercely protective of students
+
+What mission history stands out to them?
+Escorted a mobile clinic through Winterwisp campus, rescuing classmates still trapped in lockdown.`,
   },
 ];
 

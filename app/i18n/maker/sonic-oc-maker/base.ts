@@ -13,22 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of Sonic.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Sonic?\nFrontline hero standing beside the main cast of Sonic\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Sonic\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Velocity Vixen",
+    description: "A fox pilot surfing wind tunnels with aerial stunts.",
+    prompt: `What is your character's name?
+Skye
+
+What species are they and what is their alignment?
+Two-tailed fox, heroic alignment
+
+What signature ability or speed trick do they use?
+Spiral Jet Dash using twin tails as turbo boosters
+
+What gear or Wispon do they carry?
+Customized hoverboard and cube Wispon
+
+How would you describe their personality?
+Adventurous, witty, always upbeat
+
+Who is their rival or what goal drives them?
+To outpace Jet the Hawk in a world Grand Prix rematch
+
+Share a backstory snapshot.
+Invented her first hoverboard after salvaging Tornado parts from Tails, now maps aerial shortcuts for the Resistance.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Sonic.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Sonic?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Sonic\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Guardian Armadillo",
+    description: "An armored armadillo guarding Mobius ruins from Eggman bots.",
+    prompt: `What is your character's name?
+Brick
+
+What species are they and what is their alignment?
+Armadillo, Chaotix ally
+
+What signature ability or speed trick do they use?
+Rolling Quake slam that creates shockwaves
+
+What gear or Wispon do they carry?
+Drill Wispon and reinforced gauntlets
+
+How would you describe their personality?
+Stoic, dependable, quietly humorous
+
+Who is their rival or what goal drives them?
+To protect ancient Mobian archives hidden beneath the Mystic Ruins
+
+Share a backstory snapshot.
+Joined Knuckles after Eggman raided his ancestral archive, now sets traps to defend the Master Emerald's lore.`,
   },
   {
-    title: "Mentor",
-    description: "A seasoned mentor guiding the next generation within Sonic.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Sonic?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Sonic\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Cyber Hedgehog",
+    description: "A tech-savvy hedgehog hacking Eggman's systems mid-race.",
+    prompt: `What is your character's name?
+Byte
+
+What species are they and what is their alignment?
+Hedgehog, neutral alignment
+
+What signature ability or speed trick do they use?
+Hyper Jump dash that converts data streams into speed boosts
+
+What gear or Wispon do they carry?
+Homing Wispon and wrist console
+
+How would you describe their personality?
+Sarcastic, clever, slightly aloof
+
+Who is their rival or what goal drives them?
+To free captured AI companions trapped in Eggman's databanks
+
+Share a backstory snapshot.
+Helped Tails decrypt Metal Sonic's fail-safes and now races alongside Team Sonic to sabotage EggNet nodes.`,
+  },
+  {
+    title: "Emerald Plains Racer",
+    description: "A rabbit martial artist sprinting through emerald plains with rhythmic kicks.",
+    prompt: `What is your character's name?
+Raia
+
+What species are they and what is their alignment?
+Rabbit, hero
+
+What signature ability or speed trick do they use?
+Rhythm Kick combo amplifying speed with percussion beats
+
+What gear or Wispon do they carry?
+Drumstick batons and burst Wispon
+
+How would you describe their personality?
+Energetic, musical, fiercely loyal
+
+Who is their rival or what goal drives them?
+To prove she can outpace Amy in a friendly spar
+
+Share a backstory snapshot.
+Grew up attending Vector's music lessons and built her rhythm combat style to liberate her village from Egg Pawns.`,
+  },
+  {
+    title: "Rogue Treasure Hunter",
+    description: "A feline treasure hunter juggling alliances for rare relics.",
+    prompt: `What is your character's name?
+Sable
+
+What species are they and what is their alignment?
+Cat, treasure-hunting anti-hero
+
+What signature ability or speed trick do they use?
+Shadow Blink dash through dimensional seams
+
+What gear or Wispon do they carry?
+Laser claw gauntlets and drill Wispon
+
+How would you describe their personality?
+Cunning, flirtatious, thrill-seeking
+
+Who is their rival or what goal drives them?
+To steal Eggman's Chaos Drive stash before Rouge
+
+Share a backstory snapshot.
+Former partner of Rouge who split after a heist disagreement; now plays both sides to keep relics away from Eggman.`,
   },
 ];
 

@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Blue Lock.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Blue Lock?\nFrontline hero standing beside the main cast of Blue Lock\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Blue Lock\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Egoist Striker",
+    description: "A striker whose swordplay footwork turns volleys into highlight reels.",
+    prompt: `What is your character's name?
+Kaito Arashi
+
+What is their preferred position?
+Central striker leading the attack
+
+What signature weapon or skill do they showcase?
+Katana-kick volley slicing through defenses with precise angles
+
+What supporting abilities bolster their play?
+Lightning feints and aerial control born from kendo drills
+
+How would you describe their ego and personality?
+Dramatic, self-styled hero who thrives under spotlight pressure
+
+What rival motivation keeps them hungry?
+To outshine Isagi and become Japan's definitive sword on the pitch
+
+Share a soccer backstory snapshot.
+Former youth kendo champion who abandoned the dojo after a Blue Lock invitation appeared in his locker.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Blue Lock.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Blue Lock?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Blue Lock\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Tactical Playmaker",
+    description: "A midfielder who treats every Blue Lock match like a grand chess problem.",
+    prompt: `What is your character's name?
+Rei Tsukishima
+
+What is their preferred position?
+Attacking midfielder orchestrating the offense
+
+What signature weapon or skill do they showcase?
+Force Check vision passes that exploit micro-gaps
+
+What supporting abilities bolster their play?
+Game reading, set-piece deception, tireless analysis drills
+
+How would you describe their ego and personality?
+Composed, strategic, slightly condescending toward improvisers
+
+What rival motivation keeps them hungry?
+To prove intellect can rival instinct by dethroning Rin Itoshi
+
+Share a soccer backstory snapshot.
+Maps every Blue Lock trial on notebook grids, beating larger strikers by predicting their movement three steps ahead.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Blue Lock.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Blue Lock?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Blue Lock\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Aerial Ace",
+    description: "A winger whose vertical leap makes every cross a Meteor Crash.",
+    prompt: `What is your character's name?
+Noa Fujimori
+
+What is their preferred position?
+Left winger attacking the far post
+
+What signature weapon or skill do they showcase?
+Gravity-defying headers dubbed the Meteor Crash
+
+What supporting abilities bolster their play?
+Sprint bursts, double-touch control, fearless collisions
+
+How would you describe their ego and personality?
+Outgoing, thrill-seeking, addicted to crowd reactions
+
+What rival motivation keeps them hungry?
+To challenge Bachira's creativity while chasing Neo Egoist spots
+
+Share a soccer backstory snapshot.
+Trained on abandoned rollercoasters to conquer a childhood fear of heights after a devastating fall.`,
+  },
+  {
+    title: "Set-Piece Sorcerer",
+    description: "A dead-ball artist whose knuckle shots bend reality itself.",
+    prompt: `What is your character's name?
+Hikari Mizuno
+
+What is their preferred position?
+Right midfielder and free-kick specialist
+
+What signature weapon or skill do they showcase?
+Mirage Knuckle free kick that dips unpredictably
+
+What supporting abilities bolster their play?
+Weather reading, spin control, adaptive positioning
+
+How would you describe their ego and personality?
+Calm, mystical, speaks in poetic metaphors
+
+What rival motivation keeps them hungry?
+To score against Noel Noa in a legitimate match and earn praise
+
+Share a soccer backstory snapshot.
+Mastered ball physics by launching paper cranes with elastic bands, then mirrored those curves on the field.`,
+  },
+  {
+    title: "Guardian Libero",
+    description: "A defender reinventing ego to demand the spotlight from the back line.",
+    prompt: `What is your character's name?
+Ayato Koga
+
+What is their preferred position?
+Sweeper-libero anchoring the defense
+
+What signature weapon or skill do they showcase?
+Aegis Break tackles converting steals into counterattacks
+
+What supporting abilities bolster their play?
+Laser-guided long passes, relentless marking, aerial authority
+
+How would you describe their ego and personality?
+Protective, quietly intense, obsessed with control
+
+What rival motivation keeps them hungry?
+To prove defenders deserve ego glory alongside strikers
+
+Share a soccer backstory snapshot.
+Once benched for being too supportive, he joined Blue Lock to redefine what a Japanese ace can be.`,
   },
 ];
 

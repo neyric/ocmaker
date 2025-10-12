@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Blue Archive.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Blue Archive?\nFrontline hero standing beside the main cast of Blue Archive\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Blue Archive\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Trinity Marksman",
+    description: "An honors student sniper who protects allies with radiant barriers.",
+    prompt: `What is your character's name?
+Celeste Marigold
+
+Which academy and club do they belong to?
+Trinity General School, Justice Realization Committee
+
+What position or specialty do they hold?
+Long-range overwatch and battlefield analysis
+
+What is their preferred weapon and EX Skill?
+Anti-material rifle Gabriel with an EX Skill summoning holy barriers
+
+How would you describe their personality?
+Serene, perfectionist, secretly obsessed with sweets
+
+What quirks define them?
+Collects stained-glass charms and quotes scripture mid-battle
+
+Share a mission backstory.
+Coordinated encrypted hymn signals with Sensei to halt a runaway tank during the Rabulya riot.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Blue Archive.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Blue Archive?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Blue Archive\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Gehenna Pyrotechnician",
+    description: "An explosive enthusiast who keeps the discipline committee guessing.",
+    prompt: `What is your character's name?
+Ibuki Blaze
+
+Which academy and club do they belong to?
+Gehenna Academy, Engineering Research Club
+
+What position or specialty do they hold?
+Demolitions expert and gadget tinkerer
+
+What is their preferred weapon and EX Skill?
+Grenade launcher Inferno with an EX Skill deploying flame turrets
+
+How would you describe their personality?
+Chaotic, inventive, fiercely loyal to friends
+
+What quirks define them?
+Names every device after desserts and sells blast-proof sweets
+
+Share a mission backstory.
+Repurposed festival firework rigs to divert Problem Solver 68, saving Abydos civilians during a citywide chase.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Blue Archive.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Blue Archive?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Blue Archive\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Millennium Hacker",
+    description: "A tech prodigy safeguarding Sensei's comms from rogue AIs.",
+    prompt: `What is your character's name?
+Nakamori Patch
+
+Which academy and club do they belong to?
+Millennium Science School, Veritas Cybersecurity Society
+
+What position or specialty do they hold?
+Network infiltration and drone defense coordination
+
+What is their preferred weapon and EX Skill?
+Dual SMGs with an EX Skill launching a firewall drone swarm
+
+How would you describe their personality?
+Sleep-deprived, quirky, endlessly curious about glitches
+
+What quirks define them?
+Talks to servers like pets and collects rare error codes
+
+Share a mission backstory.
+Shut down an AI uprising in the Ruins by rewriting malicious code mid-battle while Sensei held the line.`,
+  },
+  {
+    title: "Abydos Strategist",
+    description: "A tactician keeping the desert school afloat with careful planning.",
+    prompt: `What is your character's name?
+Rana Sol
+
+Which academy and club do they belong to?
+Abydos High School, Countermeasure Council
+
+What position or specialty do they hold?
+Logistics planner and sniper spotter
+
+What is their preferred weapon and EX Skill?
+Lever-action rifle with an EX Skill that conjures sandstorm cover
+
+How would you describe their personality?
+Resourceful, stubborn, quietly optimistic about Abydos
+
+What quirks define them?
+Scrapbooks every reclaimed block of the desert campus
+
+Share a mission backstory.
+Orchestrated a supply heist on Kaiser Corporation, redistributing resources to every starving club unnoticed.`,
+  },
+  {
+    title: "SRT Field Medic",
+    description: "A stoic combat medic ensuring strike teams return home alive.",
+    prompt: `What is your character's name?
+Miyu Aegis
+
+Which academy and club do they belong to?
+SRT Special Academy, Shield Team
+
+What position or specialty do they hold?
+Frontline medic and shield bearer
+
+What is their preferred weapon and EX Skill?
+Shielded SMG with an EX Skill forming a protective bastion dome
+
+How would you describe their personality?
+Calm, steadfast, sparing with words
+
+What quirks define them?
+Keeps a pocket notebook of every student saved
+
+Share a mission backstory.
+Carried Sensei through crossfire during the Nasu Metropolis incident, holding the shield wall alone until reinforcements arrived.`,
   },
 ];
 

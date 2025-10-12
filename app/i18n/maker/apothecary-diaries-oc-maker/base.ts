@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of The Apothecary Diaries.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in The Apothecary Diaries?\nFrontline hero standing beside the main cast of The Apothecary Diaries\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines The Apothecary Diaries\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Inner Palace Herbalist",
+    description: "A clever maid who solves poisonings while brewing cures in secret.",
+    prompt: `What is your character's name?
+Ruolan Mei
+
+What is their social status and workplace?
+Low-born maid assigned to the Jade Pavilion of the Inner Palace
+
+What is their medical or investigative specialty?
+Diagnosing exotic poisons through taste tests and herbal counteragents
+
+Who are their key allies or patrons?
+The Imperial Physician and a sympathetic favored concubine
+
+How would you describe their personality?
+Wry, fearless, insatiably curious about court gossip
+
+What signature case made them notable?
+Unraveled a slow-acting arsenic plot by decoding tea stains on porcelain cups
+
+Share a brief backstory snapshot.
+Sold into service as a child, she smuggled her father's herb scrolls into the palace and now saves lives between chores.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of The Apothecary Diaries.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of The Apothecary Diaries?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of The Apothecary Diaries\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Pleasure District Apothecary",
+    description: "A streetwise healer balancing clientele between courtesans and criminals.",
+    prompt: `What is your character's name?
+Han Suyin
+
+What is their social status and workplace?
+Registered apothecary in the Honglan pleasure quarter
+
+What is their medical or investigative specialty?
+Formulating antidotes for counterfeit cosmetics and hidden venoms
+
+Who are their key allies or patrons?
+A brothel madam, a wandering monk, and a retired assassin
+
+How would you describe their personality?
+Bold, sarcastic, fiercely protective of her patients
+
+What signature case made them notable?
+Identified mercury-laced rouge before it disfigured a visiting royal
+
+Share a brief backstory snapshot.
+Once a runaway concubine trainee, she learned trade secrets from traveling medicinal caravans to win her freedom.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within The Apothecary Diaries.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in The Apothecary Diaries?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of The Apothecary Diaries\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Imperial Court Scrivener",
+    description: "A junior scribe who exposes corruption by combing through case records.",
+    prompt: `What is your character's name?
+Xu Wenyan
+
+What is their social status and workplace?
+Scholar-official in the Imperial Medical Bureau archives
+
+What is their medical or investigative specialty?
+Cross-referencing ledgers to spot tampered remedies and embezzled supplies
+
+Who are their key allies or patrons?
+A reform-minded minister and a reclusive archivist librarian
+
+How would you describe their personality?
+Meticulous, soft-spoken, driven by quiet moral outrage
+
+What signature case made them notable?
+Proved tonic shipments were replaced with sawdust before reaching the nursery
+
+Share a brief backstory snapshot.
+Choosing medicine over politics after the provincial exams, Wenyan believes accurate ledgers save more lives than swords.`,
+  },
+  {
+    title: "Traveling Tea Doctor",
+    description: "An itinerant healer who collects gossip with every brew of medicinal tea.",
+    prompt: `What is your character's name?
+Lan Jiayi
+
+What is their social status and workplace?
+Freeborn tea seller roaming between noble estates and rural temples
+
+What is their medical or investigative specialty?
+Diagnosing ailments through tea pairings and pulse readings on the road
+
+Who are their key allies or patrons?
+Temple monks, farmers' guilds, and a masked opera performer
+
+How would you describe their personality?
+Cheerful, persuasive, perfectly at ease among any class
+
+What signature case made them notable?
+Unmasked a counterfeit tax collector by spotting arsenic in his jasmine blend
+
+Share a brief backstory snapshot.
+Lan apprenticed under her grandmother, hiding remedies in tea leaves while evading corrupt officials and bandits alike.`,
+  },
+  {
+    title: "Royal Forensics Scholar",
+    description: "A forensic innovator bringing new deduction techniques to the emperor's court.",
+    prompt: `What is your character's name?
+Shen Qihong
+
+What is their social status and workplace?
+First-rank scholar serving as adjunct examiner in the high court
+
+What is their medical or investigative specialty?
+Applying ink powder, fingerprint rubbings, and botanical tracings to crime scenes
+
+Who are their key allies or patrons?
+The Crown Prince and a skeptical yet intrigued imperial judge
+
+How would you describe their personality?
+Methodical, unflappable, quietly ambitious for reform
+
+What signature case made them notable?
+Matched rare pollen to a rival's greenhouse, clearing an innocent noble
+
+Share a brief backstory snapshot.
+After witnessing a wrongful conviction in their prefecture, Qihong vowed to fuse scholarship with forensic science.`,
   },
 ];
 

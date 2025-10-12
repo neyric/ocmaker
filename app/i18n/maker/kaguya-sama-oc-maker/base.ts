@@ -13,24 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Kaguya-sama.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Kaguya-sama?\nFrontline hero standing beside the main cast of Kaguya-sama\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Kaguya-sama\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Student Council Treasurer",
+    description: "A numbers genius balancing budgets and secret admirers.",
+    prompt: `What is your character's name?
+Airi Kanzaki
+
+What is their year and role at Shuchiin?
+Second-year, student council treasurer
+
+What social standing or family influence do they have?
+Heiress of a Tokyo tech conglomerate
+
+What signature strategy or talent do they wield?
+Uses algorithmic love charts to predict confession timing
+
+How would you describe their personality?
+Composed, polite, secretly competitive
+
+What romantic challenge are they facing?
+Wants Miyuki's advice to confess to Ishigami without losing face
+
+Share a backstory snapshot.
+Transferred from an overseas academy and immediately caught Fujiwara's eye for her beatboxing abilities during orientation.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Kaguya-sama.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Kaguya-sama?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Kaguya-sama\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Public Morals Enforcer",
+    description: "A stern committee member hiding a love of shojo manga.",
+    prompt: `What is your character's name?
+Yume Saionji
+
+What is their year and role at Shuchiin?
+Third-year, public morals chair
+
+What social standing or family influence do they have?
+Old-money family with ties to the Shinomiya conglomerate
+
+What signature strategy or talent do they wield?
+Writes rule amendments that corner her crush into private study sessions
+
+How would you describe their personality?
+Disciplined, tsundere, secretly romantic
+
+What romantic challenge are they facing?
+Terrified her shojo stash will be exposed before she confesses to Hayasaka's cousin
+
+Share a backstory snapshot.
+Was childhood rivals with Kaguya in etiquette classes until they formed a mutual respect pact.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Kaguya-sama.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Kaguya-sama?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Kaguya-sama\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Drama Club Lead",
+    description: "A charismatic actor planning a confession through the school play.",
+    prompt: `What is your character's name?
+Itsuki Arata
+
+What is their year and role at Shuchiin?
+First-year, drama club lead actor
+
+What social standing or family influence do they have?
+Scholarship student from a modest family
+
+What signature strategy or talent do they wield?
+Directs a romantic comedy play with improvised confession cues
+
+How would you describe their personality?
+Energetic, theatrical, earnest
+
+What romantic challenge are they facing?
+Fears Kaguya will outmaneuver his improvised confession scene
+
+Share a backstory snapshot.
+Saved the drama club from disbanding by convincing Kaguya to sponsor their festival production.`,
+  },
+  {
+    title: "Cheer Club Strategist",
+    description: "A cheer strategist creating viral support videos for the council.",
+    prompt: `What is your character's name?
+Mina Tachikawa
+
+What is their year and role at Shuchiin?
+Second-year, cheer club strategist
+
+What social standing or family influence do they have?
+New money influencer family expanding into entertainment
+
+What signature strategy or talent do they wield?
+Edits social media campaigns to sway student council elections
+
+How would you describe their personality?
+Trendy, sharp-tongued, secretly soft-hearted
+
+What romantic challenge are they facing?
+Falling for a shy photography club member who avoids the spotlight
+
+Share a backstory snapshot.
+Became Fujiwara's video partner after a dance challenge collaboration went viral.`,
+  },
+  {
+    title: "Library Prefect",
+    description: "A library prefect orchestrating matchmaking through book recommendations.",
+    prompt: `What is your character's name?
+Haruka Minase
+
+What is their year and role at Shuchiin?
+Third-year, library committee head
+
+What social standing or family influence do they have?
+Descendant of a literary dynasty
+
+What signature strategy or talent do they wield?
+Curates reading lists that mirror students' hidden feelings
+
+How would you describe their personality?
+Soft-spoken, insightful, quietly mischievous
+
+What romantic challenge are they facing?
+Designs a book trail hoping Kaguya notices Shirogane's hidden poem
+
+Share a backstory snapshot.
+Inspired by Shinomiya's public relations work, she aims to revive the school's neglected literary salon.`,
   },
 ];
 

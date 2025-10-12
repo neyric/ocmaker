@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Chainsaw Man.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Chainsaw Man?\nFrontline hero standing beside the main cast of Chainsaw Man\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Chainsaw Man\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Public Safety Veteran",
+    description: "A Division 4 survivor who keeps going for the rookies depending on her.",
+    prompt: `What is your character's name?
+Reina Shiomi
+
+What is their affiliation?
+Public Safety Devil Hunters, Tokyo Division 4
+
+What devil contract or hybrid power do they wield?
+Contract with the Railgun Devil trading hearing for bullet trajectories
+
+What is their signature weapon or form?
+Metal rail gauntlet that fires devil-charged slugs
+
+How would you describe their personality?
+Dry, battle-weary, protective of reckless recruits
+
+What ultimate desire drives them?
+To retire long enough to visit every ramen stand she promised her partner
+
+Share their tragic backstory.
+Lost her hearing after firing the Railgun Devil to vaporize a zombie horde, yet still hears the screams in her dreams.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Chainsaw Man.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Chainsaw Man?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Chainsaw Man\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Hybridity Experiment",
+    description: "An illegal human-weapons hybrid searching for a place to belong.",
+    prompt: `What is your character's name?
+Jun Harada
+
+What is their affiliation?
+Independent hybrid under covert observation
+
+What devil contract or hybrid power do they wield?
+Hybridity with the Mirror Devil allowing reflection duplication
+
+What is their signature weapon or form?
+Mirrored chainsaws erupting from forearms
+
+How would you describe their personality?
+Detached, curious, fixates on reflections of others
+
+What ultimate desire drives them?
+To see an unaltered version of himself one last time
+
+Share their tragic backstory.
+Was sold to the Yakuza by his parents; only escaped when Makima's purge shattered his containment chamber.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Chainsaw Man.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Chainsaw Man?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Chainsaw Man\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Private Devil Hunter",
+    description: "A freelance hunter monetizing cursed livestreams for devil knowledge.",
+    prompt: `What is your character's name?
+Mika Kuroe
+
+What is their affiliation?
+Independent devil hunter and underground streamer
+
+What devil contract or hybrid power do they wield?
+Contract with the Spotlight Devil trading anonymity for invulnerability on camera
+
+What is their signature weapon or form?
+Camera drone blades broadcasting every strike
+
+How would you describe their personality?
+Flashy, cunning, terrified of being forgotten
+
+What ultimate desire drives them?
+To become the internet's most beloved devil exterminator
+
+Share their tragic backstory.
+Her family was devoured by the Attention Devil; going live is the only way she feels they can still see her.`,
+  },
+  {
+    title: "International Assassin",
+    description: "A foreign assassin chasing contracts across the world at any cost.",
+    prompt: `What is your character's name?
+Sergei Kozlov
+
+What is their affiliation?
+Russian state assassin freelancing in Japan
+
+What devil contract or hybrid power do they wield?
+Contract with the Tundra Devil granting cryogenic touch in exchange for warmth
+
+What is their signature weapon or form?
+Frozen wire garrote and collapsible ice axe
+
+How would you describe their personality?
+Detached, professional, haunted by phantom chills
+
+What ultimate desire drives them?
+To earn enough to buy his family's freedom from the state
+
+Share their tragic backstory.
+Forced into service after his village was turned to ice as leverage; each mission steals more of his body heat.`,
+  },
+  {
+    title: "Devil Rights Advocate",
+    description: "A civilian lawyer championing devil-human coexistence while hiding a pact.",
+    prompt: `What is your character's name?
+Aya Nanase
+
+What is their affiliation?
+Public defender secretly funding devil sanctuaries
+
+What devil contract or hybrid power do they wield?
+Contract with the Penance Devil allowing her to absorb others' sins
+
+What is their signature weapon or form?
+Chains of guilt that manifest from her wrists
+
+How would you describe their personality?
+Compassionate, stubborn, overwhelmed by empathy
+
+What ultimate desire drives them?
+To create legal protections for peaceful devils
+
+Share their tragic backstory.
+Took on her sister's sentence in exchange for the contract, now relives dozens of crimes in nightmares.`,
   },
 ];
 

@@ -13,97 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Pirate",
-    description: "A free-spirited adventurer who laughs in the face of danger.",
+    title: "Scout Pathfinder",
+    description: "A Survey Corps veteran who charts Titan territory others fear to enter.",
     prompt: `What is your character's name?
-Rion D. Crest
+Ilia Brauer
 
-What is your affiliation?
-Pirate – captain of the Laughing Tide Crew
+Which regiment or faction are they part of?
+Survey Corps Special Operations Squad
 
-Has your character eaten a Devil Fruit?
-No – relies purely on Haki and instinct
+What is their role and specialty?
+Long-range reconnaissance using experimental mapping flares
 
-What is your goal?
-To find the island said to echo with eternal laughter
+What combat gear or Titan power do they rely on?
+Dual blades, modified ODM gear, and Thunder Spear support
 
-What is your personality?
-Reckless, cheerful, and unbreakably free`,
+How would you describe their personality?
+Stoic, analytical, unwaveringly loyal to her squad
+
+What motivation drives them forward?
+To discover a safe route for civilians beyond the Walls
+
+Share a brief backstory snapshot.
+Raised in Trost, Ilia swore to never let another breach catch humanity unprepared and now maps every Titan nest for Hange's team.`,
   },
   {
-    title: "Marine",
-    description: "A young officer torn between justice and blind obedience.",
+    title: "Wall Garrison Captain",
+    description: "An engineer-soldier balancing defense work with titan-slaying duty.",
     prompt: `What is your character's name?
-Lira Frost
+Marius Feldt
 
-What is your affiliation?
-Marine Headquarters, North Blue Division
+Which regiment or faction are they part of?
+Wall Garrison 3rd Engineering Brigade
 
-Has your character eaten a Devil Fruit?
-Yes – the Hie Hie no Mi (Ice-Ice Fruit)
+What is their role and specialty?
+Coordinating wall repairs while leading an artillery fireteam
 
-What is your goal?
-To redefine what justice truly means within the Marines
+What combat gear or Titan power do they rely on?
+Cannon batteries, anti-personnel ODM gear, and signal rockets
 
-What is your personality?
-Calm, loyal, but quietly defiant toward authority`,
+How would you describe their personality?
+Pragmatic, protective, prone to dry humor under stress
+
+What motivation drives them forward?
+To keep the Walls standing long enough for civilians to rebuild
+
+Share a brief backstory snapshot.
+He lost his parents during the Trost breach and now commands the very cannons he once hid beneath as a child.`,
   },
   {
-    title: "Revolutionary",
-    description:
-      "A rebel scholar who fights oppression through knowledge and strategy.",
+    title: "Warrior Candidate",
+    description: "A Marleyan trainee torn between duty and empathy for Eldians.",
     prompt: `What is your character's name?
-Dr. Evan Creed
+Greta Braun
 
-What is your affiliation?
-Revolutionary Army intelligence branch
+Which regiment or faction are they part of?
+Marley Warrior Unit candidate squad
 
-Has your character eaten a Devil Fruit?
-No – uses advanced technology and tactics instead
+What is their role and specialty?
+Tactical planning and anti-ODM countermeasures
 
-What is your goal?
-To expose the World Government’s historical cover-ups
+What combat gear or Titan power do they rely on?
+Reinforced shotguns and thunder spear intercept launchers
 
-What is your personality?
-Analytical, idealistic, and quietly fearless`,
+How would you describe their personality?
+Disciplined, conflicted, fiercely loyal to her fellow candidates
+
+What motivation drives them forward?
+To inherit the Armored Titan and redefine Marley's treatment of Eldians
+
+Share a brief backstory snapshot.
+Greta secretly trades letters with an Eldian pen pal, questioning the propaganda she is sworn to uphold.`,
   },
   {
-    title: "Celestial Dragon",
-    description:
-      "A spoiled noble who begins to question their divine privilege.",
+    title: "Yeagerist Agitator",
+    description: "A radicalized youth pushing for Eldian freedom at any cost.",
     prompt: `What is your character's name?
-Saint Aurelia Donquixote
+Tomas Kirsch
 
-What is your affiliation?
-World Nobles – Holy Land of Mariejois
+Which regiment or faction are they part of?
+Yeagerist underground cells inside Paradis
 
-Has your character eaten a Devil Fruit?
-Yes – the Mira Mira no Mi (Mirror-Mirror Fruit)
+What is their role and specialty?
+Propaganda broadcasts and organizing civilian militias
 
-What is your goal?
-To escape the Holy Land and live as an ordinary human
+What combat gear or Titan power do they rely on?
+Standard ODM gear, smuggled firearms, and stolen Thunder Spears
 
-What is your personality?
-Proud yet curious; torn between guilt and desire for freedom`,
+How would you describe their personality?
+Charismatic, impatient, fervently devoted to Eren's vision
+
+What motivation drives them forward?
+To force the world to respect Eldian sovereignty through the Rumbling threat
+
+Share a brief backstory snapshot.
+Formerly a refugee in Shiganshina, Tomas uses rooftop radio relays to rally supporters while dodging Military Police surveillance.`,
   },
   {
-    title: "Bounty Hunter",
-    description:
-      "A lone tracker who hunts pirates for both justice and revenge.",
+    title: "Underground Healer",
+    description: "A civilian medic caring for refugees and deserters beneath the capital.",
     prompt: `What is your character's name?
-Taro Steeljaw
+Elise Moreau
 
-What is your affiliation?
-Independent bounty hunter from Fishman Island
+Which regiment or faction are they part of?
+Independent support network below Mitras
 
-Has your character eaten a Devil Fruit?
-No – relies on Fishman strength and Armament Haki
+What is their role and specialty?
+Medical treatment for ODM injuries and Titan trauma survivors
 
-What is your goal?
-To capture the pirate who destroyed his hometown
+What combat gear or Titan power do they rely on?
+Hidden clinics, anesthesia syringes, and salvaged medical blades
 
-What is your personality?
-Stoic, relentless, but compassionate toward the innocent`,
+How would you describe their personality?
+Compassionate, weary, resolute against injustice
+
+What motivation drives them forward?
+To prove that humanity survives through mercy as much as strength
+
+Share a brief backstory snapshot.
+Elise deserted the Interior MPs after witnessing their cruelty and now patches up scouts and civilians in secret catacombs.`,
   },
 ];
 

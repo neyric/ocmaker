@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Hunter x Hunter.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Hunter x Hunter?\nFrontline hero standing beside the main cast of Hunter x Hunter\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Hunter x Hunter\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Beast Hunter",
+    description: "A licensed hunter cataloging undiscovered species in the Dark Continent.",
+    prompt: `What is your character's name?
+Nyala Veld
+
+What is their Hunter status or affiliation?
+Single-Star Beast Hunter affiliated with the Association
+
+What Nen category do they belong to?
+Conjurer
+
+Describe their Hatsu ability.
+Creates Aura Pods that store scents, letting her track any creature later
+
+How would you describe their personality?
+Curious, fearless, protective of ecosystems
+
+What goal motivates them?
+To prove coexistence between humans and Dark Continent fauna is possible
+
+Share a backstory snapshot.
+Barely survived a Chimera Ant raid thanks to help from a mysterious beast; vowed to safeguard hybrids thereafter.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Hunter x Hunter.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Hunter x Hunter?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Hunter x Hunter\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Mafia Negotiator",
+    description: "A contract Hunter balancing mafia politics in Meteor City.",
+    prompt: `What is your character's name?
+Rex Law
+
+What is their Hunter status or affiliation?
+Contract Hunter employed by the Five Families
+
+What Nen category do they belong to?
+Manipulator
+
+Describe their Hatsu ability.
+Puppet Strings of Justice that force criminals to confess when bound
+
+How would you describe their personality?
+Suave, methodical, morally flexible
+
+What goal motivates them?
+To dismantle the black market arms route fueling Phantom Troupe raids
+
+Share a backstory snapshot.
+Grew up in Meteor City and lost his brother to a smuggling deal gone wrong; now he negotiates to protect locals.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Hunter x Hunter.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Hunter x Hunter?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Hunter x Hunter\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Greed Island Speedrunner",
+    description: "An avid gamer using Nen combos to clear Greed Island dungeons first.",
+    prompt: `What is your character's name?
+Lina Byte
+
+What is their Hunter status or affiliation?
+Double-Star Treasure Hunter and pro streamer
+
+What Nen category do they belong to?
+Emitter
+
+Describe their Hatsu ability.
+Pixel Burst lets her convert cards into temporary energy constructs
+
+How would you describe their personality?
+Energetic, competitive, loves showing off
+
+What goal motivates them?
+To unlock Greed Island's rumored sequel and archive every card
+
+Share a backstory snapshot.
+Won her license by broadcasting a live infiltration of a mafia vault without casualties.`,
+  },
+  {
+    title: "Kurta Archivist",
+    description: "A survivor chronicling Kurta history while hunting down scarlet eye collectors.",
+    prompt: `What is your character's name?
+Thane Kurta
+
+What is their Hunter status or affiliation?
+Unlicensed Hunter traveling with Kurapika's network
+
+What Nen category do they belong to?
+Specialist
+
+Describe their Hatsu ability.
+Scarlet Ledger conjures chains that record every stolen eye
+
+How would you describe their personality?
+Solemn, driven, quietly compassionate
+
+What goal motivates them?
+To recover the last scarlet eyes held by underground auctioneers
+
+Share a backstory snapshot.
+Escaped the massacre by hiding in a hidden shrine; now trades intel with Kurapika to bring closure to his clan.`,
+  },
+  {
+    title: "NGL Healer",
+    description: "A reformed NGL citizen using Nen to detoxify Chimera Ant residues.",
+    prompt: `What is your character's name?
+Juniper Rae
+
+What is their Hunter status or affiliation?
+Apprentice Hunter sponsored by Kite's followers
+
+What Nen category do they belong to?
+Transmuter
+
+Describe their Hatsu ability.
+Purity Bloom converts toxins into harmless spores
+
+How would you describe their personality?
+Patient, empathetic, quietly resilient
+
+What goal motivates them?
+To help rebuild NGL without repeating its isolationist mistakes
+
+Share a backstory snapshot.
+Lost her parents to drug overdoses; after the Ant invasion she studied Nen to cleanse the land.`,
   },
 ];
 

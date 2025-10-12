@@ -13,23 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of Pokemon.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Pokemon?\nFrontline hero standing beside the main cast of Pokemon\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Pokemon\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Kalos Sky Ace",
+    description: "A sky trainer dancing through aerial battles with grace.",
+    prompt: `What is your character's name?
+Elise Montclair
+
+What type of trainer or role do they have?
+Kalos Sky Trainer and performing competitor
+
+Which region do they call home and what key locations define them?
+Kalos, primarily Lumiose City and Azure Bay
+
+What is their team specialty and signature partner Pokémon?
+Flying-type specialists led by partner Hawlucha
+
+How would you describe their personality?
+Elegant, brave, thrill-seeking
+
+What goal drives their journey?
+To choreograph the ultimate aerial performance for the Prism Tower festival
+
+Share a journey backstory snapshot.
+Survived a storm thanks to her Hawlucha; now teaches children aerial safety through contests.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Pokemon.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Pokemon?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Pokemon\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Sinnoh Myth Researcher",
+    description: "A Sinnoh scholar mapping ancient ruins alongside fossil Pokémon.",
+    prompt: `What is your character's name?
+Darius Flint
+
+What type of trainer or role do they have?
+Archaeologist and Fossil Pokémon trainer
+
+Which region do they call home and what key locations define them?
+Sinnoh, based in Canalave Library and Spear Pillar
+
+What is their team specialty and signature partner Pokémon?
+Rock/Steel team led by partner Bastiodon
+
+How would you describe their personality?
+Methodical, bookish, quietly heroic
+
+What goal drives their journey?
+To uncover proof linking Arceus myths with modern evolution
+
+Share a journey backstory snapshot.
+Encountered Cynthia while restoring Solaceon's ruins; now documents mythic sightings with his fossil partners.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Pokemon.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Pokemon?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Pokemon\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Galar Gym Challenger",
+    description: "A punk rocker challenging gyms with rhythm-infused battles.",
+    prompt: `What is your character's name?
+Roxy Riot
+
+What type of trainer or role do they have?
+Galar Gym Challenger and musician
+
+Which region do they call home and what key locations define them?
+Galar, Spikemuth hometown and Wyndon Stadium
+
+What is their team specialty and signature partner Pokémon?
+Electric/Poison blend led by partner Toxtricity
+
+How would you describe their personality?
+Rebellious, charismatic, fiercely loyal
+
+What goal drives their journey?
+To dethrone Leon and revitalize Spikemuth's music scene
+
+Share a journey backstory snapshot.
+Was mentored by Piers and Marnie, turning her garage band into gym challenge battles.`,
+  },
+  {
+    title: "Alola Trial Captain",
+    description: "An Alolan trial captain guiding challengers through lush jungles.",
+    prompt: `What is your character's name?
+Keani
+
+What type of trainer or role do they have?
+Trial Captain in Alola's Lush Jungle
+
+Which region do they call home and what key locations define them?
+Alola, Lush Jungle and Iki Town
+
+What is their team specialty and signature partner Pokémon?
+Grass-type bonds led by partner Tsareena
+
+How would you describe their personality?
+Warm, playful, fiercely protective of nature
+
+What goal drives their journey?
+To cultivate restorative herbs that heal Ultra Beast damage
+
+Share a journey backstory snapshot.
+Discovered her Tsareena while replanting the jungle after an Ultra Beast incursion.`,
+  },
+  {
+    title: "Paldea Streamer",
+    description: "A Paldean influencer mixing treasure hunts with gym raids.",
+    prompt: `What is your character's name?
+Nova Stream
+
+What type of trainer or role do they have?
+Paldea treasure hunter and battle streamer
+
+Which region do they call home and what key locations define them?
+Paldea, exploring Area Zero and Levincia
+
+What is their team specialty and signature partner Pokémon?
+Dragon/Normal team led by partner Cyclizar
+
+How would you describe their personality?
+Energetic, curious, always camera-ready
+
+What goal drives their journey?
+To broadcast a live discovery of the next Great Treasure of Paldea
+
+Share a journey backstory snapshot.
+Found her Cyclizar as a child during a treasure hunt; now travels with Nemona to showcase Paldea's wonders.`,
   },
 ];
 

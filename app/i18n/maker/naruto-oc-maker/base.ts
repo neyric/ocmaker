@@ -13,22 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description: "A determined protagonist representing the heart of Naruto.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Naruto?\nFrontline hero standing beside the main cast of Naruto\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Naruto\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Leaf ANBU Tracker",
+    description: "A Hidden Leaf tracker decoding enemy codes with sensory ninjutsu.",
+    prompt: `What is your character's name?
+Shin Kurogane
+
+What is their village and rank?
+Konohagakure, ANBU operative
+
+Do they belong to a clan or possess a Kekkei Genkai?
+Adopted into the Nara clan, no Kekkei Genkai
+
+What chakra nature and signature jutsu do they use?
+Shadow-infused Lightning Release creating chain-binding bolts
+
+How would you describe their personality?
+Calm, thoughtful, secretly sentimental
+
+What is their nindo (ninja way)?
+Even in the shadows, I protect those basking in the sun
+
+Share a backstory snapshot.
+Rescued by Shikamaru's father during the Fourth War, he now scouts rogue shinobi routes for the Hokage.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Naruto.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Naruto?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Naruto\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Sand Puppet Captain",
+    description: "A Sunagakure captain commanding chakra-thread puppets with precision.",
+    prompt: `What is your character's name?
+Kaya Sabaku
+
+What is their village and rank?
+Sunagakure, jonin puppeteer
+
+Do they belong to a clan or possess a Kekkei Genkai?
+Sabaku clan artisan branch
+
+What chakra nature and signature jutsu do they use?
+Wind Release combined with chakra-thread puppet artillery
+
+How would you describe their personality?
+Strategic, protective, spirited
+
+What is their nindo (ninja way)?
+Every desert storm can be tamed with preparation
+
+Share a backstory snapshot.
+Designs healing puppets for Kankuro while leading missions to secure Sand's trade routes.`,
   },
   {
-    title: "Mentor",
-    description: "A seasoned mentor guiding the next generation within Naruto.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Naruto?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Naruto\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Mist Swordswoman",
+    description: "A Hidden Mist swordswoman mastering silent assassination.",
+    prompt: `What is your character's name?
+Rei Hozuki
+
+What is their village and rank?
+Kirigakure, Seven Ninja Swordsmen trainee
+
+Do they belong to a clan or possess a Kekkei Genkai?
+Hozuki clan, water body manipulation
+
+What chakra nature and signature jutsu do they use?
+Water Release mist clones paired with electrified blade
+
+How would you describe their personality?
+Stoic, disciplined, quietly caring
+
+What is their nindo (ninja way)?
+A blade without purpose rusts; I fight to carve peace
+
+Share a backstory snapshot.
+Rebuilt one of the lost swords using liquefaction techniques taught by Suigetsu.`,
+  },
+  {
+    title: "Cloud Sensor",
+    description: "A Hidden Cloud sensory ninja coordinating lightning strikes from afar.",
+    prompt: `What is your character's name?
+Denki Raiju
+
+What is their village and rank?
+Kumogakure, chunin strategist
+
+Do they belong to a clan or possess a Kekkei Genkai?
+No clan; trained under Darui
+
+What chakra nature and signature jutsu do they use?
+Lightning Release radar pulses and thunderbolt sealing tags
+
+How would you describe their personality?
+Confident, witty, fiercely loyal
+
+What is their nindo (ninja way)?
+Strike fast, protect faster
+
+Share a backstory snapshot.
+Saved a whole platoon by intercepting a Jashinist ritual, earning praise from the Raikage.`,
+  },
+  {
+    title: "Rogue Scholar",
+    description: "A wandering Uzumaki historian gathering lost sealing scrolls.",
+    prompt: `What is your character's name?
+Akiko Uzumaki
+
+What is their village and rank?
+Independent wanderer, formerly Uzushiogakure
+
+Do they belong to a clan or possess a Kekkei Genkai?
+Uzumaki clan sealing prodigy
+
+What chakra nature and signature jutsu do they use?
+Sealing chains infused with Fire Release talismans
+
+How would you describe their personality?
+Kind, inquisitive, quietly rebellious
+
+What is their nindo (ninja way)?
+Knowledge belongs to everyone willing to protect it
+
+Share a backstory snapshot.
+Survived the fall of Uzushio and now assists Naruto's era by cataloging scrolls hidden across shinobi nations.`,
   },
 ];
 

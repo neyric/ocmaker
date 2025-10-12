@@ -13,25 +13,124 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Hell's Paradise.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Hell's Paradise?\nFrontline hero standing beside the main cast of Hell's Paradise\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Hell's Paradise\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Iwagakure Survivor",
+    description: "A shinobi convict wielding chained sickles in hopes of pardon.",
+    prompt: `What is your character's name?
+Hana Suiren
+
+What is their origin and role (convict or executioner)?
+Former Iwagakure assassin sentenced to Shinsenkyo
+
+What fighting style and weapon do they use?
+Dual kusarigama strikes combined with acrobatic flips
+
+What Tao aptitude or shinobi techniques do they possess?
+Balanced Tao flow allowing her to counter Tensen petals
+
+How would you describe their personality?
+Calm, calculating, fiercely loyal once trust is earned
+
+What treasure or goal do they seek?
+To secure a pardon and rescue her sibling sold into slavery
+
+Share a backstory snapshot.
+Refused to kill a child target, resulting in her imprisonment; now fights to redeem that choice.`,
   },
   {
-    title: "Rival",
-    description:
-      "A formidable rival who challenges the heroes of Hell's Paradise.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Hell's Paradise?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Hell's Paradise\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Yamada Asaemon Disciple",
+    description: "A novice executioner documenting every battle with scholarly care.",
+    prompt: `What is your character's name?
+Asaemon Retsu
+
+What is their origin and role (convict or executioner)?
+Yamada Asaemon probationary executioner
+
+What fighting style and weapon do they use?
+Iaido-style katana draws infused with precise anatomy strikes
+
+What Tao aptitude or shinobi techniques do they possess?
+Limited Tao perception focused on sensing fear tremors
+
+How would you describe their personality?
+Stoic, dutiful, quietly empathetic toward convicts
+
+What treasure or goal do they seek?
+To return with accurate records that prevent future doomed missions
+
+Share a backstory snapshot.
+Retsu volunteered to document Shinsenkyo after losing a mentor to rumors of immortality.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Hell's Paradise.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Hell's Paradise?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Hell's Paradise\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Deserted Pirate",
+    description: "A pirate convict whose cannon expertise now fuels explosive traps.",
+    prompt: `What is your character's name?
+Bora Umigami
+
+What is their origin and role (convict or executioner)?
+Convicted pirate captain sent to the island
+
+What fighting style and weapon do they use?
+Weighted chain-cannon repurposed as a portable mortar
+
+What Tao aptitude or shinobi techniques do they possess?
+Harnesses Tao through rhythmic sea shanties that stabilize breathing
+
+How would you describe their personality?
+Boisterous, reckless, fiercely protective of allies
+
+What treasure or goal do they seek?
+To obtain the Elixir and rebuild his lost crew as a legitimate fleet
+
+Share a backstory snapshot.
+His crew was slaughtered by shogunate soldiers; he seeks amnesty so the survivors can live openly.`,
+  },
+  {
+    title: "Junshi Defector",
+    description: "A Tensen experiment who turned on their creators to regain humanity.",
+    prompt: `What is your character's name?
+Kagura
+
+What is their origin and role (convict or executioner)?
+Former Junshi guardian now aiding the intruders
+
+What fighting style and weapon do they use?
+Petal-blade fans and morphing Tao-flower whips
+
+What Tao aptitude or shinobi techniques do they possess?
+High-level Tao manipulation granting rapid regeneration
+
+How would you describe their personality?
+Elegant, hauntingly serene, burdened by guilt
+
+What treasure or goal do they seek?
+To destroy the Tensen root to free other captured humans
+
+Share a backstory snapshot.
+Once human, she was molded into a Junshi but broke free after remembering her brother's lullaby.`,
+  },
+  {
+    title: "Temple Monk",
+    description: "A monk executioner mastering meditation to stave off the island's madness.",
+    prompt: `What is your character's name?
+Shuzen
+
+What is their origin and role (convict or executioner)?
+Monk recruited by the shogunate as an executioner
+
+What fighting style and weapon do they use?
+Staff techniques using prayer beads tipped with blades
+
+What Tao aptitude or shinobi techniques do they possess?
+Aligns Tao through chanting sutras that calm allies
+
+How would you describe their personality?
+Serene, resolute, prone to philosophical musings
+
+What treasure or goal do they seek?
+To obtain the Elixir and cure a plague ravaging his temple
+
+Share a backstory snapshot.
+He agreed to the mission after watching his abbey fall to a mysterious illness the Elixir might heal.`,
   },
 ];
 

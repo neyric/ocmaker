@@ -13,24 +13,109 @@ const basePrompt = `
 
 const backstoryExamples = [
   {
-    title: "Hero",
-    description:
-      "A determined protagonist representing the heart of Sailor Moon.",
-    prompt:
-      "What is your character's name?\nKei Arashi\n\nWhat is their role in Sailor Moon?\nFrontline hero standing beside the main cast of Sailor Moon\n\nWhat unique ability or skill do they have?\nMastery over a signature power style that defines Sailor Moon\n\nWhat is their ultimate goal?\nTo protect their allies and push the story forward\n\nDescribe their personality.\nFearless, hopeful, and fiercely loyal",
+    title: "Sailor Starflower",
+    description: "A guardian of cosmic gardens nurturing life between planets.",
+    prompt: `What is your character's name?
+Amara Hanazono
+
+What is their Guardian title and planet or domain?
+Sailor Starflower of the Asteroid Belt sanctuaries
+
+What transformation items and attacks do they wield?
+Starflower Brooch and Blooming Scepter unleashing Petal Nebula Storm
+
+How would you describe their personality?
+Kind, optimistic, steadfast
+
+What mission or protective duty guides them?
+To heal ruined celestial gardens and defend new life
+
+Share their past life backstory.
+In the Silver Millennium she tended the Moon Kingdom's outer gardens and now remembers fragments whenever meteors bloom.`,
   },
   {
-    title: "Rival",
-    description: "A formidable rival who challenges the heroes of Sailor Moon.",
-    prompt:
-      "What is your character's name?\nMira Lynx\n\nHow do they relate to the heroes of Sailor Moon?\nAn ambitious rival whose ideals clash with the protagonists\n\nWhat powers or techniques set them apart?\nRefined skills reflecting the darker edge of Sailor Moon\n\nWhat drives them?\nA burning need to prove their philosophy is right\n\nDescribe their personality.\nSharp, proud, and secretly compassionate",
+    title: "Sailor Tempest",
+    description: "A storm guardian balancing tempests across Neptune's moons.",
+    prompt: `What is your character's name?
+Cassia Mare
+
+What is their Guardian title and planet or domain?
+Sailor Tempest of Triton's oceans
+
+What transformation items and attacks do they wield?
+Tempest Mirror and Gale Harp summoning Siren Cyclone
+
+How would you describe their personality?
+Calm, introspective, fiercely protective
+
+What mission or protective duty guides them?
+To keep spacefaring sailors safe from cosmic storms
+
+Share their past life backstory.
+She once guided ancient voyagers through storms alongside Sailor Neptune; reincarnated, she senses tides before they swell.`,
   },
   {
-    title: "Mentor",
-    description:
-      "A seasoned mentor guiding the next generation within Sailor Moon.",
-    prompt:
-      "What is your character's name?\nProfessor Daelin Voss\n\nWhat is their role in Sailor Moon?\nVeteran mentor who prepares new heroes for the trials ahead\n\nWhat knowledge or abilities do they offer?\nDeep expertise in the history and power systems of Sailor Moon\n\nWhat is their guiding lesson?\nStrength must be balanced with empathy and foresight\n\nDescribe their personality.\nPatient, witty, and unshakeable even in crisis",
+    title: "Sailor Aurora",
+    description: "A guardian painting auroras to shield dreams from darkness.",
+    prompt: `What is your character's name?
+Lina Skye
+
+What is their Guardian title and planet or domain?
+Sailor Aurora of Earth's polar lights
+
+What transformation items and attacks do they wield?
+Aurora Prism Pen and Radiant Crown unleashing Borealis Rhapsody
+
+How would you describe their personality?
+Artistic, empathetic, playful
+
+What mission or protective duty guides them?
+To guard sleeping hearts from Nightmare forces
+
+Share their past life backstory.
+Her past life tended to dreamscapes alongside Queen Serenity; she now draws aurora murals that ward off nightmares.`,
+  },
+  {
+    title: "Sailor Solaris",
+    description: "A solar guardian channeling sunrise energy into brilliant shields.",
+    prompt: `What is your character's name?
+Helia Dawn
+
+What is their Guardian title and planet or domain?
+Sailor Solaris of the Dawn Court
+
+What transformation items and attacks do they wield?
+Solaris Locket and Sunflare Blade with attack Daybreak Crescendo
+
+How would you describe their personality?
+Confident, radiant, a natural leader
+
+What mission or protective duty guides them?
+To protect the legacy of Princess Serenity and inspire future guardians
+
+Share their past life backstory.
+Served as a sentinel at Queen Serenity's palace; reincarnated, she rallies new guardians at Crystal Tokyo.`,
+  },
+  {
+    title: "Sailor Nocturne",
+    description: "A twilight guardian harmonizing darkness and starlight.",
+    prompt: `What is your character's name?
+Noemi Vale
+
+What is their Guardian title and planet or domain?
+Sailor Nocturne of the Shadow Muse
+
+What transformation items and attacks do they wield?
+Nocturne Pendant and Lullaby Bow summoning Eclipse Sonata
+
+How would you describe their personality?
+Mysterious, poetic, compassionate
+
+What mission or protective duty guides them?
+To guide lost souls through twilight and shield them from chaos
+
+Share their past life backstory.
+Served as Luna's confidante during the fall of the Moon Kingdom; now runs a music lounge that awakens starseeds.`,
   },
 ];
 
