@@ -142,170 +142,354 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young prodigy",
+        value: "young prodigy"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Battle-hardened",
+        value: "battle hardened"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Seasoned champion",
+        value: "seasoned champion"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Ancient immortal",
+        value: "ancient immortal"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Void remnant",
+        value: "void remnant"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Demacian armor",
+        value: "demacian armor"
+      },
+      {
+        label: "Noxian warplate",
+        value: "noxian warplate"
+      },
+      {
+        label: "Ionian robes",
+        value: "ionian robes"
+      },
+      {
+        label: "Piltover jacket",
+        value: "piltover jacket"
+      },
+      {
+        label: "Shadow Isles cloak",
+        value: "shadow isles cloak"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Armored tassets",
+        value: "armored tassets"
+      },
+      {
+        label: "Runic leggings",
+        value: "runic leggings"
+      },
+      {
+        label: "Hextech pants",
+        value: "hextech pants"
+      },
+      {
+        label: "Freljord furs",
+        value: "freljord furs"
+      },
+      {
+        label: "Bilgewater trousers",
+        value: "bilgewater trousers"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Demacia vanguard",
+        value: "demacia vanguard set"
+      },
+      {
+        label: "Noxus executioner",
+        value: "noxus executioner set"
+      },
+      {
+        label: "Piltover inventor",
+        value: "piltover inventor set"
+      },
+      {
+        label: "Ionia spirit guardian",
+        value: "ionia spirit guardian"
+      },
+      {
+        label: "Void touched",
+        value: "void touched set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Hextech alloy",
+        value: "hextech alloy"
+      },
+      {
+        label: "Runed stone",
+        value: "runed stone"
+      },
+      {
+        label: "Spirit blossom silk",
+        value: "spirit blossom silk"
+      },
+      {
+        label: "Freljord ice weave",
+        value: "freljord ice weave"
+      },
+      {
+        label: "Void chitin",
+        value: "void chitin"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Champion sigil",
+        value: "champion sigil"
+      },
+      {
+        label: "Hextech gauntlet",
+        value: "hextech gauntlet"
+      },
+      {
+        label: "Runic blade",
+        value: "runic blade"
+      },
+      {
+        label: "Targon star pendant",
+        value: "targon star pendant"
+      },
+      {
+        label: "Bilgewater pistol",
+        value: "bilgewater pistol"
+      }
+    ]
+  },
+  {
+    title: "Region",
+    key: "lol_region",
+    data: [
+      {
+        label: "Demacia",
+        value: "demacia"
+      },
+      {
+        label: "Noxus",
+        value: "noxus"
+      },
+      {
+        label: "Piltover",
+        value: "piltover"
+      },
+      {
+        label: "Ionia",
+        value: "ionia"
+      },
+      {
+        label: "Freljord",
+        value: "freljord"
+      },
+      {
+        label: "Shurima",
+        value: "shurima"
+      },
+      {
+        label: "Shadow Isles",
+        value: "shadow isles"
+      },
+      {
+        label: "Bilgewater",
+        value: "bilgewater"
+      },
+      {
+        label: "Targon",
+        value: "targon"
+      },
+      {
+        label: "Void",
+        value: "void"
+      }
+    ]
+  }
 ];
 
 const examples = [

@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Tokyo first-year",
+        value: "tokyo first year"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Kyoto second-year",
+        value: "kyoto second year"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Grade 2 sorcerer",
+        value: "grade 2 sorcerer"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Grade 1 veteran",
+        value: "grade 1 veteran"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Special grade",
+        value: "special grade"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Tokyo uniform",
+        value: "tokyo uniform"
+      },
+      {
+        label: "Kyoto uniform",
+        value: "kyoto uniform"
+      },
+      {
+        label: "Black battle coat",
+        value: "black battle coat"
+      },
+      {
+        label: "Curse user cloak",
+        value: "curse user cloak"
+      },
+      {
+        label: "Culling game outfit",
+        value: "culling game outfit"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "School uniform slacks",
+        value: "school uniform slacks"
+      },
+      {
+        label: "Combat leggings",
+        value: "combat leggings"
+      },
+      {
+        label: "Binding hakama",
+        value: "binding hakama"
+      },
+      {
+        label: "Casual street pants",
+        value: "casual street pants"
+      },
+      {
+        label: "Culling game armor",
+        value: "culling game armor"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Tokyo Jujutsu High",
+        value: "tokyo jujutsu high set"
+      },
+      {
+        label: "Kyoto Jujutsu High",
+        value: "kyoto jujutsu high set"
+      },
+      {
+        label: "Curse user rogue",
+        value: "curse user rogue set"
+      },
+      {
+        label: "Culling game contestant",
+        value: "culling game contestant"
+      },
+      {
+        label: "Special grade mentor",
+        value: "special grade mentor"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Curse-resistant fabric",
+        value: "curse resistant fabric"
+      },
+      {
+        label: "Binding vow silk",
+        value: "binding vow silk"
+      },
+      {
+        label: "Barrier mesh",
+        value: "barrier mesh"
+      },
+      {
+        label: "Cursed armor plates",
+        value: "cursed armor plates"
+      },
+      {
+        label: "Healing charms",
+        value: "healing charms"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Cursed tool",
+        value: "cursed tool"
+      },
+      {
+        label: "Blindfold",
+        value: "blindfold"
+      },
+      {
+        label: "Megumi-style shadow glove",
+        value: "shadow glove"
+      },
+      {
+        label: "Binding vow scroll",
+        value: "binding vow scroll"
+      },
+      {
+        label: "Technique talisman",
+        value: "technique talisman"
+      }
+    ]
+  },
+  {
+    title: "Affiliation",
+    key: "jjk_affiliation",
+    data: [
+      {
+        label: "Tokyo Jujutsu High",
+        value: "tokyo jujutsu high"
+      },
+      {
+        label: "Kyoto Jujutsu High",
+        value: "kyoto jujutsu high"
+      },
+      {
+        label: "Curse user",
+        value: "curse user"
+      },
+      {
+        label: "Independent sorcerer",
+        value: "independent sorcerer"
+      },
+      {
+        label: "Culling game player",
+        value: "culling game player"
+      }
+    ]
+  }
 ];
 
 const examples = [

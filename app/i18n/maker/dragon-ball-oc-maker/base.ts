@@ -142,170 +142,308 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young martial artist",
+        value: "young martial artist"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Saiyan teen",
+        value: "saiyan teen"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Galactic patrol recruit",
+        value: "galactic patrol recruit"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Seasoned fighter",
+        value: "seasoned fighter"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Ancient warrior",
+        value: "ancient warrior"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Lean fighter",
+        value: "lean fighter build"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Saiyan muscular",
+        value: "saiyan muscular build"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Agile martial artist",
+        value: "agile martial artist"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Bulking tank",
+        value: "bulking tank"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Divine aura physique",
+        value: "divine aura physique"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Gi top",
+        value: "gi top"
+      },
+      {
+        label: "Saiyan armor",
+        value: "saiyan armor"
+      },
+      {
+        label: "Galactic patrol jacket",
+        value: "galactic patrol jacket"
+      },
+      {
+        label: "Capsule Corp hoodie",
+        value: "capsule corp hoodie"
+      },
+      {
+        label: "Angel robe",
+        value: "angel robe"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Gi pants",
+        value: "gi pants"
+      },
+      {
+        label: "Battle leggings",
+        value: "battle leggings db"
+      },
+      {
+        label: "Saiyan armor greaves",
+        value: "saiyan armor greaves"
+      },
+      {
+        label: "Casual training shorts",
+        value: "training shorts"
+      },
+      {
+        label: "Godly sashes",
+        value: "godly sashes"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Z-Fighter uniform",
+        value: "z fighter uniform"
+      },
+      {
+        label: "Saiyan elite",
+        value: "saiyan elite set"
+      },
+      {
+        label: "Galactic patrol",
+        value: "galactic patrol set"
+      },
+      {
+        label: "Capsule corp casual",
+        value: "capsule corp casual"
+      },
+      {
+        label: "Divine tournament",
+        value: "divine tournament set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Weighted fabric",
+        value: "weighted fabric"
+      },
+      {
+        label: "Saiyan armor plates",
+        value: "saiyan armor plates"
+      },
+      {
+        label: "Training gi cotton",
+        value: "training gi cotton"
+      },
+      {
+        label: "God ki weave",
+        value: "god ki weave"
+      },
+      {
+        label: "Ultra instinct glow",
+        value: "ultra instinct glow"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Scouter",
+        value: "scouter"
+      },
+      {
+        label: "Weighted wristbands",
+        value: "weighted wristbands"
+      },
+      {
+        label: "Tail wrap",
+        value: "tail wrap"
+      },
+      {
+        label: "Senzu pouch",
+        value: "senzu pouch"
+      },
+      {
+        label: "Halo aura",
+        value: "halo aura"
+      }
+    ]
+  }
 ];
 
 const examples = [

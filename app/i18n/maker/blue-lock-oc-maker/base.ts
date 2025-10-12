@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "U-18 striker",
+        value: "u18 striker"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Neo Egoist trainee",
+        value: "neo egoist trainee"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "International rookie",
+        value: "international rookie"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Pro league forward",
+        value: "pro league forward"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Veteran ace",
+        value: "veteran ace"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Blue Lock jersey",
+        value: "blue lock jersey"
+      },
+      {
+        label: "Training bib",
+        value: "training bib"
+      },
+      {
+        label: "Neo Egoist kit",
+        value: "neo egoist kit"
+      },
+      {
+        label: "International club uniform",
+        value: "international club uniform"
+      },
+      {
+        label: "Street practice tee",
+        value: "street practice tee"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Compression shorts",
+        value: "compression shorts"
+      },
+      {
+        label: "Match shorts",
+        value: "match shorts"
+      },
+      {
+        label: "Track pants",
+        value: "track pants"
+      },
+      {
+        label: "Street joggers",
+        value: "street joggers"
+      },
+      {
+        label: "Warm-up sweats",
+        value: "warm up sweats"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Blue Lock standard",
+        value: "blue lock standard set"
+      },
+      {
+        label: "Team Z nostalgia",
+        value: "team z nostalgia set"
+      },
+      {
+        label: "Noel Noa pro kit",
+        value: "noel noa pro kit"
+      },
+      {
+        label: "World Cup challenger",
+        value: "world cup challenger set"
+      },
+      {
+        label: "Street futsal",
+        value: "street futsal gear"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Sweat-wicking mesh",
+        value: "sweat wicking mesh"
+      },
+      {
+        label: "Lightweight jersey",
+        value: "lightweight jersey"
+      },
+      {
+        label: "Compression weave",
+        value: "compression weave"
+      },
+      {
+        label: "Thermal training fabric",
+        value: "thermal training fabric"
+      },
+      {
+        label: "Rain-ready nylon",
+        value: "rain ready nylon"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Performance cleats",
+        value: "performance cleats"
+      },
+      {
+        label: "Captain armband",
+        value: "captain armband"
+      },
+      {
+        label: "Kinesio tape",
+        value: "kinesio tape"
+      },
+      {
+        label: "Goal tracker wristband",
+        value: "goal tracker wristband"
+      },
+      {
+        label: "Headband",
+        value: "headband"
+      }
+    ]
+  },
+  {
+    title: "Position",
+    key: "position",
+    data: [
+      {
+        label: "Striker",
+        value: "striker"
+      },
+      {
+        label: "Second striker",
+        value: "second striker"
+      },
+      {
+        label: "Winger",
+        value: "winger"
+      },
+      {
+        label: "Playmaker",
+        value: "playmaker"
+      },
+      {
+        label: "Libero",
+        value: "libero"
+      }
+    ]
+  }
 ];
 
 const examples = [

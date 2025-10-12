@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Teen ability user",
+        value: "teen ability user"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Young detective",
+        value: "young detective"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Mafia officer",
+        value: "mafia officer"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Armed detective veteran",
+        value: "armed detective veteran"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Mystery novelist elder",
+        value: "novelist elder"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Armed Detective trench",
+        value: "armed detective trench"
+      },
+      {
+        label: "Port Mafia coat",
+        value: "port mafia coat"
+      },
+      {
+        label: "Casual ability jacket",
+        value: "casual ability jacket"
+      },
+      {
+        label: "Guild suit",
+        value: "guild suit"
+      },
+      {
+        label: "Decay of Angel robes",
+        value: "decay of angel robes"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Tailored slacks",
+        value: "tailored slacks"
+      },
+      {
+        label: "Suspenders trousers",
+        value: "suspenders trousers"
+      },
+      {
+        label: "High-waist skirt",
+        value: "high waist skirt"
+      },
+      {
+        label: "Street jeans",
+        value: "street jeans"
+      },
+      {
+        label: "Battle-ready pants",
+        value: "battle ready pants"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Armed Detective Agency",
+        value: "armed detective set"
+      },
+      {
+        label: "Port Mafia enforcer",
+        value: "port mafia enforcer set"
+      },
+      {
+        label: "Special Division inspector",
+        value: "special division inspector set"
+      },
+      {
+        label: "Guild envoy",
+        value: "guild envoy set"
+      },
+      {
+        label: "Decay of Angel conspirator",
+        value: "decay of angel conspirator"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Wool trench fabric",
+        value: "wool trench fabric"
+      },
+      {
+        label: "Leather holster straps",
+        value: "leather holster straps"
+      },
+      {
+        label: "Silk-lined coat",
+        value: "silk lined coat"
+      },
+      {
+        label: "Urban canvas",
+        value: "urban canvas"
+      },
+      {
+        label: "Shadow weave",
+        value: "shadow weave"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Ability gloves",
+        value: "ability gloves"
+      },
+      {
+        label: "Mafia tattoo",
+        value: "mafia tattoo"
+      },
+      {
+        label: "Detective notebook",
+        value: "detective notebook"
+      },
+      {
+        label: "Ability suppressor cuffs",
+        value: "ability suppressor cuffs"
+      },
+      {
+        label: "Guild crest pin",
+        value: "guild crest pin"
+      }
+    ]
+  },
+  {
+    title: "Affiliation",
+    key: "bsd_affiliation",
+    data: [
+      {
+        label: "Armed Detective Agency",
+        value: "armed detective agency"
+      },
+      {
+        label: "Port Mafia",
+        value: "port mafia"
+      },
+      {
+        label: "Special Division",
+        value: "special division"
+      },
+      {
+        label: "The Guild",
+        value: "the guild"
+      },
+      {
+        label: "Decay of Angel",
+        value: "decay of angel"
+      }
+    ]
+  }
 ];
 
 const examples = [

@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Trainee slayer",
+        value: "trainee slayer"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Active corps member",
+        value: "active corps member"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Hashira level",
+        value: "hashira level"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Demon youth",
+        value: "demon youth"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Ancient demon",
+        value: "ancient demon"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Agile swordsman",
+        value: "agile swordsman build"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Demon enhanced",
+        value: "demon enhanced build"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Hashira muscular",
+        value: "hashira muscular build"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Elegant dancer",
+        value: "elegant dancer build"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Compact acrobat",
+        value: "compact acrobat build"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Standard corps haori",
+        value: "demon slayer haori"
+      },
+      {
+        label: "Customized pattern haori",
+        value: "patterned haori"
+      },
+      {
+        label: "Hashira cloak",
+        value: "hashira cloak"
+      },
+      {
+        label: "Demon kimono",
+        value: "demon kimono"
+      },
+      {
+        label: "Swordsmith village robe",
+        value: "swordsmith robe"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Hakama trousers",
+        value: "hakama trousers"
+      },
+      {
+        label: "Flowing demon skirt",
+        value: "flowing demon skirt"
+      },
+      {
+        label: "Battle leggings",
+        value: "battle leggings"
+      },
+      {
+        label: "Wisteria emblazoned pants",
+        value: "wisteria pants"
+      },
+      {
+        label: "Traditional tabi pants",
+        value: "traditional tabi pants"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Standard Demon Slayer Corps",
+        value: "standard demon slayer corps"
+      },
+      {
+        label: "Hashira regalia",
+        value: "hashira regalia"
+      },
+      {
+        label: "Upper moon demon",
+        value: "upper moon demon set"
+      },
+      {
+        label: "Swordsmith artisan",
+        value: "swordsmith artisan set"
+      },
+      {
+        label: "Butterfly estate healer",
+        value: "butterfly estate healer"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Wisteria-lined fabric",
+        value: "wisteria lined fabric"
+      },
+      {
+        label: "Breath-infused weave",
+        value: "breath infused weave"
+      },
+      {
+        label: "Demon armor scales",
+        value: "demon armor scales"
+      },
+      {
+        label: "Hashira silk",
+        value: "hashira silk"
+      },
+      {
+        label: "Fireproof haori cloth",
+        value: "fireproof haori cloth"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Nichirin sword",
+        value: "nichirin sword"
+      },
+      {
+        label: "Breathing style scarf",
+        value: "breathing style scarf"
+      },
+      {
+        label: "Kasugai crow",
+        value: "kasugai crow"
+      },
+      {
+        label: "Demon horn adornment",
+        value: "demon horn adornment"
+      },
+      {
+        label: "Wisteria charm",
+        value: "wisteria charm"
+      }
+    ]
+  },
+  {
+    title: "Allegiance",
+    key: "ds_allegiance",
+    data: [
+      {
+        label: "Demon Slayer Corps",
+        value: "demon slayer corps"
+      },
+      {
+        label: "Hashira",
+        value: "hashira"
+      },
+      {
+        label: "Swordsmith village",
+        value: "swordsmith village"
+      },
+      {
+        label: "Demon",
+        value: "demon"
+      },
+      {
+        label: "Former demon",
+        value: "former demon"
+      }
+    ]
+  }
 ];
 
 const examples = [

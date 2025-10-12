@@ -142,170 +142,338 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Exam applicant",
+        value: "hunter exam applicant"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Newly licensed hunter",
+        value: "newly licensed hunter"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Phantom Troupe age",
+        value: "phantom troupe age"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Zodiac veteran",
+        value: "zodiac veteran"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Dark Continent explorer",
+        value: "dark continent explorer"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Hunter jacket",
+        value: "hunter jacket"
+      },
+      {
+        label: "Phantom cloak",
+        value: "phantom cloak"
+      },
+      {
+        label: "Nen training tunic",
+        value: "nen training tunic"
+      },
+      {
+        label: "Association suit",
+        value: "association suit"
+      },
+      {
+        label: "Kakin expedition coat",
+        value: "kakin expedition coat"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Combat slacks",
+        value: "combat slacks"
+      },
+      {
+        label: "Agile shorts",
+        value: "agile shorts"
+      },
+      {
+        label: "Nen focused trousers",
+        value: "nen trousers"
+      },
+      {
+        label: "Explorer leggings",
+        value: "explorer leggings"
+      },
+      {
+        label: "Formal council pants",
+        value: "formal council pants"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Hunter Exam",
+        value: "hunter exam set"
+      },
+      {
+        label: "Phantom Troupe",
+        value: "phantom troupe set"
+      },
+      {
+        label: "Association Zodiac",
+        value: "association zodiac set"
+      },
+      {
+        label: "Greed Island gamer",
+        value: "greed island set"
+      },
+      {
+        label: "Dark Continent expedition",
+        value: "dark continent expedition"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Nen reactive cloth",
+        value: "nen reactive cloth"
+      },
+      {
+        label: "Beast hide",
+        value: "beast hide"
+      },
+      {
+        label: "Phantom silk",
+        value: "phantom silk"
+      },
+      {
+        label: "Hunter badge metal",
+        value: "hunter badge metal"
+      },
+      {
+        label: "Greed Island fiber",
+        value: "greed island fiber"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Hunter license",
+        value: "hunter license"
+      },
+      {
+        label: "Nen focus ring",
+        value: "nen focus ring"
+      },
+      {
+        label: "Chain weapon",
+        value: "chain weapon"
+      },
+      {
+        label: "Beast whistle",
+        value: "beast whistle"
+      },
+      {
+        label: "Greed Island card deck",
+        value: "greed island cards"
+      }
+    ]
+  },
+  {
+    title: "Nen Category",
+    key: "nen_category",
+    data: [
+      {
+        label: "Enhancer",
+        value: "enhancer"
+      },
+      {
+        label: "Transmuter",
+        value: "transmuter"
+      },
+      {
+        label: "Emitter",
+        value: "emitter"
+      },
+      {
+        label: "Conjurer",
+        value: "conjurer"
+      },
+      {
+        label: "Manipulator",
+        value: "manipulator"
+      },
+      {
+        label: "Specialist",
+        value: "specialist"
+      }
+    ]
+  }
 ];
 
 const examples = [

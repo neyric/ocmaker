@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Cabin boy/girl",
+        value: "cabin crew teen"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Young pirate",
+        value: "young pirate"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Seasoned crew",
+        value: "seasoned crew"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Veteran captain",
+        value: "veteran captain"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Legendary pirate",
+        value: "legendary pirate"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Pirate coat",
+        value: "pirate coat"
+      },
+      {
+        label: "Marine uniform",
+        value: "marine uniform top"
+      },
+      {
+        label: "Revolutionary jacket",
+        value: "revolutionary jacket"
+      },
+      {
+        label: "Fishman kimono",
+        value: "fishman kimono"
+      },
+      {
+        label: "Sky island tunic",
+        value: "sky island tunic"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Striped trousers",
+        value: "striped trousers"
+      },
+      {
+        label: "Sailor shorts",
+        value: "sailor shorts"
+      },
+      {
+        label: "High seas skirt",
+        value: "high seas skirt"
+      },
+      {
+        label: "Rough denim",
+        value: "rough denim"
+      },
+      {
+        label: "Marine slacks",
+        value: "marine slacks"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Straw Hat style",
+        value: "straw hat style"
+      },
+      {
+        label: "Marine officer",
+        value: "marine officer set"
+      },
+      {
+        label: "Revolutionary army",
+        value: "revolutionary army set"
+      },
+      {
+        label: "Wano samurai",
+        value: "wano samurai set"
+      },
+      {
+        label: "Skypiea explorer",
+        value: "skypiea explorer"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Weather-worn canvas",
+        value: "weather worn canvas"
+      },
+      {
+        label: "Marine polished cloth",
+        value: "marine polished cloth"
+      },
+      {
+        label: "Wano silk",
+        value: "wano silk"
+      },
+      {
+        label: "Fishman scales",
+        value: "fishman scales"
+      },
+      {
+        label: "Sky cloud fiber",
+        value: "sky cloud fiber"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Straw hat",
+        value: "straw hat"
+      },
+      {
+        label: "Marine justice cape",
+        value: "marine justice cape"
+      },
+      {
+        label: "Den den mushi",
+        value: "den den mushi"
+      },
+      {
+        label: "Log pose",
+        value: "log pose"
+      },
+      {
+        label: "Wanted poster",
+        value: "wanted poster"
+      }
+    ]
+  },
+  {
+    title: "Faction",
+    key: "op_faction",
+    data: [
+      {
+        label: "Pirate",
+        value: "pirate"
+      },
+      {
+        label: "Marine",
+        value: "marine"
+      },
+      {
+        label: "Revolutionary",
+        value: "revolutionary"
+      },
+      {
+        label: "Bounty hunter",
+        value: "bounty hunter"
+      },
+      {
+        label: "World Noble",
+        value: "world noble"
+      }
+    ]
+  }
 ];
 
 const examples = [

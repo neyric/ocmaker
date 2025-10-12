@@ -142,170 +142,338 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Teen protagonist",
+        value: "teen protagonist"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Young stand user",
+        value: "young stand user"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Mafia enforcer",
+        value: "mafia enforcer age"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Seasoned adventurer",
+        value: "seasoned adventurer"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Timeless immortal",
+        value: "timeless immortal"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Joestar school uniform",
+        value: "joestar school uniform"
+      },
+      {
+        label: "Passione suit",
+        value: "passione suit"
+      },
+      {
+        label: "SBR racer jacket",
+        value: "sbr racer jacket"
+      },
+      {
+        label: "Morioh street fashion",
+        value: "morioh street fashion"
+      },
+      {
+        label: "Stone Ocean prison top",
+        value: "stone ocean prison top"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Stylized slacks",
+        value: "stylized slacks"
+      },
+      {
+        label: "Chain embellished pants",
+        value: "chain embellished pants"
+      },
+      {
+        label: "Race-ready chaps",
+        value: "race ready chaps"
+      },
+      {
+        label: "Prison stripes",
+        value: "prison stripes"
+      },
+      {
+        label: "Fitted jeans",
+        value: "fitted jeans"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Stardust Crusader",
+        value: "stardust crusader set"
+      },
+      {
+        label: "Passione capo",
+        value: "passione capo set"
+      },
+      {
+        label: "Steel Ball Run racer",
+        value: "steel ball run racer"
+      },
+      {
+        label: "Morioh citizen",
+        value: "morioh citizen set"
+      },
+      {
+        label: "Stone Ocean inmate",
+        value: "stone ocean inmate"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Glam leather",
+        value: "glam leather"
+      },
+      {
+        label: "SBR denim",
+        value: "sbr denim"
+      },
+      {
+        label: "Stand reactive fabric",
+        value: "stand reactive fabric"
+      },
+      {
+        label: "Velvet",
+        value: "velvet jojo"
+      },
+      {
+        label: "Metallic trim",
+        value: "metallic trim"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Stand arrow charm",
+        value: "stand arrow charm"
+      },
+      {
+        label: "Hat with emblem",
+        value: "jojo hat emblem"
+      },
+      {
+        label: "Heart-shaped jewelry",
+        value: "heart shaped jewelry"
+      },
+      {
+        label: "Steel ball",
+        value: "steel ball"
+      },
+      {
+        label: "Stone ocean handcuffs",
+        value: "stone ocean handcuffs"
+      }
+    ]
+  },
+  {
+    title: "Era",
+    key: "jojo_era",
+    data: [
+      {
+        label: "Phantom Blood",
+        value: "phantom blood"
+      },
+      {
+        label: "Stardust Crusaders",
+        value: "stardust crusaders"
+      },
+      {
+        label: "Diamond is Unbreakable",
+        value: "diamond is unbreakable"
+      },
+      {
+        label: "Vento Aureo",
+        value: "vento aureo"
+      },
+      {
+        label: "Stone Ocean",
+        value: "stone ocean"
+      },
+      {
+        label: "Steel Ball Run",
+        value: "steel ball run"
+      }
+    ]
+  }
 ];
 
 const examples = [

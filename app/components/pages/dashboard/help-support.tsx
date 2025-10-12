@@ -2,56 +2,25 @@ import { BookOpen, HelpCircle, Mail, MessageCircle } from "lucide-react";
 import { Link } from "~/components/common";
 import { GridSection } from "~/components/ui/grid-section";
 
+interface Option {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  action: string;
+  href: string;
+}
+
 interface HelpSupportSectionProps {
   title: string;
   description: string;
-  supportEmail: string;
+  supportOptions: Option[];
 }
 
 export function HelpSupportSection({
   title,
   description,
-  supportEmail,
+  supportOptions,
 }: HelpSupportSectionProps) {
-  const supportOptions = [
-    {
-      icon: BookOpen,
-      title: "Documentation",
-      description: "Comprehensive guides and tutorials to help you get started",
-      action: "Browse Docs",
-      href: "/docs",
-      color: "text-blue-500",
-      bgColor: "bg-blue-500/10",
-    },
-    {
-      icon: MessageCircle,
-      title: "Community Forum",
-      description: "Connect with other users and share tips and tricks",
-      action: "Join Community",
-      href: "/community",
-      color: "text-green-500",
-      bgColor: "bg-green-500/10",
-    },
-    {
-      icon: Mail,
-      title: "Email Support",
-      description: "Get direct help from our support team",
-      action: "Contact Support",
-      href: `mailto:${supportEmail}`,
-      color: "text-orange-500",
-      bgColor: "bg-orange-500/10",
-    },
-    {
-      icon: HelpCircle,
-      title: "Help Center",
-      description: "Find answers to frequently asked questions",
-      action: "Get Help",
-      href: "#faqs",
-      color: "text-purple-500",
-      bgColor: "bg-purple-500/10",
-    },
-  ];
-
   return (
     <GridSection borderY={false} className="border-b">
       <div className="relative">
@@ -66,7 +35,6 @@ export function HelpSupportSection({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {supportOptions.map((option, index) => {
-            const Icon = option.icon;
             return (
               <div
                 key={index}
@@ -77,9 +45,7 @@ export function HelpSupportSection({
                 }}
               >
                 <div className="flex items-start space-x-4">
-                  <div className={`p-3 rounded-lg ${option.bgColor}`}>
-                    <Icon className={`h-6 w-6 ${option.color}`} />
-                  </div>
+                  {option.icon}
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-semibold text-base-content mb-2">
                       {option.title}

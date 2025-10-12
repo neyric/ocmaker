@@ -142,170 +142,308 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Junior idol",
+        value: "junior idol"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "High school star",
+        value: "high school star"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Adult performer",
+        value: "adult performer"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Industry veteran",
+        value: "industry veteran"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Legendary icon",
+        value: "legendary icon"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Idol stage blouse",
+        value: "idol stage blouse"
+      },
+      {
+        label: "Drama actor jacket",
+        value: "drama actor jacket"
+      },
+      {
+        label: "Streamer hoodie",
+        value: "streamer hoodie"
+      },
+      {
+        label: "Manager blazer",
+        value: "manager blazer"
+      },
+      {
+        label: "Designer couture",
+        value: "designer couture"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Stage skirt",
+        value: "stage skirt"
+      },
+      {
+        label: "Performance shorts",
+        value: "performance shorts"
+      },
+      {
+        label: "Stylish slacks",
+        value: "stylish slacks"
+      },
+      {
+        label: "Casual jeans",
+        value: "casual jeans idol"
+      },
+      {
+        label: "Elegant gown hem",
+        value: "elegant gown hem"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "B-Komachi stage",
+        value: "b komachi stage set"
+      },
+      {
+        label: "Actor red carpet",
+        value: "actor red carpet set"
+      },
+      {
+        label: "Variety show",
+        value: "variety show set"
+      },
+      {
+        label: "Underground idol",
+        value: "underground idol set"
+      },
+      {
+        label: "Agency manager",
+        value: "agency manager set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Sequined fabric",
+        value: "sequined fabric"
+      },
+      {
+        label: "Stage sparkle mesh",
+        value: "stage sparkle mesh"
+      },
+      {
+        label: "Studio denim",
+        value: "studio denim"
+      },
+      {
+        label: "Silk couture",
+        value: "silk couture"
+      },
+      {
+        label: "LED fiber",
+        value: "led fiber"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Stage microphone",
+        value: "stage microphone"
+      },
+      {
+        label: "In-ear monitor",
+        value: "in ear monitor"
+      },
+      {
+        label: "Actor script",
+        value: "actor script"
+      },
+      {
+        label: "Fan lightstick",
+        value: "fan lightstick"
+      },
+      {
+        label: "Social media phone",
+        value: "social media phone"
+      }
+    ]
+  }
 ];
 
 const examples = [

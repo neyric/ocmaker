@@ -142,170 +142,338 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Genin",
+        value: "genin"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Chunin",
+        value: "chunin"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Jonin",
+        value: "jonin"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Anbu",
+        value: "anbu"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Veteran kage",
+        value: "veteran kage"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Leaf flak jacket",
+        value: "leaf flak jacket"
+      },
+      {
+        label: "Sand desert cloak",
+        value: "sand desert cloak"
+      },
+      {
+        label: "Mist hunter robe",
+        value: "mist hunter robe"
+      },
+      {
+        label: "Cloud battle vest",
+        value: "cloud battle vest"
+      },
+      {
+        label: "Akatsuki cloak",
+        value: "akatsuki cloak"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Shinobi pants",
+        value: "shinobi pants"
+      },
+      {
+        label: "Naruto orange pants",
+        value: "orange pants"
+      },
+      {
+        label: "Ninja leggings",
+        value: "ninja leggings"
+      },
+      {
+        label: "Samurai hakama",
+        value: "samurai hakama"
+      },
+      {
+        label: "Anbu trousers",
+        value: "anbu trousers"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Leaf village ninja",
+        value: "leaf village ninja"
+      },
+      {
+        label: "Sand village",
+        value: "sand village set"
+      },
+      {
+        label: "Mist swordsman",
+        value: "mist swordsman set"
+      },
+      {
+        label: "Cloud shinobi",
+        value: "cloud shinobi set"
+      },
+      {
+        label: "Akatsuki member",
+        value: "akatsuki member"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Chakra mesh",
+        value: "chakra mesh"
+      },
+      {
+        label: "Flak armor",
+        value: "flak armor"
+      },
+      {
+        label: "Sand reinforced cloth",
+        value: "sand reinforced cloth"
+      },
+      {
+        label: "Mist waterproof weave",
+        value: "mist waterproof weave"
+      },
+      {
+        label: "Cloud lightning fabric",
+        value: "cloud lightning fabric"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Forehead protector",
+        value: "forehead protector"
+      },
+      {
+        label: "Kunai holster",
+        value: "kunai holster"
+      },
+      {
+        label: "Scroll pack",
+        value: "scroll pack"
+      },
+      {
+        label: "Anbu mask",
+        value: "anbu mask"
+      },
+      {
+        label: "Akatsuki ring",
+        value: "akatsuki ring"
+      }
+    ]
+  },
+  {
+    title: "Village",
+    key: "village",
+    data: [
+      {
+        label: "Leaf",
+        value: "leaf"
+      },
+      {
+        label: "Sand",
+        value: "sand"
+      },
+      {
+        label: "Mist",
+        value: "mist"
+      },
+      {
+        label: "Cloud",
+        value: "cloud"
+      },
+      {
+        label: "Stone",
+        value: "stone"
+      },
+      {
+        label: "Rogue",
+        value: "rogue"
+      }
+    ]
+  }
 ];
 
 const examples = [

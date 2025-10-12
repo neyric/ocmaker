@@ -142,170 +142,342 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young adventurer",
+        value: "young adventurer"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Knights of Favonius member",
+        value: "knights favonius member"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Experienced traveler",
+        value: "experienced traveler"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Fatui defector",
+        value: "fatui defector"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Ancient adeptus",
+        value: "ancient adeptus"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Mondstadt cloak",
+        value: "mondstadt cloak"
+      },
+      {
+        label: "Liyue qipao",
+        value: "liyue qipao"
+      },
+      {
+        label: "Inazuma kimono",
+        value: "inazuma kimono"
+      },
+      {
+        label: "Sumeru scholar robe",
+        value: "sumeru scholar robe"
+      },
+      {
+        label: "Fontaine court jacket",
+        value: "fontaine court jacket"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Elemental tights",
+        value: "elemental tights"
+      },
+      {
+        label: "Flowing desert wraps",
+        value: "desert wraps"
+      },
+      {
+        label: "Traveler shorts",
+        value: "traveler shorts"
+      },
+      {
+        label: "Formal court skirt",
+        value: "formal court skirt"
+      },
+      {
+        label: "Adeptus trousers",
+        value: "adeptus trousers"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Favonius knight",
+        value: "favonius knight set"
+      },
+      {
+        label: "Liyue harbor adept",
+        value: "liyue harbor adept"
+      },
+      {
+        label: "Inazuma shrine guardian",
+        value: "inazuma shrine guardian"
+      },
+      {
+        label: "Sumeru akademiya",
+        value: "sumeru akademiya set"
+      },
+      {
+        label: "Fatui harbinger",
+        value: "fatui harbinger set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Vision-infused fabric",
+        value: "vision infused fabric"
+      },
+      {
+        label: "Glaze lily silk",
+        value: "glaze lily silk"
+      },
+      {
+        label: "Electrocharged weave",
+        value: "electrocharged weave"
+      },
+      {
+        label: "Dendro vines",
+        value: "dendro vines"
+      },
+      {
+        label: "Hydro prisms",
+        value: "hydro prisms"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Vision holder",
+        value: "vision holder"
+      },
+      {
+        label: "Treasure compass",
+        value: "treasure compass"
+      },
+      {
+        label: "Glider harness",
+        value: "glider harness"
+      },
+      {
+        label: "Elemental catalyst",
+        value: "elemental catalyst"
+      },
+      {
+        label: "Adeptus talisman",
+        value: "adeptus talisman"
+      }
+    ]
+  },
+  {
+    title: "Vision",
+    key: "vision",
+    data: [
+      {
+        label: "Pyro",
+        value: "pyro"
+      },
+      {
+        label: "Hydro",
+        value: "hydro"
+      },
+      {
+        label: "Electro",
+        value: "electro"
+      },
+      {
+        label: "Anemo",
+        value: "anemo"
+      },
+      {
+        label: "Geo",
+        value: "geo"
+      },
+      {
+        label: "Cryo",
+        value: "cryo"
+      },
+      {
+        label: "Dendro",
+        value: "dendro"
+      }
+    ]
+  }
 ];
 
 const examples = [

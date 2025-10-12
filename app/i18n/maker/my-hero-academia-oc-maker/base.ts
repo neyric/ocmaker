@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "U.A. first-year",
+        value: "ua first year"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "U.A. upperclassman",
+        value: "ua upperclassman"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Pro hero",
+        value: "pro hero"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Underground vigilante",
+        value: "underground vigilante"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Veteran villain",
+        value: "veteran villain"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "U.A. training jacket",
+        value: "ua training jacket"
+      },
+      {
+        label: "Hero costume armor",
+        value: "hero costume armor"
+      },
+      {
+        label: "Support course coat",
+        value: "support course coat"
+      },
+      {
+        label: "Villain trench",
+        value: "villain trench"
+      },
+      {
+        label: "Agency uniform",
+        value: "agency uniform"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Hero costume tights",
+        value: "hero costume tights"
+      },
+      {
+        label: "Training pants",
+        value: "training pants"
+      },
+      {
+        label: "Support utility shorts",
+        value: "support utility shorts"
+      },
+      {
+        label: "Villain leather pants",
+        value: "villain leather pants"
+      },
+      {
+        label: "Agency formal slacks",
+        value: "agency formal slacks"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "U.A. hero course",
+        value: "ua hero course set"
+      },
+      {
+        label: "Support engineer",
+        value: "support engineer set"
+      },
+      {
+        label: "Pro hero",
+        value: "pro hero set"
+      },
+      {
+        label: "League of Villains",
+        value: "league of villains set"
+      },
+      {
+        label: "Underground vigilante",
+        value: "underground vigilante set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Quirk-resistant fabric",
+        value: "quirk resistant fabric"
+      },
+      {
+        label: "Carbon fiber armor",
+        value: "carbon fiber armor"
+      },
+      {
+        label: "Support tech mesh",
+        value: "support tech mesh"
+      },
+      {
+        label: "Fireproof suit",
+        value: "fireproof suit"
+      },
+      {
+        label: "Stealth fabric",
+        value: "stealth fabric"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Utility gauntlets",
+        value: "utility gauntlets"
+      },
+      {
+        label: "Support gear toolkit",
+        value: "support gear toolkit"
+      },
+      {
+        label: "Hero license pass",
+        value: "hero license"
+      },
+      {
+        label: "Villain mask",
+        value: "villain mask"
+      },
+      {
+        label: "Agency communicator",
+        value: "agency communicator"
+      }
+    ]
+  },
+  {
+    title: "Affiliation",
+    key: "mha_affiliation",
+    data: [
+      {
+        label: "U.A. Hero Course",
+        value: "ua hero course"
+      },
+      {
+        label: "Support Course",
+        value: "support course"
+      },
+      {
+        label: "Pro Hero",
+        value: "pro hero"
+      },
+      {
+        label: "Vigilante",
+        value: "vigilante"
+      },
+      {
+        label: "League of Villains",
+        value: "league of villains"
+      }
+    ]
+  }
 ];
 
 const examples = [

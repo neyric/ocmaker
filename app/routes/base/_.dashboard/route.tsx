@@ -1,6 +1,8 @@
+import { BookOpen, HelpCircle } from "lucide-react";
 import { Fragment, useRef } from "react";
 import { useNavigate } from "react-router";
 import { getSessionHandler } from "~/.server/libs/session";
+import { getI18nConetxt } from "~/.server/middleware/i18n-middleware";
 import { getUserInfoAndCredits } from "~/.server/services/basic";
 import {
   FAQsSection,
@@ -8,7 +10,9 @@ import {
   HeroSection,
   UserInfoSection,
 } from "~/components/pages/dashboard";
-import { createCanonical } from "~/utils/meta";
+import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
+import { createCanonical, createNormalAlternatives } from "~/utils/meta";
+import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
 import { dashboardFaqs } from "./content";
 import {
@@ -16,21 +20,39 @@ import {
   type EditProfileDialogRef,
 } from "./edit-profile-dialog";
 
-export function meta({ matches }: Route.MetaArgs) {
+export function meta({ matches, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical("/dashboard", matches[0].data.DOMAIN);
+  const alternatives = createNormalAlternatives(
+    "/dashboard",
+    matches[0].loaderData.DOMAIN
+  );
+  const og = createSocialTags(
+    {
+      title: loaderData.meta.title,
+      description: loaderData.meta.description,
+      url: "/",
+      siteName: matches[0].loaderData.SITE_NAME,
+    },
+    matches[0].loaderData.DOMAIN
+  );
 
   return [
-    { title: "Dashboard - Manage Your Account" },
+    { title: loaderData.meta.title },
     {
       name: "description",
-      content:
-        "Manage your account, subscription, and explore help resources in your personal dashboard.",
+      content: loaderData.meta.description,
     },
     canonical,
+    ...alternatives,
+    ...og,
   ];
 }
 
-export async function loader({ request }: Route.LoaderArgs) {
+export async function loader({ request, context }: Route.LoaderArgs) {
+  const i18n = getI18nConetxt(context);
+  const page = await getPageLocale(i18n.lang, "dashboard");
+  const t = getTranslate(page);
+
   const [session] = await getSessionHandler(request);
   const user = session.get("user");
 
@@ -40,7 +62,15 @@ export async function loader({ request }: Route.LoaderArgs) {
   if (!result || !result.user_info) {
     throw new Response("Unauthorized", { status: 401 });
   }
+
+  const meta = {
+    title: t("meta.title"),
+    description: t("meta.description"),
+  };
+
   return {
+    meta,
+    page,
     userInfo: result.user_info,
     credits: result.credits,
     subscription: result.subscription,
@@ -48,7 +78,10 @@ export async function loader({ request }: Route.LoaderArgs) {
 }
 
 export default function Dashboard({ loaderData }: Route.ComponentProps) {
-  const { userInfo, credits, subscription } = loaderData;
+  const { userInfo, credits, subscription, page } = loaderData;
+  console.log("page", page);
+  const ct = useTranslate(page);
+
   const navigate = useNavigate();
 
   const editRef = useRef<EditProfileDialogRef>(null);
@@ -61,11 +94,38 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
     navigate("./", { replace: true });
   };
 
+  const supportOptions = [
+    {
+      icon: (
+        <div className="p-3 rounded-lg bg-orange-500/10">
+          <BookOpen className="size-6 text-orange-500" />
+        </div>
+      ),
+      title: ct("contents.help.contents.emailSupport.title"),
+      description: ct("contents.help.contents.emailSupport.description"),
+      action: ct("contents.help.contents.emailSupport.button"),
+      href: "mailto:support@ocmaker.app",
+    },
+    {
+      icon: (
+        <div className="p-3 rounded-lg bg-purple-500/10">
+          <HelpCircle className="size-6 text-purple-500" />
+        </div>
+      ),
+      title: ct("contents.help.contents.helpCenter.title"),
+      description: ct("contents.help.contents.helpCenter.description"),
+      action: ct("contents.help.contents.helpCenter.button"),
+      href: "#faqs",
+    },
+  ];
+
+  const faqs = page.contents.faqs.list;
+
   return (
     <Fragment>
       <HeroSection
-        title="Dashboard"
-        description="Manage your account, track usage, and explore all the features GhostFace AI has to offer."
+        title={ct("contents.hero.title")}
+        description={ct("contents.hero.description")}
       />
       <UserInfoSection
         user={userInfo}
@@ -75,16 +135,15 @@ export default function Dashboard({ loaderData }: Route.ComponentProps) {
       />
 
       <HelpSupportSection
-        title="Help & Support"
-        description="Get the assistance you need with our comprehensive resources and support channels."
-        supportEmail="support@ghostfaceai.app"
+        title={ct("contents.help.title")}
+        description={ct("contents.help.description")}
+        supportOptions={supportOptions}
       />
 
       <FAQsSection
-        title="Frequently Asked Questions"
-        description="Find answers to common questions about using GhostFace AI. Need more help? Contact us at"
-        supportEmail="support@ghostfaceai.app"
-        faqs={dashboardFaqs}
+        title={ct("contents.faqs.title")}
+        description={ct("contents.faqs.description")}
+        faqs={faqs}
       />
       <EditProfileDialog ref={editRef} onSuccess={handleReloadProfile} />
     </Fragment>

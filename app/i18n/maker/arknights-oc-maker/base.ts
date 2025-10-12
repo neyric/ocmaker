@@ -142,170 +142,365 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Rookie operator",
+        value: "rookie operator"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Field medic (20s)",
+        value: "field medic adult"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Rhodes veteran",
+        value: "rhodes veteran"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Laterano executor",
+        value: "laterano executor"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Old guard pioneer",
+        value: "old guard pioneer"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Rhodes Island jacket",
+        value: "rhodes island jacket"
+      },
+      {
+        label: "Reunion defector coat",
+        value: "reunion defector coat"
+      },
+      {
+        label: "Kazimierz armor cape",
+        value: "kazimierz armor cape"
+      },
+      {
+        label: "Laterano cleric vestments",
+        value: "laterano cleric vestments"
+      },
+      {
+        label: "Ursus survival parka",
+        value: "ursus survival parka"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Tactical operator pants",
+        value: "tactical operator pants"
+      },
+      {
+        label: "Armored leggings",
+        value: "armored leggings"
+      },
+      {
+        label: "City-running shorts",
+        value: "city runner shorts"
+      },
+      {
+        label: "Ceremonial long skirt",
+        value: "ceremonial long skirt"
+      },
+      {
+        label: "Cold weather trousers",
+        value: "cold weather trousers"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Rhodes Island field kit",
+        value: "rhodes island field kit"
+      },
+      {
+        label: "Reunion repentant",
+        value: "reunion repentant set"
+      },
+      {
+        label: "Kazimierz tourney armor",
+        value: "kazimierz tourney armor"
+      },
+      {
+        label: "Sankta executor regalia",
+        value: "sankta executor regalia"
+      },
+      {
+        label: "Ursus evac guardian",
+        value: "ursus evac guardian set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Originium composite",
+        value: "originium composite"
+      },
+      {
+        label: "Radiation-shield mesh",
+        value: "radiation shield mesh"
+      },
+      {
+        label: "Military synth-leather",
+        value: "military synth leather"
+      },
+      {
+        label: "Nomadic furs",
+        value: "nomadic furs"
+      },
+      {
+        label: "Laterano silksteel",
+        value: "laterano silksteel"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Operator ID badge",
+        value: "operator id badge"
+      },
+      {
+        label: "Strategic headset",
+        value: "strategic headset"
+      },
+      {
+        label: "Kazimierz lance",
+        value: "kazimierz lance"
+      },
+      {
+        label: "Executor tome",
+        value: "executor tome"
+      },
+      {
+        label: "Ursus survival pack",
+        value: "ursus survival pack"
+      }
+    ]
+  },
+  {
+    title: "Originum Status",
+    key: "originium_status",
+    unique: true,
+    data: [
+      {
+        label: "Non-infected",
+        value: "non infected"
+      },
+      {
+        label: "Stage I infected",
+        value: "stage i infected"
+      },
+      {
+        label: "Stabilized infected",
+        value: "stabilized infected"
+      },
+      {
+        label: "Outbreak survivor",
+        value: "outbreak survivor"
+      },
+      {
+        label: "Dormant carrier",
+        value: "dormant carrier"
+      }
+    ]
+  },
+  {
+    title: "Operator Class",
+    key: "operator_class",
+    data: [
+      {
+        label: "Vanguard",
+        value: "vanguard"
+      },
+      {
+        label: "Guard",
+        value: "guard"
+      },
+      {
+        label: "Sniper",
+        value: "sniper"
+      },
+      {
+        label: "Caster",
+        value: "caster"
+      },
+      {
+        label: "Defender",
+        value: "defender"
+      },
+      {
+        label: "Medic",
+        value: "medic"
+      }
+    ]
+  }
 ];
 
 const examples = [

@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young trainer",
+        value: "young trainer"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Gym challenger",
+        value: "gym challenger"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Seasoned trainer",
+        value: "seasoned trainer"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Elite four",
+        value: "elite four"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Professor",
+        value: "pokemon professor"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Trainer jacket",
+        value: "trainer jacket"
+      },
+      {
+        label: "Gym uniform",
+        value: "gym uniform"
+      },
+      {
+        label: "Contest dress",
+        value: "contest dress"
+      },
+      {
+        label: "Ranger vest",
+        value: "ranger vest"
+      },
+      {
+        label: "Research lab coat",
+        value: "research lab coat"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Trainer shorts",
+        value: "trainer shorts"
+      },
+      {
+        label: "Adventure trousers",
+        value: "adventure trousers"
+      },
+      {
+        label: "Contest skirt",
+        value: "contest skirt"
+      },
+      {
+        label: "Ranger pants",
+        value: "ranger pants"
+      },
+      {
+        label: "Field leggings",
+        value: "field leggings"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Gym challenger outfit",
+        value: "gym challenger outfit"
+      },
+      {
+        label: "Champion attire",
+        value: "champion attire"
+      },
+      {
+        label: "Contest idol",
+        value: "contest idol set"
+      },
+      {
+        label: "Ranger gear",
+        value: "ranger gear"
+      },
+      {
+        label: "Professor explorer",
+        value: "professor explorer set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Weatherproof fabric",
+        value: "weatherproof fabric"
+      },
+      {
+        label: "Contest sparkle",
+        value: "contest sparkle"
+      },
+      {
+        label: "Ranger leather",
+        value: "ranger leather"
+      },
+      {
+        label: "Tech mesh",
+        value: "tech mesh"
+      },
+      {
+        label: "Pokéball steel",
+        value: "pokeball steel"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Pokéball belt",
+        value: "pokeball belt"
+      },
+      {
+        label: "Rotom phone",
+        value: "rotom phone"
+      },
+      {
+        label: "Z-crystal pendant",
+        value: "z crystal pendant"
+      },
+      {
+        label: "Badge case",
+        value: "badge case"
+      },
+      {
+        label: "Pokedex",
+        value: "pokedex"
+      }
+    ]
+  },
+  {
+    title: "Trainer Type",
+    key: "trainer_type",
+    data: [
+      {
+        label: "Ace trainer",
+        value: "ace trainer"
+      },
+      {
+        label: "Coordinator",
+        value: "coordinator"
+      },
+      {
+        label: "Ranger",
+        value: "ranger"
+      },
+      {
+        label: "Researcher",
+        value: "researcher"
+      },
+      {
+        label: "Gym leader",
+        value: "gym leader"
+      }
+    ]
+  }
 ];
 
 const examples = [

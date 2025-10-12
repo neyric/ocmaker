@@ -142,170 +142,308 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young agent",
+        value: "young agent"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Field operative",
+        value: "field operative"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Agency veteran",
+        value: "agency veteran"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Underworld broker",
+        value: "underworld broker"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Intelligence director",
+        value: "intelligence director"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "WISE suit",
+        value: "wise suit"
+      },
+      {
+        label: "SSS trench",
+        value: "sss trench"
+      },
+      {
+        label: "Garden disguise",
+        value: "garden disguise"
+      },
+      {
+        label: "Eden faculty blazer",
+        value: "eden faculty blazer"
+      },
+      {
+        label: "Underworld casual",
+        value: "underworld casual"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Tailored slacks",
+        value: "tailored slacks spy"
+      },
+      {
+        label: "Pencil skirt",
+        value: "pencil skirt spy"
+      },
+      {
+        label: "Undercover jeans",
+        value: "undercover jeans spy"
+      },
+      {
+        label: "Combat trousers",
+        value: "combat trousers spy"
+      },
+      {
+        label: "Formal suit pants",
+        value: "formal suit pants spy"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "WISE operative",
+        value: "wise operative set"
+      },
+      {
+        label: "Garden cleaner",
+        value: "garden cleaner set"
+      },
+      {
+        label: "SSS agent",
+        value: "sss agent set"
+      },
+      {
+        label: "Undercover Eden",
+        value: "undercover eden set"
+      },
+      {
+        label: "Informant broker",
+        value: "informant broker set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Bulletproof lining",
+        value: "bulletproof lining"
+      },
+      {
+        label: "Spy mesh",
+        value: "spy mesh"
+      },
+      {
+        label: "Silk disguise",
+        value: "silk disguise"
+      },
+      {
+        label: "Encrypted fabric",
+        value: "encrypted fabric"
+      },
+      {
+        label: "Shadow velvet",
+        value: "shadow velvet"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Hidden pistol",
+        value: "hidden pistol"
+      },
+      {
+        label: "Codebook",
+        value: "codebook"
+      },
+      {
+        label: "Spy glasses",
+        value: "spy glasses"
+      },
+      {
+        label: "Microphone brooch",
+        value: "microphone brooch"
+      },
+      {
+        label: "Cipher briefcase",
+        value: "cipher briefcase"
+      }
+    ]
+  }
 ];
 
 const examples = [

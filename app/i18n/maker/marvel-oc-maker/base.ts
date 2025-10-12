@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young hero",
+        value: "young hero"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Seasoned avenger",
+        value: "seasoned avenger"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Street vigilante",
+        value: "street vigilante"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Cosmic adventurer",
+        value: "cosmic adventurer"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Timeless immortal",
+        value: "timeless marvel immortal"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Super suit",
+        value: "super suit"
+      },
+      {
+        label: "Shield tactical jacket",
+        value: "shield tactical jacket"
+      },
+      {
+        label: "Friendly neighborhood hoodie",
+        value: "friendly neighborhood hoodie"
+      },
+      {
+        label: "Cosmic armor",
+        value: "cosmic armor"
+      },
+      {
+        label: "Mystic cloak",
+        value: "mystic cloak"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Hero leggings",
+        value: "hero leggings"
+      },
+      {
+        label: "Stealth pants",
+        value: "stealth pants"
+      },
+      {
+        label: "Armor greaves",
+        value: "armor greaves"
+      },
+      {
+        label: "Casual jeans",
+        value: "marvel casual jeans"
+      },
+      {
+        label: "Cosmic plating",
+        value: "cosmic plating"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Avengers uniform",
+        value: "avengers uniform"
+      },
+      {
+        label: "X-Men suit",
+        value: "xmen suit"
+      },
+      {
+        label: "Guardians space gear",
+        value: "guardians space gear"
+      },
+      {
+        label: "Street-level vigilante",
+        value: "street level vigilante"
+      },
+      {
+        label: "Mystic arts robes",
+        value: "mystic arts robes"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Vibranium weave",
+        value: "vibranium weave"
+      },
+      {
+        label: "Stark tech mesh",
+        value: "stark tech mesh"
+      },
+      {
+        label: "Symbiote bio-suit",
+        value: "symbiote bio suit"
+      },
+      {
+        label: "Nano armor",
+        value: "nano armor"
+      },
+      {
+        label: "Mystic runes",
+        value: "mystic runes"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Web shooters",
+        value: "web shooters"
+      },
+      {
+        label: "Shield emblem",
+        value: "shield emblem"
+      },
+      {
+        label: "Infinity shard",
+        value: "infinity shard"
+      },
+      {
+        label: "Arc reactor",
+        value: "arc reactor"
+      },
+      {
+        label: "Cape of levitation",
+        value: "cape of levitation"
+      }
+    ]
+  },
+  {
+    title: "Alignment",
+    key: "marvel_alignment",
+    data: [
+      {
+        label: "Hero",
+        value: "hero"
+      },
+      {
+        label: "Anti-hero",
+        value: "anti hero"
+      },
+      {
+        label: "Villain",
+        value: "villain"
+      },
+      {
+        label: "S.H.I.E.L.D.",
+        value: "shield"
+      },
+      {
+        label: "Mutant",
+        value: "mutant"
+      }
+    ]
+  }
 ];
 
 const examples = [

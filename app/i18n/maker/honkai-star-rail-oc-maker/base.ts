@@ -142,170 +142,342 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Astral Express youth",
+        value: "astral express youth"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Xianzhou warrior",
+        value: "xianzhou warrior"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Belobog mediator",
+        value: "belobog mediator"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Penacony performer",
+        value: "penacony performer"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Aeon touched",
+        value: "aeon touched"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Astral Express coat",
+        value: "astral express coat"
+      },
+      {
+        label: "Xianzhou armor",
+        value: "xianzhou armor"
+      },
+      {
+        label: "Belobog sync jacket",
+        value: "belobog sync jacket"
+      },
+      {
+        label: "IPC business suit",
+        value: "ipc business suit"
+      },
+      {
+        label: "Penacony dream blazer",
+        value: "penacony dream blazer"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Trailblazer trousers",
+        value: "trailblazer trousers"
+      },
+      {
+        label: "Xianzhou skirts",
+        value: "xianzhou skirts"
+      },
+      {
+        label: "Belobog thermal pants",
+        value: "belobog thermal pants"
+      },
+      {
+        label: "IPC pleats",
+        value: "ipc pleats"
+      },
+      {
+        label: "Dreamscape leggings",
+        value: "dreamscape leggings"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Astral Express uniform",
+        value: "astral express uniform"
+      },
+      {
+        label: "Xianzhou Alliance",
+        value: "xianzhou alliance set"
+      },
+      {
+        label: "Belobog underworld",
+        value: "belobog underworld set"
+      },
+      {
+        label: "Stellaron Hunter",
+        value: "stellaron hunter set"
+      },
+      {
+        label: "Penacony dreamscape",
+        value: "penacony dreamscape set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Aeon-thread fabric",
+        value: "aeon thread fabric"
+      },
+      {
+        label: "Xianzhou silksteel",
+        value: "xianzhou silksteel"
+      },
+      {
+        label: "Belobog thermal weave",
+        value: "belobog thermal weave"
+      },
+      {
+        label: "IPC suit cloth",
+        value: "ipc suit cloth"
+      },
+      {
+        label: "Dreamlight satin",
+        value: "dreamlight satin"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Trailblazer badge",
+        value: "trailblazer badge"
+      },
+      {
+        label: "Light cone",
+        value: "light cone"
+      },
+      {
+        label: "Communicator earpiece",
+        value: "communicator earpiece"
+      },
+      {
+        label: "Aeon charm",
+        value: "aeon charm"
+      },
+      {
+        label: "Dreamwalker mask",
+        value: "dreamwalker mask"
+      }
+    ]
+  },
+  {
+    title: "Path",
+    key: "path",
+    data: [
+      {
+        label: "Destruction",
+        value: "destruction"
+      },
+      {
+        label: "Hunt",
+        value: "hunt"
+      },
+      {
+        label: "Erudition",
+        value: "erudition"
+      },
+      {
+        label: "Harmony",
+        value: "harmony"
+      },
+      {
+        label: "Preservation",
+        value: "preservation"
+      },
+      {
+        label: "Abundance",
+        value: "abundance"
+      },
+      {
+        label: "Nihility",
+        value: "nihility"
+      }
+    ]
+  }
 ];
 
 const examples = [

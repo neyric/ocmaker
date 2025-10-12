@@ -142,170 +142,308 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young adventurer",
+        value: "young adventurer"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Royal teen",
+        value: "royal teen"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Brave adult",
+        value: "brave adult"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Wise mentor",
+        value: "wise mentor"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Timeless magical being",
+        value: "timeless magical being"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Royal bodice",
+        value: "royal bodice"
+      },
+      {
+        label: "Heroic tunic",
+        value: "heroic tunic"
+      },
+      {
+        label: "Explorer blouse",
+        value: "explorer blouse"
+      },
+      {
+        label: "Villain cape",
+        value: "villain cape"
+      },
+      {
+        label: "Animal sidekick vest",
+        value: "animal sidekick vest"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Ballgown skirts",
+        value: "ballgown skirts"
+      },
+      {
+        label: "Adventure trousers",
+        value: "adventure trousers"
+      },
+      {
+        label: "Flowing dress",
+        value: "flowing dress"
+      },
+      {
+        label: "Sailor shorts",
+        value: "sailor shorts"
+      },
+      {
+        label: "Magical tail shimmer",
+        value: "magical tail shimmer"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Enchanted royal",
+        value: "enchanted royal set"
+      },
+      {
+        label: "Hero quest outfit",
+        value: "hero quest outfit"
+      },
+      {
+        label: "Villainous ensemble",
+        value: "villainous ensemble"
+      },
+      {
+        label: "Forest explorer",
+        value: "forest explorer set"
+      },
+      {
+        label: "Fairy tale festival",
+        value: "fairy tale festival"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Sparkling satin",
+        value: "sparkling satin"
+      },
+      {
+        label: "Royal brocade",
+        value: "royal brocade"
+      },
+      {
+        label: "Adventure leather",
+        value: "adventure leather"
+      },
+      {
+        label: "Pixie dust shimmer",
+        value: "pixie dust shimmer"
+      },
+      {
+        label: "Snowflake lace",
+        value: "snowflake lace"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Magic tiara",
+        value: "magic tiara"
+      },
+      {
+        label: "Quest satchel",
+        value: "quest satchel"
+      },
+      {
+        label: "Sidekick companion",
+        value: "sidekick companion"
+      },
+      {
+        label: "Wishing lantern",
+        value: "wishing lantern"
+      },
+      {
+        label: "Villain spellbook",
+        value: "villain spellbook"
+      }
+    ]
+  }
 ];
 
 const examples = [

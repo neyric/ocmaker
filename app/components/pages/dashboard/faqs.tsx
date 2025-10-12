@@ -9,30 +9,21 @@ interface FAQ {
 interface FAQsSectionProps {
   title: string;
   description: string;
-  supportEmail: string;
   faqs: FAQ[];
 }
 
-export function FAQsSection({
-  title,
-  description,
-  supportEmail,
-  faqs,
-}: FAQsSectionProps) {
+export function FAQsSection({ title, description, faqs }: FAQsSectionProps) {
   return (
     <GridSection borderX={false} borderY={false}>
       <div className="pointer-events-none absolute inset-0 sm:border-x border-grid-border [mask-image:linear-gradient(black,transparent)]"></div>
       <div className="relative">
-        <div className="absolute -top-12" id="faqs" />
+        <div className="absolute -top-24" id="faqs" />
         <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center text-center mb-8">
           <h2 className="text-center font-bold text-2xl text-base-content sm:text-3xl sm:leading-[1.15] animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in text-pretty [animation-delay:100ms]">
             {title}
           </h2>
           <p className="text-pretty text-sm text-base-content/70 sm:text-base max-w-screen-md animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
-            {description}{" "}
-            <Link className="underline" to={`mailto:${supportEmail}`}>
-              {supportEmail}
-            </Link>
+            {description}
           </p>
         </div>
 

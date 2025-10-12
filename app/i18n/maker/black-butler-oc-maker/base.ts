@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young footman",
+        value: "young footman"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Society debutante",
+        value: "society debutante"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Seasoned butler",
+        value: "seasoned butler"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Grim Reaper veteran",
+        value: "grim reaper veteran"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Immortal demon",
+        value: "immortal demon"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Victorian tailcoat",
+        value: "victorian tailcoat"
+      },
+      {
+        label: "Phantomhive livery",
+        value: "phantomhive livery"
+      },
+      {
+        label: "Circus performer blouse",
+        value: "circus performer blouse"
+      },
+      {
+        label: "High-society gown",
+        value: "high society gown"
+      },
+      {
+        label: "Undertaker shroud",
+        value: "undertaker shroud"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Pressed trousers",
+        value: "pressed trousers"
+      },
+      {
+        label: "Layered bustle skirt",
+        value: "layered bustle skirt"
+      },
+      {
+        label: "Circus striped pants",
+        value: "circus striped pants"
+      },
+      {
+        label: "Servant apron layers",
+        value: "servant apron layers"
+      },
+      {
+        label: "Shadowed cloak hem",
+        value: "shadowed cloak hem"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Queen's Watchdog attire",
+        value: "queens watchdog attire"
+      },
+      {
+        label: "Noah's Ark Circus",
+        value: "noahs ark circus outfit"
+      },
+      {
+        label: "Reaper dispatch uniform",
+        value: "reaper dispatch uniform"
+      },
+      {
+        label: "London high-society ball",
+        value: "london high society ball outfit"
+      },
+      {
+        label: "Demon butler regalia",
+        value: "demon butler regalia"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Velvet",
+        value: "velvet"
+      },
+      {
+        label: "Fine wool",
+        value: "fine wool"
+      },
+      {
+        label: "Lace and satin",
+        value: "lace satin"
+      },
+      {
+        label: "Polished leather",
+        value: "polished leather"
+      },
+      {
+        label: "Shadow silk",
+        value: "shadow silk"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Silver pocket watch",
+        value: "silver pocket watch"
+      },
+      {
+        label: "Demon contract ring",
+        value: "demon contract ring"
+      },
+      {
+        label: "Reaper glasses",
+        value: "reaper glasses"
+      },
+      {
+        label: "Royal seal cane",
+        value: "royal seal cane"
+      },
+      {
+        label: "Feathered top hat",
+        value: "feathered top hat"
+      }
+    ]
+  },
+  {
+    title: "Alignment",
+    key: "alignment",
+    data: [
+      {
+        label: "Human",
+        value: "human"
+      },
+      {
+        label: "Demon",
+        value: "demon"
+      },
+      {
+        label: "Shinigami",
+        value: "shinigami"
+      },
+      {
+        label: "Werewolf",
+        value: "werewolf"
+      },
+      {
+        label: "Contract-bound",
+        value: "contract bound"
+      }
+    ]
+  }
 ];
 
 const examples = [

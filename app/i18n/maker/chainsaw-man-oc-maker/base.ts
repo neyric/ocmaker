@@ -142,170 +142,334 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Public Safety recruit",
+        value: "public safety recruit"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Devil hunter rookie",
+        value: "devil hunter rookie"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Division veteran",
+        value: "division veteran"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "International assassin",
+        value: "international assassin"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Demon hybrid timeless",
+        value: "demon hybrid timeless"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Lean hunter",
+        value: "lean hunter build"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Scarred enforcer",
+        value: "scarred enforcer build"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Hybrid physique",
+        value: "hybrid physique"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Athletic rogue",
+        value: "athletic rogue build"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Augmented body",
+        value: "augmented body"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Public Safety shirt",
+        value: "public safety shirt"
+      },
+      {
+        label: "Leather devil hunter jacket",
+        value: "leather devil hunter jacket"
+      },
+      {
+        label: "Casual street tee",
+        value: "casual street tee"
+      },
+      {
+        label: "International assassin suit",
+        value: "international assassin suit"
+      },
+      {
+        label: "Chainsaw hybrid harness",
+        value: "chainsaw hybrid harness"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Bloodstained slacks",
+        value: "bloodstained slacks"
+      },
+      {
+        label: "Combat cargo pants",
+        value: "combat cargo pants"
+      },
+      {
+        label: "Ripped jeans",
+        value: "ripped jeans"
+      },
+      {
+        label: "Hybrid armor greaves",
+        value: "hybrid armor greaves"
+      },
+      {
+        label: "Formal assassin trousers",
+        value: "formal assassin trousers"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Public Safety uniform",
+        value: "public safety uniform"
+      },
+      {
+        label: "Private devil hunter",
+        value: "private devil hunter set"
+      },
+      {
+        label: "Special Division 4",
+        value: "special division 4 set"
+      },
+      {
+        label: "International assassin",
+        value: "international assassin set"
+      },
+      {
+        label: "Chainsaw hybrid rampage",
+        value: "chainsaw hybrid rampage"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Bloodproof fabric",
+        value: "bloodproof fabric"
+      },
+      {
+        label: "Devil skin leather",
+        value: "devil skin leather"
+      },
+      {
+        label: "Kevlar weave",
+        value: "kevlar weave"
+      },
+      {
+        label: "Chainsaw plating",
+        value: "chainsaw plating"
+      },
+      {
+        label: "Sunrise suit cloth",
+        value: "sunrise suit cloth"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Chainsaw pull cord",
+        value: "chainsaw pull cord"
+      },
+      {
+        label: "Devil contract charm",
+        value: "devil contract charm"
+      },
+      {
+        label: "Blood bag satchel",
+        value: "blood bag satchel"
+      },
+      {
+        label: "Hybrid jaw muzzle",
+        value: "hybrid jaw muzzle"
+      },
+      {
+        label: "Public Safety badge",
+        value: "public safety badge"
+      }
+    ]
+  },
+  {
+    title: "Alignment",
+    key: "csm_alignment",
+    data: [
+      {
+        label: "Public Safety",
+        value: "public safety"
+      },
+      {
+        label: "Private hunter",
+        value: "private hunter"
+      },
+      {
+        label: "Devil",
+        value: "devil"
+      },
+      {
+        label: "Hybrid",
+        value: "hybrid"
+      },
+      {
+        label: "International assassin",
+        value: "international assassin"
+      }
+    ]
+  }
 ];
 
 const examples = [

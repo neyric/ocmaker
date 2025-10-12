@@ -142,170 +142,308 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "Young apprentice",
+        value: "young apprentice"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Wandering mage",
+        value: "wandering mage"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Longevous elf",
+        value: "longevous elf"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Seasoned warrior",
+        value: "seasoned warrior"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Ancient sage",
+        value: "ancient sage"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Elven cloak",
+        value: "elven cloak"
+      },
+      {
+        label: "Mage tunic",
+        value: "mage tunic"
+      },
+      {
+        label: "Holy order surcoat",
+        value: "holy order surcoat"
+      },
+      {
+        label: "Traveler shawl",
+        value: "traveler shawl"
+      },
+      {
+        label: "Northern fur coat",
+        value: "northern fur coat"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Layered robes",
+        value: "layered robes"
+      },
+      {
+        label: "Seeker skirts",
+        value: "seeker skirts"
+      },
+      {
+        label: "Trekker leggings",
+        value: "trekker leggings"
+      },
+      {
+        label: "Holy order pants",
+        value: "holy order pants"
+      },
+      {
+        label: "Snowbound trousers",
+        value: "snowbound trousers"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Hero party echo",
+        value: "hero party echo set"
+      },
+      {
+        label: "First-class mage",
+        value: "first class mage set"
+      },
+      {
+        label: "Demon scholar",
+        value: "demon scholar set"
+      },
+      {
+        label: "Traveling storyteller",
+        value: "traveling storyteller set"
+      },
+      {
+        label: "Cleric pilgrim",
+        value: "cleric pilgrim set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "Weathered linen",
+        value: "weathered linen"
+      },
+      {
+        label: "Elven silk",
+        value: "elven silk"
+      },
+      {
+        label: "Rune embroidery",
+        value: "rune embroidery"
+      },
+      {
+        label: "Fur lined",
+        value: "fur lined"
+      },
+      {
+        label: "Magic resistant cloth",
+        value: "magic resistant cloth"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Spell grimoire",
+        value: "spell grimoire"
+      },
+      {
+        label: "Mage staff",
+        value: "mage staff"
+      },
+      {
+        label: "Soul knapsack",
+        value: "soul knapsack"
+      },
+      {
+        label: "Elf ear cuffs",
+        value: "elf ear cuffs"
+      },
+      {
+        label: "Hero pendant",
+        value: "hero pendant"
+      }
+    ]
+  }
 ];
 
 const examples = [

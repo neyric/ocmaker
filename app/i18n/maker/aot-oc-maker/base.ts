@@ -140,158 +140,306 @@ const ocOptions = [
     key: "gender",
     unique: true,
     data: [
-      { label: "Boy", value: "1boy" },
-      { label: "Girl", value: "1girl" },
-      { label: "Other", value: "" },
-    ],
+      {
+        label: "Boy",
+        value: "1boy"
+      },
+      {
+        label: "Girl",
+        value: "1girl"
+      },
+      {
+        label: "Non-binary",
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Faction",
-    key: "faction",
+    title: "Age",
+    key: "age",
     data: [
-      { label: "Pirate", value: "pirate" },
-      { label: "Marine", value: "marine" },
-      { label: "Revolutionary Army", value: "revolutionary army" },
-      { label: "Bounty Hunter", value: "bounty hunter" },
-      { label: "Civilian", value: "civilian" },
-    ],
+      {
+        label: "Training Corps cadet",
+        value: "cadet teen"
+      },
+      {
+        label: "Frontline scout (late teen)",
+        value: "frontline late teen"
+      },
+      {
+        label: "Survey veteran",
+        value: "survey veteran"
+      },
+      {
+        label: "Garrison officer",
+        value: "garrison adult"
+      },
+      {
+        label: "Seasoned commander",
+        value: "seasoned commander"
+      }
+    ]
   },
   {
-    title: "Role",
-    key: "role",
+    title: "Body",
+    key: "body",
     data: [
-      { label: "Captain", value: "captain" },
-      { label: "First Mate", value: "first mate" },
-      { label: "Navigator", value: "navigator" },
-      { label: "Swordsman", value: "swordsman" },
-      { label: "Sniper", value: "sniper" },
-      { label: "Cook", value: "cook" },
-      { label: "Doctor", value: "doctor" },
-      { label: "Shipwright", value: "shipwright" },
-    ],
+      {
+        label: "Lean courier build",
+        value: "lean build"
+      },
+      {
+        label: "ODM agile frame",
+        value: "agile frame"
+      },
+      {
+        label: "Armored titan-slayer",
+        value: "armored muscular"
+      },
+      {
+        label: "Tall watchtower scout",
+        value: "tall scout"
+      },
+      {
+        label: "Compact artillery gunner",
+        value: "compact gunner"
+      }
+    ]
   },
   {
-    title: "Clothing Style",
-    key: "clothing",
+    title: "Hair",
+    key: "hair",
     data: [
-      { label: "Pirate outfit", value: "pirate outfit" },
-      { label: "Marine uniform", value: "marine uniform" },
-      { label: "Noble attire", value: "noble attire" },
-      { label: "Revolutionary uniform", value: "revolutionary uniform" },
-      { label: "Casual island wear", value: "casual island wear" },
-      { label: "Battle outfit", value: "battle outfit" },
-      { label: "Cloak or coat", value: "cloak" },
-    ],
+      {
+        label: "Short undercut",
+        value: "short undercut hair"
+      },
+      {
+        label: "Shoulder-length auburn",
+        value: "shoulder auburn hair"
+      },
+      {
+        label: "Tied black ponytail",
+        value: "tied black ponytail"
+      },
+      {
+        label: "Wind-blown blonde",
+        value: "windblown blonde hair"
+      },
+      {
+        label: "Shaved sides with fringe",
+        value: "shaved sides fringe"
+      }
+    ]
   },
   {
-    title: "Weapon",
-    key: "weapon",
+    title: "Eyes",
+    key: "eyes",
     data: [
-      { label: "Katana", value: "katana" },
-      { label: "Dual swords", value: "dual swords" },
-      { label: "Gun", value: "gun" },
-      { label: "Rifle", value: "rifle" },
-      { label: "Spear", value: "spear" },
-      { label: "Staff", value: "staff" },
-      { label: "No weapon", value: "unarmed" },
-    ],
+      {
+        label: "Steel gray gaze",
+        value: "steel gray eyes"
+      },
+      {
+        label: "Sharp green eyes",
+        value: "sharp green eyes"
+      },
+      {
+        label: "Amber determination",
+        value: "amber determined eyes"
+      },
+      {
+        label: "Ice blue focus",
+        value: "ice blue eyes"
+      },
+      {
+        label: "Hazel warmth",
+        value: "hazel eyes"
+      }
+    ]
   },
   {
-    title: "Fighting Style",
-    key: "fighting_style",
+    title: "Face",
+    key: "face",
     data: [
-      { label: "Swordsmanship", value: "swordsmanship" },
-      { label: "Martial arts", value: "martial arts" },
-      { label: "Sniping", value: "sniping" },
-      { label: "Kicking combat", value: "kicking combat" },
-      { label: "Fishman karate", value: "fishman karate" },
-      { label: "Devil fruit ability", value: "devil fruit ability" },
-      { label: "Haki user", value: "haki user" },
-    ],
+      {
+        label: "Battle-hardened stare",
+        value: "battle hardened face"
+      },
+      {
+        label: "Scarred resolve",
+        value: "scarred stoic face"
+      },
+      {
+        label: "Determined glare",
+        value: "determined glare"
+      },
+      {
+        label: "Soft yet wary",
+        value: "soft wary expression"
+      },
+      {
+        label: "Reckless grin",
+        value: "reckless grin"
+      }
+    ]
   },
   {
-    title: "Devil Fruit Type",
-    key: "devil_fruit",
+    title: "Skin",
+    key: "skin",
     data: [
-      { label: "Paramecia type", value: "paramecia type" },
-      { label: "Logia type", value: "logia type" },
-      { label: "Zoan type", value: "zoan type" },
-      { label: "Mythical zoan type", value: "mythical zoan type" },
-      { label: "No devil fruit", value: "no devil fruit" },
-    ],
+      {
+        label: "Fair with ODM windburn",
+        value: "fair windburned skin"
+      },
+      {
+        label: "Sun-kissed garrison",
+        value: "sun kissed skin"
+      },
+      {
+        label: "Scar-laced veteran",
+        value: "scar laced skin"
+      },
+      {
+        label: "Olive trost survivor",
+        value: "olive survivor skin"
+      },
+      {
+        label: "Freckled cadet",
+        value: "freckled cadet skin"
+      }
+    ]
   },
   {
-    title: "Haki Type",
-    key: "haki",
+    title: "Top",
+    key: "top",
     data: [
-      { label: "Observation haki", value: "observation haki" },
-      { label: "Armament haki", value: "armament haki" },
-      { label: "Conqueror's haki", value: "conqueror haki" },
-      { label: "No haki", value: "no haki" },
-    ],
+      {
+        label: "Survey Corps jacket",
+        value: "survey corps jacket"
+      },
+      {
+        label: "Garrison cloak",
+        value: "garrison cloak"
+      },
+      {
+        label: "Military Police blazer",
+        value: "military police blazer"
+      },
+      {
+        label: "Yeagerist armband vest",
+        value: "yeagerist vest"
+      },
+      {
+        label: "Underground medic coat",
+        value: "underground medic coat"
+      }
+    ]
   },
   {
-    title: "Body Type",
-    key: "body_type",
+    title: "Bottom",
+    key: "bottom",
     data: [
-      { label: "Slim", value: "slim" },
-      { label: "Athletic", value: "athletic" },
-      { label: "Muscular", value: "muscular" },
-      { label: "Tall", value: "tall" },
-      { label: "Short", value: "short" },
-    ],
+      {
+        label: "ODM harness trousers",
+        value: "odm harness trousers"
+      },
+      {
+        label: "Mounted patrol pants",
+        value: "mounted patrol pants"
+      },
+      {
+        label: "Reinforced leather pants",
+        value: "reinforced leather pants"
+      },
+      {
+        label: "Scout skirt with belts",
+        value: "scout skirt belts"
+      },
+      {
+        label: "Civilian refugee layers",
+        value: "civilian layered bottoms"
+      }
+    ]
   },
   {
-    title: "Hair Color",
-    key: "hair_color",
+    title: "Set",
+    key: "set",
     data: [
-      { label: "Black hair", value: "black hair" },
-      { label: "Blonde hair", value: "blonde hair" },
-      { label: "Red hair", value: "red hair" },
-      { label: "Blue hair", value: "blue hair" },
-      { label: "Green hair", value: "green hair" },
-      { label: "White hair", value: "white hair" },
-      { label: "Pink hair", value: "pink hair" },
-      { label: "Silver hair", value: "silver hair" },
-    ],
+      {
+        label: "Full Survey Corps gear",
+        value: "survey corps full gear"
+      },
+      {
+        label: "Wall repair engineer",
+        value: "wall repair engineer set"
+      },
+      {
+        label: "Marley infiltration disguise",
+        value: "marley disguise set"
+      },
+      {
+        label: "Underground informant",
+        value: "underground informant outfit"
+      },
+      {
+        label: "Garrison artillery uniform",
+        value: "garrison artillery uniform"
+      }
+    ]
   },
   {
-    title: "Accessories",
-    key: "accessories",
+    title: "Material",
+    key: "material",
     data: [
-      { label: "Bandana", value: "bandana" },
-      { label: "Hat", value: "hat" },
-      { label: "Earrings", value: "earrings" },
-      { label: "Scarf", value: "scarf" },
-      { label: "Sunglasses", value: "sunglasses" },
-      { label: "Cape", value: "cape" },
-    ],
+      {
+        label: "Weathered leather",
+        value: "weathered leather"
+      },
+      {
+        label: "Cured cloak wool",
+        value: "cloak wool"
+      },
+      {
+        label: "ODM steel plating",
+        value: "odm steel plating"
+      },
+      {
+        label: "Marley linen",
+        value: "marley linen"
+      },
+      {
+        label: "Underground patchwork",
+        value: "underground patchwork"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Accessory",
+    key: "accessory",
     data: [
-      { label: "Brave", value: "brave" },
-      { label: "Calm", value: "calm" },
-      { label: "Hot-blooded", value: "hot-blooded" },
-      { label: "Cheerful", value: "cheerful" },
-      { label: "Serious", value: "serious" },
-      { label: "Loyal", value: "loyal" },
-      { label: "Reckless", value: "reckless" },
-    ],
-  },
-  {
-    title: "Expression",
-    key: "expression",
-    data: [
-      { label: "Smiling", value: "smiling" },
-      { label: "Serious", value: "serious" },
-      { label: "Angry", value: "angry" },
-      { label: "Confident", value: "confident" },
-      { label: "Determined", value: "determined" },
-      { label: "Calm", value: "calm" },
-    ],
-  },
+      {
+        label: "Wings of Freedom cloak",
+        value: "wings of freedom cloak"
+      },
+      {
+        label: "ODM blade set",
+        value: "odm blades"
+      },
+      {
+        label: "Signal flare pistol",
+        value: "signal flare pistol"
+      },
+      {
+        label: "Yeagerist armband",
+        value: "yeagerist armband"
+      },
+      {
+        label: "Medical satchel",
+        value: "medical satchel"
+      }
+    ]
+  }
 ];
 
 const examples = [

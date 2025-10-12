@@ -33,6 +33,23 @@ export default {
         "Get unlimited access to all features and create amazing videos without limitations.",
       viewPlans: "View Plans",
     },
+    help: {
+      title: "Help & Support",
+      description:
+        "Get the assistance you need with our comprehensive resources and support channels.",
+      contents: {
+        emailSupport: {
+          title: "Email Support",
+          description: "Get direct help from our support team",
+          button: "Contatt Support",
+        },
+        helpCenter: {
+          title: "Help Center",
+          description: "Find answers to frequently asked questions",
+          button: "Get Help",
+        },
+      },
+    },
     faqs: {
       title: "Frequently Asked Questions",
       description: "Have another question? Contact us at support@ocmaker.app",

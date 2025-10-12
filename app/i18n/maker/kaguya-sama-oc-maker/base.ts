@@ -142,170 +142,308 @@ const ocOptions = [
     data: [
       {
         label: "Boy",
-        value: "1boy",
+        value: "1boy"
       },
       {
         label: "Girl",
-        value: "1girl",
+        value: "1girl"
       },
       {
         label: "Non-binary",
-        value: "1person",
-      },
-    ],
+        value: "1person"
+      }
+    ]
   },
   {
-    title: "Archetype",
-    key: "archetype",
-    unique: true,
+    title: "Age",
+    key: "age",
     data: [
       {
-        label: "Hero",
-        value: "heroic leader",
+        label: "First-year",
+        value: "first year shuchiin"
       },
       {
-        label: "Antihero",
-        value: "antihero vigilante",
+        label: "Second-year",
+        value: "second year shuchiin"
       },
       {
-        label: "Mentor",
-        value: "mysterious mentor",
+        label: "Third-year",
+        value: "third year shuchiin"
       },
       {
-        label: "Strategist",
-        value: "brilliant strategist",
+        label: "Graduate mentor",
+        value: "graduate mentor"
       },
       {
-        label: "Rival",
-        value: "rebellious rival",
-      },
-      {
-        label: "Guardian",
-        value: "stoic guardian",
-      },
-    ],
+        label: "Faculty advisor",
+        value: "faculty advisor"
+      }
+    ]
   },
   {
-    title: "Power Theme",
-    key: "power_theme",
+    title: "Body",
+    key: "body",
     data: [
       {
-        label: "Elemental magic",
-        value: "elemental magic",
+        label: "Slender",
+        value: "slender"
       },
       {
-        label: "Advanced technology",
-        value: "advanced technology",
+        label: "Athletic",
+        value: "athletic"
       },
       {
-        label: "Martial arts",
-        value: "martial arts",
+        label: "Muscular",
+        value: "muscular"
       },
       {
-        label: "Spiritual powers",
-        value: "spiritual powers",
+        label: "Tall",
+        value: "tall"
       },
       {
-        label: "Summoner",
-        value: "summoner",
-      },
-      {
-        label: "Tactical genius",
-        value: "tactical genius",
-      },
-    ],
+        label: "Petite",
+        value: "petite"
+      }
+    ]
   },
   {
-    title: "Outfit Style",
-    key: "outfit",
+    title: "Hair",
+    key: "hair",
     data: [
       {
-        label: "Battle armor",
-        value: "battle armor",
+        label: "Short black hair",
+        value: "short black hair"
       },
       {
-        label: "Sleek uniform",
-        value: "sleek uniform",
+        label: "Long brown hair",
+        value: "long brown hair"
       },
       {
-        label: "Casual streetwear",
-        value: "casual streetwear",
+        label: "Blonde hair",
+        value: "blonde hair"
       },
       {
-        label: "Formal attire",
-        value: "formal attire",
+        label: "Red hair",
+        value: "red hair"
       },
       {
-        label: "Mystic robes",
-        value: "mystic robes",
+        label: "Silver hair",
+        value: "silver hair"
       },
       {
-        label: "Futuristic suit",
-        value: "futuristic suit",
-      },
-    ],
+        label: "Blue hair",
+        value: "blue hair"
+      }
+    ]
   },
   {
-    title: "Personality",
-    key: "personality",
+    title: "Eyes",
+    key: "eyes",
     data: [
       {
-        label: "Optimistic",
-        value: "optimistic",
+        label: "Brown eyes",
+        value: "brown eyes"
       },
       {
-        label: "Stoic",
-        value: "stoic",
+        label: "Blue eyes",
+        value: "blue eyes"
       },
       {
-        label: "Rebellious",
-        value: "rebellious",
+        label: "Green eyes",
+        value: "green eyes"
       },
       {
-        label: "Compassionate",
-        value: "compassionate",
+        label: "Amber eyes",
+        value: "amber eyes"
       },
       {
-        label: "Calculating",
-        value: "calculating",
-      },
-      {
-        label: "Chaotic good",
-        value: "chaotic good",
-      },
-    ],
+        label: "Gray eyes",
+        value: "gray eyes"
+      }
+    ]
   },
   {
-    title: "Expression",
-    key: "expression",
-    unique: true,
+    title: "Face",
+    key: "face",
     data: [
       {
-        label: "Smiling confidence",
-        value: "smiling confidence",
+        label: "Determined expression",
+        value: "determined expression"
       },
       {
-        label: "Determined gaze",
-        value: "determined gaze",
+        label: "Smiling",
+        value: "smiling expression"
       },
       {
-        label: "Brooding intensity",
-        value: "brooding intensity",
+        label: "Serious look",
+        value: "serious expression"
+      },
+      {
+        label: "Stoic face",
+        value: "stoic expression"
       },
       {
         label: "Playful grin",
-        value: "playful grin",
-      },
-      {
-        label: "Calm focus",
-        value: "calm focus",
-      },
-      {
-        label: "Mysterious smirk",
-        value: "mysterious smirk",
-      },
-    ],
+        value: "playful grin"
+      }
+    ]
   },
+  {
+    title: "Skin",
+    key: "skin",
+    data: [
+      {
+        label: "Fair skin",
+        value: "fair skin"
+      },
+      {
+        label: "Warm tan skin",
+        value: "tan skin"
+      },
+      {
+        label: "Olive skin",
+        value: "olive skin"
+      },
+      {
+        label: "Deep brown skin",
+        value: "deep brown skin"
+      },
+      {
+        label: "Freckled skin",
+        value: "freckled skin"
+      }
+    ]
+  },
+  {
+    title: "Top",
+    key: "top",
+    data: [
+      {
+        label: "Student council uniform",
+        value: "student council uniform"
+      },
+      {
+        label: "Disciplinary blazer",
+        value: "disciplinary blazer"
+      },
+      {
+        label: "Drama club cardigan",
+        value: "drama club cardigan"
+      },
+      {
+        label: "Cheer club jacket",
+        value: "cheer club jacket"
+      },
+      {
+        label: "Casual prestige sweater",
+        value: "prestige sweater"
+      }
+    ]
+  },
+  {
+    title: "Bottom",
+    key: "bottom",
+    data: [
+      {
+        label: "Pleated skirt",
+        value: "pleated skirt shuchiin"
+      },
+      {
+        label: "Tailored slacks",
+        value: "tailored slacks shuchiin"
+      },
+      {
+        label: "Casual jeans",
+        value: "casual jeans shuchiin"
+      },
+      {
+        label: "Exercise pants",
+        value: "exercise pants shuchiin"
+      },
+      {
+        label: "Festival yukata hem",
+        value: "festival yukata hem"
+      }
+    ]
+  },
+  {
+    title: "Set",
+    key: "set",
+    data: [
+      {
+        label: "Student council meeting",
+        value: "student council meeting set"
+      },
+      {
+        label: "Public morals patrol",
+        value: "public morals patrol set"
+      },
+      {
+        label: "Cultural festival",
+        value: "cultural festival set"
+      },
+      {
+        label: "Sports festival cheer",
+        value: "sports festival set"
+      },
+      {
+        label: "Secret confession date",
+        value: "secret confession date set"
+      }
+    ]
+  },
+  {
+    title: "Material",
+    key: "material",
+    data: [
+      {
+        label: "School uniform wool",
+        value: "school uniform wool"
+      },
+      {
+        label: "Luxury cashmere",
+        value: "luxury cashmere"
+      },
+      {
+        label: "Club jersey fabric",
+        value: "club jersey fabric"
+      },
+      {
+        label: "Festival silk",
+        value: "festival silk"
+      },
+      {
+        label: "Designer lace",
+        value: "designer lace"
+      }
+    ]
+  },
+  {
+    title: "Accessory",
+    key: "accessory",
+    data: [
+      {
+        label: "Student council badge",
+        value: "student council badge"
+      },
+      {
+        label: "Love confession letter",
+        value: "love confession letter"
+      },
+      {
+        label: "Planning clipboard",
+        value: "planning clipboard"
+      },
+      {
+        label: "Cheer pom",
+        value: "cheer pom"
+      },
+      {
+        label: "Disguise glasses",
+        value: "disguise glasses kaguya"
+      }
+    ]
+  }
 ];
 
 const examples = [
