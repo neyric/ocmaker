@@ -102,8 +102,6 @@ export default function Dashboard({
     ? pricing.subscription.find((item) => item.id === subscription.plan_type)
     : null;
 
-  console.log("activeSubscription", activeSubscription, subscription);
-
   const subscriptionBenefits = activeSubscription?.benefits ?? [];
 
   const userInfoCopy: UserInfoSectionCopy = {

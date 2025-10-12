@@ -88,7 +88,6 @@ export const Dropzone = ({
   };
 
   const openFileDialog = () => {
-    console.log("click");
     if (fileInputRef.current && !disabled) {
       fileInputRef.current.click();
     }

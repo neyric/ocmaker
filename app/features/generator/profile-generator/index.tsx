@@ -33,21 +33,15 @@ export function ProfileGenerator({
     id: genId,
     prompt: defaultPrompt,
   });
-  const [preview, setPreview] = useState<GeneratePromptResult | null>(null);
 
   const { data, isError, error, status, isPending, mutate } = useMutation({
     mutationFn: generateOCProfile,
-    onSuccess: (data) => {
-      console.log("data", data);
-      // setPreview(data);
-    },
     onError: (error: Error) => {
       toast.error(error.message);
     },
   });
 
   const handleGenerate = (values: ProfileGeneratorDTO) => {
-    // console.log("values", values);
     mutate(values);
   };
 
@@ -64,7 +58,7 @@ export function ProfileGenerator({
     <div
       className={clsx(
         "flex max-lg:flex-col gap-4 xl:max-w-6xl mx-auto",
-        className,
+        className
       )}
       {...props}
     >

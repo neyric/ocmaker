@@ -16,7 +16,7 @@ export const convertUserInfo = (user: User, encodeEmail = true) => {
   const mail = account
     .slice(0, 2)
     .concat(
-      Array.from({ length: account.slice(2).length }, () => "*").join(""),
+      Array.from({ length: account.slice(2).length }, () => "*").join("")
     );
 
   const userInfo: UserInfo = {
@@ -76,13 +76,21 @@ export const getUserSubscription = async (user?: User | null) => {
 
 export const updateUserInfo = async (
   values: UpdateProfileDTO,
-  userId: User["id"],
+  userId: User["id"]
 ) => {
   const value: Partial<InsertUser> = {
     username: values.username,
     nickname: values.nickname,
     bio: values.bio,
   };
+
+  const oldUser = await getUserById(userId);
+  if (!oldUser) throw Error("Unvalid User ID");
+  if (value.username && oldUser.username !== value.username) {
+    const result = await getUserByUsername(value.username);
+    if (result) throw Error("Username is already taken");
+  }
+
   if (values.avatar) {
     const extName = values.avatar.name.split(".").pop()!;
     const newFileName = `${nanoid()}.${extName}`;

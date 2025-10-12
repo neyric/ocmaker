@@ -13,7 +13,10 @@ export async function updateProfile(data: UpdateProfileDTO): Promise<UserInfo> {
   });
 
   if (!response.ok) {
-    throw new Error(response.statusText);
+    const json = await response
+      .json<{ error: string }>()
+      .catch(() => ({ error: "Fail to Update" }));
+    throw new Error(json.error);
   }
 
   return response.json();

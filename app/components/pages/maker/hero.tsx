@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from "react";
+import { Image } from "~/components/common";
 import { GridSection } from "~/components/ui/grid-section";
 
 interface HeroSectionProps {

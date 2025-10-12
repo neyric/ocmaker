@@ -28,6 +28,13 @@ export const action = async ({ request }: Route.ActionArgs) => {
     return data(convertUserInfo(newUser, false));
   } catch (error) {
     console.error("Error updating profile:", error);
-    throw Response.json({ error: "Failed to update profile" }, { status: 500 });
+
+    throw Response.json(
+      {
+        error:
+          error instanceof Error ? error.message : "Failed to update profile",
+      },
+      { status: 500 }
+    );
   }
 };
