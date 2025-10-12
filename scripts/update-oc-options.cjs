@@ -13,6 +13,8 @@ const baseCategories = {
     { label: "Young adult", value: "young adult" },
     { label: "Experienced adult", value: "adult" },
     { label: "Veteran", value: "veteran" },
+    { label: "Seasoned elder", value: "seasoned elder" },
+    { label: "Timeless legend", value: "timeless legend" },
   ],
   Body: [
     { label: "Slender", value: "slender" },
@@ -20,6 +22,8 @@ const baseCategories = {
     { label: "Muscular", value: "muscular" },
     { label: "Tall", value: "tall" },
     { label: "Petite", value: "petite" },
+    { label: "Burly", value: "burly" },
+    { label: "Graceful", value: "graceful" },
   ],
   Hair: [
     { label: "Short black hair", value: "short black hair" },
@@ -28,6 +32,9 @@ const baseCategories = {
     { label: "Red hair", value: "red hair" },
     { label: "Silver hair", value: "silver hair" },
     { label: "Blue hair", value: "blue hair" },
+    { label: "White hair", value: "white hair" },
+    { label: "Braided hair", value: "braided hair" },
+    { label: "Wavy lavender hair", value: "wavy lavender hair" },
   ],
   Eyes: [
     { label: "Brown eyes", value: "brown eyes" },
@@ -35,6 +42,8 @@ const baseCategories = {
     { label: "Green eyes", value: "green eyes" },
     { label: "Amber eyes", value: "amber eyes" },
     { label: "Gray eyes", value: "gray eyes" },
+    { label: "Violet eyes", value: "violet eyes" },
+    { label: "Golden eyes", value: "golden eyes" },
   ],
   Face: [
     { label: "Determined expression", value: "determined expression" },
@@ -42,6 +51,8 @@ const baseCategories = {
     { label: "Serious look", value: "serious expression" },
     { label: "Stoic face", value: "stoic expression" },
     { label: "Playful grin", value: "playful grin" },
+    { label: "Fierce snarl", value: "fierce snarl" },
+    { label: "Warm smile", value: "warm smile" },
   ],
   Skin: [
     { label: "Fair skin", value: "fair skin" },
@@ -49,6 +60,8 @@ const baseCategories = {
     { label: "Olive skin", value: "olive skin" },
     { label: "Deep brown skin", value: "deep brown skin" },
     { label: "Freckled skin", value: "freckled skin" },
+    { label: "Porcelain skin", value: "porcelain skin" },
+    { label: "Sunburned skin", value: "sunburned skin" },
   ],
   Top: [
     { label: "Utility jacket", value: "utility jacket" },
@@ -56,6 +69,8 @@ const baseCategories = {
     { label: "Casual tunic", value: "casual tunic" },
     { label: "Armored vest", value: "armored vest" },
     { label: "Loose shirt", value: "loose shirt" },
+    { label: "Hooded cloak", value: "hooded cloak" },
+    { label: "Ceremonial robe", value: "ceremonial robe" },
   ],
   Bottom: [
     { label: "Cargo trousers", value: "cargo trousers" },
@@ -63,6 +78,8 @@ const baseCategories = {
     { label: "Pleated skirt", value: "pleated skirt" },
     { label: "Battle-ready shorts", value: "battle shorts" },
     { label: "Flowing robes", value: "flowing robes" },
+    { label: "Armored greaves", value: "armored greaves" },
+    { label: "Layered wraps", value: "layered wraps" },
   ],
   Set: [
     { label: "Combat uniform", value: "combat uniform" },
@@ -70,6 +87,8 @@ const baseCategories = {
     { label: "Formal attire", value: "formal attire" },
     { label: "Stealth gear", value: "stealth gear" },
     { label: "Festival outfit", value: "festival outfit" },
+    { label: "Royal regalia", value: "royal regalia" },
+    { label: "Nomad attire", value: "nomad attire" },
   ],
   Material: [
     { label: "Woven fabric", value: "woven fabric" },
@@ -77,6 +96,8 @@ const baseCategories = {
     { label: "Reinforced armor", value: "reinforced armor" },
     { label: "High-tech fiber", value: "high-tech fiber" },
     { label: "Organic weave", value: "organic weave" },
+    { label: "Dragonhide", value: "dragonhide" },
+    { label: "Mystic cloth", value: "mystic cloth" },
   ],
   Accessory: [
     { label: "Utility belt", value: "utility belt" },
@@ -84,6 +105,8 @@ const baseCategories = {
     { label: "Scarf", value: "scarf" },
     { label: "Headgear", value: "headgear" },
     { label: "Jewelry", value: "jewelry" },
+    { label: "Bandolier", value: "bandolier" },
+    { label: "Magic tome", value: "magic tome accessory" },
   ],
 };
 
@@ -98,7 +121,15 @@ function cloneBase() {
 function createOptions(overrides = {}, extra = []) {
   const categories = cloneBase();
   for (const [key, value] of Object.entries(overrides)) {
-    categories[key] = value;
+    if (!Array.isArray(value)) continue;
+    const existing = categories[key] ? categories[key].map((item) => ({ ...item })) : [];
+    const map = new Map(existing.map((item) => [item.value, item]));
+    value.forEach((item) => {
+      if (!map.has(item.value)) {
+        map.set(item.value, { ...item });
+      }
+    });
+    categories[key] = Array.from(map.values());
   }
   if (extra.length) {
     categories.extra = extra;

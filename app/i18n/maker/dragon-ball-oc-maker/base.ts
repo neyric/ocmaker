@@ -159,6 +159,34 @@ const ocOptions = [
     key: "age",
     data: [
       {
+        label: "Young teen",
+        value: "teen"
+      },
+      {
+        label: "Late teen",
+        value: "late teen"
+      },
+      {
+        label: "Young adult",
+        value: "young adult"
+      },
+      {
+        label: "Experienced adult",
+        value: "adult"
+      },
+      {
+        label: "Veteran",
+        value: "veteran"
+      },
+      {
+        label: "Seasoned elder",
+        value: "seasoned elder"
+      },
+      {
+        label: "Timeless legend",
+        value: "timeless legend"
+      },
+      {
         label: "Young martial artist",
         value: "young martial artist"
       },
@@ -184,6 +212,34 @@ const ocOptions = [
     title: "Body",
     key: "body",
     data: [
+      {
+        label: "Slender",
+        value: "slender"
+      },
+      {
+        label: "Athletic",
+        value: "athletic"
+      },
+      {
+        label: "Muscular",
+        value: "muscular"
+      },
+      {
+        label: "Tall",
+        value: "tall"
+      },
+      {
+        label: "Petite",
+        value: "petite"
+      },
+      {
+        label: "Burly",
+        value: "burly"
+      },
+      {
+        label: "Graceful",
+        value: "graceful"
+      },
       {
         label: "Lean fighter",
         value: "lean fighter build"
@@ -233,6 +289,18 @@ const ocOptions = [
       {
         label: "Blue hair",
         value: "blue hair"
+      },
+      {
+        label: "White hair",
+        value: "white hair"
+      },
+      {
+        label: "Braided hair",
+        value: "braided hair"
+      },
+      {
+        label: "Wavy lavender hair",
+        value: "wavy lavender hair"
       }
     ]
   },
@@ -259,6 +327,14 @@ const ocOptions = [
       {
         label: "Gray eyes",
         value: "gray eyes"
+      },
+      {
+        label: "Violet eyes",
+        value: "violet eyes"
+      },
+      {
+        label: "Golden eyes",
+        value: "golden eyes"
       }
     ]
   },
@@ -285,6 +361,14 @@ const ocOptions = [
       {
         label: "Playful grin",
         value: "playful grin"
+      },
+      {
+        label: "Fierce snarl",
+        value: "fierce snarl"
+      },
+      {
+        label: "Warm smile",
+        value: "warm smile"
       }
     ]
   },
@@ -311,6 +395,14 @@ const ocOptions = [
       {
         label: "Freckled skin",
         value: "freckled skin"
+      },
+      {
+        label: "Porcelain skin",
+        value: "porcelain skin"
+      },
+      {
+        label: "Sunburned skin",
+        value: "sunburned skin"
       }
     ]
   },
@@ -318,6 +410,34 @@ const ocOptions = [
     title: "Top",
     key: "top",
     data: [
+      {
+        label: "Utility jacket",
+        value: "utility jacket"
+      },
+      {
+        label: "Layered coat",
+        value: "layered coat"
+      },
+      {
+        label: "Casual tunic",
+        value: "casual tunic"
+      },
+      {
+        label: "Armored vest",
+        value: "armored vest"
+      },
+      {
+        label: "Loose shirt",
+        value: "loose shirt"
+      },
+      {
+        label: "Hooded cloak",
+        value: "hooded cloak"
+      },
+      {
+        label: "Ceremonial robe",
+        value: "ceremonial robe"
+      },
       {
         label: "Gi top",
         value: "gi top"
@@ -345,6 +465,34 @@ const ocOptions = [
     key: "bottom",
     data: [
       {
+        label: "Cargo trousers",
+        value: "cargo trousers"
+      },
+      {
+        label: "Fitted pants",
+        value: "fitted pants"
+      },
+      {
+        label: "Pleated skirt",
+        value: "pleated skirt"
+      },
+      {
+        label: "Battle-ready shorts",
+        value: "battle shorts"
+      },
+      {
+        label: "Flowing robes",
+        value: "flowing robes"
+      },
+      {
+        label: "Armored greaves",
+        value: "armored greaves"
+      },
+      {
+        label: "Layered wraps",
+        value: "layered wraps"
+      },
+      {
         label: "Gi pants",
         value: "gi pants"
       },
@@ -370,6 +518,34 @@ const ocOptions = [
     title: "Set",
     key: "set",
     data: [
+      {
+        label: "Combat uniform",
+        value: "combat uniform"
+      },
+      {
+        label: "Casual traveler",
+        value: "casual traveler outfit"
+      },
+      {
+        label: "Formal attire",
+        value: "formal attire"
+      },
+      {
+        label: "Stealth gear",
+        value: "stealth gear"
+      },
+      {
+        label: "Festival outfit",
+        value: "festival outfit"
+      },
+      {
+        label: "Royal regalia",
+        value: "royal regalia"
+      },
+      {
+        label: "Nomad attire",
+        value: "nomad attire"
+      },
       {
         label: "Z-Fighter uniform",
         value: "z fighter uniform"
@@ -397,6 +573,34 @@ const ocOptions = [
     key: "material",
     data: [
       {
+        label: "Woven fabric",
+        value: "woven fabric"
+      },
+      {
+        label: "Polished leather",
+        value: "polished leather"
+      },
+      {
+        label: "Reinforced armor",
+        value: "reinforced armor"
+      },
+      {
+        label: "High-tech fiber",
+        value: "high-tech fiber"
+      },
+      {
+        label: "Organic weave",
+        value: "organic weave"
+      },
+      {
+        label: "Dragonhide",
+        value: "dragonhide"
+      },
+      {
+        label: "Mystic cloth",
+        value: "mystic cloth"
+      },
+      {
         label: "Weighted fabric",
         value: "weighted fabric"
       },
@@ -422,6 +626,34 @@ const ocOptions = [
     title: "Accessory",
     key: "accessory",
     data: [
+      {
+        label: "Utility belt",
+        value: "utility belt"
+      },
+      {
+        label: "Gloves",
+        value: "gloves"
+      },
+      {
+        label: "Scarf",
+        value: "scarf"
+      },
+      {
+        label: "Headgear",
+        value: "headgear"
+      },
+      {
+        label: "Jewelry",
+        value: "jewelry"
+      },
+      {
+        label: "Bandolier",
+        value: "bandolier"
+      },
+      {
+        label: "Magic tome",
+        value: "magic tome accessory"
+      },
       {
         label: "Scouter",
         value: "scouter"
