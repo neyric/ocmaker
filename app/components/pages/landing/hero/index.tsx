@@ -30,11 +30,12 @@ export function HeroSection({
               loop: true,
             }}
             slides={[
-              "https://cdn.ocmaker.app/example/disney-oc-generateds-2.webp",
-              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-1.webp",
-              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-2.webp",
-              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-3.webp",
-              "https://cdn.ocmaker.app/example/dragon-ball-oc-generated-4.webp",
+              "https://cdn.ocmaker.app/example/honkai-star-rail-oc-generated-3.webp",
+              "https://cdn.ocmaker.app/example/mlp-oc-generateds-1.webp",
+              "https://cdn.ocmaker.app/example/aot-oc-generated-1.webp",
+              "https://cdn.ocmaker.app/example/oshi-no-ko-oc-maker-generated-4.webp",
+              "https://cdn.ocmaker.app/example/uma-musume-oc-generated-2.webp",
+              "https://cdn.ocmaker.app/example/demon-slayer-oc-generateds-1.webp",
             ]}
           />
         </div>

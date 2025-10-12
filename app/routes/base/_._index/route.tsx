@@ -28,7 +28,7 @@ export function meta({ matches, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical("/", matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
     "/",
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
@@ -37,7 +37,7 @@ export function meta({ matches, loaderData }: Route.MetaArgs) {
       url: "/",
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
 
   return [
@@ -208,58 +208,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         title={ct("contents.hero.title")}
         description={ct("contents.hero.description")}
         createButtonText={ct("contents.hero.createButton")}
-      >
-        {/* <div className="mt-4 sm:mt-6 mb-2">
-          <Dropzone
-            multiple={false}
-            openRef={openRef}
-            onFilesAccepted={([file]) => {
-              if (file.validSize && file.validType) onUpload?.(file.file);
-            }}
-          >
-            <button type="button" className="btn btn-wide btn-primary">
-              <UploadCloud size={20} />
-              Upload Your Photo
-            </button>
-            <p className="text-base max-md:hidden">or drag a file here</p>
-            <p className="text-xs">1 Credit per Ghostface photo generated</p>
-          </Dropzone>
-        </div>
-        <div className="flex gap-3 flex-col lg:flex-row my-3">
-          <div className="flex items-center max-lg:justify-center lg:text-sm lg:opacity-70">
-            Or try with an example
-          </div>
-          <div
-            className={clsx(
-              "flex-1 min-w-0 w-full sm:max-w-60 lg:max-w-none",
-              "max-lg:grid max-lg:grid-cols-4 max-lg:gap-4 max-lg:mx-auto",
-              "lg:flex lg:gap-2 lg:justify-end"
-            )}
-          >
-            {[
-              "https://cdn.hairroom.app/assets/images/example-men-1.webp",
-              "https://cdn.hairroom.app/assets/images/example-men-2.webp",
-              "https://cdn.hairroom.app/assets/images/example-women-1.webp",
-              "https://cdn.hairroom.app/assets/images/example-women-2.webp",
-            ].map((src, i) => (
-              <Image
-                key={i}
-                loading="lazy"
-                className="w-full lg:w-10 aspect-square bg-base-300 rounded-box object-cover cursor-pointer"
-                src={src}
-                alt="ghostface ai example photo"
-                onClick={(e) => handleExampleClick(e.currentTarget.src)}
-              />
-            ))}
-          </div>
-        </div>
-        <p className="text-sm text-base-content/80">
-          Join the viral trend that's taking over Instagram! Transform your
-          selfie into a stunning 90s horror portrait with authentic Y2K bedroom
-          aesthetics and the iconic Ghostface from Scream. Perfect for
-          Halloween, social media, or just for fun with friends.
-        </p> */}
-      </HeroSection>
+      />
 
       <Steps
         title={ct("contents.step.title")}

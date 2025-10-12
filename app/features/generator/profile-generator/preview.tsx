@@ -26,9 +26,8 @@ export function ProfileGeneratorPreview({
       {...props}
     >
       {isLoading ? (
-        <div className="flex min-h-[160px] flex-col items-center justify-center gap-2 text-sm text-base-content/70">
+        <div className="flex min-h-64 flex-col items-center justify-center gap-2 text-sm text-base-content/70">
           <span className="loading loading-spinner loading-md" aria-hidden />
-          <span>Creating profile copy…</span>
         </div>
       ) : result ? (
         <MarkdownArticle node={result} />

@@ -1,8 +1,6 @@
-import type { ReactNode } from "react";
 import { GridSection } from "~/components/ui/grid-section";
 
 interface Feature {
-  icon: ReactNode;
   title: string;
   content: string;
 }
@@ -32,12 +30,7 @@ export function WhyImgVidSection({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 w-full">
           {features.map((item, i) => (
             <div key={i} className="flex flex-col text-left">
-              <div className="mb-2 flex md:flex-col max-md:items-center gap-y-3 gap-x-3">
-                <div className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-sm bg-gradient-to-br from-primary/70 to-primary text-primary-content">
-                  {item.icon}
-                </div>
-                <h3 className="font-semibold text-xl">{item.title}</h3>
-              </div>
+              <h3 className="font-semibold text-xl">{item.title}</h3>
               <p className="text-md text-base-content/70 leading-relaxed">
                 {item.content}
               </p>

@@ -65,6 +65,7 @@ export function ProfileGenerator({
       <ProfileGeneratorForm
         className="flex-1 min-w-0 w-full"
         form={form}
+        defaultPrompt={defaultPrompt}
         onGenerate={handleGenerate}
         isGenerating={isPending}
       />

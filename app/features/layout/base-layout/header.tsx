@@ -61,7 +61,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
             <div className="grow" />
 
             {/* Desktop Menu */}
-            <div className="items-center gap-4 text-sm hidden md:flex">
+            <div className="items-center gap-4 text-sm hidden lg:flex">
               {navLinks.map((link, i) => (
                 <a
                   key={i}
@@ -114,7 +114,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="drawer inline-block w-6 h-6 md:hidden">
+            <div className="drawer inline-block w-6 h-6 lg:hidden">
               <input
                 id="my-drawer"
                 type="checkbox"
