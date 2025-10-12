@@ -24,7 +24,7 @@ export type Product = SubscriptionProduct | CreditsProduct;
 // Monthly Subscription Plans
 const STARTER_PLAN_MONTHLY: SubscriptionProduct = {
   type: "subscription",
-  product_id: "prod_5Xon38mqo83U5MvvIeApjX",
+  product_id: "prod_ogqbL1o3dGt2Z9LXRz4I8",
   product_name: "Starter",
   plan: "starter",
   interval: "monthly",
@@ -34,7 +34,7 @@ const STARTER_PLAN_MONTHLY: SubscriptionProduct = {
 
 const PLUS_PLAN_MONTHLY: SubscriptionProduct = {
   type: "subscription",
-  product_id: "prod_60PrqkiaGh0yJwFyn90b72",
+  product_id: "prod_1vdXnldZGnmLbK2Ro6REek",
   product_name: "Plus",
   plan: "plus",
   interval: "monthly",
@@ -44,49 +44,49 @@ const PLUS_PLAN_MONTHLY: SubscriptionProduct = {
 
 const PREMIUM_PLAN_MONTHLY: SubscriptionProduct = {
   type: "subscription",
-  product_id: "prod_5SvJRd6dSNlW3kAGjlR2LP",
+  product_id: "prod_3eoNiTVIR0ZjSoCQ4X95DL",
   product_name: "Premium",
   plan: "premium",
   interval: "monthly",
-  price: 19.9,
+  price: 24.9,
   credits: 120000,
 };
 
 // Annual Subscription Plans
 const STARTER_PLAN_ANNUAL: SubscriptionProduct = {
   type: "subscription",
-  product_id: "prod_5Xon38mqo83U5MvvIeApjX",
+  product_id: "prod_7PIgwKagn9BoY0VpKNtNI2",
   product_name: "Starter",
   plan: "starter",
   interval: "yearly",
-  price: 4.9,
-  credits: 120,
+  price: 5.45,
+  credits: 12000,
 };
 
 const PLUS_PLAN_ANNUAL: SubscriptionProduct = {
   type: "subscription",
-  product_id: "prod_60PrqkiaGh0yJwFyn90b72",
+  product_id: "prod_4e4ezBEplBLhvphQIR78Ro",
   product_name: "Plus",
   plan: "plus",
   interval: "yearly",
-  price: 9.9,
-  credits: 240,
+  price: 10.33,
+  credits: 360000,
 };
 
 const PREMIUM_PLAN_ANNUAL: SubscriptionProduct = {
   type: "subscription",
-  product_id: "prod_5SvJRd6dSNlW3kAGjlR2LP",
+  product_id: "prod_25UpXDEtj7n7WwlGWGBZ85",
   product_name: "Premium",
   plan: "premium",
   interval: "yearly",
-  price: 14.9,
-  credits: 500,
+  price: 19.9,
+  credits: 120000,
 };
 
 // Credits Products
 const SMALL_CREDITS_BUNDLE: CreditsProduct = {
   type: "credits",
-  product_id: "prod_3m9MiZkXUkdW6dTjLC0MOa",
+  product_id: "prod_4fHZatbUbQ5fgdusPsQjBh",
   product_name: "Small Credits Pack",
   price: 19.9,
   credits: 21000,
@@ -99,7 +99,7 @@ const SMALL_CREDITS_BUNDLE: CreditsProduct = {
 
 const LARGE_CREDITS_BUNDLE: CreditsProduct = {
   type: "credits",
-  product_id: "prod_41zqnavi1VHBKXYpDljbFS",
+  product_id: "prod_38PRTcwpHRdl4ElOnMUevk",
   product_name: "Large Credits Bundle",
   price: 39.9,
   credits: 42000,

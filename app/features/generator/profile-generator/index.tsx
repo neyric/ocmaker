@@ -77,7 +77,7 @@ export function ProfileGenerator({
         />
       ) : (
         <ProfileGeneratorPreview
-          className="flex-1 min-w-0 w-full lg:max-h-96 overflow-y-auto"
+          className="flex-1 min-w-0 w-full lg:max-h-128 overflow-y-auto"
           isLoading={isPending}
           result={data?.node}
           isError={isError}

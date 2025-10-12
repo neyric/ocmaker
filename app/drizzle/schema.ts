@@ -239,9 +239,7 @@ export const characters = sqliteTable("characters", {
   description: text(),
   image_url: text().notNull(),
   aspect: text().default("1:1"),
-  source_task_no: text().references(() => ai_tasks.task_no, {
-    onDelete: "set null",
-  }),
+  source_task_no: text(),
   source_params: text({ mode: "json" }),
   is_public: integer({ mode: "boolean" }).notNull().default(false),
   category: text().default("general"),

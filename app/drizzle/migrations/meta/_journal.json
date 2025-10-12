@@ -15,6 +15,13 @@
       "when": 1760189088186,
       "tag": "0001_narrow_karnak",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1760294685761,
+      "tag": "0002_loud_kulan_gath",
+      "breakpoints": true
     }
   ]
 }

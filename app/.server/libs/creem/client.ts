@@ -18,7 +18,10 @@ export class CreemApiClient {
   private webhookSecret: string;
 
   constructor(baseUrl?: string, apiKey?: string, webhookSecret?: string) {
-    this.baseUrl = baseUrl || env.CREEM_API;
+    this.baseUrl =
+      baseUrl || import.meta.env.PROD
+        ? "https://api.creem.io"
+        : "https://test-api.creem.io";
     this.apiKey = apiKey || env.CREEM_KEY;
     this.webhookSecret = webhookSecret || env.CREEM_WEBHOOK_SECRET;
   }
@@ -30,7 +33,7 @@ export class CreemApiClient {
     path: string,
     data?: any,
     method: "GET" | "POST" = "GET",
-    options: FetcherOptions = {},
+    options: FetcherOptions = {}
   ): Promise<T> {
     let url = new URL(path, this.baseUrl).toString();
 
@@ -74,12 +77,12 @@ export class CreemApiClient {
    * @returns Checkout response with URL and details
    */
   async createCheckout(
-    payload: CreateCheckoutsPayload,
+    payload: CreateCheckoutsPayload
   ): Promise<CreateCheckoutsResponse> {
     const response = await this.fetcher<CreateCheckoutsResponse>(
       "/v1/checkouts",
       payload,
-      "POST",
+      "POST"
     );
     return response;
   }
@@ -93,7 +96,7 @@ export class CreemApiClient {
     const response = await this.fetcher<Checkout>(
       "/v1/checkouts",
       { checkout_id: checkoutId },
-      "GET",
+      "GET"
     );
     return response;
   }
@@ -137,7 +140,7 @@ export class CreemApiClient {
     const computedSignature = this.createWebhookSignature(payload);
     return crypto.timingSafeEqual(
       Buffer.from(signature, "hex"),
-      Buffer.from(computedSignature, "hex"),
+      Buffer.from(computedSignature, "hex")
     );
   }
 }
