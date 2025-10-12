@@ -8,7 +8,7 @@ export default {
     hero: {
       title: "Dashboard",
       description:
-        "Manage your account, track usage, and explore all the features GhostFace AI has to offer",
+        "Manage your account, track usage, and explore all the features OC Maker has to offer",
     },
     userInfo: {
       title: "User Information",
@@ -89,7 +89,7 @@ export default {
         {
           question: "How do I check my current usage and credits?",
           answer:
-            "Your current usage and remaining credits are displayed in the User Information section of your dashboard. This information is updated in real-time as you use GhostFace AI services.",
+            "Your current usage and remaining credits are displayed in the User Information section of your dashboard. This information is updated in real-time as you use OC Maker services.",
         },
         {
           question: "Can I cancel my subscription at any time?",
@@ -109,7 +109,7 @@ export default {
         {
           question: "How can I get support for technical issues?",
           answer:
-            "For technical support, you can use the Help & Support section in your dashboard to access our knowledge base, submit a support ticket, or contact us directly via email at support@ghostfaceai.app.",
+            "For technical support, you can use the Help & Support section in your dashboard to access our knowledge base, submit a support ticket, or contact us directly via email at support@ocmaker.app.",
         },
       ],
     },

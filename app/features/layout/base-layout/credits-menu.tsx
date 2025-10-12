@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import dayjs from "dayjs";
-import { CheckCircle2, DatabaseZap, Gift } from "lucide-react";
+import { CheckCircle2, DatabaseZap, Gift, Users } from "lucide-react";
 import { useState } from "react";
 import { getCheckinStatus } from "~/api/user";
 import {
@@ -27,10 +27,13 @@ export const CreditsMenu = ({ credits }: { credits?: number }) => {
   });
 
   const setVisibleUpgradeDialog = useDialogStore(
-    (state) => state.setVisibleUpgradeDialog,
+    (state) => state.setVisibleUpgradeDialog
   );
   const setVisibleCheckinDialog = useDialogStore(
-    (state) => state.setVisibleCheckinDialog,
+    (state) => state.setVisibleCheckinDialog
+  );
+  const setVisibleInviteDialog = useDialogStore(
+    (state) => state.setVisibleInviteDialog
   );
 
   const handleClose = () => {
@@ -44,6 +47,11 @@ export const CreditsMenu = ({ credits }: { credits?: number }) => {
 
   const handleCheckin = () => {
     setVisibleCheckinDialog(true);
+    handleClose();
+  };
+
+  const handleInvite = () => {
+    setVisibleInviteDialog(true);
     handleClose();
   };
 
@@ -69,7 +77,7 @@ export const CreditsMenu = ({ credits }: { credits?: number }) => {
 
       <DropdownMenuContent
         align="center"
-        className="w-64 sm:w-72 !rounded-xl"
+        className="w-64 sm:w-72 !rounded-xl p-1"
         sideOffset={16}
       >
         <DropdownMenuLabel>
@@ -113,25 +121,35 @@ export const CreditsMenu = ({ credits }: { credits?: number }) => {
         </DropdownMenuLabel>
 
         <DropdownMenuLabel>
-          <button className="btn btn-warning btn-block" onClick={handleAddMore}>
+          <button className="btn btn-warning btn-block btn-sm" onClick={handleAddMore}>
             {t("creditsMenu.buttons.addMore")}
           </button>
-        </DropdownMenuLabel>
-        <DropdownMenuLabel>
-          {stats?.has_checked_in_today ? (
+          <div className="grid grid-cols-2 mt-2 gap-2">
             <button
-              className="btn btn-ghost btn-block opacity-50"
-              onClick={handleCheckin}
+              className="btn btn-ghost btn-block btn-sm"
+              onClick={handleInvite}
             >
-              <CheckCircle2 className="size-4" />
-              {t("creditsMenu.buttons.checkedIn")}
+              <Users className="size-5 text-primary" />
+              {t("creditsMenu.buttons.invite")}
             </button>
-          ) : (
-            <button className="btn btn-ghost btn-block" onClick={handleCheckin}>
-              <Gift className="size-5 text-warning" />
-              {t("creditsMenu.buttons.checkin")}
-            </button>
-          )}
+            {stats?.has_checked_in_today ? (
+              <button
+                className="btn btn-ghost btn-block btn-sm opacity-50"
+                onClick={handleCheckin}
+              >
+                <CheckCircle2 className="size-4" />
+                {t("creditsMenu.buttons.checkedIn")}
+              </button>
+            ) : (
+              <button
+                className="btn btn-ghost btn-block btn-sm"
+                onClick={handleCheckin}
+              >
+                <Gift className="size-5 text-warning" />
+                {t("creditsMenu.buttons.checkin")}
+              </button>
+            )}
+          </div>
         </DropdownMenuLabel>
       </DropdownMenuContent>
     </DropdownMenu>

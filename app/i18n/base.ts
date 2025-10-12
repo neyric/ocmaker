@@ -246,11 +246,12 @@ export default {
     },
     expired: "Expires on: {date}",
     balance: {
-      title: "Daily Credits",
+      title: "Credits",
       label: "Credit Balance",
     },
     buttons: {
       addMore: "Add More",
+      invite: "Invite",
       checkin: "Check-in",
       checkedIn: "Checked In",
     },

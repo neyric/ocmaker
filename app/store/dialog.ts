@@ -21,9 +21,6 @@ interface DialogStore {
   // 邀请相关 Dialog
   visibleInviteDialog: boolean;
   setVisibleInviteDialog: (value: boolean) => void;
-  // Task 盒子
-  visibleTaskBoxDialog: boolean;
-  setVisibleTaskBoxDialog: (value: boolean) => void;
 }
 
 export const useDialogStore = create<DialogStore>((set) => {
@@ -40,7 +37,5 @@ export const useDialogStore = create<DialogStore>((set) => {
     setVisibleCheckinDialog: (value) => set({ visibleCheckinDialog: value }),
     visibleInviteDialog: false,
     setVisibleInviteDialog: (value) => set({ visibleInviteDialog: value }),
-    visibleTaskBoxDialog: false,
-    setVisibleTaskBoxDialog: (value) => set({ visibleTaskBoxDialog: value }),
   };
 });

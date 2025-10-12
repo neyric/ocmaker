@@ -24,11 +24,11 @@ export const Header = ({ navLinks }: HeaderProps) => {
   const loaderData = useRootLoader();
   const { y } = useWindowScroll();
   const isScrolled = y > 20;
-  const { setVisibleLoginDialog, setVisibleTaskBoxDialog } = useDialogStore();
+  const { setVisibleLoginDialog } = useDialogStore();
 
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">(
-    loaderData?.theme || "light",
+    loaderData?.theme || "light"
   );
 
   useEffect(() => {
@@ -89,12 +89,6 @@ export const Header = ({ navLinks }: HeaderProps) => {
             <div className="flex items-center gap-2">
               {user ? (
                 <>
-                  <button
-                    className="btn btn-sm btn-primary btn-soft hidden sm:block"
-                    onClick={() => setVisibleTaskBoxDialog(true)}
-                  >
-                    <Bell className="size-4" />
-                  </button>
                   <CreditsMenu credits={credits} />
                   <Link
                     to="/dashboard"

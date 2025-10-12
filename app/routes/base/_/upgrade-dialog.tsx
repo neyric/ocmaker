@@ -3,25 +3,30 @@ import clsx from "clsx";
 import currency from "currency.js";
 import { Ring2 } from "ldrs/react";
 import { Check, ChevronLeft, ChevronRight, Coins } from "lucide-react";
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 import { createOrder } from "~/api/order";
 import { Dialog, DialogContent } from "~/components/ui/dialog";
 import { Drawer, DrawerContent } from "~/components/ui/drawer";
 import { useBreakpoint } from "~/hooks/dom";
 import { useTranslate } from "~/i18n";
-import { type Pricing, products } from "~/routes/base/_.pricing/config";
+import type { Pricing } from "~/.server/constants/pricing";
+import { useRootLoader } from "~/root";
 import { useDialogStore } from "~/store/dialog";
 
-// 只取订阅类型的计划，确保类型安全
-const subscriptionPlans = products.subscription.filter(
-  (plan): plan is Extract<Pricing, { type: "subscription" }> =>
-    plan.type === "subscription",
-);
+type SubscriptionPlan = Extract<Pricing, { type: "subscription" }>;
+
+const isSubscriptionPlan = (plan: Pricing): plan is SubscriptionPlan =>
+  plan.type === "subscription";
 
 export function UpgradeDialog() {
   const t = useTranslate();
   const visible = useDialogStore((state) => state.visibleUpgradeDialog);
   const setVisible = useDialogStore((state) => state.setVisibleUpgradeDialog);
+  const rootData = useRootLoader();
+
+  const subscriptionPlans = (rootData?.pricing?.subscription ?? []).filter(
+    isSubscriptionPlan,
+  );
 
   const [_, { isMobile }] = useBreakpoint();
   const [loadingPricingId, setLoadingPricingId] = useState("");
@@ -36,15 +41,9 @@ export function UpgradeDialog() {
 
   const handleClose = () => setVisible(false);
 
-  const handleUpgrade = (pricingId: string, type: "monthly" | "annual") => {
-    const plan = subscriptionPlans.find((item) => item.id === pricingId);
-    if (!plan) return;
+  const handleUpgrade = (pricingId: string, productId: string) => {
+    if (!productId) return;
     setLoadingPricingId(pricingId);
-
-    // 根据年付或月付选择对应的产品ID
-    const productId =
-      type === "annual" ? plan.annuallyProductId : plan.productId;
-
     mutateAsync(productId).finally(() => setLoadingPricingId(""));
   };
 
@@ -82,9 +81,9 @@ export function UpgradeDialog() {
 }
 
 interface UpgradeContentProps {
-  pricings: Extract<Pricing, { type: "subscription" }>[];
+  pricings: SubscriptionPlan[];
   loadingPricingId: string;
-  onBuy: (id: string, type: "monthly" | "annual") => void;
+  onBuy: (id: string, productId: string) => void;
 }
 
 function UpgradeContent({
@@ -116,7 +115,7 @@ function UpgradeContent({
       <div className="max-md:h-136 overflow-y-auto">
         <div
           className={clsx("grid grid-cols-1 md:grid-cols-3 relative")}
-          style={{ "--current": current } as React.CSSProperties}
+          style={{ "--current": current } as CSSProperties}
         >
           {pricings.map((pricing, index, list) => {
             const isCurrent = index === current;
@@ -164,7 +163,7 @@ function UpgradeContent({
                       <h3 className="text-xl font-semibold">{pricing.title}</h3>
                       {pricing.popular && (
                         <div className="badge badge-primary badge-xs py-2.5 rounded-full uppercase">
-                          {t("dialogs.upgrade.popular")}
+                          {t("pricing.common.mostPopular", undefined, "Most Popular")}
                         </div>
                       )}
                     </div>
@@ -172,8 +171,8 @@ function UpgradeContent({
                       <span>US{currency(price).format()} </span>
                       <span className="text-base font-medium opacity-50">
                         {pricing.type === "subscription"
-                          ? t("dialogs.upgrade.billing.monthly")
-                          : t("dialogs.upgrade.billing.oneTime")}
+                          ? t("pricing.common.monthPer", undefined, "per month")
+                          : t("pricing.common.oneTime", undefined, "one time")}
                       </span>
                     </p>
                     {pricing.type === "subscription" && (
@@ -185,10 +184,16 @@ function UpgradeContent({
                             onChange={() => setAnnually((state) => !state)}
                             className="toggle toggle-sm"
                           />
-                          <div>{t("dialogs.upgrade.billing.annually")}</div>
+                          <div>
+                            {t(
+                              "pricing.common.billedAnnually",
+                              undefined,
+                              "Billed Annually",
+                            )}
+                          </div>
                           {annually && (
                             <div className="badge badge-sm rounded-full border-grid-border badge-outline font-medium">
-                              {t("dialogs.upgrade.billing.save")}
+                              {t("pricing.common.save", { rate: 20 }, "Save 20%")}
                             </div>
                           )}
                         </label>
@@ -211,11 +216,14 @@ function UpgradeContent({
                         className="btn btn-neutral shadow-none flex-1 min-w-0 disabled:cursor-not-allowed cursor-pointer"
                         disabled={!!loadingPricingId}
                         onClick={() =>
-                          onBuy(pricing.id, annually ? "annual" : "monthly")
+                          onBuy(
+                            pricing.id,
+                            annually ? pricing.annuallyProductId : pricing.productId,
+                          )
                         }
                       >
                         {loadingPricingId === pricing.id && <Ring2 size={16} />}
-                        {t("dialogs.upgrade.button.upgrade")}
+                        {t("pricing.common.upgrade", undefined, "Upgrade")}
                       </button>
 
                       <button
@@ -234,12 +242,8 @@ function UpgradeContent({
                         <span className="text-base">{credits} credits </span>
                         <span className="opacity-60 text-sm">
                           {pricing.type === "subscription"
-                            ? "/" +
-                              t("dialogs.upgrade.billing.monthly").toLowerCase()
-                            : "/" +
-                              t(
-                                "dialogs.upgrade.billing.oneTime",
-                              ).toLowerCase()}
+                            ? "/" + t("pricing.common.month", undefined, "month")
+                            : "/" + t("pricing.common.oneTime", undefined, "one time")}
                         </span>
                       </p>
                     </div>

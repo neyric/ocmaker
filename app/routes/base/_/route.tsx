@@ -7,7 +7,6 @@ import type { Route } from "./+types/route";
 import { CheckinDialog } from "./checkin-dialog";
 import { InviteDialog } from "./invite-dialog";
 import { LoginDialog } from "./login-dialog";
-import { TaskBoxDialog } from "./taskbox-dialog";
 import { UpgradeDialog } from "./upgrade-dialog";
 
 export const loader = async ({ context }: Route.LoaderArgs) => {
@@ -187,7 +186,6 @@ export default function Layout({
       <LoginDialog useOneTap={!user} />
       <CheckinDialog />
       <InviteDialog />
-      <TaskBoxDialog />
     </>
   );
 }

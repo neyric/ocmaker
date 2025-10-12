@@ -72,7 +72,7 @@ export const loader = async ({ request, context }: Route.LoaderArgs) => {
         description: t("pricing.plus.description"),
         price: PRODUCT_ITEMS.PLUS_PLAN_MONTHLY.price,
         annually: PRODUCT_ITEMS.PLUS_PLAN_ANNUAL.price,
-        credits: PRODUCT_ITEMS.STARTER_PLAN_MONTHLY.credits,
+        credits: PRODUCT_ITEMS.PLUS_PLAN_MONTHLY.credits,
         type: "subscription",
         benefits: i18n.locale.pricing.plus.details,
       },
