@@ -155,7 +155,7 @@ export default {
 
   footer: {
     brandDescription:
-      "Fresh hair ideas and AI hairstyle try-on for you to find styles that suit you best!",
+      "With OC Maker, streamline every step of creation and let AI launch your OC in style",
     copyright: "© {year} OC Maker All Rights Reserved.",
     popular: {
       title: "Popular OC Makers",

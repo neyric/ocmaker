@@ -154,7 +154,7 @@ export default {
 
   footer: {
     brandDescription:
-      "为你提供新颖的发型灵感和 AI 发型试戴，找到最适合你的风格！",
+      "使用 OC Maker，精简创作的每一步，让 AI 引领你的 OC 华丽登场。",
     copyright: "© {year} OC Maker 保留所有权利。",
     popular: {
       title: "热门 OC 生成器",
