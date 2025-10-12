@@ -1,6 +1,10 @@
 import { forwardRef, useEffect, useState } from "react";
 import type { LinkProps, NavLinkProps } from "react-router";
-import { Link as LinkComp, NavLink as NavLinkComp } from "react-router";
+import {
+  Link as LinkComp,
+  NavLink as NavLinkComp,
+  useParams,
+} from "react-router";
 
 interface UseBaseLinkOptions {
   reloadDocument: LinkProps["reloadDocument"];
@@ -18,18 +22,40 @@ const useBaseLink = ({ reloadDocument, target }: UseBaseLinkOptions) => {
   return { target: baseTarget, reloadDocument: reload };
 };
 
-export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ reloadDocument, target, ...rest }, ref) => {
-    const base = useBaseLink({ reloadDocument, target });
+interface UseToLinkOptions {
+  to: LinkProps["to"];
+  autoLang?: boolean;
+}
+const useToLink = ({ to, autoLang = false }: UseToLinkOptions) => {
+  const params = useParams();
+  const lang = params.lang;
 
-    return <LinkComp ref={ref} {...base} {...rest} />;
-  }
-);
+  if (!autoLang) return to;
+  if (typeof to !== "string") return to;
+  if (!lang) return to;
+  if (to.startsWith("http")) return to;
+  if (to.startsWith("mailto")) return to;
 
-export const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
-  ({ reloadDocument, target, ...rest }, ref) => {
-    const base = useBaseLink({ reloadDocument, target });
+  const newTo = `/${lang}${to}`;
+  return newTo.endsWith("/") ? newTo.slice(0, -1) : newTo;
+};
 
-    return <NavLinkComp ref={ref} {...base} {...rest} />;
-  }
-);
+export const Link = forwardRef<
+  HTMLAnchorElement,
+  LinkProps & { autoLang?: boolean }
+>(({ reloadDocument, target, autoLang, to, ...rest }, ref) => {
+  const linkTo = useToLink({ to, autoLang });
+  const base = useBaseLink({ reloadDocument, target });
+  return <LinkComp ref={ref} to={linkTo} {...base} {...rest} />;
+});
+
+export const NavLink = forwardRef<
+  HTMLAnchorElement,
+  NavLinkProps & { autoLang?: boolean }
+>(({ reloadDocument, target, autoLang, to, ...rest }, ref) => {
+  const linkTo = useToLink({ to, autoLang });
+
+  const base = useBaseLink({ reloadDocument, target });
+
+  return <NavLinkComp ref={ref} to={linkTo} {...base} {...rest} />;
+});
