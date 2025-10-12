@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Bleach
-  Tone: Stay faithful to Bleach's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Human World, Soul Society, Hueco Mundo, Wandenreich conflicts, spiritual battles between Shinigami, Quincy, and Hollows
+  Key Factions: Gotei 13 divisions, Visored, Arrancar/Las Noches, Quincy Wandenreich, Xcution Fullbringers, Substitute Shinigami, Royal Guard
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Race & Affiliation, Combat Division or Squad, Zanpakutō/Ability Theme, Release States (Shikai/Bankai etc.), Personality, Past Life/Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

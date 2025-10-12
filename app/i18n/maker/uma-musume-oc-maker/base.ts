@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Uma Musume
-  Tone: Stay faithful to Uma Musume's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Uma Musume Pretty Derby
+  Setting: Tracen Academy, reincarnated racehorse girls, idol performances, G1 tournaments, training camps, fanfare-laden races
+  Key Elements: Trainers, support cards, classic Japanese & international race motifs, Twinkle Series races, dorm rivalries, idol stages after victories
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Pedigree Inspiration, Preferred Distance & Running Style, Trainer/Team, Personality, Rivalry/Goal Race, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

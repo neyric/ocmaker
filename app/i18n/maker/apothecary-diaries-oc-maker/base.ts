@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: The Apothecary Diaries
-  Tone: Stay faithful to The Apothecary Diaries's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Feudal-inspired imperial capital, Inner Palace intrigue, herbal medicine, poison cases, court politics
+  Key Circles: Inner Palace maids and concubines, Imperial Court physicians, apothecaries of the Pleasure District, covert investigators, noble households
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Social Status & Workplace, Medical or Investigative Specialty, Allies/Patrons, Personality, Signature Case, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

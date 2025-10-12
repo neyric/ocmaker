@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: One Piece
-  Major Factions: Pirates (various crews across East Blue, Grand Line, and New World), Marines/World Government, Revolutionary Army, Celestial Dragons, Shichibukai/Warlords, Cipher Pol organizations, Independent forces (bounty hunters, merchants, kingdoms)
+  Universe: Attack on Titan
+  Setting: Walled human civilization facing man-eating Titans, post-apocalyptic technology, ODM gear warfare
+  Key Factions: Survey Corps, Garrison, Military Police, Warrior Unit of Marley, Yeagerists, underground resistance cells
 
   OUTPUT FORMAT:
-  Name, Faction, Haki Types, Devil Fruit, Origin, Personality, Backstory
+  Name, Regiment/Faction, Role & Specialty, Combat Gear or Titan Power, Personality, Motivation, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

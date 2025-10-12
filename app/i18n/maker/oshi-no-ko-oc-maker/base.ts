@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Oshi no Ko
-  Tone: Stay faithful to Oshi no Ko's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Japanese entertainment industry, idol culture, acting agencies, reality shows, social media scandals, revenge intrigue
+  Key Circles: B-Komachi, Strawberry Productions, Lala Lai Theatre Company, rival idol units, drama directors, online influencers, tabloid reporters
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Entertainment Role, Agency/Affiliation, Signature Performance Talent, Personality, Public Persona vs True Self, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Demon Slayer
-  Tone: Stay faithful to Demon Slayer's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Demon Slayer: Kimetsu no Yaiba
+  Setting: Taisho-era Japan, Demon Slayer Corps, Nichirin blades, breathing styles, Twelve Kizuki hierarchy, Blood Demon Arts
+  Key Groups: Hashira, Corps recruits, Demon Moons, Muzan's network, Swordsmith Village artisans, Kakushi support, hidden demon sympathizers
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Corps Rank or Demon Alignment, Breathing Style/Blood Demon Art, Weapon or Fighting Style, Personality, Goal, Tragic Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

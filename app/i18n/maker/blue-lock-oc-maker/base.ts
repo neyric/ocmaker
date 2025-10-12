@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Blue Lock
-  Tone: Stay faithful to Blue Lock's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Japan Football Union's Blue Lock facility, Ego Jinpachi's striker training program, high-stakes ego battles for national team selection
+  Key Elements: Isolated training blocks, rival strikers, wildcard invitations, Neo Egoist League clubs (Bastard München, Paris X Gen, Manshine City), adaptability tests
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Preferred Position, Signature Weapon (Skill), Supporting Abilities, Ego/Personality, Rival Motivations, Soccer Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

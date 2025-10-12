@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Hell's Paradise
-  Tone: Stay faithful to Hell's Paradise's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Hell's Paradise: Jigokuraku
+  Setting: Edo-period Japan, execution convicts, shinobi clans, Yamada Asaemon executioners, forbidden island Shinsenkyo filled with Tensen immortals and grotesque flora
+  Key Factions: Iwagakure shinobi, Yamada Asaemon corps, Tensen/Junshi, criminal vagrants, shogunate envoys, Tao masters
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Origin & Role (Convict/Executioner), Fighting Style & Weapon, Tao Aptitude or Shinobi Techniques, Personality, Treasure/Goal, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Dragon Ball
-  Tone: Stay faithful to Dragon Ball's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Earth and Universe 7, Capsule Corp tech, intergalactic tournaments, ki battles, Saiyan transformations, divine mentors
+  Key Factions: Z Fighters, Red Ribbon remnants, Galactic Patrol, Frieza Force, Gods of Destruction/Kai, Tournament universes, Time Patrol
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Race & Power Level Context, Fighting Style/School, Signature Techniques & Transformations, Personality, Rival/Goal, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

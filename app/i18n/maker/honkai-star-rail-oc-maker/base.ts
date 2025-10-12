@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Honkai Star Rail
-  Tone: Stay faithful to Honkai Star Rail's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Honkai: Star Rail
+  Setting: Astral Express journeys, Aeons' philosophies, Stellaron crises across worlds like Jarilo-VI, Xianzhou Luofu, Penacony
+  Key Factions: Astral Express, Stellaron Hunters, Xianzhou Alliance, IPC, Belobog factions, Interastral Peace Corporation, garden of Recollections
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Path Alignment, Combat Role & Element, Signature Technique/Ultimate, Companion/Connection, Personality, Journey Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

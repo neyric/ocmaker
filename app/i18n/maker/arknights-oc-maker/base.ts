@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Arknights
-  Tone: Stay faithful to Arknights's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Terra's industrial wastelands, Originium outbreaks, Catastrophe response missions, city-states with unique cultures
+  Key Factions: Rhodes Island, Reunion Movement, Lungmen Guard Department, Kazimierz Knights, Laterano, Ursus Empire, Victoria's nobility, independent mercenary groups
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Affiliation & Operator Class, Weapon/Arts Specialty, Infection Status, Talents/Traits, Personality, Mission History
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

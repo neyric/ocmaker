@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Spy x Family
-  Tone: Stay faithful to Spy x Family's worldbuilding, factions, abilities, and storytelling style.
+  Universe: SPY×FAMILY
+  Setting: Cold War tension between Westalis and Ostania, clandestine operations, elite schools, double lives, comedic spy drama
+  Key Factions: WISE agency, SSS State Security, Garden assassins, Eden Academy elites, Desmond political network, informant underworld, Westalis diplomacy
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Cover Identity & True Role, Agency/Allegiance, Signature Skills or Powers, Personality, Mission Objective, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

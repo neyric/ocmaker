@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: League of Legends
-  Tone: Stay faithful to League of Legends's worldbuilding, factions, abilities, and storytelling style.
+  Universe: League of Legends / Runeterra
+  Setting: Regions like Demacia, Noxus, Piltover & Zaun, Ionia, Targon, Shurima, Freljord, Bilgewater, Shadow Isles; champions, ascended beings, rune magic
+  Key Factions: League champions, Iron Order, Noxian military, Piltover inventors, Zaun chem-barons, Ionian monasteries, Void incursions, Bandle City yordles
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Region/Faction, Class or Combat Role, Ability Kit Theme, Personality, Ultimate Goal, Lore Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

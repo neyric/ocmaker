@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Black Butler
-  Tone: Stay faithful to Black Butler's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Black Butler (Kuroshitsuji)
+  Setting: Victorian-era London, aristocratic underworld, supernatural contracts, Phantomhive investigations, Grim Reapers
+  Key Circles: Queen's Watchdogs, nobility houses, circus troupes, cult societies, Shinigami Dispatch, demons with Faustian bargains
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Social Cover & Title, Alignment (Human/Demon/Reaper), Talents or Powers, Personality, Secret Motive, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Marvel
-  Tone: Stay faithful to Marvel's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Marvel Universe (Earth-616 tone)
+  Setting: Avengers-level threats, street heroes, cosmic adventures, S.H.I.E.L.D. missions, mutant politics, multiverse branches
+  Key Factions: Avengers, X-Men/Krakoa, Guardians of the Galaxy, S.H.I.E.L.D., Hydra/A.I.M., Defenders, Fantastic Four, Thunderbolts, villain syndicates
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Alter Ego & Alignment, Powers or Tech, Team Affiliations, Personality, Core Motivation, Origin Story Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

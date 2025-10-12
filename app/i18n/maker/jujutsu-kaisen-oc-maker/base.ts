@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Jujutsu Kaisen
-  Tone: Stay faithful to Jujutsu Kaisen's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Modern Japan cursed spirits, Tokyo/Kyoto Jujutsu High, sorcerer clans, Culling Game arenas, Special Grade threats
+  Key Factions: Gojo's students, Zen'in, Kamo, Inumaki lineage, Curse User groups, Suguru Geto loyalists, Jujutsu higher-ups, incarnated sorcerers
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Jujutsu Grade & Affiliation, Innate Technique, Domain Expansion/Barricade, Personality, Binding Vows or Weaknesses, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

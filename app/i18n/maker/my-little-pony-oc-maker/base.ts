@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: My Little Pony
-  Tone: Stay faithful to My Little Pony's worldbuilding, factions, abilities, and storytelling style.
+  Universe: My Little Pony: Friendship is Magic
+  Setting: Equestria's magical towns, harmony elements, friendship quests, multiple pony tribes and creatures, musical whimsy
+  Key Locations: Ponyville, Canterlot, Crystal Empire, Everfree Forest, School of Friendship, Yakyakistan, Changeling Hive, Dragon Lands
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Species & Tribe, Home Location, Cutie Mark & Talent, Personality, Friendship Lesson/Goal, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Detective Conan
-  Tone: Stay faithful to Detective Conan's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Metropolitan Tokyo investigations, junior detectives, international agents, clandestine poison plots
+  Key Circles: Kudo/Shinichi allies, Mouri Detective Agency, Police task forces (Takagi, Sato), Black Organization, FBI/CIA, school friends, Phantom Thief Kid encounters
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Cover Identity & Occupation, Core Detective Skills, Support Gadgets/Allies, Personality, Target Case or Nemesis, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

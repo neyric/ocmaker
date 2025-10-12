@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Sailor Moon
-  Tone: Stay faithful to Sailor Moon's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Tokyo and Moon Kingdom legacy, Sailor Guardians, magical transformations, reincarnated royals, cosmic villains
+  Key Factions: Sailor Senshi, Outer Guardians, Shitennou, Dark Kingdom, Black Moon Clan, Dead Moon Circus, Starlights, Guardian Cats
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Guardian Title & Planet/Domain, Transformation Items & Attacks, Personality, Mission/Protective Duty, Past Life Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

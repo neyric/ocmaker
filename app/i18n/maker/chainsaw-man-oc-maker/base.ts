@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Chainsaw Man
-  Tone: Stay faithful to Chainsaw Man's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Late 1990s Japan, Devil-infested society, Public Safety bureaus, clandestine organizations, brutal dark humor tone
+  Key Factions: Public Safety Devil Hunters, Special Division 4, Private Devil Hunter companies, Yakuza remnants, international assassin teams, Weapon Hybrids, Fiends
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Affiliation, Devil Contract or Hybrid Power, Signature Weapon/Form, Personality, Ultimate Desire, Tragic Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

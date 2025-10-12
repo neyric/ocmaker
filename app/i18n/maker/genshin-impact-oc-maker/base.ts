@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Genshin Impact
-  Tone: Stay faithful to Genshin Impact's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Teyvat's seven nations, elemental Visions, Archon patronage, Fatui schemes, ancient ruins, floating islands
+  Key Factions: Knights of Favonius, Liyue Qixing, Inazuma Shogunate, Sumeru Akademiya, Fontaine justice system, Natlan tribes, Fatui Harbingers, Adventurers' Guild
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Nation & Affiliation, Vision/Element & Weapon, Combat Role, Personality, Signature Story Quest, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

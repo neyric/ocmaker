@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Bungo Stray Dogs
-  Tone: Stay faithful to Bungo Stray Dogs's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Yokohama's underworld, literary ability users, detective agency missions, mafia turf wars, government watchdogs
+  Key Factions: Armed Detective Agency, Port Mafia, Special Division for Unusual Powers, Guild, Decay of the Angel, Rats in the House of the Dead
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Ability Title & Function, Affiliation, Combat/Support Role, Ability Conditions/Weaknesses, Personality, Past Incident
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

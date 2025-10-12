@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Pokemon
-  Tone: Stay faithful to Pokemon's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Pokémon
+  Setting: Regions like Kanto through Paldea, Pokémon journeys, gym challenges, research labs, villainous teams, league tournaments
+  Key Elements: Trainers, Professors, Gym Leaders, Champions, villain teams (Rocket, Magma/Aqua, Galactic, Plasma, Flare, Skull, Star), explorers, contest idols
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Trainer/Role Type, Home Region & Key Locations, Team Specialty & Signature Partner Pokémon, Personality, Goal (League/Research/etc.), Journey Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

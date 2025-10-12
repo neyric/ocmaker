@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Sonic
-  Tone: Stay faithful to Sonic's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Sonic the Hedgehog
+  Setting: Mobius/Gaia landscapes, high-speed adventures, Chaos Emerald energy, Eggman's mechanized threats, Freedom Fighters
+  Key Factions: Team Sonic, Team Dark, Chaotix Detective Agency, Babylon Rogues, Eggman Empire, ancient echidna clans, G.U.N., resistance cells
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Species & Alignment, Signature Ability/Speed Trick, Gear or Wispon, Personality, Rival/Goal, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

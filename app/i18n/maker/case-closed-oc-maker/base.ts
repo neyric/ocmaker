@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Case Closed
-  Tone: Stay faithful to Case Closed's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Case Closed (Detective Conan)
+  Setting: Modern Japan crime scenes, high school detectives, undercover organizations, forensic investigations
+  Key Circles: Detective Boys, Osaka duo, Tokyo Metropolitan Police, Black Organization, FBI/CIA collaborators, gadget support from Professor Agasa
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Occupation/Detective Role, Signature Investigation Skills, Tools or Gadgets, Personality, Ongoing Mystery, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

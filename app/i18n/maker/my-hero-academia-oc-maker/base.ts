@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: My Hero Academia
-  Tone: Stay faithful to My Hero Academia's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Quirk-driven hero society, U.A. High hero course, Pro Hero rankings, League of Villains plots, international hero agencies
+  Key Factions: U.A. students, Big Three, Pro Hero agencies, Commission, League of Villains/Paranormal Liberation Front, support course engineers, vigilantes
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Hero/Villain Affiliation, Quirk Description & Limitations, Costume/Support Gear, Personality, Aspirations, Origin Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

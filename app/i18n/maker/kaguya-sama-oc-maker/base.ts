@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Kaguya-sama
-  Tone: Stay faithful to Kaguya-sama's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Kaguya-sama: Love Is War
+  Setting: Shuchiin Academy's elite halls, rom-com mind games, student council rivalries, influential families, school festivals
+  Key Circles: Student Council, cheer club, drama club, disciplinary committee, Shinomiya conglomerate, Shirogane family, Fujiwara connections
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Year & Role at Shuchiin, Social Standing/Family Influence, Signature Strategy or Talent, Personality, Romantic Challenge, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

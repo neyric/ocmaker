@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Naruto
-  Tone: Stay faithful to Naruto's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Naruto / Shinobi World
+  Setting: Hidden Villages system, chakra jutsu, ninja wars, Akatsuki conspiracies, samurai borders, tailed beasts
+  Key Factions: Konoha, Suna, Kiri, Kumo, Iwa, Root/ANBU, Akatsuki, Otsutsuki legacy, rogue ninja, scientific shinobi weapons
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Village & Rank, Clan/Kekkei Genkai, Chakra Nature & Signature Jutsu, Personality, Nindo (Ninja Way), Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

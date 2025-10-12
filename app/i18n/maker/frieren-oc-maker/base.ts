@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Frieren
-  Tone: Stay faithful to Frieren's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Frieren: Beyond Journey's End
+  Setting: Post-Demon King era, slow travel across rebuilt kingdoms, elven longevity, ancient magic, lingering demon threats
+  Key Elements: Hero party legends, first-class mage exams, northern territories, church inquisitions, demon strategists, relic-filled ruins
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Race & Lifespan, Magical Specialty, Traveling Companions or Guild, Personality, Core Regret/Goal, Journey Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

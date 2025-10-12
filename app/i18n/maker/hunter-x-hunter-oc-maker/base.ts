@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Hunter x Hunter
-  Tone: Stay faithful to Hunter x Hunter's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Hunter Association expeditions, Nen battles, art islands, Mafia underworld, Dark Continent hints, Chimera Ant aftermath
+  Key Factions: Hunter Association, Zodiacs, Phantom Troupe, Mafia families, NGL, Kakin succession war princes, Chimera Ant remnants, Greed Island survivors
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Hunter Status/Affiliation, Nen Category, Hatsu Ability Description, Personality, Goal, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

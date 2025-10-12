@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: Blue Archive
-  Tone: Stay faithful to Blue Archive's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Kivotos city of academies, student councils, after-school task forces, Sensei-led missions, stylized firearms and EX skills
+  Key Groups: Federal Student Council (Shittim Chest), Trinity, Gehenna, Millennium, Arius, Valkyrie Police, Abydos resistance clubs, Problem Solver 68, gourmet societies
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Academy & Club, Position/Specialty, Preferred Weapon & EX Skill, Personality, Quirks, Mission Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: JOJO
-  Tone: Stay faithful to JOJO's worldbuilding, factions, abilities, and storytelling style.
+  Universe: JoJo's Bizarre Adventure
+  Setting: Multigenerational Joestar saga, Hamon and Stand powers, globe-trotting fashion-forward battles, supernatural artifacts
+  Key Elements: Joestar allies, Dio's legacy, Speedwagon Foundation, Pillar Men, Passione mafia, Morioh community, Steel Ball Run racers, Stone Ocean inmates
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Stand or Power Name & Ability, Era/Part Allegiance, Combat Style, Personality, Stand Weakness/Conditions, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

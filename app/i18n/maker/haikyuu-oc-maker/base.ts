@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Haikyuu!!
-  Tone: Stay faithful to Haikyuu!!'s worldbuilding, factions, abilities, and storytelling style.
+  Universe: Haikyu!!
+  Setting: Japanese high school volleyball leagues, inter-high tournaments, club rivalries, training camps, college/pro scout attention
+  Key Teams: Karasuno, Nekoma, Aoba Johsai, Fukurodani, Shiratorizawa, Inarizaki, MSBY Black Jackals, Schweiden Adlers, national youth camps
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, School & Year, Position, Signature Playstyle/Weapon, Personality, Rival/Goal, Volleyball Backstory
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

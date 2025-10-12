@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
-  Universe: Disney
-  Tone: Stay faithful to Disney's worldbuilding, factions, abilities, and storytelling style.
+  Universe: Disney Animated Worlds
+  Setting: Fairy-tale kingdoms, modern adventures, animal realms, enchanted forests, whimsical magic with heartfelt themes
+  Key Elements: Royal courts, daring adventurers, beloved sidekicks, classic villains, musical storytelling, talking animals, moral lessons
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Homeland/Kingdom, Role (Hero/Villain/Sidekick), Signature Companion or Magic, Personality, Wish or Lesson, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}

@@ -1,10 +1,11 @@
 const basePrompt = `
   WORLD CONTEXT:
   Universe: One Piece
-  Tone: Stay faithful to One Piece's worldbuilding, factions, abilities, and storytelling style.
+  Setting: Grand Line seas, Straw Hat era, Devil Fruits, Haki, whimsical islands with unique cultures and climates
+  Key Factions: Pirates across the Four Seas, Straw Hats and rival crews, Marines/World Government, Shichibukai, Revolutionary Army, Yonko territories, Cipher Pol units, Celestial Dragons
 
   OUTPUT FORMAT:
-  Name, Role, Appearance, Abilities, Personality, Backstory
+  Name, Crew or Allegiance, Role & Combat Style, Devil Fruit or Haki, Signature Traits, Personal Dream, Backstory Snapshot
 
   CHARACTER PREFERENCES:
   {PREFERENCES}
