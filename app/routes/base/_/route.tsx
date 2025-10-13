@@ -108,6 +108,15 @@ const moreMakerLinks = [
     to: "/maker/sailor-moon-oc-maker",
     i18nKey: "footer.more.links.sailorMoon",
   },
+  {
+    to: "/maker/voltron-oc-maker",
+    i18nKey: "footer.more.links.voltron",
+  },
+  { to: "/maker/tdi-oc-maker", i18nKey: "footer.more.links.tdi" },
+  {
+    to: "/maker/murder-drones-oc-maker",
+    i18nKey: "footer.more.links.murderDrones",
+  },
 ] as const;
 
 export const loader = async ({ context }: Route.LoaderArgs) => {

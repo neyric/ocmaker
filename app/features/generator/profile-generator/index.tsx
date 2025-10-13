@@ -27,7 +27,7 @@ export function ProfileGenerator({
   ...props
 }: ProfileGeneratorProps) {
   const defaultPrompt = examples?.[0]?.prompt ?? "";
-  const examplesList = examples?.slice(1, 5) ?? [];
+  const examplesList = examples?.slice(-4) ?? [];
 
   const form = useProfileGeneratorForm({
     id: genId,

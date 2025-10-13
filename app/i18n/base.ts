@@ -202,6 +202,9 @@ export default {
         kaguyaSama: "Kaguya Sama OC Maker",
         pokemon: "Pokemon OC Maker",
         sailorMoon: "Sailor Moon OC Maker",
+        voltron: "Voltron OC Maker",
+        tdi: "TDI OC Maker",
+        murderDrones: "Murder Drones OC Maker",
       },
     },
     legal: {

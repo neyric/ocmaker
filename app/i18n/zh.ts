@@ -201,6 +201,9 @@ export default {
         kaguyaSama: "辉夜大小姐想让我告白 OC 生成器",
         pokemon: "宝可梦 OC 生成器",
         sailorMoon: "美少女战士 OC 生成器",
+        voltron: "战神金刚 OC 生成器",
+        tdi: "TDI OC 生成器",
+        murderDrones: "Murder Drones OC 生成器",
       },
     },
     legal: {
