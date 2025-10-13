@@ -35,3 +35,9 @@ export async function queryTask(taskNo: string) {
   const result = await taskManager.queryTask(taskNo);
   return TaskUtils.hiddenTaskData(result);
 }
+
+export async function getTaskByUserId(userId: string) {
+  const taskManager = TaskManager.getInstance();
+  const tasks = await taskManager.getTasksByUserId(userId);
+  return tasks;
+}

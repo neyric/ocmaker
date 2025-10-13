@@ -1,4 +1,4 @@
-import { eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 import { connectDB, type InsertAiTask, schema } from "~/.server/libs/db";
 
 export const findByTaskNo = (taskNo: string) => {
@@ -20,6 +20,17 @@ export const insertTask = async (values: InsertAiTask) => {
   const [result] = await db.insert(schema.ai_tasks).values(values).returning();
 
   return result;
+};
+
+export const findSucceededTasksByUserId = (userId: string) => {
+  const db = connectDB();
+  return db.query.ai_tasks.findMany({
+    where: and(
+      eq(schema.ai_tasks.user_id, userId),
+      eq(schema.ai_tasks.status, "succeeded"),
+    ),
+    orderBy: [desc(schema.ai_tasks.created_at)],
+  });
 };
 
 export const updateByTaskNo = async (

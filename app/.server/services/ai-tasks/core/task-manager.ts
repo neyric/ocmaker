@@ -4,6 +4,7 @@ import type { InsertAiTask } from "~/.server/libs/db";
 import { connectDB } from "~/.server/libs/db";
 import {
   findByTaskNo,
+  findSucceededTasksByUserId,
   insertTask,
   updateByTaskNo,
 } from "~/.server/model/aiTasks";
@@ -194,6 +195,11 @@ export class TaskManager {
     if (!task) throw TaskError.taskNotFound(taskNo);
 
     return task;
+  }
+
+  async getTasksByUserId(userId: string) {
+    const tasks = await findSucceededTasksByUserId(userId);
+    return Promise.all(tasks.map((task) => TaskUtils.hiddenTaskData(task)));
   }
 
   /**
