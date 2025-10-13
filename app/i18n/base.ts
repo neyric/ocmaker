@@ -143,6 +143,7 @@ export default {
     navigation: {
       home: "Home",
       maker: "Create Character",
+      community: "Community",
       pricing: "Pricing",
       myCreations: "My Creations",
       dashboard: "Dashboard",

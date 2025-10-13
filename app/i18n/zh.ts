@@ -142,6 +142,7 @@ export default {
     navigation: {
       home: "首页",
       maker: "创建角色",
+      community: "社区分享",
       pricing: "定价",
       myCreations: "我的作品",
       dashboard: "仪表盘",

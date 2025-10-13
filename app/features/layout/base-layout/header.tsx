@@ -15,6 +15,7 @@ export interface HeaderProps {
     to: string;
     label: string;
     target?: React.HTMLAttributeAnchorTarget;
+    shouldLogin?: boolean;
   }>;
 }
 
@@ -29,7 +30,7 @@ export const Header = ({ navLinks }: HeaderProps) => {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">(
-    loaderData?.theme || "light",
+    loaderData?.theme || "light"
   );
 
   useEffect(() => {
@@ -63,18 +64,21 @@ export const Header = ({ navLinks }: HeaderProps) => {
 
             {/* Desktop Menu */}
             <div className="items-center gap-4 text-sm hidden lg:flex">
-              {navLinks.map((link, i) => (
-                <Link
-                  key={i}
-                  className="hover:text-primary"
-                  title={link.label}
-                  to={link.to}
-                  target={link.target}
-                  autoLang
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link, i) => {
+                if (link.shouldLogin && !user) return null;
+                return (
+                  <Link
+                    key={i}
+                    className="hover:text-primary"
+                    title={link.label}
+                    to={link.to}
+                    target={link.target}
+                    autoLang
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
@@ -156,19 +160,22 @@ export const Header = ({ navLinks }: HeaderProps) => {
                   {/* 导航内容 */}
                   <div className="flex-1 p-4 overflow-y-auto">
                     <div className="flex flex-col gap-4">
-                      {navLinks.map((link, i) => (
-                        <Link
-                          key={i}
-                          data-role="hotzone"
-                          className="hover:text-primary"
-                          title={link.label}
-                          to={link.to}
-                          onClick={() => setDrawerOpen(false)}
-                          autoLang
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
+                      {navLinks.map((link, i) => {
+                        if (link.shouldLogin && !user) return null;
+                        return (
+                          <Link
+                            key={i}
+                            data-role="hotzone"
+                            className="hover:text-primary"
+                            title={link.label}
+                            to={link.to}
+                            onClick={() => setDrawerOpen(false)}
+                            autoLang
+                          >
+                            {link.label}
+                          </Link>
+                        );
+                      })}
 
                       <button data-role="hotzone" hidden onClick={toggleTheme}>
                         {theme === "light" ? (
