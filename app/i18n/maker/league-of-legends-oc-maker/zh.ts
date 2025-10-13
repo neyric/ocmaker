@@ -397,8 +397,7 @@ export default {
     },
     examples: {
       title: "英雄联盟示例",
-      description:
-        "浏览使用 英雄联盟 OC 生成器 文字提示生成的多样英雄造型。",
+      description: "浏览使用 英雄联盟 OC 生成器 文字提示生成的多样英雄造型。",
       examples,
     },
     features: {

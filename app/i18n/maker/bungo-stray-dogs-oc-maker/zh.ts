@@ -399,8 +399,7 @@ export default {
     },
     examples: {
       title: "异能者示例",
-      description:
-        "浏览由 文豪野犬 OC 生成器 文字提示生成的文学能力者。",
+      description: "浏览由 文豪野犬 OC 生成器 文字提示生成的文学能力者。",
       examples,
     },
     features: {

@@ -387,8 +387,7 @@ export default {
     },
     examples: {
       title: "地狱乐 OC 示例",
-      description:
-        "浏览由 地狱乐 OC 生成器 生成的忍者、处刑人与天仙改造体。",
+      description: "浏览由 地狱乐 OC 生成器 生成的忍者、处刑人与天仙改造体。",
       examples,
     },
     features: {

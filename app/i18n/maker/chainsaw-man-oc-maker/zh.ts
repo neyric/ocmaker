@@ -404,8 +404,7 @@ export default {
     },
     examples: {
       title: "链锯人 OC 示例",
-      description:
-        "浏览使用 链锯人 OC 生成器 文本提示生成的恶魔猎人样张。",
+      description: "浏览使用 链锯人 OC 生成器 文本提示生成的恶魔猎人样张。",
       examples,
     },
     features: {

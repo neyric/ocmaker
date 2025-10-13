@@ -18,7 +18,12 @@ export function Steps({
   steps,
 }: EffectLibrarySectionProps) {
   return (
-    <GridSection withPadding={false} borderX={false} borderY={false} className="mb-8 sm:mb-16">
+    <GridSection
+      withPadding={false}
+      borderX={false}
+      borderY={false}
+      className="mb-8 sm:mb-16"
+    >
       <div className="relative px-4 py-8 sm:px-8 max-sm:border-y sm:border border-grid-border sm:rounded-lg">
         <div className="absolute inset-0">
           <DotSVG className="pointer-events-none absolute inset-0 text-grid-border/50" />

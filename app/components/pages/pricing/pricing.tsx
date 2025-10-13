@@ -35,7 +35,7 @@ export function PricingSection({
         {/* Pricing Cards */}
         <div
           className={clsx(
-            "grid grid-cols-1 lg:grid-cols-3 data-[count=2]:lg:grid-cols-2 relative"
+            "grid grid-cols-1 lg:grid-cols-3 data-[count=2]:lg:grid-cols-2 relative",
           )}
           data-count={pricings.length}
           style={{ "--current": current } as React.CSSProperties}
@@ -71,7 +71,7 @@ export function PricingSection({
               <div
                 className={clsx(
                   "w-full relative lg:border-r border-grid-border last-of-type:border-r-0",
-                  "hidden lg:block data-[current=true]:block"
+                  "hidden lg:block data-[current=true]:block",
                 )}
                 data-type={pricing.type}
                 key={pricing.id}
@@ -80,7 +80,7 @@ export function PricingSection({
                 {pricing.popular && (
                   <div
                     className={clsx(
-                      "absolute bg-gradient-to-b from-primary/10 to-transparent inset-x-0 top-0 h-40 pointer-events-none"
+                      "absolute bg-gradient-to-b from-primary/10 to-transparent inset-x-0 top-0 h-40 pointer-events-none",
                     )}
                   />
                 )}
@@ -139,7 +139,7 @@ export function PricingSection({
                             pricing.id,
                             pricing.type === "subscription" && annually
                               ? pricing.annuallyProductId
-                              : pricing.productId
+                              : pricing.productId,
                           )
                         }
                       >

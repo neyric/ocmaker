@@ -1,12 +1,12 @@
-import { type AiTask } from "~/drizzle/schema";
 import type { CalculatorCreditsResult } from "~/routes/_api/basic/_ai.generate.calcredits/route";
+import type { TaskQueryResult } from "~/routes/_api/basic/_ai.task.$task_no/route";
 import type { GenerateDTO } from "~/schema/generator/generate";
 
 export * from "./generate";
 export * from "./prompt";
 export * from "./task";
 
-export type Task = AiTask;
+export type Task = TaskQueryResult;
 
 export const calculatorCredits = async (
   payload?: GenerateDTO,

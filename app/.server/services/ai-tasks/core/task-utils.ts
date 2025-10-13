@@ -1,3 +1,4 @@
+import { pick } from "lodash-es";
 import { downloadFilesToBucket } from "~/.server/libs/cloudflare/r2-bucket";
 import type { AiTask, User } from "~/.server/libs/db";
 import {
@@ -66,5 +67,26 @@ export class TaskUtils {
   /** Refund task credits */
   static async refundTaskCredits(taskNo: string): Promise<void> {
     await refundAiTaskCredits(taskNo);
+  }
+
+  static async hiddenTaskData(task: AiTask) {
+    const result = pick(task, [
+      "task_no",
+      "user_id",
+      "created_at",
+      "credits",
+      "task_type",
+      "status",
+      "estimated_start_at",
+      "ext",
+      "started_at",
+      "completed_at",
+      "aspect",
+      "result_url",
+      "poster_url",
+      "fail_reason",
+    ]);
+
+    return result;
   }
 }
