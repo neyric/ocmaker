@@ -1,6 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
-import { Ring2 } from "ldrs/react";
 import { Camera } from "lucide-react";
 import { forwardRef, useImperativeHandle, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -204,7 +203,7 @@ export const EditProfileDialog = forwardRef<
           disabled={updateProfileMutation.isPending}
         >
           {updateProfileMutation.isPending && (
-            <Ring2 size={16} stroke={3} color="white" />
+            <span className="loading loading-spinner loading-sm" />
           )}
           {t("profile.edit.confirm")}
         </button>

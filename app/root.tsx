@@ -17,7 +17,6 @@ import type { Route } from "./+types/root";
 
 import "@fontsource-variable/josefin-sans";
 import "@fontsource-variable/inter";
-import "ldrs/react/Ring2.css";
 
 import type { Pricing } from "~/.server/constants/pricing";
 import { PRODUCT_ITEMS } from "~/.server/constants/product";

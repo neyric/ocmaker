@@ -128,8 +128,10 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
               <Image
                 className="slider-img size-full object-cover rounded-lg overflow-hidden"
                 src={url}
-                wsrv={{ output: "webp", h: 800 }}
-                alt={`Instagram Trend Ghost Face AI Generate ${index + 1}`}
+                fetchPriority="high"
+                wsrv={{ output: "webp", w: 400 }}
+                alt={`OC Maker Generate ${index + 1}`}
+                enableSrcSet
               />
             </div>
           ))}

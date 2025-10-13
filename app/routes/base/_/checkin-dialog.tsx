@@ -1,6 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import clsx from "clsx";
-import { Ring2 } from "ldrs/react";
 import { DollarSign, Gift } from "lucide-react";
 import { getCheckinStatus, performCheckin } from "~/api/user";
 import { Image } from "~/components/common";
@@ -71,7 +70,7 @@ export function CheckinDialog() {
           <div className="relative">
             <div
               className={clsx(
-                "absolute inset-x-0 -top-6.5 xs:-top-10 xs:pt-px sm:-top-11 flex items-center justify-center",
+                "absolute inset-x-0 -top-6.5 xs:-top-10 xs:pt-px sm:-top-11 flex items-center justify-center"
               )}
             >
               <Image
@@ -82,7 +81,7 @@ export function CheckinDialog() {
             {isLoadingStats ? (
               <div className="bg-base-100 rounded-t-2xl md:rounded-2xl px-6 pt-8 sm:pt-12 pb-6">
                 <div className="text-center py-12">
-                  <Ring2 color="#ef4444" size={32} stroke={3} />
+                  <span className="loading loading-spinner loading-sm text-base-content/70" />
                   <p className="text-base-content/70 mt-4">
                     {t("dialogs.checkin.status.loading")}
                   </p>
@@ -117,7 +116,7 @@ export function CheckinDialog() {
           {isLoadingStats ? (
             <div className="bg-base-100 rounded-t-2xl md:rounded-2xl px-6 pt-8 sm:pt-12 pb-6">
               <div className="text-center py-12">
-                <Ring2 color="#ef4444" size={32} stroke={3} />
+                <span className="loading loading-spinner loading-sm text-base-content/70" />
                 <p className="text-base-content/70 mt-4">
                   {t("dialogs.checkin.status.loading")}
                 </p>
@@ -208,14 +207,14 @@ function CheckinContent({ stats, isLoading, onCheckin }: CheckinContentProps) {
               key={reward.day}
               className={clsx(
                 "rounded bg-base-200 px-2 py-4",
-                "flex flex-col items-center justify-center gap-1",
+                "flex flex-col items-center justify-center gap-1"
               )}
             >
               {reward.type === "gift" ? (
                 <div
                   className={clsx(
                     "h-11 flex items-center justify-center",
-                    "text-base-content/60 aria-checked:text-[#f3ac3c]",
+                    "text-base-content/60 aria-checked:text-[#f3ac3c]"
                   )}
                   aria-checked={isHighlighted}
                 >
@@ -227,14 +226,14 @@ function CheckinContent({ stats, isLoading, onCheckin }: CheckinContentProps) {
                     "bg-base-300 text-base-content/80 group",
                     "aria-checked:bg-gradient-to-b from-[#fced62] to-[#f3ac3c]",
                     "aria-checked:text-yellow-800",
-                    "size-11 rounded-full flex items-center justify-center",
+                    "size-11 rounded-full flex items-center justify-center"
                   )}
                   aria-checked={isHighlighted}
                 >
                   <div
                     className={clsx(
                       "border-[1.5px] border-grid-border aria-checked:border-yellow-800/40",
-                      "size-9 rounded-full flex items-center justify-center",
+                      "size-9 rounded-full flex items-center justify-center"
                     )}
                     aria-checked={isHighlighted}
                   >
@@ -268,7 +267,9 @@ function CheckinContent({ stats, isLoading, onCheckin }: CheckinContentProps) {
           disabled={hasCheckedInToday || isLoading}
           className="btn btn-lg h-12 text-xl font-medium rounded-full w-80 bg-red-500 hover:bg-red-400 disabled:cursor-not-allowed"
         >
-          {isLoading && <Ring2 color="white" size={24} stroke={3} />}
+          {isLoading && (
+            <span className="loading loading-spinner loading-sm text-white" />
+          )}
           {hasCheckedInToday
             ? t("dialogs.checkin.button.done")
             : isLoading

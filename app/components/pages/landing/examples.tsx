@@ -42,6 +42,7 @@ export function Examples({
                   src={example.image}
                   alt={example.prompt}
                   className="w-full h-full object-cover"
+                  wsrv={{ w: 486 }}
                 />
               </div>
               <div className="pt-2 px-1 pb-0">

@@ -1,4 +1,3 @@
-import { Ring2 } from "ldrs/react";
 import { AlertTriangle, FileImage, Image, Upload, X } from "lucide-react";
 import { forwardRef, useCallback, useState } from "react";
 
@@ -34,7 +33,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
       children,
       ...props
     },
-    ref,
+    ref
   ) => {
     const [isDragOver, setIsDragOver] = useState(false);
     const [error, setError] = useState<string>("");
@@ -76,7 +75,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
 
         if (!!validFiles.length) onFileDrop?.(validFiles);
       },
-      [fileList.length, maxFiles, disabled, onFileDrop, maxFileSize],
+      [fileList.length, maxFiles, disabled, onFileDrop, maxFileSize]
     );
 
     const handleDragEnter = useCallback(
@@ -87,7 +86,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
           setIsDragOver(true);
         }
       },
-      [disabled],
+      [disabled]
     );
 
     const handleDragLeave = useCallback(
@@ -98,7 +97,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
           setIsDragOver(false);
         }
       },
-      [disabled],
+      [disabled]
     );
 
     const handleDragOver = useCallback((e: React.DragEvent) => {
@@ -115,7 +114,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
           handleFiles(e.dataTransfer.files);
         }
       },
-      [disabled, handleFiles],
+      [disabled, handleFiles]
     );
 
     const handleFileInput = useCallback(
@@ -124,7 +123,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
         // 重置 input value，这样同一个文件可以再次选择
         e.target.value = "";
       },
-      [handleFiles],
+      [handleFiles]
     );
 
     const removeFile = (index: number) => {
@@ -148,7 +147,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
             isDragOver && !disabled
               ? "border-primary bg-primary/5"
               : "border-base-300",
-            disabled && "opacity-50 cursor-not-allowed",
+            disabled && "opacity-50 cursor-not-allowed"
           )}
           onDragEnter={handleDragEnter}
           onDragLeave={handleDragLeave}
@@ -203,7 +202,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
                         {/* 状态蒙版层 */}
                         {fileItem.state === "loading" && (
                           <div className="absolute inset-0 bg-base-100/50 flex items-center justify-center rounded-lg">
-                            <Ring2 size="20" speed={2} color="#1976d2" />
+                            <span className="loading loading-spinner loading-md text-blue-400/70" />
                           </div>
                         )}
                         {fileItem.state === "failed" && (
@@ -220,7 +219,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
                             "absolute -top-1 -right-1 w-5 h-5 rounded-full",
                             "bg-error text-white flex items-center justify-center",
                             "md:opacity-0 group-hover:opacity-100 transition-opacity duration-200",
-                            "hover:bg-error/80",
+                            "hover:bg-error/80"
                           )}
                         >
                           <X className="w-3 h-3" />
@@ -244,7 +243,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
                     {/* 状态蒙版层 */}
                     {fileList[0].state === "loading" && (
                       <div className="absolute inset-0 bg-base-100/50 flex items-center justify-center rounded-lg">
-                        <Ring2 size="24" speed={2} color="#1976d2" />
+                        <span className="loading loading-spinner loading-md text-blue-400/70" />
                       </div>
                     )}
                     {fileList[0].state === "failed" && (
@@ -261,7 +260,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
                         "absolute -top-1 -right-1 w-5 h-5 rounded-full",
                         "bg-error text-white flex items-center justify-center",
                         "md:opacity-0 group-hover:opacity-100 transition-opacity duration-200",
-                        "hover:bg-error/80",
+                        "hover:bg-error/80"
                       )}
                     >
                       <X className="w-3 h-3" />
@@ -276,7 +275,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
               <div
                 className={cn(
                   "mx-auto w-12 h-12 rounded-full flex items-center justify-center mb-2",
-                  "bg-base-200 text-primary",
+                  "bg-base-200 text-primary"
                 )}
               >
                 {isDragOver ? (
@@ -305,7 +304,7 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>(
         </div>
       </div>
     );
-  },
+  }
 );
 
 Dropzone.displayName = "Dropzone";

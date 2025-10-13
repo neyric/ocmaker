@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import currency from "currency.js";
-import { Ring2 } from "ldrs/react";
 import { Check, ChevronLeft, ChevronRight, Coins } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { Pricing, PricingType } from "~/.server/constants/pricing";
@@ -143,7 +142,7 @@ export function PricingSection({
                           )
                         }
                       >
-                        {loadingPricingId === pricing.id && <Ring2 size={16} />}
+                        {loadingPricingId === pricing.id &&<span className="loading loading-spinner loading-sm" />}
                         {pricing.type === "credits"
                           ? t("pricing.common.buyNow")
                           : t("pricing.common.upgrade")}

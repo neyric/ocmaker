@@ -1,7 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
 import clsx from "clsx";
 import currency from "currency.js";
-import { Ring2 } from "ldrs/react";
 import { Check, ChevronLeft, ChevronRight, Coins } from "lucide-react";
 import { type CSSProperties, useState } from "react";
 import type { Pricing } from "~/.server/constants/pricing";
@@ -231,7 +230,7 @@ function UpgradeContent({
                           )
                         }
                       >
-                        {loadingPricingId === pricing.id && <Ring2 size={16} />}
+                        {loadingPricingId === pricing.id && <span className="loading loading-spinner loading-sm" />}
                         {t("pricing.common.upgrade", undefined, "Upgrade")}
                       </button>
 

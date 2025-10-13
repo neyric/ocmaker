@@ -38,7 +38,7 @@ export const Logo = ({
         src="/assets/logo.webp"
         alt="OC Maker Logo"
         className={clsx("object-contain", sizeStyles[iconSize ?? size].box)}
-        proxy={false}
+        wsrv={{ w: 72 }}
       />
       <div
         translate="no"

@@ -30,6 +30,7 @@ export function About({
             className="w-full aspect-square bg-base-300 rounded"
             src={imageSrc}
             alt={imageAlt}
+            wsrv={{ w: 720 }}
           />
         </div>
         <div>

@@ -1,4 +1,3 @@
-import { Ring2 } from "ldrs/react";
 import { Save } from "lucide-react";
 import { Link, Logo } from "~/components/common";
 import { Google } from "~/components/icons";
@@ -58,7 +57,7 @@ export function LoginDialog({ useOneTap = false }: { useOneTap?: boolean }) {
               disabled={isLoging}
             >
               {isLoging ? (
-                <Ring2 size={24} stroke={3} />
+                <span className="loading loading-spinner loading-sm" />
               ) : (
                 <Google className="size-5" />
               )}

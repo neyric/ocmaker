@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import clsx from "clsx";
 import dayjs from "dayjs";
-import { Ring2 } from "ldrs/react";
 import { useState } from "react";
 import { getInviteData } from "~/api/user";
 import { Image } from "~/components/common";
@@ -41,7 +40,7 @@ export function InviteDialog() {
           <div className="relative flex-1 min-h-0 flex flex-col">
             <div
               className={clsx(
-                "absolute inset-x-0 -top-6.5 xs:-top-10 xs:pt-px sm:-top-11 flex items-center justify-center",
+                "absolute inset-x-0 -top-6.5 xs:-top-10 xs:pt-px sm:-top-11 flex items-center justify-center"
               )}
             >
               <Image
@@ -52,7 +51,7 @@ export function InviteDialog() {
             {isLoadingData ? (
               <div className="bg-base-100 rounded-t-2xl md:rounded-2xl px-6 pt-8 sm:pt-12 pb-6">
                 <div className="text-center py-12">
-                  <Ring2 color="#ef4444" size={32} stroke={3} />
+                  <span className="loading loading-spinner loading-sm text-neutral-600" />
                   <p className="text-neutral-600 mt-4">{t("common.loading")}</p>
                 </div>
               </div>
@@ -81,7 +80,7 @@ export function InviteDialog() {
           {isLoadingData ? (
             <div className="bg-white rounded-t-2xl md:rounded-2xl px-6 pt-8 sm:pt-12 pb-6">
               <div className="text-center py-12">
-                <Ring2 color="#ef4444" size={32} stroke={3} />
+                <span className="loading loading-spinner loading-sm text-neutral-600" />
                 <p className="text-neutral-600 mt-4">{t("common.loading")}</p>
               </div>
             </div>
@@ -179,7 +178,7 @@ function InviteContent({ data }: InviteContentProps) {
                     </div>
                     <div className="text-xs leading-none text-muted-foreground">
                       {dayjs(invitation.created_at).format(
-                        "YYYY-MM-DD HH:mm:ss",
+                        "YYYY-MM-DD HH:mm:ss"
                       )}
                     </div>
                   </div>
