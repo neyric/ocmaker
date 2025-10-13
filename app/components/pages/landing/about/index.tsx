@@ -31,6 +31,8 @@ export function About({
             src={imageSrc}
             alt={imageAlt}
             wsrv={{ w: 720 }}
+            enableSrcSet
+            loading="lazy"
           />
         </div>
         <div>

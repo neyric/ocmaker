@@ -43,6 +43,7 @@ export function Examples({
                   alt={example.prompt}
                   className="w-full h-full object-cover"
                   wsrv={{ w: 486 }}
+                  enableSrcSet
                 />
               </div>
               <div className="pt-2 px-1 pb-0">

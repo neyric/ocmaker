@@ -7,21 +7,14 @@ import {
   useRouteLoaderData,
   useSearchParams,
 } from "react-router";
-
+import type { Pricing } from "~/.server/constants/pricing";
+import { PRODUCT_ITEMS } from "~/.server/constants/product";
 import { getUserInfoAndCredits } from "~/.server/services/basic";
 import stylesUrl from "~/app.css?url";
 import { ErrorPage } from "~/components/pages/error-page";
 import { Document } from "~/features/document";
-import { createOrganizationSchema } from "~/utils/structured-data";
-import type { Route } from "./+types/root";
-
-import "@fontsource-variable/josefin-sans";
-import "@fontsource-variable/inter";
-
-import type { Pricing } from "~/.server/constants/pricing";
-import { PRODUCT_ITEMS } from "~/.server/constants/product";
 import { getTranslate } from "~/i18n";
-
+import { createOrganizationSchema } from "~/utils/structured-data";
 import {
   getI18nConetxt,
   i18nMiddleware,
@@ -30,10 +23,16 @@ import {
   getSessionContext,
   sessionMiddleware,
 } from "./.server/middleware/session-middleware";
+import type { Route } from "./+types/root";
 
 export const middleware = [sessionMiddleware, i18nMiddleware];
 
 export const links: Route.LinksFunction = () => [
+  {
+    rel: "preload",
+    href: stylesUrl,
+    as: "style",
+  },
   { rel: "stylesheet", href: stylesUrl },
 ];
 

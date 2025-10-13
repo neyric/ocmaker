@@ -45,6 +45,7 @@ export function FeaturedOn({ title, description, badges }: FeaturedOnProps) {
                 alt={badge.title}
                 className="max-h-11 w-auto"
                 proxy={false}
+                loading="lazy"
               />
             </Link>
           ))}

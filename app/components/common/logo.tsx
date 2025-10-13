@@ -39,6 +39,7 @@ export const Logo = ({
         alt="OC Maker Logo"
         className={clsx("object-contain", sizeStyles[iconSize ?? size].box)}
         wsrv={{ w: 72 }}
+        enableSrcSet
       />
       <div
         translate="no"

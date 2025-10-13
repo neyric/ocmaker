@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import "@fontsource-variable/josefin-sans";
+@import "@fontsource-variable/inter";
+
 @custom-variant dark (&:is(.dark *));
 
 @plugin "@tailwindcss/typography";

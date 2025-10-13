@@ -34,7 +34,7 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
       slidesToScroll: 1,
       ...options,
     },
-    [Autoplay({ delay: 3000 })],
+    [Autoplay({ delay: 3000 })]
   );
 
   const tweenFactor = useRef(0);
@@ -90,7 +90,7 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
         });
       });
     },
-    [],
+    []
   );
 
   useEffect(() => {
@@ -128,10 +128,11 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
               <Image
                 className="slider-img size-full object-cover rounded-lg overflow-hidden"
                 src={url}
-                fetchPriority="high"
                 wsrv={{ output: "webp", w: 400 }}
                 alt={`OC Maker Generate ${index + 1}`}
                 enableSrcSet
+                loading={index > 0 ? "lazy" : undefined}
+                fetchPriority={index === 0 ? "high" : undefined}
               />
             </div>
           ))}

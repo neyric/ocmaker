@@ -34,7 +34,10 @@ export const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="p-2 hover:bg-base-200 hover:text-primary rounded-md focus-visible:outline-none hover:outline-none active:outline-none">
+        <button
+          className="p-2 hover:bg-base-200 hover:text-primary rounded-md focus-visible:outline-none hover:outline-none active:outline-none"
+          aria-label="i18n button"
+        >
           <Globe className="size-5" />
         </button>
       </DropdownMenuTrigger>

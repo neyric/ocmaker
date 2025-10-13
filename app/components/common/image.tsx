@@ -150,24 +150,36 @@ export const Image = ({
   if (typeof src === "string") {
     const isRemote = /^https:\/\//.test(src);
     const isAssets = src.startsWith("/");
+    const canProxy = proxy && (isRemote || isAssets);
 
     let targetUrl: string | undefined;
-    if (proxy && isRemote) {
-      targetUrl = src;
-    } else if (proxy && isAssets && wsrv && import.meta.env.PROD && DOMAIN) {
-      targetUrl = new URL(src, DOMAIN).toString();
+    if (canProxy) {
+      if (isRemote) {
+        targetUrl = src;
+      } else if (isAssets && import.meta.env.PROD && DOMAIN) {
+        targetUrl = new URL(src, DOMAIN).toString();
+      }
     }
 
-    if (targetUrl) {
+    const shouldBuildSrcSet =
+      enableSrcSet && canProxy && targetUrl !== undefined;
+
+    if (shouldBuildSrcSet && targetUrl) {
+      computedSrcSet = DEFAULT_SRCSET_WIDTHS.map((width) => {
+        const url = buildProxyUrl(targetUrl, wsrv, width);
+        return `${url} ${width}w`;
+      }).join(", ");
+    }
+
+    const shouldBuildSrc =
+      !computedSrcSet &&
+      canProxy &&
+      targetUrl !== undefined &&
+      (isRemote || (isAssets && wsrv));
+
+    if (shouldBuildSrc && targetUrl) {
       const fallbackWidth = resolveWidth(wsrv?.w);
       finalSrc = buildProxyUrl(targetUrl, wsrv, fallbackWidth);
-
-      if (enableSrcSet && proxy && (isRemote || isAssets)) {
-        computedSrcSet = DEFAULT_SRCSET_WIDTHS.map((width) => {
-          const url = buildProxyUrl(targetUrl!, wsrv, width);
-          return `${url} ${width}w`;
-        }).join(", ");
-      }
     }
   }
 
