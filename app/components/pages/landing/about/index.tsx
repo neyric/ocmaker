@@ -37,9 +37,9 @@ export function About({
         </div>
         <div>
           <div className="mb-6">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 whitespace-pre-line">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold mb-4 whitespace-pre-line">
               {title}
-            </h1>
+            </h2>
             <p className="text-base sm:text-lg whitespace-pre-line mx-auto">
               {description}
             </p>

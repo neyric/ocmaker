@@ -371,7 +371,7 @@ export default {
     description:
       "借助 AI 打造你的《名侦探柯南》原创角色，结合推理背景、道具与经典侦探氛围。",
   },
-  series: "名侦探柯南",
+  series: "柯南",
   backstoryPreset: basePrompt,
   examples: backstoryExamples,
   ocOptions,

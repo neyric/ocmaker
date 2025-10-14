@@ -29,9 +29,9 @@ export function FooterCTASection({
     >
       <div className="relative flex flex-col items-center px-4 py-16 lg:py-20 xl:py-24 text-center bg-primary text-primary-content sm:rounded-lg">
         <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center text-center space-y-2 mb-8 last-of-type:mb-0">
-          <h1 className="text-center font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in text-pretty [animation-delay:100ms]">
+          <h2 className="text-center font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight animate-slide-up-fade [--offset:20px] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in text-pretty [animation-delay:100ms]">
             {title}
-          </h1>
+          </h2>
           <p className="text-pretty text-primary-content/80 md:text-xl animate-slide-up-fade [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both] motion-reduce:animate-fade-in">
             {description}
           </p>

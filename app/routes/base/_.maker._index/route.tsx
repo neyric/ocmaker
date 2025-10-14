@@ -14,12 +14,14 @@ import {
   FAQsSection,
   FooterCTASection,
   HeroSection,
+  MakerList,
   Steps,
   WhyImgVidSection,
 } from "~/components/pages/maker";
 import { AvatarGenerator } from "~/features/generator/avatar-generator";
 import { ProfileGenerator } from "~/features/generator/profile-generator";
 import { getPageLocale, getTranslate, useTranslate } from "~/i18n";
+import { getMakerList } from "~/i18n/maker";
 import { createCanonical, createNormalAlternatives } from "~/utils/meta";
 import { createSocialTags } from "~/utils/og";
 import type { Route } from "./+types/route";
@@ -33,7 +35,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
     url,
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
@@ -42,7 +44,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
       url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
 
   return [
@@ -80,7 +82,16 @@ export async function loader({ context }: Route.LoaderArgs) {
     data: Array<{ label: string; value: string }>;
   }> = page.ocOptions ?? [];
 
-  return { meta, page, genId: DEFAULT_GEN_ID, examples, options };
+  const makersRecord = await getMakerList(i18n.lang);
+  const makers = Object.entries(makersRecord)
+    .map(([slug, maker]) => ({
+      slug,
+      title: maker.series ?? slug,
+      cover: maker.contents.examples.examples[0].image,
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title, i18n.lang));
+
+  return { meta, page, genId: DEFAULT_GEN_ID, examples, options, makers };
 }
 
 export default function Maker({ loaderData }: Route.ComponentProps) {
@@ -192,6 +203,12 @@ export default function Maker({ loaderData }: Route.ComponentProps) {
         title={ct("contents.examples.title")}
         description={ct("contents.examples.description")}
         examples={galleryExamples}
+      />
+
+      <MakerList
+        title={ct("contents.makerList.title")}
+        description={ct("contents.makerList.description")}
+        makers={loaderData.makers}
       />
 
       <Steps

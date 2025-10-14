@@ -484,6 +484,11 @@ export default {
       description:
         "通过自适应 AI 助手，将 OC 生成器、角色创作与故事工具整合为适配你的创作流程。",
     },
+    makerList: {
+      title: "探索主题 OC Maker",
+      description:
+        "浏览为动漫、游戏与原创世界打造的专属生成器，为你的下一个角色寻找灵感。",
+    },
     step: {
       title: "借助自适应 AI 进行设计",
       description: "结合引导式提示与精细控制，把灵感碎片打磨为完整 OC。",

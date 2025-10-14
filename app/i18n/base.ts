@@ -160,7 +160,7 @@ export default {
       "With OC Maker, streamline every step of creation and let AI launch your OC in style",
     copyright: "© {year} OC Maker All Rights Reserved.",
     popular: {
-      title: "Popular OC Makers",
+      title: "Popular AI Tools",
       links: {
         ocMaker: "OC Maker",
         aot: "AOT OC Maker",
@@ -183,6 +183,7 @@ export default {
     more: {
       title: "More OC Makers",
       links: {
+        more: "More OC Maker",
         arknights: "Arknights OC Maker",
         bleach: "Bleach OC Maker",
         jojo: "JoJo OC Maker",

@@ -487,6 +487,11 @@ export default {
       description:
         "Build original characters with an adaptive AI assistant that fuses OC Generator, Character Creator, and story tools into one flow tailored to you.",
     },
+    makerList: {
+      title: "Explore Themed OC Makers",
+      description:
+        "Browse dedicated generators for anime, games, and original worlds to jumpstart your next character.",
+    },
     step: {
       title: "Design With Adaptive AI",
       description:

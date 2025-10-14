@@ -159,7 +159,7 @@ export default {
       "使用 OC Maker，精简创作的每一步，让 AI 引领你的 OC 华丽登场。",
     copyright: "© {year} OC Maker 保留所有权利。",
     popular: {
-      title: "热门 OC 生成器",
+      title: "热门 AI 工具",
       links: {
         ocMaker: "OC 生成器",
         aot: "进击的巨人 OC 生成器",
@@ -182,6 +182,7 @@ export default {
     more: {
       title: "更多 OC 生成器",
       links: {
+        more: "探索主题 OC 生成器",
         arknights: "明日方舟 OC 生成器",
         bleach: "死神 OC 生成器",
         jojo: "JOJO 的奇妙冒险 OC 生成器",
