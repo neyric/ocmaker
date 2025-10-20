@@ -41,15 +41,56 @@ export function Document({
     if (!import.meta.env.PROD) return;
 
     if (!CLARITY_ID) return;
-    Clarity.init(CLARITY_ID);
+
+    const timer = setTimeout(() => {
+      Clarity.init(CLARITY_ID);
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, [CLARITY_ID]);
 
   useEffect(() => {
     if (!import.meta.env.PROD) return;
 
-    let adsScript: HTMLScriptElement;
+    if (!GOOGLE_ANALYTICS_ID) return;
+
     let gaScript: HTMLScriptElement;
     let gaInitScript: HTMLScriptElement;
+
+    gaScript = document.createElement("script");
+    gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`;
+    gaScript.async = true;
+
+    // Initlize
+    gaInitScript = document.createElement("script");
+    gaInitScript.id = "gtag-init";
+    gaInitScript.async = true;
+
+    gaInitScript.textContent = `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GOOGLE_ANALYTICS_ID}', {
+              page_path: window.location.pathname,
+            });
+          `;
+
+    const timer = setTimeout(() => {
+      document.head.appendChild(gaScript);
+      document.head.appendChild(gaInitScript);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+      if (gaScript) gaScript.remove();
+      if (gaInitScript) gaInitScript.remove();
+    };
+  }, [GOOGLE_ANALYTICS_ID]);
+
+  useEffect(() => {
+    if (!import.meta.env.PROD) return;
+
+    let adsScript: HTMLScriptElement;
     let pScript: HTMLScriptElement;
 
     // Adsense
@@ -60,31 +101,6 @@ export function Document({
       adsScript.crossOrigin = "anonymous";
 
       document.head.appendChild(adsScript);
-    }
-
-    // GA
-    if (GOOGLE_ANALYTICS_ID) {
-      gaScript = document.createElement("script");
-      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`;
-      gaScript.async = true;
-
-      document.head.appendChild(gaScript);
-
-      // Initlize
-      gaInitScript = document.createElement("script");
-      gaInitScript.id = "gtag-init";
-      gaInitScript.async = true;
-
-      gaInitScript.textContent = `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GOOGLE_ANALYTICS_ID}', {
-              page_path: window.location.pathname,
-            });
-          `;
-
-      document.head.appendChild(gaInitScript);
     }
 
     // Plausible
@@ -99,11 +115,9 @@ export function Document({
 
     return () => {
       if (adsScript) adsScript.remove();
-      if (gaScript) gaScript.remove();
-      if (gaInitScript) gaInitScript.remove();
       if (pScript) pScript.remove();
     };
-  }, [GOOGLE_ADS_ID, GOOGLE_ANALYTICS_ID, DOMAIN, error]);
+  }, [GOOGLE_ADS_ID, DOMAIN, error]);
 
   return (
     <html ref={rootRef} lang={lang} data-theme={theme}>
