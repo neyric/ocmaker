@@ -31,7 +31,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
   const canonical = createCanonical(canonicalUrl, matches[0].loaderData.DOMAIN);
   const alternatives = createNormalAlternatives(
     url,
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
   const og = createSocialTags(
     {
@@ -40,7 +40,7 @@ export function meta({ matches, params, loaderData }: Route.MetaArgs) {
       url: url,
       siteName: matches[0].loaderData.SITE_NAME,
     },
-    matches[0].loaderData.DOMAIN,
+    matches[0].loaderData.DOMAIN
   );
 
   return [
@@ -197,6 +197,11 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       href: "https://starterbest.com",
       img: "https://starterbest.com/badages-awards.svg",
       title: "Featured on Starter Best",
+    },
+    {
+      href: "https://findly.tools/oc-maker?utm_source=oc-maker",
+      img: "https://findly.tools/badges/findly-tools-badge-light.svg",
+      title: "Featured on findly.tools",
     },
   ];
 
